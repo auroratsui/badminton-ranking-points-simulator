@@ -54,7 +54,13 @@ jobs:
             sleep 1
           done
           mkdir -p _site
-          cp -R dist/client/. _site/
+          if [ ! -d "dist/client/$repository_name" ]; then
+            echo "Expected GitHub Pages assets were not generated for $repository_name."
+            find dist/client -maxdepth 2 -type d -print
+            exit 1
+          fi
+          cp -R "dist/client/$repository_name/." _site/
+          find dist/client -maxdepth 1 -type f -exec cp {} _site/ \;
           curl --fail --silent "$page_url" --output _site/index.html
           cp _site/index.html _site/404.html
           touch _site/.nojekyll
