@@ -1,0 +1,2667 @@
+{
+  "generatedAt": "2026-08-28T23:34:40.926Z",
+  "calendars": {
+    "2025": [
+      {
+        "category": "HSBC BWF World Tour Super 1000",
+        "city": "Kuala Lumpur",
+        "name": "PETRONAS Malaysia Open 2025",
+        "week": "02"
+      },
+      {
+        "category": "International Series",
+        "city": "Tallinn",
+        "name": "YONEX Estonian International 2025",
+        "week": "02"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 750",
+        "city": "New Delhi",
+        "name": "YONEX-SUNRISE India Open 2025",
+        "week": "03"
+      },
+      {
+        "category": "International Series",
+        "city": "Uppsala",
+        "name": "VICTOR Swedish Open 2025",
+        "week": "03"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Jakarta",
+        "name": "DAIHATSU Indonesia Masters 2025",
+        "week": "04"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Semnan",
+        "name": "6th Iran Junior International Series 2025",
+        "week": "04"
+      },
+      {
+        "category": "Future Series",
+        "city": "Reykjavik",
+        "name": "RSL Iceland International 2025",
+        "week": "04"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Semnan",
+        "name": "33rd Iran Fajr International Challenge 2025",
+        "week": "05"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Patumwan",
+        "name": "PRINCESS SIRIVANNAVARI Thailand Masters 2025",
+        "week": "05"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Pécs",
+        "name": "15th Multi Alarm Hungarian Junior Championships 2025 presented by VICTOR",
+        "week": "06"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Auckland",
+        "name": "VICTOR Oceania Mixed Team Championships 2025",
+        "week": "07"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Douala",
+        "name": "All Africa Mixed Team Championships 2025",
+        "week": "07"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Qingdao",
+        "name": "TSINGTAO Badminton Asia Mixed Team Championship 2025",
+        "week": "07"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Baku",
+        "name": "2025 European Mixed Team Championships",
+        "week": "07"
+      },
+      {
+        "category": "Continental Individual Championships",
+        "city": "Auckland",
+        "name": "VICTOR Oceania Championships 2025",
+        "week": "07"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Aguascalientes",
+        "name": "Pan American Cup 2025",
+        "week": "07"
+      },
+      {
+        "category": "Continental Individual Championships",
+        "city": "Douala",
+        "name": "All Africa Individual Championships 2025",
+        "week": "07"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Singapore",
+        "name": "SBH Singapore International Challenge 2025",
+        "week": "08"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Kampala",
+        "name": "Uganda International Challenge 2025",
+        "week": "08"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "Milan",
+        "name": "Italian Junior 2025 (Cancelled)",
+        "week": "08"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Kampala",
+        "name": "Uganda Junior International 2025",
+        "week": "09"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Colombo",
+        "name": "HUNDRED Sri Lanka International Challenge 2025",
+        "week": "09"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Mülheim an der Ruhr",
+        "name": "YONEX German Open 2025",
+        "week": "09"
+      },
+      {
+        "category": "Junior International Grand Prix",
+        "city": "Haarlem",
+        "name": "YONEX Dutch Junior International 2025",
+        "week": "09"
+      },
+      {
+        "category": "International Series",
+        "city": "Colombo",
+        "name": "HUNDRED Sri Lanka International Series 2025",
+        "week": "10"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Orléans",
+        "name": "Orleans Masters Badminton 2025 presented by VICTOR",
+        "week": "10"
+      },
+      {
+        "category": "Junior International Grand Prix",
+        "city": "Mülheim an der Ruhr",
+        "name": "YONEX German Junior 2025",
+        "week": "10"
+      },
+      {
+        "category": "International Series",
+        "city": "Caldas da Rainha",
+        "name": "60th Portugal International Championships 2025",
+        "week": "10"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 1000",
+        "city": "Birmingham",
+        "name": "YONEX All England Open Badminton Championships 2025",
+        "week": "11"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Ruichang",
+        "name": "Ruichang China Masters 2025",
+        "week": "11"
+      },
+      {
+        "category": "Future Series",
+        "city": "Habana",
+        "name": "XXIII Torneo Internacional Giraldilla 2025",
+        "week": "11"
+      },
+      {
+        "category": "International Series",
+        "city": "Wateringen",
+        "name": "Dutch International 2025 (Cancelled)",
+        "week": "11"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Oviedo",
+        "name": "IBERDROLA Spanish Junior Open 2025",
+        "week": "11"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Basel",
+        "name": "YONEX Swiss Open 2025",
+        "week": "12"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Łódź",
+        "name": "Polish Open 2025",
+        "week": "12"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Madrid",
+        "name": "Spain Masters 2025 (Cancelled)",
+        "week": "13"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Hanoi",
+        "name": "CIPUTRA HANOI - YONEX SUNRISE Vietnam International Challenge 2025",
+        "week": "13"
+      },
+      {
+        "category": "International Series",
+        "city": "Phuket",
+        "name": "TOYOTA PHUKET International Series 2025",
+        "week": "14"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "Voiron",
+        "name": "FZ FORZA Alpes International U19 2025",
+        "week": "14"
+      },
+      {
+        "category": "Continental Individual Championships",
+        "city": "Horsens",
+        "name": "2025 European Championships",
+        "week": "15"
+      },
+      {
+        "category": "Continental Individual Championships",
+        "city": "Ningbo",
+        "name": "BANK OF NINGBO Badminton Asia Championships 2025",
+        "week": "15"
+      },
+      {
+        "category": "Continental Individual Championships",
+        "city": "Lima",
+        "name": "XXVIII YONEX Pan Am Individual Championships 2025",
+        "week": "15"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "Dubrovnik",
+        "name": "Dubrovnik VALAMAR Junior Open 2025 presented by YONEX",
+        "week": "15"
+      },
+      {
+        "category": "Future Series",
+        "city": "Cospicua",
+        "name": "Malta International 2025 presented by VICTOR",
+        "week": "17"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Nicosia",
+        "name": "Cyprus Junior 2025",
+        "week": "17"
+      },
+      {
+        "category": "Grade 1 – Team Tournaments",
+        "city": "Xiamen",
+        "name": "TotalEnergies BWF Sudirman Cup Finals 2025",
+        "week": "17"
+      },
+      {
+        "category": "International Series",
+        "city": "Luxembourg",
+        "name": "YONEX Luxembourg Open 2025",
+        "week": "18"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Taipei",
+        "name": "YONEX Taipei Open 2025",
+        "week": "19"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Guatemala",
+        "name": "Xl Guatemala International Junior U19 2025",
+        "week": "19"
+      },
+      {
+        "category": "Future Series",
+        "city": "Bratislava",
+        "name": "KAWASAKI Slovak Open 2025",
+        "week": "19"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Guadalajara",
+        "name": "V Mexican International Challenge 2025",
+        "week": "19"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Farum",
+        "name": "STATE Denmark Challenge 2025 presented by RSL",
+        "week": "19"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Svilengrad",
+        "name": "Bulgarian Junior U19 International 2025",
+        "week": "20"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Patumwan,",
+        "name": "TOYOTA Thailand Open 2025",
+        "week": "20"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Saint Denis",
+        "name": "ST DENIS Reunion Open 2025",
+        "week": "20"
+      },
+      {
+        "category": "International Series",
+        "city": "Maribor",
+        "name": "I FEEL SLOVENIA LI-NING Open 2025",
+        "week": "20"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Kuala Lumpur",
+        "name": "PERODUA Malaysia Masters 2025",
+        "week": "21"
+      },
+      {
+        "category": "International Series",
+        "city": "St Pierre",
+        "name": "FELET Mauritius International 2025 (Cancelled)",
+        "week": "21"
+      },
+      {
+        "category": "International Series",
+        "city": "Graz",
+        "name": "Austrian Open 2025",
+        "week": "21"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 750",
+        "city": "Singapore",
+        "name": "KFF Singapore Badminton Open 2025",
+        "week": "22"
+      },
+      {
+        "category": "Future Series",
+        "city": "Bonn",
+        "name": "YONEX Bonn International 2025",
+        "week": "22"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "SAINT LOUIS",
+        "name": "YONEX 3 Borders 2025",
+        "week": "22"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 1000",
+        "city": "Jakarta",
+        "name": "KAPAL API Indonesia Open 2025",
+        "week": "23"
+      },
+      {
+        "category": "Future Series",
+        "city": "Asunción",
+        "name": "Guaraní Open 2025",
+        "week": "23"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Maracay",
+        "name": "International Junior de Venezuela 2025",
+        "week": "23"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "El Campello (Alicante)",
+        "name": "Spanish International U19 2025",
+        "week": "23"
+      },
+      {
+        "category": "Continental Junior Team Championships",
+        "city": "Saipan",
+        "name": "VICTOR Oceania Junior Team Championships 2025",
+        "week": "23"
+      },
+      {
+        "category": "Future Series",
+        "city": "Maracay",
+        "name": "Venezuela Future Series 2025",
+        "week": "24"
+      },
+      {
+        "category": "Future Series",
+        "city": "Riga",
+        "name": "VICTOR Latvia International 2025",
+        "week": "24"
+      },
+      {
+        "category": "Continental Junior Individual Championships",
+        "city": "Saipan",
+        "name": "VICTOR Oceania Junior Championships 2025",
+        "week": "24"
+      },
+      {
+        "category": "International Series",
+        "city": "Saipan",
+        "name": "Northern Marianas International 2025",
+        "week": "25"
+      },
+      {
+        "category": "Future Series",
+        "city": "České Budějovice",
+        "name": "Czech International Future Series 2025",
+        "week": "25"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Council Bluffs, Iowa",
+        "name": "YONEX US Open 2025",
+        "week": "26"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "San Salvador",
+        "name": "II El Salvador Junior International 2025",
+        "week": "26"
+      },
+      {
+        "category": "International Series",
+        "city": "Bolzano",
+        "name": "YONEX Italian Open 2025",
+        "week": "26"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "PAZARDZHIK",
+        "name": "VICTOR Bulgaria Junior Challenge 2025",
+        "week": "26"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Markham Ontario",
+        "name": "YONEX Canada Open 2025",
+        "week": "27"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "Perlis",
+        "name": "PETRONAS Malaysia Junior International Challenge 2025",
+        "week": "27"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Bella Vista",
+        "name": "New Horizons  Junior International 2025",
+        "week": "27"
+      },
+      {
+        "category": "Future Series",
+        "city": "Pessac",
+        "name": "FZ FORZA Future Series Nouvelle-Aquitaine 2025",
+        "week": "27"
+      },
+      {
+        "category": "Junior International Grand Prix",
+        "city": "Tangerang Selatan",
+        "name": "YONEX SUNRISE Pembangunan Jaya Raya Junior International Grand Prix 2025",
+        "week": "28"
+      },
+      {
+        "category": "Continental Junior Team Championships",
+        "city": "Guatemala City",
+        "name": "XXXIII Pan Am Junior Championships 2025 TEAM EVENT",
+        "week": "28"
+      },
+      {
+        "category": "Continental Junior Individual Championships",
+        "city": "Guatemala City",
+        "name": "XXXIII Pan Am Junior Championships 2025",
+        "week": "29"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 750",
+        "city": "Tokyo",
+        "name": "DAIHATSU Japan Open 2025",
+        "week": "29"
+      },
+      {
+        "category": "Multi-Sport Games",
+        "city": "Mülheim an der Ruhr",
+        "name": "Rhine-Ruhr 2025 FISU World University Games (Team)",
+        "week": "29"
+      },
+      {
+        "category": "Continental Junior Team Championships",
+        "city": "Solo",
+        "name": "WONDR Badminton Asia Junior Championships 2025 (Mixed Team)",
+        "week": "29"
+      },
+      {
+        "category": "Multi-Sport Games",
+        "city": "Mülheim an der Ruhr",
+        "name": "Rhine-Ruhr 2025 FISU World University Games (Individual)",
+        "week": "30"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 1000",
+        "city": "Changzhou",
+        "name": "VICTOR China Open 2025",
+        "week": "30"
+      },
+      {
+        "category": "Future Series",
+        "city": "Chuquisaca",
+        "name": "I Torneo Internacional de Badminton Bicentenario- Sucre Bolivia 2025",
+        "week": "30"
+      },
+      {
+        "category": "Continental Junior Individual Championships",
+        "city": "Solo",
+        "name": "WONDR  Badminton Asia Junior Championships 2025 (Individual)",
+        "week": "30"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Istanbul",
+        "name": "VICTOR Türkiye Junior International 2025",
+        "week": "30"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Macau",
+        "name": "SANDS CHINA LTD Macau Open 2025",
+        "week": "31"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Birmingham",
+        "name": "YONEX All England Junior Badminton Championships 2025",
+        "week": "31"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Saipan",
+        "name": "CROWNE PLAZA Northern Marianas Open 2025",
+        "week": "32"
+      },
+      {
+        "category": "International Series",
+        "city": "Nakorn Ratchasima",
+        "name": "TOYOTA Thailand International Series 2025",
+        "week": "32"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Colombo",
+        "name": "Sri Lanka Junior International Series 2025",
+        "week": "32"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Accra",
+        "name": "JE WILSON Ghana Junior International 2025",
+        "week": "32"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Saipan",
+        "name": "CENTURY INSURANCE Saipan International 2025",
+        "week": "33"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Nakorn Ratchasima",
+        "name": "TOYOTA Thailand International Challenge 2025",
+        "week": "33"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Perak",
+        "name": "PETRONAS Malaysia International Challenge 2025",
+        "week": "33"
+      },
+      {
+        "category": "International Series",
+        "city": "Accra",
+        "name": "JE WILSON Ghana International 2025",
+        "week": "33"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Hyderabad",
+        "name": "KOTAK India Junior International Series 2025",
+        "week": "34"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Yaoundé",
+        "name": "Cameroon International 2025",
+        "week": "34"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Gentofte",
+        "name": "Danish Junior Cup 2025",
+        "week": "34"
+      },
+      {
+        "category": "Grade 1 – Individual Tournaments",
+        "city": "Paris",
+        "name": "TotalEnergies BWF World Championships 2025",
+        "week": "35"
+      },
+      {
+        "category": "Junior International Grand Prix",
+        "city": "Pune",
+        "name": "YONEX SUNRISE India Junior International Grand Prix 2025",
+        "week": "35"
+      },
+      {
+        "category": "Future Series",
+        "city": "Aguascalientes",
+        "name": "V Mexico Future Series 2025",
+        "week": "35"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Lagos",
+        "name": "Lagos International Classics 2025",
+        "week": "35"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Dublin",
+        "name": "VICTOR U19 Irish Open 2025",
+        "week": "35"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Baoji, Shaanxi Province",
+        "name": "BAOJI China Masters 2025",
+        "week": "36"
+      },
+      {
+        "category": "Future Series",
+        "city": "Guatemala",
+        "name": "Vll Guatemala Future Series 2025",
+        "week": "36"
+      },
+      {
+        "category": "Future Series",
+        "city": "LASKO",
+        "name": "I FEEL SLOVENIA LI-NING Future Series 2025",
+        "week": "36"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Bucaramanga",
+        "name": "Bucaramanga Junior International 2025",
+        "week": "36"
+      },
+      {
+        "category": "Future Series",
+        "city": "Anzali",
+        "name": "2nd Iran International Future Series Khazar (Caspian) Cup 2025",
+        "week": "36"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "Strzelce Opolskie",
+        "name": "Polish U19 Open 2025 presented by VICTOR",
+        "week": "36"
+      },
+      {
+        "category": "Grade 1 – Individual Senior Tournaments",
+        "city": "Pattaya",
+        "name": "Amazing Thailand-Pattaya BWF World Senior Championships 2025",
+        "week": "36"
+      },
+      {
+        "category": "Future Series",
+        "city": "San José",
+        "name": "II Costa Rica Future Series 2025",
+        "week": "37"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Kowloon",
+        "name": "LI-NING Hong Kong Open 2025",
+        "week": "37"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Ho Chi Minh",
+        "name": "YONEX SUNRISE Vietnam Open 2025",
+        "week": "37"
+      },
+      {
+        "category": "International Series",
+        "city": "Johor",
+        "name": "PETRONAS Malaysia International Series 2025",
+        "week": "37"
+      },
+      {
+        "category": "Future Series",
+        "city": "Kaunas",
+        "name": "RSL Lithuanian International 2025",
+        "week": "37"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Leuven",
+        "name": "YONEX Belgian International 2025",
+        "week": "37"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Mirna",
+        "name": "LI-NING Slovenia Junior International 2025",
+        "week": "37"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 750",
+        "city": "Shenzhen",
+        "name": "LI-NING China Masters 2025",
+        "week": "38"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Riau ( formerly Solo)",
+        "name": "WONDR by BNI Indonesia Masters I 2025",
+        "week": "38"
+      },
+      {
+        "category": "International Series",
+        "city": "Lima",
+        "name": "Perú International Series 2025",
+        "week": "38"
+      },
+      {
+        "category": "International Series",
+        "city": "Kraków",
+        "name": "Polish International 2025 presented by YONEX",
+        "week": "38"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Herstal",
+        "name": "YONEX Belgian Junior 2025",
+        "week": "38"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Kaohsiung",
+        "name": "VICTOR Kaohsiung Masters 2025",
+        "week": "39"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Suwon-si",
+        "name": "SUWON VICTOR Korea Open 2025",
+        "week": "39"
+      },
+      {
+        "category": "Future Series",
+        "city": "Pereira",
+        "name": "I La Perla Del Otún Future Series 2025",
+        "week": "39"
+      },
+      {
+        "category": "Future Series",
+        "city": "Kampala",
+        "name": "Kampala International 2025",
+        "week": "39"
+      },
+      {
+        "category": "Future Series",
+        "city": "Samobor",
+        "name": "VICTOR Croatian International 2025",
+        "week": "39"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Espoo",
+        "name": "RSL Finnish Junior 2025",
+        "week": "39"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Al Ain",
+        "name": "Al Ain Masters 2025",
+        "week": "40"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Guatemala",
+        "name": "Guatemala International Challenge 2025",
+        "week": "40"
+      },
+      {
+        "category": "International Challenge",
+        "city": "'s-Hertogenbosch",
+        "name": "YONEX Dutch Open 2025",
+        "week": "40"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Auckland",
+        "name": "MAXX North Harbour International 2025",
+        "week": "40"
+      },
+      {
+        "category": "Future Series",
+        "city": "Sofia",
+        "name": "YONEX Bulgarian International Championship 2025",
+        "week": "40"
+      },
+      {
+        "category": "International Series",
+        "city": "Kampala",
+        "name": "Uganda International Series 2025",
+        "week": "40"
+      },
+      {
+        "category": "Grade 1 – Junior Team Tournaments",
+        "city": "Guwahati, Assam",
+        "name": "YONEX SUNRISE BWF World Junior Mixed Team Championships 2025",
+        "week": "41"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Vantaa",
+        "name": "CLASH OF CLANS Arctic Open 2025 powered by YONEX",
+        "week": "41"
+      },
+      {
+        "category": "International Challenge",
+        "city": "ISTANBUL",
+        "name": "VICTOR Türkiye International Challenge 2025",
+        "week": "41"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Lidcombe",
+        "name": "ROKETTO Sydney International 2025",
+        "week": "41"
+      },
+      {
+        "category": "International Series",
+        "city": "Oran",
+        "name": "Algeria International 2025",
+        "week": "41"
+      },
+      {
+        "category": "Grade 1 – Individual Junior Tournaments",
+        "city": "Guwahati, Assam",
+        "name": "YONEX SUNRISE BWF World Junior Championships 2025",
+        "week": "42"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 750",
+        "city": "Odense",
+        "name": "VICTOR Denmark Open 2025",
+        "week": "42"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Iskandar Puteri, Johor",
+        "name": "ALLIANZ Malaysia Super 100 2025",
+        "week": "42"
+      },
+      {
+        "category": "International Series",
+        "city": "Cairo",
+        "name": "Egypt International 2025",
+        "week": "42"
+      },
+      {
+        "category": "International Series",
+        "city": "Santo Domingo",
+        "name": "XIV Santo Domingo Open 2025",
+        "week": "42"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Bendigo",
+        "name": "YONEX Bendigo International 2025",
+        "week": "42"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Prague 6",
+        "name": "YONEX Czech Open 2025",
+        "week": "42"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Odense C",
+        "name": "VICTOR Denmark Junior 2025",
+        "week": "42"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Cairo",
+        "name": "Egypt Junior International 2025",
+        "week": "43"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Medan",
+        "name": "WONDR by BNI Indonesia Masters II 2025",
+        "week": "43"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 750",
+        "city": "Cesson-Sévigné",
+        "name": "YONEX French Open 2025",
+        "week": "43"
+      },
+      {
+        "category": "International Series",
+        "city": "Ninh Binh",
+        "name": "LI-NING Vietnam International Series 2025",
+        "week": "43"
+      },
+      {
+        "category": "International Series",
+        "city": "Maracay",
+        "name": "II Venezuela International 2025",
+        "week": "43"
+      },
+      {
+        "category": "Future Series",
+        "city": "Kibbutz Hatzor",
+        "name": "YONEX Israel Open 2025 (Cancelled)",
+        "week": "43"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Tartu",
+        "name": "YONEX Estonian Junior 2025",
+        "week": "43"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Mangalore",
+        "name": "Mangalore India International Challenge 2025",
+        "week": "44"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Saarbrücken",
+        "name": "HYLO Open 2025",
+        "week": "44"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Bangkok",
+        "name": "YONEX CP Junior International Series 2025",
+        "week": "44"
+      },
+      {
+        "category": "International Series",
+        "city": "Bac Giang",
+        "name": "FELET Vietnam International Series 2025",
+        "week": "44"
+      },
+      {
+        "category": "International Challenge",
+        "city": "tbc",
+        "name": "China International Challenge 2025 (Cancelled)",
+        "week": "44"
+      },
+      {
+        "category": "International Series",
+        "city": "México",
+        "name": "XVI Mexican International 2025",
+        "week": "44"
+      },
+      {
+        "category": "International Series",
+        "city": "Budapest",
+        "name": "50th VICTOR FZ FORZA Hungarian International Championships 2025",
+        "week": "44"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Kaunas",
+        "name": "RSL Lithuanian Junior 2025",
+        "week": "44"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Iksan City",
+        "name": "IKSAN VICTOR Korea Masters 2025",
+        "week": "45"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Hyderabad",
+        "name": "Telangana India International Challenge 2025",
+        "week": "45"
+      },
+      {
+        "category": "Future Series",
+        "city": "Tacarigua",
+        "name": "Trinidad and Tobago International 2025",
+        "week": "45"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Lima",
+        "name": "II COPA CLUB DE REGATAS LIMA International Junior 2025",
+        "week": "45"
+      },
+      {
+        "category": "International Series",
+        "city": "Sandefjord",
+        "name": "FZ FORZA Norwegian International 2025",
+        "week": "45"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Białystok",
+        "name": "YONEX Polish International U19 2025",
+        "week": "45"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Kumamoto City",
+        "name": "Kumamoto Masters Japan 2025",
+        "week": "46"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Yogyakarta",
+        "name": "WONDR BY BNI Indonesia International Challenge I 2025",
+        "week": "46"
+      },
+      {
+        "category": "International Series",
+        "city": "Paramaribo",
+        "name": "XVI Suriname International 2025",
+        "week": "46"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Dublin",
+        "name": "AIG VICTOR Irish Open 2025",
+        "week": "46"
+      },
+      {
+        "category": "International Series",
+        "city": "Lusaka",
+        "name": "Zambia International 2025",
+        "week": "46"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Orlová-Lutyně",
+        "name": "Czech Junior International 2025",
+        "week": "46"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Pathum Thani",
+        "name": "BAT YONEX Pathum Thani Junior International Series 2025",
+        "week": "47"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Sydney",
+        "name": "SATHIO GROUP Australian Open 2025",
+        "week": "47"
+      },
+      {
+        "category": "International Series",
+        "city": "Guatemala",
+        "name": "Guatemala International Series 2025",
+        "week": "47"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Yogyakarta",
+        "name": "WONDR BY BNI Indonesia International Challenge II 2025",
+        "week": "47"
+      },
+      {
+        "category": "Future Series",
+        "city": "Ankara",
+        "name": "VICTOR Türkiye International Championships 2025",
+        "week": "47"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Glasgow",
+        "name": "Scottish Open 2025",
+        "week": "47"
+      },
+      {
+        "category": "Future Series",
+        "city": "Tlokweng",
+        "name": "Botswana International 2025",
+        "week": "47"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Trenčín",
+        "name": "Slovak Junior 2025",
+        "week": "47"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Lucknow",
+        "name": "SYED MODI India International 2025",
+        "week": "48"
+      },
+      {
+        "category": "Future Series",
+        "city": "San Salvador",
+        "name": "VII El Salvador International 2025",
+        "week": "48"
+      },
+      {
+        "category": "International Series",
+        "city": "Cardiff",
+        "name": "Welsh International Open 2025",
+        "week": "48"
+      },
+      {
+        "category": "Future Series",
+        "city": "Cape Town",
+        "name": "AQUASPRINGS South Africa International 2025",
+        "week": "48"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Caldas da Rainha",
+        "name": "XVII Portugal Junior International 2025",
+        "week": "48"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "Miryang city",
+        "name": "WONCHEON YONEX Miryang Korea Junior International Challenge 2025",
+        "week": "49"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Cape Town",
+        "name": "AQUASPRINGS South Africa Junior International 2025",
+        "week": "49"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Guwahati",
+        "name": "YONEX-SUNRISE Guwahati Masters 2025",
+        "week": "49"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Markham",
+        "name": "2025 YONEX Canadian International Challenge",
+        "week": "49"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Tallinn",
+        "name": "2026 European Men's & Women's Team Championships Qualification - Estonia",
+        "week": "49"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Tallinn",
+        "name": "2026 European Men's & Women's Team Championships Qualification - Estonia",
+        "week": "49"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Dublin",
+        "name": "2026 European Men's & Women's Team Championships Qualification - Ireland",
+        "week": "49"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Prague",
+        "name": "2026 European Men's & Women's Team Championships Qualification - Czechia",
+        "week": "49"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Caldas da Rainha",
+        "name": "2026 European Men's & Women's Team Championships Qualification - Portugal",
+        "week": "49"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Sofia",
+        "name": "2026 European Men's & Women's Team Championships Qualification - Bulgaria",
+        "week": "49"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Milton Keynes",
+        "name": "2026 European Men's & Women's Team Championships Qualification - England",
+        "week": "49"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Druskininkai",
+        "name": "2026 European Men's & Women's Team Championships Qualification - Lithuania",
+        "week": "49"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Kelkheim-Fischbach",
+        "name": "2026 European Men's & Women's Team Championships Qualification - Germany",
+        "week": "49"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Cuttack",
+        "name": "Odisha Masters 2025",
+        "week": "50"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Dhaka",
+        "name": "YONEX SUNRISE Bangladesh International Challenge 2025",
+        "week": "51"
+      },
+      {
+        "category": "HSBC BWF World Tour Finals",
+        "city": "Hangzhou",
+        "name": "HSBC BWF World Tour Finals 2025",
+        "week": "51"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Mülheim/Ruhr",
+        "name": "YONEX German Ruhr U19 International 2025",
+        "week": "51"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Astana",
+        "name": "Astana International Challenge 2025",
+        "week": "51"
+      },
+      {
+        "category": "International Series",
+        "city": "Dhaka",
+        "name": "YONEX SUNRISE Bangladesh International Series 2025",
+        "week": "52"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Ulaanbaatar",
+        "name": "Mongolia International Challenge 2025 (Cancelled)",
+        "week": "52"
+      },
+      {
+        "category": "Other",
+        "city": "Shenzhen",
+        "name": "KING CUP International Badminton Open 2025",
+        "week": "52"
+      }
+    ],
+    "2026": [
+      {
+        "category": "HSBC BWF World Tour Super 1000",
+        "city": "Kuala Lumpur",
+        "name": "PETRONAS Malaysia Open 2026",
+        "week": "02"
+      },
+      {
+        "category": "International Series",
+        "city": "Tallinn",
+        "name": "YONEX Estonian International 2026",
+        "week": "02"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 750",
+        "city": "New Delhi",
+        "name": "YONEX-SUNRISE India Open 2026",
+        "week": "03"
+      },
+      {
+        "category": "International Series",
+        "city": "Uppsala",
+        "name": "VICTOR Swedish Open 2026 hosted by PONG",
+        "week": "03"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Jakarta",
+        "name": "DAIHATSU Indonesia Masters 2026",
+        "week": "04"
+      },
+      {
+        "category": "Future Series",
+        "city": "Reykjavik",
+        "name": "RSL Iceland International 2026",
+        "week": "04"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Bangkok",
+        "name": "Thailand Masters 2026",
+        "week": "05"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "TBC",
+        "name": "7th Iran Junior International Series 2026 (Cancelled)",
+        "week": "05"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Urmia",
+        "name": "34th Iran Fajr International Challenge 2026 (Cancelled)",
+        "week": "06"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Qingdao",
+        "name": "TSINGTAO Badminton Asia Team Championships 2026",
+        "week": "06"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Baku",
+        "name": "Azerbaijan International 2026",
+        "week": "06"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Kostanay",
+        "name": "Kazakhstan Junior International Series 2026 (Cancelled)",
+        "week": "06"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "Pécs",
+        "name": "16th Multi Alarm Hungarian Junior Championships 2026 presented by VICTOR",
+        "week": "06"
+      },
+      {
+        "category": "Continental Individual Championships",
+        "city": "Auckland",
+        "name": "VICTOR Oceania Championships 2026",
+        "week": "06"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Gaborone",
+        "name": "All Africa Men's & Women's Team Championships 2026",
+        "week": "07"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Başakşehir/İstanbul",
+        "name": "2026 European Men's & Women's Team Championships",
+        "week": "07"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Guatemala City",
+        "name": "Pan Am M&F Cup 2026",
+        "week": "07"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "Auckland",
+        "name": "VICTOR Oceania Men's  and Women's Team Championships 2026",
+        "week": "07"
+      },
+      {
+        "category": "Continental Individual Championships",
+        "city": "Gaborone",
+        "name": "All Africa Individual Championships 2026",
+        "week": "07"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Kampala",
+        "name": "Uganda International Challenge 2026",
+        "week": "08"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Kampala",
+        "name": "Uganda Junior International 2026",
+        "week": "09"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Mülheim an der Ruhr",
+        "name": "YONEX German Open 2026",
+        "week": "09"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Singapore",
+        "name": "SBH Singapore International Challenge 2026",
+        "week": "09"
+      },
+      {
+        "category": "Junior International Grand Prix",
+        "city": "Haarlem",
+        "name": "YONEX Dutch Junior International 2026",
+        "week": "09"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 1000",
+        "city": "Birmingham",
+        "name": "All England Open Badminton Championships 2026",
+        "week": "10"
+      },
+      {
+        "category": "International Series",
+        "city": "Singapore",
+        "name": "SBH Singapore International Series 2026",
+        "week": "10"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "La Habana",
+        "name": "I Junior International of  Havana 2026",
+        "week": "10"
+      },
+      {
+        "category": "International Series",
+        "city": "Caldas da Rainha",
+        "name": "61st Portugal International Championships 2026",
+        "week": "10"
+      },
+      {
+        "category": "Junior International Grand Prix",
+        "city": "Lüdinghausen",
+        "name": "YONEX German Junior 2026",
+        "week": "10"
+      },
+      {
+        "category": "International Series",
+        "city": "Colombo",
+        "name": "Sri Lanka International Series 2026 (Cancelled)",
+        "week": "11"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Basel",
+        "name": "YONEX Swiss Open 2026",
+        "week": "11"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Ruichang",
+        "name": "Ruichang China Masters 2026",
+        "week": "11"
+      },
+      {
+        "category": "Future Series",
+        "city": "La Habana",
+        "name": "XXIV International Giraldilla 2026",
+        "week": "11"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Oviedo",
+        "name": "IBERDROLA Spanish Open 2026",
+        "week": "11"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Colombo",
+        "name": "Sri Lanka International Challenge 2026  (Cancelled)",
+        "week": "12"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Orléans",
+        "name": "Orleans Masters Badminton 2026 presented by VICTOR",
+        "week": "12"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Łódź",
+        "name": "Polish Open 2026 presented by YONEX",
+        "week": "12"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Hanoi",
+        "name": "CIPUTRA HANOI - YONEX SUNRISE Vietnam International Challenge 2026",
+        "week": "13"
+      },
+      {
+        "category": "International Challenge",
+        "city": "São Paulo",
+        "name": "Brazil International Challenge 2026",
+        "week": "13"
+      },
+      {
+        "category": "International Series",
+        "city": "La Habana",
+        "name": "Cuba International Series 2026",
+        "week": "14"
+      },
+      {
+        "category": "Future Series",
+        "city": "Pécs",
+        "name": "1st Hungarian Future Series 2026 presented by VICTOR",
+        "week": "14"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "VOIRON",
+        "name": "FZ FORZA Alpes International U19 2026",
+        "week": "14"
+      },
+      {
+        "category": "Continental Individual Championships",
+        "city": "Huelva",
+        "name": "2026 European Championships",
+        "week": "15"
+      },
+      {
+        "category": "Continental Individual Championships",
+        "city": "Ningbo",
+        "name": "BANK OF NINGBO Badminton Asia Championships 2026",
+        "week": "15"
+      },
+      {
+        "category": "Continental Individual Championships",
+        "city": "Lima",
+        "name": "XXIX YONEX Pan Am Individual Championships 2026",
+        "week": "15"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Uppsala",
+        "name": "Swedish Junior 2026",
+        "week": "15"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Svilengrad",
+        "name": "2026 Bulgarian Junior U19 International",
+        "week": "16"
+      },
+      {
+        "category": "Future Series",
+        "city": "Cospicua",
+        "name": "Malta International 2026 presented by VICTOR",
+        "week": "16"
+      },
+      {
+        "category": "Future Series",
+        "city": "Vantaa",
+        "name": "YONEX Finnish International 2026",
+        "week": "17"
+      },
+      {
+        "category": "Grade 1 – Team Tournaments",
+        "city": "Horsens",
+        "name": "BWF Thomas & Uber Cup Finals 2026",
+        "week": "17"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Nicosia",
+        "name": "VICTOR Cyprus Junior 2026",
+        "week": "17"
+      },
+      {
+        "category": "Future Series",
+        "city": "Lima",
+        "name": "Perú Future Series 2026",
+        "week": "18"
+      },
+      {
+        "category": "International Series",
+        "city": "Luxembourg",
+        "name": "YONEX Luxembourg Open 2026",
+        "week": "18"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Dubrovnik",
+        "name": "DUBROVNIK VALAMAR Junior Open 2026 presented by YONEX",
+        "week": "18"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Aguascalientes",
+        "name": "VI Mexican International Challenge 2026",
+        "week": "19"
+      },
+      {
+        "category": "Future Series",
+        "city": "Bratislava",
+        "name": "KAWASAKI Slovak Open 2026",
+        "week": "19"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Guatemala",
+        "name": "Xll Guatemala International Junior 2026",
+        "week": "19"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Patumwan",
+        "name": "TOYOTA Thailand Open 2026",
+        "week": "20"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Baoji",
+        "name": "BAOJI China Masters 2026",
+        "week": "20"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Saint Denis",
+        "name": "SAINT DENIS Reunion Open 2026",
+        "week": "20"
+      },
+      {
+        "category": "International Series",
+        "city": "Maribor",
+        "name": "I FEEL SLOVENIA LI-NING Open 2026",
+        "week": "20"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Kuala Lumpur",
+        "name": "PERODUA Malaysia Masters 2026",
+        "week": "21"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Pazardzhik",
+        "name": "VICTOR Bulgaria Junior Open 2026",
+        "week": "21"
+      },
+      {
+        "category": "International Series",
+        "city": "Graz",
+        "name": "Austrian Open 2026",
+        "week": "21"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Kaunas",
+        "name": "RSL Lithuanian Junior 2026",
+        "week": "21"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 750",
+        "city": "Singapore",
+        "name": "KFF Singapore Badminton Open 2026",
+        "week": "22"
+      },
+      {
+        "category": "Future Series",
+        "city": "Bonn",
+        "name": "YONEX Bonn International 2026",
+        "week": "22"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Brøndby",
+        "name": "STATE Denmark Challenge 2026 presented by RSL",
+        "week": "22"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "Saint Louis",
+        "name": "YONEX 3 Borders 2026",
+        "week": "22"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 1000",
+        "city": "Jakarta",
+        "name": "POLYTRON Indonesia Open 2026",
+        "week": "23"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Maracay",
+        "name": "II Internacional Junior de Venezuela 2026 (Cancelled)",
+        "week": "23"
+      },
+      {
+        "category": "Future Series",
+        "city": "Riga",
+        "name": "RSL Latvia International 2026",
+        "week": "23"
+      },
+      {
+        "category": "Future Series",
+        "city": "Ciudad del Este",
+        "name": "Paraguay Open 2026",
+        "week": "23"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Valencia (Valencia)",
+        "name": "Spanish International 2026",
+        "week": "23"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Sydney",
+        "name": "SATHIO GROUP Australian Badminton Open 2026",
+        "week": "24"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Phuket",
+        "name": "TOYOTA Phuket International Challenge 2026",
+        "week": "24"
+      },
+      {
+        "category": "Future Series",
+        "city": "Caracas",
+        "name": "III Venezuela Future Series 2026 (Cancelled)",
+        "week": "24"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Valence",
+        "name": "Valence Alpes International 2026 presented by FZ FORZA",
+        "week": "24"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Macau",
+        "name": "SANDS CHINA LTD. Macau Open 2026",
+        "week": "25"
+      },
+      {
+        "category": "Future Series",
+        "city": "České Budějovice",
+        "name": "Czech International Future Series 2026",
+        "week": "25"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Fullerton, CA",
+        "name": "YONEX US Open 2026",
+        "week": "26"
+      },
+      {
+        "category": "International Series",
+        "city": "Bolzano",
+        "name": "YONEX Italian Open 2026",
+        "week": "26"
+      },
+      {
+        "category": "Continental Junior Team Championships",
+        "city": "Yatsushiro",
+        "name": "YATSUSHIRO Badminton Asia Junior Championships 2026 (Team)",
+        "week": "26"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Markham Ontario",
+        "name": "YONEX Canada Open 2026",
+        "week": "27"
+      },
+      {
+        "category": "Continental Junior Individual Championships",
+        "city": "Yatsushiro",
+        "name": "YATSUSHIRO Badminton Asia Junior Championships 2026 (Individual)",
+        "week": "27"
+      },
+      {
+        "category": "International Series",
+        "city": "Lima",
+        "name": "Perú International Series 2026",
+        "week": "27"
+      },
+      {
+        "category": "Future Series",
+        "city": "Pessac",
+        "name": "FZ FORZA Future Series Nouvelle-Aquitaine 2026",
+        "week": "27"
+      },
+      {
+        "category": "Junior International Grand Prix",
+        "city": "Tangerang Selatan",
+        "name": "YONEX SUNRISE Pembangunan Jaya Raya Junior International Grand Prix 2026",
+        "week": "28"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "San Salvador",
+        "name": "III Junior El Salvador International U19 2026",
+        "week": "28"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "Francavilla Fontana (BR)",
+        "name": "Italian Junior 2026 (Cancelled)",
+        "week": "28"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 750",
+        "city": "Tokyo",
+        "name": "DAIHATSU Japan Open 2026",
+        "week": "29"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Saipan",
+        "name": "YONEX Northern Marianas Open 2026",
+        "week": "29"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Birmingham",
+        "name": "YONEX All England Junior Badminton Championships 2026",
+        "week": "29"
+      },
+      {
+        "category": "Continental Junior Team Championships",
+        "city": "João Pessoa",
+        "name": "XXXIV YONEX Pan Am Junior Championships 2026 - Team Event",
+        "week": "29"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 1000",
+        "city": "Changzhou",
+        "name": "VICTOR China Open 2026",
+        "week": "30"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Saipan",
+        "name": "CROWNE PLAZA Saipan International 2026",
+        "week": "30"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "Kuala Lumpur",
+        "name": "PETRONAS Malaysia Junior International Challenge 2026",
+        "week": "30"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Istanbul",
+        "name": "NAVEK Türkiye Junior International 2026",
+        "week": "30"
+      },
+      {
+        "category": "Continental Junior Individual Championships",
+        "city": "Joao Pessoa",
+        "name": "XXXIV YONEX Pan Am Junior Championships 2026",
+        "week": "30"
+      },
+      {
+        "category": "Future Series",
+        "city": "Rose Hill",
+        "name": "FELET Mauritius International 2026 (Cancelled)",
+        "week": "30"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Taipei",
+        "name": "YONEX Taipei Open 2026",
+        "week": "31"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Manila",
+        "name": "Philippine International Challenge 2026",
+        "week": "31"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Asan",
+        "name": "VICTOR Korea Masters 2026",
+        "week": "32"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Mandaluyong City",
+        "name": "Philippines Junior International Series 2026",
+        "week": "32"
+      },
+      {
+        "category": "International Series",
+        "city": "Kingston",
+        "name": "Jamaica International 2026",
+        "week": "32"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Dublin",
+        "name": "VICTOR U19 Irish Open 2026",
+        "week": "32"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Accra",
+        "name": "JE WILSON Ghana Junior International 2026 (Cancelled)",
+        "week": "32"
+      },
+      {
+        "category": "Future Series",
+        "city": "Sucre - Chuquisaca",
+        "name": "II Internacional Badminton Sucre Capital de Bolivia 2026",
+        "week": "33"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Ipoh",
+        "name": "PETRONAS Malaysia International Challenge 2026",
+        "week": "33"
+      },
+      {
+        "category": "International Series",
+        "city": "Accra",
+        "name": "JE WILSON Ghana International 2026",
+        "week": "33"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Bella Vista",
+        "name": "New Horizons Academy Junior International 2026",
+        "week": "33"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Baku",
+        "name": "Azerbaijan Junior Open 2026",
+        "week": "33"
+      },
+      {
+        "category": "Grade 1 – Individual Tournaments",
+        "city": "New Delhi",
+        "name": "BWF World Championships 2026",
+        "week": "34"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Hyderabad",
+        "name": "KOTAK India Junior International Series 2026",
+        "week": "34"
+      },
+      {
+        "category": "International Series",
+        "city": "Bac Ninh",
+        "name": "LI-NING Vietnam International Series 2026",
+        "week": "34"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Singapore",
+        "name": "ANTICA Singapore International Challenge 2026",
+        "week": "34"
+      },
+      {
+        "category": "Future Series",
+        "city": "Dominican Republic",
+        "name": "Dominican International 2026",
+        "week": "34"
+      },
+      {
+        "category": "Continental Junior Individual Championships",
+        "city": "Tatabánya",
+        "name": "2026 European Junior Championships",
+        "week": "34"
+      },
+      {
+        "category": "Junior International Grand Prix",
+        "city": "Pune",
+        "name": "YONEX SUNRISE India Junior International Grand Prix 2026",
+        "week": "35"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Pontianak",
+        "name": "POLYTRON Pontianak International Challenge 2026",
+        "week": "35"
+      },
+      {
+        "category": "Future Series",
+        "city": "Aguascalientes",
+        "name": "VI Mexico Future Series 2026",
+        "week": "35"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Lagos",
+        "name": "Lagos International Classics 2026",
+        "week": "35"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Pontianak",
+        "name": "POLYTRON Pontianak Indonesia Masters 2026",
+        "week": "36"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 750",
+        "city": "Shenzhen",
+        "name": "LI-NING China Masters 2026",
+        "week": "36"
+      },
+      {
+        "category": "International Series",
+        "city": "Perak",
+        "name": "PETRONAS Malaysia International Series 2026",
+        "week": "36"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Bucaramanga",
+        "name": "BGA Junior Internacional de Badminton 2026",
+        "week": "36"
+      },
+      {
+        "category": "Future Series",
+        "city": "Guatemala",
+        "name": "Vlll Guatemala Future Series 2026",
+        "week": "36"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Yaoundé",
+        "name": "Cameroon International 2026",
+        "week": "36"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Strzelce Opolskie",
+        "name": "Polish U19 Open 2026 presented by VICTOR",
+        "week": "36"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Ho Chi Mihh",
+        "name": "YONEX SUNRISE Vietnam Open 2026",
+        "week": "37"
+      },
+      {
+        "category": "Future Series",
+        "city": "San José",
+        "name": "III Costa Rica Future Series 2026",
+        "week": "37"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "San José",
+        "name": "I Costa Rica International Junior U19 2026 (Cancelled)",
+        "week": "37"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Nieuwpoort",
+        "name": "YONEX Belgian International 2026",
+        "week": "37"
+      },
+      {
+        "category": "Future Series",
+        "city": "Kaunas",
+        "name": "RSL Lithuanian International 2026",
+        "week": "37"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Gentofte",
+        "name": "Danish Junior Cup 2026",
+        "week": "37"
+      },
+      {
+        "category": "International Series",
+        "city": "Nakhon Sawan",
+        "name": "TOYOTA Nakhon Sawan International Series 2026",
+        "week": "38"
+      },
+      {
+        "category": "International Series",
+        "city": "Krakow",
+        "name": "Polish International 2026 presented by YONEX",
+        "week": "38"
+      },
+      {
+        "category": "Future Series",
+        "city": "Pereira",
+        "name": "II La Perla del Otún Future Series 2026 (Cancelled)",
+        "week": "38"
+      },
+      {
+        "category": "International Series",
+        "city": "Thies",
+        "name": "Senegal International 2026 (New Dates)",
+        "week": "38"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Herstal",
+        "name": "YONEX Belgian Junior 2026",
+        "week": "38"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Thies",
+        "name": "Senegal Junior International 2026 (New Dates)",
+        "week": "39"
+      },
+      {
+        "category": "International Series",
+        "city": "Caracas",
+        "name": "III Venezuela International Series 2026 (Cancelled)",
+        "week": "39"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Surabaya",
+        "name": "POLYTRON Surabaya International Challenge 2026",
+        "week": "39"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Lima",
+        "name": "III Copa Regatas Junior International 2026",
+        "week": "39"
+      },
+      {
+        "category": "Future Series",
+        "city": "Donja Stubica",
+        "name": "VICTOR Croatian International 2026",
+        "week": "39"
+      },
+      {
+        "category": "Future Series",
+        "city": "Kampala",
+        "name": "Kampala International 2026",
+        "week": "39"
+      },
+      {
+        "category": "Multi-Sport Games",
+        "city": "Ichinomiya",
+        "name": "20th Asian Games Aichi-Nagoya 2026 (Individual)",
+        "week": "39"
+      },
+      {
+        "category": "Continental Junior Team Championships",
+        "city": "Cairo",
+        "name": "All Africa Junior Championships 2026 (Team)",
+        "week": "39"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Dubai",
+        "name": "Abu Dhabi Masters 2026 (Cancelled)",
+        "week": "40"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Guatemala",
+        "name": "Guatemala International Challenge 2026",
+        "week": "40"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Auckland",
+        "name": "MAXX North Harbour International 2026",
+        "week": "40"
+      },
+      {
+        "category": "International Challenge",
+        "city": "'s-Hertogenbosch",
+        "name": "YONEX Dutch Open 2026",
+        "week": "40"
+      },
+      {
+        "category": "Continental Junior Individual Championships",
+        "city": "Cairo",
+        "name": "All Africa Junior Championships 2026 (Individual)",
+        "week": "40"
+      },
+      {
+        "category": "Future Series",
+        "city": "Sofia",
+        "name": "YONEX Bulgarian International Championship 2026",
+        "week": "40"
+      },
+      {
+        "category": "International Series",
+        "city": "Kampala",
+        "name": "Uganda International Series 2026",
+        "week": "40"
+      },
+      {
+        "category": "Grade 1 – Junior Team Tournaments",
+        "city": "Cairo",
+        "name": "VICTOR BWF World Junior Team Championships 2026",
+        "week": "41"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Vantaa",
+        "name": "CLASH OF CLANS Arctic Open 2026 powered by YONEX",
+        "week": "41"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Istanbul",
+        "name": "NAVEK Türkiye International Challenge 2026",
+        "week": "41"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Bendigo",
+        "name": "YONEX Bendigo International 2026",
+        "week": "41"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Brookshire",
+        "name": "Arise International Challenge 2026",
+        "week": "41"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Mülheim/Ruhr",
+        "name": "YONEX German Ruhr U19 International 2026",
+        "week": "41"
+      },
+      {
+        "category": "Grade 1 – Individual Junior Tournaments",
+        "city": "Cairo",
+        "name": "VICTOR BWF World Junior Championships 2026",
+        "week": "41"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 750",
+        "city": "Odense",
+        "name": "VICTOR Denmark Open 2026",
+        "week": "42"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Johor",
+        "name": "ALLIANZ Malaysia Super 100 2026",
+        "week": "42"
+      },
+      {
+        "category": "International Series",
+        "city": "Santo Domingo",
+        "name": "XV Santo Domingo Open 2026",
+        "week": "42"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Lidcombe",
+        "name": "ROKETTO Sydney International 2026",
+        "week": "42"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Prague 6",
+        "name": "YONEX BYD Czech Open 2026",
+        "week": "42"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Odense C",
+        "name": "VICTOR Denmark Junior 2026",
+        "week": "42"
+      },
+      {
+        "category": "Future Series",
+        "city": "TBC",
+        "name": "3rd Iran International Future Series Khazar (Caspian) Cup 2026 (Cancelled)",
+        "week": "43"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 750",
+        "city": "Paris",
+        "name": "YONEX French Open 2026",
+        "week": "43"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Kudus",
+        "name": "POLYTRON Kudus Indonesia Masters 2026",
+        "week": "43"
+      },
+      {
+        "category": "Future Series",
+        "city": "Pyrgos",
+        "name": "Hellas International 2026",
+        "week": "43"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Lima",
+        "name": "Peru International Challenge 2026",
+        "week": "43"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Doha",
+        "name": "1st Qatar Junior International Series 2026 (Cancelled)",
+        "week": "43"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Bengaluru, Karnataka",
+        "name": "KBA DIAMOND JUBILEE India International Challenge 2026",
+        "week": "44"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Saarbrücken",
+        "name": "HYLO Open 2026",
+        "week": "44"
+      },
+      {
+        "category": "Future Series",
+        "city": "Doha",
+        "name": "1st Qatar Future Series 2026 (Cancelled)",
+        "week": "44"
+      },
+      {
+        "category": "International Series",
+        "city": "TBC",
+        "name": "XVII Mexican International 2026",
+        "week": "44"
+      },
+      {
+        "category": "International Series",
+        "city": "Budapest",
+        "name": "51st VICTOR FZ FORZA Hungarian International Championships 2026",
+        "week": "44"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Slovenj Gradec",
+        "name": "LI-NING Slovenia Junior International 2026",
+        "week": "44"
+      },
+      {
+        "category": "Grade 1 – Individual Junior Tournaments",
+        "city": "Dakar",
+        "name": "Youth Olympic Games Dakar 2026",
+        "week": "44"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Hyderabad, Telangana",
+        "name": "Telangana India International Challenge 2026",
+        "week": "45"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Yeosu city",
+        "name": "YEOSU VICTOR Korea Open 2026",
+        "week": "45"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Bangkok",
+        "name": "YONEX BTY Junior International Series 2026",
+        "week": "45"
+      },
+      {
+        "category": "Future Series",
+        "city": "Georgetown",
+        "name": "Guyana GNR International 2026 (Cancelled)",
+        "week": "45"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Nan'an",
+        "name": "WANG WENJIAO CUP Nan'an China International Challenge 2026",
+        "week": "45"
+      },
+      {
+        "category": "Future Series",
+        "city": "Sandefjord",
+        "name": "FZ FORZA Norwegian International 2026",
+        "week": "45"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Białystok",
+        "name": "YONEX Polish International U19 2026",
+        "week": "45"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Kudus",
+        "name": "MILKLIFE Indonesia Junior International Series 2026",
+        "week": "46"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Kumamoto",
+        "name": "Kumamoto Masters Japan 2026",
+        "week": "46"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Kaohsiung",
+        "name": "VICTOR Kaohsiung Masters 2026",
+        "week": "46"
+      },
+      {
+        "category": "International Series",
+        "city": "Paramaribo",
+        "name": "XVII Suriname International 2026",
+        "week": "46"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Dublin",
+        "name": "AIG VICTOR Irish Open 2026",
+        "week": "46"
+      },
+      {
+        "category": "International Series",
+        "city": "Adelaide",
+        "name": "YONEX South Australia International 2026",
+        "week": "46"
+      },
+      {
+        "category": "International Series",
+        "city": "Lusaka",
+        "name": "Zambia International 2026",
+        "week": "46"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Orlová-Lutyně",
+        "name": "Czech Junior Orlová International 2026",
+        "week": "46"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "Pathum Thani",
+        "name": "MITH YONEX Pathumthani Junior International Challenge 2026",
+        "week": "47"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 500",
+        "city": "Hong Kong, China",
+        "name": "LI-NING Hong Kong Open 2026",
+        "week": "47"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Yogyakarta",
+        "name": "POLYTRON Yogyakarta International Challenge 2026",
+        "week": "47"
+      },
+      {
+        "category": "International Series",
+        "city": "Guatemala",
+        "name": "Guatemala International Series 2026",
+        "week": "47"
+      },
+      {
+        "category": "Future Series",
+        "city": "Ankara",
+        "name": "NAVEK Türkiye International Future Series 2026",
+        "week": "47"
+      },
+      {
+        "category": "Future Series",
+        "city": "Albert Park",
+        "name": "YONEX Melbourne International 2026",
+        "week": "47"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Glasgow",
+        "name": "Scottish Open 2026",
+        "week": "47"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Púchov",
+        "name": "KAWASAKI Slovak Junior 2026",
+        "week": "47"
+      },
+      {
+        "category": "Future Series",
+        "city": "Gaborone",
+        "name": "Botswana International 2026 (Cancelled)",
+        "week": "47"
+      },
+      {
+        "category": "HSBC BWF World Tour Super 300",
+        "city": "Lucknow",
+        "name": "Syed Modi India International 2026",
+        "week": "48"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Bangkok",
+        "name": "TOYOTA International Challenge 2026",
+        "week": "48"
+      },
+      {
+        "category": "Future Series",
+        "city": "San Salvador",
+        "name": "VIII El Salvador International 2026",
+        "week": "48"
+      },
+      {
+        "category": "Future Series",
+        "city": "Cape Town",
+        "name": "South Africa International 2026",
+        "week": "48"
+      },
+      {
+        "category": "International Series",
+        "city": "Cardiff",
+        "name": "YONEX Welsh International Open 2026",
+        "week": "48"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Caldas da Rainha",
+        "name": "XVIII Portugal Junior International 2026",
+        "week": "48"
+      },
+      {
+        "category": "Junior International Challenge",
+        "city": "Miryang city",
+        "name": "WONCHEON YONEX Korea Junior International Challenge 2026",
+        "week": "49"
+      },
+      {
+        "category": "Junior Future Series",
+        "city": "Cape Town",
+        "name": "South Africa Junior International 2026",
+        "week": "49"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Guwahati",
+        "name": "Guwahati Masters 2026",
+        "week": "49"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Markham",
+        "name": "2026 YONEX Canadian International Challenge",
+        "week": "49"
+      },
+      {
+        "category": "International Series",
+        "city": "TBC",
+        "name": "FELET Vietnam International Series 2026",
+        "week": "49"
+      },
+      {
+        "category": "Continental Team Championships",
+        "city": "-",
+        "name": "2027 European Mixed Team Championships Qualification",
+        "week": "49"
+      },
+      {
+        "category": "International Series",
+        "city": "Algiers",
+        "name": "Algeria International 2026",
+        "week": "49"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Singapore",
+        "name": "Singapore Junior International Series 2026",
+        "week": "50"
+      },
+      {
+        "category": "BWF Tour Super 100",
+        "city": "Cuttack",
+        "name": "Odisha Masters 2026",
+        "week": "50"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Taipei City",
+        "name": "Taipei Junior International Series 2026",
+        "week": "50"
+      },
+      {
+        "category": "International Series",
+        "city": "Los Angeles",
+        "name": "LA Open 2026",
+        "week": "50"
+      },
+      {
+        "category": "International Series",
+        "city": "Cairo",
+        "name": "Egypt International 2026",
+        "week": "50"
+      },
+      {
+        "category": "HSBC BWF World Tour Finals",
+        "city": "Hangzhou",
+        "name": "HSBC BWF World Tour Finals 2026",
+        "week": "50"
+      },
+      {
+        "category": "Future Series",
+        "city": "Lasko",
+        "name": "I FEEL SLOVENIA LI-NING Future Series 2026",
+        "week": "50"
+      },
+      {
+        "category": "Junior International Series",
+        "city": "Tartu",
+        "name": "RSL Estonian Junior 2026",
+        "week": "50"
+      },
+      {
+        "category": "International Challenge",
+        "city": "Dhaka",
+        "name": "YONEX SUNRISE Bangladesh International Challenge 2026",
+        "week": "51"
+      },
+      {
+        "category": "International Series",
+        "city": "Baku",
+        "name": "Azerbaijan Caspian Cup 2026",
+        "week": "51"
+      },
+      {
+        "category": "International Series",
+        "city": "Dhaka",
+        "name": "YONEX SUNRISE Bangladesh International Series 2026",
+        "week": "52"
+      }
+    ]
+  }
+}
