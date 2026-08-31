@@ -39,6 +39,23 @@ async function acceptTournamentsoftwareCookies(page) {
   }
 }
 
+async function dismissBwfCookieBanner(page) {
+  await page.addStyleTag({
+    content: '#cookiescript_injected_wrapper { display: none !important; pointer-events: none !important; }',
+  });
+  const outcome = await page.evaluate(() => {
+    const cookieScript = window.CookieScript?.instance;
+    if (typeof cookieScript?.rejectAllAction === 'function') {
+      cookieScript.rejectAllAction();
+      return 'rejected';
+    }
+    const wrapper = document.querySelector('#cookiescript_injected_wrapper');
+    wrapper?.remove();
+    return wrapper ? 'removed' : '';
+  });
+  if (outcome) console.log(`Dismissed BWF cookie consent overlay (${outcome})`);
+}
+
 async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate, rankingPlayers, rankingBreakdowns) {
   const missingPlayers = rankingPlayers.filter((player) => {
     const scores = rankingBreakdowns[`${player.code}-${player.rank}`]?.scores ?? [];
@@ -169,6 +186,7 @@ try {
   await page.goto(rankingUrl, { waitUntil: 'domcontentloaded', timeout: 60_000 });
   const rankingTable = page.locator('table').first();
   await rankingTable.locator('tbody tr').first().waitFor({ state: 'visible', timeout: 60_000 });
+  await dismissBwfCookieBanner(page);
 
   await page.getByRole('button', { name: /Per page/ }).click();
   await page.getByRole('option', { name: '100', exact: true }).click();
