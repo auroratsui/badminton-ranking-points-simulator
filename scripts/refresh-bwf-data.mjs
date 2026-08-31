@@ -81,6 +81,29 @@ async function closeRankingBreakdownDialog(page, dialog, rankingKey) {
   if (await isVisible()) throw new Error(`${rankingKey}: ranking breakdown dialog could not be closed`);
 }
 
+async function openRankingBreakdownDialog(page, row, rankingKey) {
+  for (let attempt = 1; attempt <= 2; attempt += 1) {
+    const dialog = page.locator('.v-dialog--active').last();
+    if (await dialog.isVisible().catch(() => false)) return dialog;
+
+    const breakdownButton = row.locator('button').first();
+    await breakdownButton.scrollIntoViewIfNeeded().catch(() => {});
+    await breakdownButton.click({ force: attempt > 1, timeout: 10_000 }).catch(() => {});
+
+    const opened = await dialog.waitFor({ state: 'visible', timeout: 10_000 })
+      .then(() => true)
+      .catch(() => false);
+    if (opened) return dialog;
+    await page.waitForTimeout(500 * attempt);
+  }
+
+  const lateDialog = page.locator('.v-dialog--active').last();
+  if (await lateDialog.isVisible().catch(() => false)) return lateDialog;
+
+  console.warn(`${rankingKey}: BWF breakdown dialog did not open; Tournamentsoftware fallback will be attempted`);
+  return null;
+}
+
 async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate, rankingPlayers, rankingBreakdowns) {
   const missingPlayers = rankingPlayers.filter((player) => {
     const scores = rankingBreakdowns[`${player.code}-${player.rank}`]?.scores ?? [];
@@ -223,13 +246,21 @@ try {
 
   const rankingPlayers = [];
   const rankingBreakdowns = {};
+  let consecutiveDialogFailures = 0;
+  let useTournamentsoftwareForRemaining = false;
 
   for (let disciplineIndex = 0; disciplineIndex < disciplines.length; disciplineIndex += 1) {
     const config = disciplines[disciplineIndex];
     if (disciplineIndex > 0) {
+      const previousFirstPlayerHref = await rankingTable.locator('tbody tr').first().locator('td').nth(1).locator('a').getAttribute('href');
       await page.getByRole('link', { name: config.tab, exact: true }).click();
       await page.waitForTimeout(900);
       await page.waitForFunction(() => document.querySelectorAll('table tbody tr').length >= 100, undefined, { timeout: 30_000 });
+      await page.waitForFunction((previousHref) => {
+        const rows = document.querySelectorAll('table tbody tr');
+        const firstPlayerHref = rows[0]?.querySelector('td:nth-child(2) a')?.href;
+        return rows.length >= 100 && Boolean(firstPlayerHref) && firstPlayerHref !== previousHref;
+      }, previousFirstPlayerHref, { timeout: 30_000 });
     }
 
     const rows = rankingTable.locator('tbody tr');
@@ -257,7 +288,12 @@ try {
       const dialog = page.locator('.v-dialog--active');
       await dialog.waitFor({ state: 'visible', timeout: 15_000 });
       await page.waitForTimeout(120);
+      const dialog = useTournamentsoftwareForRemaining ? null : await openRankingBreakdownDialog(page, row, rankingKey);
+      let scores = [];
 
+      if (dialog) {
+        consecutiveDialogFailures = 0;
+        await page.waitForTimeout(120);
       const scores = await dialog.locator('table tbody tr').evaluateAll((scoreRows) => scoreRows.map((scoreRow) => {
         const cells = Array.from(scoreRow.querySelectorAll('td'));
         const weekParts = (cells[1]?.textContent || '').trim().split('/').map((part) => part.trim());
@@ -271,6 +307,27 @@ try {
           valid: Boolean(cells[0]?.querySelector('img')),
         };
       }));
+        scores = await dialog.locator('table tbody tr').evaluateAll((scoreRows) => scoreRows.map((scoreRow) => {
+          const cells = Array.from(scoreRow.querySelectorAll('td'));
+          const weekParts = (cells[1]?.textContent || '').trim().split('/').map((part) => part.trim());
+          const link = cells[2]?.querySelector('a');
+          return {
+            week: weekParts.length === 2 ? `${weekParts[0]}-W${weekParts[1].padStart(2, '0')}` : '',
+            label: link?.textContent?.replace(/\s+/g, ' ').trim() || cells[2]?.textContent?.replace(/\s+/g, ' ').trim() || '',
+            href: link?.href || '',
+            result: cells[3]?.textContent?.trim() || '',
+            points: Number(cells[4]?.textContent?.replace(/,/g, '').trim()),
+            valid: Boolean(cells[0]?.querySelector('img')),
+          };
+        }));
+        await closeRankingBreakdownDialog(page, dialog, rankingKey);
+      } else {
+        consecutiveDialogFailures += 1;
+        if (consecutiveDialogFailures >= 3 && !useTournamentsoftwareForRemaining) {
+          useTournamentsoftwareForRemaining = true;
+          console.warn('BWF breakdown dialogs stopped responding; using Tournamentsoftware for the remaining breakdowns');
+        }
+      }
 
       rankingBreakdowns[rankingKey] = { name: player.name, profiles: [player.href], scores };
       await closeRankingBreakdownDialog(page, dialog, rankingKey);
