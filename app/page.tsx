@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode, type RefObject } from 'react';
+import { createPortal } from 'react-dom';
 import {
   ArrowDownRight,
   ArrowRight,
@@ -26,6 +27,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { NativeSelect, NativeSelectOption } from '@/components/ui/native-select';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { useIsMobile } from '@/hooks/use-mobile';
 import { rankingMeta, rankingPlayers, type RankingPlayer } from '@/lib/ranking-data';
 import rankingBreakdownsJson from '@/lib/ranking-breakdowns.json';
 import tournamentCalendarsJson from '@/lib/tournament-calendars.json';
@@ -55,7 +57,7 @@ type Player = {
   id: string;
   name: string;
   discipline: string;
-  result: RoundKey;
+  result: RoundKey | '';
   manualTeamAward: number;
   scores: Score[];
   snapshotPoints?: number;
@@ -107,7 +109,7 @@ const roundLabels: Record<RoundKey, string> = {
   r16: 'Round of 16', r32: 'Round of 32', r64: 'Round of 64', r128: 'Round of 128',
   r256: 'Round of 256',
   olympicBronze: 'Olympic Bronze', olympicFourth: 'Olympic Fourth Place',
-  finalsGroupThird: 'Finals Group — 3rd', finalsGroupFourth: 'Finals Group — 4th',
+  finalsGroupThird: '3rd in Group', finalsGroupFourth: '4th in Group',
 };
 
 const levels: Record<LevelKey, { label: string; short: string; points: number[] }> = {
@@ -126,9 +128,8 @@ const levels: Record<LevelKey, { label: string; short: string; points: number[] 
   future: { label: 'Future Series', short: 'Future Series', points: [1700, 1420, 1170, 920, 600, 350, 130, 60, 20] },
 };
 
-const initialPlayers: Player[] = [
-  { id: 'player-1', name: '', discipline: '', result: 'quarter', manualTeamAward: 0, scores: [] },
-];
+const emptyPlayer = (id: string): Player => ({ id, name: '', discipline: '', result: '', manualTeamAward: 0, scores: [] });
+const initialPlayers: Player[] = [emptyPlayer('player-1')];
 const disciplineOptions = [
   { code: 'MS', label: 'Men’s Singles' },
   { code: 'WS', label: 'Women’s Singles' },
@@ -265,6 +266,27 @@ function normalizedPlace(value: string) {
   return value.normalize('NFKD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
+function sameTournamentName(leftName: string, rightName: string) {
+  const leftTokens = tournamentNameTokens(leftName);
+  const rightTokens = tournamentNameTokens(rightName);
+  const leftKey = leftTokens.join(' ');
+  const rightKey = rightTokens.join(' ');
+  if (!leftKey || !rightKey) return false;
+  if (leftKey === rightKey || leftKey.includes(rightKey) || rightKey.includes(leftKey)) return true;
+
+  const leftSignificant = leftTokens.filter((token) => !genericTournamentWords.has(token));
+  const rightSignificant = rightTokens.filter((token) => !genericTournamentWords.has(token));
+  const sharedSignificant = new Set(leftSignificant.filter((token) => rightSignificant.includes(token))).size;
+  if (sharedSignificant > 0) {
+    const significantCoverage = sharedSignificant / Math.max(1, Math.min(leftSignificant.length, rightSignificant.length));
+    if (significantCoverage >= 0.6) return true;
+  }
+
+  const sharedTokens = new Set(leftTokens.filter((token) => rightTokens.includes(token))).size;
+  const tokenCoverage = sharedTokens / Math.max(1, Math.min(leftTokens.length, rightTokens.length));
+  return commonSuffixLength(leftTokens, rightTokens) >= 2 && tokenCoverage >= 0.75;
+}
+
 function previousEditionMatch(current: CurrentTournamentEntry, candidates: TournamentEntry[]) {
   const sameEventType = candidates.filter((candidate) => eventTypeForTournament(candidate) === current.eventType);
   const currentTokens = tournamentNameTokens(current.name);
@@ -303,7 +325,8 @@ function countableScores(scores: Score[]) {
   return [...individuals, ...(bestTeam ? [bestTeam] : [])].sort((a, b) => b.points - a.points).slice(0, 10);
 }
 
-function awardFor(level: LevelKey, round: RoundKey) {
+function awardFor(level: LevelKey | '', round: RoundKey | '') {
+  if (!level || !round) return 0;
   if (round === 'olympicBronze') return 11500;
   if (round === 'olympicFourth') return 10500;
   if (round === 'finalsGroupThird') return 8900;
@@ -311,25 +334,28 @@ function awardFor(level: LevelKey, round: RoundKey) {
   return levels[level].points[roundOrder.indexOf(round)] ?? 0;
 }
 
-function roundsFor(level: LevelKey): RoundKey[] {
+function roundsFor(level: LevelKey | ''): RoundKey[] {
+  if (!level) return [];
   if (level === 'olympics') return ['winner', 'runnerUp', 'olympicBronze', 'olympicFourth', 'quarter', 'r16', 'r32', 'r64', 'r128', 'r256'];
-  if (level === 'finals') return ['winner', 'runnerUp', 'semi', 'finalsGroupThird', 'finalsGroupFourth', 'r16', 'r32'];
+  if (level === 'finals') return ['winner', 'runnerUp', 'semi', 'finalsGroupThird', 'finalsGroupFourth'];
   if (level === 'chinaOpen' || level === 'super1000' || level === 'super750') return roundOrder.slice(0, 6);
   return roundOrder;
 }
 
 function isReplacedBy(score: Score, tournament: TournamentEntry | null) {
-  return Boolean(tournament) && score.week === `${tournament?.year}-W${tournament?.week.padStart(2, '0')}`;
+  return Boolean(tournament)
+    && score.week === `${tournament?.year}-W${tournament?.week.padStart(2, '0')}`
+    && sameTournamentName(score.label, tournament?.name ?? '');
 }
 
-function calculate(player: Player, level: LevelKey, tournamentWeek: string, eventType: 'individual' | 'team', previousEdition: TournamentEntry | null) {
+function calculate(player: Player, level: LevelKey | '', tournamentWeek: string, eventType: 'individual' | 'team', previousEdition: TournamentEntry | null) {
   const beforeScores = player.scores.filter((score) => score.bwfValid);
   const hasBreakdown = player.scores.some((score) => score.points > 0);
   const before = player.snapshotPoints ?? beforeScores.reduce((total, score) => total + score.points, 0);
   const removed = player.scores.filter((score) => isReplacedBy(score, previousEdition) || isExpired(score.week, tournamentWeek));
   const retained = player.scores.filter((score) => !isReplacedBy(score, previousEdition) && !isExpired(score.week, tournamentWeek));
   const award = eventType === 'team' ? player.manualTeamAward : awardFor(level, player.result);
-  const newScore: Score = { id: `new-${player.id}`, label: 'Projected tournament', points: award, week: tournamentWeek, href: '', result: roundLabels[player.result], bwfValid: false, team: eventType === 'team' };
+  const newScore: Score = { id: `new-${player.id}`, label: 'Projected tournament', points: award, week: tournamentWeek, href: '', result: player.result ? roundLabels[player.result] : '', bwfValid: false, team: eventType === 'team' };
   const afterScores = countableScores(award > 0 ? [...retained, newScore] : retained);
   const after = hasBreakdown ? afterScores.reduce((total, score) => total + score.points, 0) : before;
   const newCounts = afterScores.some((score) => score.id === newScore.id);
@@ -371,6 +397,79 @@ function outcomeTableName(candidate: RankingPlayer) {
   }).join(' / ');
 }
 
+type FloatingMenuPosition = CSSProperties & { maxHeight: number };
+
+function FloatingMenu({ anchorRef, open, children, minWidth = 0 }: {
+  anchorRef: RefObject<HTMLInputElement | null>;
+  open: boolean;
+  children: (maxHeight: number) => ReactNode;
+  minWidth?: number;
+}) {
+  const [position, setPosition] = useState<FloatingMenuPosition | null>(null);
+  const isMobile = useIsMobile();
+
+  useEffect(() => {
+    if (!open || isMobile) return;
+
+    const updatePosition = () => {
+      const anchor = anchorRef.current;
+      if (!anchor) return;
+      const rect = anchor.getBoundingClientRect();
+      const viewport = window.visualViewport;
+      const viewportTop = viewport?.offsetTop ?? 0;
+      const viewportHeight = viewport?.height ?? window.innerHeight;
+      const viewportWidth = viewport?.width ?? window.innerWidth;
+      const spaceBelow = viewportTop + viewportHeight - rect.bottom - 8;
+      const spaceAbove = rect.top - viewportTop - 8;
+      const placeBelow = spaceBelow >= 160 || spaceBelow >= spaceAbove;
+      const available = Math.max(96, placeBelow ? spaceBelow : spaceAbove);
+      const maxHeight = Math.min(320, available);
+      const width = Math.min(Math.max(rect.width, minWidth), viewportWidth - 16);
+      const left = Math.min(Math.max(8, rect.left), viewportWidth - width - 8);
+
+      setPosition({
+        position: 'fixed',
+        zIndex: 1000,
+        left,
+        width,
+        maxHeight,
+        ...(placeBelow
+          ? { top: rect.bottom + 6 }
+          : { bottom: window.innerHeight - rect.top + 6 }),
+      });
+    };
+
+    updatePosition();
+    const viewport = window.visualViewport;
+    window.addEventListener('resize', updatePosition);
+    window.addEventListener('scroll', updatePosition, true);
+    viewport?.addEventListener('resize', updatePosition);
+    viewport?.addEventListener('scroll', updatePosition);
+    return () => {
+      window.removeEventListener('resize', updatePosition);
+      window.removeEventListener('scroll', updatePosition, true);
+      viewport?.removeEventListener('resize', updatePosition);
+      viewport?.removeEventListener('scroll', updatePosition);
+    };
+  }, [anchorRef, isMobile, minWidth, open]);
+
+  if (!open) return null;
+  if (isMobile) {
+    return (
+      <div className="mt-1.5 overflow-hidden rounded-xl border bg-popover shadow-xl">
+        {children(192)}
+      </div>
+    );
+  }
+  if (!position || typeof document === 'undefined') return null;
+  return createPortal(
+    <div style={position} className="overflow-hidden rounded-xl border bg-popover shadow-xl">
+      {children(position.maxHeight)}
+    </div>,
+    document.body,
+  );
+}
+
 function PlayerSearch({ player, onChange, onSelect, index }: {
   player: Player;
   onChange: (value: string) => void;
@@ -378,6 +477,7 @@ function PlayerSearch({ player, onChange, onSelect, index }: {
   index: number;
 }) {
   const [open, setOpen] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
   const query = player.name.trim().toLocaleLowerCase();
   const suggestions = rankingPlayers
     .filter((candidate) => !query || candidate.name.toLocaleLowerCase().includes(query))
@@ -389,11 +489,12 @@ function PlayerSearch({ player, onChange, onSelect, index }: {
     .slice(0, 12);
 
   return (
-    <div className="relative">
+    <div className="min-w-0">
       <Input
+        ref={inputRef}
         value={player.name}
         onFocus={() => setOpen(true)}
-        onBlur={() => window.setTimeout(() => setOpen(false), 150)}
+        onBlur={() => window.setTimeout(() => setOpen(false), 300)}
         onChange={(event) => { onChange(event.target.value); setOpen(true); }}
         aria-label={`Player ${index + 1} name`}
         aria-autocomplete="list"
@@ -401,17 +502,20 @@ function PlayerSearch({ player, onChange, onSelect, index }: {
         className="font-medium text-foreground"
         placeholder="Start typing player’s name here"
       />
-      {open && (
-        <div className="absolute left-0 right-0 top-[calc(100%+6px)] z-50 overflow-hidden rounded-xl border bg-popover shadow-xl">
+      <FloatingMenu anchorRef={inputRef} open={open} minWidth={360}>
+        {(maxHeight) => (
           <Command shouldFilter={false}>
-            <CommandList className="max-h-72">
+            <CommandList
+              className="max-h-none overscroll-contain [scrollbar-width:thin]"
+              style={{ maxHeight, WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}
+            >
               <CommandEmpty>No top-100 player or pair found.</CommandEmpty>
               {suggestions.map((candidate) => (
                 <CommandItem
                   key={`${candidate.code}-${candidate.rank}-${candidate.name}`}
                   value={`${candidate.code}-${candidate.rank}-${candidate.name}`}
                   onSelect={() => { onSelect(candidate); setOpen(false); }}
-                  className="grid grid-cols-[38px_1fr_auto] gap-2 px-3 py-2.5"
+                  className="grid grid-cols-[38px_minmax(0,1fr)_auto] gap-2 px-3 py-2.5 [&>svg:last-child]:hidden"
                 >
                   <Badge variant="secondary">{candidate.code}</Badge>
                   <span className="min-w-0"><span className="block truncate font-medium">{candidate.name}</span><span className="block text-[11px] text-muted-foreground">World No. {candidate.rank} · {candidate.tournaments} tournaments</span></span>
@@ -420,8 +524,8 @@ function PlayerSearch({ player, onChange, onSelect, index }: {
               ))}
             </CommandList>
           </Command>
-        </div>
-      )}
+        )}
+      </FloatingMenu>
     </div>
   );
 }
@@ -435,7 +539,7 @@ function TournamentSearch({ options, value, year, onSelect }: {
   const selected = options.find((option) => option.id === value);
   const [query, setQuery] = useState(selected?.name ?? '');
   const [open, setOpen] = useState(false);
-  useEffect(() => setQuery(selected?.name ?? ''), [selected?.name]);
+  const inputRef = useRef<HTMLInputElement>(null);
   const normalizedQuery = query.trim().toLocaleLowerCase();
   const suggestions = options
     .filter((option) => !normalizedQuery || `${option.name} ${option.category} ${option.city}`.toLocaleLowerCase().includes(normalizedQuery))
@@ -446,28 +550,29 @@ function TournamentSearch({ options, value, year, onSelect }: {
     });
 
   return (
-    <div className="relative">
+    <div className="min-w-0">
       <Input
+        ref={inputRef}
         value={selected?.name ?? query}
         onFocus={() => setOpen(true)}
-        onBlur={() => window.setTimeout(() => setOpen(false), 150)}
+        onBlur={() => window.setTimeout(() => setOpen(false), 300)}
         onChange={(event) => { setQuery(event.target.value); onSelect(''); setOpen(true); }}
         aria-label={`Previous edition from ${year}`}
         aria-autocomplete="list"
         aria-expanded={open}
         placeholder={`Start typing a ${year} tournament`}
       />
-      {open && (
-        <div className="absolute left-0 right-0 top-[calc(100%+6px)] z-50 min-w-0 overflow-hidden rounded-xl border bg-popover shadow-xl sm:min-w-[22rem]">
+      <FloatingMenu anchorRef={inputRef} open={open} minWidth={352}>
+        {(maxHeight) => (
           <Command shouldFilter={false}>
-            <CommandList className="max-h-80 overscroll-contain">
+            <CommandList className="max-h-none overscroll-contain [scrollbar-width:thin]" style={{ maxHeight, WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}>
               <CommandEmpty>No {year} BWF tournament found.</CommandEmpty>
               {suggestions.map((option) => (
                 <CommandItem
                   key={option.id}
                   value={option.id}
                   onSelect={() => { onSelect(option.id); setQuery(option.name); setOpen(false); }}
-                  className="grid grid-cols-[42px_1fr] gap-2 px-3 py-2.5"
+                  className="grid grid-cols-[42px_minmax(0,1fr)] gap-2 px-3 py-2.5 [&>svg:last-child]:hidden"
                 >
                   <Badge variant="secondary">W{option.week}</Badge>
                   <span className="min-w-0"><span className="block truncate font-medium">{option.name}</span><span className="block truncate text-[11px] text-muted-foreground">{option.category}{option.city ? ` · ${option.city}` : ''}</span></span>
@@ -475,8 +580,8 @@ function TournamentSearch({ options, value, year, onSelect }: {
               ))}
             </CommandList>
           </Command>
-        </div>
-      )}
+        )}
+      </FloatingMenu>
     </div>
   );
 }
@@ -489,7 +594,7 @@ function CurrentTournamentSearch({ options, value, onSelect }: {
   const selected = options.find((option) => option.id === value);
   const [query, setQuery] = useState(selected?.name ?? '');
   const [open, setOpen] = useState(false);
-  useEffect(() => setQuery(selected?.name ?? ''), [selected?.name]);
+  const inputRef = useRef<HTMLInputElement>(null);
   const normalizedQuery = query.trim().toLocaleLowerCase();
   const suggestions = options
     .filter((option) => !normalizedQuery || `${option.name} ${option.category} ${option.city}`.toLocaleLowerCase().includes(normalizedQuery))
@@ -500,11 +605,12 @@ function CurrentTournamentSearch({ options, value, onSelect }: {
     });
 
   return (
-    <div className="relative">
+    <div className="min-w-0">
       <Input
+        ref={inputRef}
         value={selected?.name ?? query}
         onFocus={() => setOpen(true)}
-        onBlur={() => window.setTimeout(() => setOpen(false), 150)}
+        onBlur={() => window.setTimeout(() => setOpen(false), 300)}
         onChange={(event) => { setQuery(event.target.value); onSelect(null); setOpen(true); }}
         aria-label="Tournament Name"
         aria-autocomplete="list"
@@ -512,18 +618,17 @@ function CurrentTournamentSearch({ options, value, onSelect }: {
         aria-required="true"
         placeholder="Start typing a tournament name"
       />
-      {open && (
-        <div className="absolute left-0 right-0 top-[calc(100%+6px)] z-50 min-w-0 overflow-hidden rounded-xl border bg-popover shadow-xl sm:min-w-[26rem]">
+      <FloatingMenu anchorRef={inputRef} open={open} minWidth={416}>
+        {(maxHeight) => (
           <Command shouldFilter={false}>
-            <CommandList className="max-h-80 overscroll-contain">
+            <CommandList className="max-h-none overscroll-contain [scrollbar-width:thin]" style={{ maxHeight, WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}>
               <CommandEmpty>No current or upcoming senior BWF tournament found.</CommandEmpty>
               {suggestions.map((option) => (
                 <CommandItem
                   key={option.id}
                   value={option.id}
-                  onPointerDown={(event) => event.preventDefault()}
                   onSelect={() => { onSelect(option); setQuery(option.name); setOpen(false); }}
-                  className="grid grid-cols-[42px_1fr] gap-2 px-3 py-2.5"
+                  className="grid grid-cols-[42px_minmax(0,1fr)] gap-2 px-3 py-2.5 [&>svg:last-child]:hidden"
                 >
                   <Badge variant="secondary">W{option.week}</Badge>
                   <span className="min-w-0"><span className="block truncate font-medium">{option.name}</span><span className="block truncate text-[11px] text-muted-foreground">{option.category}{option.city ? ` · ${option.city}` : ''}</span></span>
@@ -531,8 +636,8 @@ function CurrentTournamentSearch({ options, value, onSelect }: {
               ))}
             </CommandList>
           </Command>
-        </div>
-      )}
+        )}
+      </FloatingMenu>
     </div>
   );
 }
@@ -554,7 +659,7 @@ const currentTournamentOptions: CurrentTournamentEntry[] = (tournamentCalendars.
   .filter((tournament) => tournament.eventType === 'team' || tournament.level !== null);
 
 export default function Home() {
-  const [level, setLevel] = useState<LevelKey>('super750');
+  const [level, setLevel] = useState<LevelKey | ''>('');
   const [eventType, setEventType] = useState<'individual' | 'team'>('individual');
   const [selectedTournamentId, setSelectedTournamentId] = useState('');
   const [tournamentWeek, setTournamentWeek] = useState(defaultTournamentWeek);
@@ -562,9 +667,10 @@ export default function Home() {
   const [players, setPlayers] = useState<Player[]>(initialPlayers);
   const [outcomeDiscipline, setOutcomeDiscipline] = useState<DisciplineCode>('MS');
   const [showOutcomeTable, setShowOutcomeTable] = useState(false);
+  const [showSelectedOutcomeTable, setShowSelectedOutcomeTable] = useState(false);
 
   const selectedTournament = currentTournamentOptions.find((option) => option.id === selectedTournamentId) ?? null;
-  const winnerAward = levels[level].points[0];
+  const winnerAward = level ? levels[level].points[0] : null;
   const validTournamentWeek = Boolean(isoWeekStart(tournamentWeek));
   const tournamentYear = Number(tournamentWeek.slice(0, 4)) || Number(rankingMeta.date.slice(0, 4));
   const previousYear = tournamentYear - 1;
@@ -573,7 +679,7 @@ export default function Home() {
     .map((tournament, index) => ({ ...tournament, year: previousYear, id: `${previousYear}-${tournament.week}-${index}` })), [previousYear]);
   const selectedPreviousEdition = previousEditionOptions.find((option) => option.id === previousEdition) ?? null;
   const summaries = useMemo(() => players.map((player) => ({ player, result: calculate(player, level, tournamentWeek, eventType, selectedPreviousEdition) })), [players, level, tournamentWeek, eventType, selectedPreviousEdition]);
-  const outcomeTableRounds = useMemo(() => outcomeRoundsFor(level), [level]);
+  const outcomeTableRounds = useMemo(() => level ? outcomeRoundsFor(level) : [], [level]);
   const outcomeRows = useMemo(() => rankingPlayers
     .filter((candidate) => candidate.code === outcomeDiscipline && candidate.rank <= 8)
     .sort((left, right) => left.rank - right.rank)
@@ -598,31 +704,52 @@ export default function Home() {
       };
     }), [outcomeDiscipline, level, tournamentWeek, eventType, selectedPreviousEdition, outcomeTableRounds]);
 
+  const selectedPlayers = useMemo(() => players.filter((player) => player.rankingKey), [players]);
+  const selectedOutcomeRows = useMemo(() => selectedPlayers.map((player) => ({
+    player,
+    code: (player.rankingKey?.split('-')[0] ?? '') as DisciplineCode,
+    rank: player.snapshotRank ?? 0,
+    displayName: ['MD', 'WD', 'XD'].includes(player.rankingKey?.split('-')[0] ?? '')
+      ? outcomeTableName({ name: player.name, code: player.rankingKey?.split('-')[0] ?? '', discipline: player.discipline, rank: player.snapshotRank ?? 0, points: player.snapshotPoints ?? 0, tournaments: player.snapshotTournaments ?? 0, href: player.sourceHref ?? '' })
+      : player.name,
+    totals: outcomeTableRounds.map((round) => calculate({ ...player, result: round.key }, level, tournamentWeek, eventType, selectedPreviousEdition).after),
+  })).sort((left, right) => {
+    const disciplineDifference = disciplineOptions.findIndex((discipline) => discipline.code === left.code)
+      - disciplineOptions.findIndex((discipline) => discipline.code === right.code);
+    return disciplineDifference || left.rank - right.rank;
+  }), [selectedPlayers, outcomeTableRounds, level, tournamentWeek, eventType, selectedPreviousEdition]);
+
   const patchPlayer = (id: string, patch: Partial<Player>) => setPlayers((current) => current.map((player) => player.id === id ? { ...player, ...patch } : player));
-  const changeLevel = (nextLevel: LevelKey) => {
+  const changeLevel = (nextLevel: LevelKey | '') => {
     setLevel(nextLevel);
     const availableRounds = roundsFor(nextLevel);
-    setPlayers((current) => current.map((player) => availableRounds.includes(player.result) ? player : { ...player, result: availableRounds[0] }));
+    setPlayers((current) => current.map((player) => player.result && availableRounds.includes(player.result) ? player : { ...player, result: '' }));
   };
 
-  const addPlayer = () => setPlayers((current) => current.length >= 10
+  const addPlayer = () => setPlayers((current) => current.length >= 8
     ? current
-    : [...current, { id: newId('player'), name: '', discipline: '', result: 'quarter', manualTeamAward: 0, scores: [] }]);
+    : [...current, emptyPlayer(newId('player'))]);
+
+  const removePlayer = (id: string) => setPlayers((current) => current.length === 1
+    ? [emptyPlayer(current[0].id)]
+    : current.filter((item) => item.id !== id));
 
   const selectTournament = (tournament: CurrentTournamentEntry | null) => {
     setSelectedTournamentId(tournament?.id ?? '');
     if (!tournament) {
       setPreviousEdition('');
+      changeLevel('');
+      setShowOutcomeTable(false);
       return;
     }
     setEventType(tournament.eventType);
-    if (tournament.level) changeLevel(tournament.level);
+    changeLevel(tournament.level ?? '');
     setTournamentWeek(`${tournament.year}-W${tournament.week.padStart(2, '0')}`);
     setPreviousEdition(previousEditionMatch(tournament, previousEditionOptions)?.id ?? '');
   };
 
   const resetExample = () => {
-    setLevel('super750'); setEventType('individual'); setSelectedTournamentId(''); setTournamentWeek(defaultTournamentWeek); setPreviousEdition(''); setPlayers(initialPlayers); setOutcomeDiscipline('MS'); setShowOutcomeTable(false);
+    setLevel(''); setEventType('individual'); setSelectedTournamentId(''); setTournamentWeek(defaultTournamentWeek); setPreviousEdition(''); setPlayers(initialPlayers); setOutcomeDiscipline('MS'); setShowOutcomeTable(false); setShowSelectedOutcomeTable(false);
   };
 
   return (
@@ -636,39 +763,68 @@ export default function Home() {
 
       <section className="mx-auto max-w-[1440px] px-4 pt-4 pb-7 sm:px-6 lg:px-8 lg:pt-5 lg:pb-9">
         <div className="mb-5 grid gap-3 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
-          <p className="text-sm leading-6 text-muted-foreground">Pick a tournament, select one or more top 100 players or pairs, enter hypothetical results, and preview world ranking points changes.</p>
+          <p className="text-sm leading-5 text-muted-foreground">Pick a tournament, select one or more top 100 players or pairs, enter hypothetical results, and preview world ranking points changes.</p>
           <Badge variant="outline" className="h-7 px-3"><CalendarClock /> Latest Reference · {rankingMeta.dateLabel}</Badge>
         </div>
 
         <div className="mb-3">
           <h2 className="font-heading text-xl font-semibold">PICK A TOURNAMENT</h2>
-          <p className="text-[13px] text-muted-foreground">Choose a current or upcoming BWF tournament. Its event type, level, week, and previous edition fill automatically.</p>
+          <p className="text-sm text-muted-foreground">Choose a current or upcoming BWF tournament. Its event type, level, week, and previous edition are filled in automatically.</p>
         </div>
 
         <Card className="mb-6 overflow-visible border-l-4 border-l-primary shadow-[0_12px_35px_rgb(22_62_43/6%)]">
           <CardContent className="grid gap-4 sm:grid-cols-2 lg:grid-cols-[1.1fr_.85fr_1.45fr_.75fr_1.45fr]">
-            <label className="grid gap-1.5 text-xs font-medium text-muted-foreground">Tournament Name<CurrentTournamentSearch options={currentTournamentOptions} value={selectedTournamentId} onSelect={selectTournament} /></label>
-            <label className="grid gap-1.5 text-xs font-medium text-muted-foreground">Event Type<NativeSelect className="w-full" value={eventType} onChange={(event) => setEventType(event.target.value as 'individual' | 'team')} aria-label="Event Type"><NativeSelectOption value="individual">Individual Event</NativeSelectOption><NativeSelectOption value="team">Team Event</NativeSelectOption></NativeSelect></label>
-            <label className="grid gap-1.5 text-xs font-medium text-muted-foreground">Tournament Level<NativeSelect className="w-full" value={eventType === 'team' ? '' : level} onChange={(event) => changeLevel(event.target.value as LevelKey)} aria-label="Tournament Level" disabled={eventType === 'team'}>{eventType === 'team' && <NativeSelectOption value="">Not Applicable</NativeSelectOption>}{Object.entries(levels).map(([key, item]) => <NativeSelectOption key={key} value={key}>{item.label}</NativeSelectOption>)}</NativeSelect></label>
-            <label className="grid gap-1.5 text-xs font-medium text-muted-foreground">Tournament Week<NativeSelect className="w-full" value={tournamentWeek} onChange={(event) => setTournamentWeek(event.target.value)} aria-label="Tournament Week" aria-invalid={!validTournamentWeek}>{tournamentWeekOptions.map((week) => <NativeSelectOption key={week} value={week}>{week}</NativeSelectOption>)}</NativeSelect></label>
-            <div className="grid gap-1.5 text-xs font-medium text-muted-foreground"><span>Previous Edition Replaced</span><TournamentSearch key={previousYear} options={previousEditionOptions} value={selectedPreviousEdition?.id ?? ''} year={previousYear} onSelect={setPreviousEdition} /></div>
-            <div className="rounded-lg bg-secondary px-4 py-3 sm:col-span-2 lg:col-span-1"><p className="text-xs text-muted-foreground">Winner Earns</p><p className="mt-1 text-2xl font-semibold tabular-nums">{eventType === 'team' ? 'Manual' : `${fmt(winnerAward)} pts`}</p></div>
+            <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Tournament Name <span className="text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span><CurrentTournamentSearch options={currentTournamentOptions} value={selectedTournamentId} onSelect={selectTournament} /></label>
+            <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Event Type<NativeSelect className="min-w-0 w-full" value={eventType} onChange={(event) => setEventType(event.target.value as 'individual' | 'team')} aria-label="Event Type"><NativeSelectOption value="individual">Individual Event</NativeSelectOption><NativeSelectOption value="team">Team Event</NativeSelectOption></NativeSelect></label>
+            <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Tournament Level<NativeSelect className="min-w-0 w-full" value={eventType === 'team' ? '' : level} onChange={(event) => changeLevel(event.target.value as LevelKey | '')} aria-label="Tournament Level" disabled={eventType === 'team'}><NativeSelectOption value="">{eventType === 'team' ? 'Not Applicable' : '---'}</NativeSelectOption>{Object.entries(levels).map(([key, item]) => <NativeSelectOption key={key} value={key}>{item.label}</NativeSelectOption>)}</NativeSelect></label>
+            <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Tournament Week<NativeSelect className="min-w-0 w-full" value={tournamentWeek} onChange={(event) => setTournamentWeek(event.target.value)} aria-label="Tournament Week" aria-invalid={!validTournamentWeek}>{tournamentWeekOptions.map((week) => <NativeSelectOption key={week} value={week}>{week}</NativeSelectOption>)}</NativeSelect></label>
+            <div className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Previous Edition Replaced</span><TournamentSearch key={previousYear} options={previousEditionOptions} value={selectedPreviousEdition?.id ?? ''} year={previousYear} onSelect={setPreviousEdition} /></div>
+            <div className="rounded-lg bg-secondary px-4 py-3 sm:col-span-2 lg:col-span-1"><p className="text-xs text-muted-foreground">Winner Earns</p><p className="mt-1 text-2xl font-semibold tabular-nums">{!selectedTournament ? '--- pts' : eventType === 'team' ? 'Manual' : winnerAward ? `${fmt(winnerAward)} pts` : '--- pts'}</p></div>
+            <div className="flex flex-col items-start gap-3 rounded-lg border bg-muted/25 px-4 py-3 sm:col-span-2 lg:col-span-4 lg:flex-row lg:items-center lg:justify-between">
+              <div className="flex flex-wrap items-center gap-1.5 text-sm">
+                <span className="font-semibold text-primary">SHORTCUT:</span>
+                <span>Generate a table showing all possible outcomes for the top 8 players or pairs in</span>
+                <NativeSelect className="w-auto min-w-36" value={outcomeDiscipline} onChange={(event) => setOutcomeDiscipline(event.target.value as DisciplineCode)} aria-label="Top 8 scenario discipline">
+                  {disciplineOptions.map((discipline) => <NativeSelectOption key={discipline.code} value={discipline.code}>{discipline.label}</NativeSelectOption>)}
+                </NativeSelect>
+              </div>
+              <Button className="shrink-0" disabled={eventType === 'team' || !selectedTournament || !level} onClick={() => setShowOutcomeTable(true)}><Table2 /> Generate</Button>
+            </div>
+            {showOutcomeTable && eventType === 'individual' && selectedTournament && level && (
+              <div className="min-w-0 sm:col-span-2 lg:col-span-5">
+                <div className="-mx-4 overflow-hidden border-y sm:mx-0 sm:rounded-xl sm:border">
+                  <div className="border-b bg-muted/35 px-3 py-2">
+                    <p className="font-heading text-base">TOP 8 RANKING POINTS SCENARIOS · {disciplineOptions.find((discipline) => discipline.code === outcomeDiscipline)?.label}</p>
+                    <p className="text-xs leading-tight text-muted-foreground">Projected total ranking points for each possible tournament finish in {selectedTournament.name}.</p>
+                  </div>
+                  <Table className="w-max min-w-full text-xs tabular-nums">
+                    <TableHeader><TableRow><TableHead className="sticky left-0 z-10 h-8 w-28 max-w-28 bg-card px-2 py-1">Players/Pairs</TableHead>{outcomeTableRounds.map((round) => <TableHead key={round.key} className="h-8 min-w-18 px-2 py-1 text-right">{round.label}</TableHead>)}</TableRow></TableHeader>
+                    <TableBody>{outcomeRows.map((row) => <TableRow key={`${row.candidate.code}-${row.candidate.rank}`}><TableCell className="sticky left-0 z-10 w-28 max-w-28 whitespace-normal bg-card px-2 py-1 font-medium leading-tight"><span className="mr-1 text-[9px] text-muted-foreground">#{row.candidate.rank}</span>{row.displayName}</TableCell>{row.totals.map((total, index) => <TableCell key={outcomeTableRounds[index].key} className="min-w-18 px-2 py-1 text-right font-medium">{fmt(total)}</TableCell>)}</TableRow>)}</TableBody>
+                  </Table>
+                </div>
+              </div>
+            )}
           </CardContent>
         </Card>
 
         {!validTournamentWeek && <Alert variant="destructive" className="mb-5"><CircleHelp /><AlertTitle>Choose a tournament week</AlertTitle><AlertDescription>Select the week in which the tournament is played. Automatic 52-week expiry is paused until the week is valid.</AlertDescription></Alert>}
 
         <div className="mb-3 flex items-end justify-between gap-4">
-          <div><h2 className="font-heading text-xl font-semibold">PICK YOUR PLAYERS &amp; RESULTS</h2><p className="text-[13px] text-muted-foreground">{players.length} {players.length === 1 ? 'player' : 'players'} · results recalculate instantly</p></div>
-          <Button className="hidden sm:inline-flex" disabled={players.length >= 10} onClick={addPlayer}><Plus /> Add Player</Button>
+          <div><h2 className="font-heading text-xl font-semibold">PICK YOUR PLAYERS &amp; RESULTS</h2><p className="text-sm text-muted-foreground">{selectedPlayers.length} {selectedPlayers.length === 1 ? 'player selected' : 'players selected'} · results recalculate instantly</p></div>
+          <Button className="hidden sm:inline-flex" disabled={players.length >= 8} onClick={addPlayer}><Plus /> Add Player</Button>
         </div>
 
         <div className="grid items-start gap-5 xl:grid-cols-2">
           {summaries.map(({ player, result }, playerIndex) => {
+            const projectionReady = eventType === 'individual'
+              ? Boolean(selectedTournament && level && player.result)
+              : Boolean(selectedTournament && player.manualTeamAward > 0);
             const ChangeIcon = result.change > 0 ? ArrowUpRight : result.change < 0 ? ArrowDownRight : ArrowRight;
             const changeTone = result.change > 0 ? 'text-primary' : result.change < 0 ? 'text-destructive' : 'text-muted-foreground';
             const explanation = !result.hasBreakdown
               ? 'BWF does not publish a score breakdown for this ranking entry, so an exact projection is unavailable.'
+              : !projectionReady
+              ? eventType === 'team' ? 'Enter a projected team-event award.' : 'Select a hypothetical result to calculate.'
               : eventType === 'team' && result.award <= 0
               ? 'Enter a projected team-event award.'
               : !result.newCounts
@@ -677,11 +833,11 @@ export default function Home() {
                   ? `${fmt(result.award)} enters · ${result.dropped[0].label} (${fmt(result.dropped[0].points)}) leaves the counting ten.`
                   : `${fmt(result.award)} enters the ranking total.`;
             return (
-              <Card key={player.id} className="shadow-[0_12px_35px_rgb(22_62_43/6%)]">
-                <CardHeader className="border-b">
+              <Card key={player.id} className="overflow-visible shadow-[0_12px_35px_rgb(22_62_43/6%)]">
+                <CardHeader className={player.rankingKey ? 'border-b' : ''}>
                   <div className="flex items-start justify-between gap-3">
                     <div className="grid flex-1 gap-3 sm:grid-cols-[1.4fr_.8fr]">
-                      <div className="grid gap-1 text-[11px] font-medium text-muted-foreground"><span>Player / Pair</span>
+                      <div className="grid min-w-0 gap-1 text-sm font-medium text-muted-foreground"><span>Player / Pair <span className="text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span>
                         <PlayerSearch
                           player={player}
                           index={playerIndex}
@@ -702,28 +858,28 @@ export default function Home() {
                         />
                         {player.snapshotRank && <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[10px] font-normal text-muted-foreground"><span>BWF #{player.snapshotRank} · {fmt(player.snapshotPoints ?? 0)} pts · {player.snapshotTournaments} tournaments</span></span>}
                       </div>
-                      <div className="grid gap-1 text-[11px] font-medium text-muted-foreground"><span>Discipline</span><div className="flex h-9 items-center rounded-md border bg-muted/40 px-3 text-sm font-medium text-foreground">{player.discipline || '—'}</div></div>
+                      <div className="grid min-w-0 gap-1 text-sm font-medium text-muted-foreground"><span>Discipline</span><div className="flex h-9 items-center rounded-md border bg-muted/40 px-3 text-sm font-medium text-foreground">{player.discipline || '—'}</div></div>
                     </div>
-                    <Button variant="ghost" size="icon" aria-label={`Remove ${player.name}`} disabled={players.length === 1} onClick={() => setPlayers((current) => current.filter((item) => item.id !== player.id))}><Trash2 /></Button>
+                    <Button variant="ghost" size="icon" aria-label={`Remove ${player.name || 'player'}`} disabled={players.length === 1 && !player.rankingKey && !player.name} onClick={() => removePlayer(player.id)}><Trash2 /></Button>
                   </div>
                 </CardHeader>
                 {player.rankingKey && (
                   <CardContent className="space-y-4">
                       <div className="grid gap-4 sm:grid-cols-[1fr_1.25fr]">
                         {eventType === 'individual' ? (
-                          <label className="grid gap-1.5 text-xs font-medium text-muted-foreground">Projected Finish<NativeSelect className="w-full" value={player.result} onChange={(event) => patchPlayer(player.id, { result: event.target.value as RoundKey })} aria-label={`${player.name} projected finish`}>{roundsFor(level).map((round) => <NativeSelectOption key={round} value={round}>{roundLabels[round]}</NativeSelectOption>)}</NativeSelect></label>
+                          <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Hypothetical Result <span className="text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span><NativeSelect className="min-w-0 w-full" value={player.result} onChange={(event) => patchPlayer(player.id, { result: event.target.value as RoundKey | '' })} aria-label={`${player.name} hypothetical result`} required><NativeSelectOption value="">--Please select--</NativeSelectOption>{roundsFor(level).map((round) => <NativeSelectOption key={round} value={round}>{roundLabels[round]}</NativeSelectOption>)}</NativeSelect></label>
                         ) : (
-                          <label className="grid gap-1.5 text-xs font-medium text-muted-foreground">Projected Team Points Awarded<Input type="number" min="0" value={player.manualTeamAward || ''} onChange={(event) => patchPlayer(player.id, { manualTeamAward: Number(event.target.value) })} aria-label={`${player.name} projected team points awarded`} placeholder="Points" /></label>
+                          <label className="grid gap-1.5 text-sm font-medium text-muted-foreground">Projected Team Points Awarded<Input type="number" min="0" value={player.manualTeamAward || ''} onChange={(event) => patchPlayer(player.id, { manualTeamAward: Number(event.target.value) })} aria-label={`${player.name} projected team points awarded`} placeholder="Points" /></label>
                         )}
                         <div className="rounded-xl bg-secondary px-4 py-3">
-                          <div className="flex items-center justify-between gap-3"><span className="text-xs text-muted-foreground">{result.hasBreakdown ? 'Projected Points' : 'Current Points'}</span>{result.hasBreakdown ? <span className={`inline-flex items-center gap-1 text-xs font-semibold tabular-nums ${changeTone}`}><ChangeIcon className="size-3.5" />{result.change > 0 ? '+' : ''}{fmt(result.change)}</span> : <Badge variant="outline">Breakdown Unavailable</Badge>}</div>
-                          <div className="mt-1 flex items-baseline gap-2"><span className="text-3xl font-semibold tracking-tight tabular-nums">{fmt(result.after)}</span>{result.hasBreakdown && <span className="text-xs text-muted-foreground">from {fmt(result.before)}</span>}</div>
+                          <div className="flex items-center justify-between gap-3"><span className="text-xs text-muted-foreground">{result.hasBreakdown ? 'Projected Points' : 'Current Points'}</span>{result.hasBreakdown ? projectionReady ? <span className={`inline-flex items-center gap-1 text-xs font-semibold tabular-nums ${changeTone}`}><ChangeIcon className="size-3.5" />{result.change > 0 ? '+' : ''}{fmt(result.change)}</span> : <span className="text-xs font-semibold tabular-nums text-muted-foreground">--- awarded</span> : <Badge variant="outline">Breakdown Unavailable</Badge>}</div>
+                          <div className="mt-1 flex items-baseline gap-2"><span className="text-3xl font-semibold tracking-tight tabular-nums">{result.hasBreakdown ? projectionReady ? fmt(result.after) : '---' : fmt(result.after)}</span>{result.hasBreakdown && <span className="text-xs text-muted-foreground">from {fmt(result.before)}</span>}</div>
                           <p className="mt-2 border-t border-border/70 pt-2 text-[11px] leading-4 text-muted-foreground">{explanation}</p>
                         </div>
                       </div>
 
                       <div className="grid grid-cols-3 gap-2">
-                        <div className="rounded-lg border bg-card px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Points Awarded</p><p className="mt-0.5 font-semibold tabular-nums">{fmt(result.award)}</p></div>
+                        <div className="rounded-lg border bg-card px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Points Awarded</p><p className="mt-0.5 font-semibold tabular-nums">{projectionReady ? fmt(result.award) : '---'}</p></div>
                         <div className="rounded-lg border bg-card px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Counting Cutoff</p><p className="mt-0.5 font-semibold tabular-nums">{result.hasBreakdown ? fmt(result.cutoff) : '—'}</p></div>
                         <div className="rounded-lg border bg-card px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Expires / Replaced</p><p className="mt-0.5 font-semibold tabular-nums">{result.hasBreakdown ? result.removed.length : '—'}</p></div>
                       </div>
@@ -757,45 +913,25 @@ export default function Home() {
           })}
         </div>
 
-        <Button className="mt-4 w-full sm:hidden" disabled={players.length >= 10} onClick={addPlayer}><Plus /> Add Player</Button>
+        <Button className="mt-4 w-full sm:hidden" disabled={players.length >= 8} onClick={addPlayer}><Plus /> Add Player</Button>
 
         <div className="mb-3 mt-8">
-          <h2 className="font-heading text-xl font-semibold">GENERATE TOP 8 SCENARIOS</h2>
+          <h2 className="font-heading text-xl font-semibold">GENERATE SCENARIOS FOR SELECTED PLAYERS</h2>
         </div>
         <Card>
           <CardContent className="space-y-4">
-            <div className="flex flex-wrap items-center gap-1.5 text-sm">
-              <span>Generate a table showing all possible outcomes for the top eight</span>
-              <NativeSelect className="w-auto" value={outcomeDiscipline} onChange={(event) => setOutcomeDiscipline(event.target.value as DisciplineCode)} aria-label="Top 8 comparison discipline">
-                {disciplineOptions.map((discipline) => <NativeSelectOption key={discipline.code} value={discipline.code}>{discipline.label}</NativeSelectOption>)}
-              </NativeSelect>
-              <span>players or pairs with a single click.</span>
+            <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
+              <p className="text-sm text-muted-foreground">Generate a table showing all possible outcomes for the players or pairs selected above.</p>
+              <Button className="shrink-0" disabled={eventType === 'team' || !selectedTournament || !level || selectedPlayers.length === 0} onClick={() => setShowSelectedOutcomeTable(true)}><Table2 /> Generate</Button>
             </div>
-            <div className="flex flex-wrap items-center gap-2">
-              <Button disabled={eventType === 'team'} onClick={() => setShowOutcomeTable(true)}><Table2 /> Generate</Button>
-              {eventType === 'team' && <span className="text-xs text-muted-foreground">Available for individual events.</span>}
-            </div>
-            {showOutcomeTable && eventType === 'individual' && (
+            {showSelectedOutcomeTable && eventType === 'individual' && selectedTournament && level && selectedOutcomeRows.length > 0 && (
               <div className="-mx-4 overflow-hidden border-y sm:mx-0 sm:rounded-xl sm:border">
-                <div className="border-b bg-muted/35 px-4 py-3">
-                  <p className="text-sm font-semibold">TOP 8 RANKING POINTS SCENARIOS · {disciplineOptions.find((discipline) => discipline.code === outcomeDiscipline)?.label}</p>
-                  <p className="text-xs text-muted-foreground">Projected total ranking points for each possible tournament finish in {selectedTournament?.name ?? 'the selected tournament'}.</p>
+                <div className="border-b bg-muted/35 px-3 py-2">
+                  <p className="font-sans text-base font-semibold">Projected total ranking points for each possible tournament finish in {selectedTournament.name}</p>
                 </div>
-                <Table className="w-max min-w-full tabular-nums">
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className="sticky left-0 z-10 w-32 max-w-32 bg-card">Players/Pairs</TableHead>
-                      {outcomeTableRounds.map((round) => <TableHead key={round.key} className="min-w-20 text-right">{round.label}</TableHead>)}
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {outcomeRows.map((row) => (
-                      <TableRow key={`${row.candidate.code}-${row.candidate.rank}`}>
-                        <TableCell className="sticky left-0 z-10 w-32 max-w-32 whitespace-normal bg-card font-medium leading-tight"><span className="mr-1 text-[10px] text-muted-foreground">#{row.candidate.rank}</span>{row.displayName}</TableCell>
-                        {row.totals.map((total, index) => <TableCell key={outcomeTableRounds[index].key} className="min-w-20 text-right font-medium">{fmt(total)}</TableCell>)}
-                      </TableRow>
-                    ))}
-                  </TableBody>
+                <Table className="w-max min-w-full text-xs tabular-nums">
+                  <TableHeader><TableRow><TableHead className="sticky left-0 z-10 h-8 w-32 max-w-32 bg-card px-2 py-1">Players/Pairs</TableHead>{outcomeTableRounds.map((round) => <TableHead key={round.key} className="h-8 min-w-18 px-2 py-1 text-right">{round.label}</TableHead>)}</TableRow></TableHeader>
+                  <TableBody>{selectedOutcomeRows.map((row) => <TableRow key={row.player.id}><TableCell className="sticky left-0 z-10 w-32 max-w-32 whitespace-normal bg-card px-2 py-1 font-medium leading-tight"><span className="text-[9px] text-muted-foreground">#{row.rank}</span> <span className="inline-flex rounded bg-secondary px-1 py-0.5 text-[9px] font-semibold text-secondary-foreground">{row.code}</span> <span>{row.displayName}</span></TableCell>{row.totals.map((total, index) => <TableCell key={outcomeTableRounds[index].key} className="min-w-18 px-2 py-1 text-right font-medium">{fmt(total)}</TableCell>)}</TableRow>)}</TableBody>
                 </Table>
               </div>
             )}
