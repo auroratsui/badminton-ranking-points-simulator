@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
@@ -7,7 +7,7 @@
 
 @theme inline {
   --color-background: var(--background); --color-foreground: var(--foreground);
-  --font-sans: Helvetica, Arial, sans-serif; --font-mono: Helvetica, Arial, sans-serif; --font-heading: 'Staatliches', Impact, Helvetica, Arial, sans-serif;
+  --font-sans: Helvetica, Arial, sans-serif; --font-mono: Helvetica, Arial, sans-serif; --font-heading: 'Space Grotesk', Helvetica, Arial, sans-serif;
   --color-ring: var(--ring); --color-input: var(--input); --color-border: var(--border); --color-destructive: var(--destructive);
   --color-accent-foreground: var(--accent-foreground); --color-accent: var(--accent); --color-muted-foreground: var(--muted-foreground); --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground); --color-secondary: var(--secondary); --color-primary-foreground: var(--primary-foreground); --color-primary: var(--primary);
@@ -32,3 +32,13 @@
 
 @layer base { * { @apply border-border outline-ring/50; } html { @apply font-sans; } body { @apply bg-background text-foreground; } }
 body { background-image: radial-gradient(circle at 90% 0%, oklch(0.9 0.07 145 / 35%), transparent 30rem); }
+
+.portrait-table-hint { display: none; }
+
+@media (orientation: portrait) and (max-width: 639px) {
+  .portrait-table-hint { display: flex; }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .simulator-header-inner { padding-top: .375rem; padding-bottom: .375rem; }
+}

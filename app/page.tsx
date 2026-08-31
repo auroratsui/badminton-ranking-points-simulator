@@ -11,6 +11,8 @@ import {
   CircleHelp,
   Plus,
   RotateCcw,
+  RotateCw,
+  Smartphone,
   Table2,
   Trash2,
 } from 'lucide-react';
@@ -88,6 +90,18 @@ type TournamentEntry = {
   category: string;
   city: string;
 };
+
+function PortraitTableHint() {
+  return (
+    <div className="portrait-table-hint mt-1.5 w-fit items-center gap-1.5 rounded-full border border-primary/25 bg-primary/10 px-2 py-1 text-[11px] font-medium leading-none text-primary">
+      <span className="relative h-4 w-5 shrink-0" aria-hidden="true">
+        <Smartphone className="absolute left-0 top-0 h-4 w-4" strokeWidth={2} />
+        <RotateCw className="absolute -right-0.5 -top-0.5 h-3 w-3 rounded-full bg-secondary" strokeWidth={2.5} />
+      </span>
+      Rotate your phone to view the full table
+    </div>
+  );
+}
 
 type TournamentCalendarData = {
   generatedAt: string;
@@ -211,7 +225,7 @@ function isExpired(scoreWeek: string, updateWeek: string) {
 }
 
 function isTeamTournament(label: string) {
-  return /thomas|uber|sudirman|team championships?|team event|mixed team|men's team|women's team/i.test(label);
+  return /thomas|uber|sudirman|team championships?|team event|mixed team|men's team|women's team|pan am m\s*&\s*f cup/i.test(label);
 }
 
 function eventTypeForTournament(tournament: Omit<TournamentEntry, 'id' | 'year'>) {
@@ -362,6 +376,36 @@ function calculate(player: Player, level: LevelKey | '', tournamentWeek: string,
   const dropped = beforeScores.filter((score) => !afterScores.some((next) => next.id === score.id));
   const cutoff = afterScores.length ? afterScores[afterScores.length - 1].points : 0;
   return { before, after, change: after - before, award, newCounts, removed, dropped, cutoff, beforeScores, afterScores, hasBreakdown };
+}
+
+function droppedScoreForExplanation(result: ReturnType<typeof calculate>) {
+  if (!result.dropped.length) return undefined;
+
+  const beforeIds = new Set(result.beforeScores.map((score) => score.id));
+  const enteredScores = result.afterScores.filter((score) => !beforeIds.has(score.id));
+  const enteredPointCounts = new Map<number, number>();
+  enteredScores.forEach((score) => enteredPointCounts.set(score.points, (enteredPointCounts.get(score.points) ?? 0) + 1));
+
+  const removedIds = new Set(result.removed.map((score) => score.id));
+  const neutralTieIds = new Set<string>();
+  const tieCandidates = [...result.dropped].sort((left, right) => Number(removedIds.has(left.id)) - Number(removedIds.has(right.id)));
+
+  tieCandidates.forEach((score) => {
+    const matchingEntrants = enteredPointCounts.get(score.points) ?? 0;
+    if (matchingEntrants > 0) {
+      neutralTieIds.add(score.id);
+      enteredPointCounts.set(score.points, matchingEntrants - 1);
+    }
+  });
+
+  const impactful = result.dropped.filter((score) => !neutralTieIds.has(score.id));
+  return [...impactful].sort((left, right) => {
+    const removedPriority = Number(removedIds.has(right.id)) - Number(removedIds.has(left.id));
+    if (removedPriority) return removedPriority;
+    const leftDifference = Math.abs((result.award - left.points) - result.change);
+    const rightDifference = Math.abs((result.award - right.points) - result.change);
+    return leftDifference - rightDifference;
+  })[0] ?? result.dropped[0];
 }
 
 function scoresFor(candidate: RankingPlayer) {
@@ -713,11 +757,7 @@ export default function Home() {
       ? outcomeTableName({ name: player.name, code: player.rankingKey?.split('-')[0] ?? '', discipline: player.discipline, rank: player.snapshotRank ?? 0, points: player.snapshotPoints ?? 0, tournaments: player.snapshotTournaments ?? 0, href: player.sourceHref ?? '' })
       : player.name,
     totals: outcomeTableRounds.map((round) => calculate({ ...player, result: round.key }, level, tournamentWeek, eventType, selectedPreviousEdition).after),
-  })).sort((left, right) => {
-    const disciplineDifference = disciplineOptions.findIndex((discipline) => discipline.code === left.code)
-      - disciplineOptions.findIndex((discipline) => discipline.code === right.code);
-    return disciplineDifference || left.rank - right.rank;
-  }), [selectedPlayers, outcomeTableRounds, level, tournamentWeek, eventType, selectedPreviousEdition]);
+  })), [selectedPlayers, outcomeTableRounds, level, tournamentWeek, eventType, selectedPreviousEdition]);
 
   const patchPlayer = (id: string, patch: Partial<Player>) => setPlayers((current) => current.map((player) => player.id === id ? { ...player, ...patch } : player));
   const changeLevel = (nextLevel: LevelKey | '') => {
@@ -755,34 +795,34 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-30 border-b border-border/70 bg-background/92 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-          <h1 className="font-heading text-lg font-semibold tracking-tight sm:text-xl">Badminton World Ranking Points Simulator</h1>
-          <Button variant="outline" size="sm" onClick={resetExample}><RotateCcw /> Reset Simulator</Button>
+        <div className="simulator-header-inner mx-auto flex max-w-[1440px] items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+          <h1 className="min-w-0 flex-1 text-balance font-heading text-[22px] leading-[0.95] font-normal tracking-[0px] md:text-[36px] md:leading-none">BADMINTON WORLD RANKING POINTS SIMULATOR</h1>
+          <Button variant="outline" size="sm" className="shrink-0 px-2 lg:px-3" onClick={resetExample} aria-label="Reset Simulator"><RotateCcw /><span className="hidden lg:inline">Reset Simulator</span></Button>
         </div>
       </header>
 
       <section className="mx-auto max-w-[1440px] px-4 pt-4 pb-7 sm:px-6 lg:px-8 lg:pt-5 lg:pb-9">
         <div className="mb-5 grid gap-3 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
-          <p className="text-sm leading-5 text-muted-foreground">Pick a tournament, select one or more top 100 players or pairs, enter hypothetical results, and preview world ranking points changes.</p>
+          <p className="text-[15px] leading-5 text-muted-foreground">Pick a tournament to preview all scenarios for the top 8 in each discipline. Or manually select up to 8 top-100 players or pairs, enter hypothetical results, and preview the resulting ranking points.</p>
           <Badge variant="outline" className="h-7 px-3"><CalendarClock /> Latest Reference · {rankingMeta.dateLabel}</Badge>
         </div>
 
         <div className="mb-3">
           <h2 className="font-heading text-xl font-semibold">PICK A TOURNAMENT</h2>
-          <p className="text-sm text-muted-foreground">Choose a current or upcoming BWF tournament. Its event type, level, week, and previous edition are filled in automatically.</p>
+          <p className="text-[15px] text-muted-foreground">Choose a current or upcoming BWF tournament. Its event type, level, week, and previous edition are filled in automatically.</p>
         </div>
 
         <Card className="mb-6 overflow-visible border-l-4 border-l-primary shadow-[0_12px_35px_rgb(22_62_43/6%)]">
           <CardContent className="grid gap-4 sm:grid-cols-2 lg:grid-cols-[1.1fr_.85fr_1.45fr_.75fr_1.45fr]">
-            <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Tournament Name <span className="text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span><CurrentTournamentSearch options={currentTournamentOptions} value={selectedTournamentId} onSelect={selectTournament} /></label>
+            <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Tournament Name <span className="ml-0.5 text-base font-bold leading-none text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span><CurrentTournamentSearch options={currentTournamentOptions} value={selectedTournamentId} onSelect={selectTournament} /></label>
             <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Event Type<NativeSelect className="min-w-0 w-full" value={eventType} onChange={(event) => setEventType(event.target.value as 'individual' | 'team')} aria-label="Event Type"><NativeSelectOption value="individual">Individual Event</NativeSelectOption><NativeSelectOption value="team">Team Event</NativeSelectOption></NativeSelect></label>
             <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Tournament Level<NativeSelect className="min-w-0 w-full" value={eventType === 'team' ? '' : level} onChange={(event) => changeLevel(event.target.value as LevelKey | '')} aria-label="Tournament Level" disabled={eventType === 'team'}><NativeSelectOption value="">{eventType === 'team' ? 'Not Applicable' : '---'}</NativeSelectOption>{Object.entries(levels).map(([key, item]) => <NativeSelectOption key={key} value={key}>{item.label}</NativeSelectOption>)}</NativeSelect></label>
             <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Tournament Week<NativeSelect className="min-w-0 w-full" value={tournamentWeek} onChange={(event) => setTournamentWeek(event.target.value)} aria-label="Tournament Week" aria-invalid={!validTournamentWeek}>{tournamentWeekOptions.map((week) => <NativeSelectOption key={week} value={week}>{week}</NativeSelectOption>)}</NativeSelect></label>
             <div className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Previous Edition Replaced</span><TournamentSearch key={previousYear} options={previousEditionOptions} value={selectedPreviousEdition?.id ?? ''} year={previousYear} onSelect={setPreviousEdition} /></div>
             <div className="rounded-lg bg-secondary px-4 py-3 sm:col-span-2 lg:col-span-1"><p className="text-xs text-muted-foreground">Winner Earns</p><p className="mt-1 text-2xl font-semibold tabular-nums">{!selectedTournament ? '--- pts' : eventType === 'team' ? 'Manual' : winnerAward ? `${fmt(winnerAward)} pts` : '--- pts'}</p></div>
             <div className="flex flex-col items-start gap-3 rounded-lg border bg-muted/25 px-4 py-3 sm:col-span-2 lg:col-span-4 lg:flex-row lg:items-center lg:justify-between">
-              <div className="flex flex-wrap items-center gap-1.5 text-sm">
-                <span className="font-semibold text-primary">SHORTCUT:</span>
+              <div className="flex flex-wrap items-center gap-1.5 text-[15px]">
+                <span className="inline-flex shrink-0 items-center rounded-full border border-primary/50 px-2 py-1 text-xs font-semibold leading-none text-primary">SHORTCUT</span>
                 <span>Generate a table showing all possible outcomes for the top 8 players or pairs in</span>
                 <NativeSelect className="w-auto min-w-36" value={outcomeDiscipline} onChange={(event) => setOutcomeDiscipline(event.target.value as DisciplineCode)} aria-label="Top 8 scenario discipline">
                   {disciplineOptions.map((discipline) => <NativeSelectOption key={discipline.code} value={discipline.code}>{discipline.label}</NativeSelectOption>)}
@@ -796,6 +836,7 @@ export default function Home() {
                   <div className="border-b bg-muted/35 px-3 py-2">
                     <p className="font-heading text-base">TOP 8 RANKING POINTS SCENARIOS · {disciplineOptions.find((discipline) => discipline.code === outcomeDiscipline)?.label}</p>
                     <p className="text-xs leading-tight text-muted-foreground">Projected total ranking points for each possible tournament finish in {selectedTournament.name}.</p>
+                    <PortraitTableHint />
                   </div>
                   <Table className="w-max min-w-full text-xs tabular-nums">
                     <TableHeader><TableRow><TableHead className="sticky left-0 z-10 h-8 w-28 max-w-28 bg-card px-2 py-1">Players/Pairs</TableHead>{outcomeTableRounds.map((round) => <TableHead key={round.key} className="h-8 min-w-18 px-2 py-1 text-right">{round.label}</TableHead>)}</TableRow></TableHeader>
@@ -821,6 +862,14 @@ export default function Home() {
               : Boolean(selectedTournament && player.manualTeamAward > 0);
             const ChangeIcon = result.change > 0 ? ArrowUpRight : result.change < 0 ? ArrowDownRight : ArrowRight;
             const changeTone = result.change > 0 ? 'text-primary' : result.change < 0 ? 'text-destructive' : 'text-muted-foreground';
+            const explanatoryDroppedScore = droppedScoreForExplanation(result);
+            const explanatoryDropReason = explanatoryDroppedScore
+              ? isReplacedBy(explanatoryDroppedScore, selectedPreviousEdition)
+                ? 'is replaced'
+                : isExpired(explanatoryDroppedScore.week, tournamentWeek)
+                  ? 'expires'
+                  : 'leaves the counting ten'
+              : '';
             const explanation = !result.hasBreakdown
               ? 'BWF does not publish a score breakdown for this ranking entry, so an exact projection is unavailable.'
               : !projectionReady
@@ -829,15 +878,15 @@ export default function Home() {
               ? 'Enter a projected team-event award.'
               : !result.newCounts
                 ? `${fmt(result.award)} awarded · below the current cutoff.`
-                : result.dropped.length
-                  ? `${fmt(result.award)} enters · ${result.dropped[0].label} (${fmt(result.dropped[0].points)}) leaves the counting ten.`
+                : explanatoryDroppedScore
+                  ? `${fmt(result.award)} enters · ${explanatoryDroppedScore.label} (${fmt(explanatoryDroppedScore.points)}) ${explanatoryDropReason}.`
                   : `${fmt(result.award)} enters the ranking total.`;
             return (
               <Card key={player.id} className="overflow-visible shadow-[0_12px_35px_rgb(22_62_43/6%)]">
                 <CardHeader className={player.rankingKey ? 'border-b' : ''}>
                   <div className="flex items-start justify-between gap-3">
                     <div className="grid flex-1 gap-3 sm:grid-cols-[1.4fr_.8fr]">
-                      <div className="grid min-w-0 gap-1 text-sm font-medium text-muted-foreground"><span>Player / Pair <span className="text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span>
+                      <div className="grid min-w-0 gap-1 text-sm font-medium text-muted-foreground"><span>Player / Pair <span className="ml-0.5 text-base font-bold leading-none text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span>
                         <PlayerSearch
                           player={player}
                           index={playerIndex}
@@ -867,7 +916,7 @@ export default function Home() {
                   <CardContent className="space-y-4">
                       <div className="grid gap-4 sm:grid-cols-[1fr_1.25fr]">
                         {eventType === 'individual' ? (
-                          <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Hypothetical Result <span className="text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span><NativeSelect className="min-w-0 w-full" value={player.result} onChange={(event) => patchPlayer(player.id, { result: event.target.value as RoundKey | '' })} aria-label={`${player.name} hypothetical result`} required><NativeSelectOption value="">--Please select--</NativeSelectOption>{roundsFor(level).map((round) => <NativeSelectOption key={round} value={round}>{roundLabels[round]}</NativeSelectOption>)}</NativeSelect></label>
+                          <label className="grid min-w-0 self-start gap-1.5 text-sm font-medium text-muted-foreground"><span>Hypothetical Result <span className="ml-0.5 text-base font-bold leading-none text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span><NativeSelect className="min-w-0 w-full" value={player.result} onChange={(event) => patchPlayer(player.id, { result: event.target.value as RoundKey | '' })} aria-label={`${player.name} hypothetical result`} required><NativeSelectOption value="">--Please select--</NativeSelectOption>{roundsFor(level).map((round) => <NativeSelectOption key={round} value={round}>{roundLabels[round]}</NativeSelectOption>)}</NativeSelect></label>
                         ) : (
                           <label className="grid gap-1.5 text-sm font-medium text-muted-foreground">Projected Team Points Awarded<Input type="number" min="0" value={player.manualTeamAward || ''} onChange={(event) => patchPlayer(player.id, { manualTeamAward: Number(event.target.value) })} aria-label={`${player.name} projected team points awarded`} placeholder="Points" /></label>
                         )}
@@ -895,7 +944,7 @@ export default function Home() {
                               return (
                                 <div key={score.id} className="grid gap-2 px-4 py-3 sm:grid-cols-[90px_minmax(0,1fr)_70px_auto] sm:items-center">
                                   <span className="text-[11px] tabular-nums text-muted-foreground">{score.week.replace('-W', ' / ')}</span>
-                                  <span className="min-w-0"><span className="block truncate text-xs font-medium">{score.label}</span><span className="text-[10px] text-muted-foreground">{score.result}{score.team ? ' · Team Event' : ''}</span></span>
+                                  <span className="min-w-0"><span className="block truncate text-xs font-medium">{score.label}</span><span className="text-[10px] text-muted-foreground">{score.team ? 'Team Event' : score.result}</span></span>
                                   <span className="text-right text-xs font-semibold tabular-nums">{fmt(score.points)}</span>
                                   <span className="flex flex-wrap justify-end gap-1">{score.bwfValid && <Badge variant="secondary">Counting Now</Badge>}{removed && <Badge variant="destructive">{replaced ? 'Replaced' : 'Expires'}</Badge>}{!removed && countsAfter && !score.bwfValid && <Badge>Counts After</Badge>}</span>
                                 </div>
@@ -921,13 +970,14 @@ export default function Home() {
         <Card>
           <CardContent className="space-y-4">
             <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
-              <p className="text-sm text-muted-foreground">Generate a table showing all possible outcomes for the players or pairs selected above.</p>
+              <p className="text-[15px] text-muted-foreground">Generate a table showing all possible outcomes for the players or pairs selected above.</p>
               <Button className="shrink-0" disabled={eventType === 'team' || !selectedTournament || !level || selectedPlayers.length === 0} onClick={() => setShowSelectedOutcomeTable(true)}><Table2 /> Generate</Button>
             </div>
             {showSelectedOutcomeTable && eventType === 'individual' && selectedTournament && level && selectedOutcomeRows.length > 0 && (
               <div className="-mx-4 overflow-hidden border-y sm:mx-0 sm:rounded-xl sm:border">
                 <div className="border-b bg-muted/35 px-3 py-2">
                   <p className="font-sans text-base font-semibold">Projected total ranking points for each possible tournament finish in {selectedTournament.name}</p>
+                  <PortraitTableHint />
                 </div>
                 <Table className="w-max min-w-full text-xs tabular-nums">
                   <TableHeader><TableRow><TableHead className="sticky left-0 z-10 h-8 w-32 max-w-32 bg-card px-2 py-1">Players/Pairs</TableHead>{outcomeTableRounds.map((round) => <TableHead key={round.key} className="h-8 min-w-18 px-2 py-1 text-right">{round.label}</TableHead>)}</TableRow></TableHeader>
@@ -942,7 +992,7 @@ export default function Home() {
           <Card>
             <CardHeader className="border-b"><CardTitle>What the Simulator Does</CardTitle></CardHeader>
             <CardContent>
-              <ol className="space-y-2 text-sm leading-[1.4] text-muted-foreground">
+              <ol className="space-y-2 text-[15px] leading-[1.4] text-muted-foreground">
                 <li className="flex gap-3"><Badge>1</Badge><span>Remove results that are at least 52 weeks old and any marked previous edition.</span></li>
                 <li className="flex gap-3"><Badge>2</Badge><span>Keep only the best valid team event result.</span></li>
                 <li className="flex gap-3"><Badge>3</Badge><span>Add the projected ranking points, then total all results when there are 10 or fewer, or the highest 10 when there are 11 or more.</span></li>
@@ -951,7 +1001,7 @@ export default function Home() {
           </Card>
         </section>
 
-        <Alert className="mt-5"><CircleHelp /><AlertTitle>Fan-developed Tool, Not an Official Ranking Publication</AlertTitle><AlertDescription>This tool is provided for entertainment and informational purposes only. Calculations are unofficial and may contain errors. The developer is not responsible for any decisions made or losses incurred based on the results shown here.</AlertDescription></Alert>
+        <Alert className="mt-5"><CircleHelp /><AlertTitle className="text-[15px]">Fan-developed Tool, Not an Official Ranking Publication</AlertTitle><AlertDescription className="text-[15px]">This tool is provided for entertainment and informational purposes only. Calculations are unofficial and may contain errors. The developer is not responsible for any decisions made or losses incurred based on the results shown here.</AlertDescription></Alert>
       </section>
     </main>
   );

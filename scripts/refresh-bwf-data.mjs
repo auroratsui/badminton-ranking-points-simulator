@@ -3,13 +3,156 @@ import { chromium } from 'playwright';
 
 const rankingUrl = 'https://bwfbadminton.com/rankings/';
 const calendarUrl = (year, status = 'all') => `https://corporate.bwfbadminton.com/events/calendar/${year}/${status}/0/-1/`;
+const tournamentsoftwareRankingUrl = 'https://www.tournamentsoftware.com/ranking/ranking.aspx?rid=70';
 const disciplines = [
-  { code: 'MS', discipline: 'Men’s Singles', tab: "MEN'S SINGLES" },
-  { code: 'WS', discipline: 'Women’s Singles', tab: "WOMEN'S SINGLES" },
-  { code: 'MD', discipline: 'Men’s Doubles', tab: "MEN'S DOUBLES" },
-  { code: 'WD', discipline: 'Women’s Doubles', tab: "WOMEN'S DOUBLES" },
-  { code: 'XD', discipline: 'Mixed Doubles', tab: "MIXED DOUBLES" },
+  { code: 'MS', discipline: 'Men’s Singles', tournamentsoftwareDiscipline: "Men's Singles", tab: "MEN'S SINGLES", category: 472 },
+  { code: 'WS', discipline: 'Women’s Singles', tournamentsoftwareDiscipline: "Women's Singles", tab: "WOMEN'S SINGLES", category: 473 },
+  { code: 'MD', discipline: 'Men’s Doubles', tournamentsoftwareDiscipline: "Men's Doubles", tab: "MEN'S DOUBLES", category: 474 },
+  { code: 'WD', discipline: 'Women’s Doubles', tournamentsoftwareDiscipline: "Women's Doubles", tab: "WOMEN'S DOUBLES", category: 475 },
+  { code: 'XD', discipline: 'Mixed Doubles', tournamentsoftwareDiscipline: 'Mixed Doubles', tab: "MIXED DOUBLES", category: 476 },
 ];
+
+function normalizedRankingName(value) {
+  return value
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLocaleLowerCase()
+    .replace(/[^a-z0-9/]+/g, ' ')
+    .trim()
+    .split('/')
+    .map((part) => part.trim().replace(/\s+/g, ' '))
+    .filter(Boolean)
+    .sort()
+    .join(' / ');
+}
+
+function tournamentsoftwareDateToIso(value) {
+  const match = /(\d{1,2})\/(\d{1,2})\/(\d{4})/.exec(value);
+  return match ? `${match[3]}-${match[1].padStart(2, '0')}-${match[2].padStart(2, '0')}` : '';
+}
+
+async function acceptTournamentsoftwareCookies(page) {
+  const accept = page.getByRole('button', { name: 'Accept', exact: true });
+  if (await accept.count()) {
+    await accept.click();
+    await page.waitForLoadState('domcontentloaded');
+  }
+}
+
+async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate, rankingPlayers, rankingBreakdowns) {
+  const missingPlayers = rankingPlayers.filter((player) => {
+    const scores = rankingBreakdowns[`${player.code}-${player.rank}`]?.scores ?? [];
+    const usableScores = scores.filter((score) => score.points > 0 && score.week && score.label);
+    const validTotal = usableScores.filter((score) => score.valid).reduce((total, score) => total + score.points, 0);
+    return !usableScores.length || Math.round(validTotal) !== player.points;
+  });
+  if (!missingPlayers.length) return;
+
+  const rankingPage = await context.newPage();
+  await rankingPage.goto(tournamentsoftwareRankingUrl, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+  await acceptTournamentsoftwareCookies(rankingPage);
+
+  const heading = await rankingPage.getByRole('heading', { name: /BWF World Rankings/ }).first().innerText();
+  const fallbackDate = tournamentsoftwareDateToIso(heading);
+  if (fallbackDate !== rankingDate) {
+    console.warn(`Tournamentsoftware fallback skipped: latest edition is ${fallbackDate || 'unknown'}, expected ${rankingDate}`);
+    await rankingPage.close();
+    return;
+  }
+
+  const categoryHref = await rankingPage.locator('a[href*="category.aspx?id="]').first().getAttribute('href');
+  const rankingId = categoryHref ? new URL(categoryHref, rankingPage.url()).searchParams.get('id') : null;
+  await rankingPage.close();
+  if (!rankingId) {
+    console.warn('Tournamentsoftware fallback skipped: latest ranking ID was not found');
+    return;
+  }
+
+  const categoryPage = await context.newPage();
+  const breakdownPage = await context.newPage();
+
+  for (const config of disciplines) {
+    const missingInDiscipline = missingPlayers.filter((player) => player.code === config.code);
+    if (!missingInDiscipline.length) continue;
+
+    const categoryUrl = `https://www.tournamentsoftware.com/ranking/category.aspx?id=${rankingId}&category=${config.category}&p=1&ps=100`;
+    await categoryPage.goto(categoryUrl, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+    await acceptTournamentsoftwareCookies(categoryPage);
+
+    const fallbackEntries = await categoryPage.locator('table tbody tr').evaluateAll((rows) => rows.map((row) => {
+      const links = Array.from(row.querySelectorAll('a[href*="player.aspx"]'));
+      if (!links.length) return null;
+      return {
+        name: links.map((link) => link.textContent?.replace(/\s+/g, ' ').trim()).filter(Boolean).join(' / '),
+        href: links[0].href,
+      };
+    }).filter(Boolean));
+    const fallbackByName = new Map(fallbackEntries.map((entry) => [normalizedRankingName(entry.name), entry]));
+
+    for (const player of missingInDiscipline) {
+      const rankingKey = `${player.code}-${player.rank}`;
+      const fallback = fallbackByName.get(normalizedRankingName(player.name));
+      if (!fallback) {
+        console.warn(`${rankingKey}: no matching Tournamentsoftware player entry for ${player.name}`);
+        continue;
+      }
+
+      await breakdownPage.goto(fallback.href, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+      const scores = await breakdownPage.locator('table').evaluateAll((tables, args) => {
+        const normalize = (value) => value
+          .normalize('NFKD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLocaleLowerCase()
+          .replace(/[^a-z0-9/]+/g, ' ')
+          .trim()
+          .split('/')
+          .map((part) => part.trim().replace(/\s+/g, ' '))
+          .filter(Boolean)
+          .sort()
+          .join(' / ');
+        const prefix = `${args.discipline} results of `;
+        const table = tables.find((candidate) => {
+          const caption = candidate.querySelector('caption')?.textContent?.replace(/\s+/g, ' ').trim() || '';
+          return caption.startsWith(prefix) && normalize(caption.slice(prefix.length)) === normalize(args.playerName);
+        });
+        if (!table) return [];
+
+        return Array.from(table.querySelectorAll('tbody tr')).map((row) => {
+          const cells = Array.from(row.querySelectorAll('td'));
+          const tournamentLink = cells[0]?.querySelector('a[href*="tournament.aspx"]');
+          if (!tournamentLink) return null;
+          const weekMatch = /^(\d{4})-(\d{1,2})$/.exec(cells[2]?.textContent?.trim() || '');
+          return {
+            week: weekMatch ? `${weekMatch[1]}-W${weekMatch[2].padStart(2, '0')}` : '',
+            label: tournamentLink.textContent?.replace(/\s+/g, ' ').trim() || '',
+            href: tournamentLink.href,
+            result: cells[3]?.textContent?.trim() || '',
+            points: Number(cells[4]?.textContent?.replace(/,/g, '').trim()),
+            valid: Boolean(row.querySelector('img[alt^="Used for:"]')),
+          };
+        }).filter((score) => score?.week && score.label && Number.isFinite(score.points));
+      }, { discipline: config.tournamentsoftwareDiscipline, playerName: player.name });
+
+      const validTotal = scores.filter((score) => score.valid).reduce((total, score) => total + score.points, 0);
+      if (!scores.length || Math.round(validTotal) !== player.points) {
+        console.warn(`${rankingKey}: Tournamentsoftware fallback rejected (valid total ${validTotal}, expected ${player.points})`);
+        continue;
+      }
+
+      const current = rankingBreakdowns[rankingKey];
+      rankingBreakdowns[rankingKey] = {
+        ...current,
+        name: player.name,
+        profiles: Array.from(new Set([...(current?.profiles ?? []), fallback.href])),
+        scores,
+      };
+      console.log(`${rankingKey}: filled missing breakdown from Tournamentsoftware`);
+    }
+  }
+
+  await categoryPage.close();
+  await breakdownPage.close();
+}
 
 const browser = await chromium.launch({
   headless: true,
@@ -17,6 +160,7 @@ const browser = await chromium.launch({
 });
 const context = await browser.newContext({
   locale: 'en-GB',
+  ignoreHTTPSErrors: true,
   userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
 });
 
@@ -92,6 +236,8 @@ try {
 
     console.log(`${config.code}: refreshed 100 entries`);
   }
+
+  await fillMissingBreakdownsFromTournamentsoftware(context, weekMatch[2], rankingPlayers, rankingBreakdowns);
 
   const generatedAt = new Date().toISOString();
   const rankingMeta = {

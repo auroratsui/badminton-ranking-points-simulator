@@ -29907,20 +29907,336 @@
     ]
   },
   "MD-12": {
-    "name": "Raymond INDRA Nikolaus JOAQUIN",
+    "name": "Raymond INDRA / Nikolaus JOAQUIN",
     "profiles": [
       "https://bwfbadminton.com/player/99781/raymond-indra/",
-      "https://bwfbadminton.com/player/55669/nikolaus-joaquin/"
+      "https://bwfbadminton.com/player/55669/nikolaus-joaquin/",
+      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53425&player=2586991"
     ],
-    "scores": []
+    "scores": [
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=320804",
+        "label": "BWF World Championships 2026",
+        "points": 1450,
+        "result": "33/64",
+        "valid": false,
+        "week": "2026-W34"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=317585",
+        "label": "VICTOR China Open 2026",
+        "points": 5400,
+        "result": "9/16",
+        "valid": true,
+        "week": "2026-W30"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=315560",
+        "label": "DAIHATSU Japan Open 2026",
+        "points": 2660,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W29"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=309642",
+        "label": "POLYTRON Indonesia Open 2026",
+        "points": 10200,
+        "result": "2",
+        "valid": true,
+        "week": "2026-W23"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=305455",
+        "label": "BWF Thomas & Uber Cup Finals 2026",
+        "points": 6186,
+        "result": "1",
+        "valid": true,
+        "week": "2026-W18"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=303513",
+        "label": "BANK OF NINGBO Badminton Asia Championships 2026",
+        "points": 3000,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W15"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=301390",
+        "label": "Orleans Masters Badminton 2026 presented by VICTOR",
+        "points": 3850,
+        "result": "5/8",
+        "valid": true,
+        "week": "2026-W12"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=300792",
+        "label": "YONEX Swiss Open 2026",
+        "points": 1670,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W11"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=300187",
+        "label": "YONEX All England Open Badminton Championships 2026",
+        "points": 8400,
+        "result": "3/4",
+        "valid": true,
+        "week": "2026-W10"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=297636",
+        "label": "TSINGTAO Badminton Asia Team Championships 2026",
+        "points": 5684,
+        "result": "1",
+        "valid": false,
+        "week": "2026-W06"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=296779",
+        "label": "PRINCESS SIRIVANNAVARI Thailand Masters 2026",
+        "points": 5950,
+        "result": "2",
+        "valid": true,
+        "week": "2026-W05"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=296358",
+        "label": "DAIHATSU Indonesia Masters 2026",
+        "points": 7800,
+        "result": "2",
+        "valid": true,
+        "week": "2026-W04"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=293919",
+        "label": "PETRONAS Malaysia Open 2026",
+        "points": 3000,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W02"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=287505",
+        "label": "WONDR by BNI Indonesia Masters II 2025",
+        "points": 5500,
+        "result": "1",
+        "valid": true,
+        "week": "2025-W43"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=285619",
+        "label": "Al Ain Masters 2025",
+        "points": 4680,
+        "result": "2",
+        "valid": true,
+        "week": "2025-W40"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=284929",
+        "label": "VICTOR Kaohsiung Masters 2025",
+        "points": 3850,
+        "result": "3/4",
+        "valid": true,
+        "week": "2025-W39"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=284330",
+        "label": "WONDR by BNI Indonesia Masters I 2025",
+        "points": 3850,
+        "result": "3/4",
+        "valid": false,
+        "week": "2025-W38"
+      }
+    ]
   },
   "MD-13": {
-    "name": "Daniel LUNDGAARD Mads VESTERGAARD",
+    "name": "Daniel LUNDGAARD / Mads VESTERGAARD",
     "profiles": [
       "https://bwfbadminton.com/player/68134/daniel-lundgaard/",
-      "https://bwfbadminton.com/player/60507/mads-vestergaard/"
+      "https://bwfbadminton.com/player/60507/mads-vestergaard/",
+      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53425&player=1966552"
     ],
-    "scores": []
+    "scores": [
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=320804",
+        "label": "BWF World Championships 2026",
+        "points": 6000,
+        "result": "9/16",
+        "valid": true,
+        "week": "2026-W34"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=317585",
+        "label": "VICTOR China Open 2026",
+        "points": 7400,
+        "result": "5/8",
+        "valid": true,
+        "week": "2026-W30"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=315560",
+        "label": "DAIHATSU Japan Open 2026",
+        "points": 4320,
+        "result": "9/16",
+        "valid": false,
+        "week": "2026-W29"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=309642",
+        "label": "POLYTRON Indonesia Open 2026",
+        "points": 3000,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W23"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=308924",
+        "label": "KFF Singapore Badminton Open 2026",
+        "points": 4320,
+        "result": "9/16",
+        "valid": false,
+        "week": "2026-W22"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=307717",
+        "label": "PERODUA Malaysia Masters 2026",
+        "points": 9200,
+        "result": "1",
+        "valid": true,
+        "week": "2026-W21"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=305455",
+        "label": "BWF Thomas & Uber Cup Finals 2026",
+        "points": 5905,
+        "result": "1",
+        "valid": true,
+        "week": "2026-W18"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=303514",
+        "label": "2026 European Championships",
+        "points": 6420,
+        "result": "3/4",
+        "valid": true,
+        "week": "2026-W15"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=300792",
+        "label": "YONEX Swiss Open 2026",
+        "points": 5950,
+        "result": "2",
+        "valid": true,
+        "week": "2026-W11"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=300187",
+        "label": "YONEX All England Open Badminton Championships 2026",
+        "points": 3000,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W10"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=299440",
+        "label": "YONEX German Open 2026",
+        "points": 1670,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W09"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=298183",
+        "label": "2026 European Men's & Women's Team Championships",
+        "points": 4896,
+        "result": "1",
+        "valid": false,
+        "week": "2026-W07"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=296358",
+        "label": "DAIHATSU Indonesia Masters 2026",
+        "points": 6420,
+        "result": "3/4",
+        "valid": true,
+        "week": "2026-W04"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=295306",
+        "label": "YONEX-SUNRISE India Open 2026",
+        "points": 2660,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W03"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=293919",
+        "label": "PETRONAS Malaysia Open 2026",
+        "points": 3000,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W02"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=290459",
+        "label": "Scottish Open 2025",
+        "points": 4000,
+        "result": "1",
+        "valid": false,
+        "week": "2025-W47"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=288347",
+        "label": "HYLO Open 2025",
+        "points": 5040,
+        "result": "5/8",
+        "valid": true,
+        "week": "2025-W44"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=287504",
+        "label": "YONEX French Open 2025",
+        "points": 4320,
+        "result": "9/16",
+        "valid": true,
+        "week": "2025-W43"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=286886",
+        "label": "VICTOR Denmark Open 2025",
+        "points": 4320,
+        "result": "9/16",
+        "valid": true,
+        "week": "2025-W42"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=286207",
+        "label": "CLASH OF CLANS Arctic Open 2025 powered by YONEX",
+        "points": 2220,
+        "result": "17/32",
+        "valid": false,
+        "week": "2025-W41"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=284329",
+        "label": "LI-NING China Masters 2025",
+        "points": 2660,
+        "result": "17/32",
+        "valid": false,
+        "week": "2025-W38"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=283583",
+        "label": "LI-NING Hong Kong Open 2025",
+        "points": 2220,
+        "result": "17/32",
+        "valid": false,
+        "week": "2025-W37"
+      }
+    ]
   },
   "MD-14": {
     "name": "KANG Min Hyuk KI Dong Ju",
@@ -30052,19 +30368,196 @@
     ]
   },
   "MD-15": {
-    "name": "LEE Jhe-Huei YANG Po-Hsuan",
+    "name": "LEE Jhe-Huei / YANG Po-Hsuan",
     "profiles": [
       "https://bwfbadminton.com/player/99102/lee-jhe-huei/",
-      "https://bwfbadminton.com/player/76275/yang-po-hsuan/"
+      "https://bwfbadminton.com/player/76275/yang-po-hsuan/",
+      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53425&player=816279"
     ],
     "scores": [
       {
-        "href": "",
-        "label": "",
-        "points": 0,
-        "result": "",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=320804",
+        "label": "BWF World Championships 2026",
+        "points": 10500,
+        "result": "3/4",
+        "valid": true,
+        "week": "2026-W34"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=318282",
+        "label": "YONEX Taipei Open 2026",
+        "points": 3850,
+        "result": "5/8",
         "valid": false,
-        "week": ""
+        "week": "2026-W31"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=317585",
+        "label": "VICTOR China Open 2026",
+        "points": 3300,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W30"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=315560",
+        "label": "DAIHATSU Japan Open 2026",
+        "points": 4320,
+        "result": "9/16",
+        "valid": false,
+        "week": "2026-W29"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=309642",
+        "label": "POLYTRON Indonesia Open 2026",
+        "points": 4800,
+        "result": "9/16",
+        "valid": true,
+        "week": "2026-W23"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=308924",
+        "label": "KFF Singapore Badminton Open 2026",
+        "points": 4320,
+        "result": "9/16",
+        "valid": false,
+        "week": "2026-W22"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=307717",
+        "label": "PERODUA Malaysia Masters 2026",
+        "points": 2220,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W21"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=305455",
+        "label": "BWF Thomas & Uber Cup Finals 2026",
+        "points": 5664,
+        "result": "1",
+        "valid": false,
+        "week": "2026-W18"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=303513",
+        "label": "BANK OF NINGBO Badminton Asia Championships 2026",
+        "points": 3000,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W15"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=300187",
+        "label": "YONEX All England Open Badminton Championships 2026",
+        "points": 4800,
+        "result": "9/16",
+        "valid": true,
+        "week": "2026-W10"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=299440",
+        "label": "YONEX German Open 2026",
+        "points": 2750,
+        "result": "9/16",
+        "valid": false,
+        "week": "2026-W09"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=297636",
+        "label": "TSINGTAO Badminton Asia Team Championships 2026",
+        "points": 6026,
+        "result": "1",
+        "valid": true,
+        "week": "2026-W06"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=296358",
+        "label": "DAIHATSU Indonesia Masters 2026",
+        "points": 3600,
+        "result": "9/16",
+        "valid": false,
+        "week": "2026-W04"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=295306",
+        "label": "YONEX-SUNRISE India Open 2026",
+        "points": 6050,
+        "result": "5/8",
+        "valid": true,
+        "week": "2026-W03"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=293919",
+        "label": "PETRONAS Malaysia Open 2026",
+        "points": 3000,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W02"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=289856",
+        "label": "Kumamoto Masters Japan 2025",
+        "points": 5040,
+        "result": "5/8",
+        "valid": true,
+        "week": "2025-W46"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=288347",
+        "label": "HYLO Open 2025",
+        "points": 6420,
+        "result": "3/4",
+        "valid": true,
+        "week": "2025-W44"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=287504",
+        "label": "YONEX French Open 2025",
+        "points": 4320,
+        "result": "9/16",
+        "valid": false,
+        "week": "2025-W43"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=286886",
+        "label": "VICTOR Denmark Open 2025",
+        "points": 4320,
+        "result": "9/16",
+        "valid": false,
+        "week": "2025-W42"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=286207",
+        "label": "CLASH OF CLANS Arctic Open 2025 powered by YONEX",
+        "points": 3600,
+        "result": "9/16",
+        "valid": false,
+        "week": "2025-W41"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=284928",
+        "label": "SUWON VICTOR Korea Open 2025",
+        "points": 6420,
+        "result": "3/4",
+        "valid": true,
+        "week": "2025-W39"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=284329",
+        "label": "LI-NING China Masters 2025",
+        "points": 4320,
+        "result": "9/16",
+        "valid": true,
+        "week": "2025-W38"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=283583",
+        "label": "LI-NING Hong Kong Open 2025",
+        "points": 5040,
+        "result": "5/8",
+        "valid": true,
+        "week": "2025-W37"
       }
     ]
   },
@@ -30399,19 +30892,180 @@
     ]
   },
   "MD-18": {
-    "name": "Fang-Chih LEE Fang-Jen LEE",
+    "name": "Fang-Chih LEE / Fang-Jen LEE",
     "profiles": [
       "https://bwfbadminton.com/player/57424/fang-chih-lee/",
-      "https://bwfbadminton.com/player/70231/fang-jen-lee/"
+      "https://bwfbadminton.com/player/70231/fang-jen-lee/",
+      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53425&player=890964"
     ],
     "scores": [
       {
-        "href": "",
-        "label": "",
-        "points": 0,
-        "result": "",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=320804",
+        "label": "BWF World Championships 2026",
+        "points": 1450,
+        "result": "33/64",
         "valid": false,
-        "week": ""
+        "week": "2026-W34"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=318282",
+        "label": "YONEX Taipei Open 2026",
+        "points": 1670,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W31"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=317585",
+        "label": "VICTOR China Open 2026",
+        "points": 3300,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W30"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=315560",
+        "label": "DAIHATSU Japan Open 2026",
+        "points": 4320,
+        "result": "9/16",
+        "valid": true,
+        "week": "2026-W29"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=310418",
+        "label": "SATHIO GROUP Australian Badminton Open 2026",
+        "points": 5040,
+        "result": "5/8",
+        "valid": true,
+        "week": "2026-W24"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=309642",
+        "label": "POLYTRON Indonesia Open 2026",
+        "points": 6600,
+        "result": "5/8",
+        "valid": true,
+        "week": "2026-W23"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=308924",
+        "label": "KFF Singapore Badminton Open 2026",
+        "points": 2660,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W22"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=307168",
+        "label": "TOYOTA Thailand Open 2026",
+        "points": 3600,
+        "result": "9/16",
+        "valid": false,
+        "week": "2026-W20"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=303513",
+        "label": "BANK OF NINGBO Badminton Asia Championships 2026",
+        "points": 6600,
+        "result": "5/8",
+        "valid": true,
+        "week": "2026-W15"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=300792",
+        "label": "YONEX Swiss Open 2026",
+        "points": 7000,
+        "result": "1",
+        "valid": true,
+        "week": "2026-W11"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=300187",
+        "label": "YONEX All England Open Badminton Championships 2026",
+        "points": 3000,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W10"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=299440",
+        "label": "YONEX German Open 2026",
+        "points": 3850,
+        "result": "5/8",
+        "valid": true,
+        "week": "2026-W09"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=297636",
+        "label": "TSINGTAO Badminton Asia Team Championships 2026",
+        "points": 4791,
+        "result": "1",
+        "valid": true,
+        "week": "2026-W06"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=296779",
+        "label": "PRINCESS SIRIVANNAVARI Thailand Masters 2026",
+        "points": 3850,
+        "result": "5/8",
+        "valid": true,
+        "week": "2026-W05"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=296358",
+        "label": "DAIHATSU Indonesia Masters 2026",
+        "points": 2220,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W04"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=295306",
+        "label": "YONEX-SUNRISE India Open 2026",
+        "points": 2660,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W03"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=293919",
+        "label": "PETRONAS Malaysia Open 2026",
+        "points": 3000,
+        "result": "17/32",
+        "valid": false,
+        "week": "2026-W02"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=289856",
+        "label": "Kumamoto Masters Japan 2025",
+        "points": 2220,
+        "result": "17/32",
+        "valid": false,
+        "week": "2025-W46"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=284928",
+        "label": "SUWON VICTOR Korea Open 2025",
+        "points": 2220,
+        "result": "17/32",
+        "valid": false,
+        "week": "2025-W39"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=284329",
+        "label": "LI-NING China Masters 2025",
+        "points": 4320,
+        "result": "9/16",
+        "valid": true,
+        "week": "2025-W38"
+      },
+      {
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53425&tournament=283583",
+        "label": "LI-NING Hong Kong Open 2025",
+        "points": 6420,
+        "result": "3/4",
+        "valid": true,
+        "week": "2025-W37"
       }
     ]
   },
