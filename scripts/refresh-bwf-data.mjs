@@ -56,6 +56,31 @@ async function dismissBwfCookieBanner(page) {
   if (outcome) console.log(`Dismissed BWF cookie consent overlay (${outcome})`);
 }
 
+async function closeRankingBreakdownDialog(page, dialog, rankingKey) {
+  const isVisible = () => dialog.isVisible().catch(() => false);
+  if (!(await isVisible())) return;
+
+  const closeButtons = [
+    dialog.locator('button:has(.mdi-close)').first(),
+    dialog.getByRole('button', { name: /^Close$/i }).first(),
+  ];
+
+  for (const closeButton of closeButtons) {
+    if (!(await isVisible())) return;
+    if ((await closeButton.count()) && (await closeButton.isVisible().catch(() => false))) {
+      await closeButton.click({ force: true, timeout: 5_000 }).catch(() => {});
+      await dialog.waitFor({ state: 'hidden', timeout: 2_000 }).catch(() => {});
+    }
+  }
+
+  if (await isVisible()) {
+    await page.keyboard.press('Escape').catch(() => {});
+    await dialog.waitFor({ state: 'hidden', timeout: 2_000 }).catch(() => {});
+  }
+
+  if (await isVisible()) throw new Error(`${rankingKey}: ranking breakdown dialog could not be closed`);
+}
+
 async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate, rankingPlayers, rankingBreakdowns) {
   const missingPlayers = rankingPlayers.filter((player) => {
     const scores = rankingBreakdowns[`${player.code}-${player.rank}`]?.scores ?? [];
@@ -248,8 +273,7 @@ try {
       }));
 
       rankingBreakdowns[rankingKey] = { name: player.name, profiles: [player.href], scores };
-      await dialog.getByRole('button', { name: 'Close', exact: true }).click();
-      await dialog.waitFor({ state: 'hidden', timeout: 10_000 });
+      await closeRankingBreakdownDialog(page, dialog, rankingKey);
     }
 
     console.log(`${config.code}: refreshed 100 entries`);
