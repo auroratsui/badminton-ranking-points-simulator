@@ -9,10 +9,10 @@ export type RankingPlayer = {
 };
 
 export const rankingMeta = {
-  "week": 35,
-  "date": "2026-08-25",
-  "dateLabel": "25 Aug 2026",
-  "generatedAt": "2026-09-01T03:00:20.758Z"
+  "week": 36,
+  "date": "2026-09-01",
+  "dateLabel": "1 Sept 2026",
+  "generatedAt": "2026-09-01T12:31:13.661Z"
 } as const;
 
 export const rankingPlayers: RankingPlayer[] = [
@@ -405,15 +405,6 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 44,
-    "name": "Prahdiska Bagas SHUJIWO",
-    "href": "https://bwfbadminton.com/player/59614/prahdiska-bagas-shujiwo/",
-    "tournaments": 15,
-    "points": 34893,
-    "code": "MS",
-    "discipline": "Men’s Singles"
-  },
-  {
-    "rank": 45,
     "name": "HOH Justin",
     "href": "https://bwfbadminton.com/player/68392/hoh-justin/",
     "tournaments": 20,
@@ -422,16 +413,16 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 46,
+    "rank": 45,
     "name": "Muhamad YUSUF",
     "href": "https://bwfbadminton.com/player/90218/muhamad-yusuf/",
-    "tournaments": 16,
+    "tournaments": 15,
     "points": 34210,
     "code": "MS",
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 47,
+    "rank": 46,
     "name": "JEON Hyeok Jin",
     "href": "https://bwfbadminton.com/player/65580/jeon-hyeok-jin/",
     "tournaments": 13,
@@ -440,16 +431,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 48,
-    "name": "YOO Tae Bin",
-    "href": "https://bwfbadminton.com/player/97115/yoo-tae-bin/",
-    "tournaments": 18,
-    "points": 33739,
-    "code": "MS",
-    "discipline": "Men’s Singles"
-  },
-  {
-    "rank": 49,
+    "rank": 47,
     "name": "Anthony Sinisuka GINTING",
     "href": "https://bwfbadminton.com/player/95661/anthony-sinisuka-ginting/",
     "tournaments": 14,
@@ -458,16 +440,25 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 50,
-    "name": "Minoru KOGA",
-    "href": "https://bwfbadminton.com/player/80062/minoru-koga/",
-    "tournaments": 21,
-    "points": 33570,
+    "rank": 48,
+    "name": "YOO Tae Bin",
+    "href": "https://bwfbadminton.com/player/97115/yoo-tae-bin/",
+    "tournaments": 17,
+    "points": 33649,
     "code": "MS",
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 51,
+    "rank": 49,
+    "name": "Prahdiska Bagas SHUJIWO",
+    "href": "https://bwfbadminton.com/player/59614/prahdiska-bagas-shujiwo/",
+    "tournaments": 14,
+    "points": 33113,
+    "code": "MS",
+    "discipline": "Men’s Singles"
+  },
+  {
+    "rank": 50,
     "name": "Kiran GEORGE",
     "href": "https://bwfbadminton.com/player/68317/kiran-george/",
     "tournaments": 18,
@@ -476,7 +467,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 52,
+    "rank": 51,
     "name": "ZHU Xuan Chen",
     "href": "https://bwfbadminton.com/player/97345/zhu-xuan-chen/",
     "tournaments": 13,
@@ -485,7 +476,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 53,
+    "rank": 52,
     "name": "WANG Yu-Kai",
     "href": "https://bwfbadminton.com/player/98279/wang-yu-kai/",
     "tournaments": 18,
@@ -494,7 +485,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 54,
+    "rank": 53,
     "name": "Julien CARRAGGI",
     "href": "https://bwfbadminton.com/player/70399/julien-carraggi/",
     "tournaments": 19,
@@ -503,11 +494,20 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
+    "rank": 54,
+    "name": "Minoru KOGA",
+    "href": "https://bwfbadminton.com/player/80062/minoru-koga/",
+    "tournaments": 20,
+    "points": 32370,
+    "code": "MS",
+    "discipline": "Men’s Singles"
+  },
+  {
     "rank": 55,
     "name": "Daniil DUBOVENKO",
     "href": "https://bwfbadminton.com/player/94119/daniil-dubovenko/",
-    "tournaments": 20,
-    "points": 32200,
+    "tournaments": 19,
+    "points": 31923,
     "code": "MS",
     "discipline": "Men’s Singles"
   },
@@ -657,15 +657,24 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 72,
-    "name": "LIAO Jhuo-Fu",
-    "href": "https://bwfbadminton.com/player/64081/liao-jhuo-fu/",
-    "tournaments": 17,
-    "points": 26540,
+    "name": "Richie Duta RICHARDO",
+    "href": "https://bwfbadminton.com/player/89808/richie-duta-richardo/",
+    "tournaments": 13,
+    "points": 26951,
     "code": "MS",
     "discipline": "Men’s Singles"
   },
   {
     "rank": 73,
+    "name": "LIAO Jhuo-Fu",
+    "href": "https://bwfbadminton.com/player/64081/liao-jhuo-fu/",
+    "tournaments": 18,
+    "points": 26540,
+    "code": "MS",
+    "discipline": "Men’s Singles"
+  },
+  {
+    "rank": 74,
     "name": "Rithvik Sanjeevi SATISH KUMAR",
     "href": "https://bwfbadminton.com/player/86975/rithvik-sanjeevi-satish-kumar/",
     "tournaments": 15,
@@ -674,25 +683,34 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 74,
-    "name": "Saneeth DAYANAND",
-    "href": "https://bwfbadminton.com/player/82483/saneeth-dayanand-shimoga/",
-    "tournaments": 19,
-    "points": 25410,
-    "code": "MS",
-    "discipline": "Men’s Singles"
-  },
-  {
     "rank": 75,
-    "name": "Mark Shelley ALCALA",
-    "href": "https://bwfbadminton.com/player/87610/mark-shelley-alcala/",
-    "tournaments": 22,
-    "points": 25392,
+    "name": "Misha ZILBERMAN",
+    "href": "https://bwfbadminton.com/player/52953/misha-zilberman/",
+    "tournaments": 16,
+    "points": 25597,
     "code": "MS",
     "discipline": "Men’s Singles"
   },
   {
     "rank": 76,
+    "name": "Saneeth DAYANAND",
+    "href": "https://bwfbadminton.com/player/82483/saneeth-dayanand-shimoga/",
+    "tournaments": 18,
+    "points": 25410,
+    "code": "MS",
+    "discipline": "Men’s Singles"
+  },
+  {
+    "rank": 77,
+    "name": "Mark Shelley ALCALA",
+    "href": "https://bwfbadminton.com/player/87610/mark-shelley-alcala/",
+    "tournaments": 21,
+    "points": 25362,
+    "code": "MS",
+    "discipline": "Men’s Singles"
+  },
+  {
+    "rank": 78,
     "name": "Garret TAN",
     "href": "https://bwfbadminton.com/player/60145/garret-tan/",
     "tournaments": 17,
@@ -701,7 +719,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 77,
+    "rank": 79,
     "name": "NGUYEN Hai Dang",
     "href": "https://bwfbadminton.com/player/64648/nguyen-hai-dang/",
     "tournaments": 13,
@@ -710,16 +728,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 78,
-    "name": "Misha ZILBERMAN",
-    "href": "https://bwfbadminton.com/player/52953/misha-zilberman/",
-    "tournaments": 15,
-    "points": 24467,
-    "code": "MS",
-    "discipline": "Men’s Singles"
-  },
-  {
-    "rank": 79,
+    "rank": 80,
     "name": "HUANG Ping-Hsien",
     "href": "https://bwfbadminton.com/player/55920/huang-ping-hsien/",
     "tournaments": 13,
@@ -728,7 +737,16 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 80,
+    "rank": 81,
+    "name": "Bismo Raya OKTORA",
+    "href": "https://bwfbadminton.com/player/88276/bismo-raya-oktora/",
+    "tournaments": 11,
+    "points": 24010,
+    "code": "MS",
+    "discipline": "Men’s Singles"
+  },
+  {
+    "rank": 82,
     "name": "Eogene EWE",
     "href": "https://bwfbadminton.com/player/75014/eogene-ewe/",
     "tournaments": 16,
@@ -737,47 +755,29 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 81,
-    "name": "Richie Duta RICHARDO",
-    "href": "https://bwfbadminton.com/player/89808/richie-duta-richardo/",
-    "tournaments": 12,
-    "points": 23461,
-    "code": "MS",
-    "discipline": "Men’s Singles"
-  },
-  {
-    "rank": 82,
+    "rank": 83,
     "name": "Dumindu ABEYWICKRAMA",
     "href": "https://bwfbadminton.com/player/87857/dumindu-abeywickrama/",
-    "tournaments": 15,
+    "tournaments": 16,
     "points": 23450,
     "code": "MS",
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 83,
+    "rank": 84,
     "name": "S.Sankar Muthusamy SUBRAMANIAN",
     "href": "https://bwfbadminton.com/player/91814/s-sankar-muthusamy-subramanian/",
-    "tournaments": 17,
+    "tournaments": 18,
     "points": 22800,
     "code": "MS",
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 84,
+    "rank": 85,
     "name": "Riku HATANO",
     "href": "https://bwfbadminton.com/player/62018/riku-hatano/",
     "tournaments": 10,
     "points": 22410,
-    "code": "MS",
-    "discipline": "Men’s Singles"
-  },
-  {
-    "rank": 85,
-    "name": "Bismo Raya OKTORA",
-    "href": "https://bwfbadminton.com/player/88276/bismo-raya-oktora/",
-    "tournaments": 10,
-    "points": 22170,
     "code": "MS",
     "discipline": "Men’s Singles"
   },
@@ -819,6 +819,15 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 90,
+    "name": "Chico Aura DWI WARDOYO",
+    "href": "https://bwfbadminton.com/player/71408/chico-aura-dwi-wardoyo/",
+    "tournaments": 9,
+    "points": 20950,
+    "code": "MS",
+    "discipline": "Men’s Singles"
+  },
+  {
+    "rank": 91,
     "name": "Sholeh AIDIL",
     "href": "https://bwfbadminton.com/player/79110/sholeh-aidil/",
     "tournaments": 13,
@@ -827,7 +836,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 91,
+    "rank": 92,
     "name": "Kevin CORDON",
     "href": "https://bwfbadminton.com/player/54897/kevin-cordon/",
     "tournaments": 11,
@@ -836,20 +845,11 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 92,
+    "rank": 93,
     "name": "Viktor AXELSEN",
     "href": "https://bwfbadminton.com/player/25831/viktor-axelsen/",
     "tournaments": 4,
     "points": 20290,
-    "code": "MS",
-    "discipline": "Men’s Singles"
-  },
-  {
-    "rank": 93,
-    "name": "Dominik KWINTA",
-    "href": "https://bwfbadminton.com/player/58521/dominik-kwinta/",
-    "tournaments": 21,
-    "points": 20250,
     "code": "MS",
     "discipline": "Men’s Singles"
   },
@@ -864,6 +864,15 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 95,
+    "name": "Dominik KWINTA",
+    "href": "https://bwfbadminton.com/player/58521/dominik-kwinta/",
+    "tournaments": 20,
+    "points": 20100,
+    "code": "MS",
+    "discipline": "Men’s Singles"
+  },
+  {
+    "rank": 96,
     "name": "Zhe Ying WU",
     "href": "https://bwfbadminton.com/player/87450/zhe-ying-wu/",
     "tournaments": 14,
@@ -872,25 +881,25 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 96,
-    "name": "Tushar SUVEER",
-    "href": "https://bwfbadminton.com/player/67900/tushar-suveer/",
-    "tournaments": 15,
-    "points": 20020,
-    "code": "MS",
-    "discipline": "Men’s Singles"
-  },
-  {
     "rank": 97,
-    "name": "Manraj SINGH",
-    "href": "https://bwfbadminton.com/player/69967/manraj-singh/",
-    "tournaments": 17,
-    "points": 19580,
+    "name": "Ginpaul SONNA",
+    "href": "https://bwfbadminton.com/player/79065/ginpaul-sonna/",
+    "tournaments": 13,
+    "points": 19620,
     "code": "MS",
     "discipline": "Men’s Singles"
   },
   {
     "rank": 98,
+    "name": "CHENG Ju-Sheng",
+    "href": "https://bwfbadminton.com/player/44017/ju-sheng-cheng/",
+    "tournaments": 14,
+    "points": 19490,
+    "code": "MS",
+    "discipline": "Men’s Singles"
+  },
+  {
+    "rank": 99,
     "name": "Giovanni TOTI",
     "href": "https://bwfbadminton.com/player/69253/giovanni-toti/",
     "tournaments": 18,
@@ -899,20 +908,11 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Singles"
   },
   {
-    "rank": 99,
+    "rank": 100,
     "name": "Matthias KICKLITZ",
     "href": "https://bwfbadminton.com/player/51998/matthias-kicklitz/",
     "tournaments": 19,
     "points": 19451,
-    "code": "MS",
-    "discipline": "Men’s Singles"
-  },
-  {
-    "rank": 100,
-    "name": "Donnians OLIVEIRA",
-    "href": "https://bwfbadminton.com/player/59695/donnians-oliveira/",
-    "tournaments": 12,
-    "points": 18666,
     "code": "MS",
     "discipline": "Men’s Singles"
   },
@@ -1145,7 +1145,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "rank": 26,
     "name": "Tanvi SHARMA",
     "href": "https://bwfbadminton.com/player/99042/tanvi-sharma/",
-    "tournaments": 19,
+    "tournaments": 18,
     "points": 44485,
     "code": "WS",
     "discipline": "Women’s Singles"
@@ -1217,7 +1217,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "rank": 34,
     "name": "Devika SIHAG",
     "href": "https://bwfbadminton.com/player/90287/devika-sihag/",
-    "tournaments": 17,
+    "tournaments": 16,
     "points": 41474,
     "code": "WS",
     "discipline": "Women’s Singles"
@@ -1244,7 +1244,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "rank": 37,
     "name": "Isharani BARUAH",
     "href": "https://bwfbadminton.com/player/76851/isharani-baruah/",
-    "tournaments": 19,
+    "tournaments": 18,
     "points": 37219,
     "code": "WS",
     "discipline": "Women’s Singles"
@@ -1343,7 +1343,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "rank": 48,
     "name": "Anmol KHARB",
     "href": "https://bwfbadminton.com/player/58664/anmol-kharb/",
-    "tournaments": 22,
+    "tournaments": 21,
     "points": 33220,
     "code": "WS",
     "discipline": "Women’s Singles"
@@ -1359,19 +1359,19 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 50,
-    "name": "Shriyanshi VALISHETTY",
-    "href": "https://bwfbadminton.com/player/70595/shriyanshi-valishetty/",
-    "tournaments": 17,
-    "points": 32450,
+    "name": "Rachel CHAN",
+    "href": "https://bwfbadminton.com/player/78208/rachel-chan/",
+    "tournaments": 14,
+    "points": 32947,
     "code": "WS",
     "discipline": "Women’s Singles"
   },
   {
     "rank": 51,
-    "name": "Rachel CHAN",
-    "href": "https://bwfbadminton.com/player/78208/rachel-chan/",
-    "tournaments": 13,
-    "points": 32347,
+    "name": "Shriyanshi VALISHETTY",
+    "href": "https://bwfbadminton.com/player/70595/shriyanshi-valishetty/",
+    "tournaments": 17,
+    "points": 32450,
     "code": "WS",
     "discipline": "Women’s Singles"
   },
@@ -1386,15 +1386,6 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 53,
-    "name": "Thalita Ramadhani WIRYAWAN",
-    "href": "https://bwfbadminton.com/player/64600/thalita-ramadhani-wiryawan/",
-    "tournaments": 15,
-    "points": 30551,
-    "code": "WS",
-    "discipline": "Women’s Singles"
-  },
-  {
-    "rank": 54,
     "name": "HUANG Ching Ping",
     "href": "https://bwfbadminton.com/player/94348/huang-ching-ping/",
     "tournaments": 18,
@@ -1403,7 +1394,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 55,
+    "rank": 54,
     "name": "Manami SUIZU",
     "href": "https://bwfbadminton.com/player/67828/manami-suizu/",
     "tournaments": 13,
@@ -1412,7 +1403,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 56,
+    "rank": 55,
     "name": "TANYA HEMANTH",
     "href": "https://bwfbadminton.com/player/66290/tanya-hemanth/",
     "tournaments": 18,
@@ -1421,7 +1412,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 57,
+    "rank": 56,
     "name": "Wen Chi HSU",
     "href": "https://bwfbadminton.com/player/89583/wen-chi-hsu/",
     "tournaments": 13,
@@ -1430,7 +1421,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 58,
+    "rank": 57,
     "name": "PAI Yu Po",
     "href": "https://bwfbadminton.com/player/99925/pai-yu-po/",
     "tournaments": 18,
@@ -1439,11 +1430,20 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 59,
+    "rank": 58,
     "name": "GOH Jin Wei",
     "href": "https://bwfbadminton.com/player/69012/goh-jin-wei/",
     "tournaments": 11,
     "points": 29844,
+    "code": "WS",
+    "discipline": "Women’s Singles"
+  },
+  {
+    "rank": 59,
+    "name": "Thalita Ramadhani WIRYAWAN",
+    "href": "https://bwfbadminton.com/player/64600/thalita-ramadhani-wiryawan/",
+    "tournaments": 14,
+    "points": 29421,
     "code": "WS",
     "discipline": "Women’s Singles"
   },
@@ -1460,7 +1460,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "rank": 61,
     "name": "Tasnim MIR",
     "href": "https://bwfbadminton.com/player/86604/tasnim-mir/",
-    "tournaments": 17,
+    "tournaments": 16,
     "points": 29080,
     "code": "WS",
     "discipline": "Women’s Singles"
@@ -1478,7 +1478,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "rank": 63,
     "name": "Ella LIN",
     "href": "https://bwfbadminton.com/player/85542/ella-lin/",
-    "tournaments": 16,
+    "tournaments": 15,
     "points": 27860,
     "code": "WS",
     "discipline": "Women’s Singles"
@@ -1503,15 +1503,6 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 66,
-    "name": "PARK Ga Eun",
-    "href": "https://bwfbadminton.com/player/66485/park-ga-eun/",
-    "tournaments": 12,
-    "points": 26793,
-    "code": "WS",
-    "discipline": "Women’s Singles"
-  },
-  {
-    "rank": 67,
     "name": "CHEN Su Yu",
     "href": "https://bwfbadminton.com/player/71673/chen-su-yu/",
     "tournaments": 18,
@@ -1520,11 +1511,20 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 68,
+    "rank": 67,
     "name": "LO Sin Yan Happy",
     "href": "https://bwfbadminton.com/player/86261/lo-sin-yan-happy/",
     "tournaments": 17,
     "points": 26386,
+    "code": "WS",
+    "discipline": "Women’s Singles"
+  },
+  {
+    "rank": 68,
+    "name": "PARK Ga Eun",
+    "href": "https://bwfbadminton.com/player/66485/park-ga-eun/",
+    "tournaments": 11,
+    "points": 25883,
     "code": "WS",
     "discipline": "Women’s Singles"
   },
@@ -1539,15 +1539,6 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 70,
-    "name": "AAKARSHI KASHYAP",
-    "href": "https://bwfbadminton.com/player/80402/aakarshi-kashyap/",
-    "tournaments": 23,
-    "points": 25430,
-    "code": "WS",
-    "discipline": "Women’s Singles"
-  },
-  {
-    "rank": 71,
     "name": "PENG Yu Wei",
     "href": "https://bwfbadminton.com/player/60634/peng-yu-wei/",
     "tournaments": 16,
@@ -1556,7 +1547,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 72,
+    "rank": 71,
     "name": "Tonrug SAEHENG",
     "href": "https://bwfbadminton.com/player/50959/tonrug-saeheng/",
     "tournaments": 16,
@@ -1565,11 +1556,20 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 73,
+    "rank": 72,
     "name": "Yevheniia KANTEMYR",
     "href": "https://bwfbadminton.com/player/94032/yevheniia-kantemyr/",
     "tournaments": 15,
     "points": 24793,
+    "code": "WS",
+    "discipline": "Women’s Singles"
+  },
+  {
+    "rank": 73,
+    "name": "KIM Min Sun",
+    "href": "https://bwfbadminton.com/player/66368/kim-min-sun/",
+    "tournaments": 12,
+    "points": 24780,
     "code": "WS",
     "discipline": "Women’s Singles"
   },
@@ -1584,6 +1584,15 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 75,
+    "name": "AAKARSHI KASHYAP",
+    "href": "https://bwfbadminton.com/player/80402/aakarshi-kashyap/",
+    "tournaments": 23,
+    "points": 24140,
+    "code": "WS",
+    "discipline": "Women’s Singles"
+  },
+  {
+    "rank": 76,
     "name": "MANSI SINGH",
     "href": "https://bwfbadminton.com/player/73387/mansi-singh/",
     "tournaments": 12,
@@ -1592,7 +1601,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 76,
+    "rank": 77,
     "name": "Ines Lucia CASTILLO SALAZAR",
     "href": "https://bwfbadminton.com/player/79258/ines-lucia-castillo-salazar/",
     "tournaments": 17,
@@ -1601,7 +1610,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 77,
+    "rank": 78,
     "name": "Vivien SANDORHAZI",
     "href": "https://bwfbadminton.com/player/61949/vivien-sandorhazi/",
     "tournaments": 19,
@@ -1610,7 +1619,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 78,
+    "rank": 79,
     "name": "Tidapron KLEEBYEESUN",
     "href": "https://bwfbadminton.com/player/66362/tidapron-kleebyeesun/",
     "tournaments": 13,
@@ -1619,7 +1628,16 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 79,
+    "rank": 80,
+    "name": "Petra MAIXNEROVÁ",
+    "href": "https://bwfbadminton.com/player/79188/petra-maixnerova/",
+    "tournaments": 20,
+    "points": 23128,
+    "code": "WS",
+    "discipline": "Women’s Singles"
+  },
+  {
+    "rank": 81,
     "name": "XU Wen Jing",
     "href": "https://bwfbadminton.com/player/60915/xu-wen-jing/",
     "tournaments": 8,
@@ -1628,7 +1646,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 80,
+    "rank": 82,
     "name": "Yataweemin KETKLIENG",
     "href": "https://bwfbadminton.com/player/97446/yataweemin-ketklieng/",
     "tournaments": 10,
@@ -1637,7 +1655,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 81,
+    "rank": 83,
     "name": "Ni Kadek Dhinda Amartya PRATIWI",
     "href": "https://bwfbadminton.com/player/92444/ni-kadek-dhinda-amartya-pratiwi/",
     "tournaments": 13,
@@ -1646,16 +1664,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 82,
-    "name": "KIM Min Sun",
-    "href": "https://bwfbadminton.com/player/66368/kim-min-sun/",
-    "tournaments": 11,
-    "points": 22670,
-    "code": "WS",
-    "discipline": "Women’s Singles"
-  },
-  {
-    "rank": 83,
+    "rank": 84,
     "name": "Stefani STOEVA",
     "href": "https://bwfbadminton.com/player/46169/stefani-stoeva/",
     "tournaments": 12,
@@ -1664,7 +1673,25 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 84,
+    "rank": 85,
+    "name": "Pornpicha CHOEIKEEWONG",
+    "href": "https://bwfbadminton.com/player/72280/pornpicha-choeikeewong/",
+    "tournaments": 16,
+    "points": 22371,
+    "code": "WS",
+    "discipline": "Women’s Singles"
+  },
+  {
+    "rank": 86,
+    "name": "Disha GUPTA",
+    "href": "https://bwfbadminton.com/player/59692/disha-gupta/",
+    "tournaments": 14,
+    "points": 22170,
+    "code": "WS",
+    "discipline": "Women’s Singles"
+  },
+  {
+    "rank": 87,
     "name": "Sakura MASUKI",
     "href": "https://bwfbadminton.com/player/95172/sakura-masuki/",
     "tournaments": 9,
@@ -1673,7 +1700,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 85,
+    "rank": 88,
     "name": "Tereza ŠVÁBÍKOVÁ",
     "href": "https://bwfbadminton.com/player/60397/tereza-%C5%A0vabikova/",
     "tournaments": 20,
@@ -1682,7 +1709,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 86,
+    "rank": 89,
     "name": "KISONA Selvaduray",
     "href": "https://bwfbadminton.com/player/92014/kisona-selvaduray/",
     "tournaments": 13,
@@ -1691,7 +1718,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 87,
+    "rank": 90,
     "name": "Thi Trang (B) VU",
     "href": "https://bwfbadminton.com/player/71455/thi-trang-b-vu/",
     "tournaments": 13,
@@ -1700,25 +1727,16 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 88,
-    "name": "Shreya LELE",
-    "href": "https://bwfbadminton.com/player/59500/shreya-lele/",
-    "tournaments": 12,
-    "points": 21580,
+    "rank": 91,
+    "name": "Passa-Orn PHANNACHET",
+    "href": "https://bwfbadminton.com/player/68853/passa-orn-phannachet/",
+    "tournaments": 21,
+    "points": 21320,
     "code": "WS",
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 89,
-    "name": "Pornpicha CHOEIKEEWONG",
-    "href": "https://bwfbadminton.com/player/72280/pornpicha-choeikeewong/",
-    "tournaments": 15,
-    "points": 21461,
-    "code": "WS",
-    "discipline": "Women’s Singles"
-  },
-  {
-    "rank": 90,
+    "rank": 92,
     "name": "Clara AZURMENDI",
     "href": "https://bwfbadminton.com/player/74218/clara-azurmendi/",
     "tournaments": 17,
@@ -1727,7 +1745,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 91,
+    "rank": 93,
     "name": "Ozge BAYRAK",
     "href": "https://bwfbadminton.com/player/94762/ozge-bayrak/",
     "tournaments": 12,
@@ -1736,29 +1754,11 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 92,
+    "rank": 94,
     "name": "Keisha Fatimah AZZAHRA",
     "href": "https://bwfbadminton.com/player/79078/keisha-fatimah-azzahra/",
-    "tournaments": 14,
+    "tournaments": 15,
     "points": 20925,
-    "code": "WS",
-    "discipline": "Women’s Singles"
-  },
-  {
-    "rank": 93,
-    "name": "Disha GUPTA",
-    "href": "https://bwfbadminton.com/player/59692/disha-gupta/",
-    "tournaments": 13,
-    "points": 20890,
-    "code": "WS",
-    "discipline": "Women’s Singles"
-  },
-  {
-    "rank": 94,
-    "name": "Petra MAIXNEROVÁ",
-    "href": "https://bwfbadminton.com/player/79188/petra-maixnerova/",
-    "tournaments": 19,
-    "points": 20648,
     "code": "WS",
     "discipline": "Women’s Singles"
   },
@@ -1773,6 +1773,24 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 96,
+    "name": "LIANG Ting Yu",
+    "href": "https://bwfbadminton.com/player/93852/liang-ting-yu/",
+    "tournaments": 14,
+    "points": 20450,
+    "code": "WS",
+    "discipline": "Women’s Singles"
+  },
+  {
+    "rank": 97,
+    "name": "Prakriti BHARATH",
+    "href": "https://bwfbadminton.com/player/98011/prakriti-bharath/",
+    "tournaments": 18,
+    "points": 20400,
+    "code": "WS",
+    "discipline": "Women’s Singles"
+  },
+  {
+    "rank": 98,
     "name": "WANG Pei Yu",
     "href": "https://bwfbadminton.com/player/85668/wang-pei-yu/",
     "tournaments": 14,
@@ -1781,7 +1799,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 97,
+    "rank": 99,
     "name": "Yuan Chi LIAO",
     "href": "https://bwfbadminton.com/player/71280/yuan-chi-liao/",
     "tournaments": 14,
@@ -1790,29 +1808,11 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Singles"
   },
   {
-    "rank": 98,
+    "rank": 100,
     "name": "Chloe HOANG",
     "href": "https://bwfbadminton.com/player/99271/chloe-hoang/",
     "tournaments": 14,
     "points": 20004,
-    "code": "WS",
-    "discipline": "Women’s Singles"
-  },
-  {
-    "rank": 99,
-    "name": "Passa-Orn PHANNACHET",
-    "href": "https://bwfbadminton.com/player/68853/passa-orn-phannachet/",
-    "tournaments": 20,
-    "points": 19890,
-    "code": "WS",
-    "discipline": "Women’s Singles"
-  },
-  {
-    "rank": 100,
-    "name": "Siti ZULAIKHA",
-    "href": "https://bwfbadminton.com/player/73060/siti-zulaikha/",
-    "tournaments": 16,
-    "points": 19710,
     "code": "WS",
     "discipline": "Women’s Singles"
   },
@@ -2295,15 +2295,6 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 54,
-    "name": "Rodion ALIMOV / Maksim OGLOBLIN",
-    "href": "https://bwfbadminton.com/player/99484/rodion-alimov/|https://bwfbadminton.com/player/86904/maksim-ogloblin/",
-    "tournaments": 16,
-    "points": 29040,
-    "code": "MD",
-    "discipline": "Men’s Doubles"
-  },
-  {
-    "rank": 55,
     "name": "CHIA Weijie / LWI Sheng Hao",
     "href": "https://bwfbadminton.com/player/79732/chia-weijie/|https://bwfbadminton.com/player/93217/lwi-sheng-hao/",
     "tournaments": 9,
@@ -2312,7 +2303,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 56,
+    "rank": 55,
     "name": "HUNG Kuei Chun / LUI Chun Wai",
     "href": "https://bwfbadminton.com/player/88832/hung-kuei-chun/|https://bwfbadminton.com/player/63670/lui-chun-wai/",
     "tournaments": 16,
@@ -2321,7 +2312,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 57,
+    "rank": 56,
     "name": "Chia Yen LIN / LIN Yong Sheng",
     "href": "https://bwfbadminton.com/player/43526/chia-yen-lin/|https://bwfbadminton.com/player/64441/lin-yong-sheng/",
     "tournaments": 13,
@@ -2330,7 +2321,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 58,
+    "rank": 57,
     "name": "Bjarne GEISS / Jones Ralfy JANSEN",
     "href": "https://bwfbadminton.com/player/59472/bjarne-geiss/|https://bwfbadminton.com/player/88726/jones-ralfy-jansen/",
     "tournaments": 14,
@@ -2339,7 +2330,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 59,
+    "rank": 58,
     "name": "Leo Rolly CARNANDO / Daniel MARTHIN",
     "href": "https://bwfbadminton.com/player/68633/leo-rolly-carnando/|https://bwfbadminton.com/player/84786/daniel-marthin/",
     "tournaments": 6,
@@ -2348,7 +2339,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 60,
+    "rank": 59,
     "name": "LOW Hang Yee / NG Eng Cheong",
     "href": "https://bwfbadminton.com/player/61834/low-hang-yee/|https://bwfbadminton.com/player/87270/ng-eng-cheong/",
     "tournaments": 15,
@@ -2357,7 +2348,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 61,
+    "rank": 60,
     "name": "LAI Po Yu / TSAI Fu Cheng",
     "href": "https://bwfbadminton.com/player/84196/lai-po-yu/|https://bwfbadminton.com/player/93572/tsai-fu-cheng/",
     "tournaments": 13,
@@ -2366,11 +2357,20 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 62,
+    "rank": 61,
     "name": "Pharanyu KAOSAMAANG / Tanadon PUNPANICH",
     "href": "https://bwfbadminton.com/player/50937/pharanyu-kaosamaang/|https://bwfbadminton.com/player/64682/tanadon-punpanich/",
     "tournaments": 9,
     "points": 26786,
+    "code": "MD",
+    "discipline": "Men’s Doubles"
+  },
+  {
+    "rank": 62,
+    "name": "Rodion ALIMOV / Maksim OGLOBLIN",
+    "href": "https://bwfbadminton.com/player/99484/rodion-alimov/|https://bwfbadminton.com/player/86904/maksim-ogloblin/",
+    "tournaments": 15,
+    "points": 26710,
     "code": "MD",
     "discipline": "Men’s Doubles"
   },
@@ -2385,15 +2385,6 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 64,
-    "name": "Dev AYYAPPAN / Dhiren AYYAPPAN",
-    "href": "https://bwfbadminton.com/player/77168/dev-ayyappan/|https://bwfbadminton.com/player/79739/dhiren-ayyappan/",
-    "tournaments": 17,
-    "points": 25530,
-    "code": "MD",
-    "discipline": "Men’s Doubles"
-  },
-  {
-    "rank": 65,
     "name": "Alexander DUNN / Adam PRINGLE",
     "href": "https://bwfbadminton.com/player/67922/alexander-dunn/|https://bwfbadminton.com/player/55493/adam-pringle/",
     "tournaments": 13,
@@ -2402,7 +2393,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 66,
+    "rank": 65,
     "name": "CHEN Cheng Kuan / LIU Kuang Heng",
     "href": "https://bwfbadminton.com/player/64394/chen-cheng-kuan/|https://bwfbadminton.com/player/59609/liu-kuang-heng/",
     "tournaments": 7,
@@ -2411,7 +2402,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 67,
+    "rank": 66,
     "name": "Muhammad FAIQ / LOK Hong Quan",
     "href": "https://bwfbadminton.com/player/92846/muhammad-faiq/|https://bwfbadminton.com/player/55750/lok-hong-quan/",
     "tournaments": 19,
@@ -2420,7 +2411,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 68,
+    "rank": 67,
     "name": "Mael CATTOEN / Lucas RENOIR",
     "href": "https://bwfbadminton.com/player/91112/mael-cattoen/|https://bwfbadminton.com/player/78192/lucas-renoir/",
     "tournaments": 11,
@@ -2429,11 +2420,20 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 69,
+    "rank": 68,
     "name": "WEI Chun Wei / Po Chih YANG",
     "href": "https://bwfbadminton.com/player/74574/wei-chun-wei/|https://bwfbadminton.com/player/73750/po-chih-yang/",
     "tournaments": 12,
     "points": 24580,
+    "code": "MD",
+    "discipline": "Men’s Doubles"
+  },
+  {
+    "rank": 69,
+    "name": "Dev AYYAPPAN / Dhiren AYYAPPAN",
+    "href": "https://bwfbadminton.com/player/77168/dev-ayyappan/|https://bwfbadminton.com/player/79739/dhiren-ayyappan/",
+    "tournaments": 16,
+    "points": 24400,
     "code": "MD",
     "discipline": "Men’s Doubles"
   },
@@ -2493,28 +2493,28 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 76,
-    "name": "Anselmus Breagit Fredy PRASETYA / Pulung RAMADHAN",
-    "href": "https://bwfbadminton.com/player/73721/anselmus-breagit-fredy-prasetya/|https://bwfbadminton.com/player/90524/pulung-ramadhan/",
-    "tournaments": 13,
-    "points": 20840,
-    "code": "MD",
-    "discipline": "Men’s Doubles"
-  },
-  {
-    "rank": 77,
     "name": "HUANG Tsung-I / LIN Ting-Yu",
     "href": "https://bwfbadminton.com/player/78126/huang-tsung-i/|https://bwfbadminton.com/player/65791/lin-ting-yu/",
-    "tournaments": 10,
+    "tournaments": 11,
     "points": 20330,
     "code": "MD",
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 78,
+    "rank": 77,
     "name": "XIE Haonan / ZENG Wei Han",
     "href": "https://bwfbadminton.com/player/89909/haonan-xie/|https://bwfbadminton.com/player/66820/zeng-wei-han/",
     "tournaments": 6,
     "points": 20000,
+    "code": "MD",
+    "discipline": "Men’s Doubles"
+  },
+  {
+    "rank": 78,
+    "name": "Anselmus Breagit Fredy PRASETYA / Pulung RAMADHAN",
+    "href": "https://bwfbadminton.com/player/73721/anselmus-breagit-fredy-prasetya/|https://bwfbadminton.com/player/90524/pulung-ramadhan/",
+    "tournaments": 12,
+    "points": 19930,
     "code": "MD",
     "discipline": "Men’s Doubles"
   },
@@ -2637,6 +2637,15 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 92,
+    "name": "Achutaditya Rao DODDAVARAPU / POCHANA Arjun Reddy",
+    "href": "https://bwfbadminton.com/player/58201/achutaditya-rao-doddavarapu/|https://bwfbadminton.com/player/54044/pochana-arjun-reddy/",
+    "tournaments": 15,
+    "points": 17770,
+    "code": "MD",
+    "discipline": "Men’s Doubles"
+  },
+  {
+    "rank": 93,
     "name": "Krishna Prasad GARAGA / Pruthvi KRISHNAMURTHY ROY",
     "href": "https://bwfbadminton.com/player/74827/krishna-prasad-garaga/|https://bwfbadminton.com/player/77156/pruthvi-krishnamurthy-roy/",
     "tournaments": 5,
@@ -2645,7 +2654,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 93,
+    "rank": 94,
     "name": "Solomon Jr. PADIZ / Julius VILLABRILLE",
     "href": "https://bwfbadminton.com/player/63053/solomon-jr-padiz/|https://bwfbadminton.com/player/58220/julius-villabrille/",
     "tournaments": 10,
@@ -2654,7 +2663,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 94,
+    "rank": 95,
     "name": "Scott GUILDEA / Paul REYNOLDS",
     "href": "https://bwfbadminton.com/player/63756/scott-guildea/|https://bwfbadminton.com/player/92985/paul-reynolds/",
     "tournaments": 15,
@@ -2663,7 +2672,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 95,
+    "rank": 96,
     "name": "Baptiste LABARTHE / Quentin RONGET",
     "href": "https://bwfbadminton.com/player/98466/baptiste-labarthe/|https://bwfbadminton.com/player/96472/quentin-ronget/",
     "tournaments": 11,
@@ -2672,7 +2681,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 96,
+    "rank": 97,
     "name": "VojtěCh HAVLÍČEK / Tomáš ŠVEJDA",
     "href": "https://bwfbadminton.com/player/63359/vojt%C4%9Bch-havli%C4%8Cek/|https://bwfbadminton.com/player/57288/toma%C5%A1-%C5%A0vejda/",
     "tournaments": 17,
@@ -2681,20 +2690,11 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Men’s Doubles"
   },
   {
-    "rank": 97,
+    "rank": 98,
     "name": "Dechapol PUAVARANUKROH / Kittinupong KEDREN",
     "href": "https://bwfbadminton.com/player/61731/dechapol-puavaranukroh/|https://bwfbadminton.com/player/73633/kittinupong-kedren/",
     "tournaments": 5,
     "points": 16620,
-    "code": "MD",
-    "discipline": "Men’s Doubles"
-  },
-  {
-    "rank": 98,
-    "name": "Achutaditya Rao DODDAVARAPU / POCHANA Arjun Reddy",
-    "href": "https://bwfbadminton.com/player/58201/achutaditya-rao-doddavarapu/|https://bwfbadminton.com/player/54044/pochana-arjun-reddy/",
-    "tournaments": 14,
-    "points": 16490,
     "code": "MD",
     "discipline": "Men’s Doubles"
   },
@@ -3006,15 +3006,6 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 33,
-    "name": "Isyana Syahira MEIDA / Rinjani Kwinnara NASTINE",
-    "href": "https://bwfbadminton.com/player/80653/isyana-syahira-meida/|https://bwfbadminton.com/player/87259/rinjani-kwinnara-nastine/",
-    "tournaments": 15,
-    "points": 39400,
-    "code": "WD",
-    "discipline": "Women’s Doubles"
-  },
-  {
-    "rank": 34,
     "name": "Hathaithip MIJAD / Napapakorn TUNGKASATAN",
     "href": "https://bwfbadminton.com/player/76091/hathaithip-mijad/|https://bwfbadminton.com/player/84839/napapakorn-tungkasatan/",
     "tournaments": 20,
@@ -3023,11 +3014,20 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 35,
+    "rank": 34,
     "name": "LUI Lok Lok / TSANG Hiu Yan",
     "href": "https://bwfbadminton.com/player/87893/lui-lok-lok/|https://bwfbadminton.com/player/95205/tsang-hiu-yan/",
     "tournaments": 19,
     "points": 37994,
+    "code": "WD",
+    "discipline": "Women’s Doubles"
+  },
+  {
+    "rank": 35,
+    "name": "Isyana Syahira MEIDA / Rinjani Kwinnara NASTINE",
+    "href": "https://bwfbadminton.com/player/80653/isyana-syahira-meida/|https://bwfbadminton.com/player/87259/rinjani-kwinnara-nastine/",
+    "tournaments": 14,
+    "points": 37620,
     "code": "WD",
     "discipline": "Women’s Doubles"
   },
@@ -3069,19 +3069,19 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 40,
-    "name": "Sayaka HIROTA / Ayako SAKURAMOTO",
-    "href": "https://bwfbadminton.com/player/94519/sayaka-hirota/|https://bwfbadminton.com/player/83211/ayako-sakuramoto/",
-    "tournaments": 6,
-    "points": 33010,
+    "name": "Kavipriya SELVAM / Simran SINGHI",
+    "href": "https://bwfbadminton.com/player/81727/kavipriya-selvam/|https://bwfbadminton.com/player/75190/simran-singhi/",
+    "tournaments": 18,
+    "points": 33053,
     "code": "WD",
     "discipline": "Women’s Doubles"
   },
   {
     "rank": 41,
-    "name": "Kavipriya SELVAM / Simran SINGHI",
-    "href": "https://bwfbadminton.com/player/81727/kavipriya-selvam/|https://bwfbadminton.com/player/75190/simran-singhi/",
-    "tournaments": 17,
-    "points": 32453,
+    "name": "Sayaka HIROTA / Ayako SAKURAMOTO",
+    "href": "https://bwfbadminton.com/player/94519/sayaka-hirota/|https://bwfbadminton.com/player/83211/ayako-sakuramoto/",
+    "tournaments": 6,
+    "points": 33010,
     "code": "WD",
     "discipline": "Women’s Doubles"
   },
@@ -3105,19 +3105,19 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 44,
-    "name": "Ashwini BHAT K. / Shikha GAUTAM",
-    "href": "https://bwfbadminton.com/player/97171/ashwini-bhat-k/|https://bwfbadminton.com/player/77808/shikha-gautam/",
-    "tournaments": 16,
-    "points": 29990,
+    "name": "Phattharin AIAMVAREESRISAKUL / Sarisa JANPENG",
+    "href": "https://bwfbadminton.com/player/99375/phattharin-aiamvareesrisakul/|https://bwfbadminton.com/player/88785/sarisa-janpeng/",
+    "tournaments": 17,
+    "points": 30000,
     "code": "WD",
     "discipline": "Women’s Doubles"
   },
   {
     "rank": 45,
-    "name": "Phattharin AIAMVAREESRISAKUL / Sarisa JANPENG",
-    "href": "https://bwfbadminton.com/player/99375/phattharin-aiamvareesrisakul/|https://bwfbadminton.com/player/88785/sarisa-janpeng/",
+    "name": "Ashwini BHAT K. / Shikha GAUTAM",
+    "href": "https://bwfbadminton.com/player/97171/ashwini-bhat-k/|https://bwfbadminton.com/player/77808/shikha-gautam/",
     "tournaments": 16,
-    "points": 29673,
+    "points": 29990,
     "code": "WD",
     "discipline": "Women’s Doubles"
   },
@@ -3141,6 +3141,15 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 48,
+    "name": "KIM Yu Jung / LEE Yu Lim",
+    "href": "https://bwfbadminton.com/player/73838/kim-yu-jung/|https://bwfbadminton.com/player/66115/lee-yu-lim/",
+    "tournaments": 9,
+    "points": 29010,
+    "code": "WD",
+    "discipline": "Women’s Doubles"
+  },
+  {
+    "rank": 49,
     "name": "Nanako HARA / Riko KIYOSE",
     "href": "https://bwfbadminton.com/player/92989/nanako-hara/|https://bwfbadminton.com/player/68304/riko-kiyose/",
     "tournaments": 11,
@@ -3149,7 +3158,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 49,
+    "rank": 50,
     "name": "Paulina CYBULSKA / Kornelia MARCZAK",
     "href": "https://bwfbadminton.com/player/74487/paulina-cybulska/|https://bwfbadminton.com/player/77380/kornelia-marczak/",
     "tournaments": 15,
@@ -3158,7 +3167,16 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 50,
+    "rank": 51,
+    "name": "Rutaparna PANDA / Swetaparna PANDA",
+    "href": "https://bwfbadminton.com/player/80547/rutaparna-panda/|https://bwfbadminton.com/player/67676/swetaparna-panda/",
+    "tournaments": 16,
+    "points": 28340,
+    "code": "WD",
+    "discipline": "Women’s Doubles"
+  },
+  {
+    "rank": 52,
     "name": "Zi Yu LOW / Noraqilah MAISARAH",
     "href": "https://bwfbadminton.com/player/23008/zi-yu-low/|https://bwfbadminton.com/player/71883/noraqilah-maisarah/",
     "tournaments": 11,
@@ -3167,7 +3185,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 51,
+    "rank": 53,
     "name": "Jaqueline LIMA / Samia LIMA",
     "href": "https://bwfbadminton.com/player/57457/jaqueline-lima/|https://bwfbadminton.com/player/76507/samia-lima/",
     "tournaments": 11,
@@ -3176,16 +3194,16 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 52,
+    "rank": 54,
     "name": "Yan Fei CHEN / Liang Ching SUN",
     "href": "https://bwfbadminton.com/player/71848/yan-fei-chen/|https://bwfbadminton.com/player/85508/liang-ching-sun/",
-    "tournaments": 11,
+    "tournaments": 12,
     "points": 27610,
     "code": "WD",
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 53,
+    "rank": 55,
     "name": "BAO Li Jing / Zi Han CAO",
     "href": "https://bwfbadminton.com/player/62277/bao-li-jing/|https://bwfbadminton.com/player/18889/zi-han-cao/",
     "tournaments": 5,
@@ -3194,7 +3212,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 54,
+    "rank": 56,
     "name": "Yu Hsuan CHEN / LIU Chiao-Yun",
     "href": "https://bwfbadminton.com/player/96026/yu-hsuan-chen/|https://bwfbadminton.com/player/77949/liu-chiao-yun/",
     "tournaments": 12,
@@ -3203,7 +3221,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 55,
+    "rank": 57,
     "name": "FAN Ka Yan / YAU Mau Ying",
     "href": "https://bwfbadminton.com/player/95905/fan-ka-yan/|https://bwfbadminton.com/player/80024/yau-mau-ying/",
     "tournaments": 11,
@@ -3212,7 +3230,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 56,
+    "rank": 58,
     "name": "Kathrine VANG / Mette WERGE",
     "href": "https://bwfbadminton.com/player/61633/kathrine-vang/|https://bwfbadminton.com/player/67290/mette-werge/",
     "tournaments": 15,
@@ -3221,16 +3239,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 57,
-    "name": "Rutaparna PANDA / Swetaparna PANDA",
-    "href": "https://bwfbadminton.com/player/80547/rutaparna-panda/|https://bwfbadminton.com/player/67676/swetaparna-panda/",
-    "tournaments": 15,
-    "points": 26540,
-    "code": "WD",
-    "discipline": "Women’s Doubles"
-  },
-  {
-    "rank": 58,
+    "rank": 59,
     "name": "Siti Sarah AZZAHRA / Az Zahra Ditya RAMADHANI",
     "href": "https://bwfbadminton.com/player/99911/siti-sarah-azzahra/|https://bwfbadminton.com/player/56042/az-zahra-ditya-ramadhani/",
     "tournaments": 9,
@@ -3239,7 +3248,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 59,
+    "rank": 60,
     "name": "Lanny Tria MAYASARI / Apriyani RAHAYU",
     "href": "https://bwfbadminton.com/player/57560/lanny-tria-mayasari/|https://bwfbadminton.com/player/81462/apriyani-rahayu/",
     "tournaments": 8,
@@ -3248,20 +3257,11 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 60,
+    "rank": 61,
     "name": "Lisa CURTIN / Sian KELLY",
     "href": "https://bwfbadminton.com/player/75744/lisa-curtin/|https://bwfbadminton.com/player/81761/sian-kelly/",
     "tournaments": 10,
     "points": 25705,
-    "code": "WD",
-    "discipline": "Women’s Doubles"
-  },
-  {
-    "rank": 61,
-    "name": "KIM Yu Jung / LEE Yu Lim",
-    "href": "https://bwfbadminton.com/player/73838/kim-yu-jung/|https://bwfbadminton.com/player/66115/lee-yu-lim/",
-    "tournaments": 8,
-    "points": 25010,
     "code": "WD",
     "discipline": "Women’s Doubles"
   },
@@ -3348,6 +3348,15 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 71,
+    "name": "Amy ACKERMAN / Johanita SCHOLTZ",
+    "href": "https://bwfbadminton.com/player/62110/amy-ackerman/|https://bwfbadminton.com/player/75193/johanita-scholtz/",
+    "tournaments": 11,
+    "points": 21701,
+    "code": "WD",
+    "discipline": "Women’s Doubles"
+  },
+  {
+    "rank": 72,
     "name": "HSIEH Mi Yen / YU Chien Hui",
     "href": "https://bwfbadminton.com/player/56318/hsieh-mi-yen/|https://bwfbadminton.com/player/75154/yu-chien-hui/",
     "tournaments": 10,
@@ -3356,7 +3365,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 72,
+    "rank": 73,
     "name": "Yasemen BEKTAS / Sinem YILDIZ",
     "href": "https://bwfbadminton.com/player/86621/yasemen-bektas/|https://bwfbadminton.com/player/91978/sinem-yildiz/",
     "tournaments": 11,
@@ -3365,7 +3374,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 73,
+    "rank": 74,
     "name": "Martina CORSINI / Emma PICCININ",
     "href": "https://bwfbadminton.com/player/95423/martina-corsini/|https://bwfbadminton.com/player/61917/emma-piccinin/",
     "tournaments": 13,
@@ -3374,7 +3383,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 74,
+    "rank": 75,
     "name": "Ornnicha JONGSATHAPORNPARN / Sukitta SUWACHAI",
     "href": "https://bwfbadminton.com/player/99988/ornnicha-jongsathapornparn/|https://bwfbadminton.com/player/60245/sukitta-suwachai/",
     "tournaments": 7,
@@ -3383,7 +3392,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 75,
+    "rank": 76,
     "name": "CHOU Yun An / SUNG Yi-Hsuan",
     "href": "https://bwfbadminton.com/player/47296/yun-an-chou/|https://bwfbadminton.com/player/80667/sung-yi-hsuan/",
     "tournaments": 10,
@@ -3392,7 +3401,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 76,
+    "rank": 77,
     "name": "CHEN Su Yu / Yi En HSIEH",
     "href": "https://bwfbadminton.com/player/71673/chen-su-yu/|https://bwfbadminton.com/player/95958/yi-en-hsieh/",
     "tournaments": 8,
@@ -3401,7 +3410,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 77,
+    "rank": 78,
     "name": "Lærke HVID / Anna KLAUSHOLM",
     "href": "https://bwfbadminton.com/player/57423/laerke-hvid/|https://bwfbadminton.com/player/76163/anna-klausholm/",
     "tournaments": 11,
@@ -3410,7 +3419,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 78,
+    "rank": 79,
     "name": "Moe AOKI / Hina OSAWA",
     "href": "https://bwfbadminton.com/player/64193/moe-aoki/|https://bwfbadminton.com/player/76234/hina-osawa/",
     "tournaments": 8,
@@ -3419,7 +3428,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 79,
+    "rank": 80,
     "name": "Audrey CHANG / Jasmine YEUNG",
     "href": "https://bwfbadminton.com/player/79681/audrey-chang/|https://bwfbadminton.com/player/92061/jasmine-yeung/",
     "tournaments": 9,
@@ -3428,7 +3437,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 80,
+    "rank": 81,
     "name": "LEE Seo Jin / LEE Yeon Woo",
     "href": "https://bwfbadminton.com/player/57281/lee-seo-jin/|https://bwfbadminton.com/player/80005/lee-yeon-woo/",
     "tournaments": 7,
@@ -3437,20 +3446,11 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Women’s Doubles"
   },
   {
-    "rank": 81,
+    "rank": 82,
     "name": "CHENG Su Hui / TAN Zhing Yi",
     "href": "https://bwfbadminton.com/player/50246/cheng-su-hui/|https://bwfbadminton.com/player/87878/tan-zhing-yi/",
     "tournaments": 11,
     "points": 19580,
-    "code": "WD",
-    "discipline": "Women’s Doubles"
-  },
-  {
-    "rank": 82,
-    "name": "Amy ACKERMAN / Johanita SCHOLTZ",
-    "href": "https://bwfbadminton.com/player/62110/amy-ackerman/|https://bwfbadminton.com/player/75193/johanita-scholtz/",
-    "tournaments": 10,
-    "points": 18901,
     "code": "WD",
     "discipline": "Women’s Doubles"
   },
@@ -3609,10 +3609,10 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 100,
-    "name": "KIM Min Ji / Ye Na LEE",
-    "href": "https://bwfbadminton.com/player/57992/kim-min-ji/|https://bwfbadminton.com/player/80534/ye-na-lee/",
-    "tournaments": 5,
-    "points": 15440,
+    "name": "GAYATRI RAWAT / Mansa RAWAT",
+    "href": "https://bwfbadminton.com/player/78620/gayatri-rawat/|https://bwfbadminton.com/player/67479/mansa-rawat/",
+    "tournaments": 8,
+    "points": 15660,
     "code": "WD",
     "discipline": "Women’s Doubles"
   },
@@ -4032,15 +4032,6 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 47,
-    "name": "Bimo PRASETYO / Arlya Nabila Thesya MUNGGARAN",
-    "href": "https://bwfbadminton.com/player/73223/bimo-prasetyo/|https://bwfbadminton.com/player/62542/arlya-nabila-thesya-munggaran/",
-    "tournaments": 14,
-    "points": 31310,
-    "code": "XD",
-    "discipline": "Mixed Doubles"
-  },
-  {
-    "rank": 48,
     "name": "Supak JOMKOH / Ornnicha JONGSATHAPORNPARN",
     "href": "https://bwfbadminton.com/player/73936/supak-jomkoh/|https://bwfbadminton.com/player/99988/ornnicha-jongsathapornparn/",
     "tournaments": 9,
@@ -4049,11 +4040,20 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Mixed Doubles"
   },
   {
-    "rank": 49,
+    "rank": 48,
     "name": "LIU Kuang Heng / HSU Yin-Hui",
     "href": "https://bwfbadminton.com/player/59609/liu-kuang-heng/|https://bwfbadminton.com/player/96973/hsu-yin-hui/",
     "tournaments": 7,
     "points": 30000,
+    "code": "XD",
+    "discipline": "Mixed Doubles"
+  },
+  {
+    "rank": 49,
+    "name": "Bimo PRASETYO / Arlya Nabila Thesya MUNGGARAN",
+    "href": "https://bwfbadminton.com/player/73223/bimo-prasetyo/|https://bwfbadminton.com/player/62542/arlya-nabila-thesya-munggaran/",
+    "tournaments": 14,
+    "points": 29420,
     "code": "XD",
     "discipline": "Mixed Doubles"
   },
@@ -4068,6 +4068,15 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 51,
+    "name": "Dhruv RAWAT / MANEESHA K",
+    "href": "https://bwfbadminton.com/player/84666/dhruv-rawat/|https://bwfbadminton.com/player/56836/maneesha-k/",
+    "tournaments": 16,
+    "points": 29300,
+    "code": "XD",
+    "discipline": "Mixed Doubles"
+  },
+  {
+    "rank": 52,
     "name": "Phuwanat HORBANLUEKIT / Benyapa AIMSAARD",
     "href": "https://bwfbadminton.com/player/86368/phuwanat-horbanluekit/|https://bwfbadminton.com/player/80871/benyapa-aimsaard/",
     "tournaments": 11,
@@ -4076,20 +4085,11 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Mixed Doubles"
   },
   {
-    "rank": 52,
+    "rank": 53,
     "name": "Samuel JONES / Lizzie TOLMAN",
     "href": "https://bwfbadminton.com/player/63421/samuel-jones/|https://bwfbadminton.com/player/68221/lizzie-tolman/",
     "tournaments": 17,
     "points": 28920,
-    "code": "XD",
-    "discipline": "Mixed Doubles"
-  },
-  {
-    "rank": 53,
-    "name": "Dhruv RAWAT / MANEESHA K",
-    "href": "https://bwfbadminton.com/player/84666/dhruv-rawat/|https://bwfbadminton.com/player/56836/maneesha-k/",
-    "tournaments": 16,
-    "points": 28700,
     "code": "XD",
     "discipline": "Mixed Doubles"
   },
@@ -4248,6 +4248,15 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 71,
+    "name": "Sathwik Reddy KANAPURAM / Radhika SHARMA",
+    "href": "https://bwfbadminton.com/player/54998/sathwik-reddy-kanapuram/|https://bwfbadminton.com/player/61380/radhika-sharma/",
+    "tournaments": 11,
+    "points": 22770,
+    "code": "XD",
+    "discipline": "Mixed Doubles"
+  },
+  {
+    "rank": 72,
     "name": "Filip KARLBORG / Tilda SJOO",
     "href": "https://bwfbadminton.com/player/67848/filip-karlborg/|https://bwfbadminton.com/player/60603/tilda-sjoo/",
     "tournaments": 15,
@@ -4256,20 +4265,11 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Mixed Doubles"
   },
   {
-    "rank": 72,
+    "rank": 73,
     "name": "Ratchapol MAKKASASITHORN / Nattamon LAISUAN",
     "href": "https://bwfbadminton.com/player/92576/ratchapol-makkasasithorn/|https://bwfbadminton.com/player/96990/nattamon-laisuan/",
     "tournaments": 10,
     "points": 22540,
-    "code": "XD",
-    "discipline": "Mixed Doubles"
-  },
-  {
-    "rank": 73,
-    "name": "Sathwik Reddy KANAPURAM / Radhika SHARMA",
-    "href": "https://bwfbadminton.com/player/54998/sathwik-reddy-kanapuram/|https://bwfbadminton.com/player/61380/radhika-sharma/",
-    "tournaments": 11,
-    "points": 21570,
     "code": "XD",
     "discipline": "Mixed Doubles"
   },
@@ -4329,6 +4329,15 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 80,
+    "name": "Ming Che LU / CHOU Yun An",
+    "href": "https://bwfbadminton.com/player/58986/ming-che-lu/|https://bwfbadminton.com/player/47296/yun-an-chou/",
+    "tournaments": 8,
+    "points": 19100,
+    "code": "XD",
+    "discipline": "Mixed Doubles"
+  },
+  {
+    "rank": 81,
     "name": "LEONG Iok Chong / Weng Chi NG",
     "href": "https://bwfbadminton.com/player/86167/leong-iok-chong/|https://bwfbadminton.com/player/95068/weng-chi-ng/",
     "tournaments": 10,
@@ -4337,7 +4346,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Mixed Doubles"
   },
   {
-    "rank": 81,
+    "rank": 82,
     "name": "JO Song Hyun / JEONG Na Eun",
     "href": "https://bwfbadminton.com/player/90792/song-hyun-jo/|https://bwfbadminton.com/player/99778/jeong-na-eun/",
     "tournaments": 7,
@@ -4346,7 +4355,7 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Mixed Doubles"
   },
   {
-    "rank": 82,
+    "rank": 83,
     "name": "Nicolas FRANCONVILLE / Julie FRANCONVILLE",
     "href": "https://bwfbadminton.com/player/59717/nicolas-franconville/|https://bwfbadminton.com/player/76311/julie-franconville/",
     "tournaments": 15,
@@ -4355,20 +4364,11 @@ export const rankingPlayers: RankingPlayer[] = [
     "discipline": "Mixed Doubles"
   },
   {
-    "rank": 83,
+    "rank": 84,
     "name": "Mohit JAGLAN / Lakshita JAGLAN",
     "href": "https://bwfbadminton.com/player/96108/mohit-jaglan/|https://bwfbadminton.com/player/88377/lakshita-jaglan/",
     "tournaments": 16,
     "points": 18590,
-    "code": "XD",
-    "discipline": "Mixed Doubles"
-  },
-  {
-    "rank": 84,
-    "name": "Ming Che LU / CHOU Yun An",
-    "href": "https://bwfbadminton.com/player/58986/ming-che-lu/|https://bwfbadminton.com/player/47296/yun-an-chou/",
-    "tournaments": 7,
-    "points": 18180,
     "code": "XD",
     "discipline": "Mixed Doubles"
   },
