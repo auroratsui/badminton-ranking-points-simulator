@@ -1,4 +1,4 @@
-import { writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import { chromium } from 'playwright';
 
 const rankingUrl = 'https://bwfbadminton.com/rankings/';
@@ -149,6 +149,42 @@ async function selectRankingDiscipline(page, rankingTable, config) {
   throw new Error(`${config.code}: ranking table did not switch after three attempts`);
 }
 
+async function fetchTournamentCalendar(context, year, status) {
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    const calendarPage = await context.newPage();
+    try {
+      await calendarPage.goto(calendarUrl(year, status), { waitUntil: 'domcontentloaded', timeout: 60_000 });
+      const rows = calendarPage.locator('main table tbody tr');
+      const loaded = await rows.first().waitFor({ state: 'visible', timeout: 60_000 })
+        .then(() => true)
+        .catch(() => false);
+      if (!loaded) {
+        console.warn(`${year} calendar did not load (attempt ${attempt} of 3)`);
+        continue;
+      }
+
+      const items = await rows.evaluateAll((calendarRows) => calendarRows.map((row) => {
+        const cells = Array.from(row.querySelectorAll('td'));
+        if (cells.length < 7) return null;
+        return {
+          week: (cells[0].textContent || '').trim(),
+          name: (cells[3].textContent || '').replace(/\s+/g, ' ').trim(),
+          category: (cells[5].textContent || '').replace(/\s+/g, ' ').trim(),
+          city: (cells[6].textContent || '').replace(/\s+/g, ' ').trim(),
+        };
+      }).filter((item) => item?.name));
+
+      return Array.from(new Map(items.map((item) => [`${item.week}|${item.name}|${item.category}|${item.city}`, item])).values());
+    } catch (error) {
+      console.warn(`${year} calendar refresh failed (attempt ${attempt} of 3): ${error.message}`);
+    } finally {
+      await calendarPage.close();
+    }
+  }
+
+  return null;
+}
+
 async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate, rankingPlayers, rankingBreakdowns) {
   const missingPlayers = rankingPlayers.filter((player) => {
     const scores = rankingBreakdowns[`${player.code}-${player.rank}`]?.scores ?? [];
@@ -162,7 +198,10 @@ async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate,
   await rankingPage.goto(tournamentsoftwareRankingUrl, { waitUntil: 'domcontentloaded', timeout: 60_000 });
   await acceptTournamentsoftwareCookies(rankingPage);
 
-  const heading = await rankingPage.getByRole('heading', { name: /BWF World Rankings/ }).first().innerText();
+  const heading = await rankingPage.locator('h1, h2, h3, h4, h5, h6').evaluateAll((headings) => (
+    headings.map((item) => item.textContent?.replace(/\s+/g, ' ').trim() || '')
+      .find((text) => /BWF World Rankings.*\d{1,2}\/\d{1,2}\/\d{4}/.test(text)) || ''
+  ));
   const fallbackDate = tournamentsoftwareDateToIso(heading);
   if (fallbackDate !== rankingDate) {
     console.warn(`Tournamentsoftware fallback skipped: latest edition is ${fallbackDate || 'unknown'}, expected ${rankingDate}`);
@@ -364,28 +403,26 @@ try {
   await writeFile('lib/ranking-data.ts', rankingSource);
   await writeFile('lib/ranking-breakdowns.json', `${JSON.stringify(rankingBreakdowns, null, 2)}\n`);
 
+  const previousCalendarData = await readFile('lib/tournament-calendars.json', 'utf8')
+    .then((source) => JSON.parse(source))
+    .catch(() => ({ generatedAt: '', calendars: {} }));
   const malaysiaYear = Number(new Intl.DateTimeFormat('en', { year: 'numeric', timeZone: 'Asia/Kuala_Lumpur' }).format(new Date()));
   const calendars = {};
+  let refreshedCalendarCount = 0;
   for (const year of [malaysiaYear - 1, malaysiaYear]) {
-    const calendarPage = await context.newPage();
     const status = year === malaysiaYear ? 'remaining' : 'all';
-    await calendarPage.goto(calendarUrl(year, status), { waitUntil: 'domcontentloaded', timeout: 60_000 });
-    await calendarPage.locator('main table tbody tr').first().waitFor({ state: 'visible', timeout: 60_000 });
-    const items = await calendarPage.locator('main table tbody tr').evaluateAll((rows) => rows.map((row) => {
-      const cells = Array.from(row.querySelectorAll('td'));
-      if (cells.length < 7) return null;
-      return {
-        week: (cells[0].textContent || '').trim(),
-        name: (cells[3].textContent || '').replace(/\s+/g, ' ').trim(),
-        category: (cells[5].textContent || '').replace(/\s+/g, ' ').trim(),
-        city: (cells[6].textContent || '').replace(/\s+/g, ' ').trim(),
-      };
-    }).filter((item) => item?.name));
-    calendars[String(year)] = Array.from(new Map(items.map((item) => [`${item.week}|${item.name}|${item.category}|${item.city}`, item])).values());
-    console.log(`${year} calendar: refreshed ${calendars[String(year)].length} entries`);
-    await calendarPage.close();
+    const refreshedCalendar = await fetchTournamentCalendar(context, year, status);
+    if (refreshedCalendar) {
+      calendars[String(year)] = refreshedCalendar;
+      refreshedCalendarCount += 1;
+      console.log(`${year} calendar: refreshed ${refreshedCalendar.length} entries`);
+    } else {
+      calendars[String(year)] = previousCalendarData.calendars?.[String(year)] ?? [];
+      console.warn(`${year} calendar: preserved ${calendars[String(year)].length} previously saved entries`);
+    }
   }
-  await writeFile('lib/tournament-calendars.json', `${JSON.stringify({ generatedAt, calendars }, null, 2)}\n`);
+  const calendarGeneratedAt = refreshedCalendarCount ? generatedAt : (previousCalendarData.generatedAt || generatedAt);
+  await writeFile('lib/tournament-calendars.json', `${JSON.stringify({ generatedAt: calendarGeneratedAt, calendars }, null, 2)}\n`);
 } finally {
   await browser.close();
 }
