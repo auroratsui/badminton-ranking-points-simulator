@@ -2683,13 +2683,14 @@
   "MS-18": {
     "name": "WENG Hong Yang",
     "profiles": [
-      "https://bwfbadminton.com/player/77042/weng-hong-yang/"
+      "https://bwfbadminton.com/player/77042/weng-hong-yang/",
+      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1929271"
     ],
     "scores": [
       {
         "week": "2026-W34",
         "label": "BWF World Championships 2026",
-        "href": "https://bwfworldchampionships.bwfbadminton.com/results/5601/bwf-world-championships-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=320804",
         "result": "33/64",
         "points": 1450,
         "valid": false
@@ -2697,7 +2698,7 @@
       {
         "week": "2026-W30",
         "label": "VICTOR China Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5622/victor-china-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=317585",
         "result": "5/8",
         "points": 7400,
         "valid": true
@@ -2705,7 +2706,7 @@
       {
         "week": "2026-W29",
         "label": "DAIHATSU Japan Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5213/daihatsu-japan-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=315560",
         "result": "17/32",
         "points": 2660,
         "valid": false
@@ -2713,7 +2714,7 @@
       {
         "week": "2026-W23",
         "label": "POLYTRON Indonesia Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5528/polytron-indonesia-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=309642",
         "result": "17/32",
         "points": 3000,
         "valid": false
@@ -2721,7 +2722,7 @@
       {
         "week": "2026-W22",
         "label": "KFF Singapore Badminton Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5649/kff-singapore-badminton-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=308924",
         "result": "9/16",
         "points": 4320,
         "valid": true
@@ -2729,7 +2730,7 @@
       {
         "week": "2026-W21",
         "label": "PERODUA Malaysia Masters 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5229/perodua-malaysia-masters-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307717",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -2737,7 +2738,7 @@
       {
         "week": "2026-W18",
         "label": "BWF Thomas & Uber Cup Finals 2026",
-        "href": "https://bwfthomasubercups.bwfbadminton.com/results/5600/bwf-thomas-uber-cup-finals-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=305455",
         "result": "1",
         "points": 6361,
         "valid": true
@@ -2745,15 +2746,15 @@
       {
         "week": "2026-W15",
         "label": "BANK OF NINGBO Badminton Asia Championships 2026",
-        "href": "https://bwfbadminton.com/tournament/5688/bank-of-ningbo-badminton-asia-championships-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=303513",
         "result": "5/8",
         "points": 6600,
         "valid": true
       },
       {
         "week": "2026-W10",
-        "label": "All England Open Badminton Championships 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5515/all-england-open-badminton-championships-2026/",
+        "label": "YONEX All England Open Badminton Championships 2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300187",
         "result": "17/32",
         "points": 3000,
         "valid": true
@@ -2761,7 +2762,7 @@
       {
         "week": "2026-W09",
         "label": "YONEX German Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5246/yonex-german-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=299440",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -2769,7 +2770,7 @@
       {
         "week": "2026-W02",
         "label": "PETRONAS Malaysia Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5227/petronas-malaysia-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=293919",
         "result": "17/32",
         "points": 3000,
         "valid": false
@@ -2777,7 +2778,7 @@
       {
         "week": "2025-W43",
         "label": "YONEX French Open 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5257/yonex-french-open-2025/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=287504",
         "result": "17/32",
         "points": 2660,
         "valid": false
@@ -2785,7 +2786,7 @@
       {
         "week": "2025-W42",
         "label": "VICTOR Denmark Open 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5207/victor-denmark-open-2025/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286886",
         "result": "9/16",
         "points": 4320,
         "valid": true
@@ -2793,7 +2794,7 @@
       {
         "week": "2025-W41",
         "label": "CLASH OF CLANS Arctic Open 2025 powered by YONEX",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5287/clash-of-clans-arctic-open-2025-powered-by-yonex/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286207",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -2801,7 +2802,7 @@
       {
         "week": "2025-W39",
         "label": "SUWON VICTOR Korea Open 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5288/suwon-victor-korea-open-2025/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284928",
         "result": "5/8",
         "points": 5040,
         "valid": true
@@ -2809,7 +2810,7 @@
       {
         "week": "2025-W38",
         "label": "LI-NING China Masters 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5280/li-ning-china-masters-2025/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284329",
         "result": "1",
         "points": 11000,
         "valid": true
@@ -2817,7 +2818,7 @@
       {
         "week": "2025-W37",
         "label": "LI-NING Hong Kong Open 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5203/li-ning-hong-kong-open-2025/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283583",
         "result": "9/16",
         "points": 3600,
         "valid": true
@@ -5741,14 +5742,13 @@
   "MS-37": {
     "name": "Brian YANG",
     "profiles": [
-      "https://bwfbadminton.com/player/63122/brian-yang/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2077262"
+      "https://bwfbadminton.com/player/63122/brian-yang/"
     ],
     "scores": [
       {
         "week": "2026-W34",
         "label": "BWF World Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=320804",
+        "href": "https://bwfworldchampionships.bwfbadminton.com/results/5601/bwf-world-championships-2026",
         "result": "33/64",
         "points": 1450,
         "valid": false
@@ -5756,7 +5756,7 @@
       {
         "week": "2026-W30",
         "label": "VICTOR China Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=317585",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5622/victor-china-open-2026/",
         "result": "17/32",
         "points": 3300,
         "valid": true
@@ -5764,7 +5764,7 @@
       {
         "week": "2026-W29",
         "label": "DAIHATSU Japan Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=315560",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5213/daihatsu-japan-open-2026/",
         "result": "9/16",
         "points": 4320,
         "valid": true
@@ -5772,7 +5772,7 @@
       {
         "week": "2026-W27",
         "label": "YONEX Canada Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=313067",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5271/yonex-canada-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -5780,7 +5780,7 @@
       {
         "week": "2026-W26",
         "label": "YONEX US Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=312063",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5701/yonex-us-open-2026/",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -5788,7 +5788,7 @@
       {
         "week": "2026-W23",
         "label": "POLYTRON Indonesia Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=309642",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5528/polytron-indonesia-open-2026/",
         "result": "17/32",
         "points": 3000,
         "valid": false
@@ -5796,7 +5796,7 @@
       {
         "week": "2026-W22",
         "label": "KFF Singapore Badminton Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=308924",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5649/kff-singapore-badminton-open-2026/",
         "result": "17/32",
         "points": 2660,
         "valid": false
@@ -5804,7 +5804,7 @@
       {
         "week": "2026-W21",
         "label": "PERODUA Malaysia Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307717",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5229/perodua-malaysia-masters-2026/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -5812,7 +5812,7 @@
       {
         "week": "2026-W18",
         "label": "BWF Thomas & Uber Cup Finals 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=305455",
+        "href": "https://bwfthomasubercups.bwfbadminton.com/results/5600/bwf-thomas-uber-cup-finals-2026",
         "result": "1",
         "points": 4318,
         "valid": false
@@ -5820,7 +5820,7 @@
       {
         "week": "2026-W15",
         "label": "XXIX YONEX Pan Am Individual Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=303515",
+        "href": "https://bwfbadminton.com/tournament/5732/xxix-yonex-pan-am-individual-championships-2026",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -5828,15 +5828,15 @@
       {
         "week": "2026-W11",
         "label": "YONEX Swiss Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300792",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5209/yonex-swiss-open-2026/",
         "result": "9/16",
         "points": 2750,
         "valid": false
       },
       {
         "week": "2026-W10",
-        "label": "YONEX All England Open Badminton Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300187",
+        "label": "All England Open Badminton Championships 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5515/all-england-open-badminton-championships-2026/",
         "result": "17/32",
         "points": 3000,
         "valid": false
@@ -5844,15 +5844,15 @@
       {
         "week": "2026-W07",
         "label": "Pan Am M&F Cup 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=298188",
+        "href": "https://bwfbadminton.com/tournament/5733/pan-am-mf-cup-2026",
         "result": "1",
         "points": 4495,
         "valid": true
       },
       {
         "week": "2026-W05",
-        "label": "PRINCESS SIRIVANNAVARI Thailand Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296779",
+        "label": "Thailand Masters 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5226/thailand-masters-2026/",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -5860,7 +5860,7 @@
       {
         "week": "2026-W04",
         "label": "DAIHATSU Indonesia Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296358",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5529/daihatsu-indonesia-masters-2026/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -5868,7 +5868,7 @@
       {
         "week": "2026-W03",
         "label": "YONEX-SUNRISE India Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=295306",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5269/yonex-sunrise-india-open-2026/",
         "result": "9/16",
         "points": 4320,
         "valid": true
@@ -5876,7 +5876,7 @@
       {
         "week": "2026-W02",
         "label": "PETRONAS Malaysia Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=293919",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5227/petronas-malaysia-open-2026/",
         "result": "17/32",
         "points": 3000,
         "valid": true
@@ -5884,7 +5884,7 @@
       {
         "week": "2025-W49",
         "label": "2025 YONEX Canadian International Challenge",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291695",
+        "href": "https://bwfbadminton.com/tournament/5356/2025-yonex-canadian-international-challenge",
         "result": "2",
         "points": 3400,
         "valid": true
@@ -5892,7 +5892,7 @@
       {
         "week": "2025-W46",
         "label": "Kumamoto Masters Japan 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=289856",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5208/kumamoto-masters-japan-2025/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -5900,7 +5900,7 @@
       {
         "week": "2025-W43",
         "label": "YONEX French Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=287504",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5257/yonex-french-open-2025/",
         "result": "9/16",
         "points": 4320,
         "valid": true
@@ -5908,7 +5908,7 @@
       {
         "week": "2025-W41",
         "label": "CLASH OF CLANS Arctic Open 2025 powered by YONEX",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286207",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5287/clash-of-clans-arctic-open-2025-powered-by-yonex/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -5916,7 +5916,7 @@
       {
         "week": "2025-W37",
         "label": "LI-NING Hong Kong Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283583",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5203/li-ning-hong-kong-open-2025/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -11252,13 +11252,14 @@
   "MS-76": {
     "name": "Saneeth DAYANAND",
     "profiles": [
-      "https://bwfbadminton.com/player/82483/saneeth-dayanand-shimoga/"
+      "https://bwfbadminton.com/player/82483/saneeth-dayanand-shimoga/",
+      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3967813"
     ],
     "scores": [
       {
         "week": "2026-W32",
         "label": "VICTOR Korea Masters 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5596/victor-korea-masters-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=319273",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -11266,7 +11267,7 @@
       {
         "week": "2026-W31",
         "label": "YONEX Taipei Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5514/yonex-taipei-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=318282",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -11274,7 +11275,7 @@
       {
         "week": "2026-W27",
         "label": "YONEX Canada Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5271/yonex-canada-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=313067",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -11282,7 +11283,7 @@
       {
         "week": "2026-W26",
         "label": "YONEX US Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5701/yonex-us-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=312063",
         "result": "17/32",
         "points": 1670,
         "valid": true
@@ -11290,7 +11291,7 @@
       {
         "week": "2026-W24",
         "label": "SATHIO GROUP Australian Badminton Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5215/sathio-group-australian-badminton-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=310418",
         "result": "17/32",
         "points": 2220,
         "valid": true
@@ -11298,7 +11299,7 @@
       {
         "week": "2026-W22",
         "label": "STATE Denmark Challenge 2026 presented by RSL",
-        "href": "https://bwfbadminton.com/tournament/5772/state-denmark-challenge-2026-presented-by-rsl",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=308926",
         "result": "17/32",
         "points": 920,
         "valid": false
@@ -11306,7 +11307,7 @@
       {
         "week": "2026-W20",
         "label": "SAINT DENIS Reunion Open 2026",
-        "href": "https://bwfbadminton.com/tournament/5678/saint-denis-reunion-open-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307170",
         "result": "2",
         "points": 3400,
         "valid": true
@@ -11314,7 +11315,7 @@
       {
         "week": "2026-W09",
         "label": "SBH Singapore International Challenge 2026",
-        "href": "https://bwfbadminton.com/tournament/5682/sbh-singapore-international-challenge-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=299450",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -11322,23 +11323,23 @@
       {
         "week": "2026-W08",
         "label": "Uganda International Challenge 2026",
-        "href": "https://bwfbadminton.com/tournament/5646/uganda-international-challenge-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=298724",
         "result": "3/4",
         "points": 2800,
         "valid": true
       },
       {
         "week": "2026-W05",
-        "label": "Thailand Masters 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5226/thailand-masters-2026/",
-        "result": "65",
+        "label": "PRINCESS SIRIVANNAVARI Thailand Masters 2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296779",
+        "result": "65/128",
         "points": 320,
         "valid": false
       },
       {
         "week": "2025-W50",
         "label": "Odisha Masters 2025",
-        "href": "https://bwfbadminton.com/tournament/5265/odisha-masters-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=292198",
         "result": "17/32",
         "points": 1290,
         "valid": false
@@ -11346,7 +11347,7 @@
       {
         "week": "2025-W49",
         "label": "YONEX-SUNRISE Guwahati Masters 2025",
-        "href": "https://bwfbadminton.com/tournament/5266/yonex-sunrise-guwahati-masters-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291694",
         "result": "5/8",
         "points": 3030,
         "valid": true
@@ -11354,7 +11355,7 @@
       {
         "week": "2025-W48",
         "label": "SYED MODI India International 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5267/syed-modi-india-international-2025/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291227",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -11362,7 +11363,7 @@
       {
         "week": "2025-W45",
         "label": "Telangana India International Challenge 2025",
-        "href": "https://bwfbadminton.com/tournament/5306/telangana-india-international-challenge-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=289204",
         "result": "33/64",
         "points": 360,
         "valid": false
@@ -11370,7 +11371,7 @@
       {
         "week": "2025-W44",
         "label": "Mangalore India International Challenge 2025",
-        "href": "https://bwfbadminton.com/tournament/5206/mangalore-india-international-challenge-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=288348",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -11378,7 +11379,7 @@
       {
         "week": "2025-W40",
         "label": "Al Ain Masters 2025",
-        "href": "https://bwfbadminton.com/tournament/5284/al-ain-masters-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=285619",
         "result": "5/8",
         "points": 3030,
         "valid": true
@@ -11386,7 +11387,7 @@
       {
         "week": "2025-W39",
         "label": "VICTOR Kaohsiung Masters 2025",
-        "href": "https://bwfbadminton.com/tournament/5237/victor-kaohsiung-masters-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284929",
         "result": "9/16",
         "points": 2110,
         "valid": true
@@ -11394,7 +11395,7 @@
       {
         "week": "2025-W38",
         "label": "WONDR by BNI Indonesia Masters I 2025",
-        "href": "https://bwfbadminton.com/tournament/5235/wondr-by-bni-indonesia-masters-i-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284330",
         "result": "33/64",
         "points": 510,
         "valid": false
@@ -12999,14 +13000,13 @@
   "MS-90": {
     "name": "Chico Aura DWI WARDOYO",
     "profiles": [
-      "https://bwfbadminton.com/player/71408/chico-aura-dwi-wardoyo/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=656114"
+      "https://bwfbadminton.com/player/71408/chico-aura-dwi-wardoyo/"
     ],
     "scores": [
       {
         "week": "2026-W35",
         "label": "POLYTRON Pontianak International Challenge 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=321435",
+        "href": "https://bwfbadminton.com/tournament/5577/polytron-pontianak-international-challenge-2026",
         "result": "3/4",
         "points": 2800,
         "valid": true
@@ -13014,7 +13014,7 @@
       {
         "week": "2026-W34",
         "label": "ANTICA Singapore International Challenge 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=320806",
+        "href": "https://bwfbadminton.com/tournament/5869/antica-singapore-international-challenge-2026",
         "result": "3/4",
         "points": 2800,
         "valid": true
@@ -13022,7 +13022,7 @@
       {
         "week": "2026-W31",
         "label": "Philippine International Challenge 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=318283",
+        "href": "https://bwfbadminton.com/tournament/5802/philippine-international-challenge-2026",
         "result": "17/32",
         "points": 920,
         "valid": true
@@ -13030,7 +13030,7 @@
       {
         "week": "2026-W24",
         "label": "TOYOTA Phuket International Challenge 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=310419",
+        "href": "https://bwfbadminton.com/tournament/5659/toyota-phuket-international-challenge-2026",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -13038,7 +13038,7 @@
       {
         "week": "2026-W20",
         "label": "BAOJI China Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307169",
+        "href": "https://bwfbadminton.com/tournament/5670/baoji-china-masters-2026",
         "result": "33/64",
         "points": 510,
         "valid": true
@@ -13046,7 +13046,7 @@
       {
         "week": "2025-W43",
         "label": "WONDR by BNI Indonesia Masters II 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=287505",
+        "href": "https://bwfbadminton.com/tournament/5232/wondr-by-bni-indonesia-masters-ii-2025",
         "result": "9/16",
         "points": 2110,
         "valid": true
@@ -13054,7 +13054,7 @@
       {
         "week": "2025-W39",
         "label": "SUWON VICTOR Korea Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284928",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5288/suwon-victor-korea-open-2025/",
         "result": "9/16",
         "points": 3600,
         "valid": true
@@ -13062,7 +13062,7 @@
       {
         "week": "2025-W38",
         "label": "WONDR by BNI Indonesia Masters I 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284330",
+        "href": "https://bwfbadminton.com/tournament/5235/wondr-by-bni-indonesia-masters-i-2025",
         "result": "1",
         "points": 5500,
         "valid": true
@@ -13070,7 +13070,7 @@
       {
         "week": "2025-W37",
         "label": "YONEX SUNRISE Vietnam Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283584",
+        "href": "https://bwfbadminton.com/tournament/5219/yonex-sunrise-vietnam-open-2025",
         "result": "33/64",
         "points": 510,
         "valid": true
@@ -21536,13 +21536,14 @@
   "WS-48": {
     "name": "Anmol KHARB",
     "profiles": [
-      "https://bwfbadminton.com/player/58664/anmol-kharb/"
+      "https://bwfbadminton.com/player/58664/anmol-kharb/",
+      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5318569"
     ],
     "scores": [
       {
         "week": "2026-W32",
         "label": "VICTOR Korea Masters 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5596/victor-korea-masters-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=319273",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -21550,7 +21551,7 @@
       {
         "week": "2026-W31",
         "label": "YONEX Taipei Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5514/yonex-taipei-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=318282",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -21558,7 +21559,7 @@
       {
         "week": "2026-W27",
         "label": "YONEX Canada Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5271/yonex-canada-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=313067",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -21566,7 +21567,7 @@
       {
         "week": "2026-W26",
         "label": "YONEX US Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5701/yonex-us-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=312063",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -21574,7 +21575,7 @@
       {
         "week": "2026-W25",
         "label": "SANDS CHINA LTD. Macau Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5214/sands-china-ltd-macau-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=311156",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -21582,7 +21583,7 @@
       {
         "week": "2026-W22",
         "label": "STATE Denmark Challenge 2026 presented by RSL",
-        "href": "https://bwfbadminton.com/tournament/5772/state-denmark-challenge-2026-presented-by-rsl",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=308926",
         "result": "5/8",
         "points": 2200,
         "valid": false
@@ -21590,7 +21591,7 @@
       {
         "week": "2026-W21",
         "label": "PERODUA Malaysia Masters 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5229/perodua-malaysia-masters-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307717",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -21598,7 +21599,7 @@
       {
         "week": "2026-W20",
         "label": "TOYOTA Thailand Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5230/toyota-thailand-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307168",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -21606,7 +21607,7 @@
       {
         "week": "2026-W12",
         "label": "Orleans Masters Badminton 2026 presented by VICTOR",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5270/orleans-masters-badminton-2026-presented-by-victor/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=301390",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -21614,15 +21615,15 @@
       {
         "week": "2026-W09",
         "label": "SBH Singapore International Challenge 2026",
-        "href": "https://bwfbadminton.com/tournament/5682/sbh-singapore-international-challenge-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=299450",
         "result": "17/32",
         "points": 920,
         "valid": false
       },
       {
         "week": "2026-W05",
-        "label": "Thailand Masters 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5226/thailand-masters-2026/",
+        "label": "PRINCESS SIRIVANNAVARI Thailand Masters 2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296779",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -21630,7 +21631,7 @@
       {
         "week": "2026-W04",
         "label": "DAIHATSU Indonesia Masters 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5529/daihatsu-indonesia-masters-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296358",
         "result": "9/16",
         "points": 3600,
         "valid": true
@@ -21638,7 +21639,7 @@
       {
         "week": "2025-W50",
         "label": "Odisha Masters 2025",
-        "href": "https://bwfbadminton.com/tournament/5265/odisha-masters-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=292198",
         "result": "5/8",
         "points": 3030,
         "valid": true
@@ -21646,7 +21647,7 @@
       {
         "week": "2025-W49",
         "label": "YONEX-SUNRISE Guwahati Masters 2025",
-        "href": "https://bwfbadminton.com/tournament/5266/yonex-sunrise-guwahati-masters-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291694",
         "result": "9/16",
         "points": 2110,
         "valid": false
@@ -21654,7 +21655,7 @@
       {
         "week": "2025-W48",
         "label": "SYED MODI India International 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5267/syed-modi-india-international-2025/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291227",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -21662,7 +21663,7 @@
       {
         "week": "2025-W44",
         "label": "HYLO Open 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5256/hylo-open-2025/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=288347",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -21670,7 +21671,7 @@
       {
         "week": "2025-W43",
         "label": "YONEX French Open 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5257/yonex-french-open-2025/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=287504",
         "result": "17/32",
         "points": 2660,
         "valid": true
@@ -21678,7 +21679,7 @@
       {
         "week": "2025-W42",
         "label": "VICTOR Denmark Open 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5207/victor-denmark-open-2025/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286886",
         "result": "17/32",
         "points": 2660,
         "valid": true
@@ -21686,7 +21687,7 @@
       {
         "week": "2025-W41",
         "label": "CLASH OF CLANS Arctic Open 2025 powered by YONEX",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5287/clash-of-clans-arctic-open-2025-powered-by-yonex/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286207",
         "result": "3/4",
         "points": 6420,
         "valid": true
@@ -21694,9 +21695,17 @@
       {
         "week": "2025-W40",
         "label": "Al Ain Masters 2025",
-        "href": "https://bwfbadminton.com/tournament/5284/al-ain-masters-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=285619",
         "result": "9/16",
         "points": 2110,
+        "valid": false
+      },
+      {
+        "week": "2025-W38",
+        "label": "WONDR by BNI Indonesia Masters I 2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284330",
+        "result": "17/32",
+        "points": 1290,
         "valid": false
       }
     ]
@@ -22727,14 +22736,13 @@
   "WS-56": {
     "name": "Wen Chi HSU",
     "profiles": [
-      "https://bwfbadminton.com/player/89583/wen-chi-hsu/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=409872"
+      "https://bwfbadminton.com/player/89583/wen-chi-hsu/"
     ],
     "scores": [
       {
         "week": "2026-W31",
         "label": "YONEX Taipei Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=318282",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5514/yonex-taipei-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -22742,7 +22750,7 @@
       {
         "week": "2026-W12",
         "label": "Orleans Masters Badminton 2026 presented by VICTOR",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=301390",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5270/orleans-masters-badminton-2026-presented-by-victor/",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -22750,15 +22758,15 @@
       {
         "week": "2026-W11",
         "label": "YONEX Swiss Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300792",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5209/yonex-swiss-open-2026/",
         "result": "9/16",
         "points": 2750,
         "valid": true
       },
       {
         "week": "2026-W10",
-        "label": "YONEX All England Open Badminton Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300187",
+        "label": "All England Open Badminton Championships 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5515/all-england-open-badminton-championships-2026/",
         "result": "17/32",
         "points": 3000,
         "valid": true
@@ -22766,7 +22774,7 @@
       {
         "week": "2026-W09",
         "label": "YONEX German Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=299440",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5246/yonex-german-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -22774,7 +22782,7 @@
       {
         "week": "2026-W06",
         "label": "TSINGTAO Badminton Asia Team Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=297636",
+        "href": "https://bwfbadminton.com/tournament/5588/tsingtao-badminton-asia-team-championships-2026",
         "result": "1",
         "points": 3742,
         "valid": true
@@ -22782,7 +22790,7 @@
       {
         "week": "2026-W04",
         "label": "DAIHATSU Indonesia Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296358",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5529/daihatsu-indonesia-masters-2026/",
         "result": "17/32",
         "points": 2220,
         "valid": true
@@ -22790,7 +22798,7 @@
       {
         "week": "2026-W03",
         "label": "YONEX-SUNRISE India Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=295306",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5269/yonex-sunrise-india-open-2026/",
         "result": "17/32",
         "points": 2660,
         "valid": true
@@ -22798,7 +22806,7 @@
       {
         "week": "2026-W02",
         "label": "PETRONAS Malaysia Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=293919",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5227/petronas-malaysia-open-2026/",
         "result": "17/32",
         "points": 3000,
         "valid": true
@@ -22806,7 +22814,7 @@
       {
         "week": "2025-W44",
         "label": "HYLO Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=288347",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5256/hylo-open-2025/",
         "result": "9/16",
         "points": 3600,
         "valid": true
@@ -22814,7 +22822,7 @@
       {
         "week": "2025-W41",
         "label": "CLASH OF CLANS Arctic Open 2025 powered by YONEX",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286207",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5287/clash-of-clans-arctic-open-2025-powered-by-yonex/",
         "result": "9/16",
         "points": 3600,
         "valid": true
@@ -22822,7 +22830,7 @@
       {
         "week": "2025-W39",
         "label": "VICTOR Kaohsiung Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284929",
+        "href": "https://bwfbadminton.com/tournament/5237/victor-kaohsiung-masters-2025",
         "result": "5/8",
         "points": 3030,
         "valid": true
@@ -22830,7 +22838,7 @@
       {
         "week": "2025-W37",
         "label": "LI-NING Hong Kong Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283583",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5203/li-ning-hong-kong-open-2025/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -23332,14 +23340,13 @@
   "WS-61": {
     "name": "Tasnim MIR",
     "profiles": [
-      "https://bwfbadminton.com/player/86604/tasnim-mir/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2447127"
+      "https://bwfbadminton.com/player/86604/tasnim-mir/"
     ],
     "scores": [
       {
         "week": "2026-W33",
         "label": "PETRONAS Malaysia International Challenge 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=320071",
+        "href": "https://bwfbadminton.com/tournament/5735/petronas-malaysia-international-challenge-2026",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -23347,7 +23354,7 @@
       {
         "week": "2026-W31",
         "label": "YONEX Taipei Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=318282",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5514/yonex-taipei-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -23355,7 +23362,7 @@
       {
         "week": "2026-W25",
         "label": "SANDS CHINA LTD. Macau Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=311156",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5214/sands-china-ltd-macau-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -23363,7 +23370,7 @@
       {
         "week": "2026-W22",
         "label": "STATE Denmark Challenge 2026 presented by RSL",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=308926",
+        "href": "https://bwfbadminton.com/tournament/5772/state-denmark-challenge-2026-presented-by-rsl",
         "result": "9/16",
         "points": 1520,
         "valid": false
@@ -23371,7 +23378,7 @@
       {
         "week": "2026-W20",
         "label": "SAINT DENIS Reunion Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307170",
+        "href": "https://bwfbadminton.com/tournament/5678/saint-denis-reunion-open-2026",
         "result": "1",
         "points": 4000,
         "valid": true
@@ -23379,7 +23386,7 @@
       {
         "week": "2026-W13",
         "label": "CIPUTRA HANOI - YONEX SUNRISE Vietnam International Challenge 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=302105",
+        "href": "https://bwfbadminton.com/tournament/5660/ciputra-hanoi-yonex-sunrise-vietnam-international-challenge-2026",
         "result": "17/32",
         "points": 920,
         "valid": false
@@ -23387,15 +23394,15 @@
       {
         "week": "2026-W09",
         "label": "YONEX German Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=299440",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5246/yonex-german-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": true
       },
       {
         "week": "2026-W05",
-        "label": "PRINCESS SIRIVANNAVARI Thailand Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296779",
+        "label": "Thailand Masters 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5226/thailand-masters-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": true
@@ -23403,7 +23410,7 @@
       {
         "week": "2026-W04",
         "label": "DAIHATSU Indonesia Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296358",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5529/daihatsu-indonesia-masters-2026/",
         "result": "33/64",
         "points": 880,
         "valid": false
@@ -23411,7 +23418,7 @@
       {
         "week": "2025-W50",
         "label": "Odisha Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=292198",
+        "href": "https://bwfbadminton.com/tournament/5265/odisha-masters-2025",
         "result": "3/4",
         "points": 3850,
         "valid": true
@@ -23419,7 +23426,7 @@
       {
         "week": "2025-W49",
         "label": "YONEX-SUNRISE Guwahati Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291694",
+        "href": "https://bwfbadminton.com/tournament/5266/yonex-sunrise-guwahati-masters-2025",
         "result": "5/8",
         "points": 3030,
         "valid": true
@@ -23427,7 +23434,7 @@
       {
         "week": "2025-W48",
         "label": "SYED MODI India International 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291227",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5267/syed-modi-india-international-2025/",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -23435,7 +23442,7 @@
       {
         "week": "2025-W42",
         "label": "YONEX Bendigo International 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286887",
+        "href": "https://bwfbadminton.com/tournament/5405/yonex-bendigo-international-2025",
         "result": "9/16",
         "points": 1520,
         "valid": false
@@ -23443,7 +23450,7 @@
       {
         "week": "2025-W41",
         "label": "ROKETTO Sydney International 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286208",
+        "href": "https://bwfbadminton.com/tournament/5412/roketto-sydney-international-2025",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -23451,7 +23458,7 @@
       {
         "week": "2025-W40",
         "label": "Al Ain Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=285619",
+        "href": "https://bwfbadminton.com/tournament/5284/al-ain-masters-2025",
         "result": "2",
         "points": 4680,
         "valid": true
@@ -23459,7 +23466,7 @@
       {
         "week": "2025-W38",
         "label": "WONDR by BNI Indonesia Masters I 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284330",
+        "href": "https://bwfbadminton.com/tournament/5235/wondr-by-bni-indonesia-masters-i-2025",
         "result": "5/8",
         "points": 3030,
         "valid": true
@@ -26670,13 +26677,14 @@
   "WS-89": {
     "name": "KISONA Selvaduray",
     "profiles": [
-      "https://bwfbadminton.com/player/92014/kisona-selvaduray/"
+      "https://bwfbadminton.com/player/92014/kisona-selvaduray/",
+      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=318769"
     ],
     "scores": [
       {
         "week": "2026-W32",
         "label": "VICTOR Korea Masters 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5596/victor-korea-masters-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=319273",
         "result": "17/32",
         "points": 1670,
         "valid": true
@@ -26684,7 +26692,7 @@
       {
         "week": "2026-W31",
         "label": "YONEX Taipei Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5514/yonex-taipei-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=318282",
         "result": "33/64",
         "points": 660,
         "valid": false
@@ -26692,7 +26700,7 @@
       {
         "week": "2026-W25",
         "label": "SANDS CHINA LTD. Macau Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5214/sands-china-ltd-macau-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=311156",
         "result": "17/32",
         "points": 1670,
         "valid": true
@@ -26700,7 +26708,7 @@
       {
         "week": "2026-W20",
         "label": "BAOJI China Masters 2026",
-        "href": "https://bwfbadminton.com/tournament/5670/baoji-china-masters-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307169",
         "result": "17/32",
         "points": 1290,
         "valid": false
@@ -26708,7 +26716,7 @@
       {
         "week": "2026-W13",
         "label": "CIPUTRA HANOI - YONEX SUNRISE Vietnam International Challenge 2026",
-        "href": "https://bwfbadminton.com/tournament/5660/ciputra-hanoi-yonex-sunrise-vietnam-international-challenge-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=302105",
         "result": "3/4",
         "points": 2800,
         "valid": true
@@ -26716,7 +26724,7 @@
       {
         "week": "2026-W11",
         "label": "Ruichang China Masters 2026",
-        "href": "https://bwfbadminton.com/tournament/5623/ruichang-china-masters-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300790",
         "result": "9/16",
         "points": 2110,
         "valid": true
@@ -26724,7 +26732,7 @@
       {
         "week": "2025-W47",
         "label": "Scottish Open 2025",
-        "href": "https://bwfbadminton.com/tournament/5536/scottish-open-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=290459",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -26732,7 +26740,7 @@
       {
         "week": "2025-W46",
         "label": "AIG VICTOR Irish Open 2025",
-        "href": "https://bwfbadminton.com/tournament/5524/aig-victor-irish-open-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=289859",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -26740,7 +26748,7 @@
       {
         "week": "2025-W44",
         "label": "HYLO Open 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5256/hylo-open-2025/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=288347",
         "result": "9/16",
         "points": 3600,
         "valid": true
@@ -26748,7 +26756,7 @@
       {
         "week": "2025-W41",
         "label": "VICTOR Türkiye International Challenge 2025",
-        "href": "https://bwfbadminton.com/tournament/5408/victor-turkiye-international-challenge-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286210",
         "result": "9/16",
         "points": 1520,
         "valid": true
@@ -26756,7 +26764,7 @@
       {
         "week": "2025-W40",
         "label": "YONEX Dutch Open 2025",
-        "href": "https://bwfbadminton.com/tournament/5294/yonex-dutch-open-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=285621",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -26764,7 +26772,7 @@
       {
         "week": "2025-W38",
         "label": "WONDR by BNI Indonesia Masters I 2025",
-        "href": "https://bwfbadminton.com/tournament/5235/wondr-by-bni-indonesia-masters-i-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284330",
         "result": "17/32",
         "points": 1290,
         "valid": false
@@ -26772,7 +26780,7 @@
       {
         "week": "2025-W37",
         "label": "YONEX SUNRISE Vietnam Open 2025",
-        "href": "https://bwfbadminton.com/tournament/5219/yonex-sunrise-vietnam-open-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283584",
         "result": "9/16",
         "points": 2110,
         "valid": true
@@ -27596,14 +27604,13 @@
   "WS-96": {
     "name": "LIANG Ting Yu",
     "profiles": [
-      "https://bwfbadminton.com/player/93852/liang-ting-yu/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1034189"
+      "https://bwfbadminton.com/player/93852/liang-ting-yu/"
     ],
     "scores": [
       {
         "week": "2026-W35",
         "label": "POLYTRON Pontianak International Challenge 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=321435",
+        "href": "https://bwfbadminton.com/tournament/5577/polytron-pontianak-international-challenge-2026",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -27611,15 +27618,15 @@
       {
         "week": "2026-W31",
         "label": "YONEX Taipei Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=318282",
-        "result": "65/128",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5514/yonex-taipei-open-2026/",
+        "result": "65",
         "points": 320,
         "valid": false
       },
       {
         "week": "2026-W25",
         "label": "SANDS CHINA LTD. Macau Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=311156",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5214/sands-china-ltd-macau-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": true
@@ -27627,7 +27634,7 @@
       {
         "week": "2026-W24",
         "label": "TOYOTA Phuket International Challenge 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=310419",
+        "href": "https://bwfbadminton.com/tournament/5659/toyota-phuket-international-challenge-2026",
         "result": "9/16",
         "points": 1520,
         "valid": true
@@ -27635,7 +27642,7 @@
       {
         "week": "2026-W20",
         "label": "BAOJI China Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307169",
+        "href": "https://bwfbadminton.com/tournament/5670/baoji-china-masters-2026",
         "result": "17/32",
         "points": 1290,
         "valid": true
@@ -27643,7 +27650,7 @@
       {
         "week": "2026-W13",
         "label": "CIPUTRA HANOI - YONEX SUNRISE Vietnam International Challenge 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=302105",
+        "href": "https://bwfbadminton.com/tournament/5660/ciputra-hanoi-yonex-sunrise-vietnam-international-challenge-2026",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -27651,23 +27658,23 @@
       {
         "week": "2026-W11",
         "label": "Ruichang China Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300790",
+        "href": "https://bwfbadminton.com/tournament/5623/ruichang-china-masters-2026",
         "result": "9/16",
         "points": 2110,
         "valid": true
       },
       {
         "week": "2026-W05",
-        "label": "PRINCESS SIRIVANNAVARI Thailand Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296779",
-        "result": "65/128",
+        "label": "Thailand Masters 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5226/thailand-masters-2026/",
+        "result": "65",
         "points": 320,
         "valid": false
       },
       {
         "week": "2025-W47",
         "label": "WONDR BY BNI Indonesia International Challenge II 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=290461",
+        "href": "https://bwfbadminton.com/tournament/5387/wondr-by-bni-indonesia-international-challenge-ii-2025",
         "result": "3/4",
         "points": 2800,
         "valid": true
@@ -27675,7 +27682,7 @@
       {
         "week": "2025-W46",
         "label": "WONDR BY BNI Indonesia International Challenge I 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=289857",
+        "href": "https://bwfbadminton.com/tournament/5378/wondr-by-bni-indonesia-international-challenge-i-2025",
         "result": "9/16",
         "points": 1520,
         "valid": true
@@ -27683,7 +27690,7 @@
       {
         "week": "2025-W40",
         "label": "Al Ain Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=285619",
+        "href": "https://bwfbadminton.com/tournament/5284/al-ain-masters-2025",
         "result": "17/32",
         "points": 1290,
         "valid": true
@@ -27691,7 +27698,7 @@
       {
         "week": "2025-W39",
         "label": "VICTOR Kaohsiung Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284929",
+        "href": "https://bwfbadminton.com/tournament/5237/victor-kaohsiung-masters-2025",
         "result": "17/32",
         "points": 1290,
         "valid": false
@@ -27699,7 +27706,7 @@
       {
         "week": "2025-W38",
         "label": "WONDR by BNI Indonesia Masters I 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284330",
+        "href": "https://bwfbadminton.com/tournament/5235/wondr-by-bni-indonesia-masters-i-2025",
         "result": "3/4",
         "points": 3850,
         "valid": true
@@ -27707,7 +27714,7 @@
       {
         "week": "2025-W37",
         "label": "YONEX SUNRISE Vietnam Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283584",
+        "href": "https://bwfbadminton.com/tournament/5219/yonex-sunrise-vietnam-open-2025",
         "result": "17/32",
         "points": 1290,
         "valid": false
@@ -29280,14 +29287,13 @@
     "name": "Ben LANE / Sean VENDY",
     "profiles": [
       "https://bwfbadminton.com/player/76278/ben-lane/",
-      "https://bwfbadminton.com/player/72478/sean-vendy/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=283449"
+      "https://bwfbadminton.com/player/72478/sean-vendy/"
     ],
     "scores": [
       {
         "week": "2026-W34",
         "label": "BWF World Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=320804",
+        "href": "https://bwfworldchampionships.bwfbadminton.com/results/5601/bwf-world-championships-2026",
         "result": "9/16",
         "points": 6000,
         "valid": true
@@ -29295,7 +29301,7 @@
       {
         "week": "2026-W30",
         "label": "VICTOR China Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=317585",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5622/victor-china-open-2026/",
         "result": "3/4",
         "points": 9500,
         "valid": true
@@ -29303,7 +29309,7 @@
       {
         "week": "2026-W29",
         "label": "DAIHATSU Japan Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=315560",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5213/daihatsu-japan-open-2026/",
         "result": "5/8",
         "points": 6050,
         "valid": true
@@ -29311,7 +29317,7 @@
       {
         "week": "2026-W26",
         "label": "YONEX US Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=312063",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5701/yonex-us-open-2026/",
         "result": "3/4",
         "points": 4900,
         "valid": true
@@ -29319,7 +29325,7 @@
       {
         "week": "2026-W23",
         "label": "POLYTRON Indonesia Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=309642",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5528/polytron-indonesia-open-2026/",
         "result": "9/16",
         "points": 4800,
         "valid": true
@@ -29327,7 +29333,7 @@
       {
         "week": "2026-W22",
         "label": "KFF Singapore Badminton Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=308924",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5649/kff-singapore-badminton-open-2026/",
         "result": "9/16",
         "points": 4320,
         "valid": false
@@ -29335,15 +29341,15 @@
       {
         "week": "2026-W15",
         "label": "2026 European Championships",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=303514",
+        "href": "https://bwfbadminton.com/tournament/5620/2026-european-championships",
         "result": "1",
         "points": 9200,
         "valid": true
       },
       {
         "week": "2026-W10",
-        "label": "YONEX All England Open Badminton Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300187",
+        "label": "All England Open Badminton Championships 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5515/all-england-open-badminton-championships-2026/",
         "result": "17/32",
         "points": 3000,
         "valid": false
@@ -29351,7 +29357,7 @@
       {
         "week": "2026-W07",
         "label": "2026 European Men's & Women's Team Championships",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=298183",
+        "href": "https://bwfbadminton.com/tournament/5661/2026-european-mens-womens-team-championships",
         "result": "1",
         "points": 6551,
         "valid": true
@@ -29359,7 +29365,7 @@
       {
         "week": "2026-W04",
         "label": "DAIHATSU Indonesia Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296358",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5529/daihatsu-indonesia-masters-2026/",
         "result": "9/16",
         "points": 3600,
         "valid": false
@@ -29367,7 +29373,7 @@
       {
         "week": "2026-W03",
         "label": "YONEX-SUNRISE India Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=295306",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5269/yonex-sunrise-india-open-2026/",
         "result": "17/32",
         "points": 2660,
         "valid": false
@@ -29375,7 +29381,7 @@
       {
         "week": "2026-W02",
         "label": "PETRONAS Malaysia Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=293919",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5227/petronas-malaysia-open-2026/",
         "result": "3/4",
         "points": 8400,
         "valid": true
@@ -29383,7 +29389,7 @@
       {
         "week": "2025-W49",
         "label": "2026 European Men's & Women's Team Championships Qualification - Estonia",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291703",
+        "href": "https://bwfbadminton.com/tournament/5707/2026-european-mens-womens-team-championships-qualification-estonia",
         "result": "1",
         "points": 5859,
         "valid": false
@@ -29391,7 +29397,7 @@
       {
         "week": "2025-W44",
         "label": "HYLO Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=288347",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5256/hylo-open-2025/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -29399,7 +29405,7 @@
       {
         "week": "2025-W43",
         "label": "YONEX French Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=287504",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5257/yonex-french-open-2025/",
         "result": "9/16",
         "points": 4320,
         "valid": false
@@ -29407,7 +29413,7 @@
       {
         "week": "2025-W42",
         "label": "VICTOR Denmark Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286886",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5207/victor-denmark-open-2025/",
         "result": "5/8",
         "points": 6050,
         "valid": true
@@ -29415,7 +29421,7 @@
       {
         "week": "2025-W41",
         "label": "CLASH OF CLANS Arctic Open 2025 powered by YONEX",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286207",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5287/clash-of-clans-arctic-open-2025-powered-by-yonex/",
         "result": "1",
         "points": 9200,
         "valid": true
@@ -29423,7 +29429,7 @@
       {
         "week": "2025-W38",
         "label": "LI-NING China Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284329",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5280/li-ning-china-masters-2025/",
         "result": "9/16",
         "points": 4320,
         "valid": false
@@ -29431,7 +29437,7 @@
       {
         "week": "2025-W37",
         "label": "LI-NING Hong Kong Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283583",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5203/li-ning-hong-kong-open-2025/",
         "result": "9/16",
         "points": 3600,
         "valid": false
@@ -33164,14 +33170,13 @@
     "name": "Christian Faust KJÆR / Rasmus KJÆR",
     "profiles": [
       "https://bwfbadminton.com/player/75049/christian-faust-kj%C3%86r/",
-      "https://bwfbadminton.com/player/64729/rasmus-kj%C3%86r/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2847808"
+      "https://bwfbadminton.com/player/64729/rasmus-kj%C3%86r/"
     ],
     "scores": [
       {
         "week": "2026-W27",
         "label": "YONEX Canada Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=313067",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5271/yonex-canada-open-2026/",
         "result": "2",
         "points": 5950,
         "valid": true
@@ -33179,7 +33184,7 @@
       {
         "week": "2026-W26",
         "label": "YONEX US Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=312063",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5701/yonex-us-open-2026/",
         "result": "3/4",
         "points": 4900,
         "valid": true
@@ -33187,7 +33192,7 @@
       {
         "week": "2026-W22",
         "label": "STATE Denmark Challenge 2026 presented by RSL",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=308926",
+        "href": "https://bwfbadminton.com/tournament/5772/state-denmark-challenge-2026-presented-by-rsl",
         "result": "1",
         "points": 4000,
         "valid": true
@@ -33195,7 +33200,7 @@
       {
         "week": "2026-W15",
         "label": "2026 European Championships",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=303514",
+        "href": "https://bwfbadminton.com/tournament/5620/2026-european-championships",
         "result": "9/16",
         "points": 3600,
         "valid": true
@@ -33203,7 +33208,7 @@
       {
         "week": "2026-W12",
         "label": "Orleans Masters Badminton 2026 presented by VICTOR",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=301390",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5270/orleans-masters-badminton-2026-presented-by-victor/",
         "result": "3/4",
         "points": 4900,
         "valid": true
@@ -33211,7 +33216,7 @@
       {
         "week": "2026-W11",
         "label": "YONEX Swiss Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300792",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5209/yonex-swiss-open-2026/",
         "result": "3/4",
         "points": 4900,
         "valid": true
@@ -33219,7 +33224,7 @@
       {
         "week": "2026-W09",
         "label": "YONEX German Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=299440",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5246/yonex-german-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -33227,7 +33232,7 @@
       {
         "week": "2026-W07",
         "label": "2026 European Men's & Women's Team Championships",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=298183",
+        "href": "https://bwfbadminton.com/tournament/5661/2026-european-mens-womens-team-championships",
         "result": "1",
         "points": 2354,
         "valid": true
@@ -33235,7 +33240,7 @@
       {
         "week": "2026-W02",
         "label": "YONEX Estonian International 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=293920",
+        "href": "https://bwfbadminton.com/tournament/5559/yonex-estonian-international-2026",
         "result": "1",
         "points": 2500,
         "valid": true
@@ -33243,7 +33248,7 @@
       {
         "week": "2025-W48",
         "label": "SYED MODI India International 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291227",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5267/syed-modi-india-international-2025/",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -33251,7 +33256,7 @@
       {
         "week": "2025-W46",
         "label": "Kumamoto Masters Japan 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=289856",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5208/kumamoto-masters-japan-2025/",
         "result": "17/32",
         "points": 2220,
         "valid": true
@@ -34366,161 +34371,8 @@
     "name": "Jiří KRÁL / Ondřej KRÁL",
     "profiles": [
       "https://bwfbadminton.com/player/91710/ji%C5%99i-kral/",
-      "https://bwfbadminton.com/player/82378/ond%C5%99ej-kral/"
-    ],
-    "scores": [
-      {
-        "week": "2026-W34",
-        "label": "BWF World Championships 2026",
-        "href": "https://bwfworldchampionships.bwfbadminton.com/results/5601/bwf-world-championships-2026",
-        "result": "17/32",
-        "points": 3700,
-        "valid": true
-      },
-      {
-        "week": "2026-W27",
-        "label": "YONEX Canada Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5271/yonex-canada-open-2026/",
-        "result": "9/16",
-        "points": 2750,
-        "valid": true
-      },
-      {
-        "week": "2026-W26",
-        "label": "YONEX US Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5701/yonex-us-open-2026/",
-        "result": "9/16",
-        "points": 2750,
-        "valid": true
-      },
-      {
-        "week": "2026-W22",
-        "label": "KFF Singapore Badminton Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5649/kff-singapore-badminton-open-2026/",
-        "result": "17/32",
-        "points": 2660,
-        "valid": true
-      },
-      {
-        "week": "2026-W21",
-        "label": "PERODUA Malaysia Masters 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5229/perodua-malaysia-masters-2026/",
-        "result": "17/32",
-        "points": 2220,
-        "valid": false
-      },
-      {
-        "week": "2026-W20",
-        "label": "TOYOTA Thailand Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5230/toyota-thailand-open-2026/",
-        "result": "17/32",
-        "points": 2220,
-        "valid": false
-      },
-      {
-        "week": "2026-W15",
-        "label": "2026 European Championships",
-        "href": "https://bwfbadminton.com/tournament/5620/2026-european-championships",
-        "result": "5/8",
-        "points": 5040,
-        "valid": true
-      },
-      {
-        "week": "2026-W12",
-        "label": "Orleans Masters Badminton 2026 presented by VICTOR",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5270/orleans-masters-badminton-2026-presented-by-victor/",
-        "result": "17/32",
-        "points": 1670,
-        "valid": false
-      },
-      {
-        "week": "2026-W11",
-        "label": "YONEX Swiss Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5209/yonex-swiss-open-2026/",
-        "result": "9/16",
-        "points": 2750,
-        "valid": true
-      },
-      {
-        "week": "2026-W09",
-        "label": "YONEX German Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5246/yonex-german-open-2026/",
-        "result": "5/8",
-        "points": 3850,
-        "valid": true
-      },
-      {
-        "week": "2026-W06",
-        "label": "Azerbaijan International 2026",
-        "href": "https://bwfbadminton.com/tournament/5627/azerbaijan-international-2026",
-        "result": "5/8",
-        "points": 2200,
-        "valid": false
-      },
-      {
-        "week": "2025-W49",
-        "label": "2026 European Men's & Women's Team Championships Qualification - Czechia",
-        "href": "https://bwfbadminton.com/tournament/5704/2026-european-mens-womens-team-championships-qualification-czechia",
-        "result": "1",
-        "points": 2763,
-        "valid": true
-      },
-      {
-        "week": "2025-W44",
-        "label": "HYLO Open 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5256/hylo-open-2025/",
-        "result": "9/16",
-        "points": 3600,
-        "valid": true
-      },
-      {
-        "week": "2025-W42",
-        "label": "YONEX Czech Open 2025",
-        "href": "https://bwfbadminton.com/tournament/5430/yonex-czech-open-2025",
-        "result": "3/4",
-        "points": 2800,
-        "valid": true
-      },
-      {
-        "week": "2025-W41",
-        "label": "CLASH OF CLANS Arctic Open 2025 powered by YONEX",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5287/clash-of-clans-arctic-open-2025-powered-by-yonex/",
-        "result": "17/32",
-        "points": 2220,
-        "valid": false
-      },
-      {
-        "week": "2025-W39",
-        "label": "SUWON VICTOR Korea Open 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5288/suwon-victor-korea-open-2025/",
-        "result": "17/32",
-        "points": 2220,
-        "valid": false
-      },
-      {
-        "week": "2025-W38",
-        "label": "Polish International 2025 presented by YONEX",
-        "href": "https://bwfbadminton.com/tournament/5434/polish-international-2025-presented-by-yonex",
-        "result": "3/4",
-        "points": 1750,
-        "valid": false
-      },
-      {
-        "week": "2025-W37",
-        "label": "YONEX Belgian International 2025",
-        "href": "https://bwfbadminton.com/tournament/5508/yonex-belgian-international-2025",
-        "result": "5/8",
-        "points": 2200,
-        "valid": false
-      }
-    ]
-  },
-  "MD-44": {
-    "name": "Eloi ADAM / Leo ROSSI",
-    "profiles": [
-      "https://bwfbadminton.com/player/87403/eloi-adam/",
-      "https://bwfbadminton.com/player/96690/leo-rossi/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1426878"
+      "https://bwfbadminton.com/player/82378/ond%C5%99ej-kral/",
+      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1688333"
     ],
     "scores": [
       {
@@ -34548,9 +34400,162 @@
         "valid": true
       },
       {
+        "week": "2026-W22",
+        "label": "KFF Singapore Badminton Open 2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=308924",
+        "result": "17/32",
+        "points": 2660,
+        "valid": true
+      },
+      {
+        "week": "2026-W21",
+        "label": "PERODUA Malaysia Masters 2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307717",
+        "result": "17/32",
+        "points": 2220,
+        "valid": false
+      },
+      {
+        "week": "2026-W20",
+        "label": "TOYOTA Thailand Open 2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307168",
+        "result": "17/32",
+        "points": 2220,
+        "valid": false
+      },
+      {
+        "week": "2026-W15",
+        "label": "2026 European Championships",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=303514",
+        "result": "5/8",
+        "points": 5040,
+        "valid": true
+      },
+      {
+        "week": "2026-W12",
+        "label": "Orleans Masters Badminton 2026 presented by VICTOR",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=301390",
+        "result": "17/32",
+        "points": 1670,
+        "valid": false
+      },
+      {
+        "week": "2026-W11",
+        "label": "YONEX Swiss Open 2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300792",
+        "result": "9/16",
+        "points": 2750,
+        "valid": true
+      },
+      {
+        "week": "2026-W09",
+        "label": "YONEX German Open 2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=299440",
+        "result": "5/8",
+        "points": 3850,
+        "valid": true
+      },
+      {
+        "week": "2026-W06",
+        "label": "Azerbaijan International 2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=297635",
+        "result": "5/8",
+        "points": 2200,
+        "valid": false
+      },
+      {
+        "week": "2025-W49",
+        "label": "2026 European Men's & Women's Team Championships Qualification - Czechia",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291700",
+        "result": "1",
+        "points": 2763,
+        "valid": true
+      },
+      {
+        "week": "2025-W44",
+        "label": "HYLO Open 2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=288347",
+        "result": "9/16",
+        "points": 3600,
+        "valid": true
+      },
+      {
+        "week": "2025-W42",
+        "label": "YONEX Czech Open 2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286888",
+        "result": "3/4",
+        "points": 2800,
+        "valid": true
+      },
+      {
+        "week": "2025-W41",
+        "label": "CLASH OF CLANS Arctic Open 2025 powered by YONEX",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286207",
+        "result": "17/32",
+        "points": 2220,
+        "valid": false
+      },
+      {
+        "week": "2025-W39",
+        "label": "SUWON VICTOR Korea Open 2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284928",
+        "result": "17/32",
+        "points": 2220,
+        "valid": false
+      },
+      {
+        "week": "2025-W38",
+        "label": "Polish International 2025 presented by YONEX",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284332",
+        "result": "3/4",
+        "points": 1750,
+        "valid": false
+      },
+      {
+        "week": "2025-W37",
+        "label": "YONEX Belgian International 2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283587",
+        "result": "5/8",
+        "points": 2200,
+        "valid": false
+      }
+    ]
+  },
+  "MD-44": {
+    "name": "Eloi ADAM / Leo ROSSI",
+    "profiles": [
+      "https://bwfbadminton.com/player/87403/eloi-adam/",
+      "https://bwfbadminton.com/player/96690/leo-rossi/"
+    ],
+    "scores": [
+      {
+        "week": "2026-W34",
+        "label": "BWF World Championships 2026",
+        "href": "https://bwfworldchampionships.bwfbadminton.com/results/5601/bwf-world-championships-2026",
+        "result": "17/32",
+        "points": 3700,
+        "valid": true
+      },
+      {
+        "week": "2026-W27",
+        "label": "YONEX Canada Open 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5271/yonex-canada-open-2026/",
+        "result": "9/16",
+        "points": 2750,
+        "valid": true
+      },
+      {
+        "week": "2026-W26",
+        "label": "YONEX US Open 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5701/yonex-us-open-2026/",
+        "result": "9/16",
+        "points": 2750,
+        "valid": true
+      },
+      {
         "week": "2026-W24",
         "label": "Valence Alpes International 2026 presented by FZ FORZA",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=310420",
+        "href": "https://bwfbadminton.com/tournament/5723/valence-alpes-international-2026-presented-by-fz-forza",
         "result": "2",
         "points": 3400,
         "valid": true
@@ -34558,7 +34563,7 @@
       {
         "week": "2026-W22",
         "label": "STATE Denmark Challenge 2026 presented by RSL",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=308926",
+        "href": "https://bwfbadminton.com/tournament/5772/state-denmark-challenge-2026-presented-by-rsl",
         "result": "5/8",
         "points": 2200,
         "valid": false
@@ -34566,7 +34571,7 @@
       {
         "week": "2026-W18",
         "label": "BWF Thomas & Uber Cup Finals 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=305455",
+        "href": "https://bwfthomasubercups.bwfbadminton.com/results/5600/bwf-thomas-uber-cup-finals-2026",
         "result": "1",
         "points": 3704,
         "valid": true
@@ -34574,7 +34579,7 @@
       {
         "week": "2026-W15",
         "label": "2026 European Championships",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=303514",
+        "href": "https://bwfbadminton.com/tournament/5620/2026-european-championships",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -34582,7 +34587,7 @@
       {
         "week": "2026-W11",
         "label": "YONEX Swiss Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300792",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5209/yonex-swiss-open-2026/",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -34590,7 +34595,7 @@
       {
         "week": "2026-W09",
         "label": "YONEX German Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=299440",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5246/yonex-german-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -34598,15 +34603,15 @@
       {
         "week": "2026-W07",
         "label": "2026 European Men's & Women's Team Championships",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=298183",
+        "href": "https://bwfbadminton.com/tournament/5661/2026-european-mens-womens-team-championships",
         "result": "1",
         "points": 3544,
         "valid": false
       },
       {
         "week": "2026-W05",
-        "label": "PRINCESS SIRIVANNAVARI Thailand Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296779",
+        "label": "Thailand Masters 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5226/thailand-masters-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -34614,7 +34619,7 @@
       {
         "week": "2026-W04",
         "label": "DAIHATSU Indonesia Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296358",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5529/daihatsu-indonesia-masters-2026/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -34622,7 +34627,7 @@
       {
         "week": "2025-W46",
         "label": "AIG VICTOR Irish Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=289859",
+        "href": "https://bwfbadminton.com/tournament/5524/aig-victor-irish-open-2025",
         "result": "5/8",
         "points": 2200,
         "valid": false
@@ -34630,7 +34635,7 @@
       {
         "week": "2025-W44",
         "label": "HYLO Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=288347",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5256/hylo-open-2025/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -34638,7 +34643,7 @@
       {
         "week": "2025-W43",
         "label": "YONEX French Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=287504",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5257/yonex-french-open-2025/",
         "result": "17/32",
         "points": 2660,
         "valid": true
@@ -34646,7 +34651,7 @@
       {
         "week": "2025-W41",
         "label": "CLASH OF CLANS Arctic Open 2025 powered by YONEX",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286207",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5287/clash-of-clans-arctic-open-2025-powered-by-yonex/",
         "result": "9/16",
         "points": 3600,
         "valid": true
@@ -34654,7 +34659,7 @@
       {
         "week": "2025-W40",
         "label": "YONEX Dutch Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=285621",
+        "href": "https://bwfbadminton.com/tournament/5294/yonex-dutch-open-2025",
         "result": "3/4",
         "points": 2800,
         "valid": true
@@ -34662,7 +34667,7 @@
       {
         "week": "2025-W37",
         "label": "YONEX Belgian International 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283587",
+        "href": "https://bwfbadminton.com/tournament/5508/yonex-belgian-international-2025",
         "result": "3/4",
         "points": 2800,
         "valid": true
@@ -36375,14 +36380,13 @@
     "name": "LAI Po Yu / TSAI Fu Cheng",
     "profiles": [
       "https://bwfbadminton.com/player/84196/lai-po-yu/",
-      "https://bwfbadminton.com/player/93572/tsai-fu-cheng/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4106863"
+      "https://bwfbadminton.com/player/93572/tsai-fu-cheng/"
     ],
     "scores": [
       {
         "week": "2026-W32",
         "label": "VICTOR Korea Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=319273",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5596/victor-korea-masters-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -36390,7 +36394,7 @@
       {
         "week": "2026-W31",
         "label": "YONEX Taipei Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=318282",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5514/yonex-taipei-open-2026/",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -36398,7 +36402,7 @@
       {
         "week": "2026-W27",
         "label": "YONEX Canada Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=313067",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5271/yonex-canada-open-2026/",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -36406,7 +36410,7 @@
       {
         "week": "2026-W26",
         "label": "YONEX US Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=312063",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5701/yonex-us-open-2026/",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -36414,7 +36418,7 @@
       {
         "week": "2026-W21",
         "label": "PERODUA Malaysia Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307717",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5229/perodua-malaysia-masters-2026/",
         "result": "17/32",
         "points": 2220,
         "valid": true
@@ -36422,7 +36426,7 @@
       {
         "week": "2026-W20",
         "label": "TOYOTA Thailand Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307168",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5230/toyota-thailand-open-2026/",
         "result": "17/32",
         "points": 2220,
         "valid": true
@@ -36430,7 +36434,7 @@
       {
         "week": "2026-W12",
         "label": "Orleans Masters Badminton 2026 presented by VICTOR",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=301390",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5270/orleans-masters-badminton-2026-presented-by-victor/",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -36438,15 +36442,15 @@
       {
         "week": "2026-W11",
         "label": "YONEX Swiss Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300792",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5209/yonex-swiss-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
       },
       {
         "week": "2026-W05",
-        "label": "PRINCESS SIRIVANNAVARI Thailand Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296779",
+        "label": "Thailand Masters 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5226/thailand-masters-2026/",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -36454,7 +36458,7 @@
       {
         "week": "2025-W46",
         "label": "Kumamoto Masters Japan 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=289856",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5208/kumamoto-masters-japan-2025/",
         "result": "17/32",
         "points": 2220,
         "valid": true
@@ -36462,7 +36466,7 @@
       {
         "week": "2025-W39",
         "label": "VICTOR Kaohsiung Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284929",
+        "href": "https://bwfbadminton.com/tournament/5237/victor-kaohsiung-masters-2025",
         "result": "9/16",
         "points": 2110,
         "valid": true
@@ -36470,7 +36474,7 @@
       {
         "week": "2025-W38",
         "label": "WONDR by BNI Indonesia Masters I 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284330",
+        "href": "https://bwfbadminton.com/tournament/5235/wondr-by-bni-indonesia-masters-i-2025",
         "result": "5/8",
         "points": 3030,
         "valid": true
@@ -36478,7 +36482,7 @@
       {
         "week": "2025-W37",
         "label": "YONEX SUNRISE Vietnam Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283584",
+        "href": "https://bwfbadminton.com/tournament/5219/yonex-sunrise-vietnam-open-2025",
         "result": "17/32",
         "points": 1290,
         "valid": false
@@ -43585,14 +43589,13 @@
     "name": "ONG Xin Yee / Carmen TING",
     "profiles": [
       "https://bwfbadminton.com/player/80386/ong-xin-yee/",
-      "https://bwfbadminton.com/player/60219/carmen-ting/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3315780"
+      "https://bwfbadminton.com/player/60219/carmen-ting/"
     ],
     "scores": [
       {
         "week": "2026-W34",
         "label": "BWF World Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=320804",
+        "href": "https://bwfworldchampionships.bwfbadminton.com/results/5601/bwf-world-championships-2026",
         "result": "17/32",
         "points": 3700,
         "valid": false
@@ -43600,7 +43603,7 @@
       {
         "week": "2026-W31",
         "label": "YONEX Taipei Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=318282",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5514/yonex-taipei-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -43608,7 +43611,7 @@
       {
         "week": "2026-W30",
         "label": "VICTOR China Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=317585",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5622/victor-china-open-2026/",
         "result": "17/32",
         "points": 3300,
         "valid": false
@@ -43616,7 +43619,7 @@
       {
         "week": "2026-W29",
         "label": "DAIHATSU Japan Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=315560",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5213/daihatsu-japan-open-2026/",
         "result": "17/32",
         "points": 2660,
         "valid": false
@@ -43624,7 +43627,7 @@
       {
         "week": "2026-W25",
         "label": "SANDS CHINA LTD. Macau Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=311156",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5214/sands-china-ltd-macau-open-2026/",
         "result": "3/4",
         "points": 4900,
         "valid": true
@@ -43632,7 +43635,7 @@
       {
         "week": "2026-W23",
         "label": "POLYTRON Indonesia Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=309642",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5528/polytron-indonesia-open-2026/",
         "result": "9/16",
         "points": 4800,
         "valid": true
@@ -43640,7 +43643,7 @@
       {
         "week": "2026-W21",
         "label": "PERODUA Malaysia Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307717",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5229/perodua-malaysia-masters-2026/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -43648,7 +43651,7 @@
       {
         "week": "2026-W20",
         "label": "TOYOTA Thailand Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307168",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5230/toyota-thailand-open-2026/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -43656,7 +43659,7 @@
       {
         "week": "2026-W18",
         "label": "BWF Thomas & Uber Cup Finals 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=305455",
+        "href": "https://bwfthomasubercups.bwfbadminton.com/results/5600/bwf-thomas-uber-cup-finals-2026",
         "result": "1",
         "points": 4693,
         "valid": true
@@ -43664,7 +43667,7 @@
       {
         "week": "2026-W15",
         "label": "BANK OF NINGBO Badminton Asia Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=303513",
+        "href": "https://bwfbadminton.com/tournament/5688/bank-of-ningbo-badminton-asia-championships-2026",
         "result": "9/16",
         "points": 4800,
         "valid": true
@@ -43672,7 +43675,7 @@
       {
         "week": "2026-W12",
         "label": "Orleans Masters Badminton 2026 presented by VICTOR",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=301390",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5270/orleans-masters-badminton-2026-presented-by-victor/",
         "result": "9/16",
         "points": 2750,
         "valid": false
@@ -43680,15 +43683,15 @@
       {
         "week": "2026-W11",
         "label": "YONEX Swiss Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300792",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5209/yonex-swiss-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
       },
       {
         "week": "2026-W10",
-        "label": "YONEX All England Open Badminton Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300187",
+        "label": "All England Open Badminton Championships 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5515/all-england-open-badminton-championships-2026/",
         "result": "17/32",
         "points": 3000,
         "valid": false
@@ -43696,7 +43699,7 @@
       {
         "week": "2026-W06",
         "label": "TSINGTAO Badminton Asia Team Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=297636",
+        "href": "https://bwfbadminton.com/tournament/5588/tsingtao-badminton-asia-team-championships-2026",
         "result": "1",
         "points": 4267,
         "valid": false
@@ -43704,7 +43707,7 @@
       {
         "week": "2026-W04",
         "label": "DAIHATSU Indonesia Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296358",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5529/daihatsu-indonesia-masters-2026/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -43712,7 +43715,7 @@
       {
         "week": "2026-W03",
         "label": "YONEX-SUNRISE India Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=295306",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5269/yonex-sunrise-india-open-2026/",
         "result": "17/32",
         "points": 2660,
         "valid": false
@@ -43720,7 +43723,7 @@
       {
         "week": "2026-W02",
         "label": "PETRONAS Malaysia Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=293919",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5227/petronas-malaysia-open-2026/",
         "result": "17/32",
         "points": 3000,
         "valid": false
@@ -43728,7 +43731,7 @@
       {
         "week": "2025-W50",
         "label": "Odisha Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=292198",
+        "href": "https://bwfbadminton.com/tournament/5265/odisha-masters-2025",
         "result": "2",
         "points": 4680,
         "valid": true
@@ -43736,7 +43739,7 @@
       {
         "week": "2025-W49",
         "label": "YONEX-SUNRISE Guwahati Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291694",
+        "href": "https://bwfbadminton.com/tournament/5266/yonex-sunrise-guwahati-masters-2025",
         "result": "2",
         "points": 4680,
         "valid": true
@@ -43744,7 +43747,7 @@
       {
         "week": "2025-W48",
         "label": "SYED MODI India International 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291227",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5267/syed-modi-india-international-2025/",
         "result": "3/4",
         "points": 4900,
         "valid": true
@@ -43752,7 +43755,7 @@
       {
         "week": "2025-W46",
         "label": "Kumamoto Masters Japan 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=289856",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5208/kumamoto-masters-japan-2025/",
         "result": "9/16",
         "points": 3600,
         "valid": false
@@ -43760,7 +43763,7 @@
       {
         "week": "2025-W44",
         "label": "HYLO Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=288347",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5256/hylo-open-2025/",
         "result": "5/8",
         "points": 5040,
         "valid": true
@@ -43768,7 +43771,7 @@
       {
         "week": "2025-W43",
         "label": "YONEX French Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=287504",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5257/yonex-french-open-2025/",
         "result": "17/32",
         "points": 2660,
         "valid": false
@@ -43776,7 +43779,7 @@
       {
         "week": "2025-W42",
         "label": "VICTOR Denmark Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286886",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5207/victor-denmark-open-2025/",
         "result": "9/16",
         "points": 4320,
         "valid": true
@@ -43784,7 +43787,7 @@
       {
         "week": "2025-W39",
         "label": "VICTOR Kaohsiung Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284929",
+        "href": "https://bwfbadminton.com/tournament/5237/victor-kaohsiung-masters-2025",
         "result": "5/8",
         "points": 3030,
         "valid": false
@@ -43792,7 +43795,7 @@
       {
         "week": "2025-W38",
         "label": "LI-NING China Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284329",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5280/li-ning-china-masters-2025/",
         "result": "9/16",
         "points": 4320,
         "valid": true
@@ -43800,7 +43803,7 @@
       {
         "week": "2025-W37",
         "label": "YONEX SUNRISE Vietnam Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283584",
+        "href": "https://bwfbadminton.com/tournament/5219/yonex-sunrise-vietnam-open-2025",
         "result": "5/8",
         "points": 3030,
         "valid": false
@@ -44921,14 +44924,13 @@
     "name": "LIN Chih-Chun / YANG Chu Yun",
     "profiles": [
       "https://bwfbadminton.com/player/85808/lin-chih-chun/",
-      "https://bwfbadminton.com/player/70860/yang-chu-yun/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2697137"
+      "https://bwfbadminton.com/player/70860/yang-chu-yun/"
     ],
     "scores": [
       {
         "week": "2026-W32",
         "label": "VICTOR Korea Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=319273",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5596/victor-korea-masters-2026/",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -44936,7 +44938,7 @@
       {
         "week": "2026-W31",
         "label": "YONEX Taipei Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=318282",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5514/yonex-taipei-open-2026/",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -44944,7 +44946,7 @@
       {
         "week": "2026-W30",
         "label": "VICTOR China Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=317585",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5622/victor-china-open-2026/",
         "result": "17/32",
         "points": 3300,
         "valid": true
@@ -44952,7 +44954,7 @@
       {
         "week": "2026-W27",
         "label": "YONEX Canada Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=313067",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5271/yonex-canada-open-2026/",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -44960,7 +44962,7 @@
       {
         "week": "2026-W26",
         "label": "YONEX US Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=312063",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5701/yonex-us-open-2026/",
         "result": "2",
         "points": 5950,
         "valid": true
@@ -44968,7 +44970,7 @@
       {
         "week": "2026-W21",
         "label": "PERODUA Malaysia Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307717",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5229/perodua-malaysia-masters-2026/",
         "result": "9/16",
         "points": 3600,
         "valid": true
@@ -44976,7 +44978,7 @@
       {
         "week": "2026-W20",
         "label": "TOYOTA Thailand Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=307168",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5230/toyota-thailand-open-2026/",
         "result": "5/8",
         "points": 5040,
         "valid": true
@@ -44984,7 +44986,7 @@
       {
         "week": "2026-W12",
         "label": "Orleans Masters Badminton 2026 presented by VICTOR",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=301390",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5270/orleans-masters-badminton-2026-presented-by-victor/",
         "result": "2",
         "points": 5950,
         "valid": true
@@ -44992,7 +44994,7 @@
       {
         "week": "2026-W11",
         "label": "YONEX Swiss Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300792",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5209/yonex-swiss-open-2026/",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -45000,7 +45002,7 @@
       {
         "week": "2026-W10",
         "label": "61st Portugal International Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300190",
+        "href": "https://bwfbadminton.com/tournament/5642/61st-portugal-international-championships-2026",
         "result": "1",
         "points": 2500,
         "valid": true
@@ -48841,14 +48843,13 @@
     "name": "Simona PILGAARD / Signe SCHULZ",
     "profiles": [
       "https://bwfbadminton.com/player/79832/simona-pilgaard/",
-      "https://bwfbadminton.com/player/89885/signe-schulz/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3107911"
+      "https://bwfbadminton.com/player/89885/signe-schulz/"
     ],
     "scores": [
       {
         "week": "2026-W15",
         "label": "2026 European Championships",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=303514",
+        "href": "https://bwfbadminton.com/tournament/5620/2026-european-championships",
         "result": "9/16",
         "points": 3600,
         "valid": true
@@ -48856,7 +48857,7 @@
       {
         "week": "2026-W09",
         "label": "YONEX German Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=299440",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5246/yonex-german-open-2026/",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -48864,7 +48865,7 @@
       {
         "week": "2026-W03",
         "label": "VICTOR Swedish Open 2026 hosted by PONG",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=295365",
+        "href": "https://bwfbadminton.com/tournament/5569/victor-swedish-open-2026-hosted-by-pong",
         "result": "1",
         "points": 2500,
         "valid": true
@@ -48872,7 +48873,7 @@
       {
         "week": "2025-W48",
         "label": "Welsh International Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291229",
+        "href": "https://bwfbadminton.com/tournament/5537/welsh-international-open-2025",
         "result": "1",
         "points": 2500,
         "valid": true
@@ -48880,7 +48881,7 @@
       {
         "week": "2025-W47",
         "label": "Scottish Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=290459",
+        "href": "https://bwfbadminton.com/tournament/5536/scottish-open-2025",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -48888,7 +48889,7 @@
       {
         "week": "2025-W46",
         "label": "AIG VICTOR Irish Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=289859",
+        "href": "https://bwfbadminton.com/tournament/5524/aig-victor-irish-open-2025",
         "result": "9/16",
         "points": 1520,
         "valid": true
@@ -48896,7 +48897,7 @@
       {
         "week": "2025-W42",
         "label": "YONEX Czech Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286888",
+        "href": "https://bwfbadminton.com/tournament/5430/yonex-czech-open-2025",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -48904,7 +48905,7 @@
       {
         "week": "2025-W41",
         "label": "CLASH OF CLANS Arctic Open 2025 powered by YONEX",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286207",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5287/clash-of-clans-arctic-open-2025-powered-by-yonex/",
         "result": "9/16",
         "points": 3600,
         "valid": true
@@ -48912,7 +48913,7 @@
       {
         "week": "2025-W40",
         "label": "YONEX Dutch Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=285621",
+        "href": "https://bwfbadminton.com/tournament/5294/yonex-dutch-open-2025",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -53652,13 +53653,14 @@
     "name": "Yuta WATANABE / Maya TAGUCHI",
     "profiles": [
       "https://bwfbadminton.com/player/58240/yuta-watanabe/",
-      "https://bwfbadminton.com/player/60335/maya-taguchi/"
+      "https://bwfbadminton.com/player/60335/maya-taguchi/",
+      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1181104"
     ],
     "scores": [
       {
         "week": "2026-W34",
         "label": "BWF World Championships 2026",
-        "href": "https://bwfworldchampionships.bwfbadminton.com/results/5601/bwf-world-championships-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=320804",
         "result": "9/16",
         "points": 6000,
         "valid": true
@@ -53666,7 +53668,7 @@
       {
         "week": "2026-W32",
         "label": "VICTOR Korea Masters 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5596/victor-korea-masters-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=319273",
         "result": "1",
         "points": 7000,
         "valid": true
@@ -53674,7 +53676,7 @@
       {
         "week": "2026-W31",
         "label": "YONEX Taipei Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5514/yonex-taipei-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=318282",
         "result": "1",
         "points": 7000,
         "valid": true
@@ -53682,7 +53684,7 @@
       {
         "week": "2026-W30",
         "label": "VICTOR China Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5622/victor-china-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=317585",
         "result": "5/8",
         "points": 7400,
         "valid": true
@@ -53690,7 +53692,7 @@
       {
         "week": "2026-W29",
         "label": "DAIHATSU Japan Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5213/daihatsu-japan-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=315560",
         "result": "9/16",
         "points": 4320,
         "valid": true
@@ -53698,7 +53700,7 @@
       {
         "week": "2026-W22",
         "label": "KFF Singapore Badminton Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5649/kff-singapore-badminton-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=308924",
         "result": "9/16",
         "points": 4320,
         "valid": true
@@ -53706,7 +53708,7 @@
       {
         "week": "2026-W19",
         "label": "VI Mexican International Challenge 2026",
-        "href": "https://bwfbadminton.com/tournament/5715/vi-mexican-international-challenge-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=306490",
         "result": "5/8",
         "points": 2200,
         "valid": false
@@ -53714,7 +53716,7 @@
       {
         "week": "2026-W15",
         "label": "BANK OF NINGBO Badminton Asia Championships 2026",
-        "href": "https://bwfbadminton.com/tournament/5688/bank-of-ningbo-badminton-asia-championships-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=303513",
         "result": "3/4",
         "points": 8400,
         "valid": true
@@ -53722,7 +53724,7 @@
       {
         "week": "2026-W12",
         "label": "Orleans Masters Badminton 2026 presented by VICTOR",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5270/orleans-masters-badminton-2026-presented-by-victor/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=301390",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -53730,7 +53732,7 @@
       {
         "week": "2026-W11",
         "label": "YONEX Swiss Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5209/yonex-swiss-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300792",
         "result": "33/64",
         "points": 660,
         "valid": false
@@ -53738,7 +53740,7 @@
       {
         "week": "2026-W09",
         "label": "SBH Singapore International Challenge 2026",
-        "href": "https://bwfbadminton.com/tournament/5682/sbh-singapore-international-challenge-2026",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=299450",
         "result": "1",
         "points": 4000,
         "valid": true
@@ -53746,7 +53748,7 @@
       {
         "week": "2026-W04",
         "label": "DAIHATSU Indonesia Masters 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5529/daihatsu-indonesia-masters-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296358",
         "result": "9/16",
         "points": 3600,
         "valid": false
@@ -53754,7 +53756,7 @@
       {
         "week": "2026-W03",
         "label": "YONEX-SUNRISE India Open 2026",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5269/yonex-sunrise-india-open-2026/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=295306",
         "result": "17/32",
         "points": 2660,
         "valid": false
@@ -53762,7 +53764,7 @@
       {
         "week": "2025-W43",
         "label": "WONDR by BNI Indonesia Masters II 2025",
-        "href": "https://bwfbadminton.com/tournament/5232/wondr-by-bni-indonesia-masters-ii-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=287505",
         "result": "5/8",
         "points": 3030,
         "valid": false
@@ -53770,7 +53772,7 @@
       {
         "week": "2025-W42",
         "label": "ALLIANZ Malaysia Super 100 2025",
-        "href": "https://bwfbadminton.com/tournament/5223/allianz-malaysia-super-100-2025",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286885",
         "result": "1",
         "points": 5500,
         "valid": true
@@ -53778,7 +53780,7 @@
       {
         "week": "2025-W39",
         "label": "SUWON VICTOR Korea Open 2025",
-        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5288/suwon-victor-korea-open-2025/",
+        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284928",
         "result": "9/16",
         "points": 3600,
         "valid": false
@@ -56981,22 +56983,21 @@
     "name": "Jimmy WONG / LAI Pei Jing",
     "profiles": [
       "https://bwfbadminton.com/player/84340/jimmy-wong/",
-      "https://bwfbadminton.com/player/47007/lai-pei-jing/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3093343"
+      "https://bwfbadminton.com/player/47007/lai-pei-jing/"
     ],
     "scores": [
       {
         "week": "2026-W11",
         "label": "YONEX Swiss Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300792",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5209/yonex-swiss-open-2026/",
         "result": "9/16",
         "points": 2750,
         "valid": true
       },
       {
         "week": "2026-W10",
-        "label": "YONEX All England Open Badminton Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300187",
+        "label": "All England Open Badminton Championships 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5515/all-england-open-badminton-championships-2026/",
         "result": "17/32",
         "points": 3000,
         "valid": true
@@ -57004,15 +57005,15 @@
       {
         "week": "2026-W09",
         "label": "YONEX German Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=299440",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5246/yonex-german-open-2026/",
         "result": "9/16",
         "points": 2750,
         "valid": true
       },
       {
         "week": "2026-W05",
-        "label": "PRINCESS SIRIVANNAVARI Thailand Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296779",
+        "label": "Thailand Masters 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5226/thailand-masters-2026/",
         "result": "9/16",
         "points": 2750,
         "valid": true
@@ -57020,7 +57021,7 @@
       {
         "week": "2026-W04",
         "label": "DAIHATSU Indonesia Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296358",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5529/daihatsu-indonesia-masters-2026/",
         "result": "17/32",
         "points": 2220,
         "valid": false
@@ -57028,7 +57029,7 @@
       {
         "week": "2026-W03",
         "label": "YONEX-SUNRISE India Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=295306",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5269/yonex-sunrise-india-open-2026/",
         "result": "9/16",
         "points": 4320,
         "valid": true
@@ -57036,7 +57037,7 @@
       {
         "week": "2026-W02",
         "label": "PETRONAS Malaysia Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=293919",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5227/petronas-malaysia-open-2026/",
         "result": "17/32",
         "points": 3000,
         "valid": true
@@ -57044,7 +57045,7 @@
       {
         "week": "2025-W46",
         "label": "Kumamoto Masters Japan 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=289856",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5208/kumamoto-masters-japan-2025/",
         "result": "9/16",
         "points": 3600,
         "valid": true
@@ -57052,7 +57053,7 @@
       {
         "week": "2025-W43",
         "label": "WONDR by BNI Indonesia Masters II 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=287505",
+        "href": "https://bwfbadminton.com/tournament/5232/wondr-by-bni-indonesia-masters-ii-2025",
         "result": "2",
         "points": 4680,
         "valid": true
@@ -57060,7 +57061,7 @@
       {
         "week": "2025-W42",
         "label": "ALLIANZ Malaysia Super 100 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286885",
+        "href": "https://bwfbadminton.com/tournament/5223/allianz-malaysia-super-100-2025",
         "result": "17/32",
         "points": 1290,
         "valid": false
@@ -57068,7 +57069,7 @@
       {
         "week": "2025-W39",
         "label": "VICTOR Kaohsiung Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284929",
+        "href": "https://bwfbadminton.com/tournament/5237/victor-kaohsiung-masters-2025",
         "result": "3/4",
         "points": 3850,
         "valid": true
@@ -57076,7 +57077,7 @@
       {
         "week": "2025-W38",
         "label": "WONDR by BNI Indonesia Masters I 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284330",
+        "href": "https://bwfbadminton.com/tournament/5235/wondr-by-bni-indonesia-masters-i-2025",
         "result": "2",
         "points": 4680,
         "valid": true
@@ -57084,7 +57085,7 @@
       {
         "week": "2025-W37",
         "label": "YONEX SUNRISE Vietnam Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283584",
+        "href": "https://bwfbadminton.com/tournament/5219/yonex-sunrise-vietnam-open-2025",
         "result": "9/16",
         "points": 2110,
         "valid": false
@@ -58283,14 +58284,13 @@
     "name": "Kristoffer KOLDING / Mette WERGE",
     "profiles": [
       "https://bwfbadminton.com/player/68337/kristoffer-kolding/",
-      "https://bwfbadminton.com/player/67290/mette-werge/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4705571"
+      "https://bwfbadminton.com/player/67290/mette-werge/"
     ],
     "scores": [
       {
         "week": "2026-W34",
         "label": "BWF World Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=320804",
+        "href": "https://bwfworldchampionships.bwfbadminton.com/results/5601/bwf-world-championships-2026",
         "result": "17/32",
         "points": 3700,
         "valid": true
@@ -58298,7 +58298,7 @@
       {
         "week": "2026-W27",
         "label": "YONEX Canada Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=313067",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5271/yonex-canada-open-2026/",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -58306,7 +58306,7 @@
       {
         "week": "2026-W26",
         "label": "YONEX US Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=312063",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5701/yonex-us-open-2026/",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -58314,7 +58314,7 @@
       {
         "week": "2026-W11",
         "label": "YONEX Swiss Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=300792",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5209/yonex-swiss-open-2026/",
         "result": "33/64",
         "points": 660,
         "valid": false
@@ -58322,15 +58322,15 @@
       {
         "week": "2026-W09",
         "label": "YONEX German Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=299440",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5246/yonex-german-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": true
       },
       {
         "week": "2026-W05",
-        "label": "PRINCESS SIRIVANNAVARI Thailand Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296779",
+        "label": "Thailand Masters 2026",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5226/thailand-masters-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": false
@@ -58338,7 +58338,7 @@
       {
         "week": "2026-W04",
         "label": "DAIHATSU Indonesia Masters 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=296358",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5529/daihatsu-indonesia-masters-2026/",
         "result": "17/32",
         "points": 2220,
         "valid": true
@@ -58346,7 +58346,7 @@
       {
         "week": "2025-W47",
         "label": "Scottish Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=290459",
+        "href": "https://bwfbadminton.com/tournament/5536/scottish-open-2025",
         "result": "9/16",
         "points": 1520,
         "valid": false
@@ -58354,7 +58354,7 @@
       {
         "week": "2025-W46",
         "label": "AIG VICTOR Irish Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=289859",
+        "href": "https://bwfbadminton.com/tournament/5524/aig-victor-irish-open-2025",
         "result": "2",
         "points": 3400,
         "valid": true
@@ -58362,7 +58362,7 @@
       {
         "week": "2025-W44",
         "label": "HYLO Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=288347",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5256/hylo-open-2025/",
         "result": "17/32",
         "points": 2220,
         "valid": true
@@ -58370,7 +58370,7 @@
       {
         "week": "2025-W42",
         "label": "YONEX Czech Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=286888",
+        "href": "https://bwfbadminton.com/tournament/5430/yonex-czech-open-2025",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -58378,7 +58378,7 @@
       {
         "week": "2025-W40",
         "label": "YONEX Dutch Open 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=285621",
+        "href": "https://bwfbadminton.com/tournament/5294/yonex-dutch-open-2025",
         "result": "1",
         "points": 4000,
         "valid": true
@@ -58386,7 +58386,7 @@
       {
         "week": "2025-W37",
         "label": "YONEX Belgian International 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=283587",
+        "href": "https://bwfbadminton.com/tournament/5508/yonex-belgian-international-2025",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -62268,14 +62268,13 @@
     "name": "Kevin LEE / Eliana ZHANG",
     "profiles": [
       "https://bwfbadminton.com/player/58493/kevin-lee/",
-      "https://bwfbadminton.com/player/70079/eliana-zhang/",
-      "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1646675"
+      "https://bwfbadminton.com/player/70079/eliana-zhang/"
     ],
     "scores": [
       {
         "week": "2026-W27",
         "label": "YONEX Canada Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=313067",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5271/yonex-canada-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": true
@@ -62283,7 +62282,7 @@
       {
         "week": "2026-W26",
         "label": "YONEX US Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=312063",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5701/yonex-us-open-2026/",
         "result": "17/32",
         "points": 1670,
         "valid": true
@@ -62291,7 +62290,7 @@
       {
         "week": "2026-W22",
         "label": "KFF Singapore Badminton Open 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=308924",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5649/kff-singapore-badminton-open-2026/",
         "result": "17/32",
         "points": 2660,
         "valid": true
@@ -62299,7 +62298,7 @@
       {
         "week": "2026-W19",
         "label": "VI Mexican International Challenge 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=306490",
+        "href": "https://bwfbadminton.com/tournament/5715/vi-mexican-international-challenge-2026",
         "result": "5/8",
         "points": 2200,
         "valid": true
@@ -62307,7 +62306,7 @@
       {
         "week": "2026-W15",
         "label": "XXIX YONEX Pan Am Individual Championships 2026",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=303515",
+        "href": "https://bwfbadminton.com/tournament/5732/xxix-yonex-pan-am-individual-championships-2026",
         "result": "5/8",
         "points": 3850,
         "valid": true
@@ -62315,7 +62314,7 @@
       {
         "week": "2025-W49",
         "label": "2025 YONEX Canadian International Challenge",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=291695",
+        "href": "https://bwfbadminton.com/tournament/5356/2025-yonex-canadian-international-challenge",
         "result": "3/4",
         "points": 2800,
         "valid": true
@@ -62323,7 +62322,7 @@
       {
         "week": "2025-W38",
         "label": "LI-NING China Masters 2025",
-        "href": "https://www.tournamentsoftware.com/ranking/tournament.aspx?id=53555&tournament=284329",
+        "href": "https://bwfworldtour.bwfbadminton.com/tournament/5280/li-ning-china-masters-2025/",
         "result": "17/32",
         "points": 2660,
         "valid": true
