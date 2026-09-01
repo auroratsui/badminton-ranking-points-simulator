@@ -280,6 +280,30 @@ function normalizedPlace(value: string) {
   return value.normalize('NFKD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
+function playerSearchTokens(value: string) {
+  return value
+    .normalize('NFKD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLocaleLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+}
+
+function playerSearchScore(name: string, query: string) {
+  const queryTokens = playerSearchTokens(query);
+  if (!queryTokens.length) return 0;
+
+  const nameTokens = playerSearchTokens(name);
+  const normalizedName = nameTokens.join(' ');
+  const normalizedQuery = queryTokens.join(' ');
+  if (normalizedName.startsWith(normalizedQuery)) return 0;
+  if (normalizedName.includes(normalizedQuery)) return 1;
+  if (!queryTokens.every((queryToken) => nameTokens.some((nameToken) => nameToken.startsWith(queryToken)))) return Number.POSITIVE_INFINITY;
+  return queryTokens.every((queryToken) => nameTokens.includes(queryToken)) ? 2 : 3;
+}
+
 function sameTournamentName(leftName: string, rightName: string) {
   const leftTokens = tournamentNameTokens(leftName);
   const rightTokens = tournamentNameTokens(rightName);
@@ -366,12 +390,14 @@ function calculate(player: Player, level: LevelKey | '', tournamentWeek: string,
   const beforeScores = player.scores.filter((score) => score.bwfValid);
   const hasBreakdown = player.scores.some((score) => score.points > 0);
   const before = player.snapshotPoints ?? beforeScores.reduce((total, score) => total + score.points, 0);
+  const modeledBefore = countableScores(player.scores).reduce((total, score) => total + score.points, 0);
   const removed = player.scores.filter((score) => isReplacedBy(score, previousEdition) || isExpired(score.week, tournamentWeek));
   const retained = player.scores.filter((score) => !isReplacedBy(score, previousEdition) && !isExpired(score.week, tournamentWeek));
   const award = eventType === 'team' ? player.manualTeamAward : awardFor(level, player.result);
   const newScore: Score = { id: `new-${player.id}`, label: 'Projected tournament', points: award, week: tournamentWeek, href: '', result: player.result ? roundLabels[player.result] : '', bwfValid: false, team: eventType === 'team' };
   const afterScores = countableScores(award > 0 ? [...retained, newScore] : retained);
-  const after = hasBreakdown ? afterScores.reduce((total, score) => total + score.points, 0) : before;
+  const modeledAfter = afterScores.reduce((total, score) => total + score.points, 0);
+  const after = hasBreakdown ? before + modeledAfter - modeledBefore : before;
   const newCounts = afterScores.some((score) => score.id === newScore.id);
   const dropped = beforeScores.filter((score) => !afterScores.some((next) => next.id === score.id));
   const cutoff = afterScores.length ? afterScores[afterScores.length - 1].points : 0;
@@ -522,14 +548,12 @@ function PlayerSearch({ player, onChange, onSelect, index }: {
 }) {
   const [open, setOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
-  const query = player.name.trim().toLocaleLowerCase();
+  const query = player.name.trim();
   const suggestions = rankingPlayers
-    .filter((candidate) => !query || candidate.name.toLocaleLowerCase().includes(query))
-    .sort((a, b) => {
-      const aStarts = a.name.toLocaleLowerCase().startsWith(query) ? 0 : 1;
-      const bStarts = b.name.toLocaleLowerCase().startsWith(query) ? 0 : 1;
-      return aStarts - bStarts || a.rank - b.rank;
-    })
+    .map((candidate) => ({ candidate, searchScore: playerSearchScore(candidate.name, query) }))
+    .filter(({ searchScore }) => Number.isFinite(searchScore))
+    .sort((a, b) => a.searchScore - b.searchScore || a.candidate.rank - b.candidate.rank)
+    .map(({ candidate }) => candidate)
     .slice(0, 12);
 
   return (

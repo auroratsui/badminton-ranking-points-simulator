@@ -20,7 +20,7 @@ function normalizedRankingName(value) {
     .replace(/[^a-z0-9/]+/g, ' ')
     .trim()
     .split('/')
-    .map((part) => part.trim().replace(/\s+/g, ' '))
+    .map((part) => part.trim().split(/\s+/).filter(Boolean).sort().join(' '))
     .filter(Boolean)
     .sort()
     .join(' / ');
@@ -255,7 +255,7 @@ async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate,
           .replace(/[^a-z0-9/]+/g, ' ')
           .trim()
           .split('/')
-          .map((part) => part.trim().replace(/\s+/g, ' '))
+          .map((part) => part.trim().split(/\s+/).filter(Boolean).sort().join(' '))
           .filter(Boolean)
           .sort()
           .join(' / ');
@@ -381,6 +381,11 @@ try {
             valid: Boolean(cells[0]?.querySelector('img')),
           };
         }));
+        const validTotal = scores.filter((score) => score.valid).reduce((total, score) => total + score.points, 0);
+        if (!scores.length || Math.round(validTotal) !== player.points) {
+          console.warn(`${rankingKey}: BWF breakdown rejected (valid total ${validTotal}, expected ${player.points}); Tournamentsoftware fallback will be attempted`);
+          scores = [];
+        }
         await closeRankingBreakdownDialog(page, dialog, rankingKey);
       } else {
         consecutiveDialogFailures += 1;
