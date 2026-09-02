@@ -17,16 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className="antialiased">
-        {children}
-        const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
 
 export default function RootLayout({
   children,
@@ -37,7 +28,6 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         {children}
-
         {isGitHubPages && (
           <>
             <script
@@ -49,10 +39,7 @@ export default function RootLayout({
                 `,
               }}
             />
-            <script
-              src="https://www.statcounter.com/counter/counter.js"
-              async
-            />
+            <script src="https://www.statcounter.com/counter/counter.js" async />
             <noscript>
               <div className="statcounter">
                 <a
@@ -72,10 +59,6 @@ export default function RootLayout({
             </noscript>
           </>
         )}
-      </body>
-    </html>
-  );
-}
       </body>
     </html>
   );
