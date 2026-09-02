@@ -12,6 +12,14 @@ const disciplines = [
   { code: 'XD', discipline: 'Mixed Doubles', tournamentsoftwareDiscipline: 'Mixed Doubles', tab: "MIXED DOUBLES", category: 476 },
 ];
 
+const tournamentsoftwareProfileOverrides = new Map([
+  ['MS|choi jihoon', { playerId: '1325980', name: 'CHOI Ji Hoon' }],
+  ['WS|castillo ines lucia salazar', { playerId: '1039323', name: 'Ines Lucia CASTILLO' }],
+  ['MD|han wei zeng / haonan xie', { playerId: '2370231', name: 'XIE Hao Nan / ZENG Wei Han' }],
+  ['MD|jin yong / jongmin lee', { playerId: '1329348', name: 'JIN Yong / LEE Jong Min' }],
+  ['XD|anindiya bernadine wardana / dejan ferdinansyah', { playerId: '2463023', name: 'Dejan FERDINANSYAH / Bernadine Anindya WARDANA' }],
+]);
+
 function normalizedRankingName(value) {
   return value
     .normalize('NFKD')
@@ -240,7 +248,14 @@ async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate,
 
     for (const player of missingInDiscipline) {
       const rankingKey = `${player.code}-${player.rank}`;
-      const fallback = fallbackByName.get(normalizedRankingName(player.name));
+      const normalizedName = normalizedRankingName(player.name);
+      const profileOverride = tournamentsoftwareProfileOverrides.get(`${player.code}|${normalizedName}`);
+      const fallback = profileOverride
+        ? {
+            name: profileOverride.name,
+            href: `https://www.tournamentsoftware.com/ranking/player.aspx?id=${rankingId}&player=${profileOverride.playerId}`,
+          }
+        : fallbackByName.get(normalizedName);
       if (!fallback) {
         console.warn(`${rankingKey}: no matching Tournamentsoftware player entry for ${player.name}`);
         continue;
@@ -280,7 +295,7 @@ async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate,
             valid: Boolean(row.querySelector('img[alt^="Used for:"]')),
           };
         }).filter((score) => score?.week && score.label && Number.isFinite(score.points));
-      }, { discipline: config.tournamentsoftwareDiscipline, playerName: player.name });
+      }, { discipline: config.tournamentsoftwareDiscipline, playerName: fallback.name });
 
       const validTotal = scores.filter((score) => score.valid).reduce((total, score) => total + score.points, 0);
       if (!scores.length || Math.round(validTotal) !== player.points) {

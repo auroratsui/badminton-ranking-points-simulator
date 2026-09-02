@@ -358,9 +358,13 @@ function previousEditionMatch(current: CurrentTournamentEntry, candidates: Tourn
 }
 
 function countableScores(scores: Score[]) {
+  const compareScores = (left: Score, right: Score) => right.points - left.points
+    || Number(right.bwfValid) - Number(left.bwfValid)
+    || right.week.localeCompare(left.week)
+    || left.id.localeCompare(right.id);
   const individuals = scores.filter((score) => !score.team && score.points > 0);
-  const bestTeam = scores.filter((score) => score.team && score.points > 0).sort((a, b) => b.points - a.points)[0];
-  return [...individuals, ...(bestTeam ? [bestTeam] : [])].sort((a, b) => b.points - a.points).slice(0, 10);
+  const bestTeam = scores.filter((score) => score.team && score.points > 0).sort(compareScores)[0];
+  return [...individuals, ...(bestTeam ? [bestTeam] : [])].sort(compareScores).slice(0, 10);
 }
 
 function awardFor(level: LevelKey | '', round: RoundKey | '') {
@@ -765,23 +769,29 @@ export default function Home() {
         snapshotTournaments: candidate.tournaments,
         rankingKey: automatic.rankingKey,
       };
+      const projections = outcomeTableRounds.map((round) => calculate({ ...basePlayer, result: round.key }, level, tournamentWeek, eventType, selectedPreviousEdition));
       return {
         candidate,
         displayName: outcomeTableName(candidate),
-        totals: outcomeTableRounds.map((round) => calculate({ ...basePlayer, result: round.key }, level, tournamentWeek, eventType, selectedPreviousEdition).after),
+        hasBreakdown: projections[0]?.hasBreakdown ?? false,
+        totals: projections.map((projection) => projection.after),
       };
     }), [outcomeDiscipline, level, tournamentWeek, eventType, selectedPreviousEdition, outcomeTableRounds]);
 
   const selectedPlayers = useMemo(() => players.filter((player) => player.rankingKey), [players]);
-  const selectedOutcomeRows = useMemo(() => selectedPlayers.map((player) => ({
-    player,
-    code: (player.rankingKey?.split('-')[0] ?? '') as DisciplineCode,
-    rank: player.snapshotRank ?? 0,
-    displayName: ['MD', 'WD', 'XD'].includes(player.rankingKey?.split('-')[0] ?? '')
-      ? outcomeTableName({ name: player.name, code: player.rankingKey?.split('-')[0] ?? '', discipline: player.discipline, rank: player.snapshotRank ?? 0, points: player.snapshotPoints ?? 0, tournaments: player.snapshotTournaments ?? 0, href: player.sourceHref ?? '' })
-      : player.name,
-    totals: outcomeTableRounds.map((round) => calculate({ ...player, result: round.key }, level, tournamentWeek, eventType, selectedPreviousEdition).after),
-  })), [selectedPlayers, outcomeTableRounds, level, tournamentWeek, eventType, selectedPreviousEdition]);
+  const selectedOutcomeRows = useMemo(() => selectedPlayers.map((player) => {
+    const projections = outcomeTableRounds.map((round) => calculate({ ...player, result: round.key }, level, tournamentWeek, eventType, selectedPreviousEdition));
+    return {
+      player,
+      code: (player.rankingKey?.split('-')[0] ?? '') as DisciplineCode,
+      rank: player.snapshotRank ?? 0,
+      displayName: ['MD', 'WD', 'XD'].includes(player.rankingKey?.split('-')[0] ?? '')
+        ? outcomeTableName({ name: player.name, code: player.rankingKey?.split('-')[0] ?? '', discipline: player.discipline, rank: player.snapshotRank ?? 0, points: player.snapshotPoints ?? 0, tournaments: player.snapshotTournaments ?? 0, href: player.sourceHref ?? '' })
+        : player.name,
+      hasBreakdown: projections[0]?.hasBreakdown ?? false,
+      totals: projections.map((projection) => projection.after),
+    };
+  }), [selectedPlayers, outcomeTableRounds, level, tournamentWeek, eventType, selectedPreviousEdition]);
 
   const patchPlayer = (id: string, patch: Partial<Player>) => setPlayers((current) => current.map((player) => player.id === id ? { ...player, ...patch } : player));
   const changeLevel = (nextLevel: LevelKey | '') => {
@@ -864,7 +874,7 @@ export default function Home() {
                   </div>
                   <Table className="w-max min-w-full text-xs tabular-nums">
                     <TableHeader><TableRow><TableHead className="sticky left-0 z-10 h-8 w-28 max-w-28 bg-card px-2 py-1">Players/Pairs</TableHead>{outcomeTableRounds.map((round) => <TableHead key={round.key} className="h-8 min-w-18 px-2 py-1 text-right">{round.label}</TableHead>)}</TableRow></TableHeader>
-                    <TableBody>{outcomeRows.map((row) => <TableRow key={`${row.candidate.code}-${row.candidate.rank}`}><TableCell className="sticky left-0 z-10 w-28 max-w-28 whitespace-normal bg-card px-2 py-1 font-medium leading-tight"><span className="mr-1 text-[9px] text-muted-foreground">#{row.candidate.rank}</span>{row.displayName}</TableCell>{row.totals.map((total, index) => <TableCell key={outcomeTableRounds[index].key} className="min-w-18 px-2 py-1 text-right font-medium">{fmt(total)}</TableCell>)}</TableRow>)}</TableBody>
+                    <TableBody>{outcomeRows.map((row) => <TableRow key={`${row.candidate.code}-${row.candidate.rank}`}><TableCell className="sticky left-0 z-10 w-28 max-w-28 whitespace-normal bg-card px-2 py-1 font-medium leading-tight"><span className="mr-1 text-[9px] text-muted-foreground">#{row.candidate.rank}</span>{row.displayName}</TableCell>{row.hasBreakdown ? row.totals.map((total, index) => <TableCell key={outcomeTableRounds[index].key} className="min-w-18 px-2 py-1 text-right font-medium">{fmt(total)}</TableCell>) : <TableCell colSpan={outcomeTableRounds.length} className="px-2 py-1 text-center font-medium text-muted-foreground">Projection Unavailable</TableCell>}</TableRow>)}</TableBody>
                   </Table>
                 </div>
               </div>
@@ -901,7 +911,7 @@ export default function Home() {
               : eventType === 'team' && result.award <= 0
               ? 'Enter a projected team-event award.'
               : !result.newCounts
-                ? `${fmt(result.award)} awarded · below the current cutoff.`
+                ? `${fmt(result.award)} awarded · below the current cutoff`
                 : explanatoryDroppedScore
                   ? `${fmt(result.award)} enters · ${explanatoryDroppedScore.label} (${fmt(explanatoryDroppedScore.points)}) ${explanatoryDropReason}.`
                   : `${fmt(result.award)} enters the ranking total.`;
@@ -953,7 +963,7 @@ export default function Home() {
 
                       <div className="grid grid-cols-3 gap-2">
                         <div className="rounded-lg border bg-card px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Points Awarded</p><p className="mt-0.5 font-semibold tabular-nums">{projectionReady ? fmt(result.award) : '---'}</p></div>
-                        <div className="rounded-lg border bg-card px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Counting Cutoff</p><p className="mt-0.5 font-semibold tabular-nums">{result.hasBreakdown ? fmt(result.cutoff) : '—'}</p></div>
+                        <div className="rounded-lg border bg-card px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Updated Cutoff</p><p className="mt-0.5 font-semibold tabular-nums">{result.hasBreakdown && projectionReady ? fmt(result.cutoff) : '---'}</p></div>
                         <div className="rounded-lg border bg-card px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Expires / Replaced</p><p className="mt-0.5 font-semibold tabular-nums">{result.hasBreakdown ? result.removed.length : '—'}</p></div>
                       </div>
 
@@ -970,7 +980,7 @@ export default function Home() {
                                   <span className="text-[11px] tabular-nums text-muted-foreground">{score.week.replace('-W', ' / ')}</span>
                                   <span className="min-w-0"><span className="block truncate text-xs font-medium">{score.label}</span><span className="text-[10px] text-muted-foreground">{score.team ? 'Team Event' : score.result}</span></span>
                                   <span className="text-right text-xs font-semibold tabular-nums">{fmt(score.points)}</span>
-                                  <span className="flex flex-wrap justify-end gap-1">{score.bwfValid && <Badge variant="secondary">Counting Now</Badge>}{removed && <Badge variant="destructive">{replaced ? 'Replaced' : 'Expires'}</Badge>}{!removed && countsAfter && !score.bwfValid && <Badge>Counts After</Badge>}</span>
+                                  <span className="flex flex-wrap justify-end gap-1">{score.bwfValid && <Badge variant="secondary">Counting Now</Badge>}{removed && <Badge variant="destructive">{replaced ? 'Replaced' : 'Expires'}</Badge>}{!removed && score.bwfValid && !countsAfter && <Badge variant="outline">Leaves Counting Ten</Badge>}{!removed && countsAfter && !score.bwfValid && <Badge>Counts After</Badge>}</span>
                                 </div>
                               );
                             })}
@@ -1005,7 +1015,7 @@ export default function Home() {
                 </div>
                 <Table className="w-max min-w-full text-xs tabular-nums">
                   <TableHeader><TableRow><TableHead className="sticky left-0 z-10 h-8 w-32 max-w-32 bg-card px-2 py-1">Players/Pairs</TableHead>{outcomeTableRounds.map((round) => <TableHead key={round.key} className="h-8 min-w-18 px-2 py-1 text-right">{round.label}</TableHead>)}</TableRow></TableHeader>
-                  <TableBody>{selectedOutcomeRows.map((row) => <TableRow key={row.player.id}><TableCell className="sticky left-0 z-10 w-32 max-w-32 whitespace-normal bg-card px-2 py-1 font-medium leading-tight"><span className="text-[9px] text-muted-foreground">#{row.rank}</span> <span className="inline-flex rounded bg-secondary px-1 py-0.5 text-[9px] font-semibold text-secondary-foreground">{row.code}</span> <span>{row.displayName}</span></TableCell>{row.totals.map((total, index) => <TableCell key={outcomeTableRounds[index].key} className="min-w-18 px-2 py-1 text-right font-medium">{fmt(total)}</TableCell>)}</TableRow>)}</TableBody>
+                  <TableBody>{selectedOutcomeRows.map((row) => <TableRow key={row.player.id}><TableCell className="sticky left-0 z-10 w-32 max-w-32 whitespace-normal bg-card px-2 py-1 font-medium leading-tight"><span className="text-[9px] text-muted-foreground">#{row.rank}</span> <span className="inline-flex rounded bg-secondary px-1 py-0.5 text-[9px] font-semibold text-secondary-foreground">{row.code}</span> <span>{row.displayName}</span></TableCell>{row.hasBreakdown ? row.totals.map((total, index) => <TableCell key={outcomeTableRounds[index].key} className="min-w-18 px-2 py-1 text-right font-medium">{fmt(total)}</TableCell>) : <TableCell colSpan={outcomeTableRounds.length} className="px-2 py-1 text-center font-medium text-muted-foreground">Projection Unavailable</TableCell>}</TableRow>)}</TableBody>
                 </Table>
               </div>
             )}
