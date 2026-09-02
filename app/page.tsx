@@ -869,7 +869,7 @@ export default function Home() {
                 <div className="-mx-4 overflow-hidden border-y sm:mx-0 sm:rounded-xl sm:border">
                   <div className="border-b bg-muted/35 px-3 py-2">
                     <p className="font-heading text-base">TOP 8 RANKING POINTS SCENARIOS · {disciplineOptions.find((discipline) => discipline.code === outcomeDiscipline)?.label}</p>
-                    <p className="text-xs leading-tight text-muted-foreground">Projected total ranking points for each possible tournament finish in {selectedTournament.name}.</p>
+                    <p className="text-xs leading-tight text-muted-foreground">Projected total ranking points for each possible tournament finish in the {selectedTournament.name}</p>
                     <PortraitTableHint />
                   </div>
                   <Table className="w-max min-w-full text-xs tabular-nums">
@@ -1010,7 +1010,7 @@ export default function Home() {
             {showSelectedOutcomeTable && eventType === 'individual' && selectedTournament && level && selectedOutcomeRows.length > 0 && (
               <div className="-mx-4 overflow-hidden border-y sm:mx-0 sm:rounded-xl sm:border">
                 <div className="border-b bg-muted/35 px-3 py-2">
-                  <p className="font-sans text-base font-semibold">Projected total ranking points for each possible tournament finish in {selectedTournament.name}</p>
+                  <p className="font-sans text-base font-semibold">Projected total ranking points for each possible tournament finish in the {selectedTournament.name}</p>
                   <PortraitTableHint />
                 </div>
                 <Table className="w-max min-w-full text-xs tabular-nums">
