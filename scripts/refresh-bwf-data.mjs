@@ -176,13 +176,14 @@ async function fetchTournamentCalendar(context, year, status) {
         if (cells.length < 7) return null;
         return {
           week: (cells[0].textContent || '').trim(),
+          country: (cells[1].querySelector('.country_code')?.textContent || cells[1].querySelector('img')?.getAttribute('alt') || '').replace(/\s+/g, ' ').trim(),
           name: (cells[3].textContent || '').replace(/\s+/g, ' ').trim(),
           category: (cells[5].textContent || '').replace(/\s+/g, ' ').trim(),
           city: (cells[6].textContent || '').replace(/\s+/g, ' ').trim(),
         };
       }).filter((item) => item?.name));
 
-      return Array.from(new Map(items.map((item) => [`${item.week}|${item.name}|${item.category}|${item.city}`, item])).values());
+      return Array.from(new Map(items.map((item) => [`${item.week}|${item.country}|${item.name}|${item.category}|${item.city}`, item])).values());
     } catch (error) {
       console.warn(`${year} calendar refresh failed (attempt ${attempt} of 3): ${error.message}`);
     } finally {

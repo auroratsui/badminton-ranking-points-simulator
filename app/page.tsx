@@ -40,7 +40,10 @@ type RoundKey =
   | 'olympicBronze' | 'olympicFourth' | 'finalsGroupThird' | 'finalsGroupFourth';
 
 type LevelKey =
-  | 'worldChampionships' | 'olympics' | 'asianGames' | 'finals' | 'chinaOpen'
+  | 'olympics' | 'worldChampionships' | 'asianGames'
+  | 'asianChampionships' | 'europeanGames' | 'europeanChampionships'
+  | 'panAmChampionships' | 'allAfricaChampionships' | 'oceaniaChampionships'
+  | 'finals' | 'chinaOpen'
   | 'super1000' | 'super750' | 'super500' | 'super300' | 'super100'
   | 'challenge' | 'series' | 'future';
 
@@ -86,6 +89,7 @@ type TournamentEntry = {
   id: string;
   year: number;
   week: string;
+  country?: string;
   name: string;
   category: string;
   city: string;
@@ -127,9 +131,15 @@ const roundLabels: Record<RoundKey, string> = {
 };
 
 const levels: Record<LevelKey, { label: string; short: string; points: number[] }> = {
-  worldChampionships: { label: 'World Championships', short: 'World Championships', points: [14500, 12500, 10500, 8200, 6000, 3700, 1450, 750, 300] },
   olympics: { label: 'Olympics', short: 'Olympics', points: [14500, 12500, 10500, 8200, 6000, 3700, 1450, 750, 300] },
+  worldChampionships: { label: 'World Championships', short: 'World Championships', points: [14500, 12500, 10500, 8200, 6000, 3700, 1450, 750, 300] },
   asianGames: { label: 'Asian Games', short: 'Asian Games', points: [12000, 10200, 8400, 6600, 4800, 3000, 1200, 600, 240] },
+  asianChampionships: { label: 'Asian Championships', short: 'Asian Championships', points: [12000, 10200, 8400, 6600, 4800, 3000, 1200, 600, 240] },
+  europeanGames: { label: 'European Games', short: 'European Games', points: [9200, 7800, 6420, 5040, 3600, 2220, 880, 430, 170] },
+  europeanChampionships: { label: 'European Championships', short: 'European Championships', points: [9200, 7800, 6420, 5040, 3600, 2220, 880, 430, 170] },
+  panAmChampionships: { label: 'Pan Am Championships', short: 'Pan Am Championships', points: [7000, 5950, 4900, 3850, 2750, 1670, 660, 320, 130] },
+  allAfricaChampionships: { label: 'All Africa Championships', short: 'All Africa Championships', points: [4000, 3400, 2800, 2200, 1520, 920, 360, 170, 70] },
+  oceaniaChampionships: { label: 'Oceania Championships', short: 'Oceania Championships', points: [4000, 3400, 2800, 2200, 1520, 920, 360, 170, 70] },
   finals: { label: 'World Tour Finals', short: 'World Tour Finals', points: [14000, 12000, 10000, 0, 5700, 3500, 1400, 720, 280] },
   chinaOpen: { label: 'Super 1000 (China Open)', short: 'Super 1000 · China Open', points: [13500, 11500, 9500, 7400, 5400, 3300, 1350, 670, 270] },
   super1000: { label: 'Super 1000 (Non-China Open)', short: 'Super 1000 · Non-China Open', points: [12000, 10200, 8400, 6600, 4800, 3000, 1200, 600, 240] },
@@ -238,6 +248,12 @@ function levelForTournament(tournament: Omit<TournamentEntry, 'id' | 'year'>): L
   if (value.includes('world championships')) return 'worldChampionships';
   if (value.includes('olympic games')) return 'olympics';
   if (value.includes('asian games')) return 'asianGames';
+  if (value.includes('asian championships') || value.includes('asia championships')) return 'asianChampionships';
+  if (value.includes('european games')) return 'europeanGames';
+  if (value.includes('european championships')) return 'europeanChampionships';
+  if (/pan am.*championship/.test(value)) return 'panAmChampionships';
+  if (value.includes('all africa championships')) return 'allAfricaChampionships';
+  if (value.includes('oceania championships')) return 'oceaniaChampionships';
   if (value.includes('china open') && value.includes('super 1000')) return 'chinaOpen';
   if (value.includes('super 1000')) return 'super1000';
   if (value.includes('super 750')) return 'super750';
@@ -256,6 +272,11 @@ const genericTournamentWords = new Set([
   'super', 'team', 'the', 'tour', 'tournament', 'world',
 ]);
 
+const tournamentKindWords = new Set([
+  'championship', 'championships', 'challenge', 'classic', 'cup', 'finals', 'games',
+  'international', 'masters', 'open', 'series', 'trophy',
+]);
+
 function tournamentNameTokens(name: string) {
   return name
     .replace(/\b(?:presented|powered|sponsored)\s+by\b.*$/i, '')
@@ -270,14 +291,44 @@ function tournamentNameTokens(name: string) {
     .filter(Boolean);
 }
 
+function tournamentIdentity(name: string) {
+  const tokens = tournamentNameTokens(name);
+  let kindIndex = -1;
+  for (let index = tokens.length - 1; index >= 0; index -= 1) {
+    if (tournamentKindWords.has(tokens[index])) {
+      kindIndex = index;
+      break;
+    }
+  }
+  if (kindIndex < 0) return '';
+
+  let descriptor = '';
+  for (let index = kindIndex - 1; index >= 0; index -= 1) {
+    if (!genericTournamentWords.has(tokens[index]) && tokens[index] !== 'by') {
+      descriptor = tokens[index];
+      break;
+    }
+  }
+
+  return descriptor ? `${descriptor} ${tokens[kindIndex]}` : tokens[kindIndex];
+}
+
+function tournamentEditionMarker(name: string) {
+  const tokens = tournamentNameTokens(name);
+  let kindIndex = -1;
+  for (let index = tokens.length - 1; index >= 0; index -= 1) {
+    if (tournamentKindWords.has(tokens[index])) {
+      kindIndex = index;
+      break;
+    }
+  }
+  return tokens.slice(kindIndex + 1).find((token) => /^(?:i{1,3}|iv|v|vi{0,3}|[1-9])$/i.test(token)) ?? '';
+}
+
 function commonSuffixLength(left: string[], right: string[]) {
   let length = 0;
   while (length < left.length && length < right.length && left[left.length - 1 - length] === right[right.length - 1 - length]) length += 1;
   return length;
-}
-
-function normalizedPlace(value: string) {
-  return value.normalize('NFKD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
 function playerSearchTokens(value: string) {
@@ -310,7 +361,18 @@ function sameTournamentName(leftName: string, rightName: string) {
   const leftKey = leftTokens.join(' ');
   const rightKey = rightTokens.join(' ');
   if (!leftKey || !rightKey) return false;
-  if (leftKey === rightKey || leftKey.includes(rightKey) || rightKey.includes(leftKey)) return true;
+  if (leftKey === rightKey) return true;
+
+  const leftIdentity = tournamentIdentity(leftName);
+  const rightIdentity = tournamentIdentity(rightName);
+  if (leftIdentity && rightIdentity) {
+    if (leftIdentity !== rightIdentity) return false;
+    const leftEdition = tournamentEditionMarker(leftName);
+    const rightEdition = tournamentEditionMarker(rightName);
+    return !leftEdition || !rightEdition || leftEdition === rightEdition;
+  }
+
+  if (leftKey.includes(rightKey) || rightKey.includes(leftKey)) return true;
 
   const leftSignificant = leftTokens.filter((token) => !genericTournamentWords.has(token));
   const rightSignificant = rightTokens.filter((token) => !genericTournamentWords.has(token));
@@ -326,35 +388,38 @@ function sameTournamentName(leftName: string, rightName: string) {
 }
 
 function previousEditionMatch(current: CurrentTournamentEntry, candidates: TournamentEntry[]) {
-  const sameEventType = candidates.filter((candidate) => eventTypeForTournament(candidate) === current.eventType);
-  const currentTokens = tournamentNameTokens(current.name);
-  const currentKey = currentTokens.join(' ');
+  if (!current.country) return null;
+
+  const currentCountry = current.country.toLocaleUpperCase();
+  const currentIdentity = tournamentIdentity(current.name);
   const currentLevel = current.level;
-  const exactSameLevel = sameEventType.find((candidate) => {
-    const candidateLevel = levelForTournament(candidate);
-    return tournamentNameTokens(candidate.name).join(' ') === currentKey && candidateLevel === currentLevel;
-  });
-  if (exactSameLevel) return exactSameLevel;
+  const highLevels = new Set<LevelKey>([
+    'olympics', 'worldChampionships', 'asianGames', 'asianChampionships',
+    'europeanGames', 'europeanChampionships', 'finals', 'chinaOpen',
+    'super1000', 'super750', 'super500',
+  ]);
+  const lowLevels = new Set<LevelKey>([
+    'super100', 'challenge', 'allAfricaChampionships', 'oceaniaChampionships',
+    'series', 'future',
+  ]);
+  const crossesHighLowBoundary = (candidateLevel: LevelKey | null) => Boolean(currentLevel && candidateLevel)
+    && ((highLevels.has(currentLevel) && lowLevels.has(candidateLevel))
+      || (lowLevels.has(currentLevel) && highLevels.has(candidateLevel)));
 
-  const currentSignificant = currentTokens.filter((token) => !genericTournamentWords.has(token));
-  const scored = sameEventType.map((candidate) => {
-    const candidateTokens = tournamentNameTokens(candidate.name);
-    const candidateSignificant = candidateTokens.filter((token) => !genericTournamentWords.has(token));
-    const sharedSignificant = new Set(currentSignificant.filter((token) => candidateSignificant.includes(token))).size;
-    const sameCity = Boolean(current.city && candidate.city && normalizedPlace(current.city) === normalizedPlace(candidate.city));
-    if (!sharedSignificant && !sameCity) return { candidate, score: -1 };
-    const overlap = sharedSignificant / Math.max(1, Math.min(currentSignificant.length, candidateSignificant.length));
-    const exactName = candidateTokens.join(' ') === currentKey;
-    const sameLevel = levelForTournament(candidate) === currentLevel;
-    const score = (exactName ? 500 : 0)
-      + commonSuffixLength(currentTokens, candidateTokens) * 20
-      + overlap * 40
-      + (sameCity ? 20 : 0)
-      + (sameLevel ? 20 : 0);
-    return { candidate, score };
-  }).sort((left, right) => right.score - left.score);
+  const matches = candidates
+    .filter((candidate) => eventTypeForTournament(candidate) === current.eventType)
+    .filter((candidate) => Boolean(candidate.country) && candidate.country?.toLocaleUpperCase() === currentCountry)
+    .map((candidate) => ({ candidate, candidateLevel: levelForTournament(candidate) }))
+    .filter(({ candidate, candidateLevel }) => tournamentIdentity(candidate.name) === currentIdentity && !crossesHighLowBoundary(candidateLevel))
+    .sort((left, right) => {
+      const sameLevelDifference = Number(right.candidateLevel === currentLevel) - Number(left.candidateLevel === currentLevel);
+      if (sameLevelDifference) return sameLevelDifference;
+      const weekDifference = Math.abs(Number(left.candidate.week) - Number(current.week)) - Math.abs(Number(right.candidate.week) - Number(current.week));
+      if (weekDifference) return weekDifference;
+      return left.candidate.name.localeCompare(right.candidate.name);
+    });
 
-  return scored[0]?.score >= 55 ? scored[0].candidate : null;
+  return matches[0]?.candidate ?? null;
 }
 
 function countableScores(scores: Score[]) {
@@ -694,7 +759,7 @@ function CurrentTournamentSearch({ options, value, onSelect }: {
         {(maxHeight) => (
           <Command shouldFilter={false}>
             <CommandList className="max-h-none overscroll-contain [scrollbar-width:thin]" style={{ maxHeight, WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}>
-              <CommandEmpty>No current or upcoming senior BWF tournament found.</CommandEmpty>
+              <CommandEmpty>No current or upcoming BWF tournament found.</CommandEmpty>
               {suggestions.map((option) => (
                 <CommandItem
                   key={option.id}
@@ -837,13 +902,13 @@ export default function Home() {
 
       <section className="mx-auto max-w-[1440px] px-4 pt-4 pb-7 sm:px-6 lg:px-8 lg:pt-5 lg:pb-9">
         <div className="mb-5 grid gap-3 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
-          <p className="text-[15px] leading-5 text-muted-foreground">Pick a tournament to preview all scenarios for the top 8 in each discipline. Or manually select up to 8 top-100 players or pairs, enter hypothetical results, and preview the resulting ranking points.</p>
+          <p className="text-[15px] leading-5 text-muted-foreground">Pick a tournament to preview all scenarios for the top 8 in each discipline. Or manually select up to 8 top 100 players or pairs, enter hypothetical results, and preview the resulting ranking points.</p>
           <Badge variant="outline" className="h-7 px-3"><CalendarClock /> Latest Reference · {rankingMeta.dateLabel}</Badge>
         </div>
 
         <div className="mb-3">
           <h2 className="font-heading text-xl font-semibold">PICK A TOURNAMENT</h2>
-          <p className="text-[15px] text-muted-foreground">Choose a current or upcoming BWF tournament. Its event type, level, week, and previous edition are filled in automatically.</p>
+          <p className="text-[15px] leading-5 text-muted-foreground">Choose a current or upcoming BWF tournament. Its event type, level, week, and previous edition are filled in automatically.</p>
         </div>
 
         <Card className="mb-6 overflow-visible border-l-4 border-l-primary shadow-[0_12px_35px_rgb(22_62_43/6%)]">
@@ -868,7 +933,7 @@ export default function Home() {
               <div className="min-w-0 sm:col-span-2 lg:col-span-5">
                 <div className="-mx-4 overflow-hidden border-y sm:mx-0 sm:rounded-xl sm:border">
                   <div className="border-b bg-muted/35 px-3 py-2">
-                    <p className="font-heading text-base">TOP 8 RANKING POINTS SCENARIOS · {disciplineOptions.find((discipline) => discipline.code === outcomeDiscipline)?.label}</p>
+                    <p className="font-heading text-base">TOP 8 RANKING POINTS SCENARIOS · {disciplineOptions.find((discipline) => discipline.code === outcomeDiscipline)?.label.toLocaleUpperCase()}</p>
                     <p className="text-xs leading-tight text-muted-foreground">Projected total ranking points for each possible tournament finish in the {selectedTournament.name}</p>
                     <PortraitTableHint />
                   </div>
@@ -889,7 +954,7 @@ export default function Home() {
           <Button className="hidden sm:inline-flex" disabled={players.length >= 8} onClick={addPlayer}><Plus /> Add Player</Button>
         </div>
 
-        <div className="grid items-start gap-5 xl:grid-cols-2">
+        <div className="grid items-start gap-5 lg:grid-cols-2">
           {summaries.map(({ player, result }, playerIndex) => {
             const projectionReady = eventType === 'individual'
               ? Boolean(selectedTournament && level && player.result)
@@ -987,7 +1052,7 @@ export default function Home() {
                           </div>
                         </details>
                       ) : (
-                        <Alert><CircleHelp /><AlertTitle>No Published Breakdown</AlertTitle><AlertDescription>The BWF ranking page currently returns no score breakdown for this entry. Its official current total is shown, but the simulator will not invent an exact projection.</AlertDescription></Alert>
+                        <Alert><CircleHelp /><AlertTitle>No Published Breakdown</AlertTitle><AlertDescription>The BWF ranking page currently returns no score breakdown for this entry. Its current total is shown, but the simulator will not invent an exact projection.</AlertDescription></Alert>
                       )}
                   </CardContent>
                 )}
