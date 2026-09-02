@@ -26,6 +26,56 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         {children}
+        const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className="antialiased">
+        {children}
+
+        {isGitHubPages && (
+          <>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  var sc_project=13353075;
+                  var sc_invisible=1;
+                  var sc_security="46167cc0";
+                `,
+              }}
+            />
+            <script
+              src="https://www.statcounter.com/counter/counter.js"
+              async
+            />
+            <noscript>
+              <div className="statcounter">
+                <a
+                  title="web statistics"
+                  href="https://statcounter.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="statcounter"
+                    src="https://c.statcounter.com/13353075/0/46167cc0/1/"
+                    alt="web statistics"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </a>
+              </div>
+            </noscript>
+          </>
+        )}
+      </body>
+    </html>
+  );
+}
       </body>
     </html>
   );
