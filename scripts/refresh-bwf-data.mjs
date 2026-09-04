@@ -156,26 +156,40 @@ async function readBwfRankingBreakdown(page, dialog, expectedPoints, previousSig
 }
 
 async function loadHundredRankingRows(page, rankingTable) {
+  let lastError = null;
+
   for (let attempt = 1; attempt <= 3; attempt += 1) {
-    if (attempt > 1) {
-      await page.reload({ waitUntil: 'domcontentloaded', timeout: 60_000 });
+    try {
+      if (attempt > 1) {
+        await page.goto(rankingUrl, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+      }
+
       await rankingTable.locator('tbody tr').first().waitFor({ state: 'visible', timeout: 60_000 });
+      await dismissBwfCookieBanner(page);
+
+      const perPageButton = page.getByRole('button', { name: /Per page/ }).first();
+      await perPageButton.waitFor({ state: 'visible', timeout: 15_000 });
+      await perPageButton.click({ force: attempt > 1, timeout: 15_000 });
+
+      const hundredOption = page.getByRole('option', { name: '100', exact: true }).last();
+      await hundredOption.waitFor({ state: 'visible', timeout: 15_000 });
+      await hundredOption.click({ force: attempt > 1, timeout: 15_000 });
+
+      await page.waitForFunction(
+        () => document.querySelector('table')?.querySelectorAll('tbody tr').length >= 100,
+        undefined,
+        { timeout: 60_000 },
+      );
+      return;
+    } catch (error) {
+      lastError = error;
+      const reason = error instanceof Error ? error.message.split('\n')[0] : String(error);
+      console.warn(`BWF 100-row view did not load (attempt ${attempt} of 3): ${reason}`);
+      if (attempt < 3) await page.waitForTimeout(1_000 * attempt);
     }
-
-    await dismissBwfCookieBanner(page);
-    await page.getByRole('button', { name: /Per page/ }).click({ force: attempt > 1 });
-    await page.getByRole('option', { name: '100', exact: true }).click({ force: attempt > 1 });
-
-    const loaded = await page.waitForFunction(
-      () => document.querySelectorAll('table tbody tr').length >= 100,
-      undefined,
-      { timeout: 60_000 },
-    ).then(() => true).catch(() => false);
-    if (loaded) return;
-    console.warn(`BWF 100-row view did not load (attempt ${attempt} of 3)`);
   }
 
-  throw new Error('BWF rankings did not load 100 rows after three attempts');
+  throw new Error(`BWF rankings did not load 100 rows after three attempts${lastError instanceof Error ? `: ${lastError.message.split('\n')[0]}` : ''}`);
 }
 
 async function selectRankingDiscipline(page, rankingTable, config) {
