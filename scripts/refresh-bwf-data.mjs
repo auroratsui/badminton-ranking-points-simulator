@@ -39,12 +39,87 @@ function tournamentsoftwareDateToIso(value) {
   return match ? `${match[3]}-${match[1].padStart(2, '0')}-${match[2].padStart(2, '0')}` : '';
 }
 
+function isoWeekNumber(isoDate) {
+  const date = new Date(`${isoDate}T00:00:00Z`);
+  const day = date.getUTCDay() || 7;
+  date.setUTCDate(date.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+  return Math.ceil((((date.getTime() - yearStart.getTime()) / 86400000) + 1) / 7);
+}
+
 async function acceptTournamentsoftwareCookies(page) {
   const accept = page.getByRole('button', { name: 'Accept', exact: true });
   if (await accept.count()) {
     await accept.click();
     await page.waitForLoadState('domcontentloaded');
   }
+}
+
+async function getTournamentsoftwareRankingEdition(context) {
+  const rankingPage = await context.newPage();
+  try {
+    await rankingPage.goto(tournamentsoftwareRankingUrl, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+    await acceptTournamentsoftwareCookies(rankingPage);
+
+    const heading = await rankingPage.locator('h1, h2, h3, h4, h5, h6').evaluateAll((headings) => (
+      headings.map((item) => item.textContent?.replace(/\s+/g, ' ').trim() || '')
+        .find((text) => /BWF World Rankings.*\d{1,2}\/\d{1,2}\/\d{4}/.test(text)) || ''
+    ));
+    const date = tournamentsoftwareDateToIso(heading);
+    const categoryHref = await rankingPage.locator('a[href*="category.aspx?id="]').first().getAttribute('href');
+    const id = categoryHref ? new URL(categoryHref, rankingPage.url()).searchParams.get('id') : null;
+    if (!date || !id) throw new Error('latest ranking date or ID was not found');
+    return { date, id };
+  } finally {
+    await rankingPage.close();
+  }
+}
+
+async function fetchRankingPlayersFromTournamentsoftware(context, edition) {
+  const categoryPage = await context.newPage();
+  const rankingPlayers = [];
+
+  try {
+    for (const config of disciplines) {
+      const categoryUrl = `https://www.tournamentsoftware.com/ranking/category.aspx?id=${edition.id}&category=${config.category}&p=1&ps=100`;
+      await categoryPage.goto(categoryUrl, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+      await acceptTournamentsoftwareCookies(categoryPage);
+
+      const players = await categoryPage.locator('table tbody tr').evaluateAll((rows) => rows.map((row) => {
+        const cells = Array.from(row.querySelectorAll('td'));
+        const links = Array.from(row.querySelectorAll('a[href*="player.aspx"]'));
+        if (!links.length || cells.length < 9) return null;
+        const rank = Number((cells[0]?.textContent || '').match(/\d+/)?.[0]);
+        const points = Number(cells.at(-4)?.textContent?.replace(/,/g, '').trim());
+        const tournaments = Number(cells.at(-3)?.textContent?.replace(/,/g, '').trim());
+        if (!Number.isFinite(rank) || !Number.isFinite(points) || !Number.isFinite(tournaments)) return null;
+        return {
+          rank,
+          name: links.map((link) => link.textContent?.replace(/\s+/g, ' ').trim()).filter(Boolean).join(' / '),
+          href: Array.from(new Set(links.map((link) => link.href).filter(Boolean))).join('|'),
+          tournaments,
+          points,
+        };
+      }).filter(Boolean).slice(0, 100));
+
+      if (players.length !== 100) throw new Error(`${config.code}: Tournamentsoftware returned ${players.length} ranking rows instead of 100`);
+      const unexpectedRank = players.find((player, index) => player.rank !== index + 1);
+      if (unexpectedRank) {
+        throw new Error(`${config.code}: Tournamentsoftware ranking order is invalid at row ${players.indexOf(unexpectedRank) + 1} (rank ${unexpectedRank.rank})`);
+      }
+      if (['MD', 'WD', 'XD'].includes(config.code)) {
+        const incompletePair = players.find((player) => player.name.split(' / ').length !== 2);
+        if (incompletePair) throw new Error(`${config.code}-${incompletePair.rank}: Tournamentsoftware returned an incomplete doubles pair`);
+      }
+
+      rankingPlayers.push(...players.map((player) => ({ ...player, code: config.code, discipline: config.discipline })));
+      console.log(`${config.code}: loaded 100 ranking entries from Tournamentsoftware`);
+    }
+  } finally {
+    await categoryPage.close();
+  }
+
+  return rankingPlayers;
 }
 
 async function dismissBwfCookieBanner(page) {
@@ -156,15 +231,16 @@ async function readBwfRankingBreakdown(page, dialog, expectedPoints, previousSig
 }
 
 async function loadHundredRankingRows(page, rankingTable) {
+  const maxAttempts = 2;
   let lastError = null;
 
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
     try {
       if (attempt > 1) {
         await page.goto(rankingUrl, { waitUntil: 'domcontentloaded', timeout: 60_000 });
       }
 
-      await rankingTable.locator('tbody tr').first().waitFor({ state: 'visible', timeout: 60_000 });
+      await rankingTable.locator('tbody tr').first().waitFor({ state: 'visible', timeout: 45_000 });
       await dismissBwfCookieBanner(page);
 
       const perPageButton = page.getByRole('button', { name: /Per page/ }).first();
@@ -178,18 +254,18 @@ async function loadHundredRankingRows(page, rankingTable) {
       await page.waitForFunction(
         () => document.querySelector('table')?.querySelectorAll('tbody tr').length >= 100,
         undefined,
-        { timeout: 60_000 },
+        { timeout: 45_000 },
       );
       return;
     } catch (error) {
       lastError = error;
       const reason = error instanceof Error ? error.message.split('\n')[0] : String(error);
-      console.warn(`BWF 100-row view did not load (attempt ${attempt} of 3): ${reason}`);
-      if (attempt < 3) await page.waitForTimeout(1_000 * attempt);
+      console.warn(`BWF 100-row view did not load (attempt ${attempt} of ${maxAttempts}): ${reason}`);
+      if (attempt < maxAttempts) await page.waitForTimeout(1_000 * attempt);
     }
   }
 
-  throw new Error(`BWF rankings did not load 100 rows after three attempts${lastError instanceof Error ? `: ${lastError.message.split('\n')[0]}` : ''}`);
+  throw new Error(`BWF rankings did not load 100 rows after ${maxAttempts} attempts${lastError instanceof Error ? `: ${lastError.message.split('\n')[0]}` : ''}`);
 }
 
 async function selectRankingDiscipline(page, rankingTable, config) {
@@ -251,7 +327,7 @@ async function fetchTournamentCalendar(context, year, status) {
   return null;
 }
 
-async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate, rankingPlayers, rankingBreakdowns) {
+async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate, rankingPlayers, rankingBreakdowns, suppliedEdition = null) {
   const missingPlayers = rankingPlayers.filter((player) => {
     const scores = rankingBreakdowns[`${player.code}-${player.rank}`]?.scores ?? [];
     const usableScores = scores.filter((score) => score.points > 0 && score.week && score.label);
@@ -260,28 +336,12 @@ async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate,
   });
   if (!missingPlayers.length) return;
 
-  const rankingPage = await context.newPage();
-  await rankingPage.goto(tournamentsoftwareRankingUrl, { waitUntil: 'domcontentloaded', timeout: 60_000 });
-  await acceptTournamentsoftwareCookies(rankingPage);
-
-  const heading = await rankingPage.locator('h1, h2, h3, h4, h5, h6').evaluateAll((headings) => (
-    headings.map((item) => item.textContent?.replace(/\s+/g, ' ').trim() || '')
-      .find((text) => /BWF World Rankings.*\d{1,2}\/\d{1,2}\/\d{4}/.test(text)) || ''
-  ));
-  const fallbackDate = tournamentsoftwareDateToIso(heading);
-  if (fallbackDate !== rankingDate) {
-    console.warn(`Tournamentsoftware fallback skipped: latest edition is ${fallbackDate || 'unknown'}, expected ${rankingDate}`);
-    await rankingPage.close();
+  const edition = suppliedEdition ?? await getTournamentsoftwareRankingEdition(context);
+  if (edition.date !== rankingDate) {
+    console.warn(`Tournamentsoftware fallback skipped: latest edition is ${edition.date || 'unknown'}, expected ${rankingDate}`);
     return;
   }
-
-  const categoryHref = await rankingPage.locator('a[href*="category.aspx?id="]').first().getAttribute('href');
-  const rankingId = categoryHref ? new URL(categoryHref, rankingPage.url()).searchParams.get('id') : null;
-  await rankingPage.close();
-  if (!rankingId) {
-    console.warn('Tournamentsoftware fallback skipped: latest ranking ID was not found');
-    return;
-  }
+  const rankingId = edition.id;
 
   const categoryPage = await context.newPage();
   const breakdownPage = await context.newPage();
@@ -388,96 +448,133 @@ const context = await browser.newContext({
 
 try {
   const page = await context.newPage();
-  await page.goto(rankingUrl, { waitUntil: 'domcontentloaded', timeout: 60_000 });
   const rankingTable = page.locator('table').first();
-  await rankingTable.locator('tbody tr').first().waitFor({ state: 'visible', timeout: 60_000 });
-  await loadHundredRankingRows(page, rankingTable);
-
-  const weekText = await page.getByRole('button', { name: /Week Week/ }).innerText();
-  const weekMatch = /Week\s+(\d+)\s+\((\d{4}-\d{2}-\d{2})\)/.exec(weekText.replace(/\s+/g, ' '));
-  if (!weekMatch) throw new Error(`Could not read ranking week from: ${weekText}`);
-
   const rankingPlayers = [];
   const rankingBreakdowns = {};
+  let rankingWeek = 0;
+  let rankingDate = '';
+  let tournamentsoftwareEdition = null;
+  let bwfRankingReady = false;
+
+  try {
+    await page.goto(rankingUrl, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+    await rankingTable.locator('tbody tr').first().waitFor({ state: 'visible', timeout: 60_000 });
+    const weekText = await page.getByRole('button', { name: /Week Week/ }).innerText();
+    const weekMatch = /Week\s+(\d+)\s+\((\d{4}-\d{2}-\d{2})\)/.exec(weekText.replace(/\s+/g, ' '));
+    if (!weekMatch) throw new Error(`Could not read ranking week from: ${weekText}`);
+    rankingWeek = Number(weekMatch[1]);
+    rankingDate = weekMatch[2];
+    await loadHundredRankingRows(page, rankingTable);
+    bwfRankingReady = true;
+  } catch (error) {
+    const reason = error instanceof Error ? error.message.split('\n')[0] : String(error);
+    console.warn(`BWF ranking list unavailable; switching to Tournamentsoftware: ${reason}`);
+  }
+
   let consecutiveDialogFailures = 0;
   let useTournamentsoftwareForRemaining = false;
   let previousBwfBreakdownSignature = '';
 
-  for (let disciplineIndex = 0; disciplineIndex < disciplines.length; disciplineIndex += 1) {
-    const config = disciplines[disciplineIndex];
-    let acceptedBwfBreakdowns = 0;
-    if (disciplineIndex > 0) {
-      await selectRankingDiscipline(page, rankingTable, config);
-    }
-
-    const rows = rankingTable.locator('tbody tr');
-    const players = await rows.evaluateAll((elements) => elements.slice(0, 100).map((row) => {
-      const cells = Array.from(row.querySelectorAll('td'));
-      const links = Array.from(cells[1]?.querySelectorAll('a') ?? []);
-      return {
-        rank: Number(cells[0]?.querySelector('.rank-value')?.textContent?.trim()),
-        name: links.map((link) => link.textContent?.replace(/\s+/g, ' ').trim()).filter(Boolean).join(' / '),
-        href: links.map((link) => link.href).filter(Boolean).join('|'),
-        tournaments: Number(cells[3]?.textContent?.replace(/,/g, '').trim()),
-        points: Number(cells[4]?.textContent?.replace(/,/g, '').trim()),
-      };
-    }));
-
-    if (players.length !== 100) throw new Error(`${config.code}: expected 100 ranking rows, found ${players.length}`);
-    if (['MD', 'WD', 'XD'].includes(config.code)) {
-      const incompletePair = players.find((player) => player.name.split(' / ').length !== 2 || player.href.split('|').length !== 2);
-      if (incompletePair) {
-        throw new Error(`${config.code}-${incompletePair.rank}: expected both doubles partners, found ${incompletePair.name || 'an empty name'}`);
-      }
-    }
-
-    for (let index = 0; index < players.length; index += 1) {
-      const player = players[index];
-      const rankingKey = `${config.code}-${player.rank}`;
-      rankingPlayers.push({ ...player, code: config.code, discipline: config.discipline });
-
-      const row = rows.nth(index);
-      const dialog = useTournamentsoftwareForRemaining ? null : await openRankingBreakdownDialog(page, row, rankingKey);
-      let scores = [];
-
-      if (dialog) {
-        consecutiveDialogFailures = 0;
-        const breakdown = await readBwfRankingBreakdown(page, dialog, player.points, previousBwfBreakdownSignature);
-        scores = breakdown.scores;
-        const validTotal = breakdown.validTotal;
-        if (breakdown.signature) previousBwfBreakdownSignature = breakdown.signature;
-        if (!breakdown.matched || !scores.length || Math.round(validTotal) !== player.points) {
-          console.warn(`${rankingKey}: BWF breakdown rejected (valid total ${validTotal}, expected ${player.points}); Tournamentsoftware fallback will be attempted`);
-          scores = [];
-        } else {
-          acceptedBwfBreakdowns += 1;
+  if (bwfRankingReady) {
+    try {
+      for (let disciplineIndex = 0; disciplineIndex < disciplines.length; disciplineIndex += 1) {
+        const config = disciplines[disciplineIndex];
+        let acceptedBwfBreakdowns = 0;
+        if (disciplineIndex > 0) {
+          await selectRankingDiscipline(page, rankingTable, config);
         }
-        await closeRankingBreakdownDialog(page, dialog, rankingKey);
-      } else {
-        consecutiveDialogFailures += 1;
-        if (consecutiveDialogFailures >= 3 && !useTournamentsoftwareForRemaining) {
-          useTournamentsoftwareForRemaining = true;
-          console.warn('BWF breakdown dialogs stopped responding; using Tournamentsoftware for the remaining breakdowns');
+
+        const rows = rankingTable.locator('tbody tr');
+        const players = await rows.evaluateAll((elements) => elements.slice(0, 100).map((row) => {
+          const cells = Array.from(row.querySelectorAll('td'));
+          const links = Array.from(cells[1]?.querySelectorAll('a') ?? []);
+          return {
+            rank: Number(cells[0]?.querySelector('.rank-value')?.textContent?.trim()),
+            name: links.map((link) => link.textContent?.replace(/\s+/g, ' ').trim()).filter(Boolean).join(' / '),
+            href: links.map((link) => link.href).filter(Boolean).join('|'),
+            tournaments: Number(cells[3]?.textContent?.replace(/,/g, '').trim()),
+            points: Number(cells[4]?.textContent?.replace(/,/g, '').trim()),
+          };
+        }));
+
+        if (players.length !== 100) throw new Error(`${config.code}: expected 100 ranking rows, found ${players.length}`);
+        if (['MD', 'WD', 'XD'].includes(config.code)) {
+          const incompletePair = players.find((player) => player.name.split(' / ').length !== 2 || player.href.split('|').length !== 2);
+          if (incompletePair) {
+            throw new Error(`${config.code}-${incompletePair.rank}: expected both doubles partners, found ${incompletePair.name || 'an empty name'}`);
+          }
         }
+
+        for (let index = 0; index < players.length; index += 1) {
+          const player = players[index];
+          const rankingKey = `${config.code}-${player.rank}`;
+          rankingPlayers.push({ ...player, code: config.code, discipline: config.discipline });
+
+          const row = rows.nth(index);
+          const dialog = useTournamentsoftwareForRemaining ? null : await openRankingBreakdownDialog(page, row, rankingKey);
+          let scores = [];
+
+          if (dialog) {
+            consecutiveDialogFailures = 0;
+            const breakdown = await readBwfRankingBreakdown(page, dialog, player.points, previousBwfBreakdownSignature);
+            scores = breakdown.scores;
+            const validTotal = breakdown.validTotal;
+            if (breakdown.signature) previousBwfBreakdownSignature = breakdown.signature;
+            if (!breakdown.matched || !scores.length || Math.round(validTotal) !== player.points) {
+              console.warn(`${rankingKey}: BWF breakdown rejected (valid total ${validTotal}, expected ${player.points}); Tournamentsoftware fallback will be attempted`);
+              scores = [];
+            } else {
+              acceptedBwfBreakdowns += 1;
+            }
+            await closeRankingBreakdownDialog(page, dialog, rankingKey);
+          } else {
+            consecutiveDialogFailures += 1;
+            if (consecutiveDialogFailures >= 3 && !useTournamentsoftwareForRemaining) {
+              useTournamentsoftwareForRemaining = true;
+              console.warn('BWF breakdown dialogs stopped responding; using Tournamentsoftware for the remaining breakdowns');
+            }
+          }
+
+          rankingBreakdowns[rankingKey] = {
+            name: player.name,
+            profiles: player.href.split('|').filter(Boolean),
+            scores,
+          };
+        }
+
+        console.log(`${config.code}: refreshed 100 entries (${acceptedBwfBreakdowns} breakdowns accepted from BWF)`);
       }
-
-      rankingBreakdowns[rankingKey] = {
-        name: player.name,
-        profiles: player.href.split('|').filter(Boolean),
-        scores,
-      };
+    } catch (error) {
+      const reason = error instanceof Error ? error.message.split('\n')[0] : String(error);
+      console.warn(`BWF ranking refresh became unavailable; restarting from Tournamentsoftware: ${reason}`);
+      rankingPlayers.length = 0;
+      for (const key of Object.keys(rankingBreakdowns)) delete rankingBreakdowns[key];
+      bwfRankingReady = false;
     }
-
-    console.log(`${config.code}: refreshed 100 entries (${acceptedBwfBreakdowns} breakdowns accepted from BWF)`);
   }
 
-  await fillMissingBreakdownsFromTournamentsoftware(context, weekMatch[2], rankingPlayers, rankingBreakdowns);
+  if (!bwfRankingReady) {
+    await page.close().catch(() => {});
+    tournamentsoftwareEdition = await getTournamentsoftwareRankingEdition(context);
+    rankingDate = tournamentsoftwareEdition.date;
+    rankingWeek = isoWeekNumber(rankingDate);
+    rankingPlayers.push(...await fetchRankingPlayersFromTournamentsoftware(context, tournamentsoftwareEdition));
+    for (const player of rankingPlayers) {
+      rankingBreakdowns[`${player.code}-${player.rank}`] = {
+        name: player.name,
+        profiles: player.href.split('|').filter(Boolean),
+        scores: [],
+      };
+    }
+  }
+
+  await fillMissingBreakdownsFromTournamentsoftware(context, rankingDate, rankingPlayers, rankingBreakdowns, tournamentsoftwareEdition);
 
   const generatedAt = new Date().toISOString();
   const rankingMeta = {
-    week: Number(weekMatch[1]),
-    date: weekMatch[2],
-    dateLabel: new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${weekMatch[2]}T00:00:00Z`)),
+    week: rankingWeek,
+    date: rankingDate,
+    dateLabel: new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${rankingDate}T00:00:00Z`)),
     generatedAt,
   };
   const rankingSource = `export type RankingPlayer = {\n  code: string;\n  discipline: string;\n  rank: number;\n  name: string;\n  href: string;\n  tournaments: number;\n  points: number;\n};\n\nexport const rankingMeta = ${JSON.stringify(rankingMeta, null, 2)} as const;\n\nexport const rankingPlayers: RankingPlayer[] = ${JSON.stringify(rankingPlayers, null, 2)};\n`;
