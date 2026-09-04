@@ -12,14 +12,14 @@ export const rankingMeta = {
   "week": 36,
   "date": "2026-09-01",
   "dateLabel": "1 Sept 2026",
-  "generatedAt": "2026-09-01T13:46:57.928Z"
+  "generatedAt": "2026-09-04T19:42:14.810Z"
 } as const;
 
 export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 1,
     "name": "Jonatan CHRISTIE",
-    "href": "https://bwfbadminton.com/player/73442/jonatan-christie/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=409860",
     "tournaments": 17,
     "points": 87631,
     "code": "MS",
@@ -28,7 +28,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 2,
     "name": "Christo POPOV",
-    "href": "https://bwfbadminton.com/player/72885/christo-popov/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1995693",
     "tournaments": 20,
     "points": 87002,
     "code": "MS",
@@ -37,7 +37,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 3,
     "name": "Kunlavut VITIDSARN",
-    "href": "https://bwfbadminton.com/player/64032/kunlavut-vitidsarn/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1192211",
     "tournaments": 16,
     "points": 86915,
     "code": "MS",
@@ -46,7 +46,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 4,
     "name": "CHOU Tien Chen",
-    "href": "https://bwfbadminton.com/player/34810/chou-tien-chen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=109227",
     "tournaments": 27,
     "points": 86580,
     "code": "MS",
@@ -55,7 +55,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 5,
     "name": "Anders ANTONSEN",
-    "href": "https://bwfbadminton.com/player/91554/anders-antonsen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=396249",
     "tournaments": 17,
     "points": 85405,
     "code": "MS",
@@ -64,7 +64,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 6,
     "name": "SHI Yu Qi",
-    "href": "https://bwfbadminton.com/player/57945/shi-yu-qi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=990139",
     "tournaments": 12,
     "points": 84075,
     "code": "MS",
@@ -73,7 +73,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 7,
     "name": "Alex LANIER",
-    "href": "https://bwfbadminton.com/player/94580/alex-lanier/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2017832",
     "tournaments": 16,
     "points": 78715,
     "code": "MS",
@@ -82,7 +82,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 8,
     "name": "Kodai NARAOKA",
-    "href": "https://bwfbadminton.com/player/62063/kodai-naraoka/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1561759",
     "tournaments": 20,
     "points": 76530,
     "code": "MS",
@@ -91,7 +91,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 9,
     "name": "Victor LAI",
-    "href": "https://bwfbadminton.com/player/94151/victor-lai/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3836962",
     "tournaments": 18,
     "points": 76465,
     "code": "MS",
@@ -100,7 +100,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 10,
     "name": "LI Shi Feng",
-    "href": "https://bwfbadminton.com/player/95476/li-shi-feng/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2481091",
     "tournaments": 16,
     "points": 71683,
     "code": "MS",
@@ -109,7 +109,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 11,
     "name": "Alwi FARHAN",
-    "href": "https://bwfbadminton.com/player/58089/alwi-farhan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2011293",
     "tournaments": 19,
     "points": 71619,
     "code": "MS",
@@ -118,7 +118,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 12,
     "name": "LIN Chun-Yi",
-    "href": "https://bwfbadminton.com/player/86114/lin-chun-yi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1617833",
     "tournaments": 19,
     "points": 71274,
     "code": "MS",
@@ -127,7 +127,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 13,
     "name": "Lakshya SEN",
-    "href": "https://bwfbadminton.com/player/68870/lakshya-sen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=646810",
     "tournaments": 21,
     "points": 65573,
     "code": "MS",
@@ -136,7 +136,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 14,
     "name": "LOH Kean Yew",
-    "href": "https://bwfbadminton.com/player/76115/loh-kean-yew/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=347214",
     "tournaments": 20,
     "points": 64100,
     "code": "MS",
@@ -145,7 +145,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 15,
     "name": "Toma Junior POPOV",
-    "href": "https://bwfbadminton.com/player/61628/toma-junior-popov/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=674117",
     "tournaments": 20,
     "points": 62697,
     "code": "MS",
@@ -154,7 +154,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 16,
     "name": "Panitchaphon TEERARATSAKUL",
-    "href": "https://bwfbadminton.com/player/85845/panitchaphon-teeraratsakul/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2304761",
     "tournaments": 17,
     "points": 60175,
     "code": "MS",
@@ -163,7 +163,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 17,
     "name": "Koki WATANABE",
-    "href": "https://bwfbadminton.com/player/97174/koki-watanabe/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1069030",
     "tournaments": 21,
     "points": 59570,
     "code": "MS",
@@ -172,7 +172,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 18,
     "name": "WENG Hong Yang",
-    "href": "https://bwfbadminton.com/player/77042/weng-hong-yang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1929271",
     "tournaments": 17,
     "points": 55491,
     "code": "MS",
@@ -181,7 +181,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 19,
     "name": "Yushi TANAKA",
-    "href": "https://bwfbadminton.com/player/86672/yushi-tanaka/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3488863",
     "tournaments": 23,
     "points": 55105,
     "code": "MS",
@@ -190,7 +190,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 20,
     "name": "Ayush SHETTY",
-    "href": "https://bwfbadminton.com/player/68322/ayush-shetty/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4255491",
     "tournaments": 23,
     "points": 53139,
     "code": "MS",
@@ -199,7 +199,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 21,
     "name": "CHI Yu Jen",
-    "href": "https://bwfbadminton.com/player/77848/chi-yu-jen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=860729",
     "tournaments": 25,
     "points": 52737,
     "code": "MS",
@@ -208,7 +208,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 22,
     "name": "Rasmus GEMKE",
-    "href": "https://bwfbadminton.com/player/62855/rasmus-gemke/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=396247",
     "tournaments": 16,
     "points": 50934,
     "code": "MS",
@@ -217,7 +217,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 23,
     "name": "Yudai OKIMOTO",
-    "href": "https://bwfbadminton.com/player/90735/yudai-okimoto/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3215907",
     "tournaments": 19,
     "points": 49194,
     "code": "MS",
@@ -226,7 +226,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 24,
     "name": "Nhat NGUYEN",
-    "href": "https://bwfbadminton.com/player/85095/nhat-nguyen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=664701",
     "tournaments": 18,
     "points": 48591,
     "code": "MS",
@@ -235,7 +235,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 25,
     "name": "LEE Cheuk Yiu",
-    "href": "https://bwfbadminton.com/player/94780/lee-cheuk-yiu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=279226",
     "tournaments": 18,
     "points": 47673,
     "code": "MS",
@@ -244,7 +244,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 26,
     "name": "Kenta NISHIMOTO",
-    "href": "https://bwfbadminton.com/player/85394/kenta-nishimoto/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=239769",
     "tournaments": 17,
     "points": 46489,
     "code": "MS",
@@ -253,7 +253,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 27,
     "name": "LEONG Jun Hao",
-    "href": "https://bwfbadminton.com/player/84838/leong-jun-hao/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=669250",
     "tournaments": 19,
     "points": 44929,
     "code": "MS",
@@ -262,7 +262,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 28,
     "name": "NG Ka Long Angus",
-    "href": "https://bwfbadminton.com/player/45171/ng-ka-long-angus/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=109501",
     "tournaments": 18,
     "points": 44699,
     "code": "MS",
@@ -271,7 +271,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 29,
     "name": "Moh. Zaki UBAIDILLAH",
-    "href": "https://bwfbadminton.com/player/60321/moh-zaki-ubaidillah/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4038309",
     "tournaments": 16,
     "points": 44661,
     "code": "MS",
@@ -280,7 +280,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 30,
     "name": "LU Guang Zu",
-    "href": "https://bwfbadminton.com/player/77427/lu-guang-zu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1928758",
     "tournaments": 17,
     "points": 42540,
     "code": "MS",
@@ -288,8 +288,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 31,
-    "name": "Jia Heng TEH",
-    "href": "https://bwfbadminton.com/player/82606/jia-heng-teh/",
+    "name": "TEH Jia Heng",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1336448",
     "tournaments": 26,
     "points": 41428,
     "code": "MS",
@@ -298,7 +298,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 32,
     "name": "Jason GUNAWAN",
-    "href": "https://bwfbadminton.com/player/65634/jason-gunawan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1280289",
     "tournaments": 19,
     "points": 41310,
     "code": "MS",
@@ -307,7 +307,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 33,
     "name": "Arnaud MERKLE",
-    "href": "https://bwfbadminton.com/player/59543/arnaud-merkle/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1355035",
     "tournaments": 13,
     "points": 40714,
     "code": "MS",
@@ -316,7 +316,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 34,
     "name": "KIDAMBI Srikanth",
-    "href": "https://bwfbadminton.com/player/93627/kidambi-srikanth/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=216143",
     "tournaments": 18,
     "points": 40675,
     "code": "MS",
@@ -324,8 +324,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 35,
-    "name": "Chia Hao LEE",
-    "href": "https://bwfbadminton.com/player/59322/chia-hao-lee/",
+    "name": "LEE Chia Hao",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=873873",
     "tournaments": 25,
     "points": 40102,
     "code": "MS",
@@ -334,7 +334,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 36,
     "name": "HU Zhe An",
-    "href": "https://bwfbadminton.com/player/73591/hu-zhe-an/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5313754",
     "tournaments": 14,
     "points": 39456,
     "code": "MS",
@@ -343,7 +343,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 37,
     "name": "Brian YANG",
-    "href": "https://bwfbadminton.com/player/63122/brian-yang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2077262",
     "tournaments": 22,
     "points": 38705,
     "code": "MS",
@@ -352,7 +352,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 38,
     "name": "WANG Tzu Wei",
-    "href": "https://bwfbadminton.com/player/87375/wang-tzu-wei/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=239492",
     "tournaments": 22,
     "points": 37149,
     "code": "MS",
@@ -361,7 +361,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 39,
     "name": "PRANNOY H. S.",
-    "href": "https://bwfbadminton.com/player/83950/prannoy-h-s/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=161366",
     "tournaments": 14,
     "points": 37054,
     "code": "MS",
@@ -370,7 +370,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 40,
     "name": "SU Li Yang",
-    "href": "https://bwfbadminton.com/player/94397/su-li-yang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1283694",
     "tournaments": 19,
     "points": 36600,
     "code": "MS",
@@ -379,7 +379,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 41,
     "name": "Magnus JOHANNESEN",
-    "href": "https://bwfbadminton.com/player/97030/magnus-johannesen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2033795",
     "tournaments": 19,
     "points": 36452,
     "code": "MS",
@@ -388,7 +388,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 42,
     "name": "WANG Po-Wei",
-    "href": "https://bwfbadminton.com/player/87029/wang-po-wei/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2772715",
     "tournaments": 17,
     "points": 35960,
     "code": "MS",
@@ -397,7 +397,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 43,
     "name": "DONG Tian Yao",
-    "href": "https://bwfbadminton.com/player/95516/dong-tian-yao/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3845912",
     "tournaments": 13,
     "points": 35900,
     "code": "MS",
@@ -405,8 +405,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 44,
-    "name": "HOH Justin",
-    "href": "https://bwfbadminton.com/player/68392/hoh-justin/",
+    "name": "Justin HOH",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2141163",
     "tournaments": 20,
     "points": 34342,
     "code": "MS",
@@ -415,7 +415,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 45,
     "name": "Muhamad YUSUF",
-    "href": "https://bwfbadminton.com/player/90218/muhamad-yusuf/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5996162",
     "tournaments": 15,
     "points": 34210,
     "code": "MS",
@@ -424,7 +424,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 46,
     "name": "JEON Hyeok Jin",
-    "href": "https://bwfbadminton.com/player/65580/jeon-hyeok-jin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=387378",
     "tournaments": 13,
     "points": 34180,
     "code": "MS",
@@ -433,7 +433,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 47,
     "name": "Anthony Sinisuka GINTING",
-    "href": "https://bwfbadminton.com/player/95661/anthony-sinisuka-ginting/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=389169",
     "tournaments": 14,
     "points": 33679,
     "code": "MS",
@@ -442,7 +442,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 48,
     "name": "YOO Tae Bin",
-    "href": "https://bwfbadminton.com/player/97115/yoo-tae-bin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1717685",
     "tournaments": 17,
     "points": 33649,
     "code": "MS",
@@ -451,7 +451,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 49,
     "name": "Prahdiska Bagas SHUJIWO",
-    "href": "https://bwfbadminton.com/player/59614/prahdiska-bagas-shujiwo/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2444435",
     "tournaments": 14,
     "points": 33113,
     "code": "MS",
@@ -460,7 +460,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 50,
     "name": "Kiran GEORGE",
-    "href": "https://bwfbadminton.com/player/68317/kiran-george/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1252418",
     "tournaments": 18,
     "points": 32900,
     "code": "MS",
@@ -469,7 +469,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 51,
     "name": "ZHU Xuan Chen",
-    "href": "https://bwfbadminton.com/player/97345/zhu-xuan-chen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4259915",
     "tournaments": 13,
     "points": 32885,
     "code": "MS",
@@ -478,7 +478,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 52,
     "name": "WANG Yu-Kai",
-    "href": "https://bwfbadminton.com/player/98279/wang-yu-kai/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3290303",
     "tournaments": 18,
     "points": 32600,
     "code": "MS",
@@ -487,7 +487,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 53,
     "name": "Julien CARRAGGI",
-    "href": "https://bwfbadminton.com/player/70399/julien-carraggi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1608527",
     "tournaments": 19,
     "points": 32589,
     "code": "MS",
@@ -496,7 +496,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 54,
     "name": "Minoru KOGA",
-    "href": "https://bwfbadminton.com/player/80062/minoru-koga/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=391554",
     "tournaments": 20,
     "points": 32370,
     "code": "MS",
@@ -505,7 +505,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 55,
     "name": "Daniil DUBOVENKO",
-    "href": "https://bwfbadminton.com/player/94119/daniil-dubovenko/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1249919",
     "tournaments": 19,
     "points": 31923,
     "code": "MS",
@@ -514,7 +514,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 56,
     "name": "Tharun MANNEPALLI",
-    "href": "https://bwfbadminton.com/player/92160/tharun-mannepalli/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2808816",
     "tournaments": 20,
     "points": 31656,
     "code": "MS",
@@ -523,7 +523,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 57,
     "name": "Harry HUANG",
-    "href": "https://bwfbadminton.com/player/63170/harry-huang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1986890",
     "tournaments": 21,
     "points": 31574,
     "code": "MS",
@@ -532,7 +532,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 58,
     "name": "LEE Zii Jia",
-    "href": "https://bwfbadminton.com/player/81561/lee-zii-jia/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=318753",
     "tournaments": 16,
     "points": 31335,
     "code": "MS",
@@ -541,7 +541,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 59,
     "name": "WANG Zheng Xing",
-    "href": "https://bwfbadminton.com/player/89163/wang-zheng-xing/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3723989",
     "tournaments": 12,
     "points": 30651,
     "code": "MS",
@@ -550,7 +550,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 60,
     "name": "CHEAM June Wei",
-    "href": "https://bwfbadminton.com/player/92796/cheam-june-wei/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=243527",
     "tournaments": 17,
     "points": 29380,
     "code": "MS",
@@ -559,7 +559,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 61,
     "name": "Riki TAKEI",
-    "href": "https://bwfbadminton.com/player/99466/riki-takei/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1689589",
     "tournaments": 13,
     "points": 29070,
     "code": "MS",
@@ -568,7 +568,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 62,
     "name": "Rounak CHOUHAN",
-    "href": "https://bwfbadminton.com/player/81208/rounak-chouhan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5241591",
     "tournaments": 13,
     "points": 28760,
     "code": "MS",
@@ -577,7 +577,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 63,
     "name": "Joakim OLDORFF",
-    "href": "https://bwfbadminton.com/player/85563/joakim-oldorff/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2025559",
     "tournaments": 20,
     "points": 28754,
     "code": "MS",
@@ -586,7 +586,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 64,
     "name": "Jonathan MATIAS",
-    "href": "https://bwfbadminton.com/player/86470/jonathan-matias/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1520388",
     "tournaments": 13,
     "points": 28387,
     "code": "MS",
@@ -595,7 +595,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 65,
     "name": "Kalle KOLJONEN",
-    "href": "https://bwfbadminton.com/player/92655/kalle-koljonen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=216637",
     "tournaments": 19,
     "points": 28280,
     "code": "MS",
@@ -604,7 +604,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 66,
     "name": "Aria DINATA",
-    "href": "https://bwfbadminton.com/player/91894/aria-dinata/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1702689",
     "tournaments": 15,
     "points": 28099,
     "code": "MS",
@@ -613,7 +613,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 67,
     "name": "PARK Sang Yong",
-    "href": "https://bwfbadminton.com/player/99172/park-sang-yong/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1324273",
     "tournaments": 13,
     "points": 27944,
     "code": "MS",
@@ -622,7 +622,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 68,
     "name": "Shogo OGAWA",
-    "href": "https://bwfbadminton.com/player/62395/shogo-ogawa/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6440025",
     "tournaments": 15,
     "points": 27820,
     "code": "MS",
@@ -631,7 +631,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 69,
     "name": "Kantaphon WANGCHAROEN",
-    "href": "https://bwfbadminton.com/player/92508/kantaphon-wangcharoen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=409866",
     "tournaments": 16,
     "points": 27398,
     "code": "MS",
@@ -640,7 +640,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 70,
     "name": "Ditlev Jaeger HOLM",
-    "href": "https://bwfbadminton.com/player/90130/ditlev-jaeger-holm/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1273052",
     "tournaments": 21,
     "points": 27101,
     "code": "MS",
@@ -649,7 +649,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 71,
     "name": "Mithun MANJUNATH",
-    "href": "https://bwfbadminton.com/player/62720/mithun-manjunath/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=656879",
     "tournaments": 13,
     "points": 27020,
     "code": "MS",
@@ -658,7 +658,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 72,
     "name": "Richie Duta RICHARDO",
-    "href": "https://bwfbadminton.com/player/89808/richie-duta-richardo/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3734232",
     "tournaments": 13,
     "points": 26951,
     "code": "MS",
@@ -667,7 +667,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 73,
     "name": "LIAO Jhuo-Fu",
-    "href": "https://bwfbadminton.com/player/64081/liao-jhuo-fu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1284065",
     "tournaments": 18,
     "points": 26540,
     "code": "MS",
@@ -676,7 +676,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 74,
     "name": "Rithvik Sanjeevi SATISH KUMAR",
-    "href": "https://bwfbadminton.com/player/86975/rithvik-sanjeevi-satish-kumar/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2697783",
     "tournaments": 15,
     "points": 25800,
     "code": "MS",
@@ -685,7 +685,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 75,
     "name": "Misha ZILBERMAN",
-    "href": "https://bwfbadminton.com/player/52953/misha-zilberman/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=108120",
     "tournaments": 16,
     "points": 25597,
     "code": "MS",
@@ -694,7 +694,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 76,
     "name": "Saneeth DAYANAND",
-    "href": "https://bwfbadminton.com/player/82483/saneeth-dayanand-shimoga/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3967813",
     "tournaments": 18,
     "points": 25410,
     "code": "MS",
@@ -703,7 +703,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 77,
     "name": "Mark Shelley ALCALA",
-    "href": "https://bwfbadminton.com/player/87610/mark-shelley-alcala/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=347217",
     "tournaments": 21,
     "points": 25362,
     "code": "MS",
@@ -712,7 +712,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 78,
     "name": "Garret TAN",
-    "href": "https://bwfbadminton.com/player/60145/garret-tan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3292485",
     "tournaments": 17,
     "points": 25329,
     "code": "MS",
@@ -721,7 +721,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 79,
     "name": "NGUYEN Hai Dang",
-    "href": "https://bwfbadminton.com/player/64648/nguyen-hai-dang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2098835",
     "tournaments": 13,
     "points": 24740,
     "code": "MS",
@@ -730,7 +730,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 80,
     "name": "HUANG Ping-Hsien",
-    "href": "https://bwfbadminton.com/player/55920/huang-ping-hsien/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1683438",
     "tournaments": 13,
     "points": 24260,
     "code": "MS",
@@ -739,7 +739,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 81,
     "name": "Bismo Raya OKTORA",
-    "href": "https://bwfbadminton.com/player/88276/bismo-raya-oktora/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3620171",
     "tournaments": 11,
     "points": 24010,
     "code": "MS",
@@ -748,7 +748,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 82,
     "name": "Eogene EWE",
-    "href": "https://bwfbadminton.com/player/75014/eogene-ewe/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2782843",
     "tournaments": 16,
     "points": 23755,
     "code": "MS",
@@ -757,7 +757,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 83,
     "name": "Dumindu ABEYWICKRAMA",
-    "href": "https://bwfbadminton.com/player/87857/dumindu-abeywickrama/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1291078",
     "tournaments": 16,
     "points": 23450,
     "code": "MS",
@@ -766,7 +766,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 84,
     "name": "S.Sankar Muthusamy SUBRAMANIAN",
-    "href": "https://bwfbadminton.com/player/91814/s-sankar-muthusamy-subramanian/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2465442",
     "tournaments": 18,
     "points": 22800,
     "code": "MS",
@@ -775,7 +775,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 85,
     "name": "Riku HATANO",
-    "href": "https://bwfbadminton.com/player/62018/riku-hatano/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1692878",
     "tournaments": 10,
     "points": 22410,
     "code": "MS",
@@ -784,7 +784,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 86,
     "name": "William BØGEBJERG",
-    "href": "https://bwfbadminton.com/player/71510/william-b%C3%98gebjerg/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4297532",
     "tournaments": 16,
     "points": 22109,
     "code": "MS",
@@ -793,7 +793,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 87,
     "name": "Joshua NGUYEN",
-    "href": "https://bwfbadminton.com/player/71843/joshua-nguyen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3813174",
     "tournaments": 18,
     "points": 22067,
     "code": "MS",
@@ -801,8 +801,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 88,
-    "name": "CHOI JIHOON",
-    "href": "https://bwfbadminton.com/player/86607/jihoon-choi/",
+    "name": "CHOI Ji Hoon",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1325980",
     "tournaments": 15,
     "points": 21475,
     "code": "MS",
@@ -811,7 +811,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 89,
     "name": "Enogat ROY",
-    "href": "https://bwfbadminton.com/player/85118/enogat-roy/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2875558",
     "tournaments": 16,
     "points": 21434,
     "code": "MS",
@@ -820,7 +820,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 90,
     "name": "Chico Aura DWI WARDOYO",
-    "href": "https://bwfbadminton.com/player/71408/chico-aura-dwi-wardoyo/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=656114",
     "tournaments": 9,
     "points": 20950,
     "code": "MS",
@@ -829,7 +829,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 91,
     "name": "Sholeh AIDIL",
-    "href": "https://bwfbadminton.com/player/79110/sholeh-aidil/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2215619",
     "tournaments": 13,
     "points": 20740,
     "code": "MS",
@@ -838,7 +838,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 92,
     "name": "Kevin CORDON",
-    "href": "https://bwfbadminton.com/player/54897/kevin-cordon/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=109133",
     "tournaments": 11,
     "points": 20694,
     "code": "MS",
@@ -847,7 +847,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 93,
     "name": "Viktor AXELSEN",
-    "href": "https://bwfbadminton.com/player/25831/viktor-axelsen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=147387",
     "tournaments": 4,
     "points": 20290,
     "code": "MS",
@@ -856,7 +856,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 94,
     "name": "Uriel Francisco CANJURA",
-    "href": "https://bwfbadminton.com/player/74579/uriel-francisco-canjura/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1183118",
     "tournaments": 12,
     "points": 20116,
     "code": "MS",
@@ -865,7 +865,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 95,
     "name": "Dominik KWINTA",
-    "href": "https://bwfbadminton.com/player/58521/dominik-kwinta/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2625831",
     "tournaments": 20,
     "points": 20100,
     "code": "MS",
@@ -874,7 +874,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 96,
     "name": "Zhe Ying WU",
-    "href": "https://bwfbadminton.com/player/87450/zhe-ying-wu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5851402",
     "tournaments": 14,
     "points": 20100,
     "code": "MS",
@@ -883,7 +883,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 97,
     "name": "Ginpaul SONNA",
-    "href": "https://bwfbadminton.com/player/79065/ginpaul-sonna/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5761514",
     "tournaments": 13,
     "points": 19620,
     "code": "MS",
@@ -892,7 +892,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 98,
     "name": "CHENG Ju-Sheng",
-    "href": "https://bwfbadminton.com/player/44017/ju-sheng-cheng/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=7369686",
     "tournaments": 14,
     "points": 19490,
     "code": "MS",
@@ -901,7 +901,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 99,
     "name": "Giovanni TOTI",
-    "href": "https://bwfbadminton.com/player/69253/giovanni-toti/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1610454",
     "tournaments": 18,
     "points": 19466,
     "code": "MS",
@@ -910,7 +910,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 100,
     "name": "Matthias KICKLITZ",
-    "href": "https://bwfbadminton.com/player/51998/matthias-kicklitz/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1986752",
     "tournaments": 19,
     "points": 19451,
     "code": "MS",
@@ -919,7 +919,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 1,
     "name": "AN Se Young",
-    "href": "https://bwfbadminton.com/player/87442/an-se-young/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1281742",
     "tournaments": 15,
     "points": 121287,
     "code": "WS",
@@ -928,7 +928,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 2,
     "name": "WANG Zhi Yi",
-    "href": "https://bwfbadminton.com/player/61854/wang-zhi-yi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1929595",
     "tournaments": 16,
     "points": 103989,
     "code": "WS",
@@ -937,7 +937,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 3,
     "name": "Akane YAMAGUCHI",
-    "href": "https://bwfbadminton.com/player/96312/akane-yamaguchi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=314824",
     "tournaments": 18,
     "points": 102576,
     "code": "WS",
@@ -946,7 +946,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 4,
     "name": "CHEN Yu Fei",
-    "href": "https://bwfbadminton.com/player/78778/chen-yu-fei/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=995456",
     "tournaments": 15,
     "points": 86651,
     "code": "WS",
@@ -955,7 +955,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 5,
     "name": "HAN Yue",
-    "href": "https://bwfbadminton.com/player/92967/han-yue/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1518211",
     "tournaments": 14,
     "points": 77038,
     "code": "WS",
@@ -964,7 +964,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 6,
     "name": "Ratchanok INTANON",
-    "href": "https://bwfbadminton.com/player/35642/ratchanok-intanon/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=109407",
     "tournaments": 20,
     "points": 74606,
     "code": "WS",
@@ -973,7 +973,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 7,
     "name": "Putri Kusuma WARDANI",
-    "href": "https://bwfbadminton.com/player/76890/putri-kusuma-wardani/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1943187",
     "tournaments": 18,
     "points": 72023,
     "code": "WS",
@@ -982,7 +982,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 8,
     "name": "Pornpawee CHOCHUWONG",
-    "href": "https://bwfbadminton.com/player/84062/pornpawee-chochuwong/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=347220",
     "tournaments": 16,
     "points": 69027,
     "code": "WS",
@@ -991,7 +991,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 9,
     "name": "Tomoka MIYAZAKI",
-    "href": "https://bwfbadminton.com/player/82070/tomoka-miyazaki/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4071647",
     "tournaments": 22,
     "points": 68106,
     "code": "WS",
@@ -1000,7 +1000,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 10,
     "name": "PUSARLA V. Sindhu",
-    "href": "https://bwfbadminton.com/player/73173/pusarla-v-sindhu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=108519",
     "tournaments": 14,
     "points": 65401,
     "code": "WS",
@@ -1009,7 +1009,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 11,
     "name": "Nozomi OKUHARA",
-    "href": "https://bwfbadminton.com/player/96713/nozomi-okuhara/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=165528",
     "tournaments": 18,
     "points": 63610,
     "code": "WS",
@@ -1018,7 +1018,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 12,
     "name": "KIM Ga Eun",
-    "href": "https://bwfbadminton.com/player/70930/kim-ga-eun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1739752",
     "tournaments": 16,
     "points": 60931,
     "code": "WS",
@@ -1027,7 +1027,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 13,
     "name": "Line CHRISTOPHERSEN",
-    "href": "https://bwfbadminton.com/player/85302/line-christophersen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1966429",
     "tournaments": 22,
     "points": 57940,
     "code": "WS",
@@ -1036,7 +1036,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 14,
     "name": "Michelle LI",
-    "href": "https://bwfbadminton.com/player/84523/michelle-li/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=109491",
     "tournaments": 21,
     "points": 57427,
     "code": "WS",
@@ -1045,7 +1045,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 15,
     "name": "Mia BLICHFELDT",
-    "href": "https://bwfbadminton.com/player/91224/mia-blichfeldt/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=734887",
     "tournaments": 13,
     "points": 55803,
     "code": "WS",
@@ -1054,7 +1054,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 16,
     "name": "SIM Yu Jin",
-    "href": "https://bwfbadminton.com/player/99069/sim-yu-jin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2083250",
     "tournaments": 10,
     "points": 52884,
     "code": "WS",
@@ -1063,7 +1063,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 17,
     "name": "LIN Hsiang Ti",
-    "href": "https://bwfbadminton.com/player/96725/lin-hsiang-ti/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1586466",
     "tournaments": 24,
     "points": 51449,
     "code": "WS",
@@ -1072,7 +1072,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 18,
     "name": "CHIU Pin-Chian",
-    "href": "https://bwfbadminton.com/player/80862/chiu-pin-chian/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1617185",
     "tournaments": 24,
     "points": 50078,
     "code": "WS",
@@ -1081,7 +1081,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 19,
     "name": "Pitchamon OPATNIPUTH",
-    "href": "https://bwfbadminton.com/player/69463/pitchamon-opatniputh/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2773403",
     "tournaments": 14,
     "points": 50018,
     "code": "WS",
@@ -1090,7 +1090,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 20,
     "name": "Line Højmark KJAERSFELDT",
-    "href": "https://bwfbadminton.com/player/63437/line-hojmark-kjaersfeldt/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=201892",
     "tournaments": 17,
     "points": 49773,
     "code": "WS",
@@ -1099,7 +1099,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 21,
     "name": "Riko GUNJI",
-    "href": "https://bwfbadminton.com/player/76079/riko-gunji/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1312027",
     "tournaments": 21,
     "points": 49333,
     "code": "WS",
@@ -1108,7 +1108,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 22,
     "name": "HUANG Yu-Hsun",
-    "href": "https://bwfbadminton.com/player/97685/huang-yu-hsun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2199898",
     "tournaments": 21,
     "points": 48834,
     "code": "WS",
@@ -1117,7 +1117,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 23,
     "name": "Hina AKECHI",
-    "href": "https://bwfbadminton.com/player/68479/hina-akechi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1692698",
     "tournaments": 21,
     "points": 48620,
     "code": "WS",
@@ -1126,7 +1126,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 24,
     "name": "Busanan ONGBAMRUNGPHAN",
-    "href": "https://bwfbadminton.com/player/58271/busanan-ongbamrungphan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=169010",
     "tournaments": 23,
     "points": 47407,
     "code": "WS",
@@ -1135,7 +1135,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 25,
     "name": "Unnati HOODA",
-    "href": "https://bwfbadminton.com/player/59687/unnati-hooda/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4364092",
     "tournaments": 16,
     "points": 47080,
     "code": "WS",
@@ -1144,7 +1144,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 26,
     "name": "Tanvi SHARMA",
-    "href": "https://bwfbadminton.com/player/99042/tanvi-sharma/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3586122",
     "tournaments": 18,
     "points": 44485,
     "code": "WS",
@@ -1153,7 +1153,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 27,
     "name": "Beiwen ZHANG",
-    "href": "https://bwfbadminton.com/player/53806/beiwen-zhang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=107883",
     "tournaments": 19,
     "points": 43976,
     "code": "WS",
@@ -1162,7 +1162,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 28,
     "name": "Neslihan ARIN",
-    "href": "https://bwfbadminton.com/player/87885/neslihan-arin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=161343",
     "tournaments": 18,
     "points": 43749,
     "code": "WS",
@@ -1170,8 +1170,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 29,
-    "name": "Thuy Linh NGUYEN",
-    "href": "https://bwfbadminton.com/player/75678/thuy-linh-nguyen/",
+    "name": "NGUYEN Thuy Linh",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=389182",
     "tournaments": 15,
     "points": 43640,
     "code": "WS",
@@ -1180,7 +1180,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 30,
     "name": "Supanida KATETHONG",
-    "href": "https://bwfbadminton.com/player/91422/supanida-katethong/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=396334",
     "tournaments": 21,
     "points": 43622,
     "code": "WS",
@@ -1189,7 +1189,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 31,
     "name": "Karupathevan LETSHANAA",
-    "href": "https://bwfbadminton.com/player/59367/karupathevan-letshanaa/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2120884",
     "tournaments": 20,
     "points": 43572,
     "code": "WS",
@@ -1198,7 +1198,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 32,
     "name": "Natsuki NIDAIRA",
-    "href": "https://bwfbadminton.com/player/91896/natsuki-nidaira/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1023035",
     "tournaments": 17,
     "points": 42960,
     "code": "WS",
@@ -1207,7 +1207,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 33,
     "name": "HAN Qian Xi",
-    "href": "https://bwfbadminton.com/player/92928/han-qian-xi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2902299",
     "tournaments": 17,
     "points": 42161,
     "code": "WS",
@@ -1216,7 +1216,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 34,
     "name": "Devika SIHAG",
-    "href": "https://bwfbadminton.com/player/90287/devika-sihag/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4071806",
     "tournaments": 16,
     "points": 41474,
     "code": "WS",
@@ -1225,7 +1225,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 35,
     "name": "Kirsty GILMOUR",
-    "href": "https://bwfbadminton.com/player/48528/kirsty-gilmour/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=113549",
     "tournaments": 13,
     "points": 39210,
     "code": "WS",
@@ -1234,7 +1234,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 36,
     "name": "WONG Ling Ching",
-    "href": "https://bwfbadminton.com/player/77296/wong-ling-ching/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2638226",
     "tournaments": 20,
     "points": 38991,
     "code": "WS",
@@ -1243,7 +1243,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 37,
     "name": "Isharani BARUAH",
-    "href": "https://bwfbadminton.com/player/76851/isharani-baruah/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3215337",
     "tournaments": 18,
     "points": 37219,
     "code": "WS",
@@ -1252,7 +1252,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 38,
     "name": "Ashmita CHALIHA",
-    "href": "https://bwfbadminton.com/player/75628/ashmita-chaliha/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1655125",
     "tournaments": 16,
     "points": 37210,
     "code": "WS",
@@ -1261,7 +1261,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 39,
     "name": "Kaloyana NALBANTOVA",
-    "href": "https://bwfbadminton.com/player/87112/kaloyana-nalbantova/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2444927",
     "tournaments": 20,
     "points": 36687,
     "code": "WS",
@@ -1270,7 +1270,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 40,
     "name": "Amalie SCHULZ",
-    "href": "https://bwfbadminton.com/player/70651/amalie-schulz/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2146370",
     "tournaments": 20,
     "points": 36597,
     "code": "WS",
@@ -1279,7 +1279,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 41,
     "name": "YEO Jia Min",
-    "href": "https://bwfbadminton.com/player/83822/yeo-jia-min/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=347234",
     "tournaments": 14,
     "points": 36363,
     "code": "WS",
@@ -1288,7 +1288,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 42,
     "name": "Polina BUHROVA",
-    "href": "https://bwfbadminton.com/player/96877/polina-buhrova/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2407909",
     "tournaments": 22,
     "points": 35774,
     "code": "WS",
@@ -1297,7 +1297,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 43,
     "name": "TUNG Ciou-Tong",
-    "href": "https://bwfbadminton.com/player/61614/tung-ciou-tong/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2536310",
     "tournaments": 19,
     "points": 35710,
     "code": "WS",
@@ -1306,7 +1306,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 44,
     "name": "SUNG Shuo Yun",
-    "href": "https://bwfbadminton.com/player/88807/sung-shuo-yun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=313462",
     "tournaments": 25,
     "points": 35505,
     "code": "WS",
@@ -1315,7 +1315,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 45,
     "name": "Rakshitha Sree SANTHOSH RAMRAJ",
-    "href": "https://bwfbadminton.com/player/91807/rakshitha-sree-santhosh-ramraj/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5070016",
     "tournaments": 16,
     "points": 35467,
     "code": "WS",
@@ -1324,7 +1324,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 46,
     "name": "Malvika BANSOD",
-    "href": "https://bwfbadminton.com/player/88471/malvika-bansod/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1655035",
     "tournaments": 16,
     "points": 34295,
     "code": "WS",
@@ -1333,7 +1333,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 47,
     "name": "Wen Yu ZHANG",
-    "href": "https://bwfbadminton.com/player/91560/wen-yu-zhang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1172166",
     "tournaments": 20,
     "points": 34079,
     "code": "WS",
@@ -1342,7 +1342,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 48,
     "name": "Anmol KHARB",
-    "href": "https://bwfbadminton.com/player/58664/anmol-kharb/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5318569",
     "tournaments": 21,
     "points": 33220,
     "code": "WS",
@@ -1351,7 +1351,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 49,
     "name": "Yvonne LI",
-    "href": "https://bwfbadminton.com/player/91106/yvonne-li/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=359173",
     "tournaments": 19,
     "points": 33141,
     "code": "WS",
@@ -1360,7 +1360,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 50,
     "name": "Rachel CHAN",
-    "href": "https://bwfbadminton.com/player/78208/rachel-chan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3836326",
     "tournaments": 14,
     "points": 32947,
     "code": "WS",
@@ -1369,7 +1369,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 51,
     "name": "Shriyanshi VALISHETTY",
-    "href": "https://bwfbadminton.com/player/70595/shriyanshi-valishetty/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4146327",
     "tournaments": 17,
     "points": 32450,
     "code": "WS",
@@ -1378,7 +1378,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 52,
     "name": "Ishika JAISWAL",
-    "href": "https://bwfbadminton.com/player/88399/ishika-jaiswal/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4797879",
     "tournaments": 21,
     "points": 31600,
     "code": "WS",
@@ -1387,7 +1387,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 53,
     "name": "HUANG Ching Ping",
-    "href": "https://bwfbadminton.com/player/94348/huang-ching-ping/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1690219",
     "tournaments": 18,
     "points": 30540,
     "code": "WS",
@@ -1396,7 +1396,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 54,
     "name": "Manami SUIZU",
-    "href": "https://bwfbadminton.com/player/67828/manami-suizu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2630786",
     "tournaments": 13,
     "points": 30520,
     "code": "WS",
@@ -1405,7 +1405,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 55,
     "name": "TANYA HEMANTH",
-    "href": "https://bwfbadminton.com/player/66290/tanya-hemanth/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2015477",
     "tournaments": 18,
     "points": 30380,
     "code": "WS",
@@ -1414,7 +1414,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 56,
     "name": "Wen Chi HSU",
-    "href": "https://bwfbadminton.com/player/89583/wen-chi-hsu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=409872",
     "tournaments": 13,
     "points": 30352,
     "code": "WS",
@@ -1423,7 +1423,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 57,
     "name": "PAI Yu Po",
-    "href": "https://bwfbadminton.com/player/99925/pai-yu-po/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=109344",
     "tournaments": 18,
     "points": 29940,
     "code": "WS",
@@ -1432,7 +1432,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 58,
     "name": "GOH Jin Wei",
-    "href": "https://bwfbadminton.com/player/69012/goh-jin-wei/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=396333",
     "tournaments": 11,
     "points": 29844,
     "code": "WS",
@@ -1441,7 +1441,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 59,
     "name": "Thalita Ramadhani WIRYAWAN",
-    "href": "https://bwfbadminton.com/player/64600/thalita-ramadhani-wiryawan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3335665",
     "tournaments": 14,
     "points": 29421,
     "code": "WS",
@@ -1450,7 +1450,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 60,
     "name": "KIM Min Ji",
-    "href": "https://bwfbadminton.com/player/75513/kim-min-ji/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2264880",
     "tournaments": 14,
     "points": 29231,
     "code": "WS",
@@ -1459,7 +1459,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 61,
     "name": "Tasnim MIR",
-    "href": "https://bwfbadminton.com/player/86604/tasnim-mir/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2447127",
     "tournaments": 16,
     "points": 29080,
     "code": "WS",
@@ -1468,7 +1468,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 62,
     "name": "Julie Dawall JAKOBSEN",
-    "href": "https://bwfbadminton.com/player/77002/julie-dawall-jakobsen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1121609",
     "tournaments": 10,
     "points": 27959,
     "code": "WS",
@@ -1477,7 +1477,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 63,
     "name": "Ella LIN",
-    "href": "https://bwfbadminton.com/player/85542/ella-lin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3670190",
     "tournaments": 15,
     "points": 27860,
     "code": "WS",
@@ -1486,7 +1486,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 64,
     "name": "Anupama UPADHYAYA",
-    "href": "https://bwfbadminton.com/player/74481/anupama-upadhyaya/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3067941",
     "tournaments": 14,
     "points": 27360,
     "code": "WS",
@@ -1495,7 +1495,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 65,
     "name": "Juliana Viana VIEIRA",
-    "href": "https://bwfbadminton.com/player/84897/juliana-viana-vieira/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1520693",
     "tournaments": 11,
     "points": 27344,
     "code": "WS",
@@ -1504,7 +1504,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 66,
     "name": "CHEN Su Yu",
-    "href": "https://bwfbadminton.com/player/71673/chen-su-yu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=655842",
     "tournaments": 18,
     "points": 26400,
     "code": "WS",
@@ -1513,7 +1513,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 67,
     "name": "LO Sin Yan Happy",
-    "href": "https://bwfbadminton.com/player/86261/lo-sin-yan-happy/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1280223",
     "tournaments": 17,
     "points": 26386,
     "code": "WS",
@@ -1522,7 +1522,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 68,
     "name": "PARK Ga Eun",
-    "href": "https://bwfbadminton.com/player/66485/park-ga-eun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1211332",
     "tournaments": 11,
     "points": 25883,
     "code": "WS",
@@ -1531,7 +1531,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 69,
     "name": "Anna TATRANOVA",
-    "href": "https://bwfbadminton.com/player/71285/anna-tatranova/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2018084",
     "tournaments": 15,
     "points": 25624,
     "code": "WS",
@@ -1540,7 +1540,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 70,
     "name": "PENG Yu Wei",
-    "href": "https://bwfbadminton.com/player/60634/peng-yu-wei/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3290727",
     "tournaments": 16,
     "points": 25060,
     "code": "WS",
@@ -1549,7 +1549,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 71,
     "name": "Tonrug SAEHENG",
-    "href": "https://bwfbadminton.com/player/50959/tonrug-saeheng/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4167583",
     "tournaments": 16,
     "points": 24830,
     "code": "WS",
@@ -1558,7 +1558,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 72,
     "name": "Yevheniia KANTEMYR",
-    "href": "https://bwfbadminton.com/player/94032/yevheniia-kantemyr/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2622882",
     "tournaments": 15,
     "points": 24793,
     "code": "WS",
@@ -1567,7 +1567,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 73,
     "name": "KIM Min Sun",
-    "href": "https://bwfbadminton.com/player/66368/kim-min-sun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2265048",
     "tournaments": 12,
     "points": 24780,
     "code": "WS",
@@ -1576,7 +1576,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 74,
     "name": "Mutiara Ayu PUSPITASARI",
-    "href": "https://bwfbadminton.com/player/64956/mutiara-ayu-puspitasari/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2904778",
     "tournaments": 11,
     "points": 24150,
     "code": "WS",
@@ -1585,7 +1585,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 75,
     "name": "AAKARSHI KASHYAP",
-    "href": "https://bwfbadminton.com/player/80402/aakarshi-kashyap/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1583897",
     "tournaments": 23,
     "points": 24140,
     "code": "WS",
@@ -1594,7 +1594,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 76,
     "name": "MANSI SINGH",
-    "href": "https://bwfbadminton.com/player/73387/mansi-singh/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2014910",
     "tournaments": 12,
     "points": 23960,
     "code": "WS",
@@ -1602,8 +1602,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 77,
-    "name": "Ines Lucia CASTILLO SALAZAR",
-    "href": "https://bwfbadminton.com/player/79258/ines-lucia-castillo-salazar/",
+    "name": "Ines Lucia CASTILLO",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1039323",
     "tournaments": 17,
     "points": 23470,
     "code": "WS",
@@ -1612,7 +1612,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 78,
     "name": "Vivien SANDORHAZI",
-    "href": "https://bwfbadminton.com/player/61949/vivien-sandorhazi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1262417",
     "tournaments": 19,
     "points": 23154,
     "code": "WS",
@@ -1621,7 +1621,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 79,
     "name": "Tidapron KLEEBYEESUN",
-    "href": "https://bwfbadminton.com/player/66362/tidapron-kleebyeesun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2077114",
     "tournaments": 13,
     "points": 23130,
     "code": "WS",
@@ -1630,7 +1630,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 80,
     "name": "Petra MAIXNEROVÁ",
-    "href": "https://bwfbadminton.com/player/79188/petra-maixnerova/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3544341",
     "tournaments": 20,
     "points": 23128,
     "code": "WS",
@@ -1639,7 +1639,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 81,
     "name": "XU Wen Jing",
-    "href": "https://bwfbadminton.com/player/60915/xu-wen-jing/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5752494",
     "tournaments": 8,
     "points": 23069,
     "code": "WS",
@@ -1648,7 +1648,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 82,
     "name": "Yataweemin KETKLIENG",
-    "href": "https://bwfbadminton.com/player/97446/yataweemin-ketklieng/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4324082",
     "tournaments": 10,
     "points": 22820,
     "code": "WS",
@@ -1657,7 +1657,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 83,
     "name": "Ni Kadek Dhinda Amartya PRATIWI",
-    "href": "https://bwfbadminton.com/player/92444/ni-kadek-dhinda-amartya-pratiwi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3713492",
     "tournaments": 13,
     "points": 22712,
     "code": "WS",
@@ -1666,7 +1666,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 84,
     "name": "Stefani STOEVA",
-    "href": "https://bwfbadminton.com/player/46169/stefani-stoeva/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=113472",
     "tournaments": 12,
     "points": 22466,
     "code": "WS",
@@ -1675,7 +1675,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 85,
     "name": "Pornpicha CHOEIKEEWONG",
-    "href": "https://bwfbadminton.com/player/72280/pornpicha-choeikeewong/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1694186",
     "tournaments": 16,
     "points": 22371,
     "code": "WS",
@@ -1684,7 +1684,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 86,
     "name": "Disha GUPTA",
-    "href": "https://bwfbadminton.com/player/59692/disha-gupta/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1240516",
     "tournaments": 14,
     "points": 22170,
     "code": "WS",
@@ -1693,7 +1693,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 87,
     "name": "Sakura MASUKI",
-    "href": "https://bwfbadminton.com/player/95172/sakura-masuki/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3137533",
     "tournaments": 9,
     "points": 22130,
     "code": "WS",
@@ -1702,7 +1702,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 88,
     "name": "Tereza ŠVÁBÍKOVÁ",
-    "href": "https://bwfbadminton.com/player/60397/tereza-%C5%A0vabikova/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=815629",
     "tournaments": 20,
     "points": 22125,
     "code": "WS",
@@ -1711,7 +1711,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 89,
     "name": "KISONA Selvaduray",
-    "href": "https://bwfbadminton.com/player/92014/kisona-selvaduray/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=318769",
     "tournaments": 13,
     "points": 22080,
     "code": "WS",
@@ -1719,8 +1719,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 90,
-    "name": "Thi Trang (B) VU",
-    "href": "https://bwfbadminton.com/player/71455/thi-trang-b-vu/",
+    "name": "VU Thi Trang (B)",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=109261",
     "tournaments": 13,
     "points": 21710,
     "code": "WS",
@@ -1729,7 +1729,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 91,
     "name": "Passa-Orn PHANNACHET",
-    "href": "https://bwfbadminton.com/player/68853/passa-orn-phannachet/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4323921",
     "tournaments": 21,
     "points": 21320,
     "code": "WS",
@@ -1738,7 +1738,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 92,
     "name": "Clara AZURMENDI",
-    "href": "https://bwfbadminton.com/player/74218/clara-azurmendi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=401293",
     "tournaments": 17,
     "points": 21114,
     "code": "WS",
@@ -1747,7 +1747,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 93,
     "name": "Ozge BAYRAK",
-    "href": "https://bwfbadminton.com/player/94762/ozge-bayrak/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=108959",
     "tournaments": 12,
     "points": 21090,
     "code": "WS",
@@ -1756,7 +1756,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 94,
     "name": "Keisha Fatimah AZZAHRA",
-    "href": "https://bwfbadminton.com/player/79078/keisha-fatimah-azzahra/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2617874",
     "tournaments": 15,
     "points": 20925,
     "code": "WS",
@@ -1765,7 +1765,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 95,
     "name": "LIANG Ka Wing",
-    "href": "https://bwfbadminton.com/player/91021/liang-ka-wing/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2795770",
     "tournaments": 17,
     "points": 20603,
     "code": "WS",
@@ -1774,7 +1774,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 96,
     "name": "LIANG Ting Yu",
-    "href": "https://bwfbadminton.com/player/93852/liang-ting-yu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1034189",
     "tournaments": 14,
     "points": 20450,
     "code": "WS",
@@ -1783,7 +1783,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 97,
     "name": "Prakriti BHARATH",
-    "href": "https://bwfbadminton.com/player/98011/prakriti-bharath/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4752755",
     "tournaments": 18,
     "points": 20400,
     "code": "WS",
@@ -1792,7 +1792,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 98,
     "name": "WANG Pei Yu",
-    "href": "https://bwfbadminton.com/player/85668/wang-pei-yu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3164496",
     "tournaments": 14,
     "points": 20210,
     "code": "WS",
@@ -1801,7 +1801,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 99,
     "name": "Yuan Chi LIAO",
-    "href": "https://bwfbadminton.com/player/71280/yuan-chi-liao/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5923999",
     "tournaments": 14,
     "points": 20050,
     "code": "WS",
@@ -1810,7 +1810,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 100,
     "name": "Chloe HOANG",
-    "href": "https://bwfbadminton.com/player/99271/chloe-hoang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3836909",
     "tournaments": 14,
     "points": 20004,
     "code": "WS",
@@ -1819,7 +1819,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 1,
     "name": "KIM Won Ho / SEO Seung Jae",
-    "href": "https://bwfbadminton.com/player/61444/kim-won-ho/|https://bwfbadminton.com/player/66513/seo-seung-jae/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1335510|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=387382",
     "tournaments": 15,
     "points": 115899,
     "code": "MD",
@@ -1828,7 +1828,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 2,
     "name": "Fajar ALFIAN / Muhammad Shohibul FIKRI",
-    "href": "https://bwfbadminton.com/player/88876/fajar-alfian/|https://bwfbadminton.com/player/91440/muhammad-shohibul-fikri/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=868332|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2025962",
     "tournaments": 16,
     "points": 94453,
     "code": "MD",
@@ -1837,7 +1837,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 3,
     "name": "LIANG Wei Keng / WANG Chang",
-    "href": "https://bwfbadminton.com/player/90531/liang-wei-keng/|https://bwfbadminton.com/player/55414/wang-chang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2866472|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2514579",
     "tournaments": 19,
     "points": 94089,
     "code": "MD",
@@ -1846,7 +1846,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 4,
     "name": "Aaron CHIA / SOH Wooi Yik",
-    "href": "https://bwfbadminton.com/player/56203/aaron-chia/|https://bwfbadminton.com/player/99389/soh-wooi-yik/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1159926|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=318756",
     "tournaments": 18,
     "points": 88884,
     "code": "MD",
@@ -1855,7 +1855,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 5,
     "name": "Satwiksairaj RANKIREDDY / Chirag SHETTY",
-    "href": "https://bwfbadminton.com/player/72435/satwiksairaj-rankireddy/|https://bwfbadminton.com/player/70500/chirag-shetty/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1204879|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=662948",
     "tournaments": 16,
     "points": 81831,
     "code": "MD",
@@ -1864,7 +1864,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 6,
     "name": "GOH Sze Fei / Nur IZZUDDIN",
-    "href": "https://bwfbadminton.com/player/90768/goh-sze-fei/|https://bwfbadminton.com/player/94814/nur-izzuddin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=396341|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1684955",
     "tournaments": 20,
     "points": 77067,
     "code": "MD",
@@ -1873,7 +1873,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 7,
     "name": "Sabar Karyaman GUTAMA / Moh Reza Pahlevi ISFAHANI",
-    "href": "https://bwfbadminton.com/player/87432/sabar-karyaman-gutama/|https://bwfbadminton.com/player/86136/moh-reza-pahlevi-isfahani/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2047674|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=873815",
     "tournaments": 18,
     "points": 71746,
     "code": "MD",
@@ -1882,7 +1882,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 8,
     "name": "Ben LANE / Sean VENDY",
-    "href": "https://bwfbadminton.com/player/76278/ben-lane/|https://bwfbadminton.com/player/72478/sean-vendy/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=283449|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=283434",
     "tournaments": 19,
     "points": 70651,
     "code": "MD",
@@ -1891,7 +1891,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 9,
     "name": "Takuro HOKI / Yugo KOBAYASHI",
-    "href": "https://bwfbadminton.com/player/81657/takuro-hoki/|https://bwfbadminton.com/player/67903/yugo-kobayashi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=239777|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=391556",
     "tournaments": 15,
     "points": 69290,
     "code": "MD",
@@ -1900,7 +1900,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 10,
     "name": "CHEN Bo Yang / LIU Yi",
-    "href": "https://bwfbadminton.com/player/93130/chen-bo-yang/|https://bwfbadminton.com/player/71223/liu-yi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2370105|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4276886",
     "tournaments": 18,
     "points": 65165,
     "code": "MD",
@@ -1909,7 +1909,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 11,
     "name": "MAN Wei Chong / TEE Kai Wun",
-    "href": "https://bwfbadminton.com/player/78409/man-wei-chong/|https://bwfbadminton.com/player/85129/kai-wun-tee/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=884013|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1602821",
     "tournaments": 13,
     "points": 63633,
     "code": "MD",
@@ -1918,7 +1918,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 12,
     "name": "Raymond INDRA / Nikolaus JOAQUIN",
-    "href": "https://bwfbadminton.com/player/99781/raymond-indra/|https://bwfbadminton.com/player/55669/nikolaus-joaquin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2586991|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2937522",
     "tournaments": 17,
     "points": 61816,
     "code": "MD",
@@ -1927,7 +1927,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 13,
     "name": "Daniel LUNDGAARD / Mads VESTERGAARD",
-    "href": "https://bwfbadminton.com/player/68134/daniel-lundgaard/|https://bwfbadminton.com/player/60507/mads-vestergaard/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1966552|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2404521",
     "tournaments": 22,
     "points": 60975,
     "code": "MD",
@@ -1936,7 +1936,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 14,
     "name": "KANG Min Hyuk / KI Dong Ju",
-    "href": "https://bwfbadminton.com/player/77262/kang-min-hyuk/|https://bwfbadminton.com/player/82494/ki-dong-ju/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1210875|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1323247",
     "tournaments": 15,
     "points": 60873,
     "code": "MD",
@@ -1945,7 +1945,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 15,
     "name": "LEE Jhe-Huei / YANG Po-Hsuan",
-    "href": "https://bwfbadminton.com/player/99102/lee-jhe-huei/|https://bwfbadminton.com/player/76275/yang-po-hsuan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=816279|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1502301",
     "tournaments": 23,
     "points": 59416,
     "code": "MD",
@@ -1954,7 +1954,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 16,
     "name": "CHIU Hsiang Chieh / WANG Chi-Lin",
-    "href": "https://bwfbadminton.com/player/92913/chiu-hsiang-chieh/|https://bwfbadminton.com/player/96514/wang-chi-lin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2880201|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=313472",
     "tournaments": 21,
     "points": 58825,
     "code": "MD",
@@ -1963,7 +1963,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 17,
     "name": "Kim ASTRUP / Anders Skaarup RASMUSSEN",
-    "href": "https://bwfbadminton.com/player/92980/kim-astrup/|https://bwfbadminton.com/player/44414/anders-skaarup-rasmussen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=201882|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=147388",
     "tournaments": 18,
     "points": 53319,
     "code": "MD",
@@ -1972,7 +1972,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 18,
     "name": "Fang-Chih LEE / Fang-Jen LEE",
-    "href": "https://bwfbadminton.com/player/57424/fang-chih-lee/|https://bwfbadminton.com/player/70231/fang-jen-lee/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=890964|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=890993",
     "tournaments": 21,
     "points": 52791,
     "code": "MD",
@@ -1981,7 +1981,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 19,
     "name": "Junaidi ARIF / YAP Roy King",
-    "href": "https://bwfbadminton.com/player/67949/junaidi-arif/|https://bwfbadminton.com/player/88322/roy-king-yap/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2137982|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1654331",
     "tournaments": 19,
     "points": 51954,
     "code": "MD",
@@ -1990,7 +1990,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 20,
     "name": "KANG Khai Xing / Aaron TAI",
-    "href": "https://bwfbadminton.com/player/74331/kang-khai-xing/|https://bwfbadminton.com/player/57397/aaron-tai/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3899213|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3898719",
     "tournaments": 16,
     "points": 51830,
     "code": "MD",
@@ -1999,7 +1999,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 21,
     "name": "Kakeru KUMAGAI / Hiroki NISHI",
-    "href": "https://bwfbadminton.com/player/79906/kakeru-kumagai/|https://bwfbadminton.com/player/63530/hiroki-nishi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3566353|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3566303",
     "tournaments": 18,
     "points": 50318,
     "code": "MD",
@@ -2008,7 +2008,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 22,
     "name": "HU Ke Yuan / LIN Xiang Yi",
-    "href": "https://bwfbadminton.com/player/97601/hu-ke-yuan/|https://bwfbadminton.com/player/62220/lin-xiang-yi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6393337|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6324525",
     "tournaments": 18,
     "points": 47393,
     "code": "MD",
@@ -2017,7 +2017,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 23,
     "name": "Christo POPOV / Toma Junior POPOV",
-    "href": "https://bwfbadminton.com/player/72885/christo-popov/|https://bwfbadminton.com/player/61628/toma-junior-popov/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1995693|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=674117",
     "tournaments": 19,
     "points": 45631,
     "code": "MD",
@@ -2026,7 +2026,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 24,
     "name": "Hariharan AMSAKARUNAN / M.R. ARJUN",
-    "href": "https://bwfbadminton.com/player/69560/hariharan-amsakarunan/|https://bwfbadminton.com/player/98935/m-r-arjun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4102590|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=663325",
     "tournaments": 21,
     "points": 45114,
     "code": "MD",
@@ -2035,7 +2035,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 25,
     "name": "Leo Rolly CARNANDO / Bagas MAULANA",
-    "href": "https://bwfbadminton.com/player/68633/leo-rolly-carnando/|https://bwfbadminton.com/player/79658/bagas-maulana/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1637720|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=406437",
     "tournaments": 12,
     "points": 42556,
     "code": "MD",
@@ -2044,7 +2044,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 26,
     "name": "CHEN ZHI YI / Presley SMITH",
-    "href": "https://bwfbadminton.com/player/62618/chen-zhi-yi/|https://bwfbadminton.com/player/63739/presley-smith/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3163265|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4804477",
     "tournaments": 21,
     "points": 42435,
     "code": "MD",
@@ -2053,7 +2053,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 27,
     "name": "Muhammad Rian ARDIANTO / Rahmat HIDAYAT",
-    "href": "https://bwfbadminton.com/player/91130/muhammad-rian-ardianto/|https://bwfbadminton.com/player/63520/rahmat-hidayat/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=868333|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2066226",
     "tournaments": 13,
     "points": 41949,
     "code": "MD",
@@ -2062,7 +2062,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 28,
     "name": "Takumi NOMURA / Yuichi SHIMOGAMI",
-    "href": "https://bwfbadminton.com/player/78839/takumi-nomura/|https://bwfbadminton.com/player/79501/yuichi-shimogami/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2443967|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4416448",
     "tournaments": 17,
     "points": 41371,
     "code": "MD",
@@ -2071,7 +2071,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 29,
     "name": "Nur Mohd Azriyn Ayub AZRIYN / TAN Wee Kiong",
-    "href": "https://bwfbadminton.com/player/70443/nur-mohd-azriyn-ayub-azriyn/|https://bwfbadminton.com/player/52071/tan-wee-kiong/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=113944|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=107969",
     "tournaments": 20,
     "points": 41350,
     "code": "MD",
@@ -2080,7 +2080,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 30,
     "name": "Ali Faathir RAYHAN / Devin Artha WAHYUDI",
-    "href": "https://bwfbadminton.com/player/72973/ali-faathir-rayhan/|https://bwfbadminton.com/player/76388/devin-artha-wahyudi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3683661|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3555211",
     "tournaments": 14,
     "points": 39470,
     "code": "MD",
@@ -2089,7 +2089,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 31,
     "name": "Hiroki MIDORIKAWA / Kyohei YAMASHITA",
-    "href": "https://bwfbadminton.com/player/64944/hiroki-midorikawa/|https://bwfbadminton.com/player/82009/kyohei-yamashita/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1311347|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1963203",
     "tournaments": 9,
     "points": 39350,
     "code": "MD",
@@ -2098,7 +2098,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 32,
     "name": "HUANG Di / LIU Yang",
-    "href": "https://bwfbadminton.com/player/65491/huang-di/|https://bwfbadminton.com/player/89714/liu-yang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2369507|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6387922",
     "tournaments": 14,
     "points": 38720,
     "code": "MD",
@@ -2107,7 +2107,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 33,
     "name": "CHEN Zhi Ray / LIN Yu Chieh",
-    "href": "https://bwfbadminton.com/player/75829/chen-zhi-ray/|https://bwfbadminton.com/player/92504/lin-yu-chieh/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1617617|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2234895",
     "tournaments": 20,
     "points": 38590,
     "code": "MD",
@@ -2116,7 +2116,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 34,
     "name": "Christian Faust KJÆR / Rasmus KJÆR",
-    "href": "https://bwfbadminton.com/player/75049/christian-faust-kj%C3%86r/|https://bwfbadminton.com/player/64729/rasmus-kj%C3%86r/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2847808|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1583249",
     "tournaments": 11,
     "points": 38074,
     "code": "MD",
@@ -2125,7 +2125,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 35,
     "name": "Peeratchai SUKPHUN / Pakkapon TEERARATSAKUL",
-    "href": "https://bwfbadminton.com/player/84102/peeratchai-sukphun/|https://bwfbadminton.com/player/65674/pakkapon-teeraratsakul/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3213930|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2304711",
     "tournaments": 15,
     "points": 36508,
     "code": "MD",
@@ -2133,8 +2133,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 36,
-    "name": "CHOONG Hon Jian / HAIKAL Muhammad",
-    "href": "https://bwfbadminton.com/player/56350/choong-hon-jian/|https://bwfbadminton.com/player/88642/haikal-muhammad/",
+    "name": "CHOONG Hon Jian / Muhammad HAIKAL",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2619449|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2215161",
     "tournaments": 11,
     "points": 36232,
     "code": "MD",
@@ -2143,7 +2143,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 37,
     "name": "LIU Kuang Heng / YANG Po Han",
-    "href": "https://bwfbadminton.com/player/59609/liu-kuang-heng/|https://bwfbadminton.com/player/59709/yang-po-han/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1690330|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=211428",
     "tournaments": 11,
     "points": 36150,
     "code": "MD",
@@ -2152,7 +2152,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 38,
     "name": "Zhi-Wei HE / HUANG Jui-Hsuan",
-    "href": "https://bwfbadminton.com/player/87535/zhi-wei-he/|https://bwfbadminton.com/player/64023/huang-jui-hsuan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5912717|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2005696",
     "tournaments": 22,
     "points": 35980,
     "code": "MD",
@@ -2161,7 +2161,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 39,
     "name": "CHOI Sol Gyu / GOH V Shem",
-    "href": "https://bwfbadminton.com/player/67810/choi-sol-gyu/|https://bwfbadminton.com/player/54805/goh-v-shem/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=284017|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=107970",
     "tournaments": 15,
     "points": 34970,
     "code": "MD",
@@ -2170,7 +2170,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 40,
     "name": "Christopher GRIMLEY / Matthew GRIMLEY",
-    "href": "https://bwfbadminton.com/player/70028/christopher-grimley/|https://bwfbadminton.com/player/92470/matthew-grimley/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1465990|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1466022",
     "tournaments": 16,
     "points": 34620,
     "code": "MD",
@@ -2179,7 +2179,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 41,
     "name": "Kevin LEE / Ty Alexander LINDEMAN",
-    "href": "https://bwfbadminton.com/player/58493/kevin-lee/|https://bwfbadminton.com/player/63683/ty-alexander-lindeman/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1646675|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1121829",
     "tournaments": 15,
     "points": 33808,
     "code": "MD",
@@ -2188,7 +2188,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 42,
     "name": "Eng Keat Wesley KOH / Junsuke KUBO",
-    "href": "https://bwfbadminton.com/player/70185/eng-keat-wesley-koh/|https://bwfbadminton.com/player/67533/junsuke-kubo/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1699448|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1699412",
     "tournaments": 23,
     "points": 33462,
     "code": "MD",
@@ -2197,7 +2197,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 43,
     "name": "Jiří KRÁL / Ondřej KRÁL",
-    "href": "https://bwfbadminton.com/player/91710/ji%C5%99i-kral/|https://bwfbadminton.com/player/82378/ond%C5%99ej-kral/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1688333|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1220948",
     "tournaments": 18,
     "points": 32663,
     "code": "MD",
@@ -2206,7 +2206,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 44,
     "name": "Eloi ADAM / Leo ROSSI",
-    "href": "https://bwfbadminton.com/player/87403/eloi-adam/|https://bwfbadminton.com/player/96690/leo-rossi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1426878|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=393198",
     "tournaments": 18,
     "points": 32014,
     "code": "MD",
@@ -2215,7 +2215,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 45,
     "name": "Haruki KAWABE / Kenta MATSUKAWA",
-    "href": "https://bwfbadminton.com/player/76165/haruki-kawabe/|https://bwfbadminton.com/player/94252/kenta-matsukawa/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5591990|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3695228",
     "tournaments": 10,
     "points": 31160,
     "code": "MD",
@@ -2224,7 +2224,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 46,
     "name": "Julien MAIO / William VILLEGER",
-    "href": "https://bwfbadminton.com/player/73323/julien-maio/|https://bwfbadminton.com/player/88264/william-villeger/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=300576|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1995906",
     "tournaments": 11,
     "points": 30973,
     "code": "MD",
@@ -2233,7 +2233,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 47,
     "name": "Alex GREEN / Zach RUSS",
-    "href": "https://bwfbadminton.com/player/69360/alex-green/|https://bwfbadminton.com/player/69685/zach-russ/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2038748|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1438642",
     "tournaments": 17,
     "points": 30364,
     "code": "MD",
@@ -2242,7 +2242,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 48,
     "name": "Donovan Willard WEE / Jia Hao Howin WONG",
-    "href": "https://bwfbadminton.com/player/98502/donovan-willard-wee/|https://bwfbadminton.com/player/97717/jia-hao-howin-wong/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2302607|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1336544",
     "tournaments": 18,
     "points": 30100,
     "code": "MD",
@@ -2251,7 +2251,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 49,
     "name": "Hiroki OKAMURA / Kyohei YAMASHITA",
-    "href": "https://bwfbadminton.com/player/86479/hiroki-okamura/|https://bwfbadminton.com/player/82009/kyohei-yamashita/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1454500|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1963203",
     "tournaments": 6,
     "points": 29820,
     "code": "MD",
@@ -2260,7 +2260,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 50,
     "name": "Chaloempon CHAROENKITAMORN / Worrapol THONGSA-NGA",
-    "href": "https://bwfbadminton.com/player/88024/chaloempon-charoenkitamorn/|https://bwfbadminton.com/player/60060/worrapol-thongsa-nga/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1159932|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=406844",
     "tournaments": 18,
     "points": 29501,
     "code": "MD",
@@ -2269,7 +2269,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 51,
     "name": "Pruthvi KRISHNAMURTHY ROY / Sai PRATHEEK.K",
-    "href": "https://bwfbadminton.com/player/77156/pruthvi-krishnamurthy-roy/|https://bwfbadminton.com/player/77389/sai-pratheek-k/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5187320|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2609440",
     "tournaments": 12,
     "points": 29225,
     "code": "MD",
@@ -2278,7 +2278,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 52,
     "name": "ONG Yew Sin / TEO Ee Yi",
-    "href": "https://bwfbadminton.com/player/84064/ong-yew-sin/|https://bwfbadminton.com/player/99066/teo-ee-yi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=206101|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=113955",
     "tournaments": 11,
     "points": 29090,
     "code": "MD",
@@ -2287,7 +2287,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 53,
     "name": "Oliver BUTLER / Samuel JONES",
-    "href": "https://bwfbadminton.com/player/69810/oliver-butler/|https://bwfbadminton.com/player/63421/samuel-jones/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2867081|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2508642",
     "tournaments": 18,
     "points": 29089,
     "code": "MD",
@@ -2296,7 +2296,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 54,
     "name": "CHIA Weijie / LWI Sheng Hao",
-    "href": "https://bwfbadminton.com/player/79732/chia-weijie/|https://bwfbadminton.com/player/93217/lwi-sheng-hao/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1589806|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2533069",
     "tournaments": 9,
     "points": 28930,
     "code": "MD",
@@ -2305,7 +2305,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 55,
     "name": "HUNG Kuei Chun / LUI Chun Wai",
-    "href": "https://bwfbadminton.com/player/88832/hung-kuei-chun/|https://bwfbadminton.com/player/63670/lui-chun-wai/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2637204|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1280117",
     "tournaments": 16,
     "points": 28795,
     "code": "MD",
@@ -2314,7 +2314,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 56,
     "name": "Chia Yen LIN / LIN Yong Sheng",
-    "href": "https://bwfbadminton.com/player/43526/chia-yen-lin/|https://bwfbadminton.com/player/64441/lin-yong-sheng/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6996420|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1032264",
     "tournaments": 13,
     "points": 28150,
     "code": "MD",
@@ -2323,7 +2323,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 57,
     "name": "Bjarne GEISS / Jones Ralfy JANSEN",
-    "href": "https://bwfbadminton.com/player/59472/bjarne-geiss/|https://bwfbadminton.com/player/88726/jones-ralfy-jansen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1337330|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=195600",
     "tournaments": 14,
     "points": 28138,
     "code": "MD",
@@ -2332,7 +2332,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 58,
     "name": "Leo Rolly CARNANDO / Daniel MARTHIN",
-    "href": "https://bwfbadminton.com/player/68633/leo-rolly-carnando/|https://bwfbadminton.com/player/84786/daniel-marthin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1637720|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1938496",
     "tournaments": 6,
     "points": 27770,
     "code": "MD",
@@ -2341,7 +2341,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 59,
     "name": "LOW Hang Yee / NG Eng Cheong",
-    "href": "https://bwfbadminton.com/player/61834/low-hang-yee/|https://bwfbadminton.com/player/87270/ng-eng-cheong/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1228372|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1685496",
     "tournaments": 15,
     "points": 27760,
     "code": "MD",
@@ -2350,7 +2350,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 60,
     "name": "LAI Po Yu / TSAI Fu Cheng",
-    "href": "https://bwfbadminton.com/player/84196/lai-po-yu/|https://bwfbadminton.com/player/93572/tsai-fu-cheng/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4106863|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4106916",
     "tournaments": 13,
     "points": 27750,
     "code": "MD",
@@ -2359,7 +2359,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 61,
     "name": "Pharanyu KAOSAMAANG / Tanadon PUNPANICH",
-    "href": "https://bwfbadminton.com/player/50937/pharanyu-kaosamaang/|https://bwfbadminton.com/player/64682/tanadon-punpanich/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1658917|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2167211",
     "tournaments": 9,
     "points": 26786,
     "code": "MD",
@@ -2368,7 +2368,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 62,
     "name": "Rodion ALIMOV / Maksim OGLOBLIN",
-    "href": "https://bwfbadminton.com/player/99484/rodion-alimov/|https://bwfbadminton.com/player/86904/maksim-ogloblin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1202452|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1249959",
     "tournaments": 15,
     "points": 26710,
     "code": "MD",
@@ -2377,7 +2377,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 63,
     "name": "Fabricio FARIAS / Davi SILVA",
-    "href": "https://bwfbadminton.com/player/69649/fabricio-farias/|https://bwfbadminton.com/player/78948/davi-silva/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1520355|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1521056",
     "tournaments": 10,
     "points": 25581,
     "code": "MD",
@@ -2386,7 +2386,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 64,
     "name": "Alexander DUNN / Adam PRINGLE",
-    "href": "https://bwfbadminton.com/player/67922/alexander-dunn/|https://bwfbadminton.com/player/55493/adam-pringle/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=879458|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1603971",
     "tournaments": 13,
     "points": 25400,
     "code": "MD",
@@ -2395,7 +2395,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 65,
     "name": "CHEN Cheng Kuan / LIU Kuang Heng",
-    "href": "https://bwfbadminton.com/player/64394/chen-cheng-kuan/|https://bwfbadminton.com/player/59609/liu-kuang-heng/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4129809|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1690330",
     "tournaments": 7,
     "points": 25320,
     "code": "MD",
@@ -2404,7 +2404,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 66,
     "name": "Muhammad FAIQ / LOK Hong Quan",
-    "href": "https://bwfbadminton.com/player/92846/muhammad-faiq/|https://bwfbadminton.com/player/55750/lok-hong-quan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3899160|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3899095",
     "tournaments": 19,
     "points": 24880,
     "code": "MD",
@@ -2413,7 +2413,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 67,
     "name": "Mael CATTOEN / Lucas RENOIR",
-    "href": "https://bwfbadminton.com/player/91112/mael-cattoen/|https://bwfbadminton.com/player/78192/lucas-renoir/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3489609|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2017976",
     "tournaments": 11,
     "points": 24875,
     "code": "MD",
@@ -2422,7 +2422,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 68,
     "name": "WEI Chun Wei / Po Chih YANG",
-    "href": "https://bwfbadminton.com/player/74574/wei-chun-wei/|https://bwfbadminton.com/player/73750/po-chih-yang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2149857|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5821412",
     "tournaments": 12,
     "points": 24580,
     "code": "MD",
@@ -2431,7 +2431,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 69,
     "name": "Dev AYYAPPAN / Dhiren AYYAPPAN",
-    "href": "https://bwfbadminton.com/player/77168/dev-ayyappan/|https://bwfbadminton.com/player/79739/dhiren-ayyappan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3222404|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3222551",
     "tournaments": 16,
     "points": 24400,
     "code": "MD",
@@ -2440,7 +2440,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 70,
     "name": "HE Ji Ting / REN Xiang Yu",
-    "href": "https://bwfbadminton.com/player/59673/he-ji-ting/|https://bwfbadminton.com/player/84812/ren-xiang-yu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=661685|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1518247",
     "tournaments": 5,
     "points": 24012,
     "code": "MD",
@@ -2449,7 +2449,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 71,
     "name": "CHEN Cheng Kuan / LIN Bing-Wei",
-    "href": "https://bwfbadminton.com/player/64394/chen-cheng-kuan/|https://bwfbadminton.com/player/73474/lin-bing-wei/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4129809|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2689506",
     "tournaments": 8,
     "points": 23320,
     "code": "MD",
@@ -2458,7 +2458,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 72,
     "name": "Takuto GOTO / Tsubasa YOSHIDA",
-    "href": "https://bwfbadminton.com/player/81856/takuto-goto/|https://bwfbadminton.com/player/90852/tsubasa-yoshida/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2630651|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1692443",
     "tournaments": 8,
     "points": 23290,
     "code": "MD",
@@ -2467,7 +2467,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 73,
     "name": "Malik BOURAKKADI / Kenneth NEUMANN",
-    "href": "https://bwfbadminton.com/player/74871/malik-bourakkadi/|https://bwfbadminton.com/player/65253/kenneth-neumann/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2099192|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2967462",
     "tournaments": 16,
     "points": 23150,
     "code": "MD",
@@ -2476,7 +2476,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 74,
     "name": "Bhargav Ram ARIGELA / Viswa Tej GOBBURU",
-    "href": "https://bwfbadminton.com/player/90307/bhargav-ram-arigela/|https://bwfbadminton.com/player/99941/viswa-tej-gobburu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5290960|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5291076",
     "tournaments": 15,
     "points": 22420,
     "code": "MD",
@@ -2485,7 +2485,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 75,
     "name": "Jonathan DRESP / Simon KRAX",
-    "href": "https://bwfbadminton.com/player/79195/jonathan-dresp/|https://bwfbadminton.com/player/91174/simon-krax/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2972328|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3617181",
     "tournaments": 16,
     "points": 22186,
     "code": "MD",
@@ -2494,7 +2494,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 76,
     "name": "HUANG Tsung-I / LIN Ting-Yu",
-    "href": "https://bwfbadminton.com/player/78126/huang-tsung-i/|https://bwfbadminton.com/player/65791/lin-ting-yu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2757816|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2787787",
     "tournaments": 11,
     "points": 20330,
     "code": "MD",
@@ -2502,8 +2502,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 77,
-    "name": "XIE Haonan / ZENG Wei Han",
-    "href": "https://bwfbadminton.com/player/89909/haonan-xie/|https://bwfbadminton.com/player/66820/zeng-wei-han/",
+    "name": "XIE Hao Nan / ZENG Wei Han",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2370231|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2902391",
     "tournaments": 6,
     "points": 20000,
     "code": "MD",
@@ -2512,7 +2512,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 78,
     "name": "Anselmus Breagit Fredy PRASETYA / Pulung RAMADHAN",
-    "href": "https://bwfbadminton.com/player/73721/anselmus-breagit-fredy-prasetya/|https://bwfbadminton.com/player/90524/pulung-ramadhan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2904134|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2904318",
     "tournaments": 12,
     "points": 19930,
     "code": "MD",
@@ -2521,7 +2521,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 79,
     "name": "JIN Yong / NA Sung Seung",
-    "href": "https://bwfbadminton.com/player/74816/yong-jin/|https://bwfbadminton.com/player/82502/na-sung-seung/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1329348|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1318908",
     "tournaments": 4,
     "points": 19640,
     "code": "MD",
@@ -2530,7 +2530,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 80,
     "name": "Tori AIZAWA / Daisuke SANO",
-    "href": "https://bwfbadminton.com/player/58487/tori-aizawa/|https://bwfbadminton.com/player/87236/daisuke-sano/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6378535|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6440415",
     "tournaments": 9,
     "points": 19460,
     "code": "MD",
@@ -2539,7 +2539,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 81,
     "name": "Shuntaro MEZAKI / Yuta OKU",
-    "href": "https://bwfbadminton.com/player/64064/shuntaro-mezaki/|https://bwfbadminton.com/player/98301/yuta-oku/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1311928|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3137484",
     "tournaments": 7,
     "points": 19410,
     "code": "MD",
@@ -2548,7 +2548,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 82,
     "name": "SU Ching Heng / WU Guan Xun",
-    "href": "https://bwfbadminton.com/player/88829/su-ching-heng/|https://bwfbadminton.com/player/99841/wu-guan-xun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=462804|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1617581",
     "tournaments": 7,
     "points": 19390,
     "code": "MD",
@@ -2557,7 +2557,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 83,
     "name": "Yann ORTEU / Minh Quang PHAM",
-    "href": "https://bwfbadminton.com/player/97214/yann-orteu/|https://bwfbadminton.com/player/91987/minh-quang-pham/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1950224|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2049888",
     "tournaments": 15,
     "points": 18929,
     "code": "MD",
@@ -2566,7 +2566,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 84,
     "name": "Arden Quan LEE / Stanley XING",
-    "href": "https://bwfbadminton.com/player/71658/arden-quan-lee/|https://bwfbadminton.com/player/64105/stanley-xing/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4893751|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5566232",
     "tournaments": 11,
     "points": 18748,
     "code": "MD",
@@ -2575,7 +2575,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 85,
     "name": "LAU Yi Sheng / LIM Tze Jian",
-    "href": "https://bwfbadminton.com/player/98815/lau-yi-sheng/|https://bwfbadminton.com/player/77752/lim-tze-jian/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2533024|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2142803",
     "tournaments": 13,
     "points": 18440,
     "code": "MD",
@@ -2584,7 +2584,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 86,
     "name": "CHIA Weijie / TEO Ee Yi",
-    "href": "https://bwfbadminton.com/player/79732/chia-weijie/|https://bwfbadminton.com/player/99066/teo-ee-yi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1589806|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=113955",
     "tournaments": 5,
     "points": 18360,
     "code": "MD",
@@ -2593,7 +2593,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 87,
     "name": "Kenya MITSUHASHI / Hiroki OKAMURA",
-    "href": "https://bwfbadminton.com/player/96604/kenya-mitsuhashi/|https://bwfbadminton.com/player/86479/hiroki-okamura/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1023064|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1454500",
     "tournaments": 7,
     "points": 18240,
     "code": "MD",
@@ -2602,7 +2602,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 88,
     "name": "Robin HARPER / Harry WAKEFIELD",
-    "href": "https://bwfbadminton.com/player/78079/robin-harper/|https://bwfbadminton.com/player/84505/harry-wakefield/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4378900|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4905762",
     "tournaments": 19,
     "points": 18230,
     "code": "MD",
@@ -2611,7 +2611,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 89,
     "name": "Jacobo FERNANDEZ / Alberto PERALS",
-    "href": "https://bwfbadminton.com/player/64646/jacobo-fernandez/|https://bwfbadminton.com/player/61331/alberto-perals/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2190034|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2407123",
     "tournaments": 14,
     "points": 18152,
     "code": "MD",
@@ -2619,8 +2619,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 90,
-    "name": "JIN Yong / LEE JONGMIN",
-    "href": "https://bwfbadminton.com/player/74816/yong-jin/|https://bwfbadminton.com/player/62804/jongmin-lee/",
+    "name": "JIN Yong / LEE Jong Min",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1329348|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2758542",
     "tournaments": 5,
     "points": 18150,
     "code": "MD",
@@ -2629,7 +2629,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 91,
     "name": "Muh Putra ERWIANSYAH / Daniel Edgar MARVINO",
-    "href": "https://bwfbadminton.com/player/81812/muh-putra-erwiansyah/|https://bwfbadminton.com/player/91483/daniel-edgar-marvino/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2133742|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2575381",
     "tournaments": 6,
     "points": 17900,
     "code": "MD",
@@ -2638,7 +2638,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 92,
     "name": "Achutaditya Rao DODDAVARAPU / POCHANA Arjun Reddy",
-    "href": "https://bwfbadminton.com/player/58201/achutaditya-rao-doddavarapu/|https://bwfbadminton.com/player/54044/pochana-arjun-reddy/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2781033|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=465160",
     "tournaments": 15,
     "points": 17770,
     "code": "MD",
@@ -2647,7 +2647,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 93,
     "name": "Krishna Prasad GARAGA / Pruthvi KRISHNAMURTHY ROY",
-    "href": "https://bwfbadminton.com/player/74827/krishna-prasad-garaga/|https://bwfbadminton.com/player/77156/pruthvi-krishnamurthy-roy/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1204809|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5187320",
     "tournaments": 5,
     "points": 17450,
     "code": "MD",
@@ -2656,7 +2656,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 94,
     "name": "Solomon Jr. PADIZ / Julius VILLABRILLE",
-    "href": "https://bwfbadminton.com/player/63053/solomon-jr-padiz/|https://bwfbadminton.com/player/58220/julius-villabrille/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2017291|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5436941",
     "tournaments": 10,
     "points": 17140,
     "code": "MD",
@@ -2665,7 +2665,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 95,
     "name": "Scott GUILDEA / Paul REYNOLDS",
-    "href": "https://bwfbadminton.com/player/63756/scott-guildea/|https://bwfbadminton.com/player/92985/paul-reynolds/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3696602|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1351256",
     "tournaments": 15,
     "points": 16930,
     "code": "MD",
@@ -2674,7 +2674,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 96,
     "name": "Baptiste LABARTHE / Quentin RONGET",
-    "href": "https://bwfbadminton.com/player/98466/baptiste-labarthe/|https://bwfbadminton.com/player/96472/quentin-ronget/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3489364|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2875604",
     "tournaments": 11,
     "points": 16870,
     "code": "MD",
@@ -2683,7 +2683,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 97,
     "name": "VojtěCh HAVLÍČEK / Tomáš ŠVEJDA",
-    "href": "https://bwfbadminton.com/player/63359/vojt%C4%9Bch-havli%C4%8Cek/|https://bwfbadminton.com/player/57288/toma%C5%A1-%C5%A0vejda/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4378087|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2032383",
     "tournaments": 17,
     "points": 16820,
     "code": "MD",
@@ -2692,7 +2692,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 98,
     "name": "Dechapol PUAVARANUKROH / Kittinupong KEDREN",
-    "href": "https://bwfbadminton.com/player/61731/dechapol-puavaranukroh/|https://bwfbadminton.com/player/73633/kittinupong-kedren/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=314834|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=314835",
     "tournaments": 5,
     "points": 16620,
     "code": "MD",
@@ -2701,7 +2701,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 99,
     "name": "Mio MOLIN / Max SVENSSON",
-    "href": "https://bwfbadminton.com/player/89504/mio-molin/|https://bwfbadminton.com/player/75417/max-svensson/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4272075|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2375724",
     "tournaments": 14,
     "points": 16323,
     "code": "MD",
@@ -2709,8 +2709,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 100,
-    "name": "Dinh Hoang NGUYEN / Dinh Manh TRAN",
-    "href": "https://bwfbadminton.com/player/59241/dinh-hoang-nguyen/|https://bwfbadminton.com/player/66798/dinh-manh-tran/",
+    "name": "NGUYEN Dinh Hoang / TRAN Dinh Manh",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2162888|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2162846",
     "tournaments": 11,
     "points": 16250,
     "code": "MD",
@@ -2719,7 +2719,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 1,
     "name": "LIU Sheng Shu / TAN Ning",
-    "href": "https://bwfbadminton.com/player/81599/liu-sheng-shu/|https://bwfbadminton.com/player/59880/tan-ning/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4260233|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3724042",
     "tournaments": 16,
     "points": 113317,
     "code": "WD",
@@ -2728,7 +2728,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 2,
     "name": "BAEK Ha Na / LEE So Hee",
-    "href": "https://bwfbadminton.com/player/56706/baek-ha-na/|https://bwfbadminton.com/player/91292/lee-so-hee/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1333025|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=161611",
     "tournaments": 15,
     "points": 102334,
     "code": "WD",
@@ -2737,7 +2737,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 3,
     "name": "Yuki FUKUSHIMA / Mayu MATSUMOTO",
-    "href": "https://bwfbadminton.com/player/71023/yuki-fukushima/|https://bwfbadminton.com/player/81609/mayu-matsumoto/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=239771|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1140903",
     "tournaments": 16,
     "points": 97006,
     "code": "WD",
@@ -2746,7 +2746,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 4,
     "name": "JIA Yi Fan / ZHANG Shu Xian",
-    "href": "https://bwfbadminton.com/player/65144/jia-yi-fan/|https://bwfbadminton.com/player/85914/zhang-shu-xian/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=821762|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1936649",
     "tournaments": 15,
     "points": 90460,
     "code": "WD",
@@ -2754,8 +2754,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 5,
-    "name": "TAN Pearly / THINAAH Muralitharan",
-    "href": "https://bwfbadminton.com/player/85551/tan-pearly/|https://bwfbadminton.com/player/68628/thinaah-muralitharan/",
+    "name": "Pearly TAN / THINAAH Muralitharan",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1591637|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=361604",
     "tournaments": 18,
     "points": 80720,
     "code": "WD",
@@ -2764,7 +2764,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 6,
     "name": "KIM Hye Jeong / KONG Hee Yong",
-    "href": "https://bwfbadminton.com/player/83419/kim-hye-jeong/|https://bwfbadminton.com/player/71391/kong-hee-yong/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1025550|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=369619",
     "tournaments": 11,
     "points": 79217,
     "code": "WD",
@@ -2773,7 +2773,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 7,
     "name": "Rin IWANAGA / Kie NAKANISHI",
-    "href": "https://bwfbadminton.com/player/88135/rin-iwanaga/|https://bwfbadminton.com/player/87428/kie-nakanishi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2421503|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=391563",
     "tournaments": 19,
     "points": 75664,
     "code": "WD",
@@ -2782,7 +2782,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 8,
     "name": "LI Yi Jing / LUO Xu Min",
-    "href": "https://bwfbadminton.com/player/85540/li-yi-jing/|https://bwfbadminton.com/player/65300/luo-xu-min/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2866517|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2902575",
     "tournaments": 10,
     "points": 69317,
     "code": "WD",
@@ -2791,7 +2791,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 9,
     "name": "Rachel Allessya ROSE / Febi SETIANINGRUM",
-    "href": "https://bwfbadminton.com/player/94567/rachel-allessya-rose/|https://bwfbadminton.com/player/55481/febi-setianingrum/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2573340|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2066306",
     "tournaments": 18,
     "points": 62676,
     "code": "WD",
@@ -2800,7 +2800,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 10,
     "name": "HSIEH Pei Shan / HUNG En-Tzu",
-    "href": "https://bwfbadminton.com/player/95062/hsieh-pei-shan/|https://bwfbadminton.com/player/62639/hung-en-tzu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=856330|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1622451",
     "tournaments": 21,
     "points": 61315,
     "code": "WD",
@@ -2809,7 +2809,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 11,
     "name": "Febriana Dwipuji KUSUMA / Meilysa Trias PUSPITASARI",
-    "href": "https://bwfbadminton.com/player/79664/febriana-dwipuji-kusuma/|https://bwfbadminton.com/player/82364/meilysa-trias-puspitasari/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1271865|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1943223",
     "tournaments": 19,
     "points": 60774,
     "code": "WD",
@@ -2818,7 +2818,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 12,
     "name": "Gabriela STOEVA / Stefani STOEVA",
-    "href": "https://bwfbadminton.com/player/43840/gabriela-stoeva/|https://bwfbadminton.com/player/46169/stefani-stoeva/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=108971|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=113472",
     "tournaments": 20,
     "points": 59476,
     "code": "WD",
@@ -2827,7 +2827,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 13,
     "name": "HSU Yin-Hui / LIN Jhih Yun",
-    "href": "https://bwfbadminton.com/player/96973/hsu-yin-hui/|https://bwfbadminton.com/player/69009/lin-jhih-yun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3247019|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1602583",
     "tournaments": 28,
     "points": 58464,
     "code": "WD",
@@ -2836,7 +2836,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 14,
     "name": "Rui HIROKAMI / Sayaka HOBARA",
-    "href": "https://bwfbadminton.com/player/84159/rui-hirokami/|https://bwfbadminton.com/player/59014/sayaka-hobara/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3356593|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1963250",
     "tournaments": 17,
     "points": 56620,
     "code": "WD",
@@ -2845,7 +2845,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 15,
     "name": "Arisa IGARASHI / Chiharu SHIDA",
-    "href": "https://bwfbadminton.com/player/79558/arisa-igarashi/|https://bwfbadminton.com/player/68282/chiharu-shida/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=391576|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=391572",
     "tournaments": 15,
     "points": 53819,
     "code": "WD",
@@ -2854,7 +2854,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 16,
     "name": "Amallia Cahaya PRATIWI / Siti Fadia Silva RAMADHANTI",
-    "href": "https://bwfbadminton.com/player/67761/amallia-cahaya-pratiwi/|https://bwfbadminton.com/player/88097/siti-fadia-silva-ramadhanti/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2094152|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1192590",
     "tournaments": 13,
     "points": 53363,
     "code": "WD",
@@ -2863,7 +2863,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 17,
     "name": "HSU Ya Ching / SUNG Yu-Hsuan",
-    "href": "https://bwfbadminton.com/player/74561/hsu-ya-ching/|https://bwfbadminton.com/player/65349/sung-yu-hsuan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=115786|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4940523",
     "tournaments": 27,
     "points": 51749,
     "code": "WD",
@@ -2872,7 +2872,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 18,
     "name": "Lauren LAM / Allison Quynh LEE",
-    "href": "https://bwfbadminton.com/player/69091/lauren-lam/|https://bwfbadminton.com/player/65708/allison-quynh-lee/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2854417|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2980875",
     "tournaments": 17,
     "points": 50349,
     "code": "WD",
@@ -2881,7 +2881,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 19,
     "name": "YEUNG Nga Ting / YEUNG Pui Lam",
-    "href": "https://bwfbadminton.com/player/68015/yeung-nga-ting/|https://bwfbadminton.com/player/75864/yeung-pui-lam/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=362698|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=883002",
     "tournaments": 18,
     "points": 50204,
     "code": "WD",
@@ -2890,7 +2890,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 20,
     "name": "Hinata SUZUKI / Nao YAMAKITA",
-    "href": "https://bwfbadminton.com/player/76295/hinata-suzuki/|https://bwfbadminton.com/player/66794/nao-yamakita/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2165305|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3336454",
     "tournaments": 15,
     "points": 49457,
     "code": "WD",
@@ -2899,7 +2899,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 21,
     "name": "Kaho OSAWA / Mai TANABE",
-    "href": "https://bwfbadminton.com/player/67816/kaho-osawa/|https://bwfbadminton.com/player/92279/mai-tanabe/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2446482|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3695865",
     "tournaments": 20,
     "points": 47850,
     "code": "WD",
@@ -2908,7 +2908,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 22,
     "name": "Bengisu ERCETIN / Nazlıcan INCI",
-    "href": "https://bwfbadminton.com/player/62426/bengisu-ercetin/|https://bwfbadminton.com/player/73023/nazl%C4%B1can-inci/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1149489|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=814027",
     "tournaments": 19,
     "points": 47402,
     "code": "WD",
@@ -2917,7 +2917,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 23,
     "name": "ONG Xin Yee / Carmen TING",
-    "href": "https://bwfbadminton.com/player/80386/ong-xin-yee/|https://bwfbadminton.com/player/60219/carmen-ting/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3315780|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3899342",
     "tournaments": 27,
     "points": 47133,
     "code": "WD",
@@ -2926,7 +2926,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 24,
     "name": "LUO Yi / WANG Ting Ge",
-    "href": "https://bwfbadminton.com/player/97313/luo-yi/|https://bwfbadminton.com/player/62035/wang-ting-ge/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5315206|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4276780",
     "tournaments": 16,
     "points": 45463,
     "code": "WD",
@@ -2935,7 +2935,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 25,
     "name": "Francesca CORBETT / Jennie GAI",
-    "href": "https://bwfbadminton.com/player/61882/francesca-corbett/|https://bwfbadminton.com/player/83074/jennie-gai/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2981376|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1987789",
     "tournaments": 24,
     "points": 44696,
     "code": "WD",
@@ -2944,7 +2944,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 26,
     "name": "Polina BUHROVA / Yevheniia KANTEMYR",
-    "href": "https://bwfbadminton.com/player/96877/polina-buhrova/|https://bwfbadminton.com/player/94032/yevheniia-kantemyr/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2407909|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2622882",
     "tournaments": 29,
     "points": 44444,
     "code": "WD",
@@ -2953,7 +2953,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 27,
     "name": "Treesa JOLLY / GAYATRI GOPICHAND PULLELA",
-    "href": "https://bwfbadminton.com/player/71612/treesa-jolly/|https://bwfbadminton.com/player/59966/gayatri-gopichand-pullela/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2616902|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1567798",
     "tournaments": 10,
     "points": 44192,
     "code": "WD",
@@ -2962,7 +2962,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 28,
     "name": "Margot LAMBERT / Camille POGNANTE",
-    "href": "https://bwfbadminton.com/player/99891/margot-lambert/|https://bwfbadminton.com/player/84050/camille-pognante/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1355183|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3489805",
     "tournaments": 12,
     "points": 43623,
     "code": "WD",
@@ -2971,7 +2971,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 29,
     "name": "Ririna HIRAMOTO / Kokona ISHIKAWA",
-    "href": "https://bwfbadminton.com/player/86778/ririna-hiramoto/|https://bwfbadminton.com/player/85452/kokona-ishikawa/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4140072|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2272424",
     "tournaments": 17,
     "points": 42650,
     "code": "WD",
@@ -2980,7 +2980,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 30,
     "name": "CHANG Ching Hui / YANG Ching Tun",
-    "href": "https://bwfbadminton.com/player/75270/chang-ching-hui/|https://bwfbadminton.com/player/78687/yang-ching-tun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=347690|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1275089",
     "tournaments": 22,
     "points": 41825,
     "code": "WD",
@@ -2989,7 +2989,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 31,
     "name": "LIN Chih-Chun / YANG Chu Yun",
-    "href": "https://bwfbadminton.com/player/85808/lin-chih-chun/|https://bwfbadminton.com/player/70860/yang-chu-yun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2697137|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4064684",
     "tournaments": 10,
     "points": 40640,
     "code": "WD",
@@ -2998,7 +2998,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 32,
     "name": "HU Ling Fang / JHENG Yu Chieh",
-    "href": "https://bwfbadminton.com/player/87176/hu-ling-fang/|https://bwfbadminton.com/player/82732/jheng-yu-chieh/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1061615|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3313172",
     "tournaments": 19,
     "points": 40520,
     "code": "WD",
@@ -3007,7 +3007,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 33,
     "name": "Hathaithip MIJAD / Napapakorn TUNGKASATAN",
-    "href": "https://bwfbadminton.com/player/76091/hathaithip-mijad/|https://bwfbadminton.com/player/84839/napapakorn-tungkasatan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4167689|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4354874",
     "tournaments": 20,
     "points": 38773,
     "code": "WD",
@@ -3016,7 +3016,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 34,
     "name": "LUI Lok Lok / TSANG Hiu Yan",
-    "href": "https://bwfbadminton.com/player/87893/lui-lok-lok/|https://bwfbadminton.com/player/95205/tsang-hiu-yan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=883118|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1280449",
     "tournaments": 19,
     "points": 37994,
     "code": "WD",
@@ -3025,7 +3025,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 35,
     "name": "Isyana Syahira MEIDA / Rinjani Kwinnara NASTINE",
-    "href": "https://bwfbadminton.com/player/80653/isyana-syahira-meida/|https://bwfbadminton.com/player/87259/rinjani-kwinnara-nastine/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2904594|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3580547",
     "tournaments": 14,
     "points": 37620,
     "code": "WD",
@@ -3034,7 +3034,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 36,
     "name": "LIN Xiao Min / WANG Yu Qiao",
-    "href": "https://bwfbadminton.com/player/65203/lin-xiao-min/|https://bwfbadminton.com/player/82408/wang-yu-qiao/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=409884|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2250232",
     "tournaments": 12,
     "points": 35180,
     "code": "WD",
@@ -3043,7 +3043,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 37,
     "name": "Julie MACPHERSON / Ciara TORRANCE",
-    "href": "https://bwfbadminton.com/player/91715/julie-macpherson/|https://bwfbadminton.com/player/92277/ciara-torrance/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1340691|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1566561",
     "tournaments": 14,
     "points": 35150,
     "code": "WD",
@@ -3052,7 +3052,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 38,
     "name": "JEONG Na Eun / LEE Yeon Woo",
-    "href": "https://bwfbadminton.com/player/99778/jeong-na-eun/|https://bwfbadminton.com/player/80005/lee-yeon-woo/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1327100|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1326972",
     "tournaments": 7,
     "points": 34960,
     "code": "WD",
@@ -3061,7 +3061,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 39,
     "name": "Jackie DENT / Crystal LAI",
-    "href": "https://bwfbadminton.com/player/56934/jackie-dent/|https://bwfbadminton.com/player/64767/crystal-lai/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3546397|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2578400",
     "tournaments": 17,
     "points": 34306,
     "code": "WD",
@@ -3070,7 +3070,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 40,
     "name": "Kavipriya SELVAM / Simran SINGHI",
-    "href": "https://bwfbadminton.com/player/81727/kavipriya-selvam/|https://bwfbadminton.com/player/75190/simran-singhi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2374217|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1446213",
     "tournaments": 18,
     "points": 33053,
     "code": "WD",
@@ -3079,7 +3079,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 41,
     "name": "Sayaka HIROTA / Ayako SAKURAMOTO",
-    "href": "https://bwfbadminton.com/player/94519/sayaka-hirota/|https://bwfbadminton.com/player/83211/ayako-sakuramoto/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=314851|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=314828",
     "tournaments": 6,
     "points": 33010,
     "code": "WD",
@@ -3088,7 +3088,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 42,
     "name": "Sumire NAKADE / Miyu TAKAHASHI",
-    "href": "https://bwfbadminton.com/player/19726/sumire-nakade/|https://bwfbadminton.com/player/70692/miyu-takahashi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=8627935|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2630696",
     "tournaments": 6,
     "points": 32020,
     "code": "WD",
@@ -3097,7 +3097,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 43,
     "name": "Benyapa AIMSAARD / Nuntakarn AIMSAARD",
-    "href": "https://bwfbadminton.com/player/80871/benyapa-aimsaard/|https://bwfbadminton.com/player/79198/nuntakarn-aimsaard/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1485450|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1350742",
     "tournaments": 6,
     "points": 30710,
     "code": "WD",
@@ -3106,7 +3106,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 44,
     "name": "Phattharin AIAMVAREESRISAKUL / Sarisa JANPENG",
-    "href": "https://bwfbadminton.com/player/99375/phattharin-aiamvareesrisakul/|https://bwfbadminton.com/player/88785/sarisa-janpeng/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4324518|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6125030",
     "tournaments": 17,
     "points": 30000,
     "code": "WD",
@@ -3115,7 +3115,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 45,
     "name": "Ashwini BHAT K. / Shikha GAUTAM",
-    "href": "https://bwfbadminton.com/player/97171/ashwini-bhat-k/|https://bwfbadminton.com/player/77808/shikha-gautam/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1278253|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=349945",
     "tournaments": 16,
     "points": 29990,
     "code": "WD",
@@ -3124,7 +3124,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 46,
     "name": "Paula LOPEZ / Lucia RODRIGUEZ",
-    "href": "https://bwfbadminton.com/player/55668/paula-lopez/|https://bwfbadminton.com/player/92404/lucia-rodriguez/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1304247|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2598218",
     "tournaments": 15,
     "points": 29505,
     "code": "WD",
@@ -3133,7 +3133,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 47,
     "name": "Priya KONJENGBAM / Shruti MISHRA",
-    "href": "https://bwfbadminton.com/player/50322/priya-konjengbam/|https://bwfbadminton.com/player/57265/shruti-mishra/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2270067|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2014874",
     "tournaments": 16,
     "points": 29395,
     "code": "WD",
@@ -3142,7 +3142,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 48,
     "name": "KIM Yu Jung / LEE Yu Lim",
-    "href": "https://bwfbadminton.com/player/73838/kim-yu-jung/|https://bwfbadminton.com/player/66115/lee-yu-lim/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2017226|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1326940",
     "tournaments": 9,
     "points": 29010,
     "code": "WD",
@@ -3151,7 +3151,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 49,
     "name": "Nanako HARA / Riko KIYOSE",
-    "href": "https://bwfbadminton.com/player/92989/nanako-hara/|https://bwfbadminton.com/player/68304/riko-kiyose/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6439952|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5957024",
     "tournaments": 11,
     "points": 28490,
     "code": "WD",
@@ -3160,7 +3160,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 50,
     "name": "Paulina CYBULSKA / Kornelia MARCZAK",
-    "href": "https://bwfbadminton.com/player/74487/paulina-cybulska/|https://bwfbadminton.com/player/77380/kornelia-marczak/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2252375|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1669861",
     "tournaments": 15,
     "points": 28397,
     "code": "WD",
@@ -3169,7 +3169,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 51,
     "name": "Rutaparna PANDA / Swetaparna PANDA",
-    "href": "https://bwfbadminton.com/player/80547/rutaparna-panda/|https://bwfbadminton.com/player/67676/swetaparna-panda/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2123947|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4205830",
     "tournaments": 16,
     "points": 28340,
     "code": "WD",
@@ -3177,8 +3177,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 52,
-    "name": "Zi Yu LOW / Noraqilah MAISARAH",
-    "href": "https://bwfbadminton.com/player/23008/zi-yu-low/|https://bwfbadminton.com/player/71883/noraqilah-maisarah/",
+    "name": "LOW Zi Yu / Noraqilah MAISARAH",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6854900|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4391770",
     "tournaments": 11,
     "points": 27839,
     "code": "WD",
@@ -3187,7 +3187,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 53,
     "name": "Jaqueline LIMA / Samia LIMA",
-    "href": "https://bwfbadminton.com/player/57457/jaqueline-lima/|https://bwfbadminton.com/player/76507/samia-lima/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1520561|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=404643",
     "tournaments": 11,
     "points": 27750,
     "code": "WD",
@@ -3196,7 +3196,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 54,
     "name": "Yan Fei CHEN / Liang Ching SUN",
-    "href": "https://bwfbadminton.com/player/71848/yan-fei-chen/|https://bwfbadminton.com/player/85508/liang-ching-sun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5950170|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5950111",
     "tournaments": 12,
     "points": 27610,
     "code": "WD",
@@ -3204,8 +3204,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 55,
-    "name": "BAO Li Jing / Zi Han CAO",
-    "href": "https://bwfbadminton.com/player/62277/bao-li-jing/|https://bwfbadminton.com/player/18889/zi-han-cao/",
+    "name": "BAO Li Jing / CAO Zi Han",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6391577|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=7522319",
     "tournaments": 5,
     "points": 27590,
     "code": "WD",
@@ -3214,7 +3214,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 56,
     "name": "Yu Hsuan CHEN / LIU Chiao-Yun",
-    "href": "https://bwfbadminton.com/player/96026/yu-hsuan-chen/|https://bwfbadminton.com/player/77949/liu-chiao-yun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6075281|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1354699",
     "tournaments": 12,
     "points": 27540,
     "code": "WD",
@@ -3223,7 +3223,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 57,
     "name": "FAN Ka Yan / YAU Mau Ying",
-    "href": "https://bwfbadminton.com/player/95905/fan-ka-yan/|https://bwfbadminton.com/player/80024/yau-mau-ying/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1000300|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1264006",
     "tournaments": 11,
     "points": 26970,
     "code": "WD",
@@ -3232,7 +3232,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 58,
     "name": "Kathrine VANG / Mette WERGE",
-    "href": "https://bwfbadminton.com/player/61633/kathrine-vang/|https://bwfbadminton.com/player/67290/mette-werge/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3633175|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3053497",
     "tournaments": 15,
     "points": 26863,
     "code": "WD",
@@ -3241,7 +3241,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 59,
     "name": "Siti Sarah AZZAHRA / Az Zahra Ditya RAMADHANI",
-    "href": "https://bwfbadminton.com/player/99911/siti-sarah-azzahra/|https://bwfbadminton.com/player/56042/az-zahra-ditya-ramadhani/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2079524|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3564141",
     "tournaments": 9,
     "points": 26390,
     "code": "WD",
@@ -3250,7 +3250,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 60,
     "name": "Lanny Tria MAYASARI / Apriyani RAHAYU",
-    "href": "https://bwfbadminton.com/player/57560/lanny-tria-mayasari/|https://bwfbadminton.com/player/81462/apriyani-rahayu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1286245|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=868330",
     "tournaments": 8,
     "points": 26260,
     "code": "WD",
@@ -3259,7 +3259,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 61,
     "name": "Lisa CURTIN / Sian KELLY",
-    "href": "https://bwfbadminton.com/player/75744/lisa-curtin/|https://bwfbadminton.com/player/81761/sian-kelly/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2867171|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1609316",
     "tournaments": 10,
     "points": 25705,
     "code": "WD",
@@ -3268,7 +3268,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 62,
     "name": "CHONG Jie Yu / Vanessa NG",
-    "href": "https://bwfbadminton.com/player/60752/chong-jie-yu/|https://bwfbadminton.com/player/98309/vanessa-ng/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3334055|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2303450",
     "tournaments": 18,
     "points": 24610,
     "code": "WD",
@@ -3277,7 +3277,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 63,
     "name": "Lanny Tria MAYASARI / Amallia Cahaya PRATIWI",
-    "href": "https://bwfbadminton.com/player/57560/lanny-tria-mayasari/|https://bwfbadminton.com/player/67761/amallia-cahaya-pratiwi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1286245|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2094152",
     "tournaments": 8,
     "points": 24550,
     "code": "WD",
@@ -3286,7 +3286,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 64,
     "name": "Natasja P. ANTHONISEN / Amalie Cecilie KUDSK",
-    "href": "https://bwfbadminton.com/player/95814/natasja-p-anthonisen/|https://bwfbadminton.com/player/68532/amalie-cecilie-kudsk/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2148739|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2151565",
     "tournaments": 9,
     "points": 24310,
     "code": "WD",
@@ -3295,7 +3295,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 65,
     "name": "Malena NORRMAN / Tilda SJOO",
-    "href": "https://bwfbadminton.com/player/78641/malena-norrman/|https://bwfbadminton.com/player/60603/tilda-sjoo/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1662980|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1454085",
     "tournaments": 13,
     "points": 24267,
     "code": "WD",
@@ -3304,7 +3304,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 66,
     "name": "Abbygael HARRIS / Lizzie TOLMAN",
-    "href": "https://bwfbadminton.com/player/61095/abbygael-harris/|https://bwfbadminton.com/player/68221/lizzie-tolman/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2032769|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1282911",
     "tournaments": 10,
     "points": 23860,
     "code": "WD",
@@ -3313,7 +3313,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 67,
     "name": "Simona PILGAARD / Signe SCHULZ",
-    "href": "https://bwfbadminton.com/player/79832/simona-pilgaard/|https://bwfbadminton.com/player/89885/signe-schulz/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3107911|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2151481",
     "tournaments": 9,
     "points": 23070,
     "code": "WD",
@@ -3322,7 +3322,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 68,
     "name": "Laudya Chelsea GRISELDA / Nozomi SHIMIZU",
-    "href": "https://bwfbadminton.com/player/97046/laudya-chelsea-griselda/|https://bwfbadminton.com/player/90442/nozomi-shimizu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3580447|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=391573",
     "tournaments": 16,
     "points": 23030,
     "code": "WD",
@@ -3331,7 +3331,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 69,
     "name": "Kirsten DE WIT / Meerte LOOS",
-    "href": "https://bwfbadminton.com/player/88278/kirsten-de-wit/|https://bwfbadminton.com/player/68201/meerte-loos/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2597813|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4034312",
     "tournaments": 14,
     "points": 21827,
     "code": "WD",
@@ -3340,7 +3340,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 70,
     "name": "Nikol CARULLA / Carmen Maria JIMENEZ",
-    "href": "https://bwfbadminton.com/player/62858/nikol-carulla/|https://bwfbadminton.com/player/73941/carmen-maria-jimenez/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3470538|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4290876",
     "tournaments": 17,
     "points": 21822,
     "code": "WD",
@@ -3349,7 +3349,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 71,
     "name": "Amy ACKERMAN / Johanita SCHOLTZ",
-    "href": "https://bwfbadminton.com/player/62110/amy-ackerman/|https://bwfbadminton.com/player/75193/johanita-scholtz/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2590876|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1055714",
     "tournaments": 11,
     "points": 21701,
     "code": "WD",
@@ -3358,7 +3358,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 72,
     "name": "HSIEH Mi Yen / YU Chien Hui",
-    "href": "https://bwfbadminton.com/player/56318/hsieh-mi-yen/|https://bwfbadminton.com/player/75154/yu-chien-hui/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3290826|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=347222",
     "tournaments": 10,
     "points": 21380,
     "code": "WD",
@@ -3367,7 +3367,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 73,
     "name": "Yasemen BEKTAS / Sinem YILDIZ",
-    "href": "https://bwfbadminton.com/player/86621/yasemen-bektas/|https://bwfbadminton.com/player/91978/sinem-yildiz/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2337433|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4230887",
     "tournaments": 11,
     "points": 21350,
     "code": "WD",
@@ -3376,7 +3376,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 74,
     "name": "Martina CORSINI / Emma PICCININ",
-    "href": "https://bwfbadminton.com/player/95423/martina-corsini/|https://bwfbadminton.com/player/61917/emma-piccinin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1423411|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2858695",
     "tournaments": 13,
     "points": 21012,
     "code": "WD",
@@ -3385,7 +3385,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 75,
     "name": "Ornnicha JONGSATHAPORNPARN / Sukitta SUWACHAI",
-    "href": "https://bwfbadminton.com/player/99988/ornnicha-jongsathapornparn/|https://bwfbadminton.com/player/60245/sukitta-suwachai/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1144144|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3610416",
     "tournaments": 7,
     "points": 20680,
     "code": "WD",
@@ -3394,7 +3394,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 76,
     "name": "CHOU Yun An / SUNG Yi-Hsuan",
-    "href": "https://bwfbadminton.com/player/47296/yun-an-chou/|https://bwfbadminton.com/player/80667/sung-yi-hsuan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6631517|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2005804",
     "tournaments": 10,
     "points": 20650,
     "code": "WD",
@@ -3403,7 +3403,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 77,
     "name": "CHEN Su Yu / Yi En HSIEH",
-    "href": "https://bwfbadminton.com/player/71673/chen-su-yu/|https://bwfbadminton.com/player/95958/yi-en-hsieh/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=655842|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5580576",
     "tournaments": 8,
     "points": 20650,
     "code": "WD",
@@ -3412,7 +3412,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 78,
     "name": "Lærke HVID / Anna KLAUSHOLM",
-    "href": "https://bwfbadminton.com/player/57423/laerke-hvid/|https://bwfbadminton.com/player/76163/anna-klausholm/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3634706|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4003203",
     "tournaments": 11,
     "points": 19950,
     "code": "WD",
@@ -3421,7 +3421,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 79,
     "name": "Moe AOKI / Hina OSAWA",
-    "href": "https://bwfbadminton.com/player/64193/moe-aoki/|https://bwfbadminton.com/player/76234/hina-osawa/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6441033|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1689808",
     "tournaments": 8,
     "points": 19920,
     "code": "WD",
@@ -3430,7 +3430,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 80,
     "name": "Audrey CHANG / Jasmine YEUNG",
-    "href": "https://bwfbadminton.com/player/79681/audrey-chang/|https://bwfbadminton.com/player/92061/jasmine-yeung/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4893935|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3669106",
     "tournaments": 9,
     "points": 19790,
     "code": "WD",
@@ -3439,7 +3439,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 81,
     "name": "LEE Seo Jin / LEE Yeon Woo",
-    "href": "https://bwfbadminton.com/player/57281/lee-seo-jin/|https://bwfbadminton.com/player/80005/lee-yeon-woo/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2260071|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1326972",
     "tournaments": 7,
     "points": 19768,
     "code": "WD",
@@ -3448,7 +3448,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 82,
     "name": "CHENG Su Hui / TAN Zhing Yi",
-    "href": "https://bwfbadminton.com/player/50246/cheng-su-hui/|https://bwfbadminton.com/player/87878/tan-zhing-yi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2303324|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2782698",
     "tournaments": 11,
     "points": 19580,
     "code": "WD",
@@ -3456,8 +3456,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 83,
-    "name": "Thi Dieu Ly PHAM / PHAM Thi Khanh",
-    "href": "https://bwfbadminton.com/player/98557/thi-dieu-ly-pham/|https://bwfbadminton.com/player/97908/pham-thi-khanh/",
+    "name": "PHAM Thi Dieu Ly / PHAM Thi Khanh",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3582998|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1452006",
     "tournaments": 11,
     "points": 18420,
     "code": "WD",
@@ -3466,7 +3466,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 84,
     "name": "Tidapron KLEEBYEESUN / Nattamon LAISUAN",
-    "href": "https://bwfbadminton.com/player/66362/tidapron-kleebyeesun/|https://bwfbadminton.com/player/96990/nattamon-laisuan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2077114|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=313463",
     "tournaments": 8,
     "points": 18360,
     "code": "WD",
@@ -3475,7 +3475,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 85,
     "name": "GO Pei Kee / TEOH Mei Xing",
-    "href": "https://bwfbadminton.com/player/94530/go-pei-kee/|https://bwfbadminton.com/player/63539/teoh-mei-xing/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1654475|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=361606",
     "tournaments": 5,
     "points": 17620,
     "code": "WD",
@@ -3484,7 +3484,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 86,
     "name": "SUNG Shuo Yun / YU Chien Hui",
-    "href": "https://bwfbadminton.com/player/88807/sung-shuo-yun/|https://bwfbadminton.com/player/75154/yu-chien-hui/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=313462|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=347222",
     "tournaments": 6,
     "points": 17490,
     "code": "WD",
@@ -3493,7 +3493,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 87,
     "name": "TENG Chun Hsun / YANG Chu Yun",
-    "href": "https://bwfbadminton.com/player/80299/teng-chun-hsun/|https://bwfbadminton.com/player/70860/yang-chu-yun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1283729|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4064684",
     "tournaments": 6,
     "points": 17470,
     "code": "WD",
@@ -3502,7 +3502,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 88,
     "name": "Aline MUELLER / Kelly VAN BUITEN",
-    "href": "https://bwfbadminton.com/player/65121/aline-mueller/|https://bwfbadminton.com/player/96301/kelly-van-buiten/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1234565|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1950451",
     "tournaments": 11,
     "points": 17160,
     "code": "WD",
@@ -3511,7 +3511,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 89,
     "name": "Lucie AMIGUET / Caroline RACLOZ",
-    "href": "https://bwfbadminton.com/player/55905/lucie-amiguet/|https://bwfbadminton.com/player/84323/caroline-racloz/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2857331|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1611410",
     "tournaments": 10,
     "points": 17041,
     "code": "WD",
@@ -3520,7 +3520,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 90,
     "name": "Elsa JACOB / Flavie VALLET",
-    "href": "https://bwfbadminton.com/player/77589/elsa-jacob/|https://bwfbadminton.com/player/63229/flavie-vallet/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4280460|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2406661",
     "tournaments": 9,
     "points": 16782,
     "code": "WD",
@@ -3529,7 +3529,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 91,
     "name": "Kodchaporn CHAICHANA / Pannawee POLYIAM",
-    "href": "https://bwfbadminton.com/player/62520/kodchaporn-chaichana/|https://bwfbadminton.com/player/89290/pannawee-polyiam/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4143711|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4143658",
     "tournaments": 11,
     "points": 16540,
     "code": "WD",
@@ -3538,7 +3538,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 92,
     "name": "Miki KANEHIRO / Yuna KATO",
-    "href": "https://bwfbadminton.com/player/87289/miki-kanehiro/|https://bwfbadminton.com/player/90323/yuna-kato/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1693031|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3566203",
     "tournaments": 5,
     "points": 16400,
     "code": "WD",
@@ -3547,7 +3547,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 93,
     "name": "Serena AU YEONG / Anna HAGSPIEL",
-    "href": "https://bwfbadminton.com/player/75414/serena-au-yeong/|https://bwfbadminton.com/player/95073/anna-hagspiel/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1581836|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2635530",
     "tournaments": 15,
     "points": 16350,
     "code": "WD",
@@ -3556,7 +3556,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 94,
     "name": "Naomi JUNCO / Namie MIYAHIRA",
-    "href": "https://bwfbadminton.com/player/81434/naomi-junco/|https://bwfbadminton.com/player/78292/namie-miyahira/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5694812|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2966647",
     "tournaments": 9,
     "points": 16332,
     "code": "WD",
@@ -3565,7 +3565,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 95,
     "name": "Apriyani RAHAYU / Siti Fadia Silva RAMADHANTI",
-    "href": "https://bwfbadminton.com/player/81462/apriyani-rahayu/|https://bwfbadminton.com/player/88097/siti-fadia-silva-ramadhanti/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=868330|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1192590",
     "tournaments": 4,
     "points": 16300,
     "code": "WD",
@@ -3574,7 +3574,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 96,
     "name": "Aditi BHATT / Shravani WALEKAR",
-    "href": "https://bwfbadminton.com/player/83984/aditi-bhatt/|https://bwfbadminton.com/player/87612/shravani-walekar/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2633568|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5069245",
     "tournaments": 11,
     "points": 16290,
     "code": "WD",
@@ -3583,7 +3583,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 97,
     "name": "Fiona HALLBERG / Elin ÖHLING",
-    "href": "https://bwfbadminton.com/player/92982/fiona-hallberg/|https://bwfbadminton.com/player/72070/elin-Oehling/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2383685|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4282680",
     "tournaments": 13,
     "points": 16277,
     "code": "WD",
@@ -3592,7 +3592,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 98,
     "name": "Selin HÜBSCH / Amelie LEHMANN",
-    "href": "https://bwfbadminton.com/player/73268/selin-hUebsch/|https://bwfbadminton.com/player/93784/amelie-lehmann/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3463908|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3579537",
     "tournaments": 12,
     "points": 15945,
     "code": "WD",
@@ -3601,7 +3601,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 99,
     "name": "BAO Li Jing / LUO Xu Min",
-    "href": "https://bwfbadminton.com/player/62277/bao-li-jing/|https://bwfbadminton.com/player/65300/luo-xu-min/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6391577|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2902575",
     "tournaments": 3,
     "points": 15750,
     "code": "WD",
@@ -3610,7 +3610,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 100,
     "name": "GAYATRI RAWAT / Mansa RAWAT",
-    "href": "https://bwfbadminton.com/player/78620/gayatri-rawat/|https://bwfbadminton.com/player/67479/mansa-rawat/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5780517|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4099723",
     "tournaments": 8,
     "points": 15660,
     "code": "WD",
@@ -3619,7 +3619,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 1,
     "name": "FENG Yan Zhe / HUANG Dong Ping",
-    "href": "https://bwfbadminton.com/player/65267/feng-yan-zhe/|https://bwfbadminton.com/player/89426/huang-dong-ping/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2514534|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=353111",
     "tournaments": 17,
     "points": 110600,
     "code": "XD",
@@ -3628,7 +3628,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 2,
     "name": "Dechapol PUAVARANUKROH / Supissara PAEWSAMPRAN",
-    "href": "https://bwfbadminton.com/player/61731/dechapol-puavaranukroh/|https://bwfbadminton.com/player/74980/supissara-paewsampran/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=314834|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2072801",
     "tournaments": 17,
     "points": 89450,
     "code": "XD",
@@ -3637,7 +3637,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 3,
     "name": "Mathias CHRISTIANSEN / Alexandra BØJE",
-    "href": "https://bwfbadminton.com/player/99521/mathias-christiansen/|https://bwfbadminton.com/player/88779/alexandra-b%C3%98je/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=280280|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1201869",
     "tournaments": 21,
     "points": 89270,
     "code": "XD",
@@ -3646,7 +3646,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 4,
     "name": "JIANG Zhen Bang / WEI Ya Xin",
-    "href": "https://bwfbadminton.com/player/63029/jiang-zhen-bang/|https://bwfbadminton.com/player/57246/wei-ya-xin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2892112|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1929631",
     "tournaments": 15,
     "points": 88850,
     "code": "XD",
@@ -3655,7 +3655,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 5,
     "name": "Thom GICQUEL / Delphine DELRUE",
-    "href": "https://bwfbadminton.com/player/68544/thom-gicquel/|https://bwfbadminton.com/player/70762/delphine-delrue/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1354995|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=674128",
     "tournaments": 17,
     "points": 86200,
     "code": "XD",
@@ -3664,7 +3664,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 6,
     "name": "GUO Xin Wa / CHEN Fang Hui",
-    "href": "https://bwfbadminton.com/player/81844/guo-xin-wa/|https://bwfbadminton.com/player/50469/chen-fang-hui/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2371721|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1929775",
     "tournaments": 19,
     "points": 79770,
     "code": "XD",
@@ -3673,7 +3673,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 7,
     "name": "CHEN Tang Jie / TOH Ee Wei",
-    "href": "https://bwfbadminton.com/player/91090/chen-tang-jie/|https://bwfbadminton.com/player/59621/toh-ee-wei/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=396346|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1591673",
     "tournaments": 11,
     "points": 69590,
     "code": "XD",
@@ -3682,7 +3682,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 8,
     "name": "TANG Chun Man / TSE Ying Suet",
-    "href": "https://bwfbadminton.com/player/77689/tang-chun-man/|https://bwfbadminton.com/player/61435/tse-ying-suet/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=211998|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=109340",
     "tournaments": 14,
     "points": 64430,
     "code": "XD",
@@ -3691,7 +3691,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 9,
     "name": "CHENG Xing / ZHANG Chi",
-    "href": "https://bwfbadminton.com/player/58931/cheng-xing/|https://bwfbadminton.com/player/88450/zhang-chi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4276833|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3551537",
     "tournaments": 19,
     "points": 63180,
     "code": "XD",
@@ -3700,7 +3700,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 10,
     "name": "YE Hong Wei / Nicole Gonzales CHAN",
-    "href": "https://bwfbadminton.com/player/81108/ye-hong-wei/|https://bwfbadminton.com/player/62713/nicole-gonzales-chan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1690255|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3290776",
     "tournaments": 21,
     "points": 62680,
     "code": "XD",
@@ -3709,7 +3709,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 11,
     "name": "GOH Soon Huat / LAI Shevon Jemie",
-    "href": "https://bwfbadminton.com/player/92593/goh-soon-huat/|https://bwfbadminton.com/player/56352/lai-shevon-jemie/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=113942|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=108031",
     "tournaments": 20,
     "points": 58830,
     "code": "XD",
@@ -3718,7 +3718,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 12,
     "name": "YANG Po-Hsuan / HU Ling Fang",
-    "href": "https://bwfbadminton.com/player/76275/yang-po-hsuan/|https://bwfbadminton.com/player/87176/hu-ling-fang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1502301|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1061615",
     "tournaments": 22,
     "points": 58590,
     "code": "XD",
@@ -3727,7 +3727,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 13,
     "name": "Yuta WATANABE / Maya TAGUCHI",
-    "href": "https://bwfbadminton.com/player/58240/yuta-watanabe/|https://bwfbadminton.com/player/60335/maya-taguchi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1181104|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3309029",
     "tournaments": 16,
     "points": 57790,
     "code": "XD",
@@ -3736,7 +3736,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 14,
     "name": "Pakkapon TEERARATSAKUL / Sapsiree TAERATTANACHAI",
-    "href": "https://bwfbadminton.com/player/65674/pakkapon-teeraratsakul/|https://bwfbadminton.com/player/67158/sapsiree-taerattanachai/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2304711|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=109398",
     "tournaments": 22,
     "points": 54980,
     "code": "XD",
@@ -3745,7 +3745,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 15,
     "name": "Amri SYAHNAWI / Nita Violina MARWAH",
-    "href": "https://bwfbadminton.com/player/76281/amri-syahnawi/|https://bwfbadminton.com/player/60838/nita-violina-marwah/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1703085|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1196187",
     "tournaments": 18,
     "points": 54690,
     "code": "XD",
@@ -3754,7 +3754,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 16,
     "name": "Yuichi SHIMOGAMI / Sayaka HOBARA",
-    "href": "https://bwfbadminton.com/player/79501/yuichi-shimogami/|https://bwfbadminton.com/player/59014/sayaka-hobara/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4416448|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1963250",
     "tournaments": 15,
     "points": 54400,
     "code": "XD",
@@ -3763,7 +3763,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 17,
     "name": "Presley SMITH / Jennie GAI",
-    "href": "https://bwfbadminton.com/player/63739/presley-smith/|https://bwfbadminton.com/player/83074/jennie-gai/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4804477|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1987789",
     "tournaments": 21,
     "points": 52200,
     "code": "XD",
@@ -3772,7 +3772,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 18,
     "name": "Jafar HIDAYATULLAH / Felisha Alberta Nathaniel PASARIBU",
-    "href": "https://bwfbadminton.com/player/65854/jafar-hidayatullah/|https://bwfbadminton.com/player/69193/felisha-alberta-nathaniel-pasaribu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2066266|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2927244",
     "tournaments": 15,
     "points": 50850,
     "code": "XD",
@@ -3781,7 +3781,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 19,
     "name": "Ruttanapak OUPTHONG / Jhenicha SUDJAIPRAPARAT",
-    "href": "https://bwfbadminton.com/player/75904/ruttanapak-oupthong/|https://bwfbadminton.com/player/72504/jhenicha-sudjaipraparat/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1591439|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1137215",
     "tournaments": 18,
     "points": 46500,
     "code": "XD",
@@ -3790,7 +3790,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 20,
     "name": "DHRUV KAPILA / Tanisha CRASTO",
-    "href": "https://bwfbadminton.com/player/57372/dhruv-kapila/|https://bwfbadminton.com/player/94165/tanisha-crasto/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1584037|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=996234",
     "tournaments": 17,
     "points": 46280,
     "code": "XD",
@@ -3799,7 +3799,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 21,
     "name": "Akira KOGA / Natsu SAITO",
-    "href": "https://bwfbadminton.com/player/88405/akira-koga/|https://bwfbadminton.com/player/55417/natsu-saito/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=239766|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1311635",
     "tournaments": 14,
     "points": 45730,
     "code": "XD",
@@ -3808,7 +3808,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 22,
     "name": "Marwan FAZA / Aisyah Salsabila Putri PRANATA",
-    "href": "https://bwfbadminton.com/player/72782/marwan-faza/|https://bwfbadminton.com/player/79077/aisyah-salsabila-putri-pranata/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2140973|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2722158",
     "tournaments": 12,
     "points": 45160,
     "code": "XD",
@@ -3817,7 +3817,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 23,
     "name": "Jesper TOFT / Amalie MAGELUND",
-    "href": "https://bwfbadminton.com/player/81705/jesper-toft/|https://bwfbadminton.com/player/95643/amalie-magelund/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1664448|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1664520",
     "tournaments": 12,
     "points": 44740,
     "code": "XD",
@@ -3826,7 +3826,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 24,
     "name": "Adnan MAULANA / Indah Cahya Sari JAMIL",
-    "href": "https://bwfbadminton.com/player/63571/adnan-maulana/|https://bwfbadminton.com/player/83699/indah-cahya-sari-jamil/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1606073|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1334836",
     "tournaments": 14,
     "points": 44290,
     "code": "XD",
@@ -3835,7 +3835,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 25,
     "name": "CHAN Yin Chak / NG Tsz Yau",
-    "href": "https://bwfbadminton.com/player/57924/chan-yin-chak/|https://bwfbadminton.com/player/61986/ng-tsz-yau/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1263280|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=362697",
     "tournaments": 14,
     "points": 43280,
     "code": "XD",
@@ -3844,7 +3844,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 26,
     "name": "Mads VESTERGAARD / Christine BUSCH",
-    "href": "https://bwfbadminton.com/player/60507/mads-vestergaard/|https://bwfbadminton.com/player/58324/christine-busch/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2404521|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2033875",
     "tournaments": 14,
     "points": 42960,
     "code": "XD",
@@ -3853,7 +3853,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 27,
     "name": "KIM Jae Hyeon / JANG Ha Jeong",
-    "href": "https://bwfbadminton.com/player/80293/kim-jae-hyeon/|https://bwfbadminton.com/player/64819/ha-jeong-jang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1328113|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1327004",
     "tournaments": 13,
     "points": 42610,
     "code": "XD",
@@ -3862,7 +3862,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 28,
     "name": "ZHU Yi Jun / LI Qian",
-    "href": "https://bwfbadminton.com/player/82167/zhu-yi-jun/|https://bwfbadminton.com/player/82367/li-qian/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5313988|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5315670",
     "tournaments": 12,
     "points": 40710,
     "code": "XD",
@@ -3871,7 +3871,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 29,
     "name": "GAO Jia Xuan / WU Meng Ying",
-    "href": "https://bwfbadminton.com/player/57943/gao-jia-xuan/|https://bwfbadminton.com/player/91533/wu-meng-ying/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6324408|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4276395",
     "tournaments": 12,
     "points": 40170,
     "code": "XD",
@@ -3879,8 +3879,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 30,
-    "name": "Dejan FERDINANSYAH / Bernadine Anindiya WARDANA",
-    "href": "https://bwfbadminton.com/player/81458/dejan-ferdinansyah/|https://bwfbadminton.com/player/72213/bernadine-anindiya-wardana/",
+    "name": "Dejan FERDINANSYAH / Bernadine Anindya WARDANA",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2463023|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3139706",
     "tournaments": 15,
     "points": 40060,
     "code": "XD",
@@ -3889,7 +3889,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 31,
     "name": "Marvin SEIDEL / Thuc Phuong NGUYEN",
-    "href": "https://bwfbadminton.com/player/64909/marvin-seidel/|https://bwfbadminton.com/player/97648/thuc-phuong-nguyen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=365895|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2843411",
     "tournaments": 15,
     "points": 40030,
     "code": "XD",
@@ -3898,7 +3898,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 32,
     "name": "Alexander DUNN / Julie MACPHERSON",
-    "href": "https://bwfbadminton.com/player/67922/alexander-dunn/|https://bwfbadminton.com/player/91715/julie-macpherson/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=879458|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1340691",
     "tournaments": 15,
     "points": 37740,
     "code": "XD",
@@ -3907,7 +3907,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 33,
     "name": "Callum HEMMING / Estelle VAN LEEUWEN",
-    "href": "https://bwfbadminton.com/player/86756/callum-hemming/|https://bwfbadminton.com/player/59331/estelle-van-leeuwen/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1257293|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2867264",
     "tournaments": 15,
     "points": 37270,
     "code": "XD",
@@ -3916,7 +3916,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 34,
     "name": "WU Guan Xun / LEE Chia Hsin",
-    "href": "https://bwfbadminton.com/player/99841/wu-guan-xun/|https://bwfbadminton.com/player/76717/lee-chia-hsin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1617581|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=354085",
     "tournaments": 23,
     "points": 37150,
     "code": "XD",
@@ -3925,7 +3925,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 35,
     "name": "CHEN Cheng Kuan / HSU Yin-Hui",
-    "href": "https://bwfbadminton.com/player/64394/chen-cheng-kuan/|https://bwfbadminton.com/player/96973/hsu-yin-hui/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4129809|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3247019",
     "tournaments": 17,
     "points": 36960,
     "code": "XD",
@@ -3934,7 +3934,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 36,
     "name": "Rasmus ESPERSEN / Amalie Cecilie KUDSK",
-    "href": "https://bwfbadminton.com/player/91167/rasmus-espersen/|https://bwfbadminton.com/player/68532/amalie-cecilie-kudsk/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2033755|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2151565",
     "tournaments": 14,
     "points": 36930,
     "code": "XD",
@@ -3943,7 +3943,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 37,
     "name": "Bobby SETIABUDI / Melati Daeva OKTAVIANTI",
-    "href": "https://bwfbadminton.com/player/80886/bobby-setiabudi/|https://bwfbadminton.com/player/82061/melati-daeva-oktavianti/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1574554|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=195618",
     "tournaments": 12,
     "points": 36130,
     "code": "XD",
@@ -3952,7 +3952,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 38,
     "name": "Julien MAIO / Lea PALERMO",
-    "href": "https://bwfbadminton.com/player/73323/julien-maio/|https://bwfbadminton.com/player/98329/lea-palermo/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=300576|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=205508",
     "tournaments": 14,
     "points": 36060,
     "code": "XD",
@@ -3961,7 +3961,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 39,
     "name": "Jimmy WONG / LAI Pei Jing",
-    "href": "https://bwfbadminton.com/player/84340/jimmy-wong/|https://bwfbadminton.com/player/47007/lai-pei-jing/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3093343|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=108030",
     "tournaments": 13,
     "points": 35380,
     "code": "XD",
@@ -3970,7 +3970,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 40,
     "name": "WONG Tien Ci / LIM Chiew Sien",
-    "href": "https://bwfbadminton.com/player/71294/wong-tien-ci/|https://bwfbadminton.com/player/70093/lim-chiew-sien/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1279400|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=194182",
     "tournaments": 21,
     "points": 34910,
     "code": "XD",
@@ -3979,7 +3979,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 41,
     "name": "Ruben GARCIA / Lucia RODRIGUEZ",
-    "href": "https://bwfbadminton.com/player/94156/ruben-garcia/|https://bwfbadminton.com/player/92404/lucia-rodriguez/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2858373|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2598218",
     "tournaments": 17,
     "points": 34690,
     "code": "XD",
@@ -3988,7 +3988,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 42,
     "name": "Rohan KAPOOR / GADDE Ruthvika Shivani",
-    "href": "https://bwfbadminton.com/player/60980/rohan-kapoor/|https://bwfbadminton.com/player/69619/gadde-ruthvika-shivani/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=662861|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=349921",
     "tournaments": 23,
     "points": 34370,
     "code": "XD",
@@ -3997,7 +3997,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 43,
     "name": "HOO Pang Ron / CHENG Su Yin",
-    "href": "https://bwfbadminton.com/player/72675/hoo-pang-ron/|https://bwfbadminton.com/player/80605/cheng-su-yin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1276733|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2620693",
     "tournaments": 10,
     "points": 33910,
     "code": "XD",
@@ -4006,7 +4006,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 44,
     "name": "Hiroki MIDORIKAWA / Natsu SAITO",
-    "href": "https://bwfbadminton.com/player/64944/hiroki-midorikawa/|https://bwfbadminton.com/player/55417/natsu-saito/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1311347|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1311635",
     "tournaments": 6,
     "points": 33610,
     "code": "XD",
@@ -4015,7 +4015,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 45,
     "name": "WU Hsuan-Yi / YANG Chu Yun",
-    "href": "https://bwfbadminton.com/player/97737/wu-hsuan-yi/|https://bwfbadminton.com/player/70860/yang-chu-yun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2217427|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4064684",
     "tournaments": 13,
     "points": 32740,
     "code": "XD",
@@ -4024,7 +4024,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 46,
     "name": "CHEN ZHI YI / Francesca CORBETT",
-    "href": "https://bwfbadminton.com/player/62618/chen-zhi-yi/|https://bwfbadminton.com/player/61882/francesca-corbett/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3163265|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2981376",
     "tournaments": 16,
     "points": 31480,
     "code": "XD",
@@ -4033,7 +4033,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 47,
     "name": "Supak JOMKOH / Ornnicha JONGSATHAPORNPARN",
-    "href": "https://bwfbadminton.com/player/73936/supak-jomkoh/|https://bwfbadminton.com/player/99988/ornnicha-jongsathapornparn/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=396344|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1144144",
     "tournaments": 9,
     "points": 30510,
     "code": "XD",
@@ -4042,7 +4042,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 48,
     "name": "LIU Kuang Heng / HSU Yin-Hui",
-    "href": "https://bwfbadminton.com/player/59609/liu-kuang-heng/|https://bwfbadminton.com/player/96973/hsu-yin-hui/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1690330|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3247019",
     "tournaments": 7,
     "points": 30000,
     "code": "XD",
@@ -4051,7 +4051,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 49,
     "name": "Bimo PRASETYO / Arlya Nabila Thesya MUNGGARAN",
-    "href": "https://bwfbadminton.com/player/73223/bimo-prasetyo/|https://bwfbadminton.com/player/62542/arlya-nabila-thesya-munggaran/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3624616|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2931055",
     "tournaments": 14,
     "points": 29420,
     "code": "XD",
@@ -4060,7 +4060,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 50,
     "name": "Kristoffer KOLDING / Mette WERGE",
-    "href": "https://bwfbadminton.com/player/68337/kristoffer-kolding/|https://bwfbadminton.com/player/67290/mette-werge/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4705571|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3053497",
     "tournaments": 13,
     "points": 29310,
     "code": "XD",
@@ -4069,7 +4069,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 51,
     "name": "Dhruv RAWAT / MANEESHA K",
-    "href": "https://bwfbadminton.com/player/84666/dhruv-rawat/|https://bwfbadminton.com/player/56836/maneesha-k/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2619060|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=108518",
     "tournaments": 16,
     "points": 29300,
     "code": "XD",
@@ -4078,7 +4078,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 52,
     "name": "Phuwanat HORBANLUEKIT / Benyapa AIMSAARD",
-    "href": "https://bwfbadminton.com/player/86368/phuwanat-horbanluekit/|https://bwfbadminton.com/player/80871/benyapa-aimsaard/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4345110|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1485450",
     "tournaments": 11,
     "points": 29240,
     "code": "XD",
@@ -4087,7 +4087,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 53,
     "name": "Samuel JONES / Lizzie TOLMAN",
-    "href": "https://bwfbadminton.com/player/63421/samuel-jones/|https://bwfbadminton.com/player/68221/lizzie-tolman/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2508642|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1282911",
     "tournaments": 17,
     "points": 28920,
     "code": "XD",
@@ -4096,7 +4096,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 54,
     "name": "Fabricio FARIAS / Jaqueline LIMA",
-    "href": "https://bwfbadminton.com/player/69649/fabricio-farias/|https://bwfbadminton.com/player/57457/jaqueline-lima/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1520355|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1520561",
     "tournaments": 10,
     "points": 27450,
     "code": "XD",
@@ -4105,7 +4105,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 55,
     "name": "Timothy LOCK / Chloe HOANG",
-    "href": "https://bwfbadminton.com/player/77842/timothy-lock/|https://bwfbadminton.com/player/99271/chloe-hoang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3836803|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3836909",
     "tournaments": 11,
     "points": 26820,
     "code": "XD",
@@ -4114,7 +4114,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 56,
     "name": "GAO Jia Xuan / WEI Ya Xin",
-    "href": "https://bwfbadminton.com/player/57943/gao-jia-xuan/|https://bwfbadminton.com/player/57246/wei-ya-xin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6324408|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1929631",
     "tournaments": 4,
     "points": 26740,
     "code": "XD",
@@ -4123,7 +4123,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 57,
     "name": "Jonathan Bing Tsan LAI / Crystal LAI",
-    "href": "https://bwfbadminton.com/player/96537/jonathan-bing-tsan-lai/|https://bwfbadminton.com/player/64767/crystal-lai/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1121799|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2578400",
     "tournaments": 11,
     "points": 26500,
     "code": "XD",
@@ -4132,7 +4132,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 58,
     "name": "Davi SILVA / Sania LIMA",
-    "href": "https://bwfbadminton.com/player/78948/davi-silva/|https://bwfbadminton.com/player/56522/sania-lima/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1521056|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1520594",
     "tournaments": 9,
     "points": 26470,
     "code": "XD",
@@ -4141,7 +4141,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 59,
     "name": "Jimmy WONG / CHENG Su Yin",
-    "href": "https://bwfbadminton.com/player/84340/jimmy-wong/|https://bwfbadminton.com/player/80605/cheng-su-yin/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3093343|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2620693",
     "tournaments": 7,
     "points": 26360,
     "code": "XD",
@@ -4150,7 +4150,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 60,
     "name": "Ashith SURYA / Amrutha PRAMUTHESH",
-    "href": "https://bwfbadminton.com/player/69313/ashith-surya/|https://bwfbadminton.com/player/87492/amrutha-pramuthesh/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2905996|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5081592",
     "tournaments": 14,
     "points": 25390,
     "code": "XD",
@@ -4159,7 +4159,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 61,
     "name": "Simon KRAX / Amelie LEHMANN",
-    "href": "https://bwfbadminton.com/player/91174/simon-krax/|https://bwfbadminton.com/player/93784/amelie-lehmann/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3617181|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3579537",
     "tournaments": 16,
     "points": 25080,
     "code": "XD",
@@ -4168,7 +4168,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 62,
     "name": "Rehan Naufal KUSHARJANTO / Gloria Emanuelle WIDJAJA",
-    "href": "https://bwfbadminton.com/player/87045/rehan-naufal-kusharjanto/|https://bwfbadminton.com/player/81702/gloria-emanuelle-widjaja/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1271961|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=195736",
     "tournaments": 6,
     "points": 24700,
     "code": "XD",
@@ -4177,7 +4177,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 63,
     "name": "Emre SONMEZ / Yasemen BEKTAS",
-    "href": "https://bwfbadminton.com/player/87483/emre-sonmez/|https://bwfbadminton.com/player/86621/yasemen-bektas/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1149519|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2337433",
     "tournaments": 13,
     "points": 24590,
     "code": "XD",
@@ -4186,7 +4186,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 64,
     "name": "Mihajlo TOMIC / Andjela VITMAN",
-    "href": "https://bwfbadminton.com/player/63161/mihajlo-tomic/|https://bwfbadminton.com/player/90612/andjela-vitman/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2045505|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2994047",
     "tournaments": 10,
     "points": 24590,
     "code": "XD",
@@ -4195,7 +4195,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 65,
     "name": "Brian WASSINK / Debora JILLE",
-    "href": "https://bwfbadminton.com/player/65470/brian-wassink/|https://bwfbadminton.com/player/67373/debora-jille/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1201496|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=813555",
     "tournaments": 17,
     "points": 24550,
     "code": "XD",
@@ -4204,7 +4204,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 66,
     "name": "Ondřej KRÁL / Tereza ŠVÁBÍKOVÁ",
-    "href": "https://bwfbadminton.com/player/82378/ond%C5%99ej-kral/|https://bwfbadminton.com/player/60397/tereza-%C5%A0vabikova/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1220948|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=815629",
     "tournaments": 11,
     "points": 24450,
     "code": "XD",
@@ -4213,7 +4213,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 67,
     "name": "Andika RAMADIANSYAH / Nozomi SHIMIZU",
-    "href": "https://bwfbadminton.com/player/76674/andika-ramadiansyah/|https://bwfbadminton.com/player/90442/nozomi-shimizu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=406557|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=391573",
     "tournaments": 12,
     "points": 24340,
     "code": "XD",
@@ -4222,7 +4222,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 68,
     "name": "M. Nawaf KHOIRIYANSYAH / Nahya MUHYIFA",
-    "href": "https://bwfbadminton.com/player/93668/m-nawaf-khoiriyansyah/|https://bwfbadminton.com/player/78947/nahya-muhyifa/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3336106|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2899810",
     "tournaments": 13,
     "points": 23410,
     "code": "XD",
@@ -4231,7 +4231,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 69,
     "name": "Natan BEGGA / Elsa JACOB",
-    "href": "https://bwfbadminton.com/player/59578/natan-begga/|https://bwfbadminton.com/player/77589/elsa-jacob/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3611103|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4280460",
     "tournaments": 13,
     "points": 23270,
     "code": "XD",
@@ -4240,7 +4240,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 70,
     "name": "LIU Kuang Heng / JHENG Yu Chieh",
-    "href": "https://bwfbadminton.com/player/59609/liu-kuang-heng/|https://bwfbadminton.com/player/82732/jheng-yu-chieh/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1690330|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3313172",
     "tournaments": 8,
     "points": 23240,
     "code": "XD",
@@ -4249,7 +4249,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 71,
     "name": "Sathwik Reddy KANAPURAM / Radhika SHARMA",
-    "href": "https://bwfbadminton.com/player/54998/sathwik-reddy-kanapuram/|https://bwfbadminton.com/player/61380/radhika-sharma/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3609562|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3586172",
     "tournaments": 11,
     "points": 22770,
     "code": "XD",
@@ -4258,7 +4258,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 72,
     "name": "Filip KARLBORG / Tilda SJOO",
-    "href": "https://bwfbadminton.com/player/67848/filip-karlborg/|https://bwfbadminton.com/player/60603/tilda-sjoo/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2345724|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1454085",
     "tournaments": 15,
     "points": 22590,
     "code": "XD",
@@ -4267,7 +4267,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 73,
     "name": "Ratchapol MAKKASASITHORN / Nattamon LAISUAN",
-    "href": "https://bwfbadminton.com/player/92576/ratchapol-makkasasithorn/|https://bwfbadminton.com/player/96990/nattamon-laisuan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1944304|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=313463",
     "tournaments": 10,
     "points": 22540,
     "code": "XD",
@@ -4276,7 +4276,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 74,
     "name": "Haruki KAWABE / Kokona ISHIKAWA",
-    "href": "https://bwfbadminton.com/player/76165/haruki-kawabe/|https://bwfbadminton.com/player/85452/kokona-ishikawa/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5591990|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2272424",
     "tournaments": 6,
     "points": 20620,
     "code": "XD",
@@ -4285,7 +4285,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 75,
     "name": "LIEW Xun / HO Lo Ee",
-    "href": "https://bwfbadminton.com/player/99220/liew-xun/|https://bwfbadminton.com/player/91246/ho-lo-ee/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4391929|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2540996",
     "tournaments": 12,
     "points": 20220,
     "code": "XD",
@@ -4294,7 +4294,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 76,
     "name": "Ishaan BHATNAGAR / Shruti MISHRA",
-    "href": "https://bwfbadminton.com/player/72267/ishaan-bhatnagar/|https://bwfbadminton.com/player/57265/shruti-mishra/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2465485|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2014874",
     "tournaments": 7,
     "points": 19570,
     "code": "XD",
@@ -4303,7 +4303,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 77,
     "name": "Andy BUIJK / Meerte LOOS",
-    "href": "https://bwfbadminton.com/player/55908/andy-buijk/|https://bwfbadminton.com/player/68201/meerte-loos/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1587599|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4034312",
     "tournaments": 16,
     "points": 19390,
     "code": "XD",
@@ -4312,7 +4312,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 78,
     "name": "Oleksii TITOV / Yevheniia KANTEMYR",
-    "href": "https://bwfbadminton.com/player/75729/oleksii-titov/|https://bwfbadminton.com/player/94032/yevheniia-kantemyr/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2591921|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2622882",
     "tournaments": 9,
     "points": 19290,
     "code": "XD",
@@ -4321,7 +4321,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 79,
     "name": "LOW Han Chen / CHAN Wen Tse",
-    "href": "https://bwfbadminton.com/player/96553/low-han-chen/|https://bwfbadminton.com/player/79015/chan-wen-tse/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3333760|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3333809",
     "tournaments": 10,
     "points": 19130,
     "code": "XD",
@@ -4330,7 +4330,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 80,
     "name": "Ming Che LU / CHOU Yun An",
-    "href": "https://bwfbadminton.com/player/58986/ming-che-lu/|https://bwfbadminton.com/player/47296/yun-an-chou/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=932190|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6631517",
     "tournaments": 8,
     "points": 19100,
     "code": "XD",
@@ -4338,8 +4338,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 81,
-    "name": "LEONG Iok Chong / Weng Chi NG",
-    "href": "https://bwfbadminton.com/player/86167/leong-iok-chong/|https://bwfbadminton.com/player/95068/weng-chi-ng/",
+    "name": "LEONG Iok Chong / NG Weng Chi",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1591890|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=364755",
     "tournaments": 10,
     "points": 18890,
     "code": "XD",
@@ -4348,7 +4348,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 82,
     "name": "JO Song Hyun / JEONG Na Eun",
-    "href": "https://bwfbadminton.com/player/90792/song-hyun-jo/|https://bwfbadminton.com/player/99778/jeong-na-eun/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1716605|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1327100",
     "tournaments": 7,
     "points": 18840,
     "code": "XD",
@@ -4357,7 +4357,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 83,
     "name": "Nicolas FRANCONVILLE / Julie FRANCONVILLE",
-    "href": "https://bwfbadminton.com/player/59717/nicolas-franconville/|https://bwfbadminton.com/player/76311/julie-franconville/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3638184|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2033430",
     "tournaments": 15,
     "points": 18730,
     "code": "XD",
@@ -4366,7 +4366,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 84,
     "name": "Mohit JAGLAN / Lakshita JAGLAN",
-    "href": "https://bwfbadminton.com/player/96108/mohit-jaglan/|https://bwfbadminton.com/player/88377/lakshita-jaglan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5299999|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6491071",
     "tournaments": 16,
     "points": 18590,
     "code": "XD",
@@ -4375,7 +4375,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 85,
     "name": "HOO Pang Ron / LAI Pei Jing",
-    "href": "https://bwfbadminton.com/player/72675/hoo-pang-ron/|https://bwfbadminton.com/player/47007/lai-pei-jing/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1276733|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=108030",
     "tournaments": 5,
     "points": 18180,
     "code": "XD",
@@ -4384,7 +4384,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 86,
     "name": "Patrick VOLKMANN / Franziska VOLKMANN",
-    "href": "https://bwfbadminton.com/player/72084/patrick-volkmann/|https://bwfbadminton.com/player/61615/franziska-volkmann/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=855874|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=197920",
     "tournaments": 14,
     "points": 17940,
     "code": "XD",
@@ -4393,7 +4393,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 87,
     "name": "Tonkid SAEHENG / Tonrug SAEHENG",
-    "href": "https://bwfbadminton.com/player/84591/tonkid-saeheng/|https://bwfbadminton.com/player/50959/tonrug-saeheng/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4167636|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4167583",
     "tournaments": 13,
     "points": 17800,
     "code": "XD",
@@ -4401,8 +4401,8 @@ export const rankingPlayers: RankingPlayer[] = [
   },
   {
     "rank": 88,
-    "name": "Hong Yi LI / HUANG Ke Xin",
-    "href": "https://bwfbadminton.com/player/23006/hong-yi-li/|https://bwfbadminton.com/player/69931/huang-ke-xin/",
+    "name": "LI Hong Yi / HUANG Ke Xin",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=6955582|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5315554",
     "tournaments": 6,
     "points": 17760,
     "code": "XD",
@@ -4411,7 +4411,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 89,
     "name": "Hiroki MIDORIKAWA / Nami MATSUYAMA",
-    "href": "https://bwfbadminton.com/player/64944/hiroki-midorikawa/|https://bwfbadminton.com/player/65212/nami-matsuyama/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1311347|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1069305",
     "tournaments": 5,
     "points": 17750,
     "code": "XD",
@@ -4420,7 +4420,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 90,
     "name": "Koceila MAMMERI / Tanina Violette MAMMERI",
-    "href": "https://bwfbadminton.com/player/72986/koceila-mammeri/|https://bwfbadminton.com/player/78133/tanina-violette-mammeri/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2082558|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5029212",
     "tournaments": 7,
     "points": 17670,
     "code": "XD",
@@ -4429,7 +4429,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 91,
     "name": "Kevin LEE / Eliana ZHANG",
-    "href": "https://bwfbadminton.com/player/58493/kevin-lee/|https://bwfbadminton.com/player/70079/eliana-zhang/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1646675|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2532443",
     "tournaments": 7,
     "points": 17510,
     "code": "XD",
@@ -4438,7 +4438,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 92,
     "name": "Bhavya CHHABRA / Vishakha TOPPO",
-    "href": "https://bwfbadminton.com/player/91333/bhavya-chhabra/|https://bwfbadminton.com/player/88222/vishakha-toppo/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5075991|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5272841",
     "tournaments": 10,
     "points": 17370,
     "code": "XD",
@@ -4447,7 +4447,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 93,
     "name": "PAR Tien Ann / Juliana Zefanya GABRIELA",
-    "href": "https://bwfbadminton.com/player/96016/par-tien-ann/|https://bwfbadminton.com/player/43626/juliana-zefanya-gabriela/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3089273|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=8165347",
     "tournaments": 12,
     "points": 17290,
     "code": "XD",
@@ -4456,7 +4456,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 94,
     "name": "Christopher MARTINEZ / Diana CORLETO",
-    "href": "https://bwfbadminton.com/player/93205/christopher-martinez/|https://bwfbadminton.com/player/56401/diana-corleto/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1072493|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1575291",
     "tournaments": 7,
     "points": 16900,
     "code": "XD",
@@ -4465,7 +4465,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 95,
     "name": "Dhiren AYYAPPAN / Taabia KHAN",
-    "href": "https://bwfbadminton.com/player/79739/dhiren-ayyappan/|https://bwfbadminton.com/player/72013/taabia-khan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3222551|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3225309",
     "tournaments": 16,
     "points": 16680,
     "code": "XD",
@@ -4474,7 +4474,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 96,
     "name": "Malik BOURAKKADI / Leona MICHALSKI",
-    "href": "https://bwfbadminton.com/player/74871/malik-bourakkadi/|https://bwfbadminton.com/player/99025/leona-michalski/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2099192|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2099152",
     "tournaments": 10,
     "points": 16610,
     "code": "XD",
@@ -4483,7 +4483,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 97,
     "name": "Ming Che LU / HUNG En-Tzu",
-    "href": "https://bwfbadminton.com/player/58986/ming-che-lu/|https://bwfbadminton.com/player/62639/hung-en-tzu/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=932190|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1622451",
     "tournaments": 5,
     "points": 16460,
     "code": "XD",
@@ -4492,7 +4492,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 98,
     "name": "WEE Yee Hern / Vannee GOBI",
-    "href": "https://bwfbadminton.com/player/99413/wee-yee-hern/|https://bwfbadminton.com/player/50985/vannee-gobi/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=3310322|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5785840",
     "tournaments": 7,
     "points": 16420,
     "code": "XD",
@@ -4501,7 +4501,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 99,
     "name": "Nithin H.V. / SRINIDHI NARAYANAN",
-    "href": "https://bwfbadminton.com/player/89369/nithin-h-v/|https://bwfbadminton.com/player/93513/srinidhi-narayanan/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=2920429|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=5572574",
     "tournaments": 9,
     "points": 16040,
     "code": "XD",
@@ -4510,7 +4510,7 @@ export const rankingPlayers: RankingPlayer[] = [
   {
     "rank": 100,
     "name": "LOO Bing Kun / Noraqilah MAISARAH",
-    "href": "https://bwfbadminton.com/player/80711/loo-bing-kun/|https://bwfbadminton.com/player/71883/noraqilah-maisarah/",
+    "href": "https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=1654295|https://www.tournamentsoftware.com/ranking/player.aspx?id=53555&player=4391770",
     "tournaments": 8,
     "points": 15730,
     "code": "XD",
