@@ -112,6 +112,49 @@ async function openRankingBreakdownDialog(page, row, rankingKey) {
   return null;
 }
 
+function breakdownSignature(scores) {
+  return JSON.stringify(scores.map((score) => [score.week, score.label, score.result, score.points, score.valid]));
+}
+
+async function readBwfRankingBreakdown(page, dialog, expectedPoints, previousSignature) {
+  const deadline = Date.now() + 8_000;
+  let latestScores = [];
+  let latestTotal = 0;
+  let latestSignature = '';
+
+  while (Date.now() < deadline) {
+    latestScores = await dialog.locator('table tbody tr').evaluateAll((scoreRows) => scoreRows.map((scoreRow) => {
+      const cells = Array.from(scoreRow.querySelectorAll('td'));
+      const weekParts = (cells[1]?.textContent || '').trim().split('/').map((part) => part.trim());
+      const link = cells[2]?.querySelector('a');
+      return {
+        week: weekParts.length === 2 ? `${weekParts[0]}-W${weekParts[1].padStart(2, '0')}` : '',
+        label: link?.textContent?.replace(/\s+/g, ' ').trim() || cells[2]?.textContent?.replace(/\s+/g, ' ').trim() || '',
+        href: link?.href || '',
+        result: cells[3]?.textContent?.trim() || '',
+        points: Number(cells[4]?.textContent?.replace(/,/g, '').trim()),
+        valid: Boolean(cells[0]?.querySelector('img')),
+      };
+    }));
+    latestTotal = latestScores.filter((score) => score.valid).reduce((total, score) => total + score.points, 0);
+    latestSignature = breakdownSignature(latestScores);
+
+    // The dialog becomes visible before Vue replaces the preceding player's rows.
+    // Wait for both a content change and the total belonging to the selected row.
+    if (
+      latestScores.length
+      && latestSignature !== previousSignature
+      && Math.round(latestTotal) === expectedPoints
+    ) {
+      return { matched: true, scores: latestScores, validTotal: latestTotal, signature: latestSignature };
+    }
+
+    await page.waitForTimeout(100);
+  }
+
+  return { matched: false, scores: latestScores, validTotal: latestTotal, signature: latestSignature };
+}
+
 async function loadHundredRankingRows(page, rankingTable) {
   for (let attempt = 1; attempt <= 3; attempt += 1) {
     if (attempt > 1) {
@@ -344,9 +387,11 @@ try {
   const rankingBreakdowns = {};
   let consecutiveDialogFailures = 0;
   let useTournamentsoftwareForRemaining = false;
+  let previousBwfBreakdownSignature = '';
 
   for (let disciplineIndex = 0; disciplineIndex < disciplines.length; disciplineIndex += 1) {
     const config = disciplines[disciplineIndex];
+    let acceptedBwfBreakdowns = 0;
     if (disciplineIndex > 0) {
       await selectRankingDiscipline(page, rankingTable, config);
     }
@@ -383,24 +428,15 @@ try {
 
       if (dialog) {
         consecutiveDialogFailures = 0;
-        await page.waitForTimeout(120);
-        scores = await dialog.locator('table tbody tr').evaluateAll((scoreRows) => scoreRows.map((scoreRow) => {
-          const cells = Array.from(scoreRow.querySelectorAll('td'));
-          const weekParts = (cells[1]?.textContent || '').trim().split('/').map((part) => part.trim());
-          const link = cells[2]?.querySelector('a');
-          return {
-            week: weekParts.length === 2 ? `${weekParts[0]}-W${weekParts[1].padStart(2, '0')}` : '',
-            label: link?.textContent?.replace(/\s+/g, ' ').trim() || cells[2]?.textContent?.replace(/\s+/g, ' ').trim() || '',
-            href: link?.href || '',
-            result: cells[3]?.textContent?.trim() || '',
-            points: Number(cells[4]?.textContent?.replace(/,/g, '').trim()),
-            valid: Boolean(cells[0]?.querySelector('img')),
-          };
-        }));
-        const validTotal = scores.filter((score) => score.valid).reduce((total, score) => total + score.points, 0);
-        if (!scores.length || Math.round(validTotal) !== player.points) {
+        const breakdown = await readBwfRankingBreakdown(page, dialog, player.points, previousBwfBreakdownSignature);
+        scores = breakdown.scores;
+        const validTotal = breakdown.validTotal;
+        if (breakdown.signature) previousBwfBreakdownSignature = breakdown.signature;
+        if (!breakdown.matched || !scores.length || Math.round(validTotal) !== player.points) {
           console.warn(`${rankingKey}: BWF breakdown rejected (valid total ${validTotal}, expected ${player.points}); Tournamentsoftware fallback will be attempted`);
           scores = [];
+        } else {
+          acceptedBwfBreakdowns += 1;
         }
         await closeRankingBreakdownDialog(page, dialog, rankingKey);
       } else {
@@ -418,7 +454,7 @@ try {
       };
     }
 
-    console.log(`${config.code}: refreshed 100 entries`);
+    console.log(`${config.code}: refreshed 100 entries (${acceptedBwfBreakdowns} breakdowns accepted from BWF)`);
   }
 
   await fillMissingBreakdownsFromTournamentsoftware(context, weekMatch[2], rankingPlayers, rankingBreakdowns);
