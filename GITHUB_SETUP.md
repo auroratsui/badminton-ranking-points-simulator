@@ -63,7 +63,7 @@ GitHub can take several minutes to publish the first deployment. When it finishe
 
 The included **Refresh BWF ranking data** workflow is scheduled every Tuesday at 09:30 GMT+1. It retrieves:
 
-- the top 100 players or pairs in all five disciplines;
+- the top 200 players or pairs in all five disciplines;
 - every listed player's or pair's current ranking-points breakdown;
 - the current year's remaining senior tournament calendar; and
 - the previous year's full senior tournament calendar.
@@ -90,6 +90,10 @@ To upload a newer package, open **Add file → Upload files**, drag in the updat
 - Confirm **Settings → Pages → Source** is set to **GitHub Actions**.
 - Open **Actions → Deploy to GitHub Pages** and check whether both jobs succeeded.
 - Use the exact URL shown by GitHub; project sites include the repository name at the end.
+
+### The Site Appears in Plain Black and White or Menus Do Not Work
+
+This means the page loaded without its compiled CSS or JavaScript. Confirm that `.github/workflows/pages.yml` matches the current package, then open **Actions → Deploy to GitHub Pages → Run workflow** to replace the incomplete deployment.
 
 ### The Build Failed
 

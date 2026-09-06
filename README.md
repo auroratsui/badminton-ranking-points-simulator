@@ -2,7 +2,7 @@
 
 A multi-player BWF world-ranking points simulator. It automatically loads each selected player or pair's published BWF score breakdown and supports the best-ten, 52-week expiry, previous-edition replacement, and single team-tournament score rules.
 
-The player search index contains the top 100 players or pairs in each of the five BWF disciplines. A scheduled GitHub Actions workflow refreshes the rankings, every player's score breakdown, the current year's remaining tournaments, and the previous year's full tournament calendar every Tuesday at 09:30 GMT+1, shortly after BWF publishes its ranking update.
+The player search index contains the top 200 players or pairs in each of the five BWF disciplines. A scheduled GitHub Actions workflow refreshes the rankings, every player's score breakdown, the current year's remaining tournaments, and the previous year's full tournament calendar every Tuesday at 09:30 GMT+1, shortly after BWF publishes its ranking update.
 
 ## Local development
 
