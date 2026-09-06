@@ -504,7 +504,7 @@ function droppedScoreForExplanation(result: ReturnType<typeof calculate>) {
 }
 
 function scoresFor(candidate: RankingPlayer) {
-  const rankingKey = `${candidate.code}-${candidate.rank}`;
+  const rankingKey = candidate.rankingKey ?? `${candidate.code}-${candidate.rank}`;
   const breakdown = rankingBreakdowns[rankingKey];
   return {
     rankingKey,
@@ -646,7 +646,7 @@ function PlayerSearch({ player, onChange, onSelect, index }: {
               className="max-h-none overscroll-contain [scrollbar-width:thin]"
               style={{ maxHeight, WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}
             >
-              <CommandEmpty>No top-100 player or pair found.</CommandEmpty>
+              <CommandEmpty>No top 200 player or pair found.</CommandEmpty>
               {suggestions.map((candidate) => (
                 <CommandItem
                   key={`${candidate.code}-${candidate.rank}-${candidate.name}`}
@@ -823,7 +823,7 @@ export default function Home() {
     .map((candidate) => {
       const automatic = scoresFor(candidate);
       const basePlayer: Player = {
-        id: `outcome-${candidate.code}-${candidate.rank}`,
+        id: `outcome-${candidate.rankingKey ?? `${candidate.code}-${candidate.rank}`}`,
         name: candidate.name,
         discipline: candidate.discipline,
         result: 'winner',
@@ -902,7 +902,7 @@ export default function Home() {
 
       <section className="mx-auto max-w-[1440px] px-4 pt-4 pb-7 sm:px-6 lg:px-8 lg:pt-5 lg:pb-9">
         <div className="mb-5 grid gap-3 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
-          <p className="text-[15px] leading-5 text-muted-foreground">Pick a tournament to preview all scenarios for the top 8 in each discipline. Or manually select up to 8 top 100 players or pairs, enter hypothetical results, and preview the resulting ranking points.</p>
+          <p className="text-[15px] leading-5 text-muted-foreground">Pick a tournament to preview all scenarios for the top 8 in each discipline. Or manually select up to 8 top 200 players or pairs, enter hypothetical results, and preview the resulting ranking points.</p>
           <Badge variant="outline" className="h-7 px-3"><CalendarClock /> Latest Reference · {rankingMeta.dateLabel}</Badge>
         </div>
 
@@ -939,7 +939,7 @@ export default function Home() {
                   </div>
                   <Table className="w-max min-w-full text-xs tabular-nums">
                     <TableHeader><TableRow><TableHead className="sticky left-0 z-10 h-8 w-28 max-w-28 bg-card px-2 py-1">Players/Pairs</TableHead>{outcomeTableRounds.map((round) => <TableHead key={round.key} className="h-8 min-w-18 px-2 py-1 text-right">{round.label}</TableHead>)}</TableRow></TableHeader>
-                    <TableBody>{outcomeRows.map((row) => <TableRow key={`${row.candidate.code}-${row.candidate.rank}`}><TableCell className="sticky left-0 z-10 w-28 max-w-28 whitespace-normal bg-card px-2 py-1 font-medium leading-tight"><span className="mr-1 text-[9px] text-muted-foreground">#{row.candidate.rank}</span>{row.displayName}</TableCell>{row.hasBreakdown ? row.totals.map((total, index) => <TableCell key={outcomeTableRounds[index].key} className="min-w-18 px-2 py-1 text-right font-medium">{fmt(total)}</TableCell>) : <TableCell colSpan={outcomeTableRounds.length} className="px-2 py-1 text-center font-medium text-muted-foreground">Projection Unavailable</TableCell>}</TableRow>)}</TableBody>
+                    <TableBody>{outcomeRows.map((row) => <TableRow key={row.candidate.rankingKey ?? `${row.candidate.code}-${row.candidate.rank}-${row.candidate.name}`}><TableCell className="sticky left-0 z-10 w-28 max-w-28 whitespace-normal bg-card px-2 py-1 font-medium leading-tight"><span className="mr-1 text-[9px] text-muted-foreground">#{row.candidate.rank}</span>{row.displayName}</TableCell>{row.hasBreakdown ? row.totals.map((total, index) => <TableCell key={outcomeTableRounds[index].key} className="min-w-18 px-2 py-1 text-right font-medium">{fmt(total)}</TableCell>) : <TableCell colSpan={outcomeTableRounds.length} className="px-2 py-1 text-center font-medium text-muted-foreground">Projection Unavailable</TableCell>}</TableRow>)}</TableBody>
                   </Table>
                 </div>
               </div>
