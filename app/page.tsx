@@ -1049,7 +1049,7 @@ export default function Home() {
                           <Popover>
                             <PopoverTrigger className="absolute right-0.5 top-0.5 flex size-6 items-center justify-center rounded-md text-primary hover:bg-secondary focus-visible:outline-2 focus-visible:outline-primary" aria-label="About the projected ranking comparison"><CircleHelp className="size-3.5" /></PopoverTrigger>
                             <PopoverContent align="end" className="max-w-[calc(100vw-2rem)] p-3">
-                              <PopoverDescription className="text-sm text-foreground">How the projected points compare to other players’ current points, assuming their points remain unchanged</PopoverDescription>
+                              <PopoverDescription className="text-sm text-foreground">How the projected points compare with other players’ current points, assuming their points remain unchanged</PopoverDescription>
                             </PopoverContent>
                           </Popover>
                         </div>
