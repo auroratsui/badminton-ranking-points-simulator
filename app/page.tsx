@@ -14,11 +14,15 @@ import {
   RotateCw,
   Smartphone,
   Table2,
+  TriangleAlert,
   Trash2,
 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Popover, PopoverContent, PopoverDescription, PopoverTrigger } from '@/components/ui/popover';
+import { aboveCurrentRank } from '@/lib/ranking-comparison';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Command,
@@ -182,6 +186,9 @@ function outcomeRoundsFor(level: LevelKey): Array<{ key: RoundKey; label: string
   ];
   if (level === 'worldChampionships' || level === 'olympics' || level === 'asianGames') {
     return [...standardOutcomeRounds, { key: 'r64', label: 'R64' }];
+  }
+  if (['super500', 'super300', 'super100', 'challenge', 'series', 'future'].includes(level)) {
+    return [...standardOutcomeRounds, { key: 'r64', label: 'R64' }, { key: 'r128', label: 'R128' }];
   }
   return standardOutcomeRounds;
 }
@@ -805,6 +812,7 @@ export default function Home() {
   const [outcomeDiscipline, setOutcomeDiscipline] = useState<DisciplineCode>('MS');
   const [showOutcomeTable, setShowOutcomeTable] = useState(false);
   const [showSelectedOutcomeTable, setShowSelectedOutcomeTable] = useState(false);
+  const [highlightHypotheticalResults, setHighlightHypotheticalResults] = useState(false);
 
   const selectedTournament = currentTournamentOptions.find((option) => option.id === selectedTournamentId) ?? null;
   const winnerAward = level ? levels[level].points[0] : null;
@@ -817,6 +825,8 @@ export default function Home() {
   const selectedPreviousEdition = previousEditionOptions.find((option) => option.id === previousEdition) ?? null;
   const summaries = useMemo(() => players.map((player) => ({ player, result: calculate(player, level, tournamentWeek, eventType, selectedPreviousEdition) })), [players, level, tournamentWeek, eventType, selectedPreviousEdition]);
   const outcomeTableRounds = useMemo(() => level ? outcomeRoundsFor(level) : [], [level]);
+  const topEightTableRounds = useMemo(() => outcomeTableRounds.filter((round) =>
+    round.key !== 'r128' && !(round.key === 'r64' && (level === 'super500' || level === 'super300'))), [outcomeTableRounds, level]);
   const outcomeRows = useMemo(() => rankingPlayers
     .filter((candidate) => candidate.code === outcomeDiscipline && candidate.rank <= 8)
     .sort((left, right) => left.rank - right.rank)
@@ -834,14 +844,14 @@ export default function Home() {
         snapshotTournaments: candidate.tournaments,
         rankingKey: automatic.rankingKey,
       };
-      const projections = outcomeTableRounds.map((round) => calculate({ ...basePlayer, result: round.key }, level, tournamentWeek, eventType, selectedPreviousEdition));
+      const projections = topEightTableRounds.map((round) => calculate({ ...basePlayer, result: round.key }, level, tournamentWeek, eventType, selectedPreviousEdition));
       return {
         candidate,
         displayName: outcomeTableName(candidate),
         hasBreakdown: projections[0]?.hasBreakdown ?? false,
         totals: projections.map((projection) => projection.after),
       };
-    }), [outcomeDiscipline, level, tournamentWeek, eventType, selectedPreviousEdition, outcomeTableRounds]);
+    }), [outcomeDiscipline, level, tournamentWeek, eventType, selectedPreviousEdition, topEightTableRounds]);
 
   const selectedPlayers = useMemo(() => players.filter((player) => player.rankingKey), [players]);
   const selectedOutcomeRows = useMemo(() => selectedPlayers.map((player) => {
@@ -888,6 +898,7 @@ export default function Home() {
   };
 
   const resetExample = () => {
+    setHighlightHypotheticalResults(false);
     setLevel(''); setEventType('individual'); setSelectedTournamentId(''); setTournamentWeek(defaultTournamentWeek); setPreviousEdition(''); setPlayers(initialPlayers); setOutcomeDiscipline('MS'); setShowOutcomeTable(false); setShowSelectedOutcomeTable(false);
   };
 
@@ -938,8 +949,8 @@ export default function Home() {
                     <PortraitTableHint />
                   </div>
                   <Table className="w-max min-w-full text-xs tabular-nums">
-                    <TableHeader><TableRow><TableHead className="sticky left-0 z-10 h-8 w-28 max-w-28 bg-card px-2 py-1">Players/Pairs</TableHead>{outcomeTableRounds.map((round) => <TableHead key={round.key} className="h-8 min-w-18 px-2 py-1 text-right">{round.label}</TableHead>)}</TableRow></TableHeader>
-                    <TableBody>{outcomeRows.map((row) => <TableRow key={row.candidate.rankingKey ?? `${row.candidate.code}-${row.candidate.rank}-${row.candidate.name}`}><TableCell className="sticky left-0 z-10 w-28 max-w-28 whitespace-normal bg-card px-2 py-1 font-medium leading-tight"><span className="mr-1 text-[9px] text-muted-foreground">#{row.candidate.rank}</span>{row.displayName}</TableCell>{row.hasBreakdown ? row.totals.map((total, index) => <TableCell key={outcomeTableRounds[index].key} className="min-w-18 px-2 py-1 text-right font-medium">{fmt(total)}</TableCell>) : <TableCell colSpan={outcomeTableRounds.length} className="px-2 py-1 text-center font-medium text-muted-foreground">Projection Unavailable</TableCell>}</TableRow>)}</TableBody>
+                    <TableHeader><TableRow><TableHead className="sticky left-0 z-10 h-8 w-28 max-w-28 bg-card px-2 py-1">Players/Pairs</TableHead>{topEightTableRounds.map((round) => <TableHead key={round.key} className="h-8 min-w-18 px-2 py-1 text-right">{round.label}</TableHead>)}</TableRow></TableHeader>
+                    <TableBody>{outcomeRows.map((row) => <TableRow key={row.candidate.rankingKey ?? `${row.candidate.code}-${row.candidate.rank}-${row.candidate.name}`}><TableCell className="sticky left-0 z-10 w-28 max-w-28 whitespace-normal bg-card px-2 py-1 font-medium leading-tight"><span className="mr-1 text-[9px] text-muted-foreground">#{row.candidate.rank}</span>{row.displayName}</TableCell>{row.hasBreakdown ? row.totals.map((total, index) => <TableCell key={topEightTableRounds[index].key} className="min-w-18 px-2 py-1 text-right font-medium">{fmt(total)}</TableCell>) : <TableCell colSpan={topEightTableRounds.length} className="px-2 py-1 text-center font-medium text-muted-foreground">Projection Unavailable</TableCell>}</TableRow>)}</TableBody>
                   </Table>
                 </div>
               </div>
@@ -960,6 +971,9 @@ export default function Home() {
               ? Boolean(selectedTournament && level && player.result)
               : Boolean(selectedTournament && player.manualTeamAward > 0);
             const ChangeIcon = result.change > 0 ? ArrowUpRight : result.change < 0 ? ArrowDownRight : ArrowRight;
+            const comparisonRank = projectionReady && result.hasBreakdown
+              ? aboveCurrentRank(result.after, player, rankingPlayers)
+              : null;
             const changeTone = result.change > 0 ? 'text-primary' : result.change < 0 ? 'text-destructive' : 'text-muted-foreground';
             const explanatoryDroppedScore = droppedScoreForExplanation(result);
             const explanatoryDropReason = explanatoryDroppedScore
@@ -1028,8 +1042,17 @@ export default function Home() {
 
                       <div className="grid grid-cols-3 gap-2">
                         <div className="rounded-lg border bg-card px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Points Awarded</p><p className="mt-0.5 font-semibold tabular-nums">{projectionReady ? fmt(result.award) : '---'}</p></div>
-                        <div className="rounded-lg border bg-card px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Updated Cutoff</p><p className="mt-0.5 font-semibold tabular-nums">{result.hasBreakdown && projectionReady ? fmt(result.cutoff) : '---'}</p></div>
                         <div className="rounded-lg border bg-card px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Expires / Replaced</p><p className="mt-0.5 font-semibold tabular-nums">{result.hasBreakdown ? result.removed.length : '—'}</p></div>
+                        <div className="relative rounded-lg border bg-card px-3 py-2">
+                          <p className="pr-4 text-[10px] uppercase tracking-wide text-muted-foreground">Above Current</p>
+                          <p className="mt-0.5 font-semibold tabular-nums" aria-live="polite">{comparisonRank === null ? '---' : `#${comparisonRank}`}</p>
+                          <Popover>
+                            <PopoverTrigger className="absolute right-0.5 top-0.5 flex size-6 items-center justify-center rounded-md text-primary hover:bg-secondary focus-visible:outline-2 focus-visible:outline-primary" aria-label="About the projected ranking comparison"><CircleHelp className="size-3.5" /></PopoverTrigger>
+                            <PopoverContent align="end" className="max-w-[calc(100vw-2rem)] p-3">
+                              <PopoverDescription className="text-sm text-foreground">How the projected points compare to other players’ current points, assuming their points remain unchanged</PopoverDescription>
+                            </PopoverContent>
+                          </Popover>
+                        </div>
                       </div>
 
                       {result.hasBreakdown ? (
@@ -1069,10 +1092,17 @@ export default function Home() {
         <Card>
           <CardContent className="space-y-4">
             <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
-              <p className="text-[15px] text-muted-foreground">Generate a table showing all possible outcomes for the players or pairs selected above.</p>
+              <div className="space-y-3">
+                <p className="text-[15px] text-foreground">Generate a table showing all possible outcomes for the players or pairs selected above.</p>
+                <label className="flex cursor-pointer items-center gap-2 text-sm text-muted-foreground">
+                  <Checkbox checked={highlightHypotheticalResults} onCheckedChange={(checked) => setHighlightHypotheticalResults(checked)} />
+                  Highlight hypothetical results
+                </label>
+              </div>
               <Button className="shrink-0" disabled={eventType === 'team' || !selectedTournament || !level || selectedPlayers.length === 0} onClick={() => setShowSelectedOutcomeTable(true)}><Table2 /> Generate</Button>
             </div>
             {showSelectedOutcomeTable && eventType === 'individual' && selectedTournament && level && selectedOutcomeRows.length > 0 && (
+              <div className="space-y-2">
               <div className="-mx-4 overflow-hidden border-y sm:mx-0 sm:rounded-xl sm:border">
                 <div className="border-b bg-muted/35 px-3 py-2">
                   <p className="font-sans text-base font-semibold">Projected total ranking points for each possible tournament finish in the {selectedTournament.name}</p>
@@ -1080,8 +1110,13 @@ export default function Home() {
                 </div>
                 <Table className="w-max min-w-full text-xs tabular-nums">
                   <TableHeader><TableRow><TableHead className="sticky left-0 z-10 h-8 w-32 max-w-32 bg-card px-2 py-1">Players/Pairs</TableHead>{outcomeTableRounds.map((round) => <TableHead key={round.key} className="h-8 min-w-18 px-2 py-1 text-right">{round.label}</TableHead>)}</TableRow></TableHeader>
-                  <TableBody>{selectedOutcomeRows.map((row) => <TableRow key={row.player.id}><TableCell className="sticky left-0 z-10 w-32 max-w-32 whitespace-normal bg-card px-2 py-1 font-medium leading-tight"><span className="text-[9px] text-muted-foreground">#{row.rank}</span> <span className="inline-flex rounded bg-secondary px-1 py-0.5 text-[9px] font-semibold text-secondary-foreground">{row.code}</span> <span>{row.displayName}</span></TableCell>{row.hasBreakdown ? row.totals.map((total, index) => <TableCell key={outcomeTableRounds[index].key} className="min-w-18 px-2 py-1 text-right font-medium">{fmt(total)}</TableCell>) : <TableCell colSpan={outcomeTableRounds.length} className="px-2 py-1 text-center font-medium text-muted-foreground">Projection Unavailable</TableCell>}</TableRow>)}</TableBody>
+                  <TableBody>{selectedOutcomeRows.map((row) => <TableRow key={row.player.id}><TableCell className="sticky left-0 z-10 w-32 max-w-32 whitespace-normal bg-card px-2 py-1 font-medium leading-tight"><span className="text-[9px] text-muted-foreground">#{row.rank}</span> <span className="inline-flex rounded bg-secondary px-1 py-0.5 text-[9px] font-semibold text-secondary-foreground">{row.code}</span> <span>{row.displayName}</span></TableCell>{row.hasBreakdown ? row.totals.map((total, index) => {
+                    const highlighted = highlightHypotheticalResults && row.player.result === outcomeTableRounds[index].key;
+                    return <TableCell key={outcomeTableRounds[index].key} className={`min-w-18 px-2 py-1 text-right font-medium${highlighted ? ' bg-secondary text-secondary-foreground' : ''}`}>{fmt(total)}{highlighted && <span className="sr-only"> — selected hypothetical result</span>}</TableCell>;
+                  }) : <TableCell colSpan={outcomeTableRounds.length} className="px-2 py-1 text-center font-medium text-muted-foreground">Projection Unavailable</TableCell>}</TableRow>)}</TableBody>
                 </Table>
+              </div>
+              {highlightHypotheticalResults && <p className="flex items-center justify-end gap-1.5 text-xs text-muted-foreground"><TriangleAlert className="size-4 shrink-0 text-primary" aria-hidden="true" />Hypothetical results highlighted</p>}
               </div>
             )}
           </CardContent>
