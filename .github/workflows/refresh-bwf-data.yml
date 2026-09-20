@@ -2,8 +2,8 @@ name: Refresh BWF ranking data
 
 on:
   schedule:
-    # 09:30 GMT+1 every Tuesday, shortly after the requested 09:20 refresh time.
-    - cron: '30 8 * * 2'
+    # Every Tuesday at 15:24 GMT+8 (07:24 UTC).
+    - cron: '24 7 * * 2'
   workflow_dispatch:
 
 permissions:
