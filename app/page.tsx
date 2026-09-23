@@ -23,6 +23,9 @@ import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Popover, PopoverContent, PopoverDescription, PopoverTrigger } from '@/components/ui/popover';
 import { aboveCurrentRank } from '@/lib/ranking-comparison';
+import { conflictingTournamentIds, simulateTournamentSequence } from '@/lib/crystal-ball';
+import { countingLabel, newestScoresFirst } from '@/lib/score-display';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Command,
@@ -409,7 +412,7 @@ function previousEditionMatch(current: CurrentTournamentEntry, candidates: Tourn
     'super100', 'challenge', 'allAfricaChampionships', 'oceaniaChampionships',
     'series', 'future',
   ]);
-  const crossesHighLowBoundary = (candidateLevel: LevelKey | null) => Boolean(currentLevel && candidateLevel)
+  const crossesHighLowBoundary = (candidateLevel: LevelKey | null) => currentLevel !== null && candidateLevel !== null
     && ((highLevels.has(currentLevel) && lowLevels.has(candidateLevel))
       || (lowLevels.has(currentLevel) && highLevels.has(candidateLevel)));
 
@@ -802,7 +805,133 @@ const currentTournamentOptions: CurrentTournamentEntry[] = (tournamentCalendars.
   }))
   .filter((tournament) => tournament.eventType === 'team' || tournament.level !== null);
 
+type CrystalTournament = {
+  id: string;
+  tournament: CurrentTournamentEntry | null;
+  level: LevelKey | '';
+  week: string;
+  previous: string;
+};
+type CrystalResult = { round: RoundKey | '' | 'notEntered'; teamPoints: string };
+type CrystalPlayer = Player & { results: Record<string, CrystalResult> };
+const emptyCrystalTournament = (id: string): CrystalTournament => ({ id, tournament: null, level: '', week: defaultTournamentWeek, previous: '' });
+const previousOptionsFor = (week: string): TournamentEntry[] => {
+  const year = Number(week.slice(0, 4)) - 1;
+  return (tournamentCalendars.calendars[String(year)] ?? [])
+    .filter((tournament) => !/junior/i.test(`${tournament.category} ${tournament.name}`))
+    .map((tournament, index) => ({ ...tournament, year, id: `${year}-${tournament.week}-${index}` }));
+};
+
+function CrystalBall() {
+  const [tournaments, setTournaments] = useState<CrystalTournament[]>([emptyCrystalTournament('crystal-tournament-1')]);
+  const [players, setPlayers] = useState<CrystalPlayer[]>([{ ...emptyPlayer('crystal-player-1'), results: {} }]);
+  const selected = tournaments.filter((row) => row.tournament);
+  const selectedPlayerCount = players.filter((player) => player.rankingKey).length;
+  const finalWeek = selected.map((row) => row.week).sort().at(-1);
+  const completeTournaments = selected.length > 0 && selected.length === tournaments.length
+    && selected.every((row) => isoWeekStart(row.week) && (row.tournament?.eventType === 'team' || row.level));
+  const patchPlayer = (id: string, patch: Partial<CrystalPlayer>) => setPlayers((current) => current.map((player) => player.id === id ? { ...player, ...patch } : player));
+  const patchTournament = (id: string, patch: Partial<CrystalTournament>, clearResults = false) => {
+    setTournaments((current) => current.map((row) => row.id === id ? { ...row, ...patch } : row));
+    if (clearResults) setPlayers((current) => current.map((player) => ({ ...player, results: { ...player.results, [id]: { round: '', teamPoints: '' } } })));
+  };
+  const pickTournament = (id: string, tournament: CurrentTournamentEntry | null) => {
+    const week = tournament ? `${tournament.year}-W${tournament.week.padStart(2, '0')}` : defaultTournamentWeek;
+    patchTournament(id, { tournament, week, level: tournament?.level ?? '', previous: tournament ? previousEditionMatch(tournament, previousOptionsFor(week))?.id ?? '' : '' }, true);
+  };
+  return (
+    <div>
+      <div className="mb-5 grid gap-3">
+        <p className="text-[15px] leading-5 text-muted-foreground">Pick up to 8 upcoming tournaments and up to 8 top 200 players or pairs. Enter hypothetical results to preview ranking points after the latest selected tournament.</p>
+        <Badge variant="outline" className="h-7 px-3 lg:hidden"><CalendarClock /> Latest Reference · {rankingMeta.dateLabel}</Badge>
+      </div>
+      <div className="mb-3">
+        <h2 className="font-heading text-xl font-semibold">PICK YOUR TOURNAMENTS</h2>
+        <p className="text-[15px] leading-5 text-muted-foreground">Tournament level, week, and previous edition are filled in automatically.</p>
+      </div>
+      <Card className="overflow-visible border-l-4 border-l-primary">
+        <CardContent className="space-y-4">
+          {tournaments.map((row, index) => (
+            <div key={row.id} className="relative grid items-start gap-3 border-b-[3px] pb-4 last:border-0 last:pb-0 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,.7fr)_minmax(0,1.4fr)_auto]">
+              <div className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Tournament Name <span className="text-base font-bold text-destructive">*</span></span><CurrentTournamentSearch options={currentTournamentOptions.filter((candidate) => !selected.some((other) => other.id !== row.id && other.tournament?.id === candidate.id))} value={row.tournament?.id ?? ''} onSelect={(tournament) => pickTournament(row.id, tournament)} /></div>
+              <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Tournament Level<NativeSelect className="w-full min-w-0" value={row.level} disabled={row.tournament?.eventType === 'team'} onChange={(event) => patchTournament(row.id, { level: event.target.value as LevelKey | '' }, true)}><NativeSelectOption value="">{row.tournament?.eventType === 'team' ? 'Team Event' : '---'}</NativeSelectOption>{Object.entries(levels).map(([key, item]) => <NativeSelectOption key={key} value={key}>{item.label}</NativeSelectOption>)}</NativeSelect></label>
+              <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Tournament Week<NativeSelect className="w-full min-w-0" value={row.week} onChange={(event) => { const week = event.target.value; patchTournament(row.id, { week, previous: row.tournament ? previousEditionMatch(row.tournament, previousOptionsFor(week))?.id ?? '' : '' }); }}>{Array.from(new Set([row.week, ...tournamentWeekOptions])).sort().map((week) => <NativeSelectOption key={week} value={week}>{week}</NativeSelectOption>)}</NativeSelect></label>
+              <div className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Previous Edition Replaced</span><TournamentSearch key={`${row.id}-${row.tournament?.id ?? ''}-${row.week.slice(0, 4)}`} options={previousOptionsFor(row.week)} year={Number(row.week.slice(0, 4)) - 1} value={row.previous} onSelect={(previous) => patchTournament(row.id, { previous })} /></div>
+              <Button variant="ghost" size="icon" className="absolute right-0 -top-1.5 sm:static lg:mt-6" aria-label={`Remove tournament ${index + 1}`} disabled={tournaments.length === 1 && !row.tournament} onClick={() => setTournaments((current) => current.length === 1 ? [emptyCrystalTournament(newId('crystal-tournament'))] : current.filter((item) => item.id !== row.id))}><Trash2 /></Button>
+            </div>
+          ))}
+          <Button disabled={tournaments.length >= 8} onClick={() => setTournaments((current) => current.length >= 8 ? current : [...current, emptyCrystalTournament(newId('crystal-tournament'))])}><Plus /> Add Tournament</Button>
+        </CardContent>
+      </Card>
+      <div className="mb-3 mt-8 flex items-center justify-between gap-4">
+        <div><h2 className="font-heading text-xl font-semibold">PICK YOUR PLAYERS &amp; RESULTS</h2><p className="text-sm text-muted-foreground">{selectedPlayerCount} {selectedPlayerCount === 1 ? 'player' : 'players'} selected · {finalWeek ? `Projection after ${finalWeek}` : 'Choose a tournament to begin'}</p></div>
+        <Button className="hidden sm:inline-flex" disabled={players.length >= 8} onClick={() => setPlayers((current) => current.length >= 8 ? current : [...current, { ...emptyPlayer(newId('crystal-player')), results: {} }])}><Plus /> Add Player</Button>
+      </div>
+      <div className="grid items-start gap-5 lg:grid-cols-2">
+        {players.map((player, index) => {
+          const conflicts = conflictingTournamentIds(selected, player.results);
+          const hasBreakdown = player.scores.some((score) => score.points > 0);
+          const resultsReady = completeTournaments && selected.every((row) => {
+            const result = player.results[row.id];
+            return row.tournament?.eventType === 'team'
+              ? result?.teamPoints !== undefined && result.teamPoints.trim() !== '' && Number.isFinite(Number(result.teamPoints)) && Number(result.teamPoints) >= 0
+              : Boolean(result?.round && (result.round === 'notEntered' || roundsFor(row.level).includes(result.round)));
+          });
+          const ready = Boolean(player.rankingKey && hasBreakdown && resultsReady);
+          const projection = ready ? simulateTournamentSequence(player.scores, selected.map((row) => {
+            const result = player.results[row.id];
+            const previous = previousOptionsFor(row.week).find((entry) => entry.id === row.previous) ?? null;
+            const team = row.tournament?.eventType === 'team';
+            return { id: row.id, week: row.week, notParticipating: result.round === 'notEntered',
+              score: { id: `projected-${row.id}`, label: row.tournament!.name, week: row.week, points: team ? Number(result.teamPoints) : result.round === 'notEntered' ? 0 : awardFor(row.level, result.round), team, bwfValid: false },
+              replaces: (score) => isReplacedBy({ ...score, href: '', result: '' }, previous),
+            };
+          }), player.snapshotPoints ?? 0) : null;
+          const comparisonRank = projection ? aboveCurrentRank(projection.after, player, rankingPlayers) : null;
+          return <Card key={player.id} className="overflow-visible">
+            <CardHeader className={player.rankingKey ? 'border-b' : ''}>
+              <div className="flex items-start gap-3">
+                <div className="grid min-w-0 flex-1 gap-3 sm:grid-cols-[1.4fr_.8fr]">
+                  <div className="grid min-w-0 gap-1 text-sm font-medium text-muted-foreground"><span>Player / Pair <span className="text-base font-bold text-destructive">*</span></span><PlayerSearch player={player} index={index} onChange={(name) => patchPlayer(player.id, { name, rankingKey: undefined, discipline: '', scores: [], snapshotPoints: undefined, snapshotRank: undefined, results: {} })} onSelect={(candidate) => { const automatic = scoresFor(candidate); patchPlayer(player.id, { name: candidate.name, discipline: candidate.discipline, rankingKey: automatic.rankingKey, scores: automatic.scores, snapshotPoints: candidate.points, snapshotRank: candidate.rank, snapshotTournaments: candidate.tournaments, sourceHref: candidate.href }); }} />{player.snapshotRank && <span className="text-xs font-normal">BWF #{player.snapshotRank} · {fmt(player.snapshotPoints ?? 0)} pts</span>}</div>
+                  <div className="grid min-w-0 content-start gap-1 text-sm font-medium text-muted-foreground"><span>Discipline</span><div className="flex h-9 items-center rounded-md border bg-muted/40 px-3 text-foreground">{player.discipline || '—'}</div></div>
+                </div>
+                <Button variant="ghost" size="icon" aria-label={`Remove ${player.name || 'player'}`} disabled={players.length === 1 && !player.name} onClick={() => setPlayers((current) => current.length === 1 ? [{ ...emptyPlayer(newId('crystal-player')), results: {} }] : current.filter((item) => item.id !== player.id))}><Trash2 /></Button>
+              </div>
+            </CardHeader>
+            {player.rankingKey && <CardContent className="space-y-4">
+              {!selected.length && <p className="text-sm text-muted-foreground">Choose a tournament above to enter hypothetical results.</p>}
+              {selected.map((row) => <div key={row.id} className="relative grid items-center gap-2 border-b pb-3 pr-7 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+                {conflicts.has(row.id) && <Popover><PopoverTrigger className="absolute right-0 top-0 flex size-6 items-center justify-center rounded-md text-destructive hover:bg-destructive/10 focus-visible:outline-2 focus-visible:outline-destructive" aria-label={`Schedule conflict for ${row.tournament!.name}`}><TriangleAlert className="size-4" /></PopoverTrigger><PopoverContent align="end" className="max-w-[calc(100vw-2rem)] p-3"><PopoverDescription className="text-sm text-foreground">Schedule Conflict: Multiple tournaments selected in the same week</PopoverDescription></PopoverContent></Popover>}
+                <div className="min-w-0"><p className="text-sm font-medium">{row.tournament!.name}</p><p className="text-xs text-muted-foreground">{row.week}</p></div>
+                {row.tournament?.eventType === 'team' ? <label className="grid gap-1.5 text-sm text-muted-foreground">Projected Team Points<Input type="number" min="0" placeholder="Enter BWF-calculated points" value={player.results[row.id]?.teamPoints ?? ''} onChange={(event) => patchPlayer(player.id, { results: { ...player.results, [row.id]: { round: '', teamPoints: event.target.value } } })} /></label>
+                : <label className="grid min-w-0 gap-1.5 text-sm text-muted-foreground"><span>Hypothetical Result <span className="text-base font-bold text-destructive">*</span></span><NativeSelect className="w-full min-w-0" value={player.results[row.id]?.round ?? ''} onChange={(event) => patchPlayer(player.id, { results: { ...player.results, [row.id]: { round: event.target.value as CrystalResult['round'], teamPoints: '' } } })}><NativeSelectOption value="">--Please select--</NativeSelectOption><NativeSelectOption value="notEntered">Not Participating</NativeSelectOption>{roundsFor(row.level).map((round) => <NativeSelectOption key={round} value={round}>{roundLabels[round]}</NativeSelectOption>)}</NativeSelect></label>}
+              </div>)}
+              <div className="rounded-xl bg-secondary px-4 py-3" aria-live="polite">
+                <div className="flex items-center justify-between gap-2 text-xs text-muted-foreground"><span>Projected Points{finalWeek ? ` After ${finalWeek}` : ''}</span>{projection && <span className={`font-semibold ${projection.change < 0 ? 'text-destructive' : 'text-primary'}`}>{projection.change > 0 ? '+' : ''}{fmt(projection.change)}</span>}</div>
+                <p className="mt-1"><span className="text-3xl font-semibold tabular-nums">{!hasBreakdown ? 'Unavailable' : projection ? fmt(projection.after) : '---'}</span><span className="ml-2 text-xs text-muted-foreground">from {fmt(player.snapshotPoints ?? 0)}</span></p>
+                <p className="mt-2 text-xs text-muted-foreground">{!hasBreakdown ? 'Projection unavailable: no published score breakdown.' : !ready ? 'Select all tournaments and a hypothetical result for each.' : `${projection!.afterScores.length} counting results after all selected tournaments`}</p>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="rounded-lg border px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Expires / Replaced</p><p className="mt-0.5 font-semibold">{projection ? projection.removed.size : '---'}</p></div>
+                <div className="relative rounded-lg border px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Above Current</p><p className="mt-0.5 font-semibold">{comparisonRank === null ? '---' : `#${comparisonRank}`}</p><Popover><PopoverTrigger className="absolute right-1 top-1 flex size-6 items-center justify-center rounded-md text-primary hover:bg-secondary" aria-label="About the projected ranking comparison"><CircleHelp className="size-3.5" /></PopoverTrigger><PopoverContent align="end"><PopoverDescription>How the projected points compare with other players’ current points, assuming their points remain unchanged</PopoverDescription></PopoverContent></Popover></div>
+              </div>
+              {projection && <details className="group rounded-xl border"><summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-medium marker:hidden"><span>Score Breakdown After {projection.finalWeek} <span className="font-normal text-muted-foreground">· {projection.afterScores.length} counting</span></span><ChevronRight className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-90" /></summary><div className="divide-y border-t">{newestScoresFirst(projection.allScores).map((score) => {
+                const counted = projection.afterScores.some((item) => item.id === score.id);
+                const removed = projection.removed.get(score.id);
+                return <div key={score.id} className={`grid grid-cols-[minmax(0,1fr)_auto] gap-2 px-4 py-3 text-xs ${score.id.startsWith('projected-') ? 'bg-background' : ''}`}><div><p className="font-medium">{score.label}</p><p className="mt-1 text-muted-foreground">{score.week}{score.team ? ' · Team Event' : ''}{score.id.startsWith('projected-') ? ' · Hypothetical' : ''}</p></div><div className="space-y-1 text-right"><p className="font-semibold tabular-nums">{fmt(score.points)}</p><span className="flex flex-wrap justify-end gap-1">{removed && score.bwfValid && <Badge variant="secondary" className="line-through">Counting</Badge>}<Badge className={!removed && !counted ? 'bg-white' : ''} variant={removed ? 'destructive' : counted ? 'secondary' : 'outline'}>{removed ?? countingLabel(score.bwfValid, counted) ?? 'Not Counting'}</Badge></span></div></div>;
+              })}</div></details>}
+            </CardContent>}
+          </Card>;
+        })}
+      </div>
+      <Button className="mt-4 w-full sm:hidden" disabled={players.length >= 8} onClick={() => setPlayers((current) => current.length >= 8 ? current : [...current, { ...emptyPlayer(newId('crystal-player')), results: {} }])}><Plus /> Add Player</Button>
+    </div>
+  );
+}
+
 export default function Home() {
+  const [activeTab, setActiveTab] = useState('default');
+  const [crystalResetKey, setCrystalResetKey] = useState(0);
   const [level, setLevel] = useState<LevelKey | ''>('');
   const [eventType, setEventType] = useState<'individual' | 'team'>('individual');
   const [selectedTournamentId, setSelectedTournamentId] = useState('');
@@ -898,6 +1027,7 @@ export default function Home() {
   };
 
   const resetExample = () => {
+    if (activeTab === 'crystal') { setCrystalResetKey((value) => value + 1); return; }
     setHighlightHypotheticalResults(false);
     setLevel(''); setEventType('individual'); setSelectedTournamentId(''); setTournamentWeek(defaultTournamentWeek); setPreviousEdition(''); setPlayers(initialPlayers); setOutcomeDiscipline('MS'); setShowOutcomeTable(false); setShowSelectedOutcomeTable(false);
   };
@@ -911,10 +1041,19 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="mx-auto max-w-[1440px] px-4 pt-4 pb-7 sm:px-6 lg:px-8 lg:pt-5 lg:pb-9">
-        <div className="mb-5 grid gap-3 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
+      <section className="mx-auto max-w-[1440px] px-4 pt-1.5 pb-7 sm:px-6 lg:px-8 lg:pb-9">
+        <Tabs value={activeTab} onValueChange={(value) => setActiveTab(String(value))}>
+          <div className="flex items-center justify-between gap-4">
+            <TabsList variant="line" className="mb-0 gap-6 px-0 py-[3px] group-data-horizontal/tabs:h-[30px]">
+              <TabsTrigger value="default" className="border-0 px-0 text-base font-normal text-black data-active:text-black after:bg-primary group-data-horizontal/tabs:after:h-[3px]">Default</TabsTrigger>
+              <TabsTrigger value="crystal" className="border-0 px-0 text-base font-normal text-black data-active:text-black after:bg-primary group-data-horizontal/tabs:after:h-[3px]">Crystal Ball</TabsTrigger>
+            </TabsList>
+            <Badge variant="outline" className="hidden h-7 px-3 lg:inline-flex"><CalendarClock /> Latest Reference · {rankingMeta.dateLabel}</Badge>
+          </div>
+          <TabsContent value="default" keepMounted className="data-[hidden]:hidden">
+        <div className="mb-5 grid gap-3">
           <p className="text-[15px] leading-5 text-muted-foreground">Pick a tournament to preview all scenarios for the top 8 in each discipline. Or manually select up to 8 top 200 players or pairs, enter hypothetical results, and preview the resulting ranking points.</p>
-          <Badge variant="outline" className="h-7 px-3"><CalendarClock /> Latest Reference · {rankingMeta.dateLabel}</Badge>
+          <Badge variant="outline" className="h-7 px-3 lg:hidden"><CalendarClock /> Latest Reference · {rankingMeta.dateLabel}</Badge>
         </div>
 
         <div className="mb-3">
@@ -924,11 +1063,13 @@ export default function Home() {
 
         <Card className="mb-6 overflow-visible border-l-4 border-l-primary shadow-[0_12px_35px_rgb(22_62_43/6%)]">
           <CardContent className="grid gap-4 sm:grid-cols-2 lg:grid-cols-[1.1fr_.85fr_1.45fr_.75fr_1.45fr]">
+            <div className="contents lg:col-span-5 lg:grid lg:grid-cols-[minmax(0,1.55fr)_.85fr_minmax(240px,1.1fr)_minmax(125px,.65fr)_1.45fr] lg:gap-4">
             <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Tournament Name <span className="ml-0.5 text-base font-bold leading-none text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span><CurrentTournamentSearch options={currentTournamentOptions} value={selectedTournamentId} onSelect={selectTournament} /></label>
             <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Event Type<NativeSelect className="min-w-0 w-full" value={eventType} onChange={(event) => setEventType(event.target.value as 'individual' | 'team')} aria-label="Event Type"><NativeSelectOption value="individual">Individual Event</NativeSelectOption><NativeSelectOption value="team">Team Event</NativeSelectOption></NativeSelect></label>
             <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Tournament Level<NativeSelect className="min-w-0 w-full" value={eventType === 'team' ? '' : level} onChange={(event) => changeLevel(event.target.value as LevelKey | '')} aria-label="Tournament Level" disabled={eventType === 'team'}><NativeSelectOption value="">{eventType === 'team' ? 'Not Applicable' : '---'}</NativeSelectOption>{Object.entries(levels).map(([key, item]) => <NativeSelectOption key={key} value={key}>{item.label}</NativeSelectOption>)}</NativeSelect></label>
             <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Tournament Week<NativeSelect className="min-w-0 w-full" value={tournamentWeek} onChange={(event) => setTournamentWeek(event.target.value)} aria-label="Tournament Week" aria-invalid={!validTournamentWeek}>{tournamentWeekOptions.map((week) => <NativeSelectOption key={week} value={week}>{week}</NativeSelectOption>)}</NativeSelect></label>
             <div className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Previous Edition Replaced</span><TournamentSearch key={previousYear} options={previousEditionOptions} value={selectedPreviousEdition?.id ?? ''} year={previousYear} onSelect={setPreviousEdition} /></div>
+            </div>
             <div className="rounded-lg bg-secondary px-4 py-3 sm:col-span-2 lg:col-span-1"><p className="text-xs text-muted-foreground">Winner Earns</p><p className="mt-1 text-2xl font-semibold tabular-nums">{!selectedTournament ? '--- pts' : eventType === 'team' ? 'Manual' : winnerAward ? `${fmt(winnerAward)} pts` : '--- pts'}</p></div>
             <div className="flex flex-col items-start gap-3 rounded-lg border bg-muted/25 px-4 py-3 sm:col-span-2 lg:col-span-4 lg:flex-row lg:items-center lg:justify-between">
               <div className="flex flex-wrap items-center gap-1.5 text-[15px]">
@@ -1059,16 +1200,17 @@ export default function Home() {
                         <details className="group rounded-xl border bg-card">
                           <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-medium marker:hidden"><span>BWF Score Breakdown <span className="font-normal text-muted-foreground">· {result.beforeScores.length} counting now · {player.scores.length} results</span></span><ChevronRight className="size-4 text-muted-foreground transition-transform group-open:rotate-90" /></summary>
                           <div className="divide-y border-t">
-                            {player.scores.map((score) => {
+                            {newestScoresFirst(player.scores).map((score) => {
                               const removed = result.removed.some((item) => item.id === score.id);
                               const countsAfter = result.afterScores.some((item) => item.id === score.id);
                               const replaced = isReplacedBy(score, selectedPreviousEdition);
+                              const label = countingLabel(score.bwfValid, countsAfter, projectionReady);
                               return (
-                                <div key={score.id} className="grid gap-2 px-4 py-3 sm:grid-cols-[90px_minmax(0,1fr)_70px_auto] sm:items-center">
-                                  <span className="text-[11px] tabular-nums text-muted-foreground">{score.week.replace('-W', ' / ')}</span>
-                                  <span className="min-w-0"><span className="block truncate text-xs font-medium">{score.label}</span><span className="text-[10px] text-muted-foreground">{score.team ? 'Team Event' : score.result}</span></span>
-                                  <span className="text-right text-xs font-semibold tabular-nums">{fmt(score.points)}</span>
-                                  <span className="flex flex-wrap justify-end gap-1">{score.bwfValid && <Badge variant="secondary">Counting Now</Badge>}{removed && <Badge variant="destructive">{replaced ? 'Replaced' : 'Expires'}</Badge>}{!removed && score.bwfValid && !countsAfter && <Badge variant="outline">Leaves Counting Ten</Badge>}{!removed && countsAfter && !score.bwfValid && <Badge>Counts After</Badge>}</span>
+                                <div key={score.id} className="grid grid-cols-[minmax(0,1fr)_auto] gap-x-2 gap-y-1 px-4 py-3 text-xs">
+                                  <span className="font-medium">{score.label}</span>
+                                  <span className="text-right font-semibold tabular-nums">{fmt(score.points)}</span>
+                                  <span className="text-muted-foreground">{score.week}{score.team ? ' · Team Event' : score.result ? ` · ${score.result}` : ''}</span>
+                                  <span className="flex flex-wrap justify-end gap-1">{removed && score.bwfValid && <Badge variant="secondary" className="line-through">Counting</Badge>}{removed && <Badge variant="destructive">{replaced ? 'Replaced' : 'Expires'}</Badge>}{!removed && label && <Badge className={label === 'Leaves Counting 10' ? 'bg-white' : ''} variant={label === 'Leaves Counting 10' ? 'outline' : 'secondary'}>{label}</Badge>}</span>
                                 </div>
                               );
                             })}
@@ -1122,6 +1264,9 @@ export default function Home() {
           </CardContent>
         </Card>
 
+          </TabsContent>
+          <TabsContent value="crystal" keepMounted className="data-[hidden]:hidden"><CrystalBall key={crystalResetKey} /></TabsContent>
+        </Tabs>
         <section className="mt-8">
           <Card>
             <CardHeader className="border-b"><CardTitle>What the Simulator Does</CardTitle></CardHeader>
