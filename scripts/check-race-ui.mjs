@@ -1,0 +1,43 @@
+import { chromium } from 'playwright';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { rankingPlayers } from '../lib/ranking-data.ts';
+import { findRacePlayer, projectRacePoints } from '../lib/race-to-finals.ts';
+const data = JSON.parse(await readFile(new URL('../lib/race-to-finals-data.json',import.meta.url)));
+const browser = await chromium.launch();
+try {
+ const page = await browser.newPage({viewport:{width:1440,height:1150}});
+ const errors=[]; page.on('pageerror',error=>errors.push(error.message));
+ await page.goto('http://localhost:3000/', {waitUntil:'networkidle'});
+ const box = page.getByText('Projected Race-to-Finals Points',{exact:true}).locator('..');
+ const choosePlayer = async name => {
+   await page.getByRole('textbox',{name:'Player 1 name',exact:true}).fill(name);
+   await page.getByRole('option').filter({hasText:name}).first().click();
+ };
+ assert.equal(await box.count(),0);
+ await choosePlayer('Christo POPOV');
+ assert.equal(await box.count(),1);
+ assert.match(await box.innerText(),/---/);
+ await page.getByRole('textbox',{name:'Tournament Name',exact:true}).fill('Hylo');
+ await page.getByRole('option').filter({hasText:/HYLO Open 2026/i}).click();
+ await page.getByLabel('Christo POPOV hypothetical result',{exact:true}).selectOption('winner');
+ const selected = rankingPlayers.find(p=>p.name==='Christo POPOV' && p.code==='MS');
+ const expected=projectRacePoints(data,findRacePlayer(data,selected),{week:await page.getByLabel('Tournament Week',{exact:true}).inputValue(),level:await page.getByLabel('Tournament Level',{exact:true}).inputValue(),points:9200,team:false});
+ assert.ok((await box.innerText()).includes(expected.points.toLocaleString('en-GB')));
+ await page.screenshot({path:'/tmp/bwf-race-desktop.png',fullPage:true});
+ await page.getByLabel('Tournament Week',{exact:true}).selectOption('2026-W48');
+ assert.match(await box.getAttribute('title'),/2027 race/);
+ await page.getByLabel('Tournament Week',{exact:true}).selectOption('2026-W45');
+ await page.setViewportSize({width:390,height:844});
+ await page.evaluate(() => window.scrollTo(0,0));
+ await page.screenshot({path:'/tmp/bwf-race-mobile.png',fullPage:true});
+ assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+ const outside=rankingPlayers.find(p=>p.code==='MS' && !findRacePlayer(data,p));
+ await choosePlayer(outside.name);
+ assert.equal(await box.count(),0);
+ await page.getByRole('tab',{name:'Crystal Ball',exact:true}).click();
+ await choosePlayer('Christo POPOV');
+ assert.equal(await box.count(),0);
+ assert.deepEqual(errors,[]);
+ console.log('PASS: Default-only visibility, top-25 membership, no premature projection, live projection, W48 separation, mobile overflow, Crystal Ball unchanged; no browser errors.');
+} finally { await browser.close(); }

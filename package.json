@@ -11,7 +11,9 @@
     "start": "wrangler dev --config dist/server/wrangler.json",
     "refresh-data": "node scripts/refresh-bwf-data.mjs",
     "lint": "oxlint",
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "refresh-race-to-finals": "node --experimental-strip-types scripts/refresh-race-to-finals.mjs",
+    "test": "node --experimental-strip-types --test scripts/*.test.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

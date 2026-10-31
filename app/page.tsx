@@ -38,6 +38,8 @@ import { NativeSelect, NativeSelectOption } from '@/components/ui/native-select'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { rankingMeta, rankingPlayers, type RankingPlayer } from '@/lib/ranking-data';
+import { findRacePlayer, projectRacePoints, type RaceData } from '@/lib/race-to-finals';
+import raceDataJson from '@/lib/race-to-finals-data.json';
 import rankingBreakdownsJson from '@/lib/ranking-breakdowns.json';
 import tournamentCalendarsJson from '@/lib/tournament-calendars.json';
 
@@ -124,6 +126,7 @@ type CurrentTournamentEntry = TournamentEntry & {
   level: LevelKey | null;
 };
 
+const raceData = raceDataJson as RaceData;
 const rankingBreakdowns = rankingBreakdownsJson as Record<string, RankingBreakdown>;
 const tournamentCalendars = tournamentCalendarsJson as TournamentCalendarData;
 
@@ -537,7 +540,7 @@ function newId(prefix: string) {
   return `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`;
 }
 
-function outcomeTableName(candidate: RankingPlayer) {
+function outcomeTableName(candidate: Omit<RankingPlayer, 'rankingKey'>) {
   if (!['MD', 'WD', 'XD'].includes(candidate.code)) return candidate.name;
   return candidate.name.split(' / ').map((member) => {
     const parts = member.trim().split(/\s+/);
@@ -1114,6 +1117,12 @@ export default function Home() {
             const projectionReady = eventType === 'individual'
               ? Boolean(selectedTournament && level && player.result)
               : Boolean(selectedTournament && player.manualTeamAward > 0);
+            const racePlayer = player.rankingKey ? findRacePlayer(raceData, {
+              name: player.name, code: player.rankingKey.split('-')[0], href: player.sourceHref,
+            }) : undefined;
+            const raceProjection = racePlayer && projectionReady && validTournamentWeek
+              ? projectRacePoints(raceData, racePlayer, { week: tournamentWeek, level, points: result.award, team: eventType === 'team' })
+              : null;
             const ChangeIcon = result.change > 0 ? ArrowUpRight : result.change < 0 ? ArrowDownRight : ArrowRight;
             const comparisonRank = projectionReady && result.hasBreakdown
               ? aboveCurrentRank(result.after, player, rankingPlayers)
@@ -1171,13 +1180,21 @@ export default function Home() {
                 </CardHeader>
                 {player.rankingKey && (
                   <CardContent className="space-y-4">
-                      <div className="grid gap-4 sm:grid-cols-[1fr_1.25fr]">
+                      <div className="grid items-start gap-4 sm:grid-cols-[1fr_1.25fr]">
+                        <div className="contents sm:grid sm:gap-4">
                         {eventType === 'individual' ? (
                           <label className="grid min-w-0 self-start gap-1.5 text-sm font-medium text-muted-foreground"><span>Hypothetical Result <span className="ml-0.5 text-base font-bold leading-none text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span><NativeSelect className="min-w-0 w-full" value={player.result} onChange={(event) => patchPlayer(player.id, { result: event.target.value as RoundKey | '' })} aria-label={`${player.name} hypothetical result`} required><NativeSelectOption value="">--Please select--</NativeSelectOption>{roundsFor(level).map((round) => <NativeSelectOption key={round} value={round}>{roundLabels[round]}</NativeSelectOption>)}</NativeSelect></label>
                         ) : (
                           <label className="grid gap-1.5 text-sm font-medium text-muted-foreground">Projected Team Points Awarded<Input type="number" min="0" value={player.manualTeamAward || ''} onChange={(event) => patchPlayer(player.id, { manualTeamAward: Number(event.target.value) })} aria-label={`${player.name} projected team points awarded`} placeholder="Points" /></label>
                         )}
-                        <div className="rounded-xl bg-secondary px-4 py-3">
+                        {racePlayer && (
+                          <div className="order-2 rounded-lg border bg-card px-3 py-2" aria-live="polite" title={raceProjection?.note}>
+                            <p className="text-[10px] uppercase tracking-wide text-muted-foreground">Projected Race-to-Finals Points</p>
+                            <p className="mt-0.5 font-semibold tabular-nums">{raceProjection?.points != null ? fmt(raceProjection.points) : '---'}</p>
+                          </div>
+                        )}
+                        </div>
+                        <div className="order-1 self-start rounded-xl bg-secondary px-4 py-3">
                           <div className="flex items-center justify-between gap-3"><span className="text-xs text-muted-foreground">{result.hasBreakdown ? 'Projected Points' : 'Current Points'}</span>{result.hasBreakdown ? projectionReady ? <span className={`inline-flex items-center gap-1 text-xs font-semibold tabular-nums ${changeTone}`}><ChangeIcon className="size-3.5" />{result.change > 0 ? '+' : ''}{fmt(result.change)}</span> : <span className="text-xs font-semibold tabular-nums text-muted-foreground">--- awarded</span> : <Badge variant="outline">Breakdown Unavailable</Badge>}</div>
                           <div className="mt-1 flex items-baseline gap-2"><span className="text-3xl font-semibold tracking-tight tabular-nums">{result.hasBreakdown ? projectionReady ? fmt(result.after) : '---' : fmt(result.after)}</span>{result.hasBreakdown && <span className="text-xs text-muted-foreground">from {fmt(result.before)}</span>}</div>
                           <p className="mt-2 border-t border-border/70 pt-2 text-[11px] leading-4 text-muted-foreground">{explanation}</p>

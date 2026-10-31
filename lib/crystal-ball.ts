@@ -5,6 +5,7 @@ export type ScenarioScore = {
   points: number;
   team: boolean;
   bwfValid: boolean;
+  result?: string;
 };
 
 export type ScenarioEvent = {

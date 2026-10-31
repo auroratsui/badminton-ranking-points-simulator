@@ -61,7 +61,7 @@ GitHub can take several minutes to publish the first deployment. When it finishe
 
 ## 5. Confirm Weekly Ranking Updates
 
-The included **Refresh BWF ranking data** workflow is scheduled every Tuesday at 09:30 GMT+1. It retrieves:
+The included **Refresh BWF ranking data** workflow is scheduled every Tuesday at 15:24 GMT+8 (07:24 UTC). It retrieves:
 
 - the top 200 players or pairs in all five disciplines;
 - every listed player's or pair's current ranking-points breakdown;
@@ -75,7 +75,7 @@ To test the refresh manually:
 1. Open **Actions**.
 2. Select **Refresh BWF ranking data**.
 3. Select **Run workflow** and confirm the `main` branch.
-4. Wait for the workflow to finish. Processing 500 ranking entries and their breakdowns can take several minutes.
+4. Wait for the workflow to finish. Processing 1,000 World Ranking entries and their breakdowns can take several minutes.
 
 Scheduled GitHub Actions runs may begin slightly later than the target time. GitHub may also disable scheduled workflows in a public repository after 60 days without repository activity. If that happens, open **Actions → Refresh BWF ranking data**, use the workflow menu to enable it, and run it once manually.
 
