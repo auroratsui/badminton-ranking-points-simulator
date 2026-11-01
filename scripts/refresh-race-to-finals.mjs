@@ -3,7 +3,7 @@ import { pathToFileURL } from 'node:url';
 import { resolve } from 'node:path';
 import { chromium } from 'playwright';
 import { writeFile, rename } from 'node:fs/promises';
-import { raceTotal, levelFromChampionAwards } from '../lib/race-to-finals.ts';
+import { raceTotal, raceSeasonForWeek, levelFromChampionAwards } from '../lib/race-to-finals.ts';
 const rankingUrl = 'https://www.tournamentsoftware.com/ranking/ranking.aspx?rid=211';
 const topCount = 25;
 
@@ -256,9 +256,8 @@ async function tournamentLevel(context, url) {
 
 export async function refreshRaceToFinals(context) {
   const edition = await discoverEdition(context);
-  if (!edition.date || edition.date < '2025-11-24' || edition.date >= '2026-12-14') {
-    throw new Error('Race-to-Finals source is not a verified 2026-season publication; preserving the saved dataset.');
-  }
+  if (!edition.date || !edition.week) throw new Error('Race-to-Finals publication date could not be verified');
+  let season;
   tournamentLevels.clear();
   const players = [];
   for (const discipline of disciplines) {
@@ -270,16 +269,23 @@ export async function refreshRaceToFinals(context) {
       const scores = await readBreakdown(context, player, discipline);
       for (const score of scores) {
         score.level = await tournamentLevel(context, score.tournamentUrl);
-        if (!score.label || !Number.isFinite(score.points) || !score.level || !/^20\d{2}-W\d{2}$/.test(score.week) || score.week < '2025-W48' || score.week > '2026-W47' || score.points < 0) {
+        if (!score.label || !Number.isFinite(score.points) || !score.level || !/^20\d{2}-W\d{2}$/.test(score.week) || !Number.isFinite(raceSeasonForWeek(score.week)) || score.points < 0) {
           throw new Error(`${player.name}: invalid season or unrecognised tournament level: ${JSON.stringify(score)}`);
         }
       }
-      if (raceTotal(scores) !== player.points) throw new Error(`${player.name}: best-14 / three-S100 total does not match published total`);
+      const seasons = new Set(scores.map(score => raceSeasonForWeek(score.week)));
+      const playerSeason = [...seasons][0];
+      const publicationYear = Number(edition.date.slice(0, 4));
+      if (seasons.size !== 1 || playerSeason < publicationYear || playerSeason > publicationYear + 1 || (season && season !== playerSeason)) {
+        throw new Error(`${player.name}: mixed or unverified Race-to-Finals seasons`);
+      }
+      season = playerSeason;
+      if (raceTotal(scores, season) !== player.points) throw new Error(`${player.name}: best-14 / three-S100 total does not match published total`);
       players.push({ ...player, code: discipline.code, scores });
     }
     console.log(`${discipline.code}: validated ${rows.length} Race-to-Finals entries`);
   }
-  const data = { season: 2026, edition, generatedAt: new Date().toISOString(), players };
+  const data = { season, edition, generatedAt: new Date().toISOString(), players };
   const destination = new URL('../lib/race-to-finals-data.json', import.meta.url);
   const temporary = new URL('../lib/race-to-finals-data.json.tmp', import.meta.url);
   await writeFile(temporary, `${JSON.stringify(data, null, 2)}\n`);

@@ -9,8 +9,14 @@ export function levelFromChampionAwards(points: number[]): string | null {
   return points.length === 5 && new Set(points).size === 1 ? levels[points[0]] ?? null : null;
 }
 
-export function raceTotal(scores: readonly RaceScore[]): number {
-  const eligible = scores.filter(score => score.week >= '2025-W48' && score.week <= '2026-W47'
+export function raceSeasonForWeek(week: string): number {
+  const match = /^(20\d{2})-W(\d{2})$/.exec(week);
+  if (!match || Number(match[2]) < 1 || Number(match[2]) > 53) return NaN;
+  return Number(match[1]) + (Number(match[2]) >= 48 ? 1 : 0);
+}
+
+export function raceTotal(scores: readonly RaceScore[], season = 2026): number {
+  const eligible = scores.filter(score => raceSeasonForWeek(score.week) === season
     && ['super100', 'super300', 'super500', 'super750', 'super1000', 'chinaOpen'].includes(score.level));
   const super100 = eligible.filter(score => score.level === 'super100').sort((a, b) => b.points - a.points).slice(0, 3);
   return [...eligible.filter(score => score.level !== 'super100'), ...super100]
@@ -50,15 +56,18 @@ export function findRacePlayer(data: RaceData, player: { name: string; code: str
 }
 
 export function projectRacePoints(data: RaceData, player: RacePlayer, event: { week: string; level: string; points: number; team: boolean }) {
-  if (data.season !== 2026 || event.week >= '2026-W50') return { points: null, note: 'The 2026 Race-to-Finals season has ended.' };
-  if (!/^20\d{2}-W\d{2}$/.test(event.week) || event.week < '2025-W48') return { points: null, note: 'Outside the 2026 Race-to-Finals season.' };
-  if (data.edition.week && event.week < `${data.edition.date.slice(0, 4)}-W${String(data.edition.week).padStart(2, '0')}`) {
-    return { points: null, note: 'The selected week predates this Race-to-Finals reference.' };
+  const season = raceSeasonForWeek(event.week);
+  const before = season === data.season ? player.points : 0;
+  if (!Number.isFinite(season) || season < data.season) return { points: null, before, season, note: 'The selected week predates this Race-to-Finals season' };
+  if (season === data.season && data.edition.week && event.week < `${data.edition.date.slice(0, 4)}-W${String(data.edition.week).padStart(2, '0')}`) {
+    return { points: null, before, season, note: 'The selected week predates this Race-to-Finals reference' };
   }
   if (event.team || !['super100', 'super300', 'super500', 'super750', 'super1000', 'chinaOpen'].includes(event.level)) {
-    return { points: player.points, note: 'This tournament does not award Race-to-Finals points.' };
+    return { points: before, before, season, note: `This tournament does not award Race-to-Finals points · ${season} season` };
   }
-  if (event.week > '2026-W47') return { points: player.points, note: 'This tournament belongs to the 2027 race; the 2026 total is unchanged.' };
-  const points = raceTotal([...player.scores, { ...event, label: 'Hypothetical result' }]);
-  return { points, note: '2026 season · best 14 results · at most three Super 100 results.' };
+  // A future season starts at zero; only a published snapshot for that season
+  // can supply an existing balance. No previous-season results carry over.
+  const scores = season === data.season ? player.scores : [];
+  const points = raceTotal([...scores, { ...event, label: 'Hypothetical result' }], season);
+  return { points, before, season, note: `${season} season · best 14 results · at most three Super 100 results` };
 }

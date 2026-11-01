@@ -1,8 +1,8 @@
-import { readFile, writeFile } from 'node:fs/promises';
+import { refreshCalendars } from './refresh-calendars.mjs';
+import { writeFile } from 'node:fs/promises';
 import { chromium } from 'playwright';
 
 const rankingUrl = 'https://bwfbadminton.com/rankings/';
-const calendarUrl = (year, status = 'all') => `https://corporate.bwfbadminton.com/events/calendar/${year}/${status}/0/-1/`;
 const tournamentsoftwareRankingUrl = 'https://www.tournamentsoftware.com/ranking/ranking.aspx?rid=70';
 const rankingLimit = 200;
 const rankingPageSize = 100;
@@ -372,43 +372,6 @@ async function selectRankingDiscipline(page, rankingTable, config) {
   throw new Error(`${config.code}: ranking table did not switch after three attempts`);
 }
 
-async function fetchTournamentCalendar(context, year, status) {
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
-    const calendarPage = await context.newPage();
-    try {
-      await calendarPage.goto(calendarUrl(year, status), { waitUntil: 'domcontentloaded', timeout: 60_000 });
-      const rows = calendarPage.locator('main table tbody tr');
-      const loaded = await rows.first().waitFor({ state: 'visible', timeout: 60_000 })
-        .then(() => true)
-        .catch(() => false);
-      if (!loaded) {
-        console.warn(`${year} calendar did not load (attempt ${attempt} of 3)`);
-        continue;
-      }
-
-      const items = await rows.evaluateAll((calendarRows) => calendarRows.map((row) => {
-        const cells = Array.from(row.querySelectorAll('td'));
-        if (cells.length < 7) return null;
-        return {
-          week: (cells[0].textContent || '').trim(),
-          country: (cells[1].querySelector('.country_code')?.textContent || cells[1].querySelector('img')?.getAttribute('alt') || '').replace(/\s+/g, ' ').trim(),
-          name: (cells[3].textContent || '').replace(/\s+/g, ' ').trim(),
-          category: (cells[5].textContent || '').replace(/\s+/g, ' ').trim(),
-          city: (cells[6].textContent || '').replace(/\s+/g, ' ').trim(),
-        };
-      }).filter((item) => item?.name));
-
-      return Array.from(new Map(items.map((item) => [`${item.week}|${item.country}|${item.name}|${item.category}|${item.city}`, item])).values());
-    } catch (error) {
-      console.warn(`${year} calendar refresh failed (attempt ${attempt} of 3): ${error.message}`);
-    } finally {
-      await calendarPage.close();
-    }
-  }
-
-  return null;
-}
-
 async function fillMissingBreakdownsFromTournamentsoftware(context, rankingDate, rankingPlayers, rankingBreakdowns, suppliedEdition = null) {
   const missingPlayers = rankingPlayers.filter((player) => {
     const scores = rankingBreakdowns[player.rankingKey]?.scores ?? [];
@@ -682,26 +645,7 @@ try {
   await writeFile('lib/ranking-data.ts', rankingSource);
   await writeFile('lib/ranking-breakdowns.json', `${JSON.stringify(rankingBreakdowns, null, 2)}\n`);
 
-  const previousCalendarData = await readFile('lib/tournament-calendars.json', 'utf8')
-    .then((source) => JSON.parse(source))
-    .catch(() => ({ generatedAt: '', calendars: {} }));
-  const malaysiaYear = Number(new Intl.DateTimeFormat('en', { year: 'numeric', timeZone: 'Asia/Kuala_Lumpur' }).format(new Date()));
-  const calendars = {};
-  let refreshedCalendarCount = 0;
-  for (const year of [malaysiaYear - 1, malaysiaYear]) {
-    const status = year === malaysiaYear ? 'remaining' : 'all';
-    const refreshedCalendar = await fetchTournamentCalendar(context, year, status);
-    if (refreshedCalendar) {
-      calendars[String(year)] = refreshedCalendar;
-      refreshedCalendarCount += 1;
-      console.log(`${year} calendar: refreshed ${refreshedCalendar.length} entries`);
-    } else {
-      calendars[String(year)] = previousCalendarData.calendars?.[String(year)] ?? [];
-      console.warn(`${year} calendar: preserved ${calendars[String(year)].length} previously saved entries`);
-    }
-  }
-  const calendarGeneratedAt = refreshedCalendarCount ? generatedAt : (previousCalendarData.generatedAt || generatedAt);
-  await writeFile('lib/tournament-calendars.json', `${JSON.stringify({ generatedAt: calendarGeneratedAt, calendars }, null, 2)}\n`);
+  await refreshCalendars(context);
 } finally {
   await browser.close();
 }

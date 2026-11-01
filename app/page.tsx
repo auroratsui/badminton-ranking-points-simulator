@@ -38,7 +38,8 @@ import { NativeSelect, NativeSelectOption } from '@/components/ui/native-select'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { rankingMeta, rankingPlayers, type RankingPlayer } from '@/lib/ranking-data';
-import { findRacePlayer, projectRacePoints, type RaceData } from '@/lib/race-to-finals';
+import { super1000HasRound64 } from '@/lib/tournament-rounds';
+import { raceSeasonForWeek, findRacePlayer, projectRacePoints, type RaceData } from '@/lib/race-to-finals';
 import raceDataJson from '@/lib/race-to-finals-data.json';
 import rankingBreakdownsJson from '@/lib/ranking-breakdowns.json';
 import tournamentCalendarsJson from '@/lib/tournament-calendars.json';
@@ -182,7 +183,7 @@ const standardOutcomeRounds: Array<{ key: RoundKey; label: string }> = [
   { key: 'r32', label: 'R32' },
 ];
 
-function outcomeRoundsFor(level: LevelKey): Array<{ key: RoundKey; label: string }> {
+function outcomeRoundsFor(level: LevelKey, year: number): Array<{ key: RoundKey; label: string }> {
   if (level === 'finals') return [
     { key: 'winner', label: 'Winner' },
     { key: 'runnerUp', label: 'Runner-up' },
@@ -190,7 +191,7 @@ function outcomeRoundsFor(level: LevelKey): Array<{ key: RoundKey; label: string
     { key: 'finalsGroupThird', label: '3rd in Grp' },
     { key: 'finalsGroupFourth', label: '4th in Grp' },
   ];
-  if (level === 'worldChampionships' || level === 'olympics' || level === 'asianGames') {
+  if (super1000HasRound64(level, year) || level === 'worldChampionships' || level === 'olympics' || level === 'asianGames') {
     return [...standardOutcomeRounds, { key: 'r64', label: 'R64' }];
   }
   if (['super500', 'super300', 'super100', 'challenge', 'series', 'future'].includes(level)) {
@@ -454,10 +455,11 @@ function awardFor(level: LevelKey | '', round: RoundKey | '') {
   return levels[level].points[roundOrder.indexOf(round)] ?? 0;
 }
 
-function roundsFor(level: LevelKey | ''): RoundKey[] {
+function roundsFor(level: LevelKey | '', year = Number(rankingMeta.date.slice(0, 4))): RoundKey[] {
   if (!level) return [];
   if (level === 'olympics') return ['winner', 'runnerUp', 'olympicBronze', 'olympicFourth', 'quarter', 'r16', 'r32', 'r64', 'r128', 'r256'];
   if (level === 'finals') return ['winner', 'runnerUp', 'semi', 'finalsGroupThird', 'finalsGroupFourth'];
+  if (super1000HasRound64(level, year)) return roundOrder.slice(0, 7);
   if (level === 'chinaOpen' || level === 'super1000' || level === 'super750') return roundOrder.slice(0, 6);
   return roundOrder;
 }
@@ -696,7 +698,7 @@ function TournamentSearch({ options, value, year, onSelect }: {
     .sort((a, b) => {
       const aStarts = a.name.toLocaleLowerCase().startsWith(normalizedQuery) ? 0 : 1;
       const bStarts = b.name.toLocaleLowerCase().startsWith(normalizedQuery) ? 0 : 1;
-      return aStarts - bStarts || Number(a.week) - Number(b.week) || a.name.localeCompare(b.name);
+      return aStarts - bStarts || a.year - b.year || Number(a.week) - Number(b.week) || a.name.localeCompare(b.name);
     });
 
   return (
@@ -751,7 +753,7 @@ function CurrentTournamentSearch({ options, value, onSelect }: {
     .sort((a, b) => {
       const aStarts = a.name.toLocaleLowerCase().startsWith(normalizedQuery) ? 0 : 1;
       const bStarts = b.name.toLocaleLowerCase().startsWith(normalizedQuery) ? 0 : 1;
-      return aStarts - bStarts || Number(a.week) - Number(b.week) || a.name.localeCompare(b.name);
+      return aStarts - bStarts || a.year - b.year || Number(a.week) - Number(b.week) || a.name.localeCompare(b.name);
     });
 
   return (
@@ -797,15 +799,15 @@ const tournamentWeekOptions = futureTournamentWeeks(defaultTournamentWeek);
 const currentTournamentYear = Number(rankingMeta.date.slice(0, 4));
 const isAsianGamesIndividual2026 = (name: string) => /asian games/i.test(name) && /2026/.test(name) && /individual/i.test(name);
 const tournamentWeekLabel = (week: string, name = '') => week === '2026-W40' && isAsianGamesIndividual2026(name) ? '2026-W39/40' : week;
-const currentTournamentOptions: CurrentTournamentEntry[] = (tournamentCalendars.calendars[String(currentTournamentYear)] ?? [])
+const currentTournamentOptions: CurrentTournamentEntry[] = [currentTournamentYear, currentTournamentYear + 1]
+  .flatMap(year => (tournamentCalendars.calendars[String(year)] ?? []).map(tournament => ({ ...tournament, year })))
   .map((tournament) => isAsianGamesIndividual2026(tournament.name) ? { ...tournament, week: '40' } : tournament)
-  .filter((tournament) => Number(tournament.week) >= rankingMeta.week)
+  .filter((tournament) => tournament.year > currentTournamentYear || Number(tournament.week) >= rankingMeta.week)
   .filter((tournament) => !tournament.category.toLocaleLowerCase().includes('junior'))
   .filter((tournament) => !tournament.name.toLocaleLowerCase().includes('cancelled'))
   .map((tournament, index) => ({
     ...tournament,
-    id: `${currentTournamentYear}-${tournament.week}-${index}`,
-    year: currentTournamentYear,
+    id: `${tournament.year}-${tournament.week}-${index}`,
     eventType: eventTypeForTournament(tournament),
     level: levelForTournament(tournament),
   }))
@@ -881,7 +883,7 @@ function CrystalBall() {
             const result = player.results[row.id];
             return row.tournament?.eventType === 'team'
               ? result?.teamPoints !== undefined && result.teamPoints.trim() !== '' && Number.isFinite(Number(result.teamPoints)) && Number(result.teamPoints) >= 0
-              : Boolean(result?.round && (result.round === 'notEntered' || roundsFor(row.level).includes(result.round)));
+              : Boolean(result?.round && (result.round === 'notEntered' || roundsFor(row.level, Number(row.week.slice(0, 4))).includes(result.round)));
           });
           const ready = Boolean(player.rankingKey && hasBreakdown && resultsReady);
           const projection = ready ? simulateTournamentSequence(player.scores, selected.map((row) => {
@@ -910,7 +912,7 @@ function CrystalBall() {
                 {conflicts.has(row.id) && <Popover><PopoverTrigger className="absolute right-0 top-0 flex size-6 items-center justify-center rounded-md text-destructive hover:bg-destructive/10 focus-visible:outline-2 focus-visible:outline-destructive" aria-label={`Schedule conflict for ${row.tournament!.name}`}><TriangleAlert className="size-4" /></PopoverTrigger><PopoverContent align="end" className="max-w-[calc(100vw-2rem)] p-3"><PopoverDescription className="text-sm text-foreground">Schedule Conflict: Multiple tournaments selected in the same week</PopoverDescription></PopoverContent></Popover>}
                 <div className="min-w-0"><p className="text-sm font-medium">{row.tournament!.name}</p><p className="text-xs text-muted-foreground">{tournamentWeekLabel(row.week, row.tournament?.name)}</p></div>
                 {row.tournament?.eventType === 'team' ? <label className="grid gap-1.5 text-sm text-muted-foreground">Projected Team Points<Input type="number" min="0" placeholder="Enter BWF-calculated points" value={player.results[row.id]?.teamPoints ?? ''} onChange={(event) => patchPlayer(player.id, { results: { ...player.results, [row.id]: { round: '', teamPoints: event.target.value } } })} /></label>
-                : <label className="grid min-w-0 gap-1.5 text-sm text-muted-foreground"><span>Hypothetical Result <span className="text-base font-bold text-destructive">*</span></span><NativeSelect className="w-full min-w-0" value={player.results[row.id]?.round ?? ''} onChange={(event) => patchPlayer(player.id, { results: { ...player.results, [row.id]: { round: event.target.value as CrystalResult['round'], teamPoints: '' } } })}><NativeSelectOption value="">--Please select--</NativeSelectOption><NativeSelectOption value="notEntered">Not Participating</NativeSelectOption>{roundsFor(row.level).map((round) => <NativeSelectOption key={round} value={round}>{roundLabels[round]}</NativeSelectOption>)}</NativeSelect></label>}
+                : <label className="grid min-w-0 gap-1.5 text-sm text-muted-foreground"><span>Hypothetical Result <span className="text-base font-bold text-destructive">*</span></span><NativeSelect className="w-full min-w-0" value={player.results[row.id]?.round ?? ''} onChange={(event) => patchPlayer(player.id, { results: { ...player.results, [row.id]: { round: event.target.value as CrystalResult['round'], teamPoints: '' } } })}><NativeSelectOption value="">--Please select--</NativeSelectOption><NativeSelectOption value="notEntered">Not Participating</NativeSelectOption>{roundsFor(row.level, Number(row.week.slice(0, 4))).map((round) => <NativeSelectOption key={round} value={round}>{roundLabels[round]}</NativeSelectOption>)}</NativeSelect></label>}
               </div>)}
               <div className="rounded-xl bg-secondary px-4 py-3" aria-live="polite">
                 <div className="flex items-center justify-between gap-2 text-xs text-muted-foreground"><span>Projected Points{finalWeek ? ` After ${finalWeek}` : ''}</span>{projection && <span className={`font-semibold ${projection.change < 0 ? 'text-destructive' : 'text-primary'}`}>{projection.change > 0 ? '+' : ''}{fmt(projection.change)}</span>}</div>
@@ -959,7 +961,7 @@ export default function Home() {
     .map((tournament, index) => ({ ...tournament, year: previousYear, id: `${previousYear}-${tournament.week}-${index}` })), [previousYear]);
   const selectedPreviousEdition = previousEditionOptions.find((option) => option.id === previousEdition) ?? null;
   const summaries = useMemo(() => players.map((player) => ({ player, result: calculate(player, level, tournamentWeek, eventType, selectedPreviousEdition) })), [players, level, tournamentWeek, eventType, selectedPreviousEdition]);
-  const outcomeTableRounds = useMemo(() => level ? outcomeRoundsFor(level) : [], [level]);
+  const outcomeTableRounds = useMemo(() => level ? outcomeRoundsFor(level, tournamentYear) : [], [level, tournamentYear]);
   const topEightTableRounds = useMemo(() => outcomeTableRounds.filter((round) =>
     round.key !== 'r128' && !(round.key === 'r64' && (level === 'super500' || level === 'super300'))), [outcomeTableRounds, level]);
   const outcomeRows = useMemo(() => rankingPlayers
@@ -1004,9 +1006,9 @@ export default function Home() {
   }), [selectedPlayers, outcomeTableRounds, level, tournamentWeek, eventType, selectedPreviousEdition]);
 
   const patchPlayer = (id: string, patch: Partial<Player>) => setPlayers((current) => current.map((player) => player.id === id ? { ...player, ...patch } : player));
-  const changeLevel = (nextLevel: LevelKey | '') => {
+  const changeLevel = (nextLevel: LevelKey | '', year = tournamentYear) => {
     setLevel(nextLevel);
-    const availableRounds = roundsFor(nextLevel);
+    const availableRounds = roundsFor(nextLevel, year);
     setPlayers((current) => current.map((player) => player.result && availableRounds.includes(player.result) ? player : { ...player, result: '' }));
   };
 
@@ -1027,9 +1029,9 @@ export default function Home() {
       return;
     }
     setEventType(tournament.eventType);
-    changeLevel(tournament.level ?? '');
+    changeLevel(tournament.level ?? '', tournament.year);
     setTournamentWeek(`${tournament.year}-W${tournament.week.padStart(2, '0')}`);
-    setPreviousEdition(previousEditionMatch(tournament, previousEditionOptions)?.id ?? '');
+    setPreviousEdition(previousEditionMatch(tournament, previousOptionsFor(`${tournament.year}-W${tournament.week.padStart(2, '0')}`))?.id ?? '');
   };
 
   const resetExample = () => {
@@ -1073,7 +1075,7 @@ export default function Home() {
             <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Tournament Name <span className="ml-0.5 text-base font-bold leading-none text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span><CurrentTournamentSearch options={currentTournamentOptions} value={selectedTournamentId} onSelect={selectTournament} /></label>
             <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Event Type<NativeSelect className="min-w-0 w-full" value={eventType} onChange={(event) => setEventType(event.target.value as 'individual' | 'team')} aria-label="Event Type"><NativeSelectOption value="individual">Individual Event</NativeSelectOption><NativeSelectOption value="team">Team Event</NativeSelectOption></NativeSelect></label>
             <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Tournament Level<NativeSelect className="min-w-0 w-full" value={eventType === 'team' ? '' : level} onChange={(event) => changeLevel(event.target.value as LevelKey | '')} aria-label="Tournament Level" disabled={eventType === 'team'}><NativeSelectOption value="">{eventType === 'team' ? 'Not Applicable' : '---'}</NativeSelectOption>{Object.entries(levels).map(([key, item]) => <NativeSelectOption key={key} value={key}>{item.label}</NativeSelectOption>)}</NativeSelect></label>
-            <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Tournament Week<NativeSelect className="min-w-0 w-full" value={tournamentWeek} onChange={(event) => setTournamentWeek(event.target.value)} aria-label="Tournament Week" aria-invalid={!validTournamentWeek}>{tournamentWeekOptions.map((week) => <NativeSelectOption key={week} value={week}>{tournamentWeekLabel(week, selectedTournament?.name)}</NativeSelectOption>)}</NativeSelect></label>
+            <label className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground">Tournament Week<NativeSelect className="min-w-0 w-full" value={tournamentWeek} onChange={(event) => { const week = event.target.value; setTournamentWeek(week); changeLevel(level, Number(week.slice(0, 4))); }} aria-label="Tournament Week" aria-invalid={!validTournamentWeek}>{tournamentWeekOptions.map((week) => <NativeSelectOption key={week} value={week}>{tournamentWeekLabel(week, selectedTournament?.name)}</NativeSelectOption>)}</NativeSelect></label>
             <div className="grid min-w-0 gap-1.5 text-sm font-medium text-muted-foreground"><span>Previous Edition Replaced</span><TournamentSearch key={previousYear} options={previousEditionOptions} value={selectedPreviousEdition?.id ?? ''} year={previousYear} onSelect={setPreviousEdition} /></div>
             </div>
             <div className="rounded-lg bg-secondary px-4 py-3 sm:col-span-2 lg:col-span-1"><p className="text-xs text-muted-foreground">Winner Earns</p><p className="mt-1 text-2xl font-semibold tabular-nums">{!selectedTournament ? '--- pts' : eventType === 'team' ? 'Manual' : winnerAward ? `${fmt(winnerAward)} pts` : '--- pts'}</p></div>
@@ -1115,7 +1117,7 @@ export default function Home() {
         <div className="grid items-start gap-5 lg:grid-cols-2">
           {summaries.map(({ player, result }, playerIndex) => {
             const projectionReady = eventType === 'individual'
-              ? Boolean(selectedTournament && level && player.result)
+              ? Boolean(selectedTournament && level && player.result && roundsFor(level, tournamentYear).includes(player.result))
               : Boolean(selectedTournament && player.manualTeamAward > 0);
             const racePlayer = player.rankingKey ? findRacePlayer(raceData, {
               name: player.name, code: player.rankingKey.split('-')[0], href: player.sourceHref,
@@ -1183,14 +1185,18 @@ export default function Home() {
                       <div className="grid items-start gap-4 sm:grid-cols-[1fr_1.25fr]">
                         <div className="contents sm:grid sm:gap-4">
                         {eventType === 'individual' ? (
-                          <label className="grid min-w-0 self-start gap-1.5 text-sm font-medium text-muted-foreground"><span>Hypothetical Result <span className="ml-0.5 text-base font-bold leading-none text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span><NativeSelect className="min-w-0 w-full" value={player.result} onChange={(event) => patchPlayer(player.id, { result: event.target.value as RoundKey | '' })} aria-label={`${player.name} hypothetical result`} required><NativeSelectOption value="">--Please select--</NativeSelectOption>{roundsFor(level).map((round) => <NativeSelectOption key={round} value={round}>{roundLabels[round]}</NativeSelectOption>)}</NativeSelect></label>
+                          <label className="grid min-w-0 self-start gap-1.5 text-sm font-medium text-muted-foreground"><span>Hypothetical Result <span className="ml-0.5 text-base font-bold leading-none text-destructive" aria-hidden="true">*</span><span className="sr-only"> (required)</span></span><NativeSelect className="min-w-0 w-full" value={player.result} onChange={(event) => patchPlayer(player.id, { result: event.target.value as RoundKey | '' })} aria-label={`${player.name} hypothetical result`} required><NativeSelectOption value="">--Please select--</NativeSelectOption>{roundsFor(level, tournamentYear).map((round) => <NativeSelectOption key={round} value={round}>{roundLabels[round]}</NativeSelectOption>)}</NativeSelect></label>
                         ) : (
                           <label className="grid gap-1.5 text-sm font-medium text-muted-foreground">Projected Team Points Awarded<Input type="number" min="0" value={player.manualTeamAward || ''} onChange={(event) => patchPlayer(player.id, { manualTeamAward: Number(event.target.value) })} aria-label={`${player.name} projected team points awarded`} placeholder="Points" /></label>
                         )}
                         {racePlayer && (
-                          <div className="order-2 rounded-lg border bg-card px-3 py-2" aria-live="polite" title={raceProjection?.note}>
-                            <p className="text-[10px] uppercase tracking-wide text-muted-foreground">Projected Race-to-Finals Points</p>
-                            <p className="mt-0.5 font-semibold tabular-nums">{raceProjection?.points != null ? fmt(raceProjection.points) : '---'}</p>
+                          <div className="relative order-2 rounded-lg border bg-card px-3 py-2" aria-live="polite" title={raceProjection?.note}>
+                            <p className="pr-4 text-[10px] uppercase tracking-wide text-muted-foreground">Projected Race-to-Finals Points</p>
+                            <p className="mt-0.5 flex flex-wrap items-baseline gap-2 font-semibold tabular-nums"><span>{raceProjection?.points != null ? fmt(raceProjection.points) : '---'}</span><span className="text-xs font-normal text-muted-foreground">from {fmt(raceProjection?.before ?? (raceSeasonForWeek(tournamentWeek) === raceData.season ? racePlayer.points : 0))}</span></p>
+                            <Popover>
+                              <PopoverTrigger className="absolute right-0.5 top-0.5 flex size-6 items-center justify-center rounded-md text-primary hover:bg-secondary focus-visible:outline-2 focus-visible:outline-primary" aria-label="About Race-to-Finals points"><CircleHelp className="size-3.5" /></PopoverTrigger>
+                              <PopoverContent align="end" className="max-w-[calc(100vw-2rem)] p-3"><PopoverDescription className="text-sm text-foreground">Displayed for players ranked in the top 25 of the Race to Finals</PopoverDescription></PopoverContent>
+                            </Popover>
                           </div>
                         )}
                         </div>

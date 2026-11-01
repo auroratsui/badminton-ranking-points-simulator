@@ -65,8 +65,9 @@ The included **Refresh BWF ranking data** workflow is scheduled every Tuesday at
 
 - the top 200 players or pairs in all five disciplines;
 - every listed player's or pair's current ranking-points breakdown;
-- the current year's remaining senior tournament calendar; and
-- the previous year's full senior tournament calendar.
+- the previous and current years’ full tournament calendars;
+- the following year’s remaining tournament calendar; and
+- the Race-to-Finals top 25 in each discipline and their full score breakdowns.
 
 When refreshed data changes, the workflow commits it to `main`. The Pages workflow then republishes the simulator after the refresh completes.
 
