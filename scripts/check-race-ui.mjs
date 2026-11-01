@@ -62,7 +62,7 @@ try {
  assert.equal(await box.count(),0);
  await page.getByRole('tab',{name:'Crystal Ball',exact:true}).click();
  await choosePlayer('Christo POPOV');
- assert.equal(await box.count(),0);
+ assert.equal(await box.count(),1);
  await page.getByRole('textbox',{name:'Tournament Name',exact:true}).fill('Malaysia Open 2027');
  await page.getByRole('option').filter({hasText:'Malaysia Open 2027'}).click();
  assert.equal(await page.locator('select option[value="r64"]').count(),1);

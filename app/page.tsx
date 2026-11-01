@@ -39,7 +39,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { useIsMobile } from '@/hooks/use-mobile';
 import { rankingMeta, rankingPlayers, type RankingPlayer } from '@/lib/ranking-data';
 import { super1000HasRound64 } from '@/lib/tournament-rounds';
-import { raceSeasonForWeek, findRacePlayer, projectRacePoints, type RaceData } from '@/lib/race-to-finals';
+import { raceTotal, raceSeasonForWeek, findRacePlayer, projectRacePoints, type RaceData } from '@/lib/race-to-finals';
 import raceDataJson from '@/lib/race-to-finals-data.json';
 import rankingBreakdownsJson from '@/lib/ranking-breakdowns.json';
 import tournamentCalendarsJson from '@/lib/tournament-calendars.json';
@@ -402,6 +402,7 @@ function sameTournamentName(leftName: string, rightName: string) {
 }
 
 function previousEditionMatch(current: CurrentTournamentEntry, candidates: TournamentEntry[]) {
+  if (current.eventType === 'team') return undefined;
   if (!current.country) return null;
 
   const currentCountry = current.country.toLocaleUpperCase();
@@ -642,7 +643,7 @@ function PlayerSearch({ player, onChange, onSelect, index }: {
 
   return (
     <div className="min-w-0">
-      <Input
+      <Input autoCorrect="off" autoCapitalize="none" spellCheck={false} autoComplete="off"
         ref={inputRef}
         value={player.name}
         onFocus={() => setOpen(true)}
@@ -703,7 +704,7 @@ function TournamentSearch({ options, value, year, onSelect }: {
 
   return (
     <div className="min-w-0">
-      <Input
+      <Input autoCorrect="off" autoCapitalize="none" spellCheck={false} autoComplete="off"
         ref={inputRef}
         value={selected?.name ?? query}
         onFocus={() => setOpen(true)}
@@ -758,7 +759,7 @@ function CurrentTournamentSearch({ options, value, onSelect }: {
 
   return (
     <div className="min-w-0">
-      <Input
+      <Input autoCorrect="off" autoCapitalize="none" spellCheck={false} autoComplete="off"
         ref={inputRef}
         value={selected?.name ?? query}
         onFocus={() => setOpen(true)}
@@ -888,13 +889,22 @@ function CrystalBall() {
           const ready = Boolean(player.rankingKey && hasBreakdown && resultsReady);
           const projection = ready ? simulateTournamentSequence(player.scores, selected.map((row) => {
             const result = player.results[row.id];
-            const previous = previousOptionsFor(row.week).find((entry) => entry.id === row.previous) ?? null;
+            const previous = row.tournament?.eventType === 'team' ? null : previousOptionsFor(row.week).find((entry) => entry.id === row.previous) ?? null;
             const team = row.tournament?.eventType === 'team';
             return { id: row.id, week: row.week, notParticipating: result.round === 'notEntered',
               score: { id: `projected-${row.id}`, label: row.tournament!.name, week: row.week, points: team ? Number(result.teamPoints) : result.round === 'notEntered' ? 0 : awardFor(row.level, result.round), team, bwfValid: false },
               replaces: (score) => isReplacedBy({ ...score, href: '', result: '' }, previous),
             };
           }), player.snapshotPoints ?? 0) : null;
+          const racePlayer = player.rankingKey ? findRacePlayer(raceData, { name: player.name, code: player.rankingKey.split('-')[0], href: player.sourceHref }) : undefined;
+          const raceSeason = raceSeasonForWeek(finalWeek || defaultTournamentWeek);
+          const raceBefore = raceSeason === raceData.season ? racePlayer?.points ?? 0 : 0;
+          const raceScores = raceSeason === raceData.season ? [...(racePlayer?.scores ?? [])] : [];
+          if (racePlayer && resultsReady) for (const row of selected) {
+            const outcome = player.results[row.id];
+            if (row.tournament?.eventType !== 'team' && outcome.round && outcome.round !== 'notEntered') raceScores.push({ label: row.tournament!.name, week: row.week, level: row.level, points: awardFor(row.level, outcome.round) });
+          }
+          const raceReady = racePlayer && resultsReady && raceSeason >= raceData.season && selected.every(row => raceSeasonForWeek(row.week) !== raceData.season || row.week >= `${raceData.edition.date.slice(0,4)}-W${String(raceData.edition.week).padStart(2,'0')}`);
           const comparisonRank = projection ? aboveCurrentRank(projection.after, player, rankingPlayers) : null;
           return <Card key={player.id} className="overflow-visible">
             <CardHeader className={player.rankingKey ? 'border-b' : ''}>
@@ -919,7 +929,13 @@ function CrystalBall() {
                 <p className="mt-1"><span className="text-3xl font-semibold tabular-nums">{!hasBreakdown ? 'Unavailable' : projection ? fmt(projection.after) : '---'}</span><span className="ml-2 text-xs text-muted-foreground">from {fmt(player.snapshotPoints ?? 0)}</span></p>
                 <p className="mt-2 text-xs text-muted-foreground">{!hasBreakdown ? 'Projection unavailable: no published score breakdown.' : !ready ? 'Select all tournaments and a hypothetical result for each.' : `${projection!.afterScores.length} counting results after all selected tournaments`}</p>
               </div>
-              <div className="grid grid-cols-2 gap-2">
+              <div className={`grid grid-cols-2 gap-2 ${racePlayer ? 'sm:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)_minmax(0,1fr)]' : ''}`}>
+                {racePlayer && <div className="relative col-span-2 rounded-lg border bg-card px-3 py-2 sm:col-span-1" aria-live="polite">
+                  <p className="pr-4 text-[10px] uppercase tracking-wide text-muted-foreground whitespace-nowrap">Projected Race-to-Finals Points</p>
+                  <p className="mt-0.5 flex flex-wrap items-baseline gap-2 font-semibold tabular-nums"><span>{raceReady ? fmt(raceTotal(raceScores, raceSeason)) : '---'}</span><span className="text-xs font-normal text-muted-foreground">from {fmt(raceBefore)}</span></p>
+                  <Popover><PopoverTrigger className="absolute right-0.5 top-0.5 flex size-6 items-center justify-center rounded-md text-primary hover:bg-secondary" aria-label="About Race-to-Finals points"><CircleHelp className="size-3.5" /></PopoverTrigger><PopoverContent align="end" className="p-3"><PopoverDescription>Displayed for players ranked in the top 25 of the Race to Finals</PopoverDescription></PopoverContent></Popover>
+                </div>}
+
                 <div className="rounded-lg border px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Expires / Replaced</p><p className="mt-0.5 font-semibold">{projection ? projection.removed.size : '---'}</p></div>
                 <div className="relative rounded-lg border px-3 py-2"><p className="text-[10px] uppercase tracking-wide text-muted-foreground">Above Current</p><p className="mt-0.5 font-semibold">{comparisonRank === null ? '---' : `#${comparisonRank}`}</p><Popover><PopoverTrigger className="absolute right-1 top-1 flex size-6 items-center justify-center rounded-md text-primary hover:bg-secondary" aria-label="About the projected ranking comparison"><CircleHelp className="size-3.5" /></PopoverTrigger><PopoverContent align="end"><PopoverDescription>How the projected points compare with other players’ current points, assuming their points remain unchanged</PopoverDescription></PopoverContent></Popover></div>
               </div>
@@ -959,7 +975,7 @@ export default function Home() {
   const previousEditionOptions = useMemo(() => (tournamentCalendars.calendars[String(previousYear)] ?? [])
     .filter((tournament) => !tournament.category.toLocaleLowerCase().includes('junior'))
     .map((tournament, index) => ({ ...tournament, year: previousYear, id: `${previousYear}-${tournament.week}-${index}` })), [previousYear]);
-  const selectedPreviousEdition = previousEditionOptions.find((option) => option.id === previousEdition) ?? null;
+  const selectedPreviousEdition = eventType === 'team' ? null : previousEditionOptions.find((option) => option.id === previousEdition) ?? null;
   const summaries = useMemo(() => players.map((player) => ({ player, result: calculate(player, level, tournamentWeek, eventType, selectedPreviousEdition) })), [players, level, tournamentWeek, eventType, selectedPreviousEdition]);
   const outcomeTableRounds = useMemo(() => level ? outcomeRoundsFor(level, tournamentYear) : [], [level, tournamentYear]);
   const topEightTableRounds = useMemo(() => outcomeTableRounds.filter((round) =>
