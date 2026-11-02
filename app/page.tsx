@@ -929,8 +929,8 @@ function CrystalBall() {
                 <p className="mt-1"><span className="text-3xl font-semibold tabular-nums">{!hasBreakdown ? 'Unavailable' : projection ? fmt(projection.after) : '---'}</span><span className="ml-2 text-xs text-muted-foreground">from {fmt(player.snapshotPoints ?? 0)}</span></p>
                 <p className="mt-2 text-xs text-muted-foreground">{!hasBreakdown ? 'Projection unavailable: no published score breakdown.' : !ready ? 'Select all tournaments and a hypothetical result for each.' : `${projection!.afterScores.length} counting results after all selected tournaments`}</p>
               </div>
-              <div className={`grid grid-cols-2 gap-2 ${racePlayer ? 'sm:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)_minmax(0,1fr)]' : ''}`}>
-                {racePlayer && <div className="relative col-span-2 rounded-lg border bg-card px-3 py-2 sm:col-span-1" aria-live="polite">
+              <div className={`grid grid-cols-2 gap-2 ${racePlayer ? 'sm:grid-cols-[minmax(0,calc(46.5116%_-_7.442px_-_0.6ch))_minmax(0,1.3fr)_minmax(0,calc(23.2558%_-_3.721px_+_0.6ch))]' : ''}`}>
+                {racePlayer && <div className="relative col-span-2 rounded-lg border bg-card px-3 py-2 sm:col-span-1" aria-live="polite" title={`${raceSeason} season · best 14 results · at most three Super 100 results`}>
                   <p className="pr-4 text-[10px] uppercase tracking-wide text-muted-foreground whitespace-nowrap">Projected Race-to-Finals Points</p>
                   <p className="mt-0.5 flex flex-wrap items-baseline gap-2 font-semibold tabular-nums"><span>{raceReady ? fmt(raceTotal(raceScores, raceSeason)) : '---'}</span><span className="text-xs font-normal text-muted-foreground">from {fmt(raceBefore)}</span></p>
                   <Popover><PopoverTrigger className="absolute right-0.5 top-0.5 flex size-6 items-center justify-center rounded-md text-primary hover:bg-secondary" aria-label="About Race-to-Finals points"><CircleHelp className="size-3.5" /></PopoverTrigger><PopoverContent align="end" className="p-3"><PopoverDescription>Displayed for players ranked in the top 25 of the Race to Finals</PopoverDescription></PopoverContent></Popover>
@@ -981,7 +981,7 @@ export default function Home() {
   const topEightTableRounds = useMemo(() => outcomeTableRounds.filter((round) =>
     round.key !== 'r128' && !(round.key === 'r64' && (level === 'super500' || level === 'super300'))), [outcomeTableRounds, level]);
   const outcomeRows = useMemo(() => rankingPlayers
-    .filter((candidate) => candidate.code === outcomeDiscipline && candidate.rank <= 8)
+    .filter((candidate) => candidate.code === outcomeDiscipline && candidate.rank <= 10)
     .sort((left, right) => left.rank - right.rank)
     .map((candidate) => {
       const automatic = scoresFor(candidate);
@@ -1007,7 +1007,8 @@ export default function Home() {
     }), [outcomeDiscipline, level, tournamentWeek, eventType, selectedPreviousEdition, topEightTableRounds]);
 
   const selectedPlayers = useMemo(() => players.filter((player) => player.rankingKey), [players]);
-  const selectedOutcomeRows = useMemo(() => selectedPlayers.map((player) => {
+  const selectedOutcomeRows = useMemo(() => {
+    const rows = selectedPlayers.map((player) => {
     const projections = outcomeTableRounds.map((round) => calculate({ ...player, result: round.key }, level, tournamentWeek, eventType, selectedPreviousEdition));
     return {
       player,
@@ -1019,7 +1020,14 @@ export default function Home() {
       hasBreakdown: projections[0]?.hasBreakdown ?? false,
       totals: projections.map((projection) => projection.after),
     };
-  }), [selectedPlayers, outcomeTableRounds, level, tournamentWeek, eventType, selectedPreviousEdition]);
+    });
+    if (highlightHypotheticalResults && new Set(rows.map(row => row.code)).size === 1) {
+      const hypotheticalTotal = (row: typeof rows[number]) => row.hasBreakdown && row.player.result && roundsFor(level, tournamentYear).includes(row.player.result)
+        ? calculate(row.player, level, tournamentWeek, eventType, selectedPreviousEdition).after : -Infinity;
+      rows.sort((a, b) => hypotheticalTotal(b) - hypotheticalTotal(a));
+    }
+    return rows;
+  }, [selectedPlayers, outcomeTableRounds, level, tournamentWeek, tournamentYear, eventType, selectedPreviousEdition, highlightHypotheticalResults]);
 
   const patchPlayer = (id: string, patch: Partial<Player>) => setPlayers((current) => current.map((player) => player.id === id ? { ...player, ...patch } : player));
   const changeLevel = (nextLevel: LevelKey | '', year = tournamentYear) => {
@@ -1076,7 +1084,7 @@ export default function Home() {
           </div>
           <TabsContent value="default" keepMounted className="data-[hidden]:hidden">
         <div className="mb-5 grid gap-3">
-          <p className="text-[15px] leading-5 text-muted-foreground">Pick a tournament to preview all scenarios for the top 8 in each discipline. Or manually select up to 8 top 200 players or pairs, enter hypothetical results, and preview the resulting ranking points.</p>
+          <p className="text-[15px] leading-5 text-muted-foreground">Pick a tournament to preview all scenarios for the top 10 in each discipline. Or manually select up to 8 top 200 players or pairs, enter hypothetical results, and preview the resulting ranking points.</p>
           <Badge variant="outline" className="h-7 px-3 lg:hidden"><CalendarClock /> Latest Reference · {rankingMeta.dateLabel}</Badge>
         </div>
 
@@ -1098,8 +1106,8 @@ export default function Home() {
             <div className="flex flex-col items-start gap-3 rounded-lg border bg-muted/25 px-4 py-3 sm:col-span-2 lg:col-span-4 lg:flex-row lg:items-center lg:justify-between">
               <div className="flex flex-wrap items-center gap-1.5 text-[15px]">
                 <span className="inline-flex shrink-0 items-center rounded-full border border-primary/50 px-2 py-1 text-xs font-semibold leading-none text-primary">SHORTCUT</span>
-                <span>Generate a table showing all possible outcomes for the top 8 players or pairs in</span>
-                <NativeSelect className="w-auto min-w-36" value={outcomeDiscipline} onChange={(event) => setOutcomeDiscipline(event.target.value as DisciplineCode)} aria-label="Top 8 scenario discipline">
+                <span>Generate a table showing all possible outcomes for the top 10 players or pairs in</span>
+                <NativeSelect className="w-auto min-w-36" value={outcomeDiscipline} onChange={(event) => setOutcomeDiscipline(event.target.value as DisciplineCode)} aria-label="Top 10 scenario discipline">
                   {disciplineOptions.map((discipline) => <NativeSelectOption key={discipline.code} value={discipline.code}>{discipline.label}</NativeSelectOption>)}
                 </NativeSelect>
               </div>
@@ -1109,7 +1117,7 @@ export default function Home() {
               <div className="min-w-0 sm:col-span-2 lg:col-span-5">
                 <div className="-mx-4 overflow-hidden border-y sm:mx-0 sm:rounded-xl sm:border">
                   <div className="border-b bg-muted/35 px-3 py-2">
-                    <p className="font-heading text-base">TOP 8 RANKING POINTS SCENARIOS · {disciplineOptions.find((discipline) => discipline.code === outcomeDiscipline)?.label.toLocaleUpperCase()}</p>
+                    <p className="font-heading text-base">TOP 10 RANKING POINTS SCENARIOS · {disciplineOptions.find((discipline) => discipline.code === outcomeDiscipline)?.label.toLocaleUpperCase()}</p>
                     <p className="text-xs leading-tight text-muted-foreground">Projected total ranking points for each possible tournament finish in the {selectedTournament.name}</p>
                     <PortraitTableHint />
                   </div>
