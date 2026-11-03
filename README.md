@@ -41,4 +41,9 @@ Starting with tournament weeks in 2027, both Super 1000 levels offer R64 in Defa
 
 ## Upcoming Entries
 
-The Upcoming Entries tab searches the next 42 days of published tournament entries, using the existing top-200 player database for suggestions. A separate daily GitHub Action refreshes its dataset from the newest M/Q reports and official Players pages. Source links, collection time and incomplete coverage are shown in the tab. See [ENTRY_LOOKUP.md](ENTRY_LOOKUP.md) for setup, validation and source-access limitations.
+The separate `/upcoming-entries/` page searches the next 42 days of published tournament entries, using the existing top-200 player database for suggestions. A separate manually dispatched GitHub Action refreshes its dataset from the newest M/Q reports and official Players pages. Collection time and incomplete coverage are shown in the tab. See [ENTRY_LOOKUP.md](ENTRY_LOOKUP.md) for setup, validation and source-access limitations.
+
+
+## Separate pages
+
+The main URL contains Default and Crystal Ball only. The experimental lookup is hosted at `https://auroratsui.github.io/badminton-ranking-points-simulator/upcoming-entries/` in the same repository. Both pages use the shared top-200 player database and common player-search component; the existing weekly workflow maintains the rankings and event calendars. The entry collector uses those same event identities and separately retrieves date-specific downloads and entry lists. Entry collection is manual-only while the feature remains experimental. Run **Actions → Refresh upcoming tournament entries → Run workflow** to refresh it. Both pages are rendered by the Pages deployment workflow.

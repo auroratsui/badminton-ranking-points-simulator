@@ -1,8 +1,7 @@
 'use client';
 
-import { UpcomingEntries } from '@/components/upcoming-entries';
+import { PlayerSearch, FloatingMenu } from '@/components/player-search';
 import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode, type RefObject } from 'react';
-import { createPortal } from 'react-dom';
 import {
   ArrowDownRight,
   ArrowRight,
@@ -346,30 +345,6 @@ function commonSuffixLength(left: string[], right: string[]) {
   return length;
 }
 
-function playerSearchTokens(value: string) {
-  return value
-    .normalize('NFKD')
-    .replace(/\p{Diacritic}/gu, '')
-    .toLocaleLowerCase()
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim()
-    .split(/\s+/)
-    .filter(Boolean);
-}
-
-function playerSearchScore(name: string, query: string) {
-  const queryTokens = playerSearchTokens(query);
-  if (!queryTokens.length) return 0;
-
-  const nameTokens = playerSearchTokens(name);
-  const normalizedName = nameTokens.join(' ');
-  const normalizedQuery = queryTokens.join(' ');
-  if (normalizedName.startsWith(normalizedQuery)) return 0;
-  if (normalizedName.includes(normalizedQuery)) return 1;
-  if (!queryTokens.every((queryToken) => nameTokens.some((nameToken) => nameToken.startsWith(queryToken)))) return Number.POSITIVE_INFINITY;
-  return queryTokens.every((queryToken) => nameTokens.includes(queryToken)) ? 2 : 3;
-}
-
 function sameTournamentName(leftName: string, rightName: string) {
   const leftTokens = tournamentNameTokens(leftName);
   const rightTokens = tournamentNameTokens(rightName);
@@ -551,140 +526,6 @@ function outcomeTableName(candidate: Omit<RankingPlayer, 'rankingKey'>) {
     const surnames = parts.filter((part) => /\p{L}/u.test(part) && part === part.toLocaleUpperCase());
     return surnames.join(' ') || parts.at(-1) || member;
   }).join(' / ');
-}
-
-type FloatingMenuPosition = CSSProperties & { maxHeight: number };
-
-function FloatingMenu({ anchorRef, open, children, minWidth = 0 }: {
-  anchorRef: RefObject<HTMLInputElement | null>;
-  open: boolean;
-  children: (maxHeight: number) => ReactNode;
-  minWidth?: number;
-}) {
-  const [position, setPosition] = useState<FloatingMenuPosition | null>(null);
-  const isMobile = useIsMobile();
-
-  useEffect(() => {
-    if (!open || isMobile) return;
-
-    const updatePosition = () => {
-      const anchor = anchorRef.current;
-      if (!anchor) return;
-      const rect = anchor.getBoundingClientRect();
-      const viewport = window.visualViewport;
-      const viewportTop = viewport?.offsetTop ?? 0;
-      const viewportHeight = viewport?.height ?? window.innerHeight;
-      const viewportWidth = viewport?.width ?? window.innerWidth;
-      const spaceBelow = viewportTop + viewportHeight - rect.bottom - 8;
-      const spaceAbove = rect.top - viewportTop - 8;
-      const placeBelow = spaceBelow >= 160 || spaceBelow >= spaceAbove;
-      const available = Math.max(96, placeBelow ? spaceBelow : spaceAbove);
-      const maxHeight = Math.min(320, available);
-      const width = Math.min(Math.max(rect.width, minWidth), viewportWidth - 16);
-      const left = Math.min(Math.max(8, rect.left), viewportWidth - width - 8);
-
-      setPosition({
-        position: 'fixed',
-        zIndex: 1000,
-        left,
-        width,
-        maxHeight,
-        ...(placeBelow
-          ? { top: rect.bottom + 6 }
-          : { bottom: window.innerHeight - rect.top + 6 }),
-      });
-    };
-
-    updatePosition();
-    const viewport = window.visualViewport;
-    window.addEventListener('resize', updatePosition);
-    window.addEventListener('scroll', updatePosition, true);
-    viewport?.addEventListener('resize', updatePosition);
-    viewport?.addEventListener('scroll', updatePosition);
-    return () => {
-      window.removeEventListener('resize', updatePosition);
-      window.removeEventListener('scroll', updatePosition, true);
-      viewport?.removeEventListener('resize', updatePosition);
-      viewport?.removeEventListener('scroll', updatePosition);
-    };
-  }, [anchorRef, isMobile, minWidth, open]);
-
-  if (!open) return null;
-  if (isMobile) {
-    return (
-      <div className="mt-1.5 overflow-hidden rounded-xl border bg-popover shadow-xl">
-        {children(192)}
-      </div>
-    );
-  }
-  if (!position || typeof document === 'undefined') return null;
-  return createPortal(
-    <div style={position} className="overflow-hidden rounded-xl border bg-popover shadow-xl">
-      {children(position.maxHeight)}
-    </div>,
-    document.body,
-  );
-}
-
-function PlayerSearch({ player, onChange, onSelect, index, disciplineCode, ariaLabel }: {
-  player: Player;
-  onChange: (value: string) => void;
-  onSelect: (candidate: RankingPlayer) => void;
-  index: number;
-  disciplineCode?: string;
-  ariaLabel?: string;
-}) {
-  const [open, setOpen] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
-  const query = player.name.trim();
-  const suggestions = rankingPlayers
-    .filter(candidate => !disciplineCode || candidate.code === disciplineCode)
-    .map((candidate) => ({ candidate, searchScore: playerSearchScore(candidate.name, query) }))
-    .filter(({ searchScore }) => Number.isFinite(searchScore))
-    .sort((a, b) => a.searchScore - b.searchScore || a.candidate.rank - b.candidate.rank)
-    .map(({ candidate }) => candidate)
-    .slice(0, 12);
-
-  return (
-    <div className="min-w-0">
-      <Input autoCorrect="off" autoCapitalize="none" spellCheck={false} autoComplete="off"
-        ref={inputRef}
-        value={player.name}
-        onFocus={() => setOpen(true)}
-        onBlur={() => window.setTimeout(() => setOpen(false), 300)}
-        onChange={(event) => { onChange(event.target.value); setOpen(true); }}
-        aria-label={ariaLabel ?? `Player ${index + 1} name`}
-        aria-autocomplete="list"
-        aria-expanded={open}
-        className="font-medium text-foreground"
-        placeholder="Start typing player’s name here"
-      />
-      <FloatingMenu anchorRef={inputRef} open={open} minWidth={360}>
-        {(maxHeight) => (
-          <Command shouldFilter={false}>
-            <CommandList
-              className="max-h-none overscroll-contain [scrollbar-width:thin]"
-              style={{ maxHeight, WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}
-            >
-              <CommandEmpty>No top 200 player or pair found.</CommandEmpty>
-              {suggestions.map((candidate) => (
-                <CommandItem
-                  key={`${candidate.code}-${candidate.rank}-${candidate.name}`}
-                  value={`${candidate.code}-${candidate.rank}-${candidate.name}`}
-                  onSelect={() => { onSelect(candidate); setOpen(false); }}
-                  className="grid grid-cols-[38px_minmax(0,1fr)_auto] gap-2 px-3 py-2.5 [&>svg:last-child]:hidden"
-                >
-                  <Badge variant="secondary">{candidate.code}</Badge>
-                  <span className="min-w-0"><span className="block truncate font-medium">{candidate.name}</span><span className="block text-[11px] text-muted-foreground">World No. {candidate.rank} · {candidate.tournaments} tournaments</span></span>
-                  <span className="text-xs tabular-nums text-muted-foreground">{fmt(candidate.points)}</span>
-                </CommandItem>
-              ))}
-            </CommandList>
-          </Command>
-        )}
-      </FloatingMenu>
-    </div>
-  );
 }
 
 function TournamentSearch({ options, value, year, onSelect }: {
@@ -959,7 +800,6 @@ function CrystalBall() {
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('default');
-  const [entriesResetKey, setEntriesResetKey] = useState(0);
   const [crystalResetKey, setCrystalResetKey] = useState(0);
   const [level, setLevel] = useState<LevelKey | ''>('');
   const [eventType, setEventType] = useState<'individual' | 'team'>('individual');
@@ -1064,7 +904,6 @@ export default function Home() {
   };
 
   const resetExample = () => {
-    if (activeTab === 'entries') { setEntriesResetKey(value => value + 1); return; }
     if (activeTab === 'crystal') { setCrystalResetKey((value) => value + 1); return; }
     setHighlightHypotheticalResults(false);
     setLevel(''); setEventType('individual'); setSelectedTournamentId(''); setTournamentWeek(defaultTournamentWeek); setPreviousEdition(''); setPlayers(initialPlayers); setOutcomeDiscipline('MS'); setShowOutcomeTable(false); setShowSelectedOutcomeTable(false);
@@ -1085,7 +924,6 @@ export default function Home() {
             <TabsList variant="line" className="mb-0 gap-4 px-0 py-[3px] group-data-horizontal/tabs:h-[30px]">
               <TabsTrigger value="default" className="border-0 px-0 text-base font-normal text-black data-active:text-black after:bg-primary group-data-horizontal/tabs:after:h-[3px]">Default</TabsTrigger>
               <TabsTrigger value="crystal" className="border-0 px-0 text-base font-normal text-black data-active:text-black after:bg-primary group-data-horizontal/tabs:after:h-[3px]">Crystal Ball</TabsTrigger>
-              <TabsTrigger value="entries" className="border-0 px-0 text-base font-normal text-black data-active:text-black after:bg-primary group-data-horizontal/tabs:after:h-[3px]">Upcoming Entries<sup className="relative -top-1 ml-0.5 text-[10px] font-medium leading-none text-primary">Beta</sup></TabsTrigger>
             </TabsList>
             <Badge variant="outline" className="hidden h-7 px-3 lg:inline-flex"><CalendarClock /> Latest Reference · {rankingMeta.dateLabel}</Badge>
           </div>
@@ -1113,7 +951,7 @@ export default function Home() {
             <div className="flex flex-col items-start gap-3 rounded-lg border bg-muted/25 px-4 py-3 sm:col-span-2 lg:col-span-4 lg:flex-row lg:items-center lg:justify-between">
               <div className="flex flex-wrap items-center gap-1.5 text-[15px]">
                 <span className="inline-flex shrink-0 items-center rounded-full border border-primary/50 px-2 py-1 text-xs font-semibold leading-none text-primary">SHORTCUT</span>
-                <span>Generate a table showing all possible outcomes for the top 10 players or pairs in</span>
+                <span>Generate a table showing all possible outcomes for the top 10 in</span>
                 <NativeSelect className="w-auto min-w-36" value={outcomeDiscipline} onChange={(event) => setOutcomeDiscipline(event.target.value as DisciplineCode)} aria-label="Top 10 scenario discipline">
                   {disciplineOptions.map((discipline) => <NativeSelectOption key={discipline.code} value={discipline.code}>{discipline.label}</NativeSelectOption>)}
                 </NativeSelect>
@@ -1323,7 +1161,6 @@ export default function Home() {
 
           </TabsContent>
           <TabsContent value="crystal" keepMounted className="data-[hidden]:hidden"><CrystalBall key={crystalResetKey} /></TabsContent>
-          <TabsContent value="entries" keepMounted className="data-[hidden]:hidden"><UpcomingEntries key={entriesResetKey} renderPlayerSearch={(name, discipline, onChange) => <PlayerSearch player={{ ...emptyPlayer('entry-lookup'), name }} index={0} disciplineCode={discipline} ariaLabel="Entry lookup player" onChange={onChange} onSelect={candidate => onChange(candidate.name)} />} /></TabsContent>
         </Tabs>
         <section className="mt-8">
           <Card>

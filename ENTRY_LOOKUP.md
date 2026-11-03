@@ -2,7 +2,7 @@
 
 This implementation was written from scratch. It does not invoke or depend on the badminton-entry-checker skill.
 
-The third tab uses the existing top-200 database for suggestions; full names can also be entered manually. Select the discipline separately. For doubles, selecting the full pair matches both partners; a full individual name can also find that person's pair entries.
+The standalone `/upcoming-entries/` page uses the existing top-200 database for suggestions; full names can also be entered manually. Select the discipline separately. For doubles, selecting the full pair matches both partners; a full individual name can also find that person's pair entries.
 
 ## Data collection
 
@@ -22,7 +22,7 @@ Kaloyana Nalbantova / WS is confirmed in Korea Open as M12 and Kumamoto as Q2. N
 
 ## GitHub setup
 
-Upload the complete package contents, including hidden `.github` and `.openai`, to the existing repository. Pages must use GitHub Actions. Allow Actions to write repository contents. The new **Refresh upcoming tournament entries** workflow runs daily at **06:17 UTC** and also supports manual dispatch. It installs Playwright Chromium and PyMuPDF, runs the collector, commits `lib/upcoming-entries.json`, and the existing Pages deployment workflow republishes the site after this workflow succeeds. Existing Tuesday ranking refreshes remain separate.
+Upload the complete package contents, including hidden `.github` and `.openai`, to the existing repository. Pages must use GitHub Actions. Allow Actions to write repository contents. The **Refresh upcoming tournament entries** workflow is manual-only. It has no scheduled trigger while the feature is experimental. The main simulator retains its Tuesday 07:24 UTC ranking/calendar refresh. It installs Playwright Chromium and PyMuPDF, runs the collector, commits `lib/upcoming-entries.json`, and the existing Pages deployment workflow republishes the site after this workflow succeeds. Existing Tuesday ranking refreshes remain separate.
 
 For a first manual refresh, choose Actions → Refresh upcoming tournament entries → Run workflow. Review its logs and the tab's coverage section. Scheduled runs can be delayed by GitHub; check that schedules remain enabled.
 
