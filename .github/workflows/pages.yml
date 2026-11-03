@@ -62,6 +62,8 @@ jobs:
           cp -R "dist/client/$repository_name/." _site/
           find dist/client -maxdepth 1 -type f -exec cp {} _site/ \;
           curl --fail --silent "$page_url" --output _site/index.html
+          mkdir -p _site/upcoming-entries
+          curl --fail --silent --location "${page_url}upcoming-entries" --output _site/upcoming-entries/index.html
           cp _site/index.html _site/404.html
           touch _site/.nojekyll
           kill "$server_pid"

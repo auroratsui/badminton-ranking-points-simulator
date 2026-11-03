@@ -1,7 +1,5 @@
 name: Refresh upcoming tournament entries
 on:
-  schedule:
-    - cron: '17 6 * * *'
   workflow_dispatch:
 permissions:
   contents: write
