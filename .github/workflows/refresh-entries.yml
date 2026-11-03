@@ -11,7 +11,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -25,10 +25,15 @@ jobs:
         with:
           python-version: '3.12'
       - run: pnpm install --frozen-lockfile
-      - run: pip install PyMuPDF==1.26.5
+      - run: pip install -r scripts/entries/requirements.txt
       - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm test
       - run: python3 -m unittest discover -s scripts/entries -p 'test_*.py'
+      - uses: actions/cache@v4
+        with:
+          path: .entry-cache
+          key: entry-ocr-v1-${{ github.run_id }}
+          restore-keys: entry-ocr-v1-
       - run: pnpm refresh-entries
       - name: Commit entry data
         run: |
