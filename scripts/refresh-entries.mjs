@@ -26,15 +26,21 @@ async function calendar(y){
  }finally{await page.close();}
 }
 async function collect(event){
- const report=latestReport(event.links);let reportError;
+ const report=latestReport(event.links);let reportError;let reportFile;
  if(report){try{
   const response=await context.request.get(report.href,{timeout:45000});if(!response.ok())throw Error(`PDF HTTP ${response.status()}`);
   const body=await response.body();if(body.subarray(0,5).toString()!=='%PDF-')throw Error('Download is not a PDF');
-  const dir=join(tmpdir(),'bwf-entry-pdfs');await mkdir(dir,{recursive:true});const file=join(dir,`${event.id}.pdf`);await writeFile(file,body);
+  const dir=join(tmpdir(),'bwf-entry-pdfs');await mkdir(dir,{recursive:true});const file=join(dir,`${event.id}.pdf`);await writeFile(file,body);reportFile=file;
   const entries=JSON.parse(execFileSync(process.env.PYTHON||'python3',[new URL('scripts/entries/parse_report.py',root).pathname,file],{maxBuffer:10*1024*1024,stdio:['ignore','pipe','pipe']}).toString());
   return{entries,source:report.href,sourceKind:'pdf',version:report.version};
  }catch(error){reportError=error.message.split('\n')[0];}}
- try{return await readPlayers(context,event);}catch(error){throw Error(`${reportError?`Latest report: ${reportError}; `:''}${error.message}`);}
+ try{return await readPlayers(context,event);}catch(error){
+   if(reportFile){try{
+     const scan=JSON.parse(execFileSync(process.env.PYTHON||'python3',[new URL('scripts/entries/parse_acceptance_scan.py',root).pathname,reportFile,new URL('.entry-cache/',root).pathname],{timeout:300000,maxBuffer:10*1024*1024,stdio:['ignore','pipe','pipe']}).toString());
+     return {...scan,source:report.href,sourceKind:'pdf-image',state:'partial',version:report.version};
+   }catch(scanError){throw Error(`${error.message}; image report: ${scanError.message.split('\n')[0]}`);}}
+   throw Error(`${reportError?`Latest report: ${reportError}; `:''}${error.message}`);
+ }
 }
 try{
  const events=[];const calendarErrors=[];
@@ -42,7 +48,7 @@ try{
  for(const y of new Set([year,end.getUTCFullYear()])){try{events.push(...await calendar(y));}catch(error){calendarErrors.push({year:y,message:error.message});}}
  if(!events.length&&calendarErrors.length)throw Error('No fresh calendar available; previous dataset preserved');
  const output=[];
- let next=0; await Promise.all(Array.from({length:1},async()=>{while(next<events.length){const event=events[next++];if(next>1)await new Promise(resolve=>setTimeout(resolve,1000));const {links,...base}=event;try{const result=await collect(event);output.push({...base,...result,state:'ready',checkedAt:now()});console.log(`${event.name}: ${result.entries.length} entries (${result.sourceKind})`);}catch(error){const cached=previous.events.find(e=>e.id===event.id&&e.entries?.length&&e.checkedAt);output.push({...base,...(cached?{entries:cached.entries,source:cached.source,sourceKind:cached.sourceKind,checkedAt:cached.checkedAt}:{}),state:cached?'stale':'unavailable',error:error.message});console.warn(`${event.name}: ${error.message}`);}}}));
+ let next=0; await Promise.all(Array.from({length:1},async()=>{while(next<events.length){const event=events[next++];if(next>1)await new Promise(resolve=>setTimeout(resolve,1000));const base={...event};try{const result=await collect(event);output.push({...base,...result,state:result.state||'ready',checkedAt:now()});console.log(`${event.name}: ${result.entries.length} entries (${result.sourceKind})`);}catch(error){const cached=previous.events.find(e=>e.id===event.id&&e.entries?.length&&e.checkedAt);output.push({...base,...(cached?{entries:cached.entries,source:cached.source,sourceKind:cached.sourceKind,checkedAt:cached.checkedAt}:{}),state:cached?'stale':'unavailable',error:error.message});console.warn(`${event.name}: ${error.message}`);}}}));
  // Preserve knowledge of events if one calendar year is inaccessible.
  for(const cached of previous.events)if(calendarErrors.some(e=>Number(cached.start.slice(0,4))===e.year)&&inWindow(cached,today)&&!output.some(e=>e.id===cached.id))output.push({...cached,state:'stale'});
  const data={generatedAt:now(),windowStart:today,windowEnd:end.toISOString().slice(0,10),calendarErrors,events:output.sort((a,b)=>a.start.localeCompare(b.start)||a.name.localeCompare(b.name))};
