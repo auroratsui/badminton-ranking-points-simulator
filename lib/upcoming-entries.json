@@ -1,0 +1,5615 @@
+{
+  "generatedAt": "2026-11-03T02:53:45.449Z",
+  "windowStart": "2026-11-03",
+  "windowEnd": "2026-12-15",
+  "calendarErrors": [],
+  "events": [
+    {
+      "id": "5315",
+      "name": "Telangana India International Challenge 2026",
+      "week": "45",
+      "range": "03                                    -08",
+      "category": "International Challenge",
+      "start": "2026-11-03",
+      "end": "2026-11-08",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Duplicate entry positions"
+    },
+    {
+      "id": "5853",
+      "name": "WANG WENJIAO CUP Nan'an China International Challenge 2026",
+      "week": "45",
+      "range": "03                                    -08",
+      "category": "International Challenge",
+      "start": "2026-11-03",
+      "end": "2026-11-08",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Latest report: Command failed: /private/tmp/badminton-entry-release/ocr-venv/bin/python /private/tmp/badminton-entry-release/badminton-ranking-points-simulator-main/scripts/entries/parse_report.py /var/folders/j7/6mx5tsm10135d_08pb6yy9000000gn/T/bwf-entry-pdfs/5853.pdf; Players source HTTP 403"
+    },
+    {
+      "id": "5597",
+      "name": "YEOSU VICTOR Korea Open 2026",
+      "week": "45",
+      "range": "03                                    -08",
+      "category": "HSBC BWF World Tour Super 500",
+      "start": "2026-11-03",
+      "end": "2026-11-08",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Latest report: Command failed: /private/tmp/badminton-entry-release/ocr-venv/bin/python /private/tmp/badminton-entry-release/badminton-ranking-points-simulator-main/scripts/entries/parse_report.py /var/folders/j7/6mx5tsm10135d_08pb6yy9000000gn/T/bwf-entry-pdfs/5597.pdf; Duplicate entry positions"
+    },
+    {
+      "id": "5803",
+      "name": "FZ FORZA Norwegian International 2026",
+      "week": "45",
+      "range": "05                                    -08",
+      "category": "Future Series",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5216",
+      "name": "Kumamoto Masters Japan 2026",
+      "week": "46",
+      "range": "10                                    -15",
+      "category": "HSBC BWF World Tour Super 500",
+      "start": "2026-11-10",
+      "end": "2026-11-15",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "entries": [
+        {
+          "discipline": "MS",
+          "names": [
+            "VITIDSARN Kunlavut"
+          ],
+          "status": "M1",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "POPOV Christo"
+          ],
+          "status": "M2",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "CHOU Tien Chen"
+          ],
+          "status": "M3",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "ANTONSEN Anders"
+          ],
+          "status": "M4",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "NARAOKA Kodai"
+          ],
+          "status": "M5",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "LAI Victor"
+          ],
+          "status": "M6",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "FARHAN Alwi"
+          ],
+          "status": "M7",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "LIN Chun-Yi"
+          ],
+          "status": "M8",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "LI Shi Feng"
+          ],
+          "status": "M9",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "LOH Kean Yew"
+          ],
+          "status": "M10",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "SEN Lakshya"
+          ],
+          "status": "M11",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "POPOV Toma Junior"
+          ],
+          "status": "M12",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "WATANABE Koki"
+          ],
+          "status": "M13",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "TEERARATSAKUL Panitchaphon"
+          ],
+          "status": "M14",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "TANAKA Yushi"
+          ],
+          "status": "M15",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "LEE Cheuk Yiu"
+          ],
+          "status": "M16",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "SHETTY Ayush"
+          ],
+          "status": "M17",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "GEMKE Rasmus"
+          ],
+          "status": "M18",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "CHI Yu Jen"
+          ],
+          "status": "M19",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "GUNAWAN Jason"
+          ],
+          "status": "M20",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "OKIMOTO Yudai"
+          ],
+          "status": "M21",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "NGUYEN Nhat"
+          ],
+          "status": "M22",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "NISHIMOTO Kenta"
+          ],
+          "status": "M23",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "UBAIDILLAH Moh. Zaki"
+          ],
+          "status": "M24",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "KIDAMBI Srikanth"
+          ],
+          "status": "M25",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "NG Ka Long Angus"
+          ],
+          "status": "M26",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "LEONG Jun Hao"
+          ],
+          "status": "M27",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "YANG Brian"
+          ],
+          "status": "M28",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "LEE Chia Hao"
+          ],
+          "status": "Q1",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "HU Zhe An"
+          ],
+          "status": "Q2",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "DONG Tian Yao"
+          ],
+          "status": "Q3",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "JOHANNESEN Magnus"
+          ],
+          "status": "Q4",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "WANG Tzu Wei"
+          ],
+          "status": "Q5",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "SU Li Yang"
+          ],
+          "status": "Q6",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "WANG Po-Wei"
+          ],
+          "status": "Q7",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "ZHU Xuan Chen"
+          ],
+          "status": "Q8",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "YUSUF Muhamad"
+          ],
+          "status": "R1",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "YOO Tae Bin"
+          ],
+          "status": "R2",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "HOH Justin"
+          ],
+          "status": "R3",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "KOGA Minoru"
+          ],
+          "status": "R4",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "LEE Zii Jia"
+          ],
+          "status": "R5",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "JEON Hyeok Jin"
+          ],
+          "status": "R6",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "MATIAS Jonathan"
+          ],
+          "status": "R7",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "TAN Garret"
+          ],
+          "status": "R8",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "ZILBERMAN Misha"
+          ],
+          "status": "R9",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "EWE Eogene"
+          ],
+          "status": "R10",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "TAKEI Riki"
+          ],
+          "status": "R11",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "HATANO Riku"
+          ],
+          "status": "R12",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "LOCK Timothy"
+          ],
+          "status": "R13",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "MORIGUCHI Koshiro"
+          ],
+          "status": "R14",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "STOYANOV Tsvetomir"
+          ],
+          "status": "R15",
+          "page": 1
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "WANG Yue Hang"
+          ],
+          "status": "R16",
+          "page": 2
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "SAEHENG Tonkid"
+          ],
+          "status": "R17",
+          "page": 2
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "XIE Zewei"
+          ],
+          "status": "R18",
+          "page": 2
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "CHUN Kar Lung"
+          ],
+          "status": "R19",
+          "page": 2
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "CHEN Benedict"
+          ],
+          "status": "R20",
+          "page": 2
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "SHI Yu Qi"
+          ],
+          "status": "Withdrawn",
+          "page": 2
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "PANGESTU Dicky Dwi"
+          ],
+          "status": "Withdrawn",
+          "page": 2
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "DWICAHYO Ade Resky"
+          ],
+          "status": "Withdrawn",
+          "page": 2
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "BONDE Rasmus"
+          ],
+          "status": "Removed",
+          "page": 2
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "DUBOVENKO Daniil"
+          ],
+          "status": "Removed",
+          "page": 2
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "CHRISTIE Jonatan"
+          ],
+          "status": "Removed",
+          "page": 2
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "AN Se Young"
+          ],
+          "status": "M1",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "WANG Zhi Yi"
+          ],
+          "status": "M2",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "YAMAGUCHI Akane"
+          ],
+          "status": "M3",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "CHEN Yu Fei"
+          ],
+          "status": "M4",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "INTANON Ratchanok"
+          ],
+          "status": "M5",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "WARDANI Putri Kusuma"
+          ],
+          "status": "M6",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "MIYAZAKI Tomoka"
+          ],
+          "status": "M7",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "CHOCHUWONG Pornpawee"
+          ],
+          "status": "M8",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "OKUHARA Nozomi"
+          ],
+          "status": "M9",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "PUSARLA V. Sindhu"
+          ],
+          "status": "M10",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "KIM Ga Eun"
+          ],
+          "status": "M11",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "CHRISTOPHERSEN Line"
+          ],
+          "status": "M12",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "LI Michelle"
+          ],
+          "status": "M13",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "BLICHFELDT Mia"
+          ],
+          "status": "M14",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "SIM Yu Jin"
+          ],
+          "status": "M15",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "CHIU Pin-Chian"
+          ],
+          "status": "M16",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "LIN Hsiang Ti"
+          ],
+          "status": "M17",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "GUNJI Riko"
+          ],
+          "status": "M18",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "KJAERSFELDT Line H\u00f8jmark"
+          ],
+          "status": "M19",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "AKECHI Hina"
+          ],
+          "status": "M20",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "SHARMA Tanvi"
+          ],
+          "status": "M21",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "HUANG Yu-Hsun"
+          ],
+          "status": "M22",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "KATETHONG Supanida"
+          ],
+          "status": "M23",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "LETSHANAA Karupathevan"
+          ],
+          "status": "M24",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "HAN Qian Xi"
+          ],
+          "status": "M25",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "ARIN Neslihan"
+          ],
+          "status": "M26",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "SIHAG Devika"
+          ],
+          "status": "M27",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "NIDAIRA Natsuki"
+          ],
+          "status": "M28",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "GILMOUR Kirsty"
+          ],
+          "status": "Q1",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "NALBANTOVA Kaloyana"
+          ],
+          "status": "Q2",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "WONG Ling Ching"
+          ],
+          "status": "Q3",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "BARUAH Isharani"
+          ],
+          "status": "Q4",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "SCHULZ Amalie"
+          ],
+          "status": "Q5",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "BUHROVA Polina"
+          ],
+          "status": "Q6",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "SUNG Shuo Yun"
+          ],
+          "status": "Q7",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "TUNG Ciou-Tong"
+          ],
+          "status": "Q8",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "CHAN Rachel"
+          ],
+          "status": "R1",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "KHARB Anmol"
+          ],
+          "status": "R2",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "BANSOD Malvika"
+          ],
+          "status": "R3",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "ZHANG Wen Yu"
+          ],
+          "status": "R4",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "JAISWAL Ishika"
+          ],
+          "status": "R5",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "SUIZU Manami"
+          ],
+          "status": "R6",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "SINGH MANSI"
+          ],
+          "status": "R7",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "VIEIRA Juliana Viana"
+          ],
+          "status": "R8",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "SAEHENG Tonrug"
+          ],
+          "status": "R9",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "KIM Min Sun"
+          ],
+          "status": "R10",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "LO Sin Yan Happy"
+          ],
+          "status": "R11",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "KANTEMYR Yevheniia"
+          ],
+          "status": "R12",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "XU Wen Jing"
+          ],
+          "status": "R13",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "\u0160V\u00c1B\u00cdKOV\u00c1 Tereza"
+          ],
+          "status": "R14",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "KASHYAP AAKARSHI"
+          ],
+          "status": "R15",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "GUPTA Disha"
+          ],
+          "status": "R16",
+          "page": 3
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "HOANG Chloe"
+          ],
+          "status": "R17",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "SUNAKAWA Nodoka"
+          ],
+          "status": "R18",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "KOROSI Agnes"
+          ],
+          "status": "R19",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "STADELMANN Jenjira"
+          ],
+          "status": "R20",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "MATSUTA Niina"
+          ],
+          "status": "R21",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "TAKAHASHI Asuka"
+          ],
+          "status": "R22",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "SUGIYAMA Kaoru"
+          ],
+          "status": "R23",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "FENG Karen Yun Qiao"
+          ],
+          "status": "R24",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "WATANABE Yuzuno"
+          ],
+          "status": "R25",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "SAKAI Kanae"
+          ],
+          "status": "R26",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "HIRAMOTO Ririna"
+          ],
+          "status": "R27",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "MOK Ann"
+          ],
+          "status": "R28",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "FURUKAWA Kana"
+          ],
+          "status": "R29",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "KONISHI Haruna"
+          ],
+          "status": "R30",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "CHOI Catherine"
+          ],
+          "status": "R31",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "AZZAHRA Keisha Fatimah"
+          ],
+          "status": "Withdrawn",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "OPATNIPUTH Pitchamon"
+          ],
+          "status": "Withdrawn",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "YEO Jia Min"
+          ],
+          "status": "Removed",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "LI Yvonne"
+          ],
+          "status": "Removed",
+          "page": 4
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "CHALIHA Ashmita"
+          ],
+          "status": "Removed",
+          "page": 4
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "SEO Seung Jae",
+            "KIM Won Ho"
+          ],
+          "status": "M1",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "ALFIAN Fajar",
+            "FIKRI Muhammad Shohibul"
+          ],
+          "status": "M2",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "CHIA Aaron",
+            "SOH Wooi Yik"
+          ],
+          "status": "M3",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "SHETTY Chirag",
+            "RANKIREDDY Satwiksairaj"
+          ],
+          "status": "M4",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "IZZUDDIN Nur",
+            "GOH Sze Fei"
+          ],
+          "status": "M5",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "GUTAMA Sabar Karyaman",
+            "ISFAHANI Moh Reza Pahlevi"
+          ],
+          "status": "M6",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "LANE Ben",
+            "VENDY Sean"
+          ],
+          "status": "M7",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "HE Ji Ting",
+            "REN Xiang Yu"
+          ],
+          "status": "M8",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "HOKI Takuro",
+            "KOBAYASHI Yugo"
+          ],
+          "status": "M9",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "CHEN Bo Yang",
+            "LIU Yi"
+          ],
+          "status": "M10",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "MAN Wei Chong",
+            "TEE Kai Wun"
+          ],
+          "status": "M11",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "LUNDGAARD Daniel",
+            "VESTERGAARD Mads"
+          ],
+          "status": "M12",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "WANG Chi-Lin",
+            "CHIU Hsiang Chieh"
+          ],
+          "status": "M13",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "LEE Jhe-Huei",
+            "YANG Po-Hsuan"
+          ],
+          "status": "M14",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "LIANG Wei Keng",
+            "HU Ke Yuan"
+          ],
+          "status": "M15",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "WANG Chang",
+            "XIE Hao Nan"
+          ],
+          "status": "M16",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "LEE Fang-Jen",
+            "LEE Fang-Chih"
+          ],
+          "status": "M17",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "KUMAGAI Kakeru",
+            "NISHI Hiroki"
+          ],
+          "status": "M18",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "POPOV Christo",
+            "POPOV Toma Junior"
+          ],
+          "status": "M19",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "OKAMURA Hiroki",
+            "YAMASHITA Kyohei"
+          ],
+          "status": "M20",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "TAN Wee Kiong",
+            "AZRIYN Nur Mohd Azriyn Ayub"
+          ],
+          "status": "M21",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "ARJUN M.R.",
+            "AMSAKARUNAN Hariharan"
+          ],
+          "status": "M22",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "SHIMOGAMI Yuichi",
+            "NOMURA Takumi"
+          ],
+          "status": "M23",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "SMITH Presley",
+            "CHEN ZHI YI"
+          ],
+          "status": "M24",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "LIN Yu Chieh",
+            "CHEN Zhi Ray"
+          ],
+          "status": "M25",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "JIN Yong",
+            "JO Song Hyun"
+          ],
+          "status": "M26",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "RAYHAN Ali Faathir",
+            "WAHYUDI Devin Artha"
+          ],
+          "status": "M27",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "TAI Aaron",
+            "YAP Roy King"
+          ],
+          "status": "M28",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "KJ\u00c6R Rasmus",
+            "KJ\u00c6R Christian Faust"
+          ],
+          "status": "Q1",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "KANG Min Hyuk",
+            "LEE Jong Min"
+          ],
+          "status": "Q2",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "CHIA Weijie",
+            "TEO Ee Yi"
+          ],
+          "status": "Q3",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "LIU Kuang Heng",
+            "CHEN Cheng Kuan"
+          ],
+          "status": "Q4",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "HE Zhi-Wei",
+            "HUANG Jui-Hsuan"
+          ],
+          "status": "Q5",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "TEERARATSAKUL Pakkapon",
+            "SUKPHUN Peeratchai"
+          ],
+          "status": "Q6",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "CHOI Sol Gyu",
+            "GOH V Shem"
+          ],
+          "status": "Q7",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "ZENG Wei Han",
+            "LIN Xiang Yi"
+          ],
+          "status": "Q8",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "KR\u00c1L Ji\u0159\u00ed",
+            "KR\u00c1L Ond\u0159ej"
+          ],
+          "status": "R1",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "KAWABE Haruki",
+            "MATSUKAWA Kenta"
+          ],
+          "status": "R2",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "THONGSA-NGA Worrapol",
+            "CHAROENKITAMORN Chaloempon"
+          ],
+          "status": "R3",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "LUI Chun Wai",
+            "HUNG Kuei Chun"
+          ],
+          "status": "R4",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "FARIAS Fabricio",
+            "SILVA Davi"
+          ],
+          "status": "R5",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "KOH Eng Keat Wesley",
+            "WONG Jia Hao Howin"
+          ],
+          "status": "R6",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "MITSUHASHI Kenya",
+            "MATSUI Keiichiro"
+          ],
+          "status": "R7",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "YOSHIDA Tsubasa",
+            "GOTO Takuto"
+          ],
+          "status": "R8",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "SHIBATA Kazuki",
+            "YAMADA Naoki"
+          ],
+          "status": "R9",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "TANIOKA Daigo",
+            "SAWADA Shuji"
+          ],
+          "status": "R10",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "PONG Lap Hang Hugo",
+            "PONG Lap Kan Kern"
+          ],
+          "status": "R11",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "XIE Zewei",
+            "WANG Yue Hang"
+          ],
+          "status": "R12",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "LIM Yu Sheng",
+            "KOK Andy Yew Tung"
+          ],
+          "status": "R13",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "STOYANOV Tsvetomir",
+            "PANEV Evgeni"
+          ],
+          "status": "R14",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "LAI Jonathan Bing Tsan",
+            "MAK Jason Ling-Chun"
+          ],
+          "status": "R15",
+          "page": 5
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "WEDLER Lucas Ekarat",
+            "SREEPEAW Attawut"
+          ],
+          "status": "Removed",
+          "page": 5
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LIU Sheng Shu",
+            "TAN Ning"
+          ],
+          "status": "M1",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LEE So Hee",
+            "BAEK Ha Na"
+          ],
+          "status": "M2",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "FUKUSHIMA Yuki",
+            "MATSUMOTO Mayu"
+          ],
+          "status": "M3",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "ZHANG Shu Xian",
+            "JIA Yi Fan"
+          ],
+          "status": "M4",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "TAN Pearly",
+            "THINAAH Muralitharan"
+          ],
+          "status": "M5",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "NAKANISHI Kie",
+            "IWANAGA Rin"
+          ],
+          "status": "M6",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "ROSE Rachel Allessya",
+            "SETIANINGRUM Febi"
+          ],
+          "status": "M7",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "CAO Zi Han",
+            "BAO Li Jing"
+          ],
+          "status": "M8",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "TAKAHASHI Miyu",
+            "NAKADE Sumire"
+          ],
+          "status": "M9",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "KUSUMA Febriana Dwipuji",
+            "PUSPITASARI Meilysa Trias"
+          ],
+          "status": "M10",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LIN Jhih Yun",
+            "HSU Yin-Hui"
+          ],
+          "status": "M11",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "STOEVA Stefani",
+            "STOEVA Gabriela"
+          ],
+          "status": "M12",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "HIROTA Sayaka",
+            "SAKURAMOTO Ayako"
+          ],
+          "status": "M13",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "HOBARA Sayaka",
+            "HIROKAMI Rui"
+          ],
+          "status": "M14",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "PRATIWI Amallia Cahaya",
+            "RAMADHANTI Siti Fadia Silva"
+          ],
+          "status": "M15",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "HSU Ya Ching",
+            "SUNG Yu-Hsuan"
+          ],
+          "status": "M16",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "KIM Hye Jeong",
+            "LEE Yeon Woo"
+          ],
+          "status": "M17",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LAM Lauren",
+            "LEE Allison Quynh"
+          ],
+          "status": "M18",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "SUZUKI Hinata",
+            "YAMAKITA Nao"
+          ],
+          "status": "M19",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "YEUNG Nga Ting",
+            "YEUNG Pui Lam"
+          ],
+          "status": "M20",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "GAI Jennie",
+            "CORBETT Francesca"
+          ],
+          "status": "M21",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LUO Yi",
+            "WANG Ting Ge"
+          ],
+          "status": "M22",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "JOLLY Treesa",
+            "PULLELA GAYATRI GOPICHAND"
+          ],
+          "status": "M23",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "BUHROVA Polina",
+            "KANTEMYR Yevheniia"
+          ],
+          "status": "M24",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LIN Chih-Chun",
+            "YANG Chu Yun"
+          ],
+          "status": "M25",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "CHANG Ching Hui",
+            "YANG Ching Tun"
+          ],
+          "status": "M26",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LUI Lok Lok",
+            "TSANG Hiu Yan"
+          ],
+          "status": "M27",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LEE Yu Lim",
+            "KIM Yu Jung"
+          ],
+          "status": "M28",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "SHIDA Chiharu",
+            "HIRAMOTO Ririna"
+          ],
+          "status": "Q1",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "DENT Jackie",
+            "LAI Crystal"
+          ],
+          "status": "Q2",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "KATO Yuna",
+            "KANEHIRO Miki"
+          ],
+          "status": "Q3",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LOW Zi Yu",
+            "MAISARAH Noraqilah"
+          ],
+          "status": "Q4",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "WANG Yi Duo",
+            "LI Yi Jing"
+          ],
+          "status": "Q5",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "IGARASHI Arisa",
+            "TANABE Yumi"
+          ],
+          "status": "Q6",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "KIYOSE Riko",
+            "HARA Nanako"
+          ],
+          "status": "Q7",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "CHEN Fan Shu Tian",
+            "LUO Xu Min"
+          ],
+          "status": "Q8",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "KIYAMA Rui",
+            "YONEMOTO Sona"
+          ],
+          "status": "R1",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "ISHIKAWA Kokona",
+            "KONISHI Haruna"
+          ],
+          "status": "R2",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LIMA Sania",
+            "VIEIRA Juliana Viana"
+          ],
+          "status": "R3",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "JONGSATHAPORNPARN Ornnicha",
+            "WEDLER Sabrina Sophita"
+          ],
+          "status": "R4",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "UESUGI An",
+            "KONEGAWA Mio"
+          ],
+          "status": "R5",
+          "page": 6
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "CHOI Catherine",
+            "YU Angela"
+          ],
+          "status": "R6",
+          "page": 6
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "FENG Yan Zhe",
+            "HUANG Dong Ping"
+          ],
+          "status": "M1",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "CHRISTIANSEN Mathias",
+            "B\u00d8JE Alexandra"
+          ],
+          "status": "M2",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "JIANG Zhen Bang",
+            "WEI Ya Xin"
+          ],
+          "status": "M3",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "PUAVARANUKROH Dechapol",
+            "PAEWSAMPRAN Supissara"
+          ],
+          "status": "M4",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "GUO Xin Wa",
+            "CHEN Fang Hui"
+          ],
+          "status": "M5",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "YE Hong Wei",
+            "CHAN Nicole Gonzales"
+          ],
+          "status": "M6",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "CHENG Xing",
+            "ZHANG Chi"
+          ],
+          "status": "M7",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "GOH Soon Huat",
+            "LAI Shevon Jemie"
+          ],
+          "status": "M8",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "YANG Po-Hsuan",
+            "HU Ling Fang"
+          ],
+          "status": "M9",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "WATANABE Yuta",
+            "TAGUCHI Maya"
+          ],
+          "status": "M10",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "TEERARATSAKUL Pakkapon",
+            "TAERATTANACHAI Sapsiree"
+          ],
+          "status": "M11",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "SHIMOGAMI Yuichi",
+            "HOBARA Sayaka"
+          ],
+          "status": "M12",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "SMITH Presley",
+            "GAI Jennie"
+          ],
+          "status": "M13",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "SYAHNAWI Amri",
+            "MARWAH Nita Violina"
+          ],
+          "status": "M14",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "KOGA Akira",
+            "SAITO Natsu"
+          ],
+          "status": "M15",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "HOO Pang Ron",
+            "LAI Pei Jing"
+          ],
+          "status": "M16",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "ZHU Yi Jun",
+            "LI Qian"
+          ],
+          "status": "M17",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "CHAN Yin Chak",
+            "NG Tsz Yau"
+          ],
+          "status": "M18",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "KIM Jae Hyeon",
+            "JANG Ha Jeong"
+          ],
+          "status": "M19",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "FAZA Marwan",
+            "PRANATA Aisyah Salsabila Putri"
+          ],
+          "status": "M20",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "MIDORIKAWA Hiroki",
+            "YAMAKITA Mao"
+          ],
+          "status": "M21",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "GAO Jia Xuan",
+            "WU Meng Ying"
+          ],
+          "status": "M22",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "WONG Jimmy",
+            "CHENG Su Yin"
+          ],
+          "status": "M23",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "AMSAKARUNAN Hariharan",
+            "CRASTO Tanisha"
+          ],
+          "status": "M24",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "LIU Kuang Heng",
+            "HSU Yin-Hui"
+          ],
+          "status": "M25",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "FERDINANSYAH Dejan",
+            "PASARIBU Felisha Alberta Nathaniel"
+          ],
+          "status": "M26",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "KAWABE Haruki",
+            "ISHIKAWA Kokona"
+          ],
+          "status": "M27",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "GARCIA Ruben",
+            "RODRIGUEZ Lucia"
+          ],
+          "status": "M28",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "CHEN Tang Jie",
+            "CHAN Wen Tse"
+          ],
+          "status": "Q1",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "RAWAT Dhruv",
+            "MANEESHA K"
+          ],
+          "status": "Q2",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "CHEN ZHI YI",
+            "CORBETT Francesca"
+          ],
+          "status": "Q3",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "HEE Yong Kai Terry",
+            "WIDJAJA Gloria Emanuelle"
+          ],
+          "status": "Q4",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "WU Hsuan-Yi",
+            "YANG Chu Yun"
+          ],
+          "status": "Q5",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "KAPILA DHRUV",
+            "SHARMA Radhika"
+          ],
+          "status": "Q6",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "FARIAS Fabricio",
+            "LIMA Jaqueline"
+          ],
+          "status": "Q7",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "LAI Jonathan Bing Tsan",
+            "LAI Crystal"
+          ],
+          "status": "Q8",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "LOCK Timothy",
+            "HOANG Chloe"
+          ],
+          "status": "R1",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "SILVA Davi",
+            "LIMA Sania"
+          ],
+          "status": "R2",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "YU Zhirui Jerry",
+            "TSE Ying Suet"
+          ],
+          "status": "R3",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "SAEHENG Tonkid",
+            "SAEHENG Tonrug"
+          ],
+          "status": "R4",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "KOK Andy Yew Tung",
+            "FENG Karen Yun Qiao"
+          ],
+          "status": "R5",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "PANEV Evgeni",
+            "STOEVA Gabriela"
+          ],
+          "status": "R6",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "DEVEREUX Calvin",
+            "TOEPFFER Desiree"
+          ],
+          "status": "R7",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "WANG Yue Hang",
+            "LAM Cho Wai"
+          ],
+          "status": "R8",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "PONG Lap Kan Kern",
+            "CHOI Catherine"
+          ],
+          "status": "R9",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "XIE Zewei",
+            "ZHANG Yuran"
+          ],
+          "status": "R10",
+          "page": 7
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "JOMKOH Supak",
+            "JONGSATHAPORNPARN Ornnicha"
+          ],
+          "status": "Removed",
+          "page": 7
+        }
+      ],
+      "source": "https://extranet.bwf.sport/docs/events/5194/docs/M%20_%20Q%20Version%201%20-%20Kumamoto%20Masters%20Japan%202026.pdf",
+      "sourceKind": "pdf",
+      "version": 1,
+      "state": "ready",
+      "checkedAt": "2026-11-03T02:53:41.370Z"
+    },
+    {
+      "id": "5652",
+      "name": "VICTOR Kaohsiung Masters 2026",
+      "week": "46",
+      "range": "10                                    -15",
+      "category": "BWF Tour Super 100",
+      "start": "2026-11-10",
+      "end": "2026-11-15",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Latest report: Command failed: /private/tmp/badminton-entry-release/ocr-venv/bin/python /private/tmp/badminton-entry-release/badminton-ranking-points-simulator-main/scripts/entries/parse_report.py /var/folders/j7/6mx5tsm10135d_08pb6yy9000000gn/T/bwf-entry-pdfs/5652.pdf; Players source HTTP 403"
+    },
+    {
+      "id": "5773",
+      "name": "AIG VICTOR Irish Open 2026",
+      "week": "46",
+      "range": "11                                    -14",
+      "category": "International Challenge",
+      "start": "2026-11-11",
+      "end": "2026-11-14",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5754",
+      "name": "XVII Suriname International 2026",
+      "week": "46",
+      "range": "11                                    -15",
+      "category": "International Series",
+      "start": "2026-11-11",
+      "end": "2026-11-15",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5844",
+      "name": "YONEX South Australia International 2026",
+      "week": "46",
+      "range": "11                                    -15",
+      "category": "International Series",
+      "start": "2026-11-11",
+      "end": "2026-11-15",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5854",
+      "name": "Zambia International 2026",
+      "week": "46",
+      "range": "12                                    -15",
+      "category": "International Series",
+      "start": "2026-11-12",
+      "end": "2026-11-15",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5755",
+      "name": "Guatemala International Series 2026",
+      "week": "47",
+      "range": "17                                    -22",
+      "category": "International Series",
+      "start": "2026-11-17",
+      "end": "2026-11-22",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5218",
+      "name": "LI-NING Hong Kong Open 2026",
+      "week": "47",
+      "range": "17                                    -22",
+      "category": "HSBC BWF World Tour Super 500",
+      "start": "2026-11-17",
+      "end": "2026-11-22",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Latest report: Command failed: /private/tmp/badminton-entry-release/ocr-venv/bin/python /private/tmp/badminton-entry-release/badminton-ranking-points-simulator-main/scripts/entries/parse_report.py /var/folders/j7/6mx5tsm10135d_08pb6yy9000000gn/T/bwf-entry-pdfs/5218.pdf; Players source HTTP 403"
+    },
+    {
+      "id": "5576",
+      "name": "POLYTRON Yogyakarta International Challenge 2026",
+      "week": "47",
+      "range": "17                                    -22",
+      "category": "International Challenge",
+      "start": "2026-11-17",
+      "end": "2026-11-22",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5763",
+      "name": "NAVEK T\u00fcrkiye International Future Series 2026",
+      "week": "47",
+      "range": "18                                    -22",
+      "category": "Future Series",
+      "start": "2026-11-18",
+      "end": "2026-11-22",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5838",
+      "name": "YONEX Melbourne International 2026",
+      "week": "47",
+      "range": "18                                    -22",
+      "category": "Future Series",
+      "start": "2026-11-18",
+      "end": "2026-11-22",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5841",
+      "name": "Scottish Open 2026",
+      "week": "47",
+      "range": "19                                    -22",
+      "category": "International Challenge",
+      "start": "2026-11-19",
+      "end": "2026-11-22",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5274",
+      "name": "Syed Modi India International 2026",
+      "week": "48",
+      "range": "24                                    -29",
+      "category": "HSBC BWF World Tour Super 300",
+      "start": "2026-11-24",
+      "end": "2026-11-29",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Latest report: Command failed: /private/tmp/badminton-entry-release/ocr-venv/bin/python /private/tmp/badminton-entry-release/badminton-ranking-points-simulator-main/scripts/entries/parse_report.py /var/folders/j7/6mx5tsm10135d_08pb6yy9000000gn/T/bwf-entry-pdfs/5274.pdf; Players source HTTP 403"
+    },
+    {
+      "id": "5714",
+      "name": "TOYOTA International Challenge 2026",
+      "week": "48",
+      "range": "24                                    -29",
+      "category": "International Challenge",
+      "start": "2026-11-24",
+      "end": "2026-11-29",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5752",
+      "name": "VIII El Salvador International 2026",
+      "week": "48",
+      "range": "25                                    -29",
+      "category": "Future Series",
+      "start": "2026-11-25",
+      "end": "2026-11-29",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5823",
+      "name": "South Africa International 2026",
+      "week": "48",
+      "range": "26                                    -29",
+      "category": "Future Series",
+      "start": "2026-11-26",
+      "end": "2026-11-29",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5848",
+      "name": "YONEX Welsh International Open 2026",
+      "week": "48",
+      "range": "26                                    -29",
+      "category": "International Series",
+      "start": "2026-11-26",
+      "end": "2026-11-29",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5764",
+      "name": "2026 YONEX Canadian International Challenge",
+      "week": "49",
+      "range": "01                                    -06",
+      "category": "International Challenge",
+      "start": "2026-12-01",
+      "end": "2026-12-06",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5851",
+      "name": "FELET Vietnam International Series 2026",
+      "week": "49",
+      "range": "01                                    -06",
+      "category": "International Series",
+      "start": "2026-12-01",
+      "end": "2026-12-06",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5276",
+      "name": "YONEX-SUNRISE Guwahati Masters 2026",
+      "week": "49",
+      "range": "01                                    -06",
+      "category": "BWF Tour Super 100",
+      "start": "2026-12-01",
+      "end": "2026-12-06",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "ready",
+      "entries": [
+        {
+          "discipline": "MS",
+          "names": [
+            "Arnaud MERKLE"
+          ],
+          "status": "M1"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "H. S. PRANNOY"
+          ],
+          "status": "M2"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Justin HOH"
+          ],
+          "status": "M3"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Rounak CHOUHAN"
+          ],
+          "status": "M4"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Tharun MANNEPALLI"
+          ],
+          "status": "M5"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Kiran GEORGE"
+          ],
+          "status": "M6"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "June Wei CHEAM"
+          ],
+          "status": "M7"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Harry HUANG"
+          ],
+          "status": "M8"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Kantaphon WANGCHAROEN"
+          ],
+          "status": "M9"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Mark Shelley ALCALA"
+          ],
+          "status": "M10"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Saneeth DAYANAND"
+          ],
+          "status": "M11"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Hai Dang NGUYEN"
+          ],
+          "status": "M12"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Zhe Ying WU"
+          ],
+          "status": "M13"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Ginpaul SONNA"
+          ],
+          "status": "M14"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Eogene EWE"
+          ],
+          "status": "M15"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "S.Sankar Muthusamy SUBRAMANIAN"
+          ],
+          "status": "M16"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Mithun MANJUNATH"
+          ],
+          "status": "M17"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Enogat ROY"
+          ],
+          "status": "M18"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Sholeh AIDIL"
+          ],
+          "status": "M19"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Tushar SUVEER"
+          ],
+          "status": "M20"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Jing Hong KOK"
+          ],
+          "status": "M21"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Priyanshu RAJAWAT"
+          ],
+          "status": "M22"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Shashwat DALAL"
+          ],
+          "status": "M23"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Alap MISHRA"
+          ],
+          "status": "M24"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Meiraba Luwang MAISNAM"
+          ],
+          "status": "M25"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Manraj SINGH"
+          ],
+          "status": "M26"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Siddhanth GUPTA"
+          ],
+          "status": "M27"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Pranay SHETTIGAR"
+          ],
+          "status": "M28"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Bharat RAGHAV"
+          ],
+          "status": "M29"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Chico  Aura DWI WARDOYO"
+          ],
+          "status": "M30"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Jia Wei Joel KOH"
+          ],
+          "status": "M31"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Sanskar SARASWAT"
+          ],
+          "status": "M32"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Jia Jie TAN"
+          ],
+          "status": "M33"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Lakshay SHARMA"
+          ],
+          "status": "M34"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Orijit CHALIHA"
+          ],
+          "status": "M35"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Pranay KATTA"
+          ],
+          "status": "M36"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Ephraim STEPHEN SAM"
+          ],
+          "status": "M37"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Kavin Thangam KAVIN"
+          ],
+          "status": "M38"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Numair SHAIK"
+          ],
+          "status": "M39"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Hmar LALTHAZUALA"
+          ],
+          "status": "M40"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Bharath LATHEESH"
+          ],
+          "status": "Q1"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Wongsup WONGSUP-IN"
+          ],
+          "status": "Q2"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Dhruv NEGI"
+          ],
+          "status": "Q3"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "A R Rohan Kumar ANANDAS RAJ KUMAR"
+          ],
+          "status": "Q4"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Ali HAYATI"
+          ],
+          "status": "Q5"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Aryamann TANDON"
+          ],
+          "status": "Q6"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Darshan PUJARI"
+          ],
+          "status": "Q7"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Sathish Kumar KARUNAKARAN"
+          ],
+          "status": "Q8"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Ansh NEGI"
+          ],
+          "status": "Q9"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Tankara Gnana Dattu TALASILA"
+          ],
+          "status": "Q10"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Nicholas RAJ"
+          ],
+          "status": "Q11"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "B.M.Rahul BHARADWAJ"
+          ],
+          "status": "Q12"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Samarveer SAMARVEER"
+          ],
+          "status": "Q13"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Varun KAPUR"
+          ],
+          "status": "Q14"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Irvin Arokia WALTER"
+          ],
+          "status": "Q15"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Manav CHOUDHARY"
+          ],
+          "status": "Q16"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Arya BHIVPATHAKI"
+          ],
+          "status": "Q17"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Riyan MALHAN"
+          ],
+          "status": "Q18"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Aditya TRIPATHI"
+          ],
+          "status": "Q19"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Tanmoy Bikash BORUAH"
+          ],
+          "status": "Q20"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Dev VISHNU"
+          ],
+          "status": "Q21"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Raghu MARISWAMY"
+          ],
+          "status": "Q22"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Nithin Raghavendar BALASUBRAMANIYAM"
+          ],
+          "status": "Q23"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Abhinav THAKUR"
+          ],
+          "status": "Q24"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Pranauv Ram NAGALINGAM"
+          ],
+          "status": "Q25"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Lokesh Reddy KALAGOTLA"
+          ],
+          "status": "Q26"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Varot URAIWONG"
+          ],
+          "status": "Q27"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Sugi Sai Bala Singha GOPINATH SINGH"
+          ],
+          "status": "Q28"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Kaushal DHARMAMER"
+          ],
+          "status": "Q29"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "VENKATA SAI HARSHIT TUMMALA"
+          ],
+          "status": "Q30"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Shivansh SHIVANSH"
+          ],
+          "status": "Q31"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Kiran Kumar MEKALA"
+          ],
+          "status": "Q32"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Prajwal SONAWANE"
+          ],
+          "status": "R1"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Sarvesh MAHESH YADAV"
+          ],
+          "status": "R2"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Srikanth SUNDARA SRINIVASAN"
+          ],
+          "status": "R3"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Rushendra THIRUPATHI"
+          ],
+          "status": "R4"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Akhil Rao SURYANENI"
+          ],
+          "status": "R5"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "BHARGAV SOMASUNDARA"
+          ],
+          "status": "R6"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Daniel MCMILLAN"
+          ],
+          "status": "R7"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Aditya GUPTA"
+          ],
+          "status": "R8"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Srivarshan MAHENDRAN"
+          ],
+          "status": "R9"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Siddhant SALAR"
+          ],
+          "status": "R10"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Gourab SINGHA"
+          ],
+          "status": "R11"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Siddharth Pratap SINGH"
+          ],
+          "status": "R12"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Dhyan SANTOSH"
+          ],
+          "status": "R13"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Adheep GUPTA"
+          ],
+          "status": "R14"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Shikhar RALLAN"
+          ],
+          "status": "R15"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Neer NEHWAL"
+          ],
+          "status": "R16"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Ashay KARDE"
+          ],
+          "status": "R17"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Harshan TADIPARTHI"
+          ],
+          "status": "R18"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Pranav Rao GANDHAM"
+          ],
+          "status": "R19"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Jonathan CURTIN"
+          ],
+          "status": "R20"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Chirag SEN"
+          ],
+          "status": "R21"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Deepanshu DEEPANSHU"
+          ],
+          "status": "R22"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Shantanu SHARMA"
+          ],
+          "status": "R23"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Sai Rishwanth LADE"
+          ],
+          "status": "R24"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Arya MAJHI"
+          ],
+          "status": "R25"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Manish PHOGAT"
+          ],
+          "status": "R26"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Murali Krishna KANNURI"
+          ],
+          "status": "R27"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Vansh DEV"
+          ],
+          "status": "R28"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Tsvetomir STOYANOV"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Tonkid SAEHENG"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Shubh KRISHAN"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Mohammed MUNAWAR"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Aman SURESH"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Bharadwaj BALASUBRAMANIAN"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Tanvi SHARMA"
+          ],
+          "status": "M1"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Ashmita CHALIHA"
+          ],
+          "status": "M2"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Devika SIHAG"
+          ],
+          "status": "M3"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Rakshitha Sree SANTHOSH RAMRAJ"
+          ],
+          "status": "M4"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Isharani BARUAH"
+          ],
+          "status": "M5"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Malvika BANSOD"
+          ],
+          "status": "M6"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Jia Min YEO"
+          ],
+          "status": "M7"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Ishika JAISWAL"
+          ],
+          "status": "M8"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Anmol KHARB"
+          ],
+          "status": "M9"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "MANSI SINGH"
+          ],
+          "status": "M10"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Manami SUIZU"
+          ],
+          "status": "M11"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Shriyanshi VALISHETTY"
+          ],
+          "status": "M12"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "TANYA HEMANTH"
+          ],
+          "status": "M13"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "AAKARSHI KASHYAP"
+          ],
+          "status": "M14"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Sarunrak VITIDSARN"
+          ],
+          "status": "M15"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Tidapron KLEEBYEESUN"
+          ],
+          "status": "M16"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Anupama UPADHYAYA"
+          ],
+          "status": "M17"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Anna TATRANOVA"
+          ],
+          "status": "M18"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Tasnim MIR"
+          ],
+          "status": "M19"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Prakriti BHARATH"
+          ],
+          "status": "M20"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Passa-Orn PHANNACHET"
+          ],
+          "status": "M21"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Pei Yu WANG"
+          ],
+          "status": "M22"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Disha GUPTA"
+          ],
+          "status": "M23"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Yataweemin KETKLIENG"
+          ],
+          "status": "M24"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Tanvi PATRI"
+          ],
+          "status": "M25"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Imad Farooqui SAMIYA"
+          ],
+          "status": "M26"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Pornpicha CHOEIKEEWONG"
+          ],
+          "status": "M27"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Surya Charisma TAMIRI"
+          ],
+          "status": "M28"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Siti ZULAIKHA"
+          ],
+          "status": "Q1"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Meghana Reddy MAREDDY"
+          ],
+          "status": "Q2"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Xin Yi Megan LEE"
+          ],
+          "status": "Q3"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Navya KANDERI"
+          ],
+          "status": "Q4"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Romane CLOTEAUX-FOUCAULT"
+          ],
+          "status": "Q5"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Rujula RAMU"
+          ],
+          "status": "Q6"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Isabelle RUSLI"
+          ],
+          "status": "Q7"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Nurani Ratu AZZAHRA"
+          ],
+          "status": "Q8"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Ler Qi ENG"
+          ],
+          "status": "Q9"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Zhi Shin LIM"
+          ],
+          "status": "Q10"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Adita RAO"
+          ],
+          "status": "Q11"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Yue Yann Jaslyn HOOI"
+          ],
+          "status": "Q12"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Anwesha GOWDA"
+          ],
+          "status": "Q13"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Shan Zi OO"
+          ],
+          "status": "Q14"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Tara SHAH"
+          ],
+          "status": "Q15"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Medhavi NAGAR"
+          ],
+          "status": "Q16"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Ilishaa PAL"
+          ],
+          "status": "R1"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Naishaa Kaur BHATOYE"
+          ],
+          "status": "R2"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Durga Esha KANDRAPU"
+          ],
+          "status": "R3"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Tanvi Reddy ANDLURI"
+          ],
+          "status": "R4"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Sakshi KURBKHELGI"
+          ],
+          "status": "R5"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Madhumitha SUNDARAPANDIAN"
+          ],
+          "status": "R6"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Prashansa BONAM"
+          ],
+          "status": "R7"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Vennala KALAGOTLA"
+          ],
+          "status": "R8"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Sri Nitya NARAHARISETTI"
+          ],
+          "status": "R9"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Ananya AGRAWAL"
+          ],
+          "status": "R10"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Aadhya SHINE"
+          ],
+          "status": "R11"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Kundu GARIMA"
+          ],
+          "status": "R12"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Chih-Yun CHENG"
+          ],
+          "status": "R13"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Ishita NEGI"
+          ],
+          "status": "R14"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Disha SANTOSH"
+          ],
+          "status": "R15"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Praveena SUBBURAJ"
+          ],
+          "status": "R16"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Juliana Zefanya GABRIELA"
+          ],
+          "status": "R17"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Shruti MUNDADA"
+          ],
+          "status": "R18"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Sreeyuktha SREEJITH PAROL"
+          ],
+          "status": "R19"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Akshita MANRAL"
+          ],
+          "status": "R20"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Jiya RAWAT"
+          ],
+          "status": "R21"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Aarya KORGAONKAR"
+          ],
+          "status": "R22"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Jasmeet KAUR"
+          ],
+          "status": "R23"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Taranjeet KAUR"
+          ],
+          "status": "R24"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Ririna HIRAMOTO"
+          ],
+          "status": "R25"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Ruhi RAJU"
+          ],
+          "status": "R26"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Deepshikha SINGH"
+          ],
+          "status": "R27"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Tanishka DESHPANDE"
+          ],
+          "status": "R28"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Sarah SHARMA"
+          ],
+          "status": "R29"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Dianka WALDIA"
+          ],
+          "status": "R30"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Madhumita NARAYAN"
+          ],
+          "status": "R31"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Harshika AMARTI"
+          ],
+          "status": "R32"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Suzen BURHAGOHAIN"
+          ],
+          "status": "R33"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Pravallika Mani AMARTI"
+          ],
+          "status": "R34"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Shenan CHRISTIAN"
+          ],
+          "status": "R35"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Rishita PANDEY"
+          ],
+          "status": "R36"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Parul CHOUDHARY"
+          ],
+          "status": "R37"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "GUNJAN DEVI KONSAM"
+          ],
+          "status": "R38"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Rishika NANDI"
+          ],
+          "status": "R39"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Yutika CHAVAN"
+          ],
+          "status": "R40"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Anjana KUMARI"
+          ],
+          "status": "R41"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Gargi SAIKIA"
+          ],
+          "status": "R42"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Shaina MANIMUTHU"
+          ],
+          "status": "R43"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Ruchi CHAHAL"
+          ],
+          "status": "R44"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Yuan Chi LIAO"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Fadilah Shamika MOHAMED RAFI"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Vilte PAULAUSKAITE"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "THUZAR THET HTAR"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "L\u00e9Onice HUET"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "M.R. ARJUN",
+            "Hariharan AMSAKARUNAN"
+          ],
+          "status": "M1"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Christopher GRIMLEY",
+            "Matthew GRIMLEY"
+          ],
+          "status": "M2"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Worrapol THONGSA-NGA",
+            "Chaloempon CHAROENKITAMORN"
+          ],
+          "status": "M3"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Krishna Prasad GARAGA",
+            "Pruthvi KRISHNAMURTHY ROY"
+          ],
+          "status": "M4"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Po Yu LAI",
+            "Fu Cheng TSAI"
+          ],
+          "status": "M5"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Oliver BUTLER",
+            "Samuel JONES"
+          ],
+          "status": "M6"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Junaidi ARIF",
+            "Muhammad HAIKAL"
+          ],
+          "status": "M7"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Leo ROSSI",
+            "Eloi ADAM"
+          ],
+          "status": "M8"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Cheng Kuan CHEN",
+            "Kuang Heng LIU"
+          ],
+          "status": "M9"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Pongsakorn THONGKHAM",
+            "Thanawin MADEE"
+          ],
+          "status": "M10"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Eng Keat Wesley KOH",
+            "Jia Hao Howin WONG"
+          ],
+          "status": "M11"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Adam PRINGLE",
+            "Alexander DUNN"
+          ],
+          "status": "M12"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Po Chih YANG",
+            "Chun Wei WEI"
+          ],
+          "status": "M13"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Sung Seung NA",
+            "Chan WANG"
+          ],
+          "status": "M14"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Dev AYYAPPAN",
+            "Dhiren AYYAPPAN"
+          ],
+          "status": "M15"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Sai PRATHEEK.K",
+            "Ruban Kumar RETHINASABAPATHI"
+          ],
+          "status": "M16"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Bhargav Ram ARIGELA",
+            "Viswa Tej GOBBURU"
+          ],
+          "status": "M17"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Hon Jian CHOONG",
+            "Vin Sean WONG"
+          ],
+          "status": "M18"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Lucas RENOIR",
+            "Mael CATTOEN"
+          ],
+          "status": "M19"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Jack YU",
+            "Michael OWEN"
+          ],
+          "status": "M20"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Robin HARPER",
+            "Harry WAKEFIELD"
+          ],
+          "status": "M21"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Tanadon PUNPANICH",
+            "Chayapat PIBOON"
+          ],
+          "status": "M22"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Natan BEGGA",
+            "Gr\u00e9goire DESCHAMP"
+          ],
+          "status": "M23"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Arjun Reddy POCHANA",
+            "Achutaditya Rao DODDAVARAPU"
+          ],
+          "status": "M24"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Abhyuday CHOUDHARY",
+            "Ayush MAKHIJA"
+          ],
+          "status": "M25"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Bryan Jeremy GOONTING",
+            "Muhammad FAIQ"
+          ],
+          "status": "M26"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Viplav KUVALE",
+            "Viraj KUVALE"
+          ],
+          "status": "M27"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Dev VISHNU",
+            "Bharath LATHEESH"
+          ],
+          "status": "M28"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Arya THAKORE",
+            "Dhruv THAKORE"
+          ],
+          "status": "Q1"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Amaan MOHAMMAD",
+            "Dingku Singh KONTHOUJAM"
+          ],
+          "status": "Q2"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Baptiste LABARTHE",
+            "Thibault GARDON"
+          ],
+          "status": "Q3"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Khai Xing KANG",
+            "Hong Quan LOK"
+          ],
+          "status": "Q4"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Anuj KALE",
+            "Ian LOPES"
+          ],
+          "status": "Q5"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Wongsathorn THONGKHAM",
+            "Tanatphong TIANSIRILERT"
+          ],
+          "status": "Q6"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Yu Sheng LIM",
+            "Andy Yew Tung KOK"
+          ],
+          "status": "Q7"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Rafiul Lais RAEID",
+            "Md Mostafizar RAHMAN"
+          ],
+          "status": "Q8"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Himanshu TIWARI",
+            "Shashank CHHETRI"
+          ],
+          "status": "Q9"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Karthick Raja BALAMURUGAN",
+            "P. Parth VAID"
+          ],
+          "status": "Q10"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Navin Prasanth ESWARAMOORTHY",
+            "Bharathsanjai S"
+          ],
+          "status": "Q11"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Gourab SINGHA",
+            "Abdul Jahir TANVIR"
+          ],
+          "status": "Q12"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Ashith SURYA",
+            "Ganesh VITTALJI"
+          ],
+          "status": "Q13"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Suraj GOALA",
+            "Nicholas RAJ"
+          ],
+          "status": "Q14"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Santhosh GAJENDRAN",
+            "Ayush PATTANAYAK"
+          ],
+          "status": "Q15"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Yi Sheng LAU",
+            "Yi Bo LEE"
+          ],
+          "status": "Q16"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Bhavya CHHABRA",
+            "Divyam ARORA"
+          ],
+          "status": "R1"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Niranjaan G N NANDAKUMAR",
+            "Mithileish P KRISHNAN"
+          ],
+          "status": "R2"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Sheng An TSENG",
+            "Hui Heng CHEN"
+          ],
+          "status": "R3"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Jonathan CURTIN",
+            "Daniel MCMILLAN"
+          ],
+          "status": "R4"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Mohit JAGLAN",
+            "Manav CHOUDHARY"
+          ],
+          "status": "R5"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Junsuke KUBO",
+            "Johann PRAJOGO"
+          ],
+          "status": "R6"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Dharmagna MANDAPATI",
+            "Nibir RANJAN"
+          ],
+          "status": "R7"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Vishnu Kedhar KODE",
+            "Divyansh AGRAWAL"
+          ],
+          "status": "R8"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Rohith MOHANKUMAR",
+            "Kishore Arunachalam KUMARAVEL"
+          ],
+          "status": "R9"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Bjorn JAISON",
+            "Param CHOUDHARY"
+          ],
+          "status": "R10"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Zhakuo SEYIE",
+            "Tanmoy Bikash BORUAH"
+          ],
+          "status": "R11"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Sumith AGARA RAGHAVENDRA",
+            "Aarya T GOWDA"
+          ],
+          "status": "R12"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "C LALRAMSANGA",
+            "Ishaan BHATNAGAR"
+          ],
+          "status": "R13"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Harshvardhan KOTHARI",
+            "Ashmit SINGH"
+          ],
+          "status": "R14"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Murali Krishna KANNURI",
+            "Abhijit MAHARANA"
+          ],
+          "status": "R15"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Saurav SAHU",
+            "Arsh MOHAMMAD"
+          ],
+          "status": "R16"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Swastik MATHARASAN",
+            "Shankaran NADHAMANI"
+          ],
+          "status": "R17"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Kittinupong KEDREN",
+            "Pharanyu KAOSAMAANG"
+          ],
+          "status": "R18"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Asmit AGARWAL",
+            "Dhileepan VEL MURUGAN"
+          ],
+          "status": "R19"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Farogh Sanjay AMAN",
+            "Chiranjeevi Reddy SUNDAR"
+          ],
+          "status": "R20"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Ribhinesh SURESH KUMAR",
+            "Kruthik SUDHA DEVI BALASUBRAMANIAN"
+          ],
+          "status": "R21"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Yogansh SINGH",
+            "Aathish SREENIVAS P V"
+          ],
+          "status": "R22"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Mohammed MUNAWAR",
+            "Mohamed MUANIS"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Yeremia Erich Yoche Yacob RAMBITAN",
+            "Patra Harapan RINDORINDO"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Tsvetomir STOYANOV",
+            "Evgeni PANEV"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Stefani STOEVA",
+            "Gabriela STOEVA"
+          ],
+          "status": "M1"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Treesa JOLLY",
+            "GAYATRI GOPICHAND PULLELA"
+          ],
+          "status": "M2"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Xin Yee ONG",
+            "Carmen TING"
+          ],
+          "status": "M3"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Camille POGNANTE",
+            "Margot LAMBERT"
+          ],
+          "status": "M4"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Napapakorn TUNGKASATAN",
+            "Hathaithip MIJAD"
+          ],
+          "status": "M5"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Kavipriya SELVAM",
+            "Simran SINGHI"
+          ],
+          "status": "M6"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Julie MACPHERSON",
+            "Ciara TORRANCE"
+          ],
+          "status": "M7"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Zi Yu LOW",
+            "Noraqilah MAISARAH"
+          ],
+          "status": "M8"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Phattharin AIAMVAREESRISAKUL",
+            "Sarisa JANPENG"
+          ],
+          "status": "M9"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Ashwini BHAT K.",
+            "Shikha GAUTAM"
+          ],
+          "status": "M10"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Priya KONJENGBAM",
+            "Shruti MISHRA"
+          ],
+          "status": "M11"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Rutaparna PANDA",
+            "Swetaparna PANDA"
+          ],
+          "status": "M12"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Riko KIYOSE",
+            "Nanako HARA"
+          ],
+          "status": "M13"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Tidapron KLEEBYEESUN",
+            "Nattamon LAISUAN"
+          ],
+          "status": "M14"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Ornnicha JONGSATHAPORNPARN",
+            "Sabrina Sophita WEDLER"
+          ],
+          "status": "M15"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Su Hui CHENG",
+            "Jie Yu CHONG"
+          ],
+          "status": "M16"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Pannawee POLYIAM",
+            "Kodchaporn CHAICHANA"
+          ],
+          "status": "M17"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Anastasiia BOIARUN",
+            "Daria KHARLAMPOVICH"
+          ],
+          "status": "M18"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Abbygael HARRIS",
+            "Estelle VAN LEEUWEN"
+          ],
+          "status": "M19"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Mansa RAWAT",
+            "GAYATRI RAWAT"
+          ],
+          "status": "M20"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Lizzie TOLMAN",
+            "Sian KELLY"
+          ],
+          "status": "M21"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Vanessa NG",
+            "Zhing Yi TAN"
+          ],
+          "status": "M22"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Aditi BHATT",
+            "Shravani WALEKAR"
+          ],
+          "status": "M23"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Ritika THAKER",
+            "Sonali SINGH"
+          ],
+          "status": "M24"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Lisa CURTIN",
+            "Yulia TANG"
+          ],
+          "status": "M25"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Sreeyuktha SREEJITH PAROL",
+            "Nayonika RAJESH"
+          ],
+          "status": "M26"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "V R NARDHANA",
+            "Reeva EVANGELIN"
+          ],
+          "status": "M27"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Chiharu SHIDA",
+            "Ririna HIRAMOTO"
+          ],
+          "status": "M28"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Divya R.BALASUBRAMANIAN",
+            "Sakshi GAHLAWAT"
+          ],
+          "status": "Q1"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Reshika UTHAYASOORIYAN",
+            "Manya RALHAN"
+          ],
+          "status": "Q2"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Hrissha DUBEY",
+            "Mehreen RIZA"
+          ],
+          "status": "Q3"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Maya TAGUCHI",
+            "Nijika KAMATA"
+          ],
+          "status": "Q4"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Nayana S OASIS",
+            "Varshini VISWANATH SRI"
+          ],
+          "status": "Q5"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Shreya BALAJI",
+            "Pranavi NATARAJAN"
+          ],
+          "status": "Q6"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Taarini SURI",
+            "Zenith ABBIGAIL"
+          ],
+          "status": "Q7"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Hye Jeong KIM",
+            "Yeon Woo LEE"
+          ],
+          "status": "Q8"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Anagha Aravinda PAI",
+            "Nandita THOMAS"
+          ],
+          "status": "Q9"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Angel PUNERA",
+            "Aanya BISHT"
+          ],
+          "status": "Q10"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Tanu MALIK",
+            "Nishu MALIK"
+          ],
+          "status": "Q11"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Ananya ARUN",
+            "Anjana MANIKANDAN"
+          ],
+          "status": "Q12"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Elsa JACOB",
+            "Agathe CUEVAS"
+          ],
+          "status": "Q13"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Ishita NEGI",
+            "Akshita MANRAL"
+          ],
+          "status": "Q14"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Diya BHEEMAIAH",
+            "Baruni PARSHWAL"
+          ],
+          "status": "Q15"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Hiral CHOUHAN",
+            "Gloria V ATHAVALE"
+          ],
+          "status": "Q16"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Karnika SREES",
+            "Deepta SATHISH"
+          ],
+          "status": "R1"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Rashmi GANESH",
+            "Amrutha PRAMUTHESH"
+          ],
+          "status": "R2"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Ishu MALIK",
+            "SIYA SINGH"
+          ],
+          "status": "R3"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Harshika AMARTI",
+            "Pravallika Mani AMARTI"
+          ],
+          "status": "R4"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Rituparna DAS",
+            "Maheshwari GOLLAPALLI"
+          ],
+          "status": "R5"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Lakshmi Ridhima DEVINENI",
+            "Suhina ROY"
+          ],
+          "status": "R6"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Sanusree K S",
+            "Bhavishya CHANGMAI"
+          ],
+          "status": "R7"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Keerthy MANCHALA",
+            "Lalrempuii LALREMPUII"
+          ],
+          "status": "R8"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Bhavna CHAHAL",
+            "Ruchi CHAHAL"
+          ],
+          "status": "R9"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Sania SIKKANDAR",
+            "Vaishnavi KHADKEKAR"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Callum HEMMING",
+            "Estelle VAN LEEUWEN"
+          ],
+          "status": "M1"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Alexander DUNN",
+            "Julie MACPHERSON"
+          ],
+          "status": "M2"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Dhruv RAWAT",
+            "K MANEESHA"
+          ],
+          "status": "M3"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Supak JOMKOH",
+            "Jhenicha SUDJAIPRAPARAT"
+          ],
+          "status": "M4"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Samuel JONES",
+            "Lizzie TOLMAN"
+          ],
+          "status": "M5"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Hariharan AMSAKARUNAN",
+            "Radhika SHARMA"
+          ],
+          "status": "M6"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Ruttanapak OUPTHONG",
+            "Jitaphat THANAPHUDIT"
+          ],
+          "status": "M7"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Natan BEGGA",
+            "Elsa JACOB"
+          ],
+          "status": "M8"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Gr\u00e9goire DESCHAMP",
+            "Iben BERGSTEIN"
+          ],
+          "status": "M9"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Phuwanat HORBANLUEKIT",
+            "Fungfa KORPTHAMMAKIT"
+          ],
+          "status": "M10"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Yee Hern WEE",
+            "Vannee GOBI"
+          ],
+          "status": "M11"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Xun LIEW",
+            "Lo Ee HO"
+          ],
+          "status": "M12"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Farogh Sanjay AMAN",
+            "Zenith ABBIGAIL"
+          ],
+          "status": "M13"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Tien Ann PAR",
+            "Juliana Zefanya GABRIELA"
+          ],
+          "status": "M14"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Sathwik Reddy KANAPURAM",
+            "Reshika UTHAYASOORIYAN"
+          ],
+          "status": "M15"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Robin HARPER",
+            "Yulia TANG"
+          ],
+          "status": "M16"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Aaryan SAPIAH",
+            "Amrutha PRAMUTHESH"
+          ],
+          "status": "M17"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Thanadol YUNMONGKOL",
+            "Nattamon LAISUAN"
+          ],
+          "status": "M18"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Mohit JAGLAN",
+            "Lakshita JAGLAN"
+          ],
+          "status": "M19"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Ayush MAKHIJA",
+            "Anagha Aravinda PAI"
+          ],
+          "status": "M20"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Evgeni PANEV",
+            "Gabriela STOEVA"
+          ],
+          "status": "M21"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Ashith SURYA",
+            "Anagha KARANDIKAR"
+          ],
+          "status": "M22"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "C LALRAMSANGA",
+            "Keerthy MANCHALA"
+          ],
+          "status": "M23"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Anuj KALE",
+            "Rituparna DAS"
+          ],
+          "status": "M24"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Harshvardhan KOTHARI",
+            "Aradhana BALACHANDRA"
+          ],
+          "status": "M25"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Viraj KUVALE",
+            "Rutaparna PANDA"
+          ],
+          "status": "M26"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Vimalraj ANNADURAI",
+            "Shreya BALAJI"
+          ],
+          "status": "M27"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Bhavya CHHABRA",
+            "Aditi BHATT"
+          ],
+          "status": "M28"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Yee Tern WEE",
+            "Su Hui CHENG"
+          ],
+          "status": "Q1"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Maksim OGLOBLIN",
+            "Anastasiia BOIARUN"
+          ],
+          "status": "Q2"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Rohith MOHANKUMAR",
+            "Pranavi NATARAJAN"
+          ],
+          "status": "Q3"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Vishnu Kedhar KODE",
+            "Hiral CHOUHAN"
+          ],
+          "status": "Q4"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Harry WAKEFIELD",
+            "Sian KELLY"
+          ],
+          "status": "Q5"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Ayush AGARWAL",
+            "Shruti MISHRA"
+          ],
+          "status": "Q6"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Mithileish P KRISHNAN",
+            "Varna PRABHUANAND"
+          ],
+          "status": "Q7"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Divyam ARORA",
+            "Shravani WALEKAR"
+          ],
+          "status": "Q8"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Yi Bo LEE",
+            "Yin Xuan HOW"
+          ],
+          "status": "Q9"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Sathish Kumar KARUNAKARAN",
+            "Ashwini PONNAPPA"
+          ],
+          "status": "Q10"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Kavin Thangam KAVIN",
+            "Rashmitha DONEPUDI"
+          ],
+          "status": "Q11"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Zhi Yang TAN",
+            "Jie Yu CHONG"
+          ],
+          "status": "Q12"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Yu Wei LIN",
+            "Chih-Yun CHENG"
+          ],
+          "status": "Q13"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Han Chen LOW",
+            "Clarissa SAN"
+          ],
+          "status": "Q14"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Asmit AGARWAL",
+            "Taarini SURI"
+          ],
+          "status": "Q15"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Dharmagna MANDAPATI",
+            "Ellora KONER"
+          ],
+          "status": "Q16"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Bjorn JAISON",
+            "Diya BHEEMAIAH"
+          ],
+          "status": "R1"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Garv SAHNI",
+            "Swetaparna PANDA"
+          ],
+          "status": "R2"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Niranjaan G N NANDAKUMAR",
+            "V R NARDHANA"
+          ],
+          "status": "R3"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Karthick Raja BALAMURUGAN",
+            "Rashmi GANESH"
+          ],
+          "status": "R4"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Saurav SAHU",
+            "Lalrempuii LALREMPUII"
+          ],
+          "status": "R5"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Vansh DEV",
+            "Dianka WALDIA"
+          ],
+          "status": "R6"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Divyansh RAWAT",
+            "Karnika SREES"
+          ],
+          "status": "R7"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Baptiste LABARTHE",
+            "Agathe CUEVAS"
+          ],
+          "status": "R8"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Rodion ALIMOV",
+            "Alina DAVLETOVA"
+          ],
+          "status": "R9"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Jangjeet Singh KAJLA",
+            "Angel PUNERA"
+          ],
+          "status": "R10"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Yogansh SINGH",
+            "Aanya BISHT"
+          ],
+          "status": "R11"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Venkat Gaurav PRASAD",
+            "Juhi DEWANGAN"
+          ],
+          "status": "R12"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Divyansh AGRAWAL",
+            "Nandita THOMAS"
+          ],
+          "status": "R13"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Showrya Kiran JAVVAJI",
+            "Krithya SIVASANKAR"
+          ],
+          "status": "R14"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Chaitanya SEHRAWAT",
+            "Tanu MALIK"
+          ],
+          "status": "R15"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Bharathsanjai S",
+            "Reeva EVANGELIN"
+          ],
+          "status": "R16"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Samarveer SAMARVEER",
+            "Vaishnavi KHADKEKAR"
+          ],
+          "status": "Withdrawn"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Yuta WATANABE",
+            "Maya TAGUCHI"
+          ],
+          "status": "Withdrawn"
+        }
+      ],
+      "source": "https://bwfbadminton.com/tournament/5276/yonex-sunrise-guwahati-masters-2026/players",
+      "sourceKind": "players",
+      "checkedAt": "2026-11-03T02:52:30.234639+00:00"
+    },
+    {
+      "id": "6042",
+      "name": "2027 European Mixed Team Championships Qualification - Czechia",
+      "week": "49",
+      "range": "02                                    -06",
+      "category": "Continental Team Championships",
+      "start": "2026-12-02",
+      "end": "2026-12-06",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "6043",
+      "name": "2027 European Mixed Team Championships Qualification - Poland",
+      "week": "49",
+      "range": "02                                    -06",
+      "category": "Continental Team Championships",
+      "start": "2026-12-02",
+      "end": "2026-12-06",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5887",
+      "name": "Algeria International 2026",
+      "week": "49",
+      "range": "02                                    -05",
+      "category": "International Series",
+      "start": "2026-12-02",
+      "end": "2026-12-05",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5886",
+      "name": "Egypt International 2026",
+      "week": "50",
+      "range": "08                                    -12",
+      "category": "International Series",
+      "start": "2026-12-08",
+      "end": "2026-12-12",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5275",
+      "name": "Odisha Masters 2026",
+      "week": "50",
+      "range": "08                                    -13",
+      "category": "BWF Tour Super 100",
+      "start": "2026-12-08",
+      "end": "2026-12-13",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5798",
+      "name": "YONEX LA International Series 2026",
+      "week": "50",
+      "range": "08                                    -13",
+      "category": "International Series",
+      "start": "2026-12-08",
+      "end": "2026-12-13",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5602",
+      "name": "HSBC BWF World Tour Finals 2026",
+      "week": "50",
+      "range": "09                                    -13",
+      "category": "HSBC BWF World Tour Finals",
+      "start": "2026-12-09",
+      "end": "2026-12-13",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    },
+    {
+      "id": "5825",
+      "name": "I FEEL SLOVENIA LI-NING Future Series 2026",
+      "week": "50",
+      "range": "10                                    -13",
+      "category": "Future Series",
+      "start": "2026-12-10",
+      "end": "2026-12-13",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "Players source HTTP 403"
+    }
+  ]
+}
