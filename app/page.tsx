@@ -626,16 +626,19 @@ function FloatingMenu({ anchorRef, open, children, minWidth = 0 }: {
   );
 }
 
-function PlayerSearch({ player, onChange, onSelect, index }: {
+function PlayerSearch({ player, onChange, onSelect, index, disciplineCode, ariaLabel }: {
   player: Player;
   onChange: (value: string) => void;
   onSelect: (candidate: RankingPlayer) => void;
   index: number;
+  disciplineCode?: string;
+  ariaLabel?: string;
 }) {
   const [open, setOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const query = player.name.trim();
   const suggestions = rankingPlayers
+    .filter(candidate => !disciplineCode || candidate.code === disciplineCode)
     .map((candidate) => ({ candidate, searchScore: playerSearchScore(candidate.name, query) }))
     .filter(({ searchScore }) => Number.isFinite(searchScore))
     .sort((a, b) => a.searchScore - b.searchScore || a.candidate.rank - b.candidate.rank)
@@ -650,7 +653,7 @@ function PlayerSearch({ player, onChange, onSelect, index }: {
         onFocus={() => setOpen(true)}
         onBlur={() => window.setTimeout(() => setOpen(false), 300)}
         onChange={(event) => { onChange(event.target.value); setOpen(true); }}
-        aria-label={`Player ${index + 1} name`}
+        aria-label={ariaLabel ?? `Player ${index + 1} name`}
         aria-autocomplete="list"
         aria-expanded={open}
         className="font-medium text-foreground"
@@ -1320,7 +1323,7 @@ export default function Home() {
 
           </TabsContent>
           <TabsContent value="crystal" keepMounted className="data-[hidden]:hidden"><CrystalBall key={crystalResetKey} /></TabsContent>
-          <TabsContent value="entries" keepMounted className="data-[hidden]:hidden"><UpcomingEntries key={entriesResetKey} /></TabsContent>
+          <TabsContent value="entries" keepMounted className="data-[hidden]:hidden"><UpcomingEntries key={entriesResetKey} renderPlayerSearch={(name, discipline, onChange) => <PlayerSearch player={{ ...emptyPlayer('entry-lookup'), name }} index={0} disciplineCode={discipline} ariaLabel="Entry lookup player" onChange={onChange} onSelect={candidate => onChange(candidate.name)} />} /></TabsContent>
         </Tabs>
         <section className="mt-8">
           <Card>
