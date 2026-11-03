@@ -37,3 +37,8 @@ The weekly World Ranking refresh also collects calendars for the previous, curre
 Run `pnpm refresh-calendars` to update just the calendars, or `pnpm refresh-calendars 2027` for one year. A calendar failure preserves that year's saved entries. Diagnostics include the HTTP status, page title, and event-row count. HTTP 403 with a “Just a moment…” title means the source returned a Cloudflare access challenge instead of the calendar; retries stop for that year. Saved entries may remain usable but are not newly refreshed. `refreshedAtByYear` records successful collections individually.
 
 Starting with tournament weeks in 2027, both Super 1000 levels offer R64 in Default and Crystal Ball results and in generated scenario tables. Existing award values are used: China Open 1,350; other Super 1000 events 1,200. These awards also feed the separate Race-to-Finals projection.
+
+
+## Upcoming Entries
+
+The Upcoming Entries tab searches the next 42 days of published tournament entries, using the existing top-200 player database for suggestions. A separate daily GitHub Action refreshes its dataset from the newest M/Q reports and official Players pages. Source links, collection time and incomplete coverage are shown in the tab. See [ENTRY_LOOKUP.md](ENTRY_LOOKUP.md) for setup, validation and source-access limitations.

@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {latestReport,eventDates,inWindow} from './entries/core.mjs';
+test('uses latest M/Q version and ignores pure seeding report',()=>{const links=[{href:'https://example.test/M_Q.pdf',text:'M _ Q Version 1'},{href:'https://example.test/latest.pdf',text:'M & Q Version 3 and Seeding Version 1'},{href:'https://example.test/seed.pdf',text:'Seeding Version 99'}];assert.equal(latestReport(links).version,3);});
+test('decodes report filenames when titles are vague',()=>assert.equal(latestReport([{href:'https://example.test/M%20_%20Q%20Version%202.pdf',text:'Download'}]).version,2));
+test('calendar dates handle month and ISO-year boundaries',()=>{assert.deepEqual(eventDates(2026,49,'30 - 06'),{start:'2026-11-30',end:'2026-12-06'});assert.deepEqual(eventDates(2026,1,'30 - 04'),{start:'2025-12-30',end:'2026-01-04'});});
+test('date window uses actual overlap and includes day 42',()=>{assert.equal(inWindow({start:'2026-10-30',end:'2026-11-05'},'2026-11-03'),true);assert.equal(inWindow({start:'2026-12-15',end:'2026-12-20'},'2026-11-03'),true);assert.equal(inWindow({start:'2026-12-16',end:'2026-12-20'},'2026-11-03'),false);assert.throws(()=>eventDates(2026,46,'27 - 30'));});

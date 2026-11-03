@@ -14,7 +14,8 @@
     "format": "oxfmt",
     "refresh-race-to-finals": "node --experimental-strip-types scripts/refresh-race-to-finals.mjs",
     "test": "node --experimental-strip-types --test scripts/*.test.mjs",
-    "refresh-calendars": "node scripts/refresh-calendars.mjs"
+    "refresh-calendars": "node scripts/refresh-calendars.mjs",
+    "refresh-entries": "node scripts/refresh-entries.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",
