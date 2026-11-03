@@ -1,0 +1,43 @@
+name: Refresh upcoming tournament entries
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: refresh-upcoming-entries
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.0.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pnpm install --frozen-lockfile
+      - run: pip install PyMuPDF==1.26.5
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test
+      - run: python3 -m unittest discover -s scripts/entries -p 'test_*.py'
+      - run: pnpm refresh-entries
+      - name: Commit entry data
+        run: |
+          if git diff --quiet -- lib/upcoming-entries.json; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add lib/upcoming-entries.json
+          git commit -m 'Refresh upcoming tournament entry lists'
+          git pull --rebase origin main
+          git push
