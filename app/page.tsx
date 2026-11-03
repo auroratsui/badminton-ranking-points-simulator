@@ -1,5 +1,6 @@
 'use client';
 
+import { UpcomingEntries } from '@/components/upcoming-entries';
 import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode, type RefObject } from 'react';
 import { createPortal } from 'react-dom';
 import {
@@ -955,6 +956,7 @@ function CrystalBall() {
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('default');
+  const [entriesResetKey, setEntriesResetKey] = useState(0);
   const [crystalResetKey, setCrystalResetKey] = useState(0);
   const [level, setLevel] = useState<LevelKey | ''>('');
   const [eventType, setEventType] = useState<'individual' | 'team'>('individual');
@@ -1059,6 +1061,7 @@ export default function Home() {
   };
 
   const resetExample = () => {
+    if (activeTab === 'entries') { setEntriesResetKey(value => value + 1); return; }
     if (activeTab === 'crystal') { setCrystalResetKey((value) => value + 1); return; }
     setHighlightHypotheticalResults(false);
     setLevel(''); setEventType('individual'); setSelectedTournamentId(''); setTournamentWeek(defaultTournamentWeek); setPreviousEdition(''); setPlayers(initialPlayers); setOutcomeDiscipline('MS'); setShowOutcomeTable(false); setShowSelectedOutcomeTable(false);
@@ -1076,9 +1079,10 @@ export default function Home() {
       <section className="mx-auto max-w-[1440px] px-4 pt-1.5 pb-7 sm:px-6 lg:px-8 lg:pb-9">
         <Tabs value={activeTab} onValueChange={(value) => setActiveTab(String(value))}>
           <div className="flex items-center justify-between gap-4">
-            <TabsList variant="line" className="mb-0 gap-6 px-0 py-[3px] group-data-horizontal/tabs:h-[30px]">
+            <TabsList variant="line" className="mb-0 gap-4 px-0 py-[3px] group-data-horizontal/tabs:h-[30px]">
               <TabsTrigger value="default" className="border-0 px-0 text-base font-normal text-black data-active:text-black after:bg-primary group-data-horizontal/tabs:after:h-[3px]">Default</TabsTrigger>
               <TabsTrigger value="crystal" className="border-0 px-0 text-base font-normal text-black data-active:text-black after:bg-primary group-data-horizontal/tabs:after:h-[3px]">Crystal Ball</TabsTrigger>
+              <TabsTrigger value="entries" className="border-0 px-0 text-base font-normal text-black data-active:text-black after:bg-primary group-data-horizontal/tabs:after:h-[3px]">Upcoming Entries<sup className="relative -top-1 ml-0.5 text-[10px] font-medium leading-none text-primary">Beta</sup></TabsTrigger>
             </TabsList>
             <Badge variant="outline" className="hidden h-7 px-3 lg:inline-flex"><CalendarClock /> Latest Reference · {rankingMeta.dateLabel}</Badge>
           </div>
@@ -1316,6 +1320,7 @@ export default function Home() {
 
           </TabsContent>
           <TabsContent value="crystal" keepMounted className="data-[hidden]:hidden"><CrystalBall key={crystalResetKey} /></TabsContent>
+          <TabsContent value="entries" keepMounted className="data-[hidden]:hidden"><UpcomingEntries key={entriesResetKey} /></TabsContent>
         </Tabs>
         <section className="mt-8">
           <Card>
