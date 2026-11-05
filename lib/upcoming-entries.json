@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-03T14:25:32.683Z",
-  "windowStart": "2026-11-03",
-  "windowEnd": "2026-12-15",
+  "generatedAt": "2026-11-05T04:46:46.514Z",
+  "windowStart": "2026-11-05",
+  "windowEnd": "2026-12-17",
   "calendarErrors": [],
   "events": [
     {
@@ -5387,7 +5387,7 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 0,
-      "checkedAt": "2026-11-03T14:16:37.547Z"
+      "checkedAt": "2026-11-05T04:46:00.027Z"
     },
     {
       "id": "5597",
@@ -7283,7 +7283,7 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 2,
-      "checkedAt": "2026-11-03T14:15:42.755Z"
+      "checkedAt": "2026-11-05T04:45:57.293Z"
     },
     {
       "id": "5803",
@@ -7292,6 +7292,10 @@
       "range": "05                                    -08",
       "category": "Future Series",
       "links": [
+        {
+          "href": "https://corporate.bwfbadminton.com/results/5803/fz-forza-norwegian-international-2026",
+          "text": "VIEW RESULTS"
+        },
         {
           "href": "https://extranet.bwf.sport/docs/events/5767/docs/Invitation%20-%20FZ%20FORZA%20Norwegian%20International%202026.pdf",
           "text": "Invitation - FZ FORZA Norwegian International 2026.pdf"
@@ -9313,7 +9317,7 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 2,
-      "checkedAt": "2026-11-03T14:18:03.520Z"
+      "checkedAt": "2026-11-05T04:46:04.147Z"
     },
     {
       "id": "5652",
@@ -12395,7 +12399,7 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 2,
-      "checkedAt": "2026-11-03T14:19:38.651Z"
+      "checkedAt": "2026-11-05T04:46:08.104Z"
     },
     {
       "id": "5773",
@@ -17677,7 +17681,7 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 1,
-      "checkedAt": "2026-11-03T14:21:40.116Z"
+      "checkedAt": "2026-11-05T04:46:15.985Z"
     },
     {
       "id": "5576",
@@ -21459,7 +21463,7 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 1,
-      "checkedAt": "2026-11-03T14:23:29.358Z"
+      "checkedAt": "2026-11-05T04:46:25.114Z"
     },
     {
       "id": "5714",
@@ -25545,7 +25549,7 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 1,
-      "checkedAt": "2026-11-03T14:25:21.301Z"
+      "checkedAt": "2026-11-05T04:46:33.258Z"
     },
     {
       "id": "6042",
@@ -25665,10 +25669,6 @@
         {
           "href": "mailto:s.chau0123@gmail.com",
           "text": "s.chau0123@gmail.com"
-        },
-        {
-          "href": "mailto:cleopatramonco@badmintonitalia.net",
-          "text": "cleopatramonco@badmintonitalia.net"
         },
         {
           "href": "mailto:eric.lissillour@orange.fr",
@@ -25807,6 +25807,36 @@
       ],
       "start": "2026-12-10",
       "end": "2026-12-13",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "bwfworldtour.bwfbadminton.com: Players source HTTP 403; bwfbadminton.com: Players source HTTP 403"
+    },
+    {
+      "id": "5849",
+      "name": "YONEX SUNRISE Bangladesh International Challenge 2026",
+      "week": "51",
+      "range": "16                                    -20",
+      "category": "International Challenge",
+      "links": [
+        {
+          "href": "https://extranet.bwf.sport/docs/events/5808/docs/YONEX%20SUNRISE%20Bangladesh%20IC%202026%20-%20Prospectus%20F%20_9th%20Sep_.pdf",
+          "text": "YONEX SUNRISE Bangladesh IC 2026 - Prospectus F _9th Sep_.pdf"
+        },
+        {
+          "href": "https://extranet.bwf.sport/docs/events/5808/docs/YONEX%20SUNRISE%20Bangladesh%20IC%202026%20-%20Relevant%20Forms.xlsx",
+          "text": "YONEX SUNRISE Bangladesh IC 2026 - Relevant Forms.xlsx"
+        },
+        {
+          "href": "https://bwf.tournamentsoftware.com/sport/tournament.aspx?id=C44D736D-B784-46E7-A25D-F12837129F6A",
+          "text": "log in here"
+        },
+        {
+          "href": "mailto:technicalevents@bwf.sport",
+          "text": "technicalevents@bwf.sport"
+        }
+      ],
+      "start": "2026-12-16",
+      "end": "2026-12-20",
       "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
       "state": "unavailable",
       "error": "bwfworldtour.bwfbadminton.com: Players source HTTP 403; bwfbadminton.com: Players source HTTP 403"
