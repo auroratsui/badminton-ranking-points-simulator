@@ -377,8 +377,29 @@ function sameTournamentName(leftName: string, rightName: string) {
   return commonSuffixLength(leftTokens, rightTokens) >= 2 && tokenCoverage >= 0.75;
 }
 
+function teamTournamentName(name: string) {
+  const normalized = tournamentNameTokens(name).join(' ');
+  if (/\b(?:badminton )?asia mixed team championships?$/.test(normalized)) return 'asia mixed team';
+  if (/\b(?:badminton )?asia team championships?$/.test(normalized)) return 'asia team';
+  if (/\bsudirman cup\b/.test(normalized)) return 'sudirman cup';
+  if (/\bthomas(?: and)? uber cups?\b/.test(normalized)) return 'thomas uber cup';
+  return normalized;
+}
+
+const alternatingTeamEvents = new Map([
+  ['asia mixed team', 'asia team'],
+  ['asia team', 'asia mixed team'],
+  ['sudirman cup', 'thomas uber cup'],
+  ['thomas uber cup', 'sudirman cup'],
+]);
+
 function previousEditionMatch(current: CurrentTournamentEntry, candidates: TournamentEntry[]) {
-  if (current.eventType === 'team') return undefined;
+  if (current.eventType === 'team') {
+    const name = teamTournamentName(current.name);
+    const previousName = alternatingTeamEvents.get(name) ?? name;
+    return candidates.find((candidate) => eventTypeForTournament(candidate) === 'team'
+      && teamTournamentName(candidate.name) === previousName) ?? null;
+  }
   if (!current.country) return null;
 
   const currentCountry = current.country.toLocaleUpperCase();
@@ -442,9 +463,11 @@ function roundsFor(level: LevelKey | '', year = Number(rankingMeta.date.slice(0,
 }
 
 function isReplacedBy(score: Score, tournament: TournamentEntry | null) {
-  return Boolean(tournament)
-    && score.week === `${tournament?.year}-W${tournament?.week.padStart(2, '0')}`
-    && sameTournamentName(score.label, tournament?.name ?? '');
+  if (!tournament || score.week !== `${tournament.year}-W${tournament.week.padStart(2, '0')}`) return false;
+  if (eventTypeForTournament(tournament) === 'team') {
+    return Boolean(score.team) && teamTournamentName(score.label) === teamTournamentName(tournament.name);
+  }
+  return sameTournamentName(score.label, tournament.name);
 }
 
 function calculate(player: Player, level: LevelKey | '', tournamentWeek: string, eventType: 'individual' | 'team', previousEdition: TournamentEntry | null) {
@@ -734,7 +757,7 @@ function CrystalBall() {
           const ready = Boolean(player.rankingKey && hasBreakdown && resultsReady);
           const projection = ready ? simulateTournamentSequence(player.scores, selected.map((row) => {
             const result = player.results[row.id];
-            const previous = row.tournament?.eventType === 'team' ? null : previousOptionsFor(row.week).find((entry) => entry.id === row.previous) ?? null;
+            const previous = previousOptionsFor(row.week).find((entry) => entry.id === row.previous) ?? null;
             const team = row.tournament?.eventType === 'team';
             return { id: row.id, week: row.week, notParticipating: result.round === 'notEntered',
               score: { id: `projected-${row.id}`, label: row.tournament!.name, week: row.week, points: team ? Number(result.teamPoints) : result.round === 'notEntered' ? 0 : awardFor(row.level, result.round), team, bwfValid: false },
@@ -817,10 +840,8 @@ export default function Home() {
   const validTournamentWeek = Boolean(isoWeekStart(tournamentWeek));
   const tournamentYear = Number(tournamentWeek.slice(0, 4)) || Number(rankingMeta.date.slice(0, 4));
   const previousYear = tournamentYear - 1;
-  const previousEditionOptions = useMemo(() => (tournamentCalendars.calendars[String(previousYear)] ?? [])
-    .filter((tournament) => !tournament.category.toLocaleLowerCase().includes('junior'))
-    .map((tournament, index) => ({ ...tournament, year: previousYear, id: `${previousYear}-${tournament.week}-${index}` })), [previousYear]);
-  const selectedPreviousEdition = eventType === 'team' ? null : previousEditionOptions.find((option) => option.id === previousEdition) ?? null;
+  const previousEditionOptions = useMemo(() => previousOptionsFor(tournamentWeek), [tournamentWeek]);
+  const selectedPreviousEdition = previousEditionOptions.find((option) => option.id === previousEdition) ?? null;
   const summaries = useMemo(() => players.map((player) => ({ player, result: calculate(player, level, tournamentWeek, eventType, selectedPreviousEdition) })), [players, level, tournamentWeek, eventType, selectedPreviousEdition]);
   const outcomeTableRounds = useMemo(() => level ? outcomeRoundsFor(level, tournamentYear) : [], [level, tournamentYear]);
   const topEightTableRounds = useMemo(() => outcomeTableRounds.filter((round) =>
