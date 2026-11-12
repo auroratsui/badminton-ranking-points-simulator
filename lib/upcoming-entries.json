@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-10T02:17:27.454Z",
-  "windowStart": "2026-11-10",
-  "windowEnd": "2026-12-22",
+  "generatedAt": "2026-11-12T23:57:53.860Z",
+  "windowStart": "2026-11-12",
+  "windowEnd": "2026-12-24",
   "calendarErrors": [],
   "events": [
     {
@@ -75,2016 +75,1938 @@
         {
           "discipline": "MS",
           "names": [
-            "Kunlavut VITIDSARN"
-          ],
-          "status": "M1"
-        },
-        {
-          "discipline": "MS",
-          "names": [
             "Christo POPOV"
           ],
-          "status": "M2"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Tien Chen CHOU"
+          "memberIds": [
+            "72885"
           ],
-          "status": "M3"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Kodai NARAOKA"
-          ],
-          "status": "M4"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Victor LAI"
-          ],
-          "status": "M5"
+          "status": "M2",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Alwi FARHAN"
           ],
-          "status": "M6"
+          "memberIds": [
+            "58089"
+          ],
+          "status": "M6",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Chun-Yi LIN"
+            "LIN Chun-Yi"
           ],
-          "status": "M7"
+          "memberIds": [
+            "86114"
+          ],
+          "status": "M7",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Lakshya SEN"
           ],
-          "status": "M8"
+          "memberIds": [
+            "68870"
+          ],
+          "status": "M8",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Toma Junior POPOV"
           ],
-          "status": "M9"
+          "memberIds": [
+            "61628"
+          ],
+          "status": "M9",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Koki WATANABE"
           ],
-          "status": "M10"
+          "memberIds": [
+            "97174"
+          ],
+          "status": "M10",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Panitchaphon TEERARATSAKUL"
+            "Panitchaphon TEERARATSAKUL Thailand"
           ],
-          "status": "M11"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Yushi TANAKA"
+          "memberIds": [
+            "85845"
           ],
-          "status": "M12"
+          "status": "M11",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Rasmus GEMKE"
           ],
-          "status": "M13"
+          "memberIds": [
+            "62855"
+          ],
+          "status": "M13",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Yu Jen CHI"
+            "CHI Yu Jen"
           ],
-          "status": "M14"
+          "memberIds": [
+            "77848"
+          ],
+          "status": "M14",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Yudai OKIMOTO"
           ],
-          "status": "M15"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Nhat NGUYEN"
+          "memberIds": [
+            "90735"
           ],
-          "status": "M16"
+          "status": "M15",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Kenta NISHIMOTO"
           ],
-          "status": "M17"
+          "memberIds": [
+            "85394"
+          ],
+          "status": "M17",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Moh. Zaki UBAIDILLAH"
           ],
-          "status": "M18"
+          "memberIds": [
+            "60321"
+          ],
+          "status": "M18",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Srikanth KIDAMBI"
+            "KIDAMBI Srikanth"
           ],
-          "status": "M19"
+          "memberIds": [
+            "93627"
+          ],
+          "status": "M19",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Brian YANG"
+            "LEE Chia Hao"
           ],
-          "status": "M20"
+          "memberIds": [
+            "59322"
+          ],
+          "status": "M21",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Chia Hao LEE"
+            "HU Zhe An"
           ],
-          "status": "M21"
+          "memberIds": [
+            "73591"
+          ],
+          "status": "M22",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Zhe An HU"
+            "DONG Tian Yao"
           ],
-          "status": "M22"
+          "memberIds": [
+            "95516"
+          ],
+          "status": "M23",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Tian Yao DONG"
+            "WANG Tzu Wei"
           ],
-          "status": "M23"
+          "memberIds": [
+            "87375"
+          ],
+          "status": "M25",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Magnus JOHANNESEN"
+            "WANG Po-Wei"
           ],
-          "status": "M24"
+          "memberIds": [
+            "87029"
+          ],
+          "status": "M27",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Tzu Wei WANG"
+            "ZHU Xuan Chen"
           ],
-          "status": "M25"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Li Yang SU"
+          "memberIds": [
+            "97345"
           ],
-          "status": "M26"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Po-Wei WANG"
-          ],
-          "status": "M27"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Xuan Chen ZHU"
-          ],
-          "status": "M28"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Tae Bin YOO"
-          ],
-          "status": "Q2"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Riki TAKEI"
-          ],
-          "status": "Q6"
+          "status": "M28",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Muhamad YUSUF"
           ],
-          "status": "Q1"
+          "memberIds": [
+            "90218"
+          ],
+          "status": "Q1",
+          "page": 1,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "YOO Tae Bin"
+          ],
+          "memberIds": [
+            "97115"
+          ],
+          "status": "Q2",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Minoru KOGA"
           ],
-          "status": "Q3"
+          "memberIds": [
+            "80062"
+          ],
+          "status": "Q3",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Zii Jia LEE"
+            "LEE Zi Jia"
           ],
-          "status": "Q4"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Hyeok Jin JEON"
+          "memberIds": [
+            "81561"
           ],
-          "status": "Q5"
+          "status": "Q4",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Riku HATANO"
           ],
-          "status": "Q7"
+          "memberIds": [
+            "99466"
+          ],
+          "status": "Q6",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Timothy LOCK"
           ],
-          "status": "Q8"
+          "memberIds": [
+            "77842"
+          ],
+          "status": "Q8",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Koshiro MORIGUCHI"
           ],
-          "status": "R1"
+          "memberIds": [
+            "65788"
+          ],
+          "status": "R1",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Kar Lung CHUN"
           ],
-          "status": "R2"
+          "memberIds": [
+            "74079"
+          ],
+          "status": "R2",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
             "Benedict CHEN"
           ],
-          "status": "R3"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Yu Qi SHI"
+          "memberIds": [
+            "67185"
           ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Anders ANTONSEN"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Shi Feng LI"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Kean Yew LOH"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Cheuk Yiu LEE"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Ayush SHETTY"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Jason GUNAWAN"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Ka Long Angus NG"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Jun Hao LEONG"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Justin HOH"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Jonathan MATIAS"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Garret TAN"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Misha ZILBERMAN"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Eogene EWE"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Ade Resky DWICAHYO"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Dicky Dwi PANGESTU"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Tsvetomir STOYANOV"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Yue Hang WANG"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Tonkid SAEHENG"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Zewei XIE"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Zhi Yi WANG"
-          ],
-          "status": "M1"
+          "status": "R3",
+          "page": 1,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Akane YAMAGUCHI"
           ],
-          "status": "M2"
+          "memberIds": [
+            "96312"
+          ],
+          "status": "M2",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Yu Fei CHEN"
+            "CHEN Yu Fei"
           ],
-          "status": "M3"
+          "memberIds": [
+            "78778"
+          ],
+          "status": "M3",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Ratchanok INTANON"
           ],
-          "status": "M4"
+          "memberIds": [
+            "35642"
+          ],
+          "status": "M4",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Putri Kusuma WARDANI"
           ],
-          "status": "M5"
+          "memberIds": [
+            "76890"
+          ],
+          "status": "M5",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Tomoka MIYAZAKI"
           ],
-          "status": "M6"
+          "memberIds": [
+            "82070"
+          ],
+          "status": "M6",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Pornpawee CHOCHUWONG"
           ],
-          "status": "M7"
+          "memberIds": [
+            "84062"
+          ],
+          "status": "M7",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Nozomi OKUHARA"
           ],
-          "status": "M8"
+          "memberIds": [
+            "96713"
+          ],
+          "status": "M8",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Michelle LI"
           ],
-          "status": "M9"
+          "memberIds": [
+            "84523"
+          ],
+          "status": "M9",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Mia BLICHFELDT"
           ],
-          "status": "M10"
+          "memberIds": [
+            "91224"
+          ],
+          "status": "M10",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Pin-Chian CHIU"
+            "CHIU Pin-Chian"
           ],
-          "status": "M11"
+          "memberIds": [
+            "80862"
+          ],
+          "status": "M11",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Hsiang Ti LIN"
+            "LIN Hsiang Ti"
           ],
-          "status": "M12"
+          "memberIds": [
+            "96725"
+          ],
+          "status": "M12",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Riko GUNJI"
+            "Line Hejmark K]AERSFELDT"
           ],
-          "status": "M13"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Line Højmark KJAERSFELDT"
+          "memberIds": [
+            "63437"
           ],
-          "status": "M14"
+          "status": "M14",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Hina AKECHI"
           ],
-          "status": "M15"
+          "memberIds": [
+            "68479"
+          ],
+          "status": "M15",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Yu-Hsun HUANG"
+            "HUANG Yu-Hsun"
           ],
-          "status": "M16"
+          "memberIds": [
+            "97685"
+          ],
+          "status": "M16",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Supanida KATETHONG"
           ],
-          "status": "M17"
+          "memberIds": [
+            "91422"
+          ],
+          "status": "M17",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Karupathevan LETSHANAA"
           ],
-          "status": "M18"
+          "memberIds": [
+            "59367"
+          ],
+          "status": "M18",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Qian Xi HAN"
+            "HAN Qian Xi"
           ],
-          "status": "M19"
+          "memberIds": [
+            "92928"
+          ],
+          "status": "M19",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Natsuki NIDAIRA"
           ],
-          "status": "M20"
+          "memberIds": [
+            "91896"
+          ],
+          "status": "M20",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Kaloyana NALBANTOVA"
           ],
-          "status": "M21"
+          "memberIds": [
+            "87112"
+          ],
+          "status": "M21",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Ling Ching WONG"
+            "WONG Ling Ching"
           ],
-          "status": "M22"
+          "memberIds": [
+            "77296"
+          ],
+          "status": "M22",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Amalie SCHULZ"
           ],
-          "status": "M23"
+          "memberIds": [
+            "70651"
+          ],
+          "status": "M23",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Polina BUHROVA"
           ],
-          "status": "M24"
+          "memberIds": [
+            "96877"
+          ],
+          "status": "M24",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Shuo Yun SUNG"
+            "SUNG Shuo Yun"
           ],
-          "status": "M25"
+          "memberIds": [
+            "88807"
+          ],
+          "status": "M25",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Ciou-Tong TUNG"
+            "TUNG Ciou-Tong"
           ],
-          "status": "M26"
+          "memberIds": [
+            "61614"
+          ],
+          "status": "M26",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Rachel CHAN"
           ],
-          "status": "M27"
+          "memberIds": [
+            "78208"
+          ],
+          "status": "M27",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Malvika BANSOD"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "88471"
+          ],
+          "status": "M28",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Manami SUIZU"
           ],
-          "status": "Q1"
+          "memberIds": [
+            "67828"
+          ],
+          "status": "Q1",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Yevheniia KANTEMYR"
+            "KIM Min Sun"
           ],
-          "status": "Q3"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Min Sun KIM"
+          "memberIds": [
+            "66368"
           ],
-          "status": "Q2"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Wen Jing XU"
-          ],
-          "status": "Q4"
+          "status": "Q2",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Chloe HOANG"
           ],
-          "status": "Q5"
+          "memberIds": [
+            "99271"
+          ],
+          "status": "Q5",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Nodoka SUNAKAWA"
+            "Nina MATSUTA"
           ],
-          "status": "Q6"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Niina MATSUTA"
+          "memberIds": [
+            "95615"
           ],
-          "status": "Q7"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Asuka TAKAHASHI"
-          ],
-          "status": "Q8"
+          "status": "Q7",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
             "Kaoru SUGIYAMA"
           ],
-          "status": "R1"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Yuzuno WATANABE"
+          "memberIds": [
+            "80532"
           ],
-          "status": "R2"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Kanae SAKAI"
-          ],
-          "status": "R3"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Ririna HIRAMOTO"
-          ],
-          "status": "R4"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Kana FURUKAWA"
-          ],
-          "status": "R5"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Haruna KONISHI"
-          ],
-          "status": "R6"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Catherine CHOI"
-          ],
-          "status": "R7"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Se Young AN"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "V. Sindhu PUSARLA"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Ga Eun KIM"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Line CHRISTOPHERSEN"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Yu Jin SIM"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Pitchamon OPATNIPUTH"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Tanvi SHARMA"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Neslihan ARIN"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Devika SIHAG"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Kirsty GILMOUR"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Isharani BARUAH"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Anmol KHARB"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Wen Yu ZHANG"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Ishika JAISWAL"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "MANSI SINGH"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Juliana Viana VIEIRA"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Tonrug SAEHENG"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Sin Yan Happy LO"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Tereza ŠVÁBÍKOVÁ"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "AAKARSHI KASHYAP"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Keisha Fatimah AZZAHRA"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Disha GUPTA"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Agnes KOROSI"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Jenjira STADELMANN"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Karen Yun Qiao FENG"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Ann MOK"
-          ],
-          "status": "Withdrawn"
+          "status": "R1",
+          "page": 3,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Seung Jae SEO",
-            "Won Ho KIM"
+            "KIM Won Ho",
+            "Fajar ALFIAN"
           ],
-          "status": "M1"
+          "memberIds": [
+            "61444",
+            "88876"
+          ],
+          "status": "M1",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Fajar ALFIAN",
-            "Muhammad Shohibul FIKRI"
+            "Muhammad Shohibul FIKRI",
+            "Aaron CHIA"
           ],
-          "status": "M2"
+          "memberIds": [
+            "91440",
+            "56203"
+          ],
+          "status": "M2",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Aaron CHIA",
-            "Wooi Yik SOH"
+            "SOHWooi Yik",
+            "ChiragSHETTY"
           ],
-          "status": "M3"
+          "memberIds": [
+            "99389",
+            "70500"
+          ],
+          "status": "M3",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Chirag SHETTY",
-            "Satwiksairaj RANKIREDDY"
+            "Satwiksairaj RANKIREDDY",
+            "Nur IZZUDDIN"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "72435",
+            "94814"
+          ],
+          "status": "M4",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Nur IZZUDDIN",
-            "Sze Fei GOH"
+            "GOH Sze Fei",
+            "Sabar Karyaman GUTAMA"
           ],
-          "status": "M5"
+          "memberIds": [
+            "90768",
+            "87432"
+          ],
+          "status": "M5",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Sabar Karyaman GUTAMA",
-            "Moh Reza Pahlevi ISFAHANI"
+            "Moh RezaPahlevi ISFAHANI",
+            "Ben LANE"
           ],
-          "status": "M6"
+          "memberIds": [
+            "86136",
+            "76278"
+          ],
+          "status": "M6",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Ben LANE",
-            "Sean VENDY"
+            "Sean VENDY",
+            "HE Ji Ting"
           ],
-          "status": "M7"
+          "memberIds": [
+            "72478",
+            "59673"
+          ],
+          "status": "M7",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Ji Ting HE",
-            "Xiang Yu REN"
+            "REN Xiang Yu",
+            "TakuroHOKI"
           ],
-          "status": "M8"
+          "memberIds": [
+            "84812",
+            "81657"
+          ],
+          "status": "M8",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Takuro HOKI",
-            "Yugo KOBAYASHI"
+            "Yugo KOBAYASHI",
+            "CHEN Bo Yang"
           ],
-          "status": "M9"
+          "memberIds": [
+            "67903",
+            "93130"
+          ],
+          "status": "M9",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Bo Yang CHEN",
-            "Yi LIU"
+            "LIU Yi",
+            "MAN Wei Chong"
           ],
-          "status": "M10"
+          "memberIds": [
+            "71223",
+            "78409"
+          ],
+          "status": "M10",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Wei Chong MAN",
-            "Kai Wun TEE"
+            "TEE Kai Wun",
+            "Daniel LUNDGAARD"
           ],
-          "status": "M11"
+          "memberIds": [
+            "85129",
+            "68134"
+          ],
+          "status": "M11",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Daniel LUNDGAARD",
-            "Mads VESTERGAARD"
+            "MadsVESTERGAARD",
+            "WANG Chi-Lin"
           ],
-          "status": "M12"
+          "memberIds": [
+            "60507",
+            "96514"
+          ],
+          "status": "M12",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Chi-Lin WANG",
-            "Hsiang Chieh CHIU"
+            "CHIU Hsiang Chieh",
+            "LEE Jhe-Huei"
           ],
-          "status": "M13"
+          "memberIds": [
+            "92913",
+            "99102"
+          ],
+          "status": "M13",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Jhe-Huei LEE",
-            "Po-Hsuan YANG"
+            "YANG Po-Hsuan",
+            "LIANG Wei Keng"
           ],
-          "status": "M14"
+          "memberIds": [
+            "76275",
+            "90531"
+          ],
+          "status": "M14",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Wei Keng LIANG",
-            "Ke Yuan HU"
+            "XIE Hao Nan",
+            "Fang-Jen LEE"
           ],
-          "status": "M15"
+          "memberIds": [
+            "89909",
+            "70231"
+          ],
+          "status": "M16",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Chang WANG",
-            "Haonan XIE"
+            "Fang-Chih LEE",
+            "Kakeru KUMAGAI"
           ],
-          "status": "M16"
+          "memberIds": [
+            "57424",
+            "79906"
+          ],
+          "status": "M17",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Fang-Jen LEE",
-            "Fang-Chih LEE"
+            "Hiroki NISHI",
+            "Christo POPOV"
           ],
-          "status": "M17"
+          "memberIds": [
+            "63530",
+            "72885"
+          ],
+          "status": "M18",
+          "page": 5,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Kakeru KUMAGAI",
-            "Hiroki NISHI"
+            "Kyohei YAMASHITA",
+            "TANWeeKiong"
           ],
-          "status": "M18"
+          "memberIds": [
+            "82009",
+            "52071"
+          ],
+          "status": "M20",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Christo POPOV",
-            "Toma Junior POPOV"
+            "Nur Mohd Azriyn Ayub AZRIYN",
+            "M.R.ARJUN"
           ],
-          "status": "M19"
+          "memberIds": [
+            "70443",
+            "98935"
+          ],
+          "status": "M21",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Hiroki OKAMURA",
-            "Kyohei YAMASHITA"
+            "HariharanAMSAKARUNAN",
+            "Yuichi SHIMOGAMI"
           ],
-          "status": "M20"
+          "memberIds": [
+            "69560",
+            "79501"
+          ],
+          "status": "M22",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Wee Kiong TAN",
-            "Nur Mohd Azriyn Ayub AZRIYN"
+            "Takumi NOMURA",
+            "Presley SMITH"
           ],
-          "status": "M21"
+          "memberIds": [
+            "78839",
+            "63739"
+          ],
+          "status": "M23",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "M.R. ARJUN",
-            "Hariharan AMSAKARUNAN"
+            "CHEN ZHI YI",
+            "LIN Yu Chieh"
           ],
-          "status": "M22"
+          "memberIds": [
+            "62618",
+            "92504"
+          ],
+          "status": "M24",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Yuichi SHIMOGAMI",
-            "Takumi NOMURA"
+            "JO Song Hyun",
+            "Ali Faathir RAYHAN"
           ],
-          "status": "M23"
+          "memberIds": [
+            "90792",
+            "72973"
+          ],
+          "status": "M26",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Presley SMITH",
-            "ZHI YI CHEN"
+            "Devin Artha WAHYUDI",
+            "Aaron TAl"
           ],
-          "status": "M24"
+          "memberIds": [
+            "76388",
+            "57397"
+          ],
+          "status": "M27",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Yu Chieh LIN",
-            "Zhi Ray CHEN"
+            "YAP Roy King",
+            "Rasmus KJAER"
           ],
-          "status": "M25"
+          "memberIds": [
+            "88322",
+            "64729"
+          ],
+          "status": "M28",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Yong JIN",
-            "Song Hyun JO"
+            "ChristianFaust KJAER",
+            "KANG Min Hyuk"
           ],
-          "status": "M26"
+          "memberIds": [
+            "75049",
+            "77262"
+          ],
+          "status": "Q1",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Ali Faathir RAYHAN",
-            "Devin Artha WAHYUDI"
+            "LEE Jong Min",
+            "CHIA Weijie"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "62804",
+            "79732"
+          ],
+          "status": "Q2",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Aaron TAI",
-            "Roy King YAP"
+            "TEO Ee Yi",
+            "LIU Kuang Heng"
           ],
-          "status": "M28"
+          "memberIds": [
+            "99066",
+            "59609"
+          ],
+          "status": "Q3",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Rasmus KJÆR",
-            "Christian Faust KJÆR"
+            "CHEN Cheng Kuan",
+            "Zhi-Wei HE"
           ],
-          "status": "Q1"
+          "memberIds": [
+            "64394",
+            "87535"
+          ],
+          "status": "Q4",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Min Hyuk KANG",
-            "JONGMIN LEE"
+            "HUANG Jui-Hsuan",
+            "Pakkapon TEERARATSAKUL"
           ],
-          "status": "Q2"
+          "memberIds": [
+            "64023",
+            "65674"
+          ],
+          "status": "Q5",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Weijie CHIA",
-            "Ee Yi TEO"
+            "LIN Xiang Yi",
+            "Haruki KAWABE"
           ],
-          "status": "Q3"
+          "memberIds": [
+            "62220",
+            "76165"
+          ],
+          "status": "Q8",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Kuang Heng LIU",
-            "Cheng Kuan CHEN"
+            "Kenta MATSUKAWA",
+            "LUI Chun Wai"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "94252",
+            "63670"
+          ],
+          "status": "R1",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Zhi-Wei HE",
-            "Jui-Hsuan HUANG"
+            "HUNG Kuei Chun",
+            "Kenya MITSUHASHI"
           ],
-          "status": "Q5"
+          "memberIds": [
+            "88832",
+            "96604"
+          ],
+          "status": "R2",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Pakkapon TEERARATSAKUL",
-            "Peeratchai SUKPHUN"
+            "Shuji SAWADA",
+            "Lap Hang Hugo PONG"
           ],
-          "status": "Q6"
+          "memberIds": [
+            "77870",
+            "33584"
+          ],
+          "status": "R6",
+          "page": 6,
+          "extraction": "ocr"
         },
         {
           "discipline": "MD",
-          "names": [
-            "Sol Gyu CHOI",
-            "V Shem GOH"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Wei Han ZENG",
-            "Xiang Yi LIN"
-          ],
-          "status": "Q8"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Haruki KAWABE",
-            "Kenta MATSUKAWA"
-          ],
-          "status": "R1"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Chun Wai LUI",
-            "Kuei Chun HUNG"
-          ],
-          "status": "R2"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Kenya MITSUHASHI",
-            "Keiichiro MATSUI"
-          ],
-          "status": "R3"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Tsubasa YOSHIDA",
-            "Takuto GOTO"
-          ],
-          "status": "R4"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Kazuki SHIBATA",
-            "Naoki YAMADA"
-          ],
-          "status": "R5"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Daigo TANIOKA",
-            "Shuji SAWADA"
-          ],
-          "status": "R6"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Lap Hang Hugo PONG",
-            "Lap Kan Kern PONG"
-          ],
-          "status": "R7"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Jonathan Bing Tsan LAI",
-            "Jason Ling-Chun MAK"
-          ],
-          "status": "R8"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Eng Keat Wesley KOH",
-            "Jia Hao Howin WONG"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Zewei XIE",
-            "Yue Hang WANG"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Yu Sheng LIM",
-            "Andy Yew Tung KOK"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Jiří KRÁL",
-            "Ondřej KRÁL"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Worrapol THONGSA-NGA",
-            "Chaloempon CHAROENKITAMORN"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Fabricio FARIAS",
-            "Davi SILVA"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Tsvetomir STOYANOV",
-            "Evgeni PANEV"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Yuki FUKUSHIMA",
-            "Mayu MATSUMOTO"
-          ],
-          "status": "M1"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Pearly TAN",
-            "Muralitharan THINAAH"
-          ],
-          "status": "M2"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Kie NAKANISHI",
-            "Rin IWANAGA"
-          ],
-          "status": "M3"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Rachel Allessya ROSE",
-            "Febi SETIANINGRUM"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Zi Han CAO",
-            "Li Jing BAO"
-          ],
-          "status": "M5"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Miyu TAKAHASHI",
-            "Sumire NAKADE"
-          ],
-          "status": "M6"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Febriana Dwipuji KUSUMA",
-            "Meilysa Trias PUSPITASARI"
-          ],
-          "status": "M7"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Jhih Yun LIN",
-            "Yin-Hui HSU"
-          ],
-          "status": "M8"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Stefani STOEVA",
-            "Gabriela STOEVA"
-          ],
-          "status": "M9"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Sayaka HIROTA",
-            "Ayako SAKURAMOTO"
-          ],
-          "status": "M10"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Sayaka HOBARA",
-            "Rui HIROKAMI"
-          ],
-          "status": "M11"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Amallia Cahaya PRATIWI",
-            "Siti Fadia Silva RAMADHANTI"
-          ],
-          "status": "M12"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Ya Ching HSU",
-            "Yu-Hsuan SUNG"
-          ],
-          "status": "M13"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Hye Jeong KIM",
-            "Yeon Woo LEE"
-          ],
-          "status": "M14"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Lauren LAM",
-            "Allison Quynh LEE"
-          ],
-          "status": "M15"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Hinata SUZUKI",
-            "Nao YAMAKITA"
-          ],
-          "status": "M16"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Nga Ting YEUNG",
-            "Pui Lam YEUNG"
-          ],
-          "status": "M17"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Jennie GAI",
-            "Francesca CORBETT"
-          ],
-          "status": "M18"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Yi LUO",
-            "Ting Ge WANG"
-          ],
-          "status": "M19"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Treesa JOLLY",
-            "GAYATRI GOPICHAND PULLELA"
-          ],
-          "status": "M20"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Polina BUHROVA",
-            "Yevheniia KANTEMYR"
-          ],
-          "status": "M21"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Chih-Chun LIN",
-            "Chu Yun YANG"
-          ],
-          "status": "M22"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Ching Hui CHANG",
-            "Ching Tun YANG"
-          ],
-          "status": "M23"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Lok Lok LUI",
-            "Hiu Yan TSANG"
-          ],
-          "status": "M24"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Yu Lim LEE",
-            "Yu Jung KIM"
-          ],
-          "status": "M25"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Chiharu SHIDA",
-            "Ririna HIRAMOTO"
-          ],
-          "status": "M26"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Jackie DENT",
-            "Crystal LAI"
-          ],
-          "status": "M27"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Yuna KATO",
-            "Miki KANEHIRO"
-          ],
-          "status": "M28"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Yi Duo WANG",
-            "Yi Jing LI"
-          ],
-          "status": "Q1"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Kokona ISHIKAWA",
-            "Haruna KONISHI"
-          ],
-          "status": "Q5"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Ornnicha JONGSATHAPORNPARN",
-            "Sabrina Sophita WEDLER"
-          ],
-          "status": "Q6"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "An UESUGI",
-            "Mio KONEGAWA"
-          ],
-          "status": "Q7"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Arisa IGARASHI",
-            "Yumi TANABE"
-          ],
-          "status": "Q2"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Riko KIYOSE",
-            "Nanako HARA"
-          ],
-          "status": "Q3"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Fan Shu Tian CHEN",
-            "Xu Min LUO"
-          ],
-          "status": "Q4"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Catherine CHOI",
-            "Angela YU"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Rui KIYAMA",
-            "Sona YONEMOTO"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Sania LIMA",
-            "Juliana Viana VIEIRA"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Sheng Shu LIU",
-            "Ning TAN"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "So Hee LEE",
-            "Ha Na BAEK"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Shu Xian ZHANG",
-            "Yi Fan JIA"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Zi Yu LOW",
-            "Noraqilah MAISARAH"
-          ],
-          "status": "Withdrawn"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Zhen Bang JIANG",
-            "Ya Xin WEI"
-          ],
-          "status": "M1"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Dechapol PUAVARANUKROH",
-            "Supissara PAEWSAMPRAN"
-          ],
-          "status": "M2"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Xin Wa GUO",
-            "Fang Hui CHEN"
-          ],
-          "status": "M3"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Hong Wei YE",
-            "Nicole Gonzales CHAN"
-          ],
-          "status": "M4"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Xing CHENG",
-            "Chi ZHANG"
-          ],
-          "status": "M5"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Soon Huat GOH",
-            "Shevon Jemie LAI"
-          ],
-          "status": "M6"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Po-Hsuan YANG",
-            "Ling Fang HU"
-          ],
-          "status": "M7"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Yuta WATANABE",
-            "Maya TAGUCHI"
-          ],
-          "status": "M8"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Pakkapon TEERARATSAKUL",
-            "Sapsiree TAERATTANACHAI"
-          ],
-          "status": "M9"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Yuichi SHIMOGAMI",
-            "Sayaka HOBARA"
-          ],
-          "status": "M10"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Presley SMITH",
-            "Jennie GAI"
-          ],
-          "status": "M11"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Amri SYAHNAWI",
-            "Nita Violina MARWAH"
-          ],
-          "status": "M12"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Akira KOGA",
-            "Natsu SAITO"
-          ],
-          "status": "M13"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Pang Ron HOO",
-            "Pei Jing LAI"
-          ],
-          "status": "M14"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Yi Jun ZHU",
-            "Qian LI"
-          ],
-          "status": "M15"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Yin Chak CHAN",
-            "Tsz Yau NG"
-          ],
-          "status": "M16"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Jae Hyeon KIM",
-            "Ha Jeong JANG"
-          ],
-          "status": "M17"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Marwan FAZA",
-            "Aisyah Salsabila Putri PRANATA"
-          ],
-          "status": "M18"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Hiroki MIDORIKAWA",
-            "Mao YAMAKITA"
-          ],
-          "status": "M19"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Jia Xuan GAO",
-            "Meng Ying WU"
-          ],
-          "status": "M20"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Jimmy WONG",
-            "Su Yin CHENG"
-          ],
-          "status": "M21"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Hariharan AMSAKARUNAN",
-            "Tanisha CRASTO"
-          ],
-          "status": "M22"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Kuang Heng LIU",
-            "Yin-Hui HSU"
-          ],
-          "status": "M23"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Dejan FERDINANSYAH",
-            "Felisha Alberta Nathaniel PASARIBU"
-          ],
-          "status": "M24"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Haruki KAWABE",
-            "Kokona ISHIKAWA"
-          ],
-          "status": "M25"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Ruben GARCIA",
-            "Lucia RODRIGUEZ"
-          ],
-          "status": "M26"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Tang Jie CHEN",
-            "Wen Tse CHAN"
-          ],
-          "status": "M27"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Dhruv RAWAT",
-            "K MANEESHA"
-          ],
-          "status": "M28"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "ZHI YI CHEN",
-            "Francesca CORBETT"
-          ],
-          "status": "Q1"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Hsuan-Yi WU",
-            "Chu Yun YANG"
-          ],
-          "status": "Q2"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Jonathan Bing Tsan LAI",
-            "Crystal LAI"
-          ],
-          "status": "Q4"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Zhirui Jerry YU",
-            "Ying Suet TSE"
-          ],
-          "status": "Q6"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "DHRUV KAPILA",
-            "Radhika SHARMA"
-          ],
-          "status": "Q3"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Timothy LOCK",
-            "Chloe HOANG"
-          ],
-          "status": "Q5"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Evgeni PANEV",
-            "Gabriela STOEVA"
-          ],
-          "status": "Q7"
-        },
-        {
-          "discipline": "XD",
           "names": [
             "Lap Kan Kern PONG",
-            "Catherine CHOI"
+            "lonathan Bing Tsan LAl"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "79407",
+            "96537"
+          ],
+          "status": "R7",
+          "page": 6,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "RinIWANAGA",
+            "Rachel Allessya ROSE"
+          ],
+          "memberIds": [
+            "88135",
+            "94567"
+          ],
+          "status": "M3",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Febi SETIANINGRUM",
+            "CAO Zi Han"
+          ],
+          "memberIds": [
+            "55481",
+            "18889"
+          ],
+          "status": "M4",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "BAO Li Jing",
+            "Miyu TAKAHASHI"
+          ],
+          "memberIds": [
+            "62277",
+            "70692"
+          ],
+          "status": "M5",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Meilysa Trias PUSPITASARI",
+            "LIN Jhih Yun"
+          ],
+          "memberIds": [
+            "82364",
+            "69009"
+          ],
+          "status": "M7",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "HSU Yin-Hui",
+            "StefaniSTOEVA"
+          ],
+          "memberIds": [
+            "96973",
+            "46169"
+          ],
+          "status": "M8",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "SitiFadiaSilvaRAMADHANTI",
+            "HSU Ya Ching"
+          ],
+          "memberIds": [
+            "88097",
+            "74561"
+          ],
+          "status": "M12",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "SUNG Yu-Hsuan",
+            "KIM Hye Jeong"
+          ],
+          "memberIds": [
+            "65349",
+            "83419"
+          ],
+          "status": "M13",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LEE Yeon Woo",
+            "LaurenLAM"
+          ],
+          "memberIds": [
+            "80005",
+            "69091"
+          ],
+          "status": "M14",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Nao YAMAKITA",
+            "YEUNG Nga Ting"
+          ],
+          "memberIds": [
+            "66794",
+            "68015"
+          ],
+          "status": "M16",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "YEUNG Pui Lam",
+            "lennie GAI"
+          ],
+          "memberIds": [
+            "75864",
+            "83074"
+          ],
+          "status": "M17",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Francesca CORBETT",
+            "LUO Yi"
+          ],
+          "memberIds": [
+            "61882",
+            "97313"
+          ],
+          "status": "M18",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "GAYATRI GOPICHAND PULLELA",
+            "PolinaBUHROVA"
+          ],
+          "memberIds": [
+            "59966",
+            "96877"
+          ],
+          "status": "M20",
+          "page": 9,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "YevheniiaKANTEMYR",
+            "LIN Chih-Chun"
+          ],
+          "memberIds": [
+            "94032",
+            "85808"
+          ],
+          "status": "M21",
+          "page": 9,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "YANG Chu Yun",
+            "CHANG Ching Hui"
+          ],
+          "memberIds": [
+            "70860",
+            "75270"
+          ],
+          "status": "M22",
+          "page": 9,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "YANG Ching Tun",
+            "LUI Lok Lok"
+          ],
+          "memberIds": [
+            "78687",
+            "87893"
+          ],
+          "status": "M23",
+          "page": 9,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "TSANG Hiu Yan",
+            "LEE Yu Lim"
+          ],
+          "memberIds": [
+            "95205",
+            "66115"
+          ],
+          "status": "M24",
+          "page": 9,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Crystal LAl",
+            "Yuna KATO"
+          ],
+          "memberIds": [
+            "64767",
+            "90323"
+          ],
+          "status": "M27",
+          "page": 9,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LI Yi Jing",
+            "Arisa IGARASHI"
+          ],
+          "memberIds": [
+            "85540",
+            "79558"
+          ],
+          "status": "Q1",
+          "page": 9,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Yumi TANABE",
+            "Riko KIYOSE"
+          ],
+          "memberIds": [
+            "33995",
+            "68304"
+          ],
+          "status": "Q2",
+          "page": 9,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Nanako HARA",
+            "CHEN Fan Shu Tian"
+          ],
+          "memberIds": [
+            "92989",
+            "86532"
+          ],
+          "status": "Q3",
+          "page": 9,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "LUO Xu Min",
+            "Kokona ISHIKAWA"
+          ],
+          "memberIds": [
+            "65300",
+            "85452"
+          ],
+          "status": "Q4",
+          "page": 9,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "HarunaKONISHI",
+            "Ornnicha JONGSATHAPORNPARN Thailand"
+          ],
+          "memberIds": [
+            "70376",
+            "99988"
+          ],
+          "status": "Q5",
+          "page": 9,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "Sabrina Sophita WEDLER",
+            "An UESUGI"
+          ],
+          "memberIds": [
+            "76513",
+            "57950"
+          ],
+          "status": "Q6",
+          "page": 9,
+          "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Yong Kai Terry HEE",
-            "Gloria Emanuelle WIDJAJA"
+            "WEI Ya Xin",
+            "Dechapol PUAVARANUKROH"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "57246",
+            "61731"
+          ],
+          "status": "M1",
+          "page": 10,
+          "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Andy Yew Tung KOK",
-            "Karen Yun Qiao FENG"
+            "SupissaraPAEWSAMPRAN",
+            "GUO Xin Wa"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "74980",
+            "81844"
+          ],
+          "status": "M2",
+          "page": 10,
+          "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Yue Hang WANG",
-            "Cho Wai LAM"
+            "CHEN Fang Hui",
+            "YE Hong Wei"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "50469",
+            "81108"
+          ],
+          "status": "M3",
+          "page": 10,
+          "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Zewei XIE",
-            "Yuran ZHANG"
+            "Nicole Gonzales CHAN",
+            "CHENG Xing"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "62713",
+            "58931"
+          ],
+          "status": "M4",
+          "page": 10,
+          "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Yan Zhe FENG",
-            "Dong Ping HUANG"
+            "ZHANG Chi",
+            "GOH Soon Huat"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "88450",
+            "92593"
+          ],
+          "status": "M5",
+          "page": 10,
+          "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Mathias CHRISTIANSEN",
-            "Alexandra BØJE"
+            "LAI Shevon Jemie",
+            "YANG Po-Hsuan"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "56352",
+            "76275"
+          ],
+          "status": "M6",
+          "page": 10,
+          "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Fabricio FARIAS",
-            "Jaqueline LIMA"
+            "HU Ling Fang",
+            "YutaWATANABE"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "87176",
+            "58240"
+          ],
+          "status": "M7",
+          "page": 10,
+          "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Davi SILVA",
-            "Sania LIMA"
+            "Maya TAGUCHI",
+            "Pakkapon TEERARATSAKUL"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "60335",
+            "65674"
+          ],
+          "status": "M8",
+          "page": 10,
+          "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Tonkid SAEHENG",
-            "Tonrug SAEHENG"
+            "Sayaka HOBARA",
+            "Presley SMITH"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "59014",
+            "63739"
+          ],
+          "status": "M10",
+          "page": 10,
+          "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Calvin DEVEREUX",
-            "Desiree TOEPFFER"
+            "NatSu SAITO",
+            "HOO Pang Ron"
           ],
-          "status": "Withdrawn"
+          "memberIds": [
+            "55417",
+            "72675"
+          ],
+          "status": "M13",
+          "page": 10,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "LAI PeiJing",
+            "ZHU YijJun"
+          ],
+          "memberIds": [
+            "47007",
+            "82167"
+          ],
+          "status": "M14",
+          "page": 10,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "LIQian",
+            "CHAN Yin Chak"
+          ],
+          "memberIds": [
+            "82367",
+            "57924"
+          ],
+          "status": "M15",
+          "page": 10,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "NG Tsz Yau",
+            "KIM Jae Hyeon"
+          ],
+          "memberIds": [
+            "61986",
+            "80293"
+          ],
+          "status": "M16",
+          "page": 10,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "JANG Ha Jeong",
+            "MarwanFAZA"
+          ],
+          "memberIds": [
+            "64819",
+            "72782"
+          ],
+          "status": "M17",
+          "page": 10,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Aisyah Salsabila Putri PRANATA",
+            "Hiroki MIDORIKAWA"
+          ],
+          "memberIds": [
+            "79077",
+            "64944"
+          ],
+          "status": "M18",
+          "page": 10,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "WU Meng Ying",
+            "immy WONG"
+          ],
+          "memberIds": [
+            "91533",
+            "84340"
+          ],
+          "status": "M20",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "CHENG Su Yin",
+            "Hariharan AMSAKARUNAN"
+          ],
+          "memberIds": [
+            "80605",
+            "69560"
+          ],
+          "status": "M21",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Tanisha CRASTO",
+            "LIU Kuang Heng"
+          ],
+          "memberIds": [
+            "94165",
+            "59609"
+          ],
+          "status": "M22",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "HSU Yin-Hui",
+            "Dejan FERDINANSYAH"
+          ],
+          "memberIds": [
+            "96973",
+            "81458"
+          ],
+          "status": "M23",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Felisha Alberta NathanielPASARIBU Indonesia",
+            "Haruki KAWABE"
+          ],
+          "memberIds": [
+            "69193",
+            "76165"
+          ],
+          "status": "M24",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Kokona ISHIKAWA",
+            "Ruben GARCIA"
+          ],
+          "memberIds": [
+            "85452",
+            "94156"
+          ],
+          "status": "M25",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "LuciaRODRIGUEZ",
+            "CHEN Tang Jie"
+          ],
+          "memberIds": [
+            "92404",
+            "91090"
+          ],
+          "status": "M26",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "CHAN Wen Tse",
+            "DhruvRAWAT"
+          ],
+          "memberIds": [
+            "79015",
+            "84666"
+          ],
+          "status": "M27",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "MANEESHA K",
+            "CHEN ZHI YI"
+          ],
+          "memberIds": [
+            "56836",
+            "62618"
+          ],
+          "status": "M28",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Francesca CORBETT",
+            "WU Hsuan-Yi"
+          ],
+          "memberIds": [
+            "61882",
+            "97737"
+          ],
+          "status": "Q1",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "YANG Chu Yun",
+            "DHRUVKAPILA"
+          ],
+          "memberIds": [
+            "70860",
+            "57372"
+          ],
+          "status": "Q2",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Radhika SHARMA",
+            "jonathan Bing Tsan LAl"
+          ],
+          "memberIds": [
+            "61380",
+            "96537"
+          ],
+          "status": "Q3",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Crystal LAl",
+            "Timothy LOCK"
+          ],
+          "memberIds": [
+            "64767",
+            "77842"
+          ],
+          "status": "Q4",
+          "page": 11,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Chloe HOANG",
+            "YU Zhirui Jerry"
+          ],
+          "memberIds": [
+            "99271",
+            "10453"
+          ],
+          "status": "Q5",
+          "page": 11,
+          "extraction": "ocr"
         }
       ],
-      "source": "https://bwfworldtour.bwfbadminton.com/tournament/5216/kumamoto-masters-japan-2026/players",
-      "sourceKind": "players",
-      "state": "ready",
-      "checkedAt": "2026-11-10T02:16:45.609Z"
+      "complete": false,
+      "skippedRows": 44,
+      "extraction": "ocr",
+      "source": "https://extranet.bwf.sport/docs/events/5194/docs/M%20_%20Q%20Version%202%20_%20Seeding%20Report%20Version%201%20-%20Kumamoto%20Masters%20Japan%202026.pdf",
+      "sourceKind": "pdf-image",
+      "state": "partial",
+      "version": 2,
+      "checkedAt": "2026-11-12T23:55:15.776Z"
     },
     {
       "id": "5652",
@@ -5159,11 +5081,14 @@
           "extraction": "ocr"
         }
       ],
+      "complete": false,
+      "skippedRows": 50,
+      "extraction": "ocr",
       "source": "https://extranet.bwf.sport/docs/events/5616/docs/M%20_%20Q%20Version%202%20and%20Seeding%20Report%20Version%201%20-%20VICTOR%20Kaohsiung%20Masters%202026.pdf",
       "sourceKind": "pdf-image",
-      "checkedAt": "2026-11-07T22:56:36.176Z",
-      "state": "stale",
-      "error": "Latest report: apiRequestContext.get: read ECONNRESET; bwfworldtour.bwfbadminton.com: Players source HTTP 403; bwfbadminton.com: Players source HTTP 403"
+      "state": "partial",
+      "version": 2,
+      "checkedAt": "2026-11-12T23:55:18.756Z"
     },
     {
       "id": "5773",
@@ -5172,6 +5097,10 @@
       "range": "11                                    -14",
       "category": "International Challenge",
       "links": [
+        {
+          "href": "https://corporate.bwfbadminton.com/results/5773/aig-victor-irish-open-2026",
+          "text": "VIEW RESULTS"
+        },
         {
           "href": "https://extranet.bwf.sport/docs/events/5739/docs/Invitation%20-%20AIG%20VICTOR%20Irish%20Open%202026.pdf",
           "text": "Invitation - AIG VICTOR Irish Open 2026.pdf"
@@ -7135,6 +7064,10 @@
       "category": "International Series",
       "links": [
         {
+          "href": "https://corporate.bwfbadminton.com/results/5754/xvii-suriname-international-2026",
+          "text": "VIEW RESULTS"
+        },
+        {
           "href": "https://extranet.bwf.sport/docs/events/5720/docs/Suriname%20International%202026%20%20Prospectus%20-%20FV2.pdf",
           "text": "Suriname International 2026  Prospectus - FV2.pdf"
         },
@@ -7160,6 +7093,10 @@
       "range": "11                                    -15",
       "category": "International Series",
       "links": [
+        {
+          "href": "https://corporate.bwfbadminton.com/results/5844/yonex-south-australia-international-2026",
+          "text": "VIEW RESULTS"
+        },
         {
           "href": "https://extranet.bwf.sport/docs/events/5791/docs/YONEX%20South%20Australia%20International%202026%20Prospectus%20FINAL.pdf",
           "text": "YONEX South Australia International 2026 Prospectus FINAL.pdf"
@@ -7198,6 +7135,10 @@
       "range": "12                                    -15",
       "category": "International Series",
       "links": [
+        {
+          "href": "https://corporate.bwfbadminton.com/results/5854/zambia-international-2026",
+          "text": "VIEW RESULTS"
+        },
         {
           "href": "https://extranet.bwf.sport/docs/events/5813/docs/26ZAMISProspectusv2.pdf",
           "text": "26ZAMISProspectusv2.pdf"
@@ -7279,6 +7220,14 @@
           "text": "02_Hotel Reservation Form - LI-NING Hong Kong Open Badminton Championships 2026 - Dorsett Kai Tak.docx"
         },
         {
+          "href": "https://extranet.bwf.sport/docs/events/5196/docs/M%20_%20Q%20Report%20Version%202%20_%20Seeding%20Report%20Version%201%20-%20LI-NING%20Hong%20Kong%20Open%202026.pdf",
+          "text": "M _ Q Report Version 2 _ Seeding Report Version 1 - LI-NING Hong Kong Open 2026.pdf"
+        },
+        {
+          "href": "https://extranet.bwf.sport/docs/events/5196/docs/Draws%20-%20LI-NING%20Hong%20Kong%20Open%202026.pdf",
+          "text": "Draws - LI-NING Hong Kong Open 2026.pdf"
+        },
+        {
           "href": "https://hkopenbadminton.org/",
           "text": "Click Here"
         },
@@ -7310,7 +7259,19 @@
         {
           "discipline": "MS",
           "names": [
-            "ChristoPOPOV"
+            "Kunlavut VITIDSARN"
+          ],
+          "memberIds": [
+            "64032"
+          ],
+          "status": "M1",
+          "page": 1,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Christo POPOV"
           ],
           "memberIds": [
             "72885"
@@ -7339,7 +7300,7 @@
           "memberIds": [
             "58089"
           ],
-          "status": "M6",
+          "status": "M7",
           "page": 1,
           "extraction": "ocr"
         },
@@ -7351,19 +7312,7 @@
           "memberIds": [
             "76115"
           ],
-          "status": "M10",
-          "page": 1,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "LIN Chun-Yi"
-          ],
-          "memberIds": [
-            "86114"
-          ],
-          "status": "M11",
+          "status": "M8",
           "page": 1,
           "extraction": "ocr"
         },
@@ -7375,8 +7324,8 @@
           "memberIds": [
             "68870"
           ],
-          "status": "M13",
-          "page": 2,
+          "status": "M10",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7387,32 +7336,8 @@
           "memberIds": [
             "61628"
           ],
-          "status": "M14",
-          "page": 2,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Koki WATANABE"
-          ],
-          "memberIds": [
-            "97174"
-          ],
-          "status": "M15",
-          "page": 2,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Panitchaphon TEERARATSAKUL"
-          ],
-          "memberIds": [
-            "85845"
-          ],
-          "status": "M16",
-          "page": 2,
+          "status": "M11",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7423,20 +7348,8 @@
           "memberIds": [
             "94780"
           ],
-          "status": "M17",
-          "page": 2,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Ayush SHETTY"
-          ],
-          "memberIds": [
-            "68322"
-          ],
-          "status": "M18",
-          "page": 2,
+          "status": "M14",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7447,8 +7360,8 @@
           "memberIds": [
             "62855"
           ],
-          "status": "M19",
-          "page": 2,
+          "status": "M15",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7459,20 +7372,32 @@
           "memberIds": [
             "77848"
           ],
-          "status": "M20",
-          "page": 2,
+          "status": "M16",
+          "page": 1,
           "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "JaSon GUNAWAN"
+            "Jason GUNAWAN"
           ],
           "memberIds": [
             "65634"
           ],
-          "status": "M21",
-          "page": 2,
+          "status": "M17",
+          "page": 1,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Yudai OKIMOTO"
+          ],
+          "memberIds": [
+            "90735"
+          ],
+          "status": "M18",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7483,8 +7408,8 @@
           "memberIds": [
             "45171"
           ],
-          "status": "M24",
-          "page": 2,
+          "status": "M20",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7495,8 +7420,8 @@
           "memberIds": [
             "85394"
           ],
-          "status": "M25",
-          "page": 2,
+          "status": "M21",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7507,8 +7432,8 @@
           "memberIds": [
             "60321"
           ],
-          "status": "M26",
-          "page": 2,
+          "status": "M22",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7519,8 +7444,8 @@
           "memberIds": [
             "84838"
           ],
-          "status": "M27",
-          "page": 2,
+          "status": "M23",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7531,8 +7456,32 @@
           "memberIds": [
             "59543"
           ],
-          "status": "M28",
-          "page": 2,
+          "status": "M24",
+          "page": 1,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "KIDAMBI Srikanth"
+          ],
+          "memberIds": [
+            "93627"
+          ],
+          "status": "M25",
+          "page": 1,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "TEH Jia Heng"
+          ],
+          "memberIds": [
+            "82606"
+          ],
+          "status": "M26",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7543,8 +7492,8 @@
           "memberIds": [
             "63122"
           ],
-          "status": "Q3",
-          "page": 2,
+          "status": "M27",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7555,32 +7504,8 @@
           "memberIds": [
             "97115"
           ],
-          "status": "Q4",
-          "page": 2,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "LEE Chia Hao"
-          ],
-          "memberIds": [
-            "59322"
-          ],
-          "status": "Q5",
-          "page": 2,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "SU Li Yang"
-          ],
-          "memberIds": [
-            "83950"
-          ],
-          "status": "Q7",
-          "page": 2,
+          "status": "M28",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7591,8 +7516,8 @@
           "memberIds": [
             "95516"
           ],
-          "status": "Q9",
-          "page": 2,
+          "status": "Q4",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7603,32 +7528,8 @@
           "memberIds": [
             "97030"
           ],
-          "status": "Q10",
-          "page": 2,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "WANG Tzu Wei"
-          ],
-          "memberIds": [
-            "87375"
-          ],
-          "status": "Q11",
-          "page": 2,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "ZHU Xuan Chen"
-          ],
-          "memberIds": [
-            "97345"
-          ],
-          "status": "Q12",
-          "page": 2,
+          "status": "Q5",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7639,8 +7540,8 @@
           "memberIds": [
             "68392"
           ],
-          "status": "Q13",
-          "page": 2,
+          "status": "Q8",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7651,8 +7552,8 @@
           "memberIds": [
             "87029"
           ],
-          "status": "Q14",
-          "page": 2,
+          "status": "Q9",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7663,56 +7564,8 @@
           "memberIds": [
             "90218"
           ],
-          "status": "Q15",
-          "page": 2,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Danil DUBOVENKO"
-          ],
-          "memberIds": [
-            "94119"
-          ],
-          "status": "Q16",
-          "page": 3,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Minoru KOGA"
-          ],
-          "memberIds": [
-            "80062"
-          ],
-          "status": "R1",
-          "page": 3,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Tharun MANNEPALLI"
-          ],
-          "memberIds": [
-            "92160"
-          ],
-          "status": "R2",
-          "page": 3,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Harry HUANG"
-          ],
-          "memberIds": [
-            "63170"
-          ],
-          "status": "R3",
-          "page": 3,
+          "status": "Q10",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7723,20 +7576,20 @@
           "memberIds": [
             "98279"
           ],
-          "status": "R4",
-          "page": 3,
+          "status": "Q12",
+          "page": 1,
           "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Rounak CHOUHAN"
+            "JEON Hyeok Jin"
           ],
           "memberIds": [
-            "86470"
+            "65580"
           ],
-          "status": "R7",
-          "page": 3,
+          "status": "Q13",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7747,20 +7600,8 @@
           "memberIds": [
             "92796"
           ],
-          "status": "R9",
-          "page": 3,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Shogo OGAWA"
-          ],
-          "memberIds": [
-            "62395"
-          ],
-          "status": "R10",
-          "page": 3,
+          "status": "Q14",
+          "page": 1,
           "extraction": "ocr"
         },
         {
@@ -7771,8 +7612,8 @@
           "memberIds": [
             "92508"
           ],
-          "status": "R11",
-          "page": 3,
+          "status": "Q16",
+          "page": 2,
           "extraction": "ocr"
         },
         {
@@ -7783,44 +7624,20 @@
           "memberIds": [
             "60145"
           ],
-          "status": "R12",
-          "page": 3,
+          "status": "R1",
+          "page": 2,
           "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Misha ZILBERMAN"
+            "CHENG Ju-Sheng"
           ],
           "memberIds": [
-            "52953"
+            "44017"
           ],
-          "status": "R13",
-          "page": 3,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Zhe Ying WU"
-          ],
-          "memberIds": [
-            "87450"
-          ],
-          "status": "R16",
-          "page": 3,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Koo TAKAHASHI"
-          ],
-          "memberIds": [
-            "86230"
-          ],
-          "status": "R19",
-          "page": 3,
+          "status": "R6",
+          "page": 2,
           "extraction": "ocr"
         },
         {
@@ -7831,8 +7648,20 @@
           "memberIds": [
             "86723"
           ],
-          "status": "R20",
-          "page": 3,
+          "status": "R8",
+          "page": 2,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MS",
+          "names": [
+            "Xiaodong SHENG"
+          ],
+          "memberIds": [
+            "77143"
+          ],
+          "status": "R9",
+          "page": 2,
           "extraction": "ocr"
         },
         {
@@ -7841,10 +7670,10 @@
             "PUI Pang Fong"
           ],
           "memberIds": [
-            "80666"
+            "98860"
           ],
-          "status": "R22",
-          "page": 3,
+          "status": "R10",
+          "page": 2,
           "extraction": "ocr"
         },
         {
@@ -7855,8 +7684,8 @@
           "memberIds": [
             "65045"
           ],
-          "status": "R24",
-          "page": 3,
+          "status": "R11",
+          "page": 2,
           "extraction": "ocr"
         },
         {
@@ -7867,32 +7696,20 @@
           "memberIds": [
             "89726"
           ],
-          "status": "R25",
-          "page": 3,
+          "status": "R12",
+          "page": 2,
           "extraction": "ocr"
         },
         {
           "discipline": "MS",
           "names": [
-            "Tsvetomir STOYANOV"
+            "Hing Long WONG"
           ],
           "memberIds": [
-            "65715"
+            "86452"
           ],
-          "status": "R28",
-          "page": 3,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "WANG Yue Hang"
-          ],
-          "memberIds": [
-            "56990"
-          ],
-          "status": "R29",
-          "page": 3,
+          "status": "R13",
+          "page": 2,
           "extraction": "ocr"
         },
         {
@@ -7903,20 +7720,8 @@
           "memberIds": [
             "84907"
           ],
-          "status": "R30",
-          "page": 3,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Tonkid SAEHENG"
-          ],
-          "memberIds": [
-            "84591"
-          ],
-          "status": "R31",
-          "page": 3,
+          "status": "R16",
+          "page": 2,
           "extraction": "ocr"
         },
         {
@@ -7927,8 +7732,8 @@
           "memberIds": [
             "42435"
           ],
-          "status": "R32",
-          "page": 4,
+          "status": "R17",
+          "page": 2,
           "extraction": "ocr"
         },
         {
@@ -7939,8 +7744,8 @@
           "memberIds": [
             "59967"
           ],
-          "status": "R33",
-          "page": 4,
+          "status": "R18",
+          "page": 2,
           "extraction": "ocr"
         },
         {
@@ -7951,32 +7756,8 @@
           "memberIds": [
             "67185"
           ],
-          "status": "R34",
-          "page": 4,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Raymond WEBSTER"
-          ],
-          "memberIds": [
-            "95709"
-          ],
-          "status": "R35",
-          "page": 4,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Xuyuan HUANG"
-          ],
-          "memberIds": [
-            "21573"
-          ],
-          "status": "R36",
-          "page": 4,
+          "status": "R19",
+          "page": 2,
           "extraction": "ocr"
         },
         {
@@ -7987,32 +7768,8 @@
           "memberIds": [
             "45320"
           ],
-          "status": "R37",
-          "page": 4,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "Conway WONG"
-          ],
-          "memberIds": [
-            "36353"
-          ],
-          "status": "R38",
-          "page": 4,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MS",
-          "names": [
-            "YUNG King To"
-          ],
-          "memberIds": [
-            "88249"
-          ],
-          "status": "R40",
-          "page": 4,
+          "status": "R20",
+          "page": 2,
           "extraction": "ocr"
         },
         {
@@ -8023,8 +7780,8 @@
           "memberIds": [
             "21335"
           ],
-          "status": "R41",
-          "page": 4,
+          "status": "R22",
+          "page": 2,
           "extraction": "ocr"
         },
         {
@@ -8035,20 +7792,32 @@
           "memberIds": [
             "81835"
           ],
-          "status": "R42",
+          "status": "R23",
+          "page": 2,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "CHEN Yu Fei"
+          ],
+          "memberIds": [
+            "78778"
+          ],
+          "status": "M2",
           "page": 4,
           "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "PutriKusuma WARDANI"
+            "Ratchanok INTANON"
           ],
           "memberIds": [
-            "76890"
+            "35642"
           ],
-          "status": "M5",
-          "page": 5,
+          "status": "M3",
+          "page": 4,
           "extraction": "ocr"
         },
         {
@@ -8057,22 +7826,58 @@
             "Pornpawee CHOCHUWONG"
           ],
           "memberIds": [
-            "92967"
+            "84062"
           ],
           "status": "M7",
-          "page": 5,
+          "page": 4,
           "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "PUSARLA V. Sindhu"
+            "Nozomi OKUHARA"
           ],
           "memberIds": [
-            "84062"
+            "96713"
           ],
           "status": "M8",
-          "page": 5,
+          "page": 4,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Michelle LI"
+          ],
+          "memberIds": [
+            "84523"
+          ],
+          "status": "M9",
+          "page": 4,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Mia BLICHFELDT"
+          ],
+          "memberIds": [
+            "91224"
+          ],
+          "status": "M10",
+          "page": 4,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "LIN Hsiang Ti"
+          ],
+          "memberIds": [
+            "96725"
+          ],
+          "status": "M11",
+          "page": 4,
           "extraction": "ocr"
         },
         {
@@ -8083,32 +7888,32 @@
           "memberIds": [
             "80862"
           ],
-          "status": "M15",
-          "page": 6,
+          "status": "M12",
+          "page": 4,
           "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Hina AKECHI"
+            "Unnati HOODA"
           ],
           "memberIds": [
-            "68479"
+            "59687"
           ],
-          "status": "M18",
-          "page": 6,
+          "status": "M13",
+          "page": 4,
           "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Tanvi SHARMA"
+            "Line Hejmark K]AERSFELDT"
           ],
           "memberIds": [
-            "99042"
+            "63437"
           ],
-          "status": "M19",
-          "page": 6,
+          "status": "M14",
+          "page": 4,
           "extraction": "ocr"
         },
         {
@@ -8119,20 +7924,44 @@
           "memberIds": [
             "97685"
           ],
-          "status": "M20",
-          "page": 6,
+          "status": "M16",
+          "page": 4,
           "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Kirsty GILMOUR"
+            "Karupathevan LETSHANAA"
           ],
           "memberIds": [
-            "48528"
+            "59367"
           ],
-          "status": "M25",
-          "page": 6,
+          "status": "M17",
+          "page": 4,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Devika SIHAG"
+          ],
+          "memberIds": [
+            "90287"
+          ],
+          "status": "M19",
+          "page": 4,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "wONG Ling Ching"
+          ],
+          "memberIds": [
+            "77296"
+          ],
+          "status": "M20",
+          "page": 4,
           "extraction": "ocr"
         },
         {
@@ -8143,8 +7972,20 @@
           "memberIds": [
             "76851"
           ],
-          "status": "M28",
-          "page": 6,
+          "status": "M21",
+          "page": 4,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "Rakshitha Sree SANTHOSH RAMRA] India"
+          ],
+          "memberIds": [
+            "91807"
+          ],
+          "status": "M22",
+          "page": 4,
           "extraction": "ocr"
         },
         {
@@ -8155,8 +7996,8 @@
           "memberIds": [
             "70651"
           ],
-          "status": "Q2",
-          "page": 6,
+          "status": "M23",
+          "page": 4,
           "extraction": "ocr"
         },
         {
@@ -8167,20 +8008,20 @@
           "memberIds": [
             "75628"
           ],
-          "status": "Q3",
-          "page": 6,
+          "status": "M24",
+          "page": 4,
           "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "YEO Jia Min"
+            "TUNG Ciou-Tong"
           ],
           "memberIds": [
-            "83822"
+            "61614"
           ],
-          "status": "Q6",
-          "page": 6,
+          "status": "M25",
+          "page": 4,
           "extraction": "ocr"
         },
         {
@@ -8191,56 +8032,44 @@
           "memberIds": [
             "58664"
           ],
-          "status": "Q7",
-          "page": 6,
+          "status": "M26",
+          "page": 4,
           "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Malvika BANSOD"
+            "Rachel CHAN"
           ],
           "memberIds": [
-            "88471"
+            "78208"
           ],
-          "status": "Q8",
-          "page": 6,
+          "status": "M27",
+          "page": 4,
           "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Ishika JAISWAL"
+            "GOH jin Wei"
           ],
           "memberIds": [
-            "88399"
+            "69012"
           ],
-          "status": "R3",
-          "page": 6,
+          "status": "Q1",
+          "page": 4,
           "extraction": "ocr"
         },
         {
           "discipline": "WS",
           "names": [
-            "Juliana Viana VIEIRA"
+            "HUANG Ching Ping"
           ],
           "memberIds": [
             "94348"
           ],
-          "status": "R6",
-          "page": 7,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "MANSI SINGH"
-          ],
-          "memberIds": [
-            "73387"
-          ],
-          "status": "R8",
-          "page": 7,
+          "status": "Q3",
+          "page": 4,
           "extraction": "ocr"
         },
         {
@@ -8251,8 +8080,32 @@
           "memberIds": [
             "50959"
           ],
-          "status": "R11",
-          "page": 7,
+          "status": "Q6",
+          "page": 4,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "KIM Min Sun"
+          ],
+          "memberIds": [
+            "66368"
+          ],
+          "status": "Q7",
+          "page": 4,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WS",
+          "names": [
+            "XU Wen jing"
+          ],
+          "memberIds": [
+            "60915"
+          ],
+          "status": "Q8",
+          "page": 4,
           "extraction": "ocr"
         },
         {
@@ -8263,20 +8116,8 @@
           "memberIds": [
             "94032"
           ],
-          "status": "R15",
-          "page": 7,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "PENG Yu Wei"
-          ],
-          "memberIds": [
-            "60634"
-          ],
-          "status": "R16",
-          "page": 7,
+          "status": "R1",
+          "page": 4,
           "extraction": "ocr"
         },
         {
@@ -8287,32 +8128,8 @@
           "memberIds": [
             "59692"
           ],
-          "status": "R17",
-          "page": 7,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "LIANG Ka Wing"
-          ],
-          "memberIds": [
-            "92014"
-          ],
-          "status": "R19",
-          "page": 7,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Ozge BAYRAK"
-          ],
-          "memberIds": [
-            "94762"
-          ],
-          "status": "R21",
-          "page": 7,
+          "status": "R3",
+          "page": 4,
           "extraction": "ocr"
         },
         {
@@ -8323,20 +8140,8 @@
           "memberIds": [
             "73746"
           ],
-          "status": "R22",
-          "page": 7,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Jenjira STADELMANN"
-          ],
-          "memberIds": [
-            "59566"
-          ],
-          "status": "R23",
-          "page": 7,
+          "status": "R7",
+          "page": 5,
           "extraction": "ocr"
         },
         {
@@ -8347,20 +8152,8 @@
           "memberIds": [
             "35949"
           ],
-          "status": "R24",
-          "page": 7,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Karen Yun Qiao FENG"
-          ],
-          "memberIds": [
-            "44698"
-          ],
-          "status": "R25",
-          "page": 7,
+          "status": "R8",
+          "page": 5,
           "extraction": "ocr"
         },
         {
@@ -8371,20 +8164,8 @@
           "memberIds": [
             "43626"
           ],
-          "status": "R26",
-          "page": 7,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "WONG Yi"
-          ],
-          "memberIds": [
-            "66266"
-          ],
-          "status": "R27",
-          "page": 7,
+          "status": "R9",
+          "page": 5,
           "extraction": "ocr"
         },
         {
@@ -8395,8 +8176,8 @@
           "memberIds": [
             "86778"
           ],
-          "status": "R28",
-          "page": 7,
+          "status": "R11",
+          "page": 5,
           "extraction": "ocr"
         },
         {
@@ -8407,8 +8188,8 @@
           "memberIds": [
             "44497"
           ],
-          "status": "R29",
-          "page": 7,
+          "status": "R12",
+          "page": 5,
           "extraction": "ocr"
         },
         {
@@ -8419,26 +8200,28 @@
           "memberIds": [
             "90253"
           ],
-          "status": "R30",
-          "page": 7,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WS",
-          "names": [
-            "Catherine CHOI"
-          ],
-          "memberIds": [
-            "57791"
-          ],
-          "status": "R31",
-          "page": 7,
+          "status": "R13",
+          "page": 5,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "MuhammadShohibul FIKRl",
+            "WANG Chang",
+            "Fajar ALFIAN"
+          ],
+          "memberIds": [
+            "55414",
+            "88876"
+          ],
+          "status": "M1",
+          "page": 6,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Muhammad Shohibul FIKRI",
             "Aaron CHIA"
           ],
           "memberIds": [
@@ -8446,7 +8229,7 @@
             "56203"
           ],
           "status": "M2",
-          "page": 9,
+          "page": 6,
           "extraction": "ocr"
         },
         {
@@ -8460,27 +8243,41 @@
             "70500"
           ],
           "status": "M3",
-          "page": 9,
+          "page": 6,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "SatwiksairajRANKIREDDY",
+            "Nur IZZUDDIN"
+          ],
+          "memberIds": [
+            "72435",
+            "94814"
+          ],
+          "status": "M4",
+          "page": 6,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
             "GOH Sze Fei",
-            "Sabar Karyaman GUTAMA"
+            "SabarKaryamanGUTAMA"
           ],
           "memberIds": [
             "90768",
             "87432"
           ],
           "status": "M5",
-          "page": 10,
+          "page": 6,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Moh Reza Pahlevi ISFAHANI",
+            "MohRezaPahlevi ISFAHANI",
             "Ben LANE"
           ],
           "memberIds": [
@@ -8488,7 +8285,7 @@
             "76278"
           ],
           "status": "M6",
-          "page": 10,
+          "page": 6,
           "extraction": "ocr"
         },
         {
@@ -8502,35 +8299,7 @@
             "59673"
           ],
           "status": "M7",
-          "page": 10,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "REN Xiang Yu",
-            "Takuro HOKI"
-          ],
-          "memberIds": [
-            "84812",
-            "81657"
-          ],
-          "status": "M8",
-          "page": 10,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "YugO KOBAYASHI",
-            "CHEN Bo Yang"
-          ],
-          "memberIds": [
-            "67903",
-            "93130"
-          ],
-          "status": "M9",
-          "page": 10,
+          "page": 6,
           "extraction": "ocr"
         },
         {
@@ -8544,7 +8313,7 @@
             "78409"
           ],
           "status": "M10",
-          "page": 10,
+          "page": 6,
           "extraction": "ocr"
         },
         {
@@ -8558,13 +8327,13 @@
             "68134"
           ],
           "status": "M11",
-          "page": 10,
+          "page": 6,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Mads VESTERGAARD",
+            "MadsVESTERGAARD",
             "Raymond INDRA"
           ],
           "memberIds": [
@@ -8572,13 +8341,13 @@
             "99781"
           ],
           "status": "M12",
-          "page": 10,
+          "page": 6,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Nikolaus JOAQUIN",
+            "NikolauS JOAQUIN",
             "WANG Chi-Lin"
           ],
           "memberIds": [
@@ -8586,7 +8355,7 @@
             "96514"
           ],
           "status": "M13",
-          "page": 10,
+          "page": 6,
           "extraction": "ocr"
         },
         {
@@ -8600,7 +8369,35 @@
             "99102"
           ],
           "status": "M14",
-          "page": 10,
+          "page": 6,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "YANG Po-Hsuan",
+            "Kim ASTRUP"
+          ],
+          "memberIds": [
+            "76275",
+            "92980"
+          ],
+          "status": "M15",
+          "page": 6,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "Anders Skaarup RASMUSSEN",
+            "Kakeru KUMAGAI"
+          ],
+          "memberIds": [
+            "44414",
+            "79906"
+          ],
+          "status": "M16",
+          "page": 6,
           "extraction": "ocr"
         },
         {
@@ -8614,63 +8411,49 @@
             "70231"
           ],
           "status": "M17",
-          "page": 10,
+          "page": 6,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "LIN Xiang Yi",
-            "Christo POPOV"
+            "Fang-Chih LEE",
+            "HU Ke Yuan"
           ],
           "memberIds": [
-            "62220",
-            "72885"
+            "57424",
+            "97601"
           ],
-          "status": "M19",
-          "page": 11,
+          "status": "M18",
+          "page": 6,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Toma Junior POPOV",
-            "Hiroki OKAMURA"
-          ],
-          "memberIds": [
-            "61628",
-            "86479"
-          ],
-          "status": "M20",
-          "page": 11,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "KyoheiYAMASHITA",
-            "TAN Wee Kiong"
+            "Kyohei YAMASHITA",
+            "TAN WeeKiong"
           ],
           "memberIds": [
             "82009",
             "52071"
           ],
           "status": "M21",
-          "page": 11,
+          "page": 7,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Daniel MARTHIN",
-            "M.R. ARJUN"
+            "Nur Mohd Azriyn Ayub AZRIYN",
+            "Leo Rolly CARNANDO"
           ],
           "memberIds": [
-            "84786",
-            "98935"
+            "70443",
+            "68633"
           ],
-          "status": "M24",
-          "page": 11,
+          "status": "M22",
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -8683,50 +8466,22 @@
             "69560",
             "63739"
           ],
-          "status": "M25",
-          "page": 11,
+          "status": "M24",
+          "page": 7,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "CHEN ZHI YI",
-            "JIN Yong"
-          ],
-          "memberIds": [
-            "62618",
-            "74816"
-          ],
-          "status": "M26",
-          "page": 11,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "JO Song Hyun",
-            "Ali Faathir RAYHAN"
-          ],
-          "memberIds": [
-            "90792",
-            "72973"
-          ],
-          "status": "M27",
-          "page": 11,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "DevinArthaWAHYUDI",
+            "Devin Artha WAHYUDI",
             "Aaron TAl"
           ],
           "memberIds": [
             "76388",
             "57397"
           ],
-          "status": "M28",
-          "page": 11,
+          "status": "M27",
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -8739,8 +8494,8 @@
             "88322",
             "92504"
           ],
-          "status": "Q1",
-          "page": 11,
+          "status": "M28",
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -8753,22 +8508,36 @@
             "75829",
             "77262"
           ],
-          "status": "Q2",
-          "page": 11,
+          "status": "Q1",
+          "page": 7,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
             "LEE Jong Min",
-            "Rasmus KJAER"
+            "RasmusKJAER"
           ],
           "memberIds": [
             "62804",
             "64729"
           ],
+          "status": "Q2",
+          "page": 7,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "ChristianFaustK]AER",
+            "CHIA Weijie"
+          ],
+          "memberIds": [
+            "75049",
+            "79732"
+          ],
           "status": "Q3",
-          "page": 11,
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -8781,8 +8550,8 @@
             "99066",
             "65674"
           ],
-          "status": "Q5",
-          "page": 12,
+          "status": "Q4",
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -8795,8 +8564,8 @@
             "84102",
             "65491"
           ],
-          "status": "Q6",
-          "page": 12,
+          "status": "Q5",
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -8809,8 +8578,8 @@
             "89714",
             "59609"
           ],
-          "status": "Q7",
-          "page": 12,
+          "status": "Q6",
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -8823,8 +8592,8 @@
             "64394",
             "64023"
           ],
-          "status": "Q8",
-          "page": 12,
+          "status": "Q7",
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -8837,8 +8606,8 @@
             "87535",
             "67810"
           ],
-          "status": "R1",
-          "page": 12,
+          "status": "Q8",
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -8851,78 +8620,50 @@
             "54805",
             "70185"
           ],
-          "status": "R2",
-          "page": 12,
+          "status": "R1",
+          "page": 7,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Chaloempon CHAROENKITAMORN",
+            "Junsuke KUBO",
             "Haruki KAWABE"
           ],
           "memberIds": [
-            "88024",
+            "67533",
             "76165"
           ],
-          "status": "R4",
-          "page": 12,
+          "status": "R2",
+          "page": 7,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Kenta MATSUKAWA",
-            "Alex GREEN"
+            "LIN Yong Sheng",
+            "Jones Ralfy JANSEN"
           ],
           "memberIds": [
-            "94252",
-            "69360"
+            "64441",
+            "88726"
           ],
           "status": "R5",
-          "page": 12,
+          "page": 7,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Samuel JONES",
-            "lia Hao Howin WONG"
-          ],
-          "memberIds": [
-            "63421",
-            "97717"
-          ],
-          "status": "R8",
-          "page": 12,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "DonovanWillardWEE",
-            "Chia Yen LIN"
-          ],
-          "memberIds": [
-            "98502",
-            "43526"
-          ],
-          "status": "R9",
-          "page": 12,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Bjarne GEISS",
+            "BjarneGEISS",
             "LUI Chun Wai"
           ],
           "memberIds": [
             "59472",
             "63670"
           ],
-          "status": "R11",
-          "page": 13,
+          "status": "R6",
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -8935,8 +8676,8 @@
             "88832",
             "61834"
           ],
-          "status": "R12",
-          "page": 13,
+          "status": "R7",
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -8949,8 +8690,8 @@
             "87270",
             "81327"
           ],
-          "status": "R13",
-          "page": 13,
+          "status": "R8",
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -8963,50 +8704,8 @@
             "62516",
             "64064"
           ],
-          "status": "R14",
-          "page": 13,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Yuta OKU",
-            "Patra Harapan RINDORINDO"
-          ],
-          "memberIds": [
-            "98301",
-            "88850"
-          ],
-          "status": "R15",
-          "page": 13,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Yeremia Erich Yoche Yacob RAMBITAN Indonesia",
-            "Fabricio FARIAS"
-          ],
-          "memberIds": [
-            "94430",
-            "69649"
-          ],
-          "status": "R16",
-          "page": 13,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Davi SILVA",
-            "WEI Chun Wei"
-          ],
-          "memberIds": [
-            "78948",
-            "74574"
-          ],
-          "status": "R17",
-          "page": 13,
+          "status": "R9",
+          "page": 7,
           "extraction": "ocr"
         },
         {
@@ -9019,64 +8718,64 @@
             "73750",
             "82502"
           ],
-          "status": "R18",
-          "page": 13,
+          "status": "R11",
+          "page": 8,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
-            "Takuto GOTO",
+            "WANG Chan",
+            "Tsubasa YOSHIDA"
+          ],
+          "memberIds": [
+            "72646",
+            "90852"
+          ],
+          "status": "R12",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "TakutoGOTO",
             "Lap Hang Hugo PONG"
           ],
           "memberIds": [
             "81856",
             "33584"
           ],
-          "status": "R20",
-          "page": 13,
+          "status": "R13",
+          "page": 8,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
             "Lap Kan Kern PONG",
-            "POCHANA Arjun Reddy"
+            "KIM GiJung"
           ],
           "memberIds": [
             "79407",
-            "54044"
-          ],
-          "status": "R21",
-          "page": 13,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Achutaditya Rao DODDAVARAPU",
-            "Bo-Yuan CHEN"
-          ],
-          "memberIds": [
-            "58201",
-            "67785"
-          ],
-          "status": "R22",
-          "page": 13,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Ming Che LU",
-            "KIM Gi Jung"
-          ],
-          "memberIds": [
-            "58986",
             "39276"
           ],
-          "status": "R23",
-          "page": 13,
+          "status": "R14",
+          "page": 8,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "MD",
+          "names": [
+            "KIM Sa Rang",
+            "Zewei XIE"
+          ],
+          "memberIds": [
+            "84007",
+            "42435"
+          ],
+          "status": "R15",
+          "page": 8,
           "extraction": "ocr"
         },
         {
@@ -9089,36 +8788,22 @@
             "82774",
             "59967"
           ],
-          "status": "R26",
-          "page": 14,
+          "status": "R17",
+          "page": 8,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
             "Hing Long WONG",
-            "Bugra AKTAS"
-          ],
-          "memberIds": [
-            "86452",
-            "67730"
-          ],
-          "status": "R27",
-          "page": 14,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "Emre SONMEZ",
             "YU Zhirui Jerry"
           ],
           "memberIds": [
-            "87483",
+            "86452",
             "10453"
           ],
-          "status": "R28",
-          "page": 14,
+          "status": "R18",
+          "page": 8,
           "extraction": "ocr"
         },
         {
@@ -9131,36 +8816,36 @@
             "22168",
             "68061"
           ],
-          "status": "R29",
-          "page": 14,
+          "status": "R19",
+          "page": 8,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
             "CHENG Ying Kit",
-            "lonathan Bing Tsan LAl"
+            "jonathan Bing Tsan LAl"
           ],
           "memberIds": [
             "16029",
             "96537"
           ],
-          "status": "R30",
-          "page": 14,
+          "status": "R20",
+          "page": 8,
           "extraction": "ocr"
         },
         {
           "discipline": "MD",
           "names": [
             "lason Ling-Chun MAK",
-            "TsvetomirSTOYANOV"
+            "Sin Hei LAU"
           ],
           "memberIds": [
             "27956",
-            "65715"
+            "43434"
           ],
-          "status": "R31",
-          "page": 14,
+          "status": "R21",
+          "page": 8,
           "extraction": "ocr"
         },
         {
@@ -9173,50 +8858,8 @@
             "69287",
             "77996"
           ],
-          "status": "R34",
-          "page": 14,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "MD",
-          "names": [
-            "FU Chuen Po",
-            "Yu Sum CHIU"
-          ],
-          "memberIds": [
-            "65566",
-            "43518"
-          ],
-          "status": "R35",
-          "page": 14,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "TAN Ning",
-            "Yuki FUKUSHIMA"
-          ],
-          "memberIds": [
-            "59880",
-            "71023"
-          ],
-          "status": "M1",
-          "page": 16,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "MayuMATSUMOTO",
-            "Pearly TAN"
-          ],
-          "memberIds": [
-            "81609",
-            "85551"
-          ],
-          "status": "M2",
-          "page": 16,
+          "status": "R22",
+          "page": 8,
           "extraction": "ocr"
         },
         {
@@ -9229,134 +8872,120 @@
             "68628",
             "87428"
           ],
-          "status": "M3",
-          "page": 16,
+          "status": "M2",
+          "page": 10,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
-            "Febi SETIANINGRUM",
+            "Rin IWANAGA",
+            "LIN Jhih Yun"
+          ],
+          "memberIds": [
+            "88135",
+            "69009"
+          ],
+          "status": "M3",
+          "page": 10,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "WD",
+          "names": [
+            "HSU Yin-Hui",
             "Miyu TAKAHASHI"
           ],
           "memberIds": [
-            "55481",
+            "96973",
             "70692"
           ],
-          "status": "M6",
-          "page": 17,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Sumire NAKADE",
-            "Febriana Dwipuji KUSUMA"
-          ],
-          "memberIds": [
-            "19726",
-            "79664"
-          ],
-          "status": "M7",
-          "page": 17,
+          "status": "M4",
+          "page": 10,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
             "Meilysa Trias PUSPITASARI",
-            "Gabriela STOEVA"
+            "GabrielaSTOEVA"
           ],
           "memberIds": [
             "82364",
             "43840"
           ],
-          "status": "M8",
-          "page": 17,
+          "status": "M6",
+          "page": 10,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
-            "Stefani STOEVA",
-            "Sayaka HIROTA"
+            "StefaniSTOEVA",
+            "SayakaHIROTA"
           ],
           "memberIds": [
             "46169",
             "94519"
           ],
-          "status": "M9",
-          "page": 17,
+          "status": "M7",
+          "page": 10,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
-            "AyakoSAKURAMOTO",
+            "Ayako SAKURAMOTO",
             "Sayaka HOBARA"
           ],
           "memberIds": [
             "83211",
             "59014"
           ],
-          "status": "M10",
-          "page": 17,
+          "status": "M8",
+          "page": 10,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
-            "Rui HIROKAMI",
-            "Amallia Cahaya PRATIWI"
-          ],
-          "memberIds": [
-            "84159",
-            "67761"
-          ],
-          "status": "M11",
-          "page": 17,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "SitiFadiaSilvaRAMADHANTI",
+            "Siti Fadia Silva RAMADHANTI",
             "HSU Ya Ching"
           ],
           "memberIds": [
             "88097",
             "74561"
           ],
-          "status": "M12",
-          "page": 17,
+          "status": "M10",
+          "page": 10,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
-            "SUNGYu-Hsuan",
+            "SUNG Yu-Hsuan",
             "Lauren LAM"
           ],
           "memberIds": [
             "65349",
             "69091"
           ],
-          "status": "M13",
-          "page": 17,
+          "status": "M11",
+          "page": 10,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
-            "Allison Quynh LEE",
+            "AllisonQuynhLEE",
             "YEUNG Nga Ting"
           ],
           "memberIds": [
             "65708",
             "68015"
           ],
-          "status": "M14",
-          "page": 17,
+          "status": "M12",
+          "page": 10,
           "extraction": "ocr"
         },
         {
@@ -9369,78 +8998,22 @@
             "75864",
             "71612"
           ],
-          "status": "M15",
-          "page": 17,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "GAYATRI GOPICHANDPULLELA",
-            "Nazlican INCI"
-          ],
-          "memberIds": [
-            "59966",
-            "73023"
-          ],
-          "status": "M16",
-          "page": 17,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Bengisu ERCETIN",
-            "lennie GAI"
-          ],
-          "memberIds": [
-            "62426",
-            "83074"
-          ],
-          "status": "M17",
-          "page": 17,
+          "status": "M13",
+          "page": 10,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
             "Francesca CORBETT",
-            "Margot LAMBERT"
-          ],
-          "memberIds": [
-            "61882",
-            "99891"
-          ],
-          "status": "M18",
-          "page": 17,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Yevheniia KANTEMYR",
             "LIN Chih-Chun"
           ],
           "memberIds": [
-            "94032",
+            "61882",
             "85808"
           ],
-          "status": "M20",
-          "page": 18,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "YANG Chu Yun",
-            "CHANG Ching Hui"
-          ],
-          "memberIds": [
-            "70860",
-            "75270"
-          ],
-          "status": "M21",
-          "page": 18,
+          "status": "M15",
+          "page": 10,
           "extraction": "ocr"
         },
         {
@@ -9453,50 +9026,22 @@
             "78687",
             "84839"
           ],
-          "status": "M22",
-          "page": 18,
+          "status": "M17",
+          "page": 10,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
-            "Hathaithip MIJAD",
+            "Hathaithip MIAD",
             "LUI Lok Lok"
           ],
           "memberIds": [
             "76091",
             "87893"
           ],
-          "status": "M23",
-          "page": 18,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "TSANG Hiu Yan",
-            "LEE Yu Lim"
-          ],
-          "memberIds": [
-            "95205",
-            "66115"
-          ],
-          "status": "M24",
-          "page": 18,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "KIM Yu Jung",
-            "Chiharu SHIDA"
-          ],
-          "memberIds": [
-            "73838",
-            "68282"
-          ],
-          "status": "M25",
-          "page": 18,
+          "status": "M18",
+          "page": 10,
           "extraction": "ocr"
         },
         {
@@ -9509,8 +9054,8 @@
             "64767",
             "65144"
           ],
-          "status": "M27",
-          "page": 18,
+          "status": "M21",
+          "page": 11,
           "extraction": "ocr"
         },
         {
@@ -9523,8 +9068,8 @@
             "88450",
             "47296"
           ],
-          "status": "M28",
-          "page": 18,
+          "status": "M22",
+          "page": 11,
           "extraction": "ocr"
         },
         {
@@ -9537,190 +9082,92 @@
             "95062",
             "23008"
           ],
-          "status": "Q1",
-          "page": 18,
+          "status": "M23",
+          "page": 11,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
-            "Noraqilah MAISARAH",
-            "WANG Yi Duo"
+            "Nanako HARA",
+            "CHEN Fan Shu Tian"
           ],
           "memberIds": [
-            "71883",
-            "92945"
+            "92989",
+            "86532"
           ],
-          "status": "Q2",
-          "page": 18,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "LI YiJing",
-            "RutaparnaPANDA"
-          ],
-          "memberIds": [
-            "85540",
-            "80547"
-          ],
-          "status": "Q3",
-          "page": 18,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Swetaparna PANDA",
-            "RikO KIYOSE"
-          ],
-          "memberIds": [
-            "67676",
-            "68304"
-          ],
-          "status": "Q4",
-          "page": 18,
+          "status": "M26",
+          "page": 11,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
             "LUO Xu Min",
-            "Sania LIMA"
-          ],
-          "memberIds": [
-            "65300",
-            "56522"
-          ],
-          "status": "Q6",
-          "page": 19,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "juliana Viana VIEIRA",
-            "Sian KELLY"
-          ],
-          "memberIds": [
-            "84897",
-            "81761"
-          ],
-          "status": "Q7",
-          "page": 19,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Lizzie TOLMAN",
             "Yan Fei CHEN"
           ],
           "memberIds": [
-            "68221",
+            "65300",
             "71848"
           ],
-          "status": "Q8",
-          "page": 19,
+          "status": "M27",
+          "page": 11,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
             "Liang Ching SUN",
-            "Ornnicha JONGSATHAPORNPARN Thailand"
+            "OrnnichaJONGSATHAPORNPARN Thailand"
           ],
           "memberIds": [
             "85508",
             "99988"
           ],
-          "status": "R1",
-          "page": 19,
+          "status": "M28",
+          "page": 11,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
-            "Sabrina Sophita WEDLER",
-            "Yasemen BEKTAS"
-          ],
-          "memberIds": [
-            "76513",
-            "86621"
-          ],
-          "status": "R2",
-          "page": 19,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Sinem YILDIZ",
-            "Arisa IGARASHI"
-          ],
-          "memberIds": [
-            "91978",
-            "79558"
-          ],
-          "status": "R3",
-          "page": 19,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Yinfei LU",
+            "Sabrina SophitaWEDLER",
             "Estelle VAN LEEUWEN"
           ],
           "memberIds": [
-            "28312",
+            "76513",
             "59331"
           ],
-          "status": "R4",
-          "page": 19,
+          "status": "Q1",
+          "page": 11,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
             "Abbygael HARRIS",
-            "Ritika THAKER"
-          ],
-          "memberIds": [
-            "61095",
-            "88389"
-          ],
-          "status": "R5",
-          "page": 19,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "Sonali SINGH",
             "FAN Ka Yan"
           ],
           "memberIds": [
-            "83537",
+            "61095",
             "95905"
           ],
-          "status": "R6",
-          "page": 19,
+          "status": "Q2",
+          "page": 11,
           "extraction": "ocr"
         },
         {
           "discipline": "WD",
           "names": [
-            "LEUNGYuetYee",
+            "LEUNG Yuet Yee",
             "KIM Hye Jeong"
           ],
           "memberIds": [
             "60557",
             "83419"
           ],
-          "status": "R7",
-          "page": 19,
+          "status": "Q3",
+          "page": 11,
           "extraction": "ocr"
         },
         {
@@ -9733,64 +9180,64 @@
             "80005",
             "81883"
           ],
-          "status": "R8",
-          "page": 19,
+          "status": "Q4",
+          "page": 11,
           "extraction": "ocr"
         },
         {
-          "discipline": "WD",
+          "discipline": "XD",
           "names": [
-            "WONGYanLamYanes",
-            "CHU Wing Chi"
+            "HUANG Dong Ping",
+            "JIANG Zhen Bang"
           ],
           "memberIds": [
-            "92738",
-            "45895"
+            "89426",
+            "63029"
           ],
-          "status": "R9",
-          "page": 19,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "WD",
-          "names": [
-            "AU-YEUNG Wing Chi",
-            "YU Yi Kiu"
-          ],
-          "memberIds": [
-            "59100",
-            "36047"
-          ],
-          "status": "R10",
-          "page": 19,
+          "status": "M1",
+          "page": 13,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
             "WEI Ya Xin",
-            "Mathias CHRISTIANSEN"
+            "Dechapol PUAVARANUKROH"
           ],
           "memberIds": [
             "57246",
-            "99521"
+            "61731"
           ],
           "status": "M2",
-          "page": 21,
+          "page": 13,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Alexandra BO]E",
-            "Dechapol PUAVARANUKROH"
+            "Supissara PAEWSAMPRAN",
+            "GUO Xin Wa"
           ],
           "memberIds": [
-            "88779",
-            "61731"
+            "74980",
+            "81844"
           ],
           "status": "M3",
-          "page": 21,
+          "page": 13,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "CHEN Fang Hui",
+            "YE Hong Wei"
+          ],
+          "memberIds": [
+            "50469",
+            "81108"
+          ],
+          "status": "M4",
+          "page": 13,
           "extraction": "ocr"
         },
         {
@@ -9803,8 +9250,8 @@
             "62713",
             "58931"
           ],
-          "status": "M6",
-          "page": 22,
+          "status": "M5",
+          "page": 13,
           "extraction": "ocr"
         },
         {
@@ -9817,22 +9264,8 @@
             "88450",
             "92593"
           ],
-          "status": "M7",
-          "page": 22,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "LAI Shevon Jemie",
-            "YutaWATANABE"
-          ],
-          "memberIds": [
-            "56352",
-            "58240"
-          ],
-          "status": "M8",
-          "page": 22,
+          "status": "M6",
+          "page": 13,
           "extraction": "ocr"
         },
         {
@@ -9845,8 +9278,8 @@
             "60335",
             "76275"
           ],
-          "status": "M9",
-          "page": 22,
+          "status": "M8",
+          "page": 13,
           "extraction": "ocr"
         },
         {
@@ -9859,78 +9292,64 @@
             "87176",
             "76281"
           ],
-          "status": "M10",
-          "page": 22,
+          "status": "M9",
+          "page": 13,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Nita Violina MARWAH",
-            "Pakkapon TEERARATSAKUL"
+            "NitaViolinaMARWAH",
+            "PakkaponTEERARATSAKUL"
           ],
           "memberIds": [
             "60838",
             "65674"
           ],
-          "status": "M11",
-          "page": 22,
+          "status": "M10",
+          "page": 13,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Sapsiree TAERATTANACHAl",
+            "SapsireeTAERATTANACHAI",
             "Presley SMITH"
           ],
           "memberIds": [
             "67158",
             "63739"
           ],
-          "status": "M12",
-          "page": 22,
+          "status": "M11",
+          "page": 13,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "lennie GAI",
-            "Akira KOGA"
-          ],
-          "memberIds": [
-            "83074",
-            "88405"
-          ],
-          "status": "M13",
-          "page": 22,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Natsu SAITO",
+            "NatSu SAITO",
             "HOO Pang Ron"
           ],
           "memberIds": [
             "55417",
             "72675"
           ],
-          "status": "M14",
-          "page": 22,
+          "status": "M13",
+          "page": 13,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "LAI Pei Jing",
+            "LAI PeiJing",
             "CHAN Yin Chak"
           ],
           "memberIds": [
             "47007",
             "57924"
           ],
-          "status": "M15",
-          "page": 22,
+          "status": "M14",
+          "page": 13,
           "extraction": "ocr"
         },
         {
@@ -9943,92 +9362,64 @@
             "61986",
             "57943"
           ],
-          "status": "M16",
-          "page": 22,
+          "status": "M15",
+          "page": 13,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "WU Meng Ying",
-            "Hariharan AMSAKARUNAN"
-          ],
-          "memberIds": [
-            "91533",
-            "69560"
-          ],
-          "status": "M17",
-          "page": 22,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Tanisha CRASTO",
+            "TanishaCRASTO",
             "Jimmy WONG"
           ],
           "memberIds": [
             "94165",
             "84340"
           ],
-          "status": "M18",
-          "page": 22,
+          "status": "M17",
+          "page": 13,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Estelle VAN LEEUWEN",
-            "Marwan FAZA"
+            "CHENG Su Yin",
+            "Callum HEMMING"
           ],
           "memberIds": [
-            "59331",
-            "72782"
+            "80605",
+            "86756"
           ],
-          "status": "M20",
-          "page": 23,
+          "status": "M18",
+          "page": 13,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Aisyah Salsabila Putri PRANATA",
+            "AisyahSalsabilaPutriPRANATA",
             "LIU Kuang Heng"
           ],
           "memberIds": [
             "79077",
             "59609"
           ],
-          "status": "M21",
-          "page": 23,
+          "status": "M20",
+          "page": 14,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
             "HSU Yin-Hui",
-            "Haruki KAWABE"
+            "HarukiKAWABE"
           ],
           "memberIds": [
             "96973",
             "76165"
           ],
-          "status": "M22",
-          "page": 23,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "KokonaISHIKAWA",
-            "Dejan FERDINANSYAH"
-          ],
-          "memberIds": [
-            "85452",
-            "81458"
-          ],
-          "status": "M23",
-          "page": 23,
+          "status": "M21",
+          "page": 14,
           "extraction": "ocr"
         },
         {
@@ -10041,50 +9432,22 @@
             "69193",
             "94156"
           ],
-          "status": "M24",
-          "page": 23,
+          "status": "M23",
+          "page": 14,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Lucia RODRIGUEZ",
+            "LuciaRODRIGUEZ",
             "CHEN Tang Jie"
           ],
           "memberIds": [
             "92404",
             "91090"
           ],
-          "status": "M25",
-          "page": 23,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "CHAN Wen Tse",
-            "WONG Tien Ci"
-          ],
-          "memberIds": [
-            "79015",
-            "71294"
-          ],
-          "status": "M26",
-          "page": 23,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "LIM Chiew Sien",
-            "Dhruv RAWAT"
-          ],
-          "memberIds": [
-            "70093",
-            "84666"
-          ],
-          "status": "M27",
-          "page": 23,
+          "status": "M24",
+          "page": 14,
           "extraction": "ocr"
         },
         {
@@ -10097,8 +9460,8 @@
             "56836",
             "62618"
           ],
-          "status": "M28",
-          "page": 23,
+          "status": "M27",
+          "page": 14,
           "extraction": "ocr"
         },
         {
@@ -10111,134 +9474,106 @@
             "61882",
             "73936"
           ],
-          "status": "Q1",
-          "page": 23,
+          "status": "M28",
+          "page": 14,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Jhenicha SUDJAIPRAPARAT",
+            "henichaSUDJAIPRAPARAT",
             "WU Hsuan-Yi"
           ],
           "memberIds": [
             "72504",
             "97737"
           ],
-          "status": "Q2",
-          "page": 23,
+          "status": "Q1",
+          "page": 14,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
             "YANG Chu Yun",
-            "DHRUVKAPILA"
+            "DHRUV KAPILA"
           ],
           "memberIds": [
             "70860",
             "57372"
           ],
-          "status": "Q3",
-          "page": 23,
+          "status": "Q2",
+          "page": 14,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Crystal LAl",
-            "Ruttanapak OUPTHONG"
+            "Radhika SHARMA",
+            "onathan Bing Tsan LAl"
+          ],
+          "memberIds": [
+            "61380",
+            "96537"
+          ],
+          "status": "Q3",
+          "page": 14,
+          "extraction": "ocr"
+        },
+        {
+          "discipline": "XD",
+          "names": [
+            "Crystal LAI",
+            "RuttanapakOUPTHONG"
           ],
           "memberIds": [
             "64767",
             "75904"
           ],
-          "status": "Q6",
-          "page": 24,
+          "status": "Q4",
+          "page": 14,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "litaphat THANAPHUDIT",
-            "Davi SILVA"
-          ],
-          "memberIds": [
-            "58768",
-            "78948"
-          ],
-          "status": "Q7",
-          "page": 24,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Sania LIMA",
-            "Fabricio FARIAS"
-          ],
-          "memberIds": [
-            "56522",
-            "69649"
-          ],
-          "status": "Q8",
-          "page": 24,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "]aqueline LIMA",
+            "JitaphatTHANAPHUDIT",
             "YU Zhirui Jerry"
           ],
           "memberIds": [
-            "57457",
+            "58768",
             "10453"
           ],
-          "status": "R1",
-          "page": 24,
+          "status": "Q5",
+          "page": 14,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
             "TSE Ying Suet",
-            "Emre SONMEZ"
+            "LEONG lok Chong"
           ],
           "memberIds": [
             "61435",
-            "87483"
+            "86167"
           ],
-          "status": "R2",
-          "page": 24,
+          "status": "Q6",
+          "page": 14,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
             "NG Weng Chi",
-            "Ming Che LU"
-          ],
-          "memberIds": [
-            "95068",
-            "58986"
-          ],
-          "status": "R5",
-          "page": 24,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "CHOU Yun An",
             "CHENG Ying Kit"
           ],
           "memberIds": [
-            "47296",
+            "95068",
             "16029"
           ],
-          "status": "R6",
-          "page": 24,
+          "status": "Q7",
+          "page": 14,
           "extraction": "ocr"
         },
         {
@@ -10251,22 +9586,22 @@
             "60557",
             "96016"
           ],
-          "status": "R7",
-          "page": 24,
+          "status": "Q8",
+          "page": 14,
           "extraction": "ocr"
         },
         {
           "discipline": "XD",
           "names": [
-            "Juliana Zefanya GABRIELA",
+            "julianaZefanya GABRIELA",
             "Zhi-Wei HE"
           ],
           "memberIds": [
             "43626",
             "87535"
           ],
-          "status": "R8",
-          "page": 24,
+          "status": "R1",
+          "page": 14,
           "extraction": "ocr"
         },
         {
@@ -10279,50 +9614,8 @@
             "85508",
             "78842"
           ],
-          "status": "R9",
-          "page": 24,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "GabrielaSTOEVA",
-            "Calvin DEVEREUX"
-          ],
-          "memberIds": [
-            "43840",
-            "45571"
-          ],
-          "status": "R10",
-          "page": 24,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "HUNG Ho Yan",
-            "Hin Lam CHIN"
-          ],
-          "memberIds": [
-            "81883",
-            "45320"
-          ],
-          "status": "R12",
-          "page": 25,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Karen Yun Qiao FENG",
-            "WANG Yue Hang"
-          ],
-          "memberIds": [
-            "44698",
-            "56990"
-          ],
-          "status": "R13",
-          "page": 25,
+          "status": "R2",
+          "page": 14,
           "extraction": "ocr"
         },
         {
@@ -10335,50 +9628,8 @@
             "35186",
             "67785"
           ],
-          "status": "R14",
-          "page": 25,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Yan Fei CHEN",
-            "Lap Kan Kern PONG"
-          ],
-          "memberIds": [
-            "71848",
-            "79407"
-          ],
-          "status": "R15",
-          "page": 25,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Catherine CHOI",
-            "Bugra AKTAS"
-          ],
-          "memberIds": [
-            "57791",
-            "67730"
-          ],
-          "status": "R16",
-          "page": 25,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Sinem YILDIZ",
-            "CHEUNG Sai Shing"
-          ],
-          "memberIds": [
-            "91978",
-            "95742"
-          ],
-          "status": "R17",
-          "page": 25,
+          "status": "R5",
+          "page": 14,
           "extraction": "ocr"
         },
         {
@@ -10391,36 +9642,8 @@
             "59100",
             "59967"
           ],
-          "status": "R18",
-          "page": 25,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "Vivian CHENG",
-            "NJOTO Michaelangelo"
-          ],
-          "memberIds": [
-            "29507",
-            "22168"
-          ],
-          "status": "R19",
-          "page": 25,
-          "extraction": "ocr"
-        },
-        {
-          "discipline": "XD",
-          "names": [
-            "YU Yi Kiu",
-            "Zewei XIE"
-          ],
-          "memberIds": [
-            "36047",
-            "42435"
-          ],
-          "status": "R20",
-          "page": 25,
+          "status": "R8",
+          "page": 14,
           "extraction": "ocr"
         },
         {
@@ -10433,19 +9656,19 @@
             "93873",
             "65566"
           ],
-          "status": "R21",
-          "page": 25,
+          "status": "R11",
+          "page": 15,
           "extraction": "ocr"
         }
       ],
       "complete": false,
-      "skippedRows": 79,
+      "skippedRows": 73,
       "extraction": "ocr",
-      "source": "https://extranet.bwf.sport/docs/events/5196/docs/M%20_%20Q%20Version%201%20-%20LI-NING%20Hong%20Kong%20Open%202026.pdf",
+      "source": "https://extranet.bwf.sport/docs/events/5196/docs/M%20_%20Q%20Report%20Version%202%20_%20Seeding%20Report%20Version%201%20-%20LI-NING%20Hong%20Kong%20Open%202026.pdf",
       "sourceKind": "pdf-image",
       "state": "partial",
-      "version": 1,
-      "checkedAt": "2026-11-10T02:16:55.179Z"
+      "version": 2,
+      "checkedAt": "2026-11-12T23:57:18.396Z"
     },
     {
       "id": "5576",
@@ -14227,7 +13450,7 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 1,
-      "checkedAt": "2026-11-10T02:17:04.410Z"
+      "checkedAt": "2026-11-12T23:57:28.305Z"
     },
     {
       "id": "5714",
@@ -14237,8 +13460,8 @@
       "category": "International Challenge",
       "links": [
         {
-          "href": "https://extranet.bwf.sport/docs/events/5679/docs/TOYOTA%20%20IC%202026%20-%20Prospectus%20F%20_21st%20Sept_.pdf",
-          "text": "TOYOTA  IC 2026 - Prospectus F _21st Sept_.pdf"
+          "href": "https://extranet.bwf.sport/docs/events/5679/docs/TOYOTA%20%20IC%202026%20-%20Prospectus%20F%20_11th%20Nov_.pdf",
+          "text": "TOYOTA  IC 2026 - Prospectus F _11th Nov_.pdf"
         },
         {
           "href": "https://extranet.bwf.sport/docs/events/5679/docs/TOYOTA%20IC%202026%20-%20Practice%20Request%20Form.xls",
@@ -18313,7 +17536,7 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 1,
-      "checkedAt": "2026-11-10T02:17:11.765Z"
+      "checkedAt": "2026-11-12T23:57:36.298Z"
     },
     {
       "id": "6042",
@@ -22411,7 +21634,7 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 1,
-      "checkedAt": "2026-11-10T02:17:20.385Z"
+      "checkedAt": "2026-11-12T23:57:46.574Z"
     },
     {
       "id": "5798",
