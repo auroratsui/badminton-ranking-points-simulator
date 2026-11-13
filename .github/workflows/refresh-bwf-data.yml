@@ -29,15 +29,18 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm refresh-data
+      - name: Refresh Race-to-Finals data
+        run: pnpm refresh-race-to-finals
+        continue-on-error: true
       - name: Commit refreshed data
         shell: bash
         run: |
-          if git diff --quiet -- lib/ranking-data.ts lib/ranking-breakdowns.json lib/tournament-calendars.json; then
-            echo "BWF data is unchanged."
+          if git diff --quiet -- lib/ranking-data.ts lib/ranking-breakdowns.json lib/tournament-calendars.json lib/race-to-finals-data.json; then
+            echo "Ranking data is unchanged."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add lib/ranking-data.ts lib/ranking-breakdowns.json lib/tournament-calendars.json
-          git commit -m "Refresh weekly BWF ranking data"
+          git add lib/ranking-data.ts lib/ranking-breakdowns.json lib/tournament-calendars.json lib/race-to-finals-data.json
+          git commit -m "Refresh weekly ranking data"
           git push
