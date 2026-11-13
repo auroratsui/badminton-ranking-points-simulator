@@ -13,7 +13,7 @@ export const rankingMeta = {
   "week": 46,
   "date": "2026-11-10",
   "dateLabel": "10 Nov 2026",
-  "generatedAt": "2026-11-13T00:13:36.074Z"
+  "generatedAt": "2026-11-13T00:32:38.322Z"
 } as const;
 
 export const rankingPlayers: RankingPlayer[] = [
