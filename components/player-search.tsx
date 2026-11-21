@@ -104,23 +104,30 @@ export function FloatingMenu({ anchorRef, open, children, minWidth = 0 }: {
   );
 }
 
-export function PlayerSearch({ player, onChange, onSelect, index, disciplineCode, ariaLabel }: {
+export function PlayerSearch({ player, onChange, onSelect, index, disciplineCode, ariaLabel, splitDoublesPairs = false }: {
   player: { name: string };
   onChange: (value: string) => void;
   onSelect: (candidate: RankingPlayer) => void;
   index: number;
   disciplineCode?: string;
   ariaLabel?: string;
+  splitDoublesPairs?: boolean;
 }) {
   const [open, setOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const query = player.name.trim();
-  const suggestions = rankingPlayers
+  const searchCandidates = splitDoublesPairs
+    ? rankingPlayers.flatMap((candidate) => ['MD', 'WD', 'XD'].includes(candidate.code)
+      ? candidate.name.split(' / ').map((name) => ({ ...candidate, name }))
+      : [candidate])
+    : rankingPlayers;
+  const suggestions = searchCandidates
     .filter(candidate => !disciplineCode || candidate.code === disciplineCode)
     .map((candidate) => ({ candidate, searchScore: playerSearchScore(candidate.name, query) }))
     .filter(({ searchScore }) => Number.isFinite(searchScore))
     .sort((a, b) => a.searchScore - b.searchScore || a.candidate.rank - b.candidate.rank)
     .map(({ candidate }) => candidate)
+    .filter((candidate, index, candidates) => candidates.findIndex((other) => other.code === candidate.code && other.name === candidate.name) === index)
     .slice(0, 12);
 
   return (
