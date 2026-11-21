@@ -1,8 +1,13 @@
 {
-  "generatedAt": "2026-11-16T02:12:57.850Z",
-  "windowStart": "2026-11-16",
-  "windowEnd": "2026-12-28",
-  "calendarErrors": [],
+  "generatedAt": "2026-11-21T00:43:21.582Z",
+  "windowStart": "2026-11-21",
+  "windowEnd": "2027-01-02",
+  "calendarErrors": [
+    {
+      "year": 2027,
+      "message": "Source unavailable (HTTP 403)"
+    }
+  ],
   "events": [
     {
       "id": "5755",
@@ -11,6 +16,10 @@
       "range": "17                                    -22",
       "category": "International Series",
       "links": [
+        {
+          "href": "https://corporate.bwfbadminton.com/results/5755/guatemala-international-series-2026",
+          "text": "VIEW RESULTS"
+        },
         {
           "href": "https://bwf.tournamentsoftware.com/sport/tournament.aspx?id=79668A53-CFAA-45C5-B79A-E17C4A7323F6",
           "text": "log in here"
@@ -34,8 +43,8 @@
       "category": "HSBC BWF World Tour Super 500",
       "links": [
         {
-          "href": "https://bwfworldtour.bwfbadminton.com/tournament/5218/li-ning-hong-kong-open-2026/",
-          "text": "VIEW EVENT"
+          "href": "https://corporate.bwfbadminton.com/results/5218/li-ning-hong-kong-open-2026",
+          "text": "VIEW RESULTS"
         },
         {
           "href": "https://extranet.bwf.sport/docs/events/5196/docs/LI-NING%20Hong%20Kong%20Open%202026_Prospectus_Final.pdf",
@@ -2514,7 +2523,7 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 2,
-      "checkedAt": "2026-11-16T02:12:26.986Z"
+      "checkedAt": "2026-11-21T00:42:48.279Z"
     },
     {
       "id": "5576",
@@ -2523,6 +2532,10 @@
       "range": "17                                    -22",
       "category": "International Challenge",
       "links": [
+        {
+          "href": "https://corporate.bwfbadminton.com/results/5576/polytron-yogyakarta-international-challenge-2026",
+          "text": "VIEW RESULTS"
+        },
         {
           "href": "https://extranet.bwf.sport/docs/events/5539/docs/POLYTRON%20Yogyakarta%20IC%202026%20-%20Prospectus%20F%20_17th%20Sept_.pdf",
           "text": "POLYTRON Yogyakarta IC 2026 - Prospectus F _17th Sept_.pdf"
@@ -2553,6 +2566,10 @@
       "range": "18                                    -22",
       "category": "Future Series",
       "links": [
+        {
+          "href": "https://corporate.bwfbadminton.com/results/5763/navek-turkiye-international-future-series-2026",
+          "text": "VIEW RESULTS"
+        },
         {
           "href": "https://extranet.bwf.sport/docs/events/5730/docs/Invitation%20-%20NAVEK%20T%C3%BCrkiye%20International%20Future%20Series%202026.pdf",
           "text": "Invitation - NAVEK Türkiye International Future Series 2026.pdf"
@@ -2600,6 +2617,10 @@
       "category": "Future Series",
       "links": [
         {
+          "href": "https://corporate.bwfbadminton.com/results/5838/yonex-melbourne-international-2026",
+          "text": "VIEW RESULTS"
+        },
+        {
           "href": "https://extranet.bwf.sport/docs/events/5793/docs/YONEX%20Melbourne%20International%202026%20Prospectus%20FINAL.pdf",
           "text": "YONEX Melbourne International 2026 Prospectus FINAL.pdf"
         },
@@ -2629,6 +2650,10 @@
       "range": "19                                    -22",
       "category": "International Challenge",
       "links": [
+        {
+          "href": "https://corporate.bwfbadminton.com/results/5841/scottish-open-2026",
+          "text": "VIEW RESULTS"
+        },
         {
           "href": "https://extranet.bwf.sport/docs/events/5792/docs/Invitation%20-%20Scottish%20Open%202026.pdf",
           "text": "Invitation - Scottish Open 2026.pdf"
@@ -2666,6 +2691,14 @@
         {
           "href": "https://extranet.bwf.sport/docs/events/5252/docs/M%20_%20Q%20Version%201%20-%20Syed%20Modi%20India%20International%202026.pdf",
           "text": "M _ Q Version 1 - Syed Modi India International 2026.pdf"
+        },
+        {
+          "href": "https://extranet.bwf.sport/docs/events/5252/docs/M_QVER~2.PDF",
+          "text": "M_QVER~2.PDF"
+        },
+        {
+          "href": "https://extranet.bwf.sport/docs/events/5252/docs/Draws%20-%20Syed%20Modi%20India%20International%202026.pdf",
+          "text": "Draws - Syed Modi India International 2026.pdf"
         },
         {
           "href": "https://bwf.tournamentsoftware.com/sport/tournament.aspx?id=C7F5AAA6-8A74-40A0-A7B3-EF072887354C",
@@ -6296,7 +6329,7 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 1,
-      "checkedAt": "2026-11-16T02:12:35.286Z"
+      "checkedAt": "2026-11-21T00:42:56.964Z"
     },
     {
       "id": "5714",
@@ -6374,8 +6407,8 @@
       "category": "Future Series",
       "links": [
         {
-          "href": "https://extranet.bwf.sport/docs/events/5780/docs/26RSAFSProspectusv2.pdf",
-          "text": "26RSAFSProspectusv2.pdf"
+          "href": "https://extranet.bwf.sport/docs/events/5780/docs/26RSAFSProspectusv3.pdf",
+          "text": "26RSAFSProspectusv3.pdf"
         },
         {
           "href": "https://extranet.bwf.sport/docs/events/5780/docs/26RSAFS_Accommodation%20Form.xlsx",
@@ -10382,7 +10415,29 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 1,
-      "checkedAt": "2026-11-16T02:12:42.548Z"
+      "checkedAt": "2026-11-21T00:43:04.458Z"
+    },
+    {
+      "id": "6129",
+      "name": "2027 European Mixed Team Championships Qualification",
+      "week": "49",
+      "range": "02                                    -06",
+      "category": "Continental Team Championships",
+      "links": [
+        {
+          "href": "https://bwf.tournamentsoftware.com/sport/tournament.aspx?id=8C887F53-482C-47D2-A16E-DE6163640900",
+          "text": "log in here"
+        },
+        {
+          "href": "mailto:technicalevents@bwf.sport",
+          "text": "technicalevents@bwf.sport"
+        }
+      ],
+      "start": "2026-12-02",
+      "end": "2026-12-06",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "bwfworldtour.bwfbadminton.com: Players source HTTP 403; bwfbadminton.com: Players source HTTP 403"
     },
     {
       "id": "6042",
@@ -10450,32 +10505,6 @@
       ],
       "start": "2026-12-02",
       "end": "2026-12-05",
-      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
-      "state": "unavailable",
-      "error": "bwfworldtour.bwfbadminton.com: Players source HTTP 403; bwfbadminton.com: Players source HTTP 403"
-    },
-    {
-      "id": "5886",
-      "name": "Egypt International 2026",
-      "week": "50",
-      "range": "08                                    -12",
-      "category": "International Series",
-      "links": [
-        {
-          "href": "https://extranet.bwf.sport/docs/events/5850/docs/26EGYISProspectus.pdf",
-          "text": "26EGYISProspectus.pdf"
-        },
-        {
-          "href": "https://bwf.tournamentsoftware.com/sport/tournament.aspx?id=F201F7EC-9E56-41B1-AC21-575C4BC2EEB5",
-          "text": "log in here"
-        },
-        {
-          "href": "mailto:technicalevents@bwf.sport",
-          "text": "technicalevents@bwf.sport"
-        }
-      ],
-      "start": "2026-12-08",
-      "end": "2026-12-12",
       "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
       "state": "unavailable",
       "error": "bwfworldtour.bwfbadminton.com: Players source HTTP 403; bwfbadminton.com: Players source HTTP 403"
@@ -14480,7 +14509,33 @@
       "sourceKind": "pdf-image",
       "state": "partial",
       "version": 1,
-      "checkedAt": "2026-11-16T02:12:50.823Z"
+      "checkedAt": "2026-11-21T00:43:14.390Z"
+    },
+    {
+      "id": "5886",
+      "name": "VICTOR Egypt International 2026",
+      "week": "50",
+      "range": "08                                    -12",
+      "category": "International Series",
+      "links": [
+        {
+          "href": "https://extranet.bwf.sport/docs/events/5850/docs/26EGYISProspectus.pdf",
+          "text": "26EGYISProspectus.pdf"
+        },
+        {
+          "href": "https://bwf.tournamentsoftware.com/sport/tournament.aspx?id=F201F7EC-9E56-41B1-AC21-575C4BC2EEB5",
+          "text": "log in here"
+        },
+        {
+          "href": "mailto:technicalevents@bwf.sport",
+          "text": "technicalevents@bwf.sport"
+        }
+      ],
+      "start": "2026-12-08",
+      "end": "2026-12-12",
+      "calendarUrl": "https://corporate.bwfbadminton.com/events/calendar/2026/remaining/0/-1/",
+      "state": "unavailable",
+      "error": "bwfworldtour.bwfbadminton.com: Players source HTTP 403; bwfbadminton.com: Players source HTTP 403"
     },
     {
       "id": "5798",
@@ -14554,6 +14609,10 @@
         {
           "href": "https://extranet.bwf.sport/docs/events/5566/docs/HSBC%20BWF%20World%20Tour%20Finals%202026_Prospectus_Final.pdf",
           "text": "HSBC BWF World Tour Finals 2026_Prospectus_Final.pdf"
+        },
+        {
+          "href": "https://extranet.bwf.sport/docs/events/5566/docs/%E3%80%90TEAM%E3%80%91%20HSBC%20BWF%20WORLD%20TOUR%20FINALS%202026%20Accreditation%20Application%20Form.xlsx",
+          "text": "【TEAM】 HSBC BWF WORLD TOUR FINALS 2026 Accreditation Application Form.xlsx"
         },
         {
           "href": "mailto:girishnatu@gmail.com",
@@ -14642,8 +14701,8 @@
       "category": "International Series",
       "links": [
         {
-          "href": "https://extranet.bwf.sport/docs/events/5809/docs/YONEX%20SUNRISE%20Bangladesh%20IS%202026%20-%20Prospectus%20F%20_9th%20Sep_.pdf",
-          "text": "YONEX SUNRISE Bangladesh IS 2026 - Prospectus F _9th Sep_.pdf"
+          "href": "https://extranet.bwf.sport/docs/events/5809/docs/YONEX%20SUNRISE%20Bangladesh%20IS%202026%20-%20Prospectus%20F%20_18th%20Nov_.pdf",
+          "text": "YONEX SUNRISE Bangladesh IS 2026 - Prospectus F _18th Nov_.pdf"
         },
         {
           "href": "https://extranet.bwf.sport/docs/events/5809/docs/YONEX%20SUNRISE%20Bangladesh%20IS%202026%20-%20Relevant%20Forms.xlsx",
